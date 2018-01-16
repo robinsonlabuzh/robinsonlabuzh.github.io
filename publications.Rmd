@@ -1,0 +1,115 @@
+---
+title: "Publications"
+author: ""
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(rentrez))
+```
+
+```{r}
+fix_null <- function(x) {
+  if (is.null(x) || length(x) == 0) NA
+  else x
+}
+
+make_link_button <- function(address, title) {
+  sprintf(' <a href="%s" target="_blank" class="btn btn-primary">%s</a>', 
+                   address, title)
+}
+
+make_link_text <- function(address, title) {
+  sprintf(' <a href="%s" target="_blank"> %s</a>', address, title)
+}
+
+make_link_pmid <- function(pmid) {
+  sprintf(' <a href="%s" target="_blank"> %s</a>',
+          paste0("http://www.ncbi.nlm.nih.gov/pubmed/", pmid),
+          paste0("PMID ", pmid))
+}
+```
+
+
+```{r}
+## Search PubMed
+x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", retmax = 1000)
+
+## Extract info
+summ <- entrez_summary(db = "pubmed", id = x$ids)
+summ <- lapply(summ, function(w) {
+  data.frame(title = fix_null(w$title), 
+             pubdate = fix_null(w$pubdate),
+             pubyear = fix_null(strsplit(w$pubdate, " ")[[1]][1]), 
+             journal = fix_null(w$source), 
+             authors = fix_null(paste(w$authors$name, collapse = ", ")),
+             volume = fix_null(w$volume),
+             issue = fix_null(w$issue),
+             pages = fix_null(w$pages), 
+             doi = fix_null(w$articleids$value[w$articleids$idtype == "doi"]),
+             pmid = fix_null(w$articleids$value[w$articleids$idtype == "pubmed"]),
+             elocationid = fix_null(w$elocationid),
+             stringsAsFactors = FALSE)
+})
+## Put into data frame and arrange by year
+summ <- do.call(rbind, summ) %>% dplyr::arrange(desc(pubyear))
+```
+
+```{r}
+## Define PubMed IDs to remove
+pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830", 
+                 "18025499", "15786672", "15779224")
+summ <- subset(summ, !(pmid %in% pmid_remove))
+```
+
+```{r}
+## Change some HTML formatting to markdown
+summ$title <- sapply(summ$title, function(x) {
+  x <- gsub("&lt;i&gt;|&lt;/i&gt;", "*", x)  ## <i>, </i>
+  x
+})
+```
+
+```{r, message = FALSE, warning = FALSE}
+## Add columns with links to GitHub repos/software links
+github <- rbind(
+  data.frame(pmid = "27027585", github = "", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html", stringsAsFactors = FALSE)
+)
+
+summ <- dplyr::left_join(summ, github) %>%
+  dplyr::mutate(github = replace(github, is.na(github), ""),
+                software = replace(software, is.na(software), ""))
+```
+
+```{r}
+## Split by publication year
+years <- as.character(unique(summ$pubyear))
+summ <- split(summ, summ$pubyear)
+
+## Generate final text string to display
+txt <- ""
+for (i in years) {
+  txt <- paste0(txt, "\n## ", i, "\n\n")
+  for (j in seq_len(nrow(summ[[i]]))) {
+    txt <- paste0(txt, "- ", summ[[i]][j, "authors"], ": ", summ[[i]][j, "title"], 
+                  " ", summ[[i]][j, "journal"], " ", summ[[i]][j, "volume"],
+                  ifelse(summ[[i]][j, "issue"] == "", "", 
+                         paste0("(", summ[[i]][j, "issue"], ")")), ":",
+                  summ[[i]][j, "pages"], 
+                  " (", i, "). DOI: ", summ[[i]][j, "doi"],
+                  ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), 
+                  ifelse(summ[[i]][j, "github"] == "", "", paste0(". ", make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"))), 
+                  ifelse(summ[[i]][j, "software"] == "", "", paste0(". ", make_link_text(address = summ[[i]][j, "software"], title = "Software"))), 
+                  "\n\n")
+  }
+}
+```
+
+```{r, results = "asis"}
+cat(txt)
+```
+
