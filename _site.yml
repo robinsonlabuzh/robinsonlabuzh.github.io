@@ -1,7 +1,7 @@
-name: "HLindsay"                                  # CHANGE HERE 
+name: "robinsonlabuzh"                                  # CHANGE HERE 
 output_dir: "."
 navbar:
-  title: "Test"                               # CHANGE HERE 
+  title: "Statistical Genomics @IMLS-UZH // Statistical Bioinformatics @SIB"                               # CHANGE HERE 
   type: inverse
   left:
     - text: "Home"
@@ -15,14 +15,14 @@ navbar:
       href: cv.html
     - text: "Blog"
       icon: fa-rss
-      href: https://HLindsay.github.io/blog/    # CHANGE HERE 
+      href: https://robinsonlabuzh.github.io/    # CHANGE HERE 
   right:
     - text: "Contact me"
       icon: fa-envelope-o
-      href: mailto:YOUREMAIL                      # CHANGE HERE 
+      href: mailto:mark.robinson@imls.uzh.ch                      # CHANGE HERE 
     - text: "GitHub"
       icon: fa-github
-      href: https://github.com/HLindsay         # CHANGE HERE 
+      href: https://github.com/robinsonlabuzh         # CHANGE HERE 
 output:
   html_document:
     theme: cosmo
