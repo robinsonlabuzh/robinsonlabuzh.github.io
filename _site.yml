@@ -16,6 +16,9 @@ navbar:
     - text: "Blog"
       icon: fa-rss
       href: https://robinsonlabuzh.github.io/    # CHANGE HERE 
+    - text: "More Info"
+      icon: fa-user
+      href: more_info.html
   right:
     - text: "Contact me"
       icon: fa-envelope-o
