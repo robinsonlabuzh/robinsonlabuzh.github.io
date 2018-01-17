@@ -74,15 +74,15 @@ summ$title <- sapply(summ$title, function(x) {
 })
 ```
 
-```{r, message = FALSE, warning = FALSE}
-## Add columns with links to GitHub repos/software links
-github <- rbind(
-  data.frame(pmid = "27027585", github = "", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html", stringsAsFactors = FALSE)
-)
+```{r add_links, message = FALSE, warning = FALSE}
+summ$github <- ""
+summ$software <- ""
 
-summ <- dplyr::left_join(summ, github) %>%
-  dplyr::mutate(github = replace(github, is.na(github), ""),
-                software = replace(software, is.na(software), ""))
+## Add column with links to GitHub repos
+summ$github[summ$pmid == "27992111"] <- "https://github.com/lmweber/cytometry-clustering-comparison"
+
+## Add colum with links to software packages
+summ$software[summ$pmid == "27027585"] <- "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"
 ```
 
 ```{r}
@@ -101,9 +101,9 @@ for (i in years) {
                          paste0("(", summ[[i]][j, "issue"], ")")), ":",
                   summ[[i]][j, "pages"], 
                   " (", i, "). DOI: ", summ[[i]][j, "doi"],
-                  ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), 
-                  ifelse(summ[[i]][j, "github"] == "", "", paste0(". ", make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"))), 
-                  ifelse(summ[[i]][j, "software"] == "", "", paste0(". ", make_link_text(address = summ[[i]][j, "software"], title = "Software"))), 
+                  ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
+                  ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"), ". ")), 
+                  ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], title = "Software"), ". ")), 
                   "\n\n")
   }
 }

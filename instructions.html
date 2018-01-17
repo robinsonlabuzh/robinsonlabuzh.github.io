@@ -11,7 +11,7 @@
 
 
 
-<title>CV</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +22,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -238,15 +237,23 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">CV</h1>
 
 </div>
 
 
-<p><a href="CV.pdf#" class="download" title="Download CV as PDF">Download CV</a></p>
-<div id="header" class="section level2">
-<h2>Header</h2>
-<p>Say more about your CV here.</p>
+<div id="instructions-for-building-and-updating-the-website" class="section level2">
+<h2>Instructions for building and updating the website</h2>
+<p>The website is built with the following <code>R</code> command:</p>
+<pre><code>rmarkdown::render_site(encoding = &quot;UTF-8&quot;)</code></pre>
+<p>This will build all <code>.Rmd</code> files in the directory to the corresponding <code>.html</code> files. After building the website with the command above, you can view the result locally and push the changes to the GitHub repo. If there are problems with the rendering, try updating <code>R</code>, <code>RStudio</code> and/or the <code>rmarkdown</code> package.</p>
+<div id="publication-list" class="section level3">
+<h3>Publication list</h3>
+<p>The publication list (<code>publications.html</code>, generated from <code>publications.Rmd</code>) is automatically populated when the website is built, by pulling down and reformatting PubMed results for the search <code>Robinson Mark D[au]</code>, using the <a href="https://cran.r-project.org/web/packages/rentrez/index.html"><code>rentrez</code></a> R package. Most of the time the results are correct, but since there are multiple authors named “Mark D Robinson” in the database, the list of publications should occasionally be checked for correctness. The following parts of <code>publications.Rmd</code> may need to be modified:</p>
+<ul>
+<li>The list of incorrectly pulled down publication records (<code>pmid_remove</code>). Once a PubMed ID has been added to this list, it will be excluded from all future renderings of the publication list.</li>
+<li>Links to GitHub repositories or software packages accompanying a paper. These are added into the <code>github</code> and <code>software</code> columns of the final data frame, in the code chunk named <code>add_links</code>.</li>
+</ul>
+</div>
 </div>
 
 
