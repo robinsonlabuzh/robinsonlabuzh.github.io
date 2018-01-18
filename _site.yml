@@ -1,31 +1,34 @@
 name: "robinsonlabuzh"                                  # CHANGE HERE 
 output_dir: "."
 navbar:
-  title: "Statistical Genomics @IMLS-UZH // Statistical Bioinformatics @SIB"                               # CHANGE HERE 
+  title: "Statistical Bioinformatics @SIB @UZH"                               # CHANGE HERE 
   type: inverse
   left:
-    - text: "Home"
-      icon: fa-home
-      href: index.html
-    - text: "About"
-      icon: fa-user 
-      href: about.html
-    - text: "CV"
-      icon: fa-file-pdf-o
-      href: cv.html
-    - text: "Blog"
-      icon: fa-rss
-      href: https://robinsonlabuzh.github.io/    # CHANGE HERE 
-    - text: "More Info"
-      icon: fa-user
-      href: more_info.html
   right:
-    - text: "Contact me"
-      icon: fa-envelope-o
-      href: mailto:mark.robinson@imls.uzh.ch                      # CHANGE HERE 
-    - text: "GitHub"
-      icon: fa-github
-      href: https://github.com/robinsonlabuzh         # CHANGE HERE 
+    - text: "news"
+      icon: fa-newspaper-o
+      href: index.html
+    - text: "research"
+      icon: fa-area-chart
+      href: research.html
+    - text: "publications"
+      icon: fa-file-text-o
+      href: publications.html    # CHANGE HERE 
+    - text: "people"
+      icon: fa-id-card-o
+      href: people.html
+    - text: "tools"
+      icon: fa-download
+      href: resources.html    # CHANGE HERE 
+    - text: "teaching"
+      icon: fa-users
+      href: teaching.html
+#    - text: "Contact me"
+#      icon: fa-envelope-o
+#      href: mailto:mark.robinson@imls.uzh.ch                      # CHANGE HERE 
+#    - text: "GitHub"
+#      icon: fa-github
+#      href: https://github.com/robinsonlabuzh         # CHANGE HERE 
 output:
   html_document:
     theme: cosmo
