@@ -1,5 +1,10 @@
 ---
-title: "Welcome to my website!"
+title: Robinson Statistical Bioinformatics Group @UZH @SIB
 ---
 
-Check that changes are pushed
+# Welcome to the Robinson Lab!
+
+We are located in the [Institute of Molecular Life Sciences](http://www.imls.uzh.ch/en.html) within the [Faculty of Science](http://www.mnf.uzh.ch/en.html) at the [University of Zurich](http://www.uzh.ch/en.html).
+
+Research in our laboratory is focused on statistical and computational methods for processing and interpreting genomic data.
+
