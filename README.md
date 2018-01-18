@@ -6,7 +6,7 @@ More details on making HTML documents from Rmarkdown can be found [here](http://
 
 ### Updates to the website
 
-- Once you've cloned the repo and have all the packages install, the main command to build/update the website is this:
+- Once you've cloned the repo and have all the packages installed, the updating the website is done via:
 
 ```
 rmarkdown::render_site(encoding = "UTF-8")
