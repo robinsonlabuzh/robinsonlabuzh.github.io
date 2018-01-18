@@ -7,7 +7,7 @@ navbar:
   right:
     - text: "news"
       icon: fa-newspaper-o
-      href: index.html
+      href: news.html
     - text: "research"
       icon: fa-area-chart
       href: research.html
@@ -15,7 +15,7 @@ navbar:
       icon: fa-file-text-o
       href: publications.html    # CHANGE HERE 
     - text: "people"
-      icon: fa-id-card-o
+      icon: fa-envelope-o
       href: people.html
     - text: "tools"
       icon: fa-download
@@ -31,5 +31,5 @@ navbar:
 #      href: https://github.com/robinsonlabuzh         # CHANGE HERE 
 output:
   html_document:
-    theme: cosmo
+    theme: flatly
     highlight: textmate
