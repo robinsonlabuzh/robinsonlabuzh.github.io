@@ -12,10 +12,10 @@ navbar:
       icon: fa-file-text-o
       href: publications.html    # CHANGE HERE 
     - text: "tools"
-      icon: fa-download
+      icon: fa-code
       href: resources.html    # CHANGE HERE 
     - text: "people"
-      icon: fa-envelope-o
+      icon: fa-user
       href: people.html
     - text: "teaching"
       icon: fa-users
@@ -24,7 +24,7 @@ navbar:
       icon: fa-newspaper-o
       href: news.html
     - text: "about"
-      icon: fa-superpowers
+      icon: fa-university
       href: news.html
 #    - text: "Contact me"
 #      icon: fa-envelope-o
