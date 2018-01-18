@@ -1,0 +1,13 @@
+- name: Mark Robinson
+  image: /img/mark.jpg
+  position: Associate Professor
+  email: mark.robinson (at) imls.uzh.ch
+  scholar: "XPfrRQEAAAAJ"
+  twitter: "markrobinsonca"
+  description: "Description with markdown links goes here"
+
+- name: Charlotte Soneson
+  image: /img/charlotte.jpg
+  position: Postdoc
+  email: charlotte.soneson (at) uzh.ch
+  description: "Description with markdown links goes here"

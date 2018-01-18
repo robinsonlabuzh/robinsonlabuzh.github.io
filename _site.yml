@@ -5,24 +5,27 @@ navbar:
   type: inverse
   left:
   right:
-    - text: "news"
-      icon: fa-newspaper-o
-      href: news.html
-    - text: "research"
-      icon: fa-area-chart
-      href: research.html
+#    - text: "research"
+#      icon: fa-area-chart
+#      href: research.html
     - text: "publications"
       icon: fa-file-text-o
       href: publications.html    # CHANGE HERE 
-    - text: "people"
-      icon: fa-envelope-o
-      href: people.html
     - text: "tools"
       icon: fa-download
       href: resources.html    # CHANGE HERE 
+    - text: "people"
+      icon: fa-envelope-o
+      href: people.html
     - text: "teaching"
       icon: fa-users
       href: teaching.html
+    - text: "news"
+      icon: fa-newspaper-o
+      href: news.html
+    - text: "about"
+      icon: fa-superpowers
+      href: news.html
 #    - text: "Contact me"
 #      icon: fa-envelope-o
 #      href: mailto:mark.robinson@imls.uzh.ch                      # CHANGE HERE 
