@@ -6,6 +6,21 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+## PubMed IDs to remove
+pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830", 
+                 "18025499", "15786672", "15779224", "15322224")
+
+## PubMed IDs to add
+pmid_add <- c("11743205")
+
+## bioRxiv dois
+## This link could be helpful in isolating just our preprints:
+## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
+biorxiv_dois <- c("10.1101/143289", "10.1101/157982", "10.1101/185744")
+```
+
+
 ```{r, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 suppressPackageStartupMessages(library(dplyr))
@@ -40,6 +55,9 @@ make_link_pmid <- function(pmid) {
 ## Search PubMed
 x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", retmax = 1000)
 
+## Add and remove PubMed IDs manually
+x$ids <- unique(c(setdiff(x$ids, pmid_remove), pmid_add))
+
 ## Extract info
 summ <- entrez_summary(db = "pubmed", id = x$ids)
 summ <- lapply(summ, function(w) {
@@ -58,13 +76,6 @@ summ <- lapply(summ, function(w) {
 })
 ## Put into data frame and arrange by year
 summ <- do.call(rbind, summ) %>% dplyr::arrange(desc(pubyear))
-```
-
-```{r}
-## Define PubMed IDs to remove
-pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830", 
-                 "18025499", "15786672", "15779224", "15322224")
-summ <- subset(summ, !(pmid %in% pmid_remove))
 ```
 
 ```{r}
@@ -88,10 +99,6 @@ summ$software[summ$pmid == "27027585"] <- "http://bioconductor.org/packages/rele
 
 ```{r}
 ## Add bioRxiv preprints by doi
-## This link could be helpful in isolating just our preprints:
-## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
-
-biorxiv_dois <- c("10.1101/143289", "10.1101/157982", "10.1101/185744")
 biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
   html <- read_html(paste0("https://doi.org/", doi))
   title <- html_text(html_nodes(html, "#page-title"))
