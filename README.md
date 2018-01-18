@@ -19,12 +19,12 @@ The publication list (`publications.html`, generated from `publications.Rmd`) is
 
 Also [bioRxiv](https://www.biorxiv.org/) preprints can be included, by explicitly providing the corresponding DOIs. 
 
-The following parts of `publications.Rmd` may need to be modified:
+The following parts of `publications.Rmd` may need to be modified (all done within the first code chunk):
 
 - The list of incorrectly pulled down PubMed publication records (`pmid_remove`). Once a PubMed ID has been added to this list, it will be excluded from all future renderings of the publication list. 
-- The list of additional PubMed IDs to add manually (`pmid_add`).
+- The list of PubMed IDs to add manually (`pmid_add`).
 - The list of bioRxiv preprints to include (`biorxiv_dois`).
-- Links to GitHub repositories or software packages accompanying a paper or preprint. These are added into the `github` and `software` columns of the final data frames, in the code chunks named `add_links` and `add_links_preprints`. 
+- Links to GitHub repositories or software packages accompanying a paper or preprint. 
 
 ### Adding members
 

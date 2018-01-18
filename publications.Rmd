@@ -18,11 +18,27 @@ pmid_add <- c("11743205","15761153","23857251","26493315")
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 biorxiv_dois <- c("10.1101/143289", "10.1101/157982", "10.1101/185744")
+
+## github repos
+pmid_github <- rbind(
+  c(pmid = "27992111", github = "https://github.com/lmweber/cytometry-clustering-comparison")
+)
+biorxiv_github <- rbind(
+  c(doi = "", github = "")
+)
+
+## software packages
+pmid_software <- rbind(
+  c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html")
+)
+biorxiv_software <- rbind(
+  c(doi = "", software = "")
+)
 ```
 
 
 ```{r, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(rentrez))
 suppressPackageStartupMessages(library(rvest))
@@ -87,14 +103,13 @@ summ$title <- sapply(summ$title, function(x) {
 ```
 
 ```{r add_links, message = FALSE, warning = FALSE}
-summ$github <- ""
-summ$software <- ""
-
 ## Add column with links to GitHub repos
-summ$github[summ$pmid == "27992111"] <- "https://github.com/lmweber/cytometry-clustering-comparison"
+summ <- dplyr::left_join(summ, data.frame(pmid_github, stringsAsFactors = FALSE)) %>%
+  dplyr::mutate(github = replace(github, is.na(github), ""))
 
 ## Add colum with links to software packages
-summ$software[summ$pmid == "27027585"] <- "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"
+summ <- dplyr::left_join(summ, data.frame(pmid_software, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(software = replace(software, is.na(software), ""))
 ```
 
 ```{r}
@@ -113,11 +128,13 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
 ```
 
 ```{r add_links_preprints, message = FALSE, warning = FALSE}
-## Add column with links to GitHub repos for preprints
-biorxiv$github[biorxiv$doi == ""] <- ""
+## Add column with links to GitHub repos
+biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_github, stringsAsFactors = FALSE)) %>%
+  dplyr::mutate(github = replace(github, is.na(github), ""))
 
-## Add column with links to software packages for preprints
-biorxiv$software[biorxiv$doi == ""] <- ""
+## Add colum with links to software packages
+biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_software, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(software = replace(software, is.na(software), ""))
 ```
 
 
