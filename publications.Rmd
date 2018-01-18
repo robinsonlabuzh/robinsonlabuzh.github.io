@@ -10,6 +10,7 @@ editor_options:
 knitr::opts_chunk$set(echo = FALSE)
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(rentrez))
+suppressPackageStartupMessages(library(rvest))
 ```
 
 ```{r}
@@ -86,12 +87,48 @@ summ$software[summ$pmid == "27027585"] <- "http://bioconductor.org/packages/rele
 ```
 
 ```{r}
+## Add bioRxiv preprints by doi
+biorxiv_dois <- c("10.1101/143289", "10.1101/157982")
+biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
+  html <- read_html(paste0("https://doi.org/", doi))
+  title <- html_text(html_nodes(html, "#page-title"))
+  authors <- paste(unique(paste(html_text(html_nodes(html, ".nlm-given-names")), 
+                                html_text(html_nodes(html, ".nlm-surname")))), collapse = ", ")
+  pubdate <- html_text(html_nodes(html, ".published"))
+  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
+             journal = "", authors = authors, volume = "", issue = "", 
+             pages = "", doi = doi, pmid = "", elocationid = "", 
+             github = "", software = "", stringsAsFactors = FALSE)
+}))
+```
+
+```{r add_links_preprints, message = FALSE, warning = FALSE}
+## Add column with links to GitHub repos for preprints
+biorxiv$github[biorxiv$doi == ""] <- ""
+
+## Add column with links to software packages for preprints
+biorxiv$software[biorxiv$doi == ""] <- ""
+```
+
+
+```{r}
 ## Split by publication year
 years <- as.character(unique(summ$pubyear))
 summ <- split(summ, summ$pubyear)
 
 ## Generate final text string to display
 txt <- ""
+## Preprints
+txt <- paste0(txt, "\n## Preprints\n\n")
+for (j in seq_len(nrow(biorxiv))) {
+  txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
+                ". bioRxiv doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
+                ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")), 
+                  "\n\n")
+}
+
+## Publications
 for (i in years) {
   txt <- paste0(txt, "\n## ", i, "\n\n")
   for (j in seq_len(nrow(summ[[i]]))) {

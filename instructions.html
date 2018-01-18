@@ -34,7 +34,7 @@ if (window.hljs) {
   hljs.configure({languages: []});
   hljs.initHighlightingOnLoad();
   if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+    window.setTimeout(function() { hljs.initHighlightingOnLoad(); }, 0);
   }
 }
 </script>
@@ -242,10 +242,13 @@ $(document).ready(function () {
 <p>This will build all <code>.Rmd</code> files in the directory to the corresponding <code>.html</code> files. After building the website with the command above, you can view the result locally and push the changes to the GitHub repo. If there are problems with the rendering, try updating <code>R</code>, <code>RStudio</code> and/or the <code>rmarkdown</code> package.</p>
 <div id="publication-list" class="section level3">
 <h3>Publication list</h3>
-<p>The publication list (<code>publications.html</code>, generated from <code>publications.Rmd</code>) is automatically populated when the website is built, by pulling down and reformatting PubMed results for the search <code>Robinson Mark D[au]</code>, using the <a href="https://cran.r-project.org/web/packages/rentrez/index.html"><code>rentrez</code></a> R package. Most of the time the results are correct, but since there are multiple authors named “Mark D Robinson” in the database, the list of publications should occasionally be checked for correctness. The following parts of <code>publications.Rmd</code> may need to be modified:</p>
+<p>The publication list (<code>publications.html</code>, generated from <code>publications.Rmd</code>) is automatically populated when the website is built, by pulling down and reformatting PubMed results for the search <code>Robinson Mark D[au]</code>, using the <a href="https://cran.r-project.org/web/packages/rentrez/index.html"><code>rentrez</code></a> R package. Most of the time the results are correct, but since there are multiple authors named “Mark D Robinson” in the database, the list of publications should occasionally be checked for correctness.</p>
+<p>Also <a href="https://www.biorxiv.org/">bioRxiv</a> preprints can be included, by explicitly providing the corresponding DOIs.</p>
+<p>The following parts of <code>publications.Rmd</code> may need to be modified:</p>
 <ul>
-<li>The list of incorrectly pulled down publication records (<code>pmid_remove</code>). Once a PubMed ID has been added to this list, it will be excluded from all future renderings of the publication list.</li>
-<li>Links to GitHub repositories or software packages accompanying a paper. These are added into the <code>github</code> and <code>software</code> columns of the final data frame, in the code chunk named <code>add_links</code>.</li>
+<li>The list of incorrectly pulled down PubMed publication records (<code>pmid_remove</code>). Once a PubMed ID has been added to this list, it will be excluded from all future renderings of the publication list.</li>
+<li>The list of bioRxiv preprints to include (<code>biorxiv_dois</code>).</li>
+<li>Links to GitHub repositories or software packages accompanying a paper or preprint. These are added into the <code>github</code> and <code>software</code> columns of the final data frames, in the code chunks named <code>add_links</code> and <code>add_links_preprints</code>.</li>
 </ul>
 </div>
 </div>
