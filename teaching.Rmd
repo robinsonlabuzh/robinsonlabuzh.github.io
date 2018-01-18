@@ -1,0 +1,46 @@
+---
+title: "Teaching"
+author: ""
+output: html_document
+---
+
+### **Courses offered at UZH**
+
+*Lecture*      | *Description*               | *Semester*
+-------------------------------|--------------------------------|--------
+**Statistical Analysis of High-Thoughput Genomic and Transcriptomic Data - STA426** | We will go through the most important statistical concepts employed in today's High-Thoughput analysis methods, implemented as R packages. The student will propose and perform a project at the end of the course | Fall 
+**Statistical Modelling - STA121** | | Fall
+**Introduction to Bionformatics I - BCH401 ** | In each lecture we give an overview of the main Bioinformatic tools currently used  | Fall
+**Topics in Evolutionary Biology - BIO554 ** | | Fall
+**Modern Genetics and Genomics - BIO323 ** | Key concepts and methods in genetics will be taught. You will conduct genetic and molecular studies in model systems and analyse data using bioinformatic tools | Fall
+**Cancer Epigenetics - BIO255** (Block Course) | The lab gives a two week practical session along with other 5 different labs. The workload is divided in applying molecular biology techniques and a bioinformatic session | Fall
+**Practical Bionformatics - BIO334** (Block Course) | The lab gives a two week section of this course. We provide the student with the basics on performing straightforward data manipulations and statistical analyses in R | Spring
+**Data Analysis in Biology - BIO144** | This course is organized by the [Petchey lab](https://www.ieu.uzh.ch/en/staff/member/petchey_owen.html). Our lab provides support in the practical sessions | Spring
+
+For exact information on schedule, registration and location, please refer to the official UZH [course catalogue](https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=EN&sap-ui-language=EN)
+
+
+### **Upcoming external courses**
+
+Promote the ones for this year
+
+### **Past external courses** 
+
+###2017
+
+* [de.NBI Summer School: Computational Genomics and RNA biology](https://www.denbi.de/22-training-cat/training-courses/278-de-nbi-summer-school-computational-genomics-and-rna-biology). Berlin, Germany
+* [Statistics for Life Scientists](https://www.sib.swiss/training/course/stats-basel2017). Basel, Switzerland
+* [Statistical data analysis for genome scale biology (CSAMA 2017)](http://www.huber.embl.de/csama2017/#home). Brixen, Italy
+* [Advanced RNA-seq and ChIP-seq data analysis](http://www.ebi.ac.uk/training/events/2017/advanced-rna-seq-and-chip-seq-data-analysis-1). EBI, Hinxton, UK
+
+###2016
+
+* [Data Carpentry: Introduction to Data Analysis and Visualization in R](https://markrobinsonuzh.github.io/2016-07-18-zurich/). University of Zurich
+* [Computational Genomics: A hands-on course on data analysis](http://compgen2016.mdc-berlin.de/). Max-Delbrück Center for Molecular Medicine, Berlin, Germany 
+* Advanced course on edgeR and DESeq2. Leuven, Belgium
+* [Statistics for Life Scientists](http://edu.isb-sib.ch/course/view.php?id=269). Basel, Switzerland
+* [Method course - Analysis of NextGen RNA-seq data for expression profiling and protein-binding RNAs](http://www.uni-regensburg.de/medicine/statistical-bioinformatics/method-course-oct-16/program/index.html). Regensburg, Germany
+* [Analysis of high-throughput sequencing data](http://events.embo.org/16-htp-seq/). Cambridge, UK
+* [Statistics and computing in genome data science (CSAMA 2016)](http://www.huber.embl.de/csama2016/about/). Brixen, Italy
+
+Other teaching activities are listed in members' personal webpage or cv.
