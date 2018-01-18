@@ -63,7 +63,7 @@ summ <- do.call(rbind, summ) %>% dplyr::arrange(desc(pubyear))
 ```{r}
 ## Define PubMed IDs to remove
 pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830", 
-                 "18025499", "15786672", "15779224")
+                 "18025499", "15786672", "15779224", "15322224")
 summ <- subset(summ, !(pmid %in% pmid_remove))
 ```
 
@@ -88,7 +88,10 @@ summ$software[summ$pmid == "27027585"] <- "http://bioconductor.org/packages/rele
 
 ```{r}
 ## Add bioRxiv preprints by doi
-biorxiv_dois <- c("10.1101/143289", "10.1101/157982")
+## This link could be helpful in isolating just our preprints:
+## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
+
+biorxiv_dois <- c("10.1101/143289", "10.1101/157982", "10.1101/185744")
 biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
   html <- read_html(paste0("https://doi.org/", doi))
   title <- html_text(html_nodes(html, "#page-title"))
