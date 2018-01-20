@@ -123,7 +123,7 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
              journal = "", authors = authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
-             github = "", software = "", stringsAsFactors = FALSE)
+             stringsAsFactors = FALSE)
 }))
 ```
 
