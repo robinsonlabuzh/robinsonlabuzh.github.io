@@ -64,6 +64,11 @@ make_link_pmid <- function(pmid) {
           paste0("http://www.ncbi.nlm.nih.gov/pubmed/", pmid),
           paste0("PMID ", pmid))
 }
+
+make_link_altmetric <- function(doi) {
+  sprintf('<div data-badge-popover="right" data-badge-type="4" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+          doi)
+}
 ```
 
 
@@ -144,15 +149,18 @@ years <- as.character(unique(summ$pubyear))
 summ <- split(summ, summ$pubyear)
 
 ## Generate final text string to display
-txt <- ""
+txt <- "<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>\n\n"
+
 ## Preprints
 txt <- paste0(txt, "\n## Preprints\n\n")
 for (j in seq_len(nrow(biorxiv))) {
   txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
                 ". bioRxiv doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
+                biorxiv[j, "pubdate"], " ", 
                 ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
-                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")), 
-                  "\n\n")
+                ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")), 
+                make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
+                "\n\n")
 }
 
 ## Publications
@@ -168,6 +176,7 @@ for (i in years) {
                   ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
                   ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"), ". ")), 
                   ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], title = "Software"), ". ")), 
+                  make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
                   "\n\n")
   }
 }
