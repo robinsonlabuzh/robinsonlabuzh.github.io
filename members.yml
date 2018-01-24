@@ -10,4 +10,13 @@
   image: /img/charlotte.jpg
   position: Postdoc
   email: charlotte.soneson (at) uzh.ch
-  description: "Description with markdown links goes here"
+  twitter: "CSoneson"
+  scholar: "c28GqkIAAAAJ"
+  webpage: "http://csoneson.github.io/"
+  GitHub: "https://github.com/csoneson"
+  description: "As a postdoctoral research associate, one of my main interests is the 
+  development and improvement of statistical methods and workflows, currently mainly 
+  in the field of RNA-seq. I am also interested in the process of evaluating and 
+  comparing methods in an objective, robust and reproducible manner. 
+  MSc in Engineering Physics (2005), Lund University,
+  PhD in Mathematics (2011), Lund University"
