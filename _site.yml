@@ -23,12 +23,12 @@ navbar:
     - text: "news"
       icon: fa-newspaper-o
       href: news.html
+    - text: "more info"
+      icon: fa-info-circle
+      href: more_info.html
     - text: "about"
       icon: fa-university
       href: news.html
-    - text: "more info"
-      icon: fa-newspaper-o
-      href: more_info.html
 #    - text: "Contact me"
 #      icon: fa-envelope-o
 #      href: mailto:mark.robinson@imls.uzh.ch                      # CHANGE HERE 
