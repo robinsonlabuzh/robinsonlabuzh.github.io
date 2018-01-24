@@ -2,9 +2,43 @@
 title: "More Information"
 ---
 
+```{r, include=FALSE}
+# to use FA icons
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+
+## Contact
+
+Email: mark.robinson (at) imls.uzh.ch  
+Twitter <i class="fa fa-twitter"></i> [\@markrobinsonca](https://twitter.com/markrobinsonca)  
+GitHub <i class="fa fa-github"></i> [robinsonlabuzh](https://github.com/robinsonlabuzh)
+
+**Address:**
+
+Institute of Molecular Life Sciences  
+University of Zurich  
+Winterthurerstrasse 190  
+CH-8057 Zurich, Switzerland
+
+Building / Room: Y11-J-16  
+phone <i class="fa fa-phone"></i> +41 44 635 48 48  
+fax <i class="fa fa-fax"></i> +41 44 635 68 68
+
+
+## Links
+
+[Institute of Molecular Life Sciences, University of Zurich](http://www.imls.uzh.ch/en.html)  
+[Faculty of Science, University of Zurich](http://www.mnf.uzh.ch/en.html)  
+[University of Zurich](http://www.uzh.ch/en.html)  
+[Swiss Institute of Bioinformatics](https://www.sib.swiss/)
+
+
+
 ## Joining the lab
 
 [To do]
+
 
 
 ## Code of conduct
@@ -22,3 +56,5 @@ If you are being harassed, notice that someone else is being harassed, or have a
 For official concerns, please see the [University of Zurich House Regulations](http://www.uzh.ch/en/about/basics/houseregulations.html) website.
 
 (This code of conduct is adapted from [Laurent Gatto, University of Cambridge](https://lgatto.github.io/cpu-coc/) and [Titus Brown, UC Davis](http://ivory.idyll.org/lab/coc.html).)
+
+

@@ -1,24 +1,24 @@
-name: "robinsonlabuzh"                                  # CHANGE HERE 
+name: "robinsonlabuzh"
 output_dir: "."
 navbar:
-  title: "Statistical Bioinformatics @SIB @UZH"                               # CHANGE HERE 
+  title: "Statistical Bioinformatics @SIB @UZH"
   type: inverse
   left:
   right:
-#    - text: "research"
-#      icon: fa-area-chart
-#      href: research.html
+    - text: "research"
+      icon: fa-area-chart
+      href: research.html
     - text: "publications"
       icon: fa-file-text-o
-      href: publications.html    # CHANGE HERE 
+      href: publications.html
     - text: "tools"
       icon: fa-code
-      href: resources.html    # CHANGE HERE 
+      href: resources.html
     - text: "people"
       icon: fa-user
       href: people.html
     - text: "teaching"
-      icon: fa-users
+      icon: fa-graduation-cap
       href: teaching.html
     - text: "news"
       icon: fa-newspaper-o
@@ -26,15 +26,6 @@ navbar:
     - text: "more info"
       icon: fa-info-circle
       href: more_info.html
-    - text: "about"
-      icon: fa-university
-      href: news.html
-#    - text: "Contact me"
-#      icon: fa-envelope-o
-#      href: mailto:mark.robinson@imls.uzh.ch                      # CHANGE HERE 
-#    - text: "GitHub"
-#      icon: fa-github
-#      href: https://github.com/robinsonlabuzh         # CHANGE HERE 
 output:
   html_document:
     theme: flatly
