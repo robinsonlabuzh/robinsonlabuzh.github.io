@@ -8,7 +8,8 @@ title: "Software & Resources"
 
 Name      | Author(s)               | Description 
 ----------|---------------|-----------------------------------
-[CATALYST](http://bioconductor.org/packages/release/bioc/html/CATALYST.html) | **Helena L Crowell**<br>**Mark D Robinson**<br>Vito RT Zanotelli<br>St&#130phane Chevrier<br>Bernd Bodenmiller | Tools for preprocessing of cytometry data including<br>normalization, debarcoding, and compensation
+[CATALYST](http://bioconductor.org/packages/release/bioc/html/CATALYST.html) | **Helena L Crowell**<br>**Mark D Robinson**<br>Vito RT Zanotelli<br>Stephane Chevrier<br>Bernd Bodenmiller | Tools for preprocessing of cytometry data including<br>normalization, debarcoding, and compensation
+[countsimQC](https://github.com/csoneson/countsimQC) | **Charlotte Soneson** | Comparison of characteristic features of count data sets
 [CrispRVariants](http://bioconductor.org/packages/release/bioc/html/CrispRVariants.html) | **Helen Lindsay** | Tools for counting and visualising mutations in a target location
 [DRIMSeq](http://bioconductor.org/packages/release/bioc/html/DRIMSeq.html) | **Malgorzata Nowicka** | Differential transcript usage and tuQTL analyses<br>with Dirichlet-multinomial model in RNA-seq
 [edgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) | Yunshun Chen<br>Aaron Lun<br>Davis McCarthy<br>**Xiaobei Zhou**<br>**Mark D Robinson**<br>Gordon Smyth | Empirical Analysis of Digital Gene Expression Data in R
