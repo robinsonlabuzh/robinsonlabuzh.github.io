@@ -20,3 +20,17 @@
   comparing methods in an objective, robust and reproducible manner. 
   MSc in Engineering Physics (2005), Lund University,
   PhD in Mathematics (2011), Lund University"
+
+- name: Simone Tiberi
+  image: /img/simone.jpg
+  position: Postdoc
+  email: simone.tiberi (at) uzh.ch
+  webpage: "https://sites.google.com/view/simonetiberi"
+  description: "I am a postdoctoral research associate working on the development of cutting-edge statistical methods for RNA-seq data.
+  In particular, I am currently focusing on a Bayesian hierarchical model to detect genes showing differential transcript usage (DTU);  
+  the method accounts for the subject-to-subject variability in the transcripts proportions and for the uncertainty in the allocation 
+  of each fragment to the corresponding transcript, which is treated as a latent variable.
+  In general terms, my interests are quite broad and lie in  the development of statistical methods for applications in the medical and biological fields.
+  BSc in Statistics (2010), Sapienza University of Rome
+  MSc in Statistics (2012), The University of Padua
+  PhD in Statistics (2017), The University of Warwick"
