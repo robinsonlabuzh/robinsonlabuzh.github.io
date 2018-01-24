@@ -30,7 +30,7 @@ The following parts of `publications.Rmd` may need to be modified (all done with
 
 ### Adding news item
 
-## Two examples
+## Template examples
 
 Previous examples of this website template:
 - [personal website](https://privefl.github.io/)
