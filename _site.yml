@@ -13,7 +13,7 @@ navbar:
       href: publications.html
     - text: "tools"
       icon: fa-code
-      href: resources.html
+      href: tools.html
     - text: "people"
       icon: fa-user
       href: people.html
