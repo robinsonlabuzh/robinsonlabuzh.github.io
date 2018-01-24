@@ -32,6 +32,6 @@ The following parts of `publications.Rmd` may need to be modified (all done with
 
 ## Two examples
 
-You can see for example 
-- [my own website](https://privefl.github.io/),
-- [the website of the R user group in Grenoble](https://r-in-grenoble.github.io/).
+Previous examples of this website template:
+- [personal website](https://privefl.github.io/)
+- [R user group in Grenoble](https://r-in-grenoble.github.io/)

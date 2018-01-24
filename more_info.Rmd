@@ -4,7 +4,7 @@ title: "More Info"
 
 ## Joining the lab
 
-Join the lab
+[To do]
 
 
 ## Code of conduct
@@ -17,8 +17,8 @@ Harassment includes offensive verbal comments related to gender, gender identity
 
 Members asked to stop any harassing behavior are expected to comply immediately.
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact Mark Robinson immediately. If Mark is the cause of your concern, [TBD] is a good informal point of contact; and has agreed to mediate.
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact Mark Robinson immediately.
 
 For official concerns, please see the [University of Zurich House Regulations](http://www.uzh.ch/en/about/basics/houseregulations.html) website.
 
-(This code of conduct is sourced from [Laurent Gatto, University of Cambridge](https://lgatto.github.io/cpu-coc/) and [Titus Brown, UC Davis](http://ivory.idyll.org/lab/coc.html).)
+(This code of conduct is adapted from [Laurent Gatto, University of Cambridge](https://lgatto.github.io/cpu-coc/) and [Titus Brown, UC Davis](http://ivory.idyll.org/lab/coc.html).)
