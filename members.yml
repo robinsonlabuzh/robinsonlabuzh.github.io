@@ -105,6 +105,7 @@
   image: /img/stephan.jpg
   position: PhD student
   email: stephan.schmeing (at) uzh.ch
+  twitter: "StephanSchmeing"
   description: "As a PhD student coming from a particle physics background I am currently working on a more realistic Illumina sequence simulator called ReSequencer.
   It is able to create a profile from a bam file that is then used to simulated paired-read fastq files. Furthermore I will work on an assembly and population genomics
   of the Indo-Pacific bottlenose dolphin (tursiops aduncus).
