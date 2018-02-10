@@ -34,6 +34,28 @@ pmid_software <- rbind(
 biorxiv_software <- rbind(
   c(doi = "", software = "")
 )
+
+## names of members to highlight in publication list
+group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robinson M",
+                   "Soneson C", "Charlotte Soneson",
+                   "Lindsay H", "Helen Lindsay",
+                   "Tiberi S", "Simone Tiberi",
+                   "Weber LM", "Lukas M Weber",
+                   "Hembach K", "Katarina Hembach",
+                   "de Souza Vladimir", "Vladimir de Souza",
+                   "Huang R", "Ruizhu Huang", 
+                   "Schmeing S", "Stephan Schmeing", 
+                   "Orjuela S", "Stephany Orjuela", 
+                   "Crowell HL", "Crowell H", "Helena L Crowell", "Helena Crowell",
+                   "Duo A", "Angelo Duo", 
+                   "Nowicka M", "Malgorzata Nowicka",
+                   "Zhou X", "Xiaobei Zhou",
+                   "Nikolayeva O", 
+                   "Morilla I", 
+                   "Law CW", 
+                   "Riebler A",
+                   "Biyong B",
+                   "Matthes KL")
 ```
 
 
@@ -107,6 +129,13 @@ summ$title <- sapply(summ$title, function(x) {
 })
 ```
 
+```{r}
+## Highlight group members in bold
+summ$authors <- sapply(summ$authors, function(a) {
+  gsub(paste0("(", paste(group_members, collapse = "|"), ")"), "<strong>\\1</strong>", a)
+})
+```
+
 ```{r add_links, message = FALSE, warning = FALSE}
 ## Add column with links to GitHub repos
 summ <- dplyr::left_join(summ, data.frame(pmid_github, stringsAsFactors = FALSE)) %>%
@@ -130,6 +159,13 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
              pages = "", doi = doi, pmid = "", elocationid = "", 
              stringsAsFactors = FALSE)
 }))
+```
+
+```{r}
+## Highlight group members in bold
+biorxiv$authors <- sapply(biorxiv$authors, function(a) {
+  gsub(paste0("(", paste(group_members, collapse = "|"), ")"), "<strong>\\1</strong>", a)
+})
 ```
 
 ```{r add_links_preprints, message = FALSE, warning = FALSE}
