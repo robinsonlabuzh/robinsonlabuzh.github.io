@@ -7,13 +7,13 @@
   description: "Description with markdown links goes here"
 
 - name: Helen Lindsay
-  image: /img/...
+  image: img/
   position: Postdoc
   email: helen.lindsay (at) uzh.ch
   description: "..."
 
 - name: Charlotte Soneson
-  image: /img/charlotte.png
+  image: img/charlotte.png
   position: Postdoc
   email: charlotte.soneson (at) uzh.ch
   twitter: "CSoneson"
@@ -28,7 +28,7 @@
   PhD in Mathematics (2011), Lund University"
 
 - name: Simone Tiberi
-  image: /img/simone.jpg
+  image: img/simone.jpg
   position: Postdoc
   email: simone.tiberi (at) uzh.ch
   webpage: "https://sites.google.com/view/simonetiberi"
@@ -42,7 +42,7 @@
   PhD in Statistics (2017), The University of Warwick"
 
 - name: Helena Lucia Crowell
-  image: /img/helena.png
+  image: img/helena.png
   position: Research Assistant, Master???s Student
   email: crowellh (at) student.ethz.ch
   twitter: "CrowellHL"
@@ -59,7 +59,7 @@
   MSc in Computational Biology & Bioinformatics (present), ETH Zurich"
 
 - name: Vladimir Barbosa C. de Souza
-  image: /img/
+  image: img/
   position: PhD student
   email: vladimir.souza (at) uzh.ch
   description: "I am a PhD candidate in Bioinformatics, and I am working with PacBio data (third-generation sequencing).
@@ -69,7 +69,7 @@
   MSc in Applied Statistics (2015), University of Vicosa"
 
 - name: Katharina Hembach
-  image: /img/
+  image: img/
   position: PhD student
   email: katharina.hembach (at) uzh.ch
   description: "I have a background in bioinformatics and I am a shared PhD student with the Polymenidou lab (http://www.imls.uzh.ch/en/research/polymenidou.html).
@@ -80,7 +80,7 @@
   BSc and MSc in Bioinformatics (...), LMU and TU Munich"
 
 - name: Ruizhu Huang
-  image: /img/fiona.jpg
+  image: img/fiona.jpg
   position: PhD student
   email: ruizhu.huang (at) uzh.ch
   description: "My major research interest is in the development and application of statistical methods in biological data.
@@ -90,7 +90,7 @@
 
 
 - name: Stefan Milosavljevic
-  image: /img/stefan.jpg
+  image: img/stefan.jpg
   position: PhD student
   email: stefan.milosavljevic (at) uzh.ch
   description: "I am a PhD student with a background in biology and bioinformatics.
@@ -102,7 +102,7 @@
   PhD in Evolution (present), University of Zurich"
 
 - name: Stephan Schmeing
-  image: /img/stephan.jpg
+  image: img/stephan.jpg
   position: PhD student
   email: stephan.schmeing (at) uzh.ch
   twitter: "StephanSchmeing"
@@ -113,7 +113,7 @@
   Msc in Astro, Particle and Nuclear physis (2014), TU Munich"
 
 - name: Lukas Weber
-  image: /img/lukas.jpg
+  image: img/lukas.jpg
   position: PhD student
   email: lukas.weber (at) imls.uzh.ch
   twitter: "lmwebr"
@@ -124,7 +124,7 @@
   MSc in Statistics (2014), ETH Zurich"
 
 - name: Stephany Orjuela
-  image: /img/stephany.jpg
+  image: img/stephany.jpg
   position: PhD student
   email: stephany.orjuela (at) uzh.ch
   description: "I have a shared PhD position with the Marra lab (http://www.imcr.uzh.ch/en/research/Marra/Team.html), which focuses on studying the 
@@ -136,13 +136,13 @@
   PhD in Epidemiology and Biostatistics (present), University of Zurich"
 
 - name: Angelo Duo
-  image: /img/
+  image: img/
   position: MSc student
   email:  (at) uzh.ch
   description: ""
 
 - name: Erjia Cui
-  image: /img/erjia.jpg
+  image: img/erjia.jpg
   position: Trainee
   email:  churchillcui (at) gmail.com
   description: "I am a final year Statistics undergraduate student at Zhejiang University, China. My project is to deal with batch effects in mass cytometry.
