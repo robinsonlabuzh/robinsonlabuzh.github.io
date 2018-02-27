@@ -17,7 +17,7 @@ pmid_add <- c("11743205","15761153","23857251","26493315")
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
-biorxiv_dois <- c("10.1101/143289", "10.1101/250126", "10.1101/185744")
+biorxiv_dois <- c("10.1101/185744")
 
 ## github repos
 pmid_github <- rbind(
@@ -134,6 +134,11 @@ summ$title <- sapply(summ$title, function(x) {
 summ$authors <- sapply(summ$authors, function(a) {
   gsub(paste0("(", paste(group_members, collapse = "|"), ")"), "<strong>\\1</strong>", a)
 })
+
+## Remove mistakenly added editor as author
+summ$authors <- sapply(summ$authors, function(a) {
+  gsub(", Bar-Joseph Z", "", a)
+})
 ```
 
 ```{r add_links, message = FALSE, warning = FALSE}
@@ -162,20 +167,24 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
 ```
 
 ```{r}
-## Highlight group members in bold
-biorxiv$authors <- sapply(biorxiv$authors, function(a) {
-  gsub(paste0("(", paste(group_members, collapse = "|"), ")"), "<strong>\\1</strong>", a)
-})
+if (!is.null(biorxiv)) {
+  ## Highlight group members in bold
+  biorxiv$authors <- sapply(biorxiv$authors, function(a) {
+    gsub(paste0("(", paste(group_members, collapse = "|"), ")"), "<strong>\\1</strong>", a)
+  })
+}
 ```
 
 ```{r add_links_preprints, message = FALSE, warning = FALSE}
-## Add column with links to GitHub repos
-biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_github, stringsAsFactors = FALSE)) %>%
-  dplyr::mutate(github = replace(github, is.na(github), ""))
-
-## Add colum with links to software packages
-biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_software, stringsAsFactors = FALSE)) %>%
+if (!is.null(biorxiv)) {
+  ## Add column with links to GitHub repos
+  biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_github, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(github = replace(github, is.na(github), ""))
+  
+  ## Add colum with links to software packages
+  biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_software, stringsAsFactors = FALSE)) %>%
     dplyr::mutate(software = replace(software, is.na(software), ""))
+}
 ```
 
 
@@ -188,15 +197,17 @@ summ <- split(summ, summ$pubyear)
 txt <- "<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>\n\n"
 
 ## Preprints
-txt <- paste0(txt, "\n## Preprints\n\n")
-for (j in seq_len(nrow(biorxiv))) {
-  txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
-                ". bioRxiv doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
-                biorxiv[j, "pubdate"], " ", 
-                ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
-                ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")), 
-                make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
-                "\n\n")
+if (!is.null(biorxiv)) {
+  txt <- paste0(txt, "\n## Preprints\n\n")
+  for (j in seq_len(nrow(biorxiv))) {
+    txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
+                  ". bioRxiv doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
+                  biorxiv[j, "pubdate"], " ", 
+                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")), 
+                  make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
+                  "\n\n")
+  }
 }
 
 ## Publications
