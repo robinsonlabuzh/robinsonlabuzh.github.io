@@ -1,0 +1,31 @@
+---
+output: html_document
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "asis"}
+library(htmltools)
+library(yaml)
+
+mbrs <- yaml.load_file("members.yml")
+positions <- lapply(mbrs, "[[", "position")
+
+
+
+mbr_divs <- lapply(mbrs, function(mbr){
+      mbr_img <- mbr[["image"]]
+
+      new_mbr <- div(
+        tags$h4(mbr[["name"]]),
+        # img directory doesn't start with "/"
+        tags$img(src = gsub("^\\/(.*)","\\1", mbr_img),
+           alt = mbr[["name"]],
+           style = "max-height:100px;max-width:90px;float:left;padding-right:1em;padding-bottom:1em"),
+        div(p(mbr$description)),
+            style="float:right;text-align:justify")
+        new_mbr
+})
+  
+tagList(mbr_divs)
+
+
+```
