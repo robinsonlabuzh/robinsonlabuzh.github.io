@@ -33,9 +33,10 @@ biorxiv_github <- rbind(
 pmid_software <- rbind(
   c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"),
   c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC")
+  c(pmid = "27130213", software = "http://lmweber.github.io/CrispantCal/")
 )
 biorxiv_software <- rbind(
-  c(doi = "", software = "")
+  c(doi = "10.1101/185744", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html")
 )
 
 ## names of members to highlight in publication list

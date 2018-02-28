@@ -20,9 +20,12 @@ mbr_divs <- lapply(mbrs, function(mbr){
         tags$img(src = gsub("^\\/(.*)","\\1", mbr_img),
            alt = mbr[["name"]],
            style = "max-height:100px;max-width:90px;float:left;padding-right:1em;padding-bottom:1em"),
-        div(p(mbr$description)),
-            style="float:right;text-align:justify")
-        new_mbr
+        #div(p(mbr$description)), 
+        p(mbr$description), 
+        p(mbr$education), 
+        style="float:right;text-align:justify"
+      )
+      new_mbr
 })
   
 tagList(mbr_divs)
