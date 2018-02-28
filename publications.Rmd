@@ -29,7 +29,8 @@ biorxiv_github <- rbind(
 
 ## software packages
 pmid_software <- rbind(
-  c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html")
+  c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"), 
+  c(pmid = "27130213", software = "http://lmweber.github.io/CrispantCal/")
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/185744", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html")
