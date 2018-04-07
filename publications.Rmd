@@ -17,7 +17,8 @@ pmid_add <- c("11743205","15761153","23857251","26493315")
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
-biorxiv_dois <- c("10.1101/185744")
+## Should be of the format "10.1101/185744"
+biorxiv_dois <- c()
 
 ## github repos
 pmid_github <- rbind(
@@ -32,11 +33,12 @@ biorxiv_github <- rbind(
 ## software packages
 pmid_software <- rbind(
   c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"),
-  c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC")
-  c(pmid = "27130213", software = "http://lmweber.github.io/CrispantCal/")
+  c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC"),
+  c(pmid = "27130213", software = "http://lmweber.github.io/CrispantCal/"),
+  c(pmid = "29605184", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html")
 )
 biorxiv_software <- rbind(
-  c(doi = "10.1101/185744", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html")
+  c(doi = "", software = "")
 )
 
 ## names of members to highlight in publication list
@@ -51,6 +53,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Schmeing S", "Stephan Schmeing", 
                    "Orjuela S", "Stephany Orjuela", 
                    "Crowell HL", "Crowell H", "Helena L Crowell", "Helena Crowell",
+                   "Mallona I", "Izaskun Mallona",
                    "Duo A", "Angelo Duo", 
                    "Nowicka M", "Malgorzata Nowicka",
                    "Zhou X", "Xiaobei Zhou",
