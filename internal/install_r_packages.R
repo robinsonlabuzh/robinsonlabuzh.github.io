@@ -25,7 +25,7 @@ biocLite(pkgs = c("BSgenome.Hsapiens.UCSC.hg38", "BSgenome.Mmusculus.UCSC.mm10",
 
 biocLite(pkgs = c("pd.yg.s98", "ygs98.db", "genomewidesnp6Crlmm",
                   "pd.genomewidesnp.6", "pd.hugene.1.1.st.v1",
-                  "hugene11sttranscriptcluster.db", "SNPlocs.Hsapiens.dbSNP.20110815",
+                  "hugene11sttranscriptcluster.db", 
                   "IlluminaHumanMethylation450kprobe", "pd.huex.1.0.st.v2"),
          lib = Lib, ask = FALSE)
 
