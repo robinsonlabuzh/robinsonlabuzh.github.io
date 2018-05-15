@@ -47,7 +47,7 @@ biocLite(pkgs = c("tximport", "Rsubread", "edgeR", "DESeq2", "DEXSeq",
                   "pasillaBamSubset", "easyRNASeq", "htSeqTools",
                   "cummeRbund", "QuasR", "DRIMSeq", "derfinder", "derfinderPlot",
                   "sangerseqR", "flipflop", "casper", "deepSNV",
-                  "scater", "scran"),
+                  "scater", "scran", "iSEE"),
          lib = Lib, ask = FALSE)
 
 biocLite(pkgs = c("Repitools", "minfi", "bsseq", "bsseqData", "ChIPpeakAnno",
