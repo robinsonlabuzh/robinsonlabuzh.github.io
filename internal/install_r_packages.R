@@ -1,5 +1,5 @@
 # Author: Keith Satterley (WEHI) originally, modifications from Mark Robinson and others
-# Last Modification: 2018-01-23
+# Last Modification: 2018-05-16
 
 ## Set mirrors to use
 options(BioC_mirror = "http://bioconductor.statistik.tu-dortmund.de",
