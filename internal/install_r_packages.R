@@ -36,7 +36,7 @@ biocLite(pkgs = c("GenomicFeatures", "Rsamtools", "BiocGenerics", "IRanges",
                   "BiocWorkflowTools", "GenomicAlignments", "ensemblVEP",
                   "AnnotationDbi", "AnnotationHub", "ExperimentHub", "BiocParallel",
                   "ensembldb", "MultiAssayExperiment", "SummarizedExperiment",
-                  "SingleCellExperiment"),
+                  "SingleCellExperiment", "SummarizedBenchmark"),
          lib = Lib, ask = FALSE)
 
 ## Analysis packages
@@ -47,7 +47,7 @@ biocLite(pkgs = c("tximport", "Rsubread", "edgeR", "DESeq2", "DEXSeq",
                   "pasillaBamSubset", "easyRNASeq", "htSeqTools",
                   "cummeRbund", "QuasR", "DRIMSeq", "derfinder", "derfinderPlot",
                   "sangerseqR", "flipflop", "casper", "deepSNV",
-                  "scater", "scran", "iSEE"),
+                  "scater", "scran", "iSEE", "Seurat"),
          lib = Lib, ask = FALSE)
 
 biocLite(pkgs = c("Repitools", "minfi", "bsseq", "bsseqData", "ChIPpeakAnno",
