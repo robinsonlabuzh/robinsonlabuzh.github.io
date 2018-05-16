@@ -61,7 +61,7 @@ biocLite(pkgs = c("gplots", "VennDiagram", "GenomeGraphs", "CrispRVariants",
 biocLite(pkgs = c("ROCR", "charm", "iCOBRA", "TEQC", "wateRmelon", "Genominator"),
          lib = Lib, ask = FALSE)
 
-biocLite(pkgs = c("flowCore", "flowViz", "FlowSOM", "cytofkit", "spade",
+biocLite(pkgs = c("flowCore", "flowViz", "FlowSOM", "cytofkit", 
                   "flowUtils"),
          lib = Lib, ask = FALSE)
 
