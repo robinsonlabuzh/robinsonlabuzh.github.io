@@ -55,14 +55,14 @@ biocLite(pkgs = c("Repitools", "minfi", "bsseq", "bsseqData", "ChIPpeakAnno",
          lib = Lib, ask = FALSE)
 
 biocLite(pkgs = c("gplots", "VennDiagram", "GenomeGraphs", "CrispRVariants",
-                  "CoverageView", "ggbio", "Gviz"), 
+                  "CoverageView", "ggbio", "Gviz", "rhdf5"), 
          lib = Lib, ask = FALSE)
 
 biocLite(pkgs = c("ROCR", "charm", "iCOBRA", "TEQC", "wateRmelon", "Genominator"),
          lib = Lib, ask = FALSE)
 
 biocLite(pkgs = c("flowCore", "flowViz", "FlowSOM", "cytofkit", 
-                  "flowUtils"),
+                  "flowUtils", "diffcyt", "HDCytoData", "cydar"),
          lib = Lib, ask = FALSE)
 
 ## aroma.affymetrix and friends
@@ -83,16 +83,16 @@ install.packages(c("devtools", "tibble", "dplyr", "tidyr", "ggplot2", "readr",
                  quiet = TRUE)
 
 install.packages(c("data.table", "readxl", "knitr", "rmarkdown", "xlsx", 
-                   "WriteXLS", "cacheSweave", "RPostgreSQL", "json", "rjson",
-                   "argparse", "stringdist", "rhdf5"),
+                   "WriteXLS", "RPostgreSQL", "rjson",
+                   "argparse", "stringdist"),
                  quiet = TRUE)
 
-install.packages(c("multicore", "doMC", "foreach", "snowfall", "Rcpp"),
+install.packages(c("doMC", "foreach", "snowfall", "Rcpp"),
                  quiet = TRUE)
 
-install.packages(c("mixtools", "Rsolnp", "fastcluster", "RPMM", "pixmap" 
-                   "sp", "quantreg", "R.utils", "lme4", "multcomp", "nibble",
-                   "refGenome", "caTools", "Hmisc"),
+install.packages(c("mixtools", "Rsolnp", "fastcluster", "RPMM", "pixmap", 
+                   "sp", "quantreg", "R.utils", "lme4", "multcomp",
+                   "refGenome", "caTools", "Hmisc", "statmod"),
                  quiet = TRUE)
 
 install.packages("expectile", repos="http://R-Forge.R-project.org")
@@ -100,11 +100,5 @@ install.packages("expectile", repos="http://R-Forge.R-project.org")
 ## INLA
 source("http://www.math.ntnu.no/inla/givemeINLA.R")
 
-## zinba
-system("wget http://zinba.googlecode.com/files/zinba_2.01.tar.gz")
-install.packages("zinba_2.01.tar.gz", repos=NULL)  
 
-## statmod
-system("wget https://cran.r-project.org/src/contrib/statmod_1.4.21.tar.gz")
-install.packages("statmod_1.4.21.tar.gz", repos = NULL)
          
