@@ -22,13 +22,13 @@ For exact information on schedule, registration and location, please refer to th
 
 ### **Upcoming external courses**
 
-* [Advanced RNA-seq analysis](https://www.ebi.ac.uk/training/events/2018/advanced-rna-seq-analysis). Hinxton (UK), April 16-20 2018
 * [CSAMA 2018](http://www-huber.embl.de/csama2018/). Brixen (Italy), July 8-13 2018
 
 ### **Past external courses** 
 
 ###2018
 
+* [Advanced RNA-seq analysis](https://www.ebi.ac.uk/training/events/2018/advanced-rna-seq-analysis). Hinxton (UK), April 16-20 2018
 * [Winter school on Bioinformatics for Adaptation Genomics:](http://www.adaptation.ethz.ch/education/bag-winter-school-2018.html) Weggis (Switzerland) from the 11th to the 17th of February 2018
 
 ###2017
