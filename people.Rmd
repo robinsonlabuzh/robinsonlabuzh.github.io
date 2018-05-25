@@ -2,10 +2,18 @@
 output: html_document
 ---
 
+```{r, include=FALSE}
+# required to use 'Font Awesome' (FA) icons (Website, Twitter, GitHub, etc)
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+
 ```{r, echo=FALSE}
 # Instructions: add one new block of code for each team member.
 # To add custom linebreaks in text sections, type NEWLINE (all upper case). These will be
 # automatically converted to the HTML tag <br> for linebreaks.
+# To add 'Font Awesome' (FA) icons for links to website/Twitter/GitHub, type WEBSITE_ICON,
+# TWITTER_ICON, or GITHUB_ICON. These will be converted into the HTML code for the icons.
 
 tbl_mark <- data.frame(
   img = "![](img/mark.jpg)", 
@@ -55,11 +63,16 @@ tbl_simone <- data.frame(
 tbl_lukas <- data.frame(
   img = "![](img/lukas.jpg)", 
   bio = c("Lukas Weber", 
+          paste0(#"Website WEBSITE_ICON [testing](https://www.google.ch/)NEWLINE", 
+                 "Twitter TWITTER_ICON [\\@lmwebr](https://twitter.com/lmwebr)NEWLINE", 
+                 "GitHub GITHUB_ICON [lmweber](https://github.com/lmweber)"), 
           paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
                  "computational methods for analysis of various types of high-throughput biological data. ", 
-                 "Currently, my main work is on methods for differential discovery in high-dimensional ", 
-                 "single-cell flow and mass cytometry data, for example to detect differentially abundant ", 
-                 "cell populations between healthy and diseased samples."), 
+                 "The main focus of my project is on methods for differential discovery in high-dimensional ", 
+                 "single-cell flow and mass cytometry data. These methods are now available in the ", 
+                 "[diffcyt](http://bioconductor.org/packages/diffcyt) R package from Bioconductor. ", 
+                 "I also enjoy teaching, especially R programming and data analysis skills as an instructor for ", 
+                 "[Software and Data Carpentry](https://carpentries.org/)."), 
           paste0("MSc in Statistics (2014), ETH Zurich"))
 )
 
@@ -211,6 +224,10 @@ for (i in seq_along(tables_all)) {
     gsub('<td style="', '<td style="border:none;', .) %>% 
     # hack to add custom linebreaks (by adding HTML tags <br> for linebreaks)
     gsub("NEWLINE", "<br>", .) %>% 
+    # hacks to include 'Font Awesome' (FA) icons
+    gsub("WEBSITE_ICON", '<i class="fa fa-desktop"></i>', .) %>% 
+    gsub("TWITTER_ICON", '<i class="fa fa-twitter"></i>', .) %>% 
+    gsub("GITHUB_ICON", '<i class="fa fa-github"></i>', .) %>% 
     print
 }
 ```
