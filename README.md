@@ -14,7 +14,37 @@ rmarkdown::render_site(encoding = "UTF-8")
 
 - Then, commit and push everything back to the robinsonlab.github.io repo
 
+### Commiting changes
+
+Please do not pull to master but use a separate branch instead. To do this, run this locally
+
+```
+git checkout master
+git pull
+git checkout -b <new_branch_name>
+```
+
+Edit the files in your machine and then push the changes to GitHub by
+
+```
+git push --set-upstream origin <new_branch_name>
+```
+
+On Github, make a pull request for merging your branch to master (and assign a reviewer).
+
+Once the pull request is merged, it may be a good idea to delete the new branch (it will tell you “it is now safe to delete the new branch”), to avoid branches stacking up in the GitHub repo.
+
+If you are continuing to work on a local branch after someone else has made changes to the GitHub repo master branch, it is often easier to merge the master branch into your local branch before pushing your local branch:
+
+```
+git checkout master
+git pull
+git checkout <your_branch>
+git merge master
+```
+
 ### Adding publications
+
 The publication list (`publications.html`, generated from `publications.Rmd`) is automatically populated when the website is built, by pulling down and reformatting PubMed results for the search `Robinson Mark D[au]`, using the [`rentrez`](https://cran.r-project.org/web/packages/rentrez/index.html) R package. Most of the time the results are correct, but since there are multiple authors named "Mark D Robinson" in the database, the list of publications should occasionally be checked for correctness. 
 
 Also [bioRxiv](https://www.biorxiv.org/) preprints can be included, by explicitly providing the corresponding DOIs. 
