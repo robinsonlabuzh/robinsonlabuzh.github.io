@@ -19,7 +19,6 @@ output: html_document
 
 For exact information on schedule, registration and location, please refer to the official UZH [course catalogue](https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=EN&sap-ui-language=EN)
 
-
 ### **Upcoming external courses**
 
 * [CSAMA 2018](http://www-huber.embl.de/csama2018/). Brixen (Italy), July 8-13 2018
