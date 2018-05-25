@@ -14,9 +14,9 @@ rmarkdown::render_site(encoding = "UTF-8")
 
 - Then, commit and push everything back to the robinsonlab.github.io repo
 
-### Commiting changes
+### Pull requests
 
-Please do not pull to master but use a separate branch instead. To do this, run this locally
+Please do not push to master. To use a separate branch instead you could run this locally
 
 ```
 git checkout master
@@ -24,15 +24,15 @@ git pull
 git checkout -b <new_branch_name>
 ```
 
-Edit the files in your machine and then push the changes to GitHub by
+Edit the files in your machine, add and commit them and then push the changes to GitHub by
 
 ```
 git push --set-upstream origin <new_branch_name>
 ```
 
-On Github, make a pull request for merging your branch to master (and assign a reviewer).
+On Github, make a pull request for merging your branch. Use the dropdown to select the branch your changes should be merged into, e.g. robinsonlabuzh master. You can assign the request to someune typing the username of the assignee at the select input on the right sidebar.
 
-Once the pull request is merged, it may be a good idea to delete the new branch (it will tell you “it is now safe to delete the new branch”), to avoid branches stacking up in the GitHub repo.
+Once the pull request is merged by the assignee, it may be a good idea to delete the new branch (it will tell you “it is now safe to delete the new branch”), to avoid branches stacking up in the GitHub repo.
 
 If you are continuing to work on a local branch after someone else has made changes to the GitHub repo master branch, it is often easier to merge the master branch into your local branch before pushing your local branch:
 
