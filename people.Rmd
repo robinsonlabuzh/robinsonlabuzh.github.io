@@ -15,7 +15,7 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 # - To add 'Font Awesome' (FA) icons for links to websites/Twitter/GitHub/GoogleScholar,
 # type ICON_WEBSITE, ICON_TWITTER, ICON_GITHUB, or ICON_SCHOLAR. These will be converted
 # into the HTML code for the icons.
-# - To add additional FA icons (e.g. LinkedIn), select an icon (e.g. from
+# - To add additional FA icons (e.g. LinkedIn), select an FA icon (e.g. from
 # https://www.w3schools.com/icons/fontawesome_icons_webapp.asp) and add similar code
 # below, including the 'gsub' step at the very end.
 
