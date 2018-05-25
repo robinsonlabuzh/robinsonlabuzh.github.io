@@ -199,7 +199,7 @@ tables_all <- lapply(tables_all, function(tbl) {
 })
 
 # output HTML code using 'kableExtra' package
-# note: loop requires 'results="asis"' in code chunk header, and 'print' command
+# note: loop requires 'results="asis"' in code chunk header, and 'print' command at the end
 for (i in seq_along(tables_all)) {
   kable(tables_all[[i]]) %>% 
     kable_styling(bootstrap_options = "condensed", full_width = FALSE) %>% 
