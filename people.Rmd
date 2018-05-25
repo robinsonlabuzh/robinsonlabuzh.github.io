@@ -12,8 +12,8 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 # Instructions: add one new block of code for each team member.
 # To add custom linebreaks in text sections, type NEWLINE (all upper case). These will be
 # automatically converted to the HTML tag <br> for linebreaks.
-# To add 'Font Awesome' (FA) icons for links to website/Twitter/GitHub, type WEBSITE_ICON,
-# TWITTER_ICON, or GITHUB_ICON. These will be converted into the HTML code for the icons.
+# To add 'Font Awesome' (FA) icons for links to website/Twitter/GitHub, type ICON_WEBSITE,
+# ICON_TWITTER, or ICON_GITHUB. These will be converted into the HTML code for the icons.
 # To add additional FA icons (e.g. LinkedIn), select an icon from the FA website and add
 # similar code below (including the 'gsub' step at the very end.)
 
@@ -65,9 +65,9 @@ tbl_simone <- data.frame(
 tbl_lukas <- data.frame(
   img = "![](img/lukas.jpg)", 
   bio = c("Lukas Weber", 
-          paste0(#"Website WEBSITE_ICON [testing](https://www.google.ch/)NEWLINE", 
-                 "Twitter TWITTER_ICON [\\@lmwebr](https://twitter.com/lmwebr)NEWLINE", 
-                 "GitHub GITHUB_ICON [lmweber](https://github.com/lmweber)"), 
+          paste0(#"Website ICON_WEBSITE [testing](https://www.google.ch/)NEWLINE", 
+                 "Twitter ICON_TWITTER [\\@lmwebr](https://twitter.com/lmwebr)NEWLINE", 
+                 "GitHub ICON_GITHUB [lmweber](https://github.com/lmweber)"), 
           paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
                  "computational methods for analysis of various types of high-throughput biological data. ", 
                  "The main focus of my project is on methods for differential discovery in high-dimensional ", 
@@ -227,9 +227,9 @@ for (i in seq_along(tables_all)) {
     # hack to add custom linebreaks (by adding HTML tags <br> for linebreaks)
     gsub("NEWLINE", "<br>", .) %>% 
     # hacks to include 'Font Awesome' (FA) icons
-    gsub("WEBSITE_ICON", '<i class="fa fa-desktop"></i>', .) %>% 
-    gsub("TWITTER_ICON", '<i class="fa fa-twitter"></i>', .) %>% 
-    gsub("GITHUB_ICON", '<i class="fa fa-github"></i>', .) %>% 
+    gsub("ICON_WEBSITE", '<i class="fa fa-desktop"></i>', .) %>% 
+    gsub("ICON_TWITTER", '<i class="fa fa-twitter"></i>', .) %>% 
+    gsub("ICON_GITHUB", '<i class="fa fa-github"></i>', .) %>% 
     print
 }
 ```
