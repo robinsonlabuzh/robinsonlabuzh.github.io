@@ -10,12 +10,14 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 ```{r, echo=FALSE}
 # Instructions: add one new block of code for each team member.
-# To add custom linebreaks in text sections, type NEWLINE (all upper case). These will be
-# automatically converted to the HTML tag <br> for linebreaks.
-# To add 'Font Awesome' (FA) icons for links to website/Twitter/GitHub, type ICON_WEBSITE,
-# ICON_TWITTER, or ICON_GITHUB. These will be converted into the HTML code for the icons.
-# To add additional FA icons (e.g. LinkedIn), select an icon from the FA website and add
-# similar code below (including the 'gsub' step at the very end.)
+# - To add custom linebreaks in text sections, type NEWLINE (all upper case). These will
+# be automatically converted to the HTML tag <br> for linebreaks.
+# - To add 'Font Awesome' (FA) icons for links to websites/Twitter/GitHub/GoogleScholar,
+# type ICON_WEBSITE, ICON_TWITTER, ICON_GITHUB, or ICON_SCHOLAR. These will be converted
+# into the HTML code for the icons.
+# - To add additional FA icons (e.g. LinkedIn), select an icon (e.g. from
+# https://www.w3schools.com/icons/fontawesome_icons_webapp.asp) and add similar code
+# below, including the 'gsub' step at the very end.
 
 tbl_mark <- data.frame(
   img = "![](img/mark.jpg)", 
@@ -67,7 +69,8 @@ tbl_lukas <- data.frame(
   bio = c("Lukas Weber", 
           paste0(#"Website ICON_WEBSITE [testing](https://www.google.ch/)NEWLINE", 
                  "Twitter ICON_TWITTER [\\@lmwebr](https://twitter.com/lmwebr)NEWLINE", 
-                 "GitHub ICON_GITHUB [lmweber](https://github.com/lmweber)"), 
+                 "GitHub ICON_GITHUB [lmweber](https://github.com/lmweber)NEWLINE", 
+                 "Google Scholar ICON_SCHOLAR [link](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)"), 
           paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
                  "computational methods for analysis of various types of high-throughput biological data. ", 
                  "The main focus of my project is on methods for differential discovery in high-dimensional ", 
@@ -230,6 +233,7 @@ for (i in seq_along(tables_all)) {
     gsub("ICON_WEBSITE", '<i class="fa fa-desktop"></i>', .) %>% 
     gsub("ICON_TWITTER", '<i class="fa fa-twitter"></i>', .) %>% 
     gsub("ICON_GITHUB", '<i class="fa fa-github"></i>', .) %>% 
+    gsub("ICON_SCHOLAR", '<i class="fa fa-newspaper-o"></i>', .) %>% 
     print
 }
 ```
