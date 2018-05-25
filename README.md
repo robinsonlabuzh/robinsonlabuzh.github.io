@@ -26,7 +26,7 @@ git pull
 git checkout -b <new_branch_name>
 ```
 
-To create the branch on GitHub, click on the branch selector menu and type a unique name into the text box, and click enter. Then pull the repository from GitHub to your computer. 
+To create the branch on GitHub, click on the branch selector menu and type a unique name into the text box, and click enter. Then pull the repository from GitHub to your computer (or, if the changes are minor, files can be edited directly on the github website by clicking on the pencil button [edit this file]). 
 
 After making a new branch, make the necessary changes to the files on your local machine, add them to the index and commit them, and then push your new branch to GitHub. If you have created the branch locally, you need to set the remote accordingly, as follows: 
 
@@ -36,7 +36,7 @@ git push --set-upstream origin <new_branch_name>
 
 After pushing your changes to your branch, go to the GitHub repository and create a pull request (you will see a yellow ribbon on the top of the page, indicating that new changes has been made to the branch you just pushed - click on the green button to create a pull request. Alternatively, go to the Pull requests tab and create a new pull request). Make sure that you select the right base fork (robinsonlabuzh/robinsonlabuzh.github.io) and branch (master) to send the pull request to. After selecting this, assign a reviewer. This is done in the right-side panel of the pull request page (click on the little wheel next to "Reviewers"). Select someone that is well suited to review your changes. This person will receive an e-mail with the invitation to review your pull request. Once you have done this, you are done, and you need to wait for the reviewer to check your changes and merge the pull request into the master branch. You will get an email confirmation if the reviewer comments on the pull request, or merges it. 
 
-If you are invited to review someone else's pull request, take some time to go through the modifications and ensure that they are reasonable. You can pull down the changes and make additional modifications, and then push them back to the same branch. When you are satisfied, merge the pull request. After merging the pull request, delete the new branch (you will get a message saying that "it is now safe to delete the new branch"), to avoid branches stacking up in the GitHub repo.
+If you are invited to review someone else's pull request, take some time to go through the modifications and ensure that they are reasonable. You can pull down the changes and make additional modifications, and then push them back to the same branch. When you are satisfied (and this may require discussion with the person submitting the PR), merge the pull request. After merging the pull request, delete the new branch (you will get a message saying that "it is now safe to delete the new branch"), to avoid branches stacking up in the GitHub repo.
 
 If you are continuing to work on a local branch after someone else has made changes to the GitHub repo master branch, it is often easier to merge the master branch into your local branch before pushing your local branch to GitHub, and resolve any merge conflicts locally:
 
