@@ -207,7 +207,7 @@ for (i in seq_along(tables_all)) {
     column_spec(column = 2, width = "20cm") %>% 
     row_spec(row = 1, bold = TRUE, font_size = 16) %>% 
     collapse_rows(columns = 1:2, valign = "top") %>% 
-    # hack to remove rows between table cells (by adding additional options to HTML code for table cells)
+    # hack to remove row borders between table cells (by adding additional options to HTML code for table cells)
     gsub('<td style="', '<td style="border:none;', .) %>% 
     # hack to add custom linebreaks (by adding HTML tags <br> for linebreaks)
     gsub("NEWLINE", "<br>", .) %>% 
