@@ -2,33 +2,217 @@
 output: html_document
 ---
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE, results = "asis"}
-library(htmltools)
-library(yaml)
+```{r, echo=FALSE}
+# Instructions: add one new block of code for each team member.
+# To add custom linebreaks in text sections, type NEWLINE (all upper case). These will be
+# automatically converted to the HTML tag <br> for linebreaks.
 
-mbrs <- yaml.load_file("members.yml")
-positions <- lapply(mbrs, "[[", "position")
+tbl_mark <- data.frame(
+  img = "![](img/mark.jpg)", 
+  bio = c("Mark Robinson", 
+          paste0("Text text text text text text text text text text text text text text ", 
+                 "text text text text text text text text text text text text text "), 
+          paste0("More text (e.g. qualifications)NEWLINE", 
+                 "More text"))
+)
 
+tbl_helen <- data.frame(
+  img = "![](img/helen.jpg)", 
+  bio = c("Helen Lindsay", 
+          paste0("Text text text text text text text text text text text text text text ", 
+                 "text text text text text text text text text text text text text "), 
+          paste0("More text (e.g. qualifications)NEWLINE", 
+                 "More text"))
+)
 
+tbl_charlotte <- data.frame(
+  img = "![](img/charlotte.png)", 
+  bio = c("Charlotte Soneson", 
+          paste0("As a postdoctoral research associate, one of my main interests is the ", 
+                 "development and improvement of statistical methods and workflows, currently mainly ", 
+                 "in the field of RNA-seq. I am also interested in the process of evaluating and ", 
+                 "comparing methods in an objective, robust and reproducible manner."), 
+          paste0("PhD in Mathematics (2011), Lund UniversityNEWLINE", 
+                 "MSc in Engineering Physics (2005), Lund University"))
+)
 
-mbr_divs <- lapply(mbrs, function(mbr){
-      mbr_img <- mbr[["image"]]
+tbl_simone <- data.frame(
+  img = "![](img/simone.jpg)", 
+  bio = c("Simone Tiberi", 
+          paste0("I am a postdoctoral research associate working on the development of cutting-edge ", 
+                 "statistical methods for RNA-seq data. In particular, I am currently focusing on a ", 
+                 "Bayesian hierarchical model to detect genes showing differential transcript usage (DTU); ", 
+                 "the method accounts for the subject-to-subject variability in the transcripts ", 
+                 "proportions and for the uncertainty in the allocation of each fragment to the ", 
+                 "corresponding transcript, which is treated as a latent variable. In general terms, ", 
+                 "my interests are quite broad and lie in the development of statistical methods for ", 
+                 "applications in the medical and biological fields."), 
+          paste0("PhD in Statistics (2017), The University of WarwickNEWLINE", 
+                 "MSc in Statistics (2012), The University of PaduaNEWLINE", 
+                 "BSc in Statistics (2010), Sapienza University of Rome"))
+)
 
-      new_mbr <- div(
-        tags$h4(mbr[["name"]]),
-        # img directory doesn't start with "/"
-        tags$img(src = gsub("^\\/(.*)","\\1", mbr_img),
-           alt = mbr[["name"]],
-           style = "max-height:100px;max-width:90px;float:left;padding-right:1em;padding-bottom:1em"),
-        #div(p(mbr$description)), 
-        p(mbr$description), 
-        p(mbr$education), 
-        style="float:right;text-align:justify"
-      )
-      new_mbr
-})
-  
-tagList(mbr_divs)
+tbl_lukas <- data.frame(
+  img = "![](img/lukas.jpg)", 
+  bio = c("Lukas Weber", 
+          paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
+                 "computational methods for analysis of various types of high-throughput biological data. ", 
+                 "Currently, my main work is on methods for differential discovery in high-dimensional ", 
+                 "single-cell flow and mass cytometry data, for example to detect differentially abundant ", 
+                 "cell populations between healthy and diseased samples."), 
+          paste0("MSc in Statistics (2014), ETH Zurich"))
+)
 
+tbl_kathi <- data.frame(
+  img = "", 
+  bio = c("Katharina Hembach", 
+          paste0("I have a background in bioinformatics and I am a shared PhD student with the ", 
+                 "[Polymenidou lab](http://www.imls.uzh.ch/en/research/polymenidou.html). ", 
+                 "They focus on understanding the ", 
+                 "molecular mechanisms of neurodegenerative diseases such as Amyotrophic Lateral Sclerosis (ALS) ", 
+                 "and Frontotemporal Lobar Degeneration (FTLD). I help with the analysis and interpretation of ", 
+                 "different sequencing data, such as RNA-seq, CLIP-seq, and iCLIP. My main project is the ", 
+                 "development of a pipeline for the identification and quantification of alternative splicing events, ", 
+                 "specifically microexons and cryptic exons, from RNA-seq data."), 
+          paste0("BSc and MSc in Bioinformatics, LMU and TU Munich"))
+)
 
+tbl_stephan <- data.frame(
+  img = "![](img/stephan.jpg)", 
+  bio = c("Stephan Schmeing", 
+          paste0("As a PhD student coming from a particle physics background I am currently working ", 
+                 "on a more realistic Illumina sequence simulator called ReSequencer. It is able to ", 
+                 "create a profile from a bam file that is then used to simulated paired-read fastq files. ", 
+                 "Furthermore I will work on an assembly and population genomics of the Indo-Pacific ", 
+                 "bottlenose dolphin (tursiops aduncus)."), 
+          paste0("MSc in Astro, Particle and Nuclear physis (2014), TU MunichNEWLINE", 
+                 "BSc in Physics (2011), TU Munich"))
+)
+
+tbl_fiona <- data.frame(
+  img = "![](img/fiona.jpg)", 
+  bio = c("Ruizhu Huang", 
+          paste0("My major research interest is in the development and application of statistical ", 
+                 "methods in biological data. Currently, I am working on the project about tree ", 
+                 "signal aggregation."), 
+          paste0("MSc in Biostatistics (2015), University of ZurichNEWLINE", 
+                 "BSc in Applied Chemsitry (2010), Wuhan University"))
+)
+
+tbl_vladimir <- data.frame(
+  img = "", 
+  bio = c("Vladimir Barbosa C. de Souza", 
+          paste0("I am a PhD candidate in Bioinformatics, and I am working with PacBio data ", 
+                 "(third-generation sequencing). As there is just few documentation about the data, ", 
+                 "one of the focus of my research is to figure out their features, mainly about quality ", 
+                 "scores. At the moment I am working on a project to develop a new fast and accurate ", 
+                 "method to create CCS reads (circular consensus sequences)."), 
+          paste0("MSc in Applied Statistics (2015), University of VicosaNEWLINE", 
+                 "BSc in Biology, specialization Genetics (2013), University of Vicosa"))
+)
+
+tbl_stephany <- data.frame(
+  img = "![](img/stephany.jpg)", 
+  bio = c("Stephany Orjuela", 
+          paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ", 
+                 "which focuses on studying the molecular mechanisms underlying the development ", 
+                 "and progression of Colorectal Cancer. Most of my work focuses on analyzing and ", 
+                 "developing methods to process methylation data obtained from BS-seq, although I also ", 
+                 "work with RNA-seq. I am currently developing a method to identify allele specific methylation. ", 
+                 "I am also in the early stages of developing a method to integrate RNA-seq and BS-seq data."), 
+          paste0("MSc in Biology (2017), University of ZurichNEWLINE", 
+                 "BSc in Biology (2015), Universidad Nacional de Colombia"))
+)
+
+tbl_stefan <- data.frame(
+  img = "![](img/stefan.jpg)", 
+  bio = c("Stefan Milosavljevic", 
+          paste0("I am a PhD student with a background in biology and bioinformatics. I am currently ", 
+                 "working on the rapid evolution of a plant species called Arabidopsis kamchatica. ", 
+                 "My project focuses on epigenetic modifications over short timescales and my general ", 
+                 "aim is to assess the impact and the importance of DNA methylation in evolution over ", 
+                 "short periods (rapid evolution)."), 
+          paste0("MSc in Computational Biology and Bioinformatics (2015), ETH Zurich and University of ZurichNEWLINE", 
+                 "BSc in Biology (2013), Université de Lausanne"))
+)
+
+tbl_helena <- data.frame(
+  img = "![](img/helena.png)", 
+  bio = c("Helena Lucia Crowell", 
+          paste0("In collaboration with the [Bodenmiller lab]('http://www.bodenmillerlab.com') lab, ", 
+                 "I have worked on correcting for spillover ", 
+                 "in CyTOF data. The preprint to this project is available on [bioRxiv]('https://doi.org/10.1101/185744') ", 
+                 "and is awaiting publication. Alongside our compensation approach, I have made Finck et al.'s ", 
+                 "[bead-based normalization]('https://doi.org/10.1002/cyto.a.22271') and Zunder et al.'s ", 
+                 "[single-cell deconvolution]('https://doi.org/10.1038/nprot.2015.020') available in ", 
+                 "[CATALYST]('https://bioconductor.org/packages/release/bioc/html/CATALYST.html') ", 
+                 "(**C**ytometry d**AT**a an**ALYS**is **T**ools): a [Bioconductor]('https://bioconductor.org') package ", 
+                 "providing tools for preprocessing and analysis of cytometry data. Currently, I am working ", 
+                 "on integrating M. Nowicka's [CyTOF workflow]('https://f1000research.com/articles/6-748/v1') ", 
+                 "for differential analysis into CATALYST. My Masters ", 
+                 "thesis project is predicated on the benchmarking of (non-)branching trajectory inference ", 
+                 "tools for scRNA-seq and cytometry data."), 
+          paste0("MSc in Computational Biology & Bioinformatics (present), ETH ZurichNEWLINE", 
+                 "BSc in Biochemistry (2015), University of Heidelberg"))
+)
+
+tbl_angelo <- data.frame(
+  img = "", 
+  bio = c("Angelo Duo", 
+          paste0("Text here"), 
+          "More text here")
+)
 ```
+
+
+```{r, echo=FALSE}
+# combine all in list (re-order here as appropriate, e.g. by seniority)
+tables_all <- list(
+  tbl_mark, 
+  tbl_helen, 
+  tbl_charlotte, 
+  tbl_simone, 
+  tbl_lukas, 
+  tbl_kathi, 
+  tbl_stephan, 
+  tbl_fiona, 
+  tbl_vladimir, 
+  tbl_stephany, 
+  tbl_stefan, 
+  tbl_helena, 
+  tbl_angelo
+)
+```
+
+
+```{r, echo=FALSE, message=FALSE, results="asis"}
+# R code to output HTML code
+
+library(knitr)
+library(kableExtra)
+library(magrittr)
+
+# remove column names
+tables_all <- lapply(tables_all, function(tbl) {
+  colnames(tbl) <- NULL
+  tbl
+})
+
+# output HTML code using 'kableExtra' package
+# note: loop requires 'results="asis"' in code chunk header, and 'print' command
+for (i in seq_along(tables_all)) {
+  kable(tables_all[[i]]) %>% 
+    kable_styling(bootstrap_options = "condensed", full_width = FALSE) %>% 
+    column_spec(column = 1, width = "3cm") %>% 
+    column_spec(column = 2, width = "20cm") %>% 
+    row_spec(row = 1, bold = TRUE, font_size = 16) %>% 
+    collapse_rows(columns = 1:2, valign = "top") %>% 
+    # hack to remove rows between table cells (by adding additional options to HTML code for table cells)
+    gsub('<td style="', '<td style="border:none;', .) %>% 
+    # hack to add custom linebreaks (by adding HTML tags <br> for linebreaks)
+    gsub("NEWLINE", "<br>", .) %>% 
+    print
+}
+```
+
+
