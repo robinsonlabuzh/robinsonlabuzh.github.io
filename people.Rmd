@@ -14,6 +14,8 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 # automatically converted to the HTML tag <br> for linebreaks.
 # To add 'Font Awesome' (FA) icons for links to website/Twitter/GitHub, type WEBSITE_ICON,
 # TWITTER_ICON, or GITHUB_ICON. These will be converted into the HTML code for the icons.
+# To add additional FA icons (e.g. LinkedIn), select an icon from the FA website and add
+# similar code below (including the 'gsub' step at the very end.)
 
 tbl_mark <- data.frame(
   img = "![](img/mark.jpg)", 
