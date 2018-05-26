@@ -223,7 +223,7 @@ for (i in seq_along(tables_all)) {
     kable_styling(bootstrap_options = "condensed", full_width = FALSE) %>% 
     column_spec(column = 1, width = "3cm") %>% 
     column_spec(column = 2, width = "20cm") %>% 
-    row_spec(row = 1, bold = TRUE, font_size = 16) %>% 
+    row_spec(row = 1, bold = TRUE, font_size = 18) %>% 
     collapse_rows(columns = 1, valign = "top") %>% 
     # hack to remove row borders between table cells (by adding additional options to HTML code for table cells)
     gsub('<td style="', '<td style="border:none;', .) %>% 
