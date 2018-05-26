@@ -9,22 +9,23 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 
 ```{r, echo=FALSE}
-# Instructions: add one new block of code for each team member.
-# - To add custom linebreaks in text sections, type __NEWLINE. These will be automatically
-# converted to the HTML tag <br> for linebreaks.
-# - To add 'Font Awesome' (FA) icons for links to websites/Twitter/GitHub/GoogleScholar,
-# type __ICON_WEBSITE, __ICON_TWITTER, __ICON_GITHUB, or __ICON_SCHOLAR. These will be
-# converted into the HTML code for the icons.
-# - To add additional FA icons (e.g. LinkedIn), select an FA icon (e.g. from
-# https://www.w3schools.com/icons/fontawesome_icons_webapp.asp) and add similar code
-# below, including the 'gsub' step at the very end.
+# Instructions:
+# - Add one new block of code for each team member.
+# - To add custom linebreaks in text sections, use the HTML tag <br> for linebreaks.
+# - To add 'Font Awesome' (FA) icons, you can use the following HTML code and suggested icons:
+#     Website: <i class='fa fa-desktop'></i>
+#     Twitter: <i class='fa fa-twitter'></i>
+#     GitHub:  <i class='fa fa-github'></i>
+#     Google Scholar: <i class='fa fa-newspaper-o'></i>
+# - For additional icons (e.g. LinkedIn), see the following website:
+# https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
 
 tbl_mark <- data.frame(
   img = "![](img/mark.jpg)", 
   bio = c("Mark Robinson", 
           paste0("Text text text text text text text text text text text text text text ", 
                  "text text text text text text text text text text text text text "), 
-          paste0("More text (e.g. qualifications)__NEWLINE", 
+          paste0("More text (e.g. qualifications)<br>", 
                  "More text"))
 )
 
@@ -33,7 +34,7 @@ tbl_helen <- data.frame(
   bio = c("Helen Lindsay", 
           paste0("Text text text text text text text text text text text text text text ", 
                  "text text text text text text text text text text text text text "), 
-          paste0("More text (e.g. qualifications)__NEWLINE", 
+          paste0("More text (e.g. qualifications)<br>", 
                  "More text"))
 )
 
@@ -44,7 +45,7 @@ tbl_charlotte <- data.frame(
                  "development and improvement of statistical methods and workflows, currently mainly ", 
                  "in the field of RNA-seq. I am also interested in the process of evaluating and ", 
                  "comparing methods in an objective, robust and reproducible manner."), 
-          paste0("PhD in Mathematics (2011), Lund University__NEWLINE", 
+          paste0("PhD in Mathematics (2011), Lund University<br>", 
                  "MSc in Engineering Physics (2005), Lund University"))
 )
 
@@ -59,18 +60,18 @@ tbl_simone <- data.frame(
                  "corresponding transcript, which is treated as a latent variable. In general terms, ", 
                  "my interests are quite broad and lie in the development of statistical methods for ", 
                  "applications in the medical and biological fields."), 
-          paste0("PhD in Statistics (2017), The University of Warwick__NEWLINE", 
-                 "MSc in Statistics (2012), The University of Padua__NEWLINE", 
+          paste0("PhD in Statistics (2017), The University of Warwick<br>", 
+                 "MSc in Statistics (2012), The University of Padua<br>", 
                  "BSc in Statistics (2010), Sapienza University of Rome"))
 )
 
 tbl_lukas <- data.frame(
   img = "![](img/lukas.jpg)", 
   bio = c("Lukas Weber", 
-          paste0(#"[Website](https://www.google.ch/) __ICON_WEBSITE__NEWLINE", 
-                 "Twitter __ICON_TWITTER [\\@lmwebr](https://twitter.com/lmwebr)__NEWLINE", 
-                 "GitHub __ICON_GITHUB [lmweber](https://github.com/lmweber)__NEWLINE", 
-                 "[Google Scholar](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ) __ICON_SCHOLAR"), 
+          paste0("<i class='fa fa-desktop'></i> [Website](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)<br>", 
+                 "<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [lmweber](https://github.com/lmweber)<br>", 
+                 "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)"), 
           paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
                  "computational methods for analysis of various types of high-throughput biological data. ", 
                  "The main focus of my project is on methods for differential discovery in high-dimensional ", 
@@ -103,7 +104,7 @@ tbl_stephan <- data.frame(
                  "create a profile from a bam file that is then used to simulated paired-read fastq files. ", 
                  "Furthermore I will work on an assembly and population genomics of the Indo-Pacific ", 
                  "bottlenose dolphin (tursiops aduncus)."), 
-          paste0("MSc in Astro, Particle and Nuclear physis (2014), TU Munich__NEWLINE", 
+          paste0("MSc in Astro, Particle and Nuclear physis (2014), TU Munich<br>", 
                  "BSc in Physics (2011), TU Munich"))
 )
 
@@ -113,7 +114,7 @@ tbl_fiona <- data.frame(
           paste0("My major research interest is in the development and application of statistical ", 
                  "methods in biological data. Currently, I am working on the project about tree ", 
                  "signal aggregation."), 
-          paste0("MSc in Biostatistics (2015), University of Zurich__NEWLINE", 
+          paste0("MSc in Biostatistics (2015), University of Zurich<br>", 
                  "BSc in Applied Chemsitry (2010), Wuhan University"))
 )
 
@@ -125,7 +126,7 @@ tbl_vladimir <- data.frame(
                  "one of the focus of my research is to figure out their features, mainly about quality ", 
                  "scores. At the moment I am working on a project to develop a new fast and accurate ", 
                  "method to create CCS reads (circular consensus sequences)."), 
-          paste0("MSc in Applied Statistics (2015), University of Vicosa__NEWLINE", 
+          paste0("MSc in Applied Statistics (2015), University of Vicosa<br>", 
                  "BSc in Biology, specialization Genetics (2013), University of Vicosa"))
 )
 
@@ -138,7 +139,7 @@ tbl_stephany <- data.frame(
                  "developing methods to process methylation data obtained from BS-seq, although I also ", 
                  "work with RNA-seq. I am currently developing a method to identify allele specific methylation. ", 
                  "I am also in the early stages of developing a method to integrate RNA-seq and BS-seq data."), 
-          paste0("MSc in Biology (2017), University of Zurich__NEWLINE", 
+          paste0("MSc in Biology (2017), University of Zurich<br>", 
                  "BSc in Biology (2015), Universidad Nacional de Colombia"))
 )
 
@@ -150,7 +151,7 @@ tbl_stefan <- data.frame(
                  "My project focuses on epigenetic modifications over short timescales and my general ", 
                  "aim is to assess the impact and the importance of DNA methylation in evolution over ", 
                  "short periods (rapid evolution)."), 
-          paste0("MSc in Computational Biology and Bioinformatics (2015), ETH Zurich and University of Zurich__NEWLINE", 
+          paste0("MSc in Computational Biology and Bioinformatics (2015), ETH Zurich and University of Zurich<br>", 
                  "BSc in Biology (2013), Université de Lausanne"))
 )
 
@@ -170,7 +171,7 @@ tbl_helena <- data.frame(
                  "for differential analysis into CATALYST. My Masters ", 
                  "thesis project is predicated on the benchmarking of (non-)branching trajectory inference ", 
                  "tools for scRNA-seq and cytometry data."), 
-          paste0("MSc in Computational Biology & Bioinformatics (present), ETH Zurich__NEWLINE", 
+          paste0("MSc in Computational Biology & Bioinformatics (present), ETH Zurich<br>", 
                  "BSc in Biochemistry (2015), University of Heidelberg"))
 )
 
@@ -219,7 +220,7 @@ tables_all <- lapply(tables_all, function(tbl) {
 # output HTML code using 'kableExtra' package
 # note: loop requires 'results="asis"' in code chunk header, and 'print' command at the end
 for (i in seq_along(tables_all)) {
-  kable(tables_all[[i]]) %>% 
+  kable(tables_all[[i]], escape = FALSE) %>% 
     kable_styling(bootstrap_options = "condensed", full_width = FALSE) %>% 
     column_spec(column = 1, width = "3cm") %>% 
     column_spec(column = 2, width = "20cm") %>% 
@@ -227,13 +228,6 @@ for (i in seq_along(tables_all)) {
     collapse_rows(columns = 1, valign = "top") %>% 
     # hack to remove row borders between table cells (by adding additional options to HTML code for table cells)
     gsub('<td style="', '<td style="border:none;', .) %>% 
-    # hack to add custom linebreaks (by adding HTML tags <br> for linebreaks)
-    gsub("__NEWLINE", "<br>", .) %>% 
-    # hacks to include 'Font Awesome' (FA) icons
-    gsub("__ICON_WEBSITE", '<i class="fa fa-desktop"></i>', .) %>% 
-    gsub("__ICON_TWITTER", '<i class="fa fa-twitter"></i>', .) %>% 
-    gsub("__ICON_GITHUB", '<i class="fa fa-github"></i>', .) %>% 
-    gsub("__ICON_SCHOLAR", '<i class="fa fa-newspaper-o"></i>', .) %>% 
     print
 }
 ```
