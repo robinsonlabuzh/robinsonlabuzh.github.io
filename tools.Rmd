@@ -15,6 +15,7 @@ Name      | Author(s)               | Description
 [DRIMSeq](http://bioconductor.org/packages/release/bioc/html/DRIMSeq.html) | **Malgorzata Nowicka** | Differential transcript usage and tuQTL analyses<br>with Dirichlet-multinomial model in RNA-seq
 [edgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) | Yunshun Chen<br>Aaron Lun<br>Davis McCarthy<br>**Xiaobei Zhou**<br>**Mark D Robinson**<br>Gordon Smyth | Empirical Analysis of Digital Gene Expression Data in R
 [flagme](http://bioconductor.org/packages/release/bioc/html/flagme.html) | **Mark D Robinson**<br>Riccardo Romoli | Analysis of Metabolomics GC/MS Data
+[HDCytoData](http://bioconductor.org/packages/release/data/experiment/html/HDCytoData.html) | **Lukas M Weber**<br>**Charlotte Soneson** | Data package of high-dimensional cytometry data sets in<br>SummarizedExperiment and flowSet formats
 [iCOBRA](http://bioconductor.org/packages/release/bioc/html/iCOBRA.html) | **Charlotte Soneson** | Comparison and Visualization of Ranking and Assignment Methods
 [iSEE](http://bioconductor.org/packages/release/bioc/html/iSEE.html) | **Charlotte Soneson**<br>Aaron Lun<br>Federico Marini<br>Kevin Rue-Albrecht | Interactive SummarizedExperiment Explorer
 [regsplice](http://bioconductor.org/packages/release/bioc/html/regsplice.html) | **Lukas M Weber** | L1-regularization based methods for detection of differential splicing
