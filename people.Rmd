@@ -67,7 +67,7 @@ tbl_simone <- data.frame(
 tbl_lukas <- data.frame(
   img = "![](img/lukas.jpg)", 
   bio = c("Lukas Weber", 
-          paste0(#"Website ICON_WEBSITE [testing](https://www.google.ch/)NEWLINE", 
+          paste0(#"Website ICON_WEBSITE [link](https://www.google.ch/)NEWLINE", 
                  "Twitter ICON_TWITTER [\\@lmwebr](https://twitter.com/lmwebr)NEWLINE", 
                  "GitHub ICON_GITHUB [lmweber](https://github.com/lmweber)NEWLINE", 
                  "Google Scholar ICON_SCHOLAR [link](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)"), 
