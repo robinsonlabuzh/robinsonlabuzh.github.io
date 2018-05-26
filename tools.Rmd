@@ -11,6 +11,7 @@ Name      | Author(s)               | Description
 [CATALYST](http://bioconductor.org/packages/release/bioc/html/CATALYST.html) | **Helena L Crowell**<br>**Mark D Robinson**<br>Vito RT Zanotelli<br>Stéphane Chevrier<br>Bernd Bodenmiller | Tools for preprocessing of cytometry data including<br>normalization, debarcoding, and compensation
 [countsimQC](https://github.com/csoneson/countsimQC) | **Charlotte Soneson** | Comparison of characteristic features of count data sets
 [CrispRVariants](http://bioconductor.org/packages/release/bioc/html/CrispRVariants.html) | **Helen Lindsay** | Tools for counting and visualising mutations in a target location
+[diffcyt](http://bioconductor.org/packages/release/bioc/html/diffcyt.html) | **Lukas M Weber** | Statistical methods for differential discovery<br>in high-dimensional cytometry data
 [DRIMSeq](http://bioconductor.org/packages/release/bioc/html/DRIMSeq.html) | **Malgorzata Nowicka** | Differential transcript usage and tuQTL analyses<br>with Dirichlet-multinomial model in RNA-seq
 [edgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) | Yunshun Chen<br>Aaron Lun<br>Davis McCarthy<br>**Xiaobei Zhou**<br>**Mark D Robinson**<br>Gordon Smyth | Empirical Analysis of Digital Gene Expression Data in R
 [flagme](http://bioconductor.org/packages/release/bioc/html/flagme.html) | **Mark D Robinson**<br>Riccardo Romoli | Analysis of Metabolomics GC/MS Data
@@ -26,3 +27,4 @@ Name      | Author(s)     | Description
 [conquer](http://imlspenticton.uzh.ch:3838/conquer/) | **Charlotte Soneson** | Repository providing consistently processed<br>public single-cell RNA-seq data sets
 [CrispantCal](http://lmweber.github.io/CrispantCal/) | **Lukas M Weber** | R/Shiny web app to calculate injection mix volumes<br>for CRISPR-Cas9 experiments
 [CrispRVariantsLite](http://imlspenticton.uzh.ch:3838/CrispRVariantsLite/) | **Helen Lindsay** | Graphical user interface to the R/Bioconductor CrispRVariants package
+[iSEE](http://bioconductor.org/packages/release/bioc/html/iSEE.html) | **Charlotte Soneson**<br>Aaron Lun<br>Federico Marini<br>Kevin Rue-Albrecht | Interactive SummarizedExperiment Explorer
