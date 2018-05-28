@@ -1,0 +1,73 @@
+---
+title: "News"
+output: html_document
+---
+
+```{r, include=FALSE}
+# required to use 'Font Awesome' (FA) icons (Website, Twitter, GitHub, etc)
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+
+```{r, echo=FALSE}
+# Instructions:
+# - Add a new row to the dataframe tbl_news for each entry. The output order is defined by the date from newest to oldest.
+# - To add custom linebreaks in text sections, use the HTML tag <br> for linebreaks.
+# - To add 'Font Awesome' (FA) icons, you can use the following HTML code and suggested icons:
+#     Website: <i class='fa fa-desktop'></i>
+#     Twitter: <i class='fa fa-twitter'></i>
+#     GitHub:  <i class='fa fa-github'></i>
+#     Google Scholar: <i class='fa fa-newspaper-o'></i>
+# - For additional icons (e.g. LinkedIn), see the following website:
+# https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
+
+tbl_news <- data.frame(matrix(vector(), 0, 3, dimnames = list(c(), c("date","title","news"))), stringsAsFactors = FALSE)
+
+tbl_news[nrow(tbl_news) + 1,] <- list("1.6.2018","Test", "Test<br> Test<br><br> Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
+tbl_news[nrow(tbl_news) + 1,] <- list("31.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
+tbl_news[nrow(tbl_news) + 1,] <- list("30.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
+tbl_news[nrow(tbl_news) + 1,] <- list("29.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
+tbl_news[nrow(tbl_news) + 1,] <- list("28.5.2018","New website","This new lab website is finished.")
+
+```
+
+[//]: # Add Mark's twitter feed
+<a class="twitter-timeline" data-height="400" href="https://twitter.com/markrobinsonca?ref_src=twsrc%5Etfw">Tweets by markrobinsonca</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+```{r, echo=FALSE, message=FALSE, results="asis"}
+# R code to output HTML code
+
+library(knitr)
+library(kableExtra)
+library(dplyr)
+library(tidyr)
+
+# Separate title and news into different rows
+tbl_news <- tbl_news %>% gather(type,text,-date) %>%
+  mutate(date=as.Date(date,"%d.%m.%Y")) %>%
+  # Sort by date (from newest to oldest) and type(1.title, 2.news)
+  arrange(desc(date),desc(type)) %>%
+  # Convert the date into German format and remove date in news rows
+  mutate(date=ifelse("news"==type,"",format(date, "%d.%m.%Y"))) %>%
+  select(date,text)
+# remove column names
+colnames(tbl_news) <- NULL
+
+# output HTML code using 'kableExtra' package
+# note: requires 'results="asis"' in code chunk header, and 'print' command at the end
+for (i in seq(1,nrow(tbl_news),by=2)) {
+  tmp <- tbl_news[c(i,i+1),]
+  rownames(tmp) <- NULL # Rownames have to be removed or are plotted as separate column
+  kable(tmp, escape = FALSE) %>% 
+    kable_styling(bootstrap_options = "condensed", full_width = FALSE) %>% 
+    column_spec(column = 1, width = "3cm") %>% 
+    column_spec(column = 2, width = "20cm") %>% 
+    row_spec(row = 1, bold = TRUE, font_size = 18) %>% 
+    collapse_rows(columns = 1, valign = "top") %>% 
+    # hack to remove row borders between table cells (by adding additional options to HTML code for table cells)
+    gsub('<td style="', '<td style="border:none;', .) %>% 
+    print
+}
+```
+
+
