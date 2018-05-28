@@ -86,8 +86,7 @@ tbl_izaskun <- data.frame(
 tbl_lukas <- data.frame(
   img = "![](img/lukas.jpg)", 
   bio = c("Lukas Weber", 
-          paste0("<i class='fa fa-desktop'></i> [Website](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)<br>", 
-                 "<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
+          paste0("<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
                  "<i class='fa fa-github'></i> GitHub [lmweber](https://github.com/lmweber)<br>", 
                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)"), 
           paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
