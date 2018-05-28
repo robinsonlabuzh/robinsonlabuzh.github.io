@@ -41,6 +41,10 @@ tbl_helen <- data.frame(
 tbl_charlotte <- data.frame(
   img = "![](img/charlotte.png)", 
   bio = c("Charlotte Soneson", 
+          paste0("<i class='fa fa-desktop'></i> [Website](http://csoneson.github.io/)<br>", 
+                 "<i class='fa fa-twitter'></i> Twitter [\\@CSoneson](https://twitter.com/CSoneson)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [csoneson](https://github.com/csoneson)<br>", 
+                 "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=c28GqkIAAAAJ)"), 
           paste0("As a postdoctoral research associate, one of my main interests is the ", 
                  "development and improvement of statistical methods and workflows, currently mainly ", 
                  "in the field of RNA-seq. I am also interested in the process of evaluating and ", 
@@ -65,11 +69,24 @@ tbl_simone <- data.frame(
                  "BSc in Statistics (2010), Sapienza University of Rome"))
 )
 
+tbl_izaskun <- data.frame(
+  img = "![](img/izaskun.jpg)",
+  bio = c("Izaskun Mallona",
+          paste0("<i class='fa fa-desktop'></i> [Website](http://imallona.bitbucket.io)<br>", 
+                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=kMfxCIYAAAAJ)"), 
+          paste0("I am mainly interested in gene expression modulation, as it lays the ground for any cell fate. ",
+                 "The questions which excite my curiosity the most are: ",
+                 "How are gene expression programs coded? and maintained? how do they adapt during development? ",
+                 "and disease? To mine the presumable genome-wide metastructure I'm fond of integrating gene expression ",
+                 "and epigenomic data, and to develop methods to do so. "),
+          paste0("PhD Technical University of Cartagena 2012, MSc Biology University of Murcia 2007, ",
+                 "BSc Computer Eng Open University of Catalonia 2014"))
+)
+
 tbl_lukas <- data.frame(
   img = "![](img/lukas.jpg)", 
   bio = c("Lukas Weber", 
-          paste0("<i class='fa fa-desktop'></i> [Website](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)<br>", 
-                 "<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
+          paste0("<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
                  "<i class='fa fa-github'></i> GitHub [lmweber](https://github.com/lmweber)<br>", 
                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)"), 
           paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
@@ -181,6 +198,7 @@ tbl_angelo <- data.frame(
           paste0("Text here"), 
           "More text here")
 )
+
 ```
 
 
@@ -190,7 +208,8 @@ tables_all <- list(
   tbl_mark, 
   tbl_helen, 
   tbl_charlotte, 
-  tbl_simone, 
+  tbl_simone,
+  tbl_izaskun,
   tbl_lukas, 
   tbl_kathi, 
   tbl_stephan, 
@@ -199,8 +218,7 @@ tables_all <- list(
   tbl_stephany, 
   tbl_stefan, 
   tbl_helena, 
-  tbl_angelo
-)
+  tbl_angelo)
 ```
 
 
