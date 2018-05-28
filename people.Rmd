@@ -41,6 +41,10 @@ tbl_helen <- data.frame(
 tbl_charlotte <- data.frame(
   img = "![](img/charlotte.png)", 
   bio = c("Charlotte Soneson", 
+          paste0("<i class='fa fa-desktop'></i> [Website](http://csoneson.github.io/)<br>", 
+                 "<i class='fa fa-twitter'></i> Twitter [\\@CSoneson](https://twitter.com/CSoneson)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [csoneson](https://github.com/csoneson)<br>", 
+                 "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=c28GqkIAAAAJ)"), 
           paste0("As a postdoctoral research associate, one of my main interests is the ", 
                  "development and improvement of statistical methods and workflows, currently mainly ", 
                  "in the field of RNA-seq. I am also interested in the process of evaluating and ", 
