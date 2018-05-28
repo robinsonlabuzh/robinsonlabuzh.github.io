@@ -101,7 +101,7 @@ tbl_stephan <- data.frame(
   bio = c("Stephan Schmeing", 
           paste0("As a PhD student coming from a particle physics background I am currently working ", 
                  "on a more realistic Illumina sequence simulator called ReSequenceR. It is able to ", 
-                 "create a profile from a bam file that is then used to simulated paired-read fastq files. ", 
+                 "create a profile from a bam file that is then used to simulate paired-read fastq files. ", 
                  "Furthermore I will work on an assembly and population genomics of the Indo-Pacific ", 
                  "bottlenose dolphin (tursiops aduncus)."), 
           paste0("MSc in Astro, Particle and Nuclear physics (2014), TU Munich<br>", 
