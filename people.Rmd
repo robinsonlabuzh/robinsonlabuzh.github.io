@@ -115,7 +115,9 @@ tbl_kathi <- data.frame(
 
 tbl_stephan <- data.frame(
   img = "![](img/stephan.jpg)", 
-  bio = c("Stephan Schmeing", 
+  bio = c("Stephan Schmeing",
+          paste0("<i class='fa fa-twitter'></i> Twitter [\\@StephanSchmeing](https://twitter.com/StephanSchmeing)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [schmeing](https://github.com/schmeing)<br>"), 
           paste0("As a PhD student coming from a particle physics background I am currently working ", 
                  "on a more realistic Illumina sequence simulator called ReSequenceR. It is able to ", 
                  "create a profile from a bam file that is then used to simulate paired-read fastq files. ", 
