@@ -30,7 +30,6 @@ tbl_news <- data.frame(matrix(vector(), 0, 3,
 # tbl_news[nrow(tbl_news) + 1,] <- list("30.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
 # tbl_news[nrow(tbl_news) + 1,] <- list("29.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
 tbl_news[nrow(tbl_news) + 1,] <- list("01.06.2018","New website is published!","After a major collaborative effort from everyone in the lab, the new github-based lab website is finished.")
-
 ```
 
 [//]: # Add Mark's twitter feed
