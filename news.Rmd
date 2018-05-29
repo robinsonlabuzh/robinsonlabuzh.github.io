@@ -21,18 +21,19 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 # - For additional icons (e.g. LinkedIn), see the following website:
 # https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
 
-tbl_news <- data.frame(matrix(vector(), 0, 3, dimnames = list(c(), c("date","title","news"))), stringsAsFactors = FALSE)
+tbl_news <- data.frame(matrix(vector(), 0, 3, 
+                              dimnames = list(c(), c("date","title","news"))), 
+                       stringsAsFactors = FALSE)
 
-tbl_news[nrow(tbl_news) + 1,] <- list("1.6.2018","Test", "Test<br> Test<br><br> Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
-tbl_news[nrow(tbl_news) + 1,] <- list("31.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
-tbl_news[nrow(tbl_news) + 1,] <- list("30.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
-tbl_news[nrow(tbl_news) + 1,] <- list("29.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
-tbl_news[nrow(tbl_news) + 1,] <- list("28.5.2018","New website","This new lab website is finished.")
-
+# tbl_news[nrow(tbl_news) + 1,] <- list("1.6.2018","Test", "Test<br> Test<br><br> Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
+# tbl_news[nrow(tbl_news) + 1,] <- list("31.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
+# tbl_news[nrow(tbl_news) + 1,] <- list("30.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
+# tbl_news[nrow(tbl_news) + 1,] <- list("29.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
+tbl_news[nrow(tbl_news) + 1,] <- list("01.06.2018","New website is published!","After a major collaborative effort from everyone in the lab, the new github-based lab website is finished.")
 ```
 
 [//]: # Add Mark's twitter feed
-<a class="twitter-timeline" data-height="400" href="https://twitter.com/markrobinsonca?ref_src=twsrc%5Etfw">Tweets by markrobinsonca</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-height="400" href="https://twitter.com/markrobinsonca">Tweets by markrobinsonca</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ```{r, echo=FALSE, message=FALSE, results="asis"}
 # R code to output HTML code
