@@ -2,7 +2,7 @@
 title: "Software & Resources"
 ---
 
-![](stickers/Bioconductor.png){width=2.5cm}![](stickers/CATALYST.png){width=2.5cm}![](stickers/countsimQC.png){width=2.5cm}![](stickers/crispRVariants.png){width=2.5cm}![](stickers/DRIMSeq.png){width=2.5cm}![](stickers/edgeR.png){width=2.5cm}![](stickers/iCOBRA.png){width=2.5cm}![](stickers/regsplice.png){width=2.5cm}
+![](stickers/Bioconductor.png){width=2.5cm}![](stickers/CATALYST.png){width=2.5cm}![](stickers/countsimQC.png){width=2.5cm}![](stickers/CrispRVariants.png){width=2.5cm}![](stickers/DRIMSeq.png){width=2.5cm}![](stickers/edgeR.png){width=2.5cm}![](stickers/iCOBRA.png){width=2.5cm}![](stickers/regsplice.png){width=2.5cm}
 
 ### **R packages**
 
