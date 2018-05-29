@@ -41,7 +41,7 @@ Name      | Author(s)     | Description
 [CrispantCal](http://lmweber.github.io/CrispantCal/) | **Lukas M Weber** | R/Shiny web app to calculate injection mix volumes<br>for CRISPR-Cas9 experiments
 [CrispRVariantsLite](http://imlspenticton.uzh.ch:3838/CrispRVariantsLite/) | **Helen Lindsay** | Graphical user interface to the R/Bioconductor CrispRVariants package
 [iCOBRA](http://imlspenticton.uzh.ch:3838/iCOBRA/) | **Charlotte Soneson** | Graphical User interface to the R/Bioconductor iCOBRA package
-[scrnaseq_de_evaluation](http://imlspenticton.uzh.ch:3838/scrnaseq_de_evaluation/) | **Charlotte Soneson** |  Interactive browsing and exploration of the scRNA-seq differential expression results (from [Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549))
+[scrnaseq_de_evaluation](http://imlspenticton.uzh.ch:3838/scrnaseq_de_evaluation/) | **Charlotte Soneson** |  Interactive browsing and exploration of the scRNA-seq differential expression results from [Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)
 
 
 ---
@@ -50,10 +50,11 @@ Name      | Author(s)     | Description
 
 Name      | Author(s)     | Description
 ----------|---------------|-----------------------------------
-[cytometry-clustering-comparison](https://github.com/lmweber/cytometry-clustering-comparison) | **Lukas M Weber** | Comparison of clustering methods for high-dimensional<br>single-cell flow and mass cytometry (CyTOF) data
+[cytometry-clustering-comparison](https://github.com/lmweber/cytometry-clustering-comparison) | **Lukas M Weber** | Comparison of clustering methods for high-dimensional<br>single-cell flow and mass cytometry (CyTOF) data ([Weber and Robinson, 2016](https://www.ncbi.nlm.nih.gov/pubmed/27992111))
 [cyTOF compensation](https://github.com/BodenmillerGroup/cyTOFcompensation) | Vito RT Zanotelli<br>**Helena L Crowell**<br>**Mark D Robinson** | Repository containing scripts to reproduce a majority of the figures from *"Compensation of Signal Spillover in Suspension and Imaging Mass Cytometry"* ([Chevrier et al., 2018](https://doi.org/10.1016/j.cels.2018.02.010)).
 [conquer (build scripts)](https://github.com/markrobinsonuzh/conquer) | **Charlotte Soneson**<br>**Mark D Robinson** |  Repository containing the code used to prepare the conquer (consistent quantification of external RNA-seq data sets) repository ([Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)).
-[CrispRVariants (shiny app code)](https://github.com/markrobinsonuzh/CrispRVariantsLite) | **Helen Lindsay** |  This github repository contains the code underlying the CrispRVariantsLite Shiny-based web app ([Lindsay et al, 2016](https://www.ncbi.nlm.nih.gov/pubmed/27404876)).
+[conquer (differential expression evaluation)](https://github.com/csoneson/conquer_comparison) | **Charlotte Soneson** | Repository containing the code used to perform the evalutaion of differential expression analysis methods in single-cell RNA-seq data ([Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)).[Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/conquer_de_comparison/)
+[CrispRVariants (shiny app code)](https://github.com/markrobinsonuzh/CrispRVariantsLite) | **Helen Lindsay** |  Repository containing the code underlying the CrispRVariantsLite Shiny-based web app ([Lindsay et al, 2016](https://www.ncbi.nlm.nih.gov/pubmed/27404876)).
 [Differential splicing comparison](https://github.com/markrobinsonuzh/diff_splice_paper) | **Charlotte Soneson**<br>**Katharina Matthes** |  Repository containing the code for the comparison of various methods for differential isoform usage (differential splicing) detection ([Soneson, Matthes et al., 2016](https://www.ncbi.nlm.nih.gov/pubmed/26813113)) [Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/splicing_comparison/).
 [edgeR robust](http://imlspenticton.uzh.ch/robinson_lab/edgeR_robust/) | **Xiaobei Zhou** |  Supplementary Page with Supplementary Data, R Code for simulations and analyses ([Zhou et al., 2014](https://www.ncbi.nlm.nih.gov/pubmed/24753412)).
 [ABCD-DNA Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/ABCD-DNA/) | **Mark D Robinson** |  Supplementary Page with Supplementary Data (semi-processed), R Code for all Figures and analyses ([Robinson et al., 2012](https://www.ncbi.nlm.nih.gov/pubmed/22879430)).
