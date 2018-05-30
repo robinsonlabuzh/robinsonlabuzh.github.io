@@ -21,7 +21,7 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 # https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
 
 tbl_mark <- data.frame(
-  img = "![](img/mark.jpg)", 
+  img = "![](img/thumbnail/mark.jpg)", 
   bio = c("Mark Robinson", 
           paste0("Text text text text text text text text text text text text text text ", 
                  "text text text text text text text text text text text text text "), 
@@ -30,7 +30,7 @@ tbl_mark <- data.frame(
 )
 
 tbl_helen <- data.frame(
-  img = "![](img/helen.jpg)", 
+  img = "![](img/thumbnail/helen.jpg)", 
   bio = c("Helen Lindsay", 
           paste0("Text text text text text text text text text text text text text text ", 
                  "text text text text text text text text text text text text text "), 
@@ -39,7 +39,7 @@ tbl_helen <- data.frame(
 )
 
 tbl_charlotte <- data.frame(
-  img = "![](img/charlotte.png)", 
+  img = "![](img/thumbnail/charlotte.png)", 
   bio = c("Charlotte Soneson", 
           paste0("As a postdoctoral research associate, one of my main interests is the ", 
                  "development and improvement of statistical methods and workflows, currently mainly ", 
@@ -50,7 +50,7 @@ tbl_charlotte <- data.frame(
 )
 
 tbl_simone <- data.frame(
-  img = "![](img/simone.jpg)", 
+  img = "![](img/thumbnail/simone.jpg)", 
   bio = c("Simone Tiberi", 
           paste0("I am a postdoctoral research associate working on the development of cutting-edge ", 
                  "statistical methods for RNA-seq data. In particular, I am currently focusing on a ", 
@@ -66,7 +66,7 @@ tbl_simone <- data.frame(
 )
 
 tbl_izaskun <- data.frame(
-  img = "![](img/izaskun.jpg)",
+  img = "![](img/thumbnail/izaskun.jpg)",
   bio = c("Izaskun Mallona",
           paste0("<i class='fa fa-desktop'></i> [Website](http://imallona.bitbucket.io)<br>", 
                   "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=kMfxCIYAAAAJ)"), 
@@ -80,7 +80,7 @@ tbl_izaskun <- data.frame(
 )
 
 tbl_lukas <- data.frame(
-  img = "![](img/lukas.jpg)", 
+  img = "![](img/thumbnail/lukas.jpg)", 
   bio = c("Lukas Weber", 
           paste0("<i class='fa fa-desktop'></i> [Website](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)<br>", 
                  "<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
@@ -111,7 +111,7 @@ tbl_kathi <- data.frame(
 )
 
 tbl_stephan <- data.frame(
-  img = "![](img/stephan.jpg)", 
+  img = "![](img/thumbnail/stephan.jpg)", 
   bio = c("Stephan Schmeing", 
           paste0("As a PhD student coming from a particle physics background I am currently working ", 
                  "on a more realistic Illumina sequence simulator called ReSequencer. It is able to ", 
@@ -123,7 +123,7 @@ tbl_stephan <- data.frame(
 )
 
 tbl_fiona <- data.frame(
-  img = "![](img/fiona.jpg)", 
+  img = "![](img/thumbnail/fiona.jpg)", 
   bio = c("Ruizhu Huang", 
           paste0("My major research interest is in the development and application of statistical ", 
                  "methods in biological data. Currently, I am working on the project about tree ", 
@@ -145,7 +145,7 @@ tbl_vladimir <- data.frame(
 )
 
 tbl_stephany <- data.frame(
-  img = "![](img/stephany.jpg)", 
+  img = "![](img/thumbnail/stephany.jpg)", 
   bio = c("Stephany Orjuela", 
           paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ", 
                  "which focuses on studying the molecular mechanisms underlying the development ", 
@@ -158,7 +158,7 @@ tbl_stephany <- data.frame(
 )
 
 tbl_stefan <- data.frame(
-  img = "![](img/stefan.jpg)", 
+  img = "![](img/thumbnail/stefan.jpg)", 
   bio = c("Stefan Milosavljevic", 
           paste0("I am a PhD student with a background in biology and bioinformatics. I am currently ", 
                  "working on the rapid evolution of a plant species called Arabidopsis kamchatica. ", 
@@ -170,7 +170,7 @@ tbl_stefan <- data.frame(
 )
 
 tbl_helena <- data.frame(
-  img = "![](img/helena.png)", 
+  img = "![](img/thumbnail/helena.png)", 
   bio = c("Helena Lucia Crowell", 
           paste0("In collaboration with the [Bodenmiller lab](http://www.bodenmillerlab.com) lab, ", 
                  "I have worked on correcting for spillover ", 
