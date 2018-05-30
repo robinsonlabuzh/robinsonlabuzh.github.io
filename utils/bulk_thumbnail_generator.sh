@@ -35,7 +35,7 @@ do
     then 
         name=$(basename "$fn" | cut -f 1 -d '.')
 
-        convert "$fn" -filter Triangle -define filter:support=2 -thumbnail 300 \
+        convert "$fn" -filter Triangle -define filter:support=2 -thumbnail "$THUMBNAIL_WIDTH" \
                 -dither None -posterize 136 -quality 82 \
                 -define png:compression-filter=5 -define jpeg:fancy-upsampling=off  \
                 -define png:compression-level=9 -define png:compression-strategy=1 \
