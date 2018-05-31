@@ -152,12 +152,11 @@ tbl_vladimir <- data.frame(
 tbl_stephany <- data.frame(
   img = "![](img/stephany.jpg)", 
   bio = c("Stephany Orjuela", 
+          "<i class='fa fa-github'></i> GitHub [sorjuela](https://github.com/sorjuela)<br>",
           paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ", 
                  "which focuses on studying the molecular mechanisms underlying the development ", 
                  "and progression of Colorectal Cancer. Most of my work focuses on analyzing and ", 
-                 "developing methods to process methylation data obtained from BS-seq, although I also ", 
-                 "work with RNA-seq. I am currently developing a method to identify allele specific methylation. ", 
-                 "I am also in the early stages of developing a method to integrate RNA-seq and BS-seq data."), 
+                 "developing methods to process methylation data obtained from Bisulfite-seq. I am currently developing a method to identify differential allele-specific methylation. "), 
           paste0("MSc in Biology (2017), University of Zurich<br>", 
                  "BSc in Biology (2015), Universidad Nacional de Colombia"))
 )
