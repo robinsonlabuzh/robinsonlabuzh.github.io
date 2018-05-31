@@ -41,6 +41,10 @@ tbl_helen <- data.frame(
 tbl_charlotte <- data.frame(
   img = "![](img/thumbnail/charlotte.png)", 
   bio = c("Charlotte Soneson", 
+          paste0("<i class='fa fa-desktop'></i> [Website](http://csoneson.github.io/)<br>", 
+                 "<i class='fa fa-twitter'></i> Twitter [\\@CSoneson](https://twitter.com/CSoneson)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [csoneson](https://github.com/csoneson)<br>", 
+                 "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=c28GqkIAAAAJ)"), 
           paste0("As a postdoctoral research associate, one of my main interests is the ", 
                  "development and improvement of statistical methods and workflows, currently mainly ", 
                  "in the field of RNA-seq. I am also interested in the process of evaluating and ", 
@@ -84,8 +88,7 @@ tbl_izaskun <- data.frame(
 tbl_lukas <- data.frame(
   img = "![](img/thumbnail/lukas.jpg)", 
   bio = c("Lukas Weber", 
-          paste0("<i class='fa fa-desktop'></i> [Website](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)<br>", 
-                 "<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
+          paste0("<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
                  "<i class='fa fa-github'></i> GitHub [lmweber](https://github.com/lmweber)<br>", 
                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)"), 
           paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
@@ -114,13 +117,15 @@ tbl_kathi <- data.frame(
 
 tbl_stephan <- data.frame(
   img = "![](img/thumbnail/stephan.jpg)", 
-  bio = c("Stephan Schmeing", 
+  bio = c("Stephan Schmeing",
+          paste0("<i class='fa fa-twitter'></i> Twitter [\\@StephanSchmeing](https://twitter.com/StephanSchmeing)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [schmeing](https://github.com/schmeing)<br>"), 
           paste0("As a PhD student coming from a particle physics background I am currently working ", 
-                 "on a more realistic Illumina sequence simulator called ReSequencer. It is able to ", 
-                 "create a profile from a bam file that is then used to simulated paired-read fastq files. ", 
+                 "on a more realistic Illumina sequence simulator called ReSequenceR. It is able to ", 
+                 "create a profile from a bam file that is then used to simulate paired-read fastq files. ", 
                  "Furthermore I will work on an assembly and population genomics of the Indo-Pacific ", 
                  "bottlenose dolphin (tursiops aduncus)."), 
-          paste0("MSc in Astro, Particle and Nuclear physis (2014), TU Munich<br>", 
+          paste0("MSc in Astro, Particle and Nuclear physics (2014), TU Munich<br>", 
                  "BSc in Physics (2011), TU Munich"))
 )
 
@@ -149,12 +154,11 @@ tbl_vladimir <- data.frame(
 tbl_stephany <- data.frame(
   img = "![](img/thumbnail/stephany.jpg)", 
   bio = c("Stephany Orjuela", 
+          "<i class='fa fa-github'></i> GitHub [sorjuela](https://github.com/sorjuela)<br>",
           paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ", 
                  "which focuses on studying the molecular mechanisms underlying the development ", 
                  "and progression of Colorectal Cancer. Most of my work focuses on analyzing and ", 
-                 "developing methods to process methylation data obtained from BS-seq, although I also ", 
-                 "work with RNA-seq. I am currently developing a method to identify allele specific methylation. ", 
-                 "I am also in the early stages of developing a method to integrate RNA-seq and BS-seq data."), 
+                 "developing methods to process methylation data obtained from Bisulfite-seq. I am currently developing a method to identify differential allele-specific methylation. "), 
           paste0("MSc in Biology (2017), University of Zurich<br>", 
                  "BSc in Biology (2015), Universidad Nacional de Colombia"))
 )

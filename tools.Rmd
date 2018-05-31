@@ -2,27 +2,61 @@
 title: "Software & Resources"
 ---
 
-![](stickers/Bioconductor.png){width=2.5cm}![](stickers/CATALYST.png){width=2.5cm}![](stickers/countsimQC.png){width=2.5cm}![](stickers/crispRVariants.png){width=2.5cm}![](stickers/DRIMSeq.png){width=2.5cm}![](stickers/edgeR.png){width=2.5cm}![](stickers/iCOBRA.png){width=2.5cm}![](stickers/regsplice.png){width=2.5cm}
+![](stickers/Bioconductor.png){width=2.5cm}![](stickers/CATALYST.png){width=2.5cm}![](stickers/countsimQC.png){width=2.5cm}![](stickers/CrispRVariants.png){width=2.5cm}![](stickers/DRIMSeq.png){width=2.5cm}![](stickers/edgeR.png){width=2.5cm}![](stickers/iCOBRA.png){width=2.5cm}![](stickers/regsplice.png){width=2.5cm}
 
 ### **R packages**
 
 Name      | Author(s)               | Description 
 ----------|---------------|-----------------------------------
-[CATALYST](http://bioconductor.org/packages/release/bioc/html/CATALYST.html) | **Helena L Crowell**<br>**Mark D Robinson**<br>Vito RT Zanotelli<br>Stéphane Chevrier<br>Bernd Bodenmiller | Tools for preprocessing of cytometry data including<br>normalization, debarcoding, and compensation
+[CATALYST](http://bioconductor.org/packages/release/bioc/html/CATALYST.html) | **Helena L Crowell**<br>**Mark D Robinson**<br>Vito RT Zanotelli<br>Stéphane Chevrier<br>Bernd Bodenmiller | Pipeline for preprocessing of cytometry data<br>& visualization tools for differential analysis 
 [countsimQC](https://github.com/csoneson/countsimQC) | **Charlotte Soneson** | Comparison of characteristic features of count data sets
 [CrispRVariants](http://bioconductor.org/packages/release/bioc/html/CrispRVariants.html) | **Helen Lindsay** | Tools for counting and visualising mutations in a target location
-[DRIMSeq](http://bioconductor.org/packages/release/bioc/html/DRIMSeq.html) | **Malgorzata Nowicka** | Differential transcript usage and tuQTL analyses<br>with Dirichlet-multinomial model in RNA-seq
+[cytofWorkflow](https://www.bioconductor.org/packages/release/workflows/html/cytofWorkflow.html) | **Malgorzata Nowicka** | CyTOF workflow: differential discovery in high-throughput high-dimensional cytometry datasets
+[diffcyt](http://bioconductor.org/packages/release/bioc/html/diffcyt.html) | **Lukas M Weber** | Statistical methods for differential discovery in high-dimensional cytometry data
+[DRIMSeq](http://bioconductor.org/packages/release/bioc/html/DRIMSeq.html) | **Malgorzata Nowicka** | Differential transcript usage and tuQTL analyses<br>with Dirichlet-multinomial model in RNA-seq [Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/drimseq/)
 [edgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) | Yunshun Chen<br>Aaron Lun<br>Davis McCarthy<br>**Xiaobei Zhou**<br>**Mark D Robinson**<br>Gordon Smyth | Empirical Analysis of Digital Gene Expression Data in R
 [flagme](http://bioconductor.org/packages/release/bioc/html/flagme.html) | **Mark D Robinson**<br>Riccardo Romoli | Analysis of Metabolomics GC/MS Data
 [iCOBRA](http://bioconductor.org/packages/release/bioc/html/iCOBRA.html) | **Charlotte Soneson** | Comparison and Visualization of Ranking and Assignment Methods
+[iSEE](http://bioconductor.org/packages/release/bioc/html/iSEE.html) | **Charlotte Soneson**<br>Aaron Lun<br>Federico Marini<br>Kevin Rue-Albrecht | Interactive SummarizedExperiment Explorer
 [regsplice](http://bioconductor.org/packages/release/bioc/html/regsplice.html) | **Lukas M Weber** | L1-regularization based methods for detection of differential splicing
-[Repitools](http://bioconductor.org/packages/release/bioc/html/Repitools.html) | **Mark D Robinson**<br>Dario Strbenac<br>Aaron Statham<br>Andrea Riebler | Epigenomic tools
+[Repitools](http://bioconductor.org/packages/release/bioc/html/Repitools.html) | **Mark D Robinson**<br>Dario Strbenac<br>Aaron Statham<br>Andrea Riebler | Epigenomic tools (BayMeth)
+
+---
+
+### **Data resources**
+
+Name      | Author(s)     | Description
+----------|---------------|-----------------------------------
+[Benchmark collection](http://imlspenticton.uzh.ch/robinson_lab/benchmark_collection) | **Robinson group** | Collection of high-throughput computational biology benchmarking data sets
+[conquer](http://imlspenticton.uzh.ch:3838/conquer/) | **Charlotte Soneson** | Repository providing consistently processed<br>public single-cell RNA-seq data sets
+[FlowRepository FR-FCM-ZZPH](http://flowrepository.org/id/FR-FCM-ZZPH) | **Lukas M Weber** | Pre-processed data files for benchmark data sets used in *"Comparison of clustering methods for high-dimensional single-cell flow and mass cytometry data"* ([Weber and Robinson, 2016](https://www.ncbi.nlm.nih.gov/pubmed/27992111))
+[HDCytoData](http://bioconductor.org/packages/release/data/experiment/html/HDCytoData.html) | **Lukas M Weber**<br>**Charlotte Soneson** | Data package of high-dimensional cytometry data sets in<br>SummarizedExperiment and flowSet formats
+
+---
 
 ### **Web applications**
 
 Name      | Author(s)     | Description
 ----------|---------------|-----------------------------------
 [CATALYST](https://catalyst-project.github.io) | **Helena L Crowell** | Tools for preprocessing of cytometry data including<br>normalization, debarcoding, and compensation
-[conquer](http://imlspenticton.uzh.ch:3838/conquer/) | **Charlotte Soneson** | Repository providing consistently processed<br>public single-cell RNA-seq data sets
-[CrispantCal](http://lmweber.github.io/CrispantCal/) | **Lukas M Weber** | R/Shiny web app to calculate injection mix volumes<br>for CRISPR-Cas9 experiments
+[CrispantCal](http://lmweber.github.io/CrispantCal/) | **Lukas M Weber** | R/Shiny web app to calculate injection mix volumes for<br>CRISPR-Cas9 experiments
 [CrispRVariantsLite](http://imlspenticton.uzh.ch:3838/CrispRVariantsLite/) | **Helen Lindsay** | Graphical user interface to the R/Bioconductor CrispRVariants package
+[iCOBRA](http://imlspenticton.uzh.ch:3838/iCOBRA/) | **Charlotte Soneson** | Graphical User interface to the R/Bioconductor iCOBRA package
+[scrnaseq_de_evaluation](http://imlspenticton.uzh.ch:3838/scrnaseq_de_evaluation/) | **Charlotte Soneson** |  Interactive browsing and exploration of the scRNA-seq differential expression results from [Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)
+
+
+---
+
+### **Other resources**
+
+Name      | Author(s)     | Description
+----------|---------------|-----------------------------------
+[ABCD-DNA Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/ABCD-DNA/) | **Mark D Robinson** |  Supplementary Page with Supplementary Data (semi-processed), R Code for all Figures and analyses ([Robinson et al., 2012](https://www.ncbi.nlm.nih.gov/pubmed/22879430)).
+[conquer (build scripts)](https://github.com/markrobinsonuzh/conquer) | **Charlotte Soneson**<br>**Mark D Robinson** |  Repository containing the code used to prepare the conquer (consistent quantification of external RNA-seq data sets) repository ([Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)).
+[conquer (differential expression evaluation)](https://github.com/csoneson/conquer_comparison) | **Charlotte Soneson** | Repository containing the code used to perform the evalutaion of differential expression analysis methods in single-cell RNA-seq data ([Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)) [Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/conquer_de_comparison/)
+[CrispRVariants (shiny app code)](https://github.com/markrobinsonuzh/CrispRVariantsLite) | **Helen Lindsay** |  Repository containing the code underlying the CrispRVariantsLite Shiny-based web app ([Lindsay et al, 2016](https://www.ncbi.nlm.nih.gov/pubmed/27404876)).
+[cyTOF compensation](https://github.com/BodenmillerGroup/cyTOFcompensation) | Vito RT Zanotelli<br>**Helena L Crowell**<br>**Mark D Robinson** | Repository containing scripts to reproduce a majority of the figures from *"Compensation of Signal Spillover in Suspension and Imaging Mass Cytometry"* ([Chevrier et al., 2018](https://doi.org/10.1016/j.cels.2018.02.010)).
+[cytometry-clustering-comparison](https://github.com/lmweber/cytometry-clustering-comparison) | **Lukas M Weber** | Repository of scripts to reproduce and extend analyses and figures in *"Comparison of clustering methods for high-dimensional single-cell flow and mass cytometry data"* ([Weber and Robinson, 2016](https://www.ncbi.nlm.nih.gov/pubmed/27992111))
+[Differential splicing comparison](https://github.com/markrobinsonuzh/diff_splice_paper) | **Charlotte Soneson**<br>**Katharina Matthes** |  Repository containing the code for the comparison of various methods for differential isoform usage (differential splicing) detection ([Soneson, Matthes et al., 2016](https://www.ncbi.nlm.nih.gov/pubmed/26813113)) [Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/splicing_comparison/).
+[edgeR robust](http://imlspenticton.uzh.ch/robinson_lab/edgeR_robust/) | **Xiaobei Zhou** |  Supplementary Page with Supplementary Data, R Code for simulations and analyses ([Zhou et al., 2014](https://www.ncbi.nlm.nih.gov/pubmed/24753412)).
+
