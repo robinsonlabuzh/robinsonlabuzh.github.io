@@ -22,20 +22,18 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 tbl_mark <- data.frame(
   img = "![](img/thumbnail/mark.jpg)", 
-  bio = c("Mark Robinson", 
-          paste0("Text text text text text text text text text text text text text text ", 
-                 "text text text text text text text text text text text text text "), 
-          paste0("More text (e.g. qualifications)<br>", 
-                 "More text"))
-)
-
-tbl_helen <- data.frame(
-  img = "![](img/thumbnail/helen.jpg)", 
-  bio = c("Helen Lindsay", 
-          paste0("Text text text text text text text text text text text text text text ", 
-                 "text text text text text text text text text text text text text "), 
-          paste0("More text (e.g. qualifications)<br>", 
-                 "More text"))
+  bio = c("Mark D Robinson", 
+          paste0("<i class='fa fa-twitter'></i> Twitter [\\@markrobinsonca](https://twitter.com/markrobinsonca)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [markrobinsonuzh](https://github.com/markrobinsonuzh)<br>", 
+                 "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=XPfrRQEAAAAJ)"), 
+          paste0("My research interests are diverse, but more-or-less encompass the general application of statistical ", 
+                 "methods and data science to experimental data with biological applications.  Often, this is within the ",
+                 "context of genomics data types, but we are interested in methodological challenges and robust solutions ",
+                 "in data, generally. We also try to be modern scientists, with a focus on reproducibility (repos for code) ",
+                 "and open science (preprints)."),
+          paste0("PhD in Medical Biology (2008), University of Melbourne (Walter and Eliza Hall Institute)<br>", 
+                 "MSc in Statistics (2001), University of British Columbia<br>",
+                 "BSc in Applied Mathematics and Statistics (1999), University of Guelph"))
 )
 
 tbl_charlotte <- data.frame(
@@ -202,6 +200,16 @@ tbl_angelo <- data.frame(
           "More text here")
 )
 
+tbl_helen <- data.frame(
+  img = "![](img/helen.jpg)", 
+  bio = c("Helen Lindsay", 
+          paste0("Text text text text text text text text text text text text text text ", 
+                 "text text text text text text text text text text text text text "), 
+          paste0("More text (e.g. qualifications)<br>", 
+                 "More text"))
+)
+
+
 ```
 
 
@@ -209,7 +217,6 @@ tbl_angelo <- data.frame(
 # combine all in list (re-order here as appropriate, e.g. by seniority)
 tables_all <- list(
   tbl_mark, 
-  tbl_helen, 
   tbl_charlotte, 
   tbl_simone,
   tbl_izaskun,
@@ -220,8 +227,10 @@ tables_all <- list(
   tbl_vladimir, 
   tbl_stephany, 
   tbl_stefan, 
-  tbl_helena, 
-  tbl_angelo)
+  tbl_helena#, 
+#  tbl_angelo,
+#  tbl_helen
+  )
 ```
 
 
