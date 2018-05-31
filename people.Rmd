@@ -21,7 +21,7 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 # https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
 
 tbl_mark <- data.frame(
-  img = "![](img/mark.jpg)", 
+  img = "![](img/thumbnail/mark.jpg)", 
   bio = c("Mark Robinson", 
           paste0("Text text text text text text text text text text text text text text ", 
                  "text text text text text text text text text text text text text "), 
@@ -30,7 +30,7 @@ tbl_mark <- data.frame(
 )
 
 tbl_helen <- data.frame(
-  img = "![](img/helen.jpg)", 
+  img = "![](img/thumbnail/helen.jpg)", 
   bio = c("Helen Lindsay", 
           paste0("Text text text text text text text text text text text text text text ", 
                  "text text text text text text text text text text text text text "), 
@@ -39,7 +39,7 @@ tbl_helen <- data.frame(
 )
 
 tbl_charlotte <- data.frame(
-  img = "![](img/charlotte.png)", 
+  img = "![](img/thumbnail/charlotte.png)", 
   bio = c("Charlotte Soneson", 
           paste0("<i class='fa fa-desktop'></i> [Website](http://csoneson.github.io/)<br>", 
                  "<i class='fa fa-twitter'></i> Twitter [\\@CSoneson](https://twitter.com/CSoneson)<br>", 
@@ -54,7 +54,7 @@ tbl_charlotte <- data.frame(
 )
 
 tbl_simone <- data.frame(
-  img = "![](img/simone.jpg)", 
+  img = "![](img/thumbnail/simone.png)", 
   bio = c("Simone Tiberi", 
           paste0("I am a postdoctoral research associate working on the development of cutting-edge ", 
                  "statistical methods for RNA-seq data. In particular, I am currently focusing on a ", 
@@ -70,21 +70,23 @@ tbl_simone <- data.frame(
 )
 
 tbl_izaskun <- data.frame(
-  img = "![](img/izaskun.jpg)",
+  img = "![](img/thumbnail/izaskun.jpg)",
   bio = c("Izaskun Mallona",
           paste0("<i class='fa fa-desktop'></i> [Website](http://imallona.bitbucket.io)<br>", 
                   "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=kMfxCIYAAAAJ)"), 
           paste0("I am mainly interested in gene expression modulation, as it lays the ground for any cell fate. ",
                  "The questions which excite my curiosity the most are: ",
-                 "How are gene expression programs coded? and maintained? how do they adapt during development? ",
-                 "and disease? To mine the presumable genome-wide metastructure I'm fond of integrating gene expression ",
-                 "and epigenomic data, and to develop methods to do so. "),
-          paste0("PhD Technical University of Cartagena 2012, MSc Biology University of Murcia 2007, ",
-                 "BSc Computer Eng Open University of Catalonia 2014"))
+                 "How are gene expression programs coded? how do they adapt during development? ",
+                 "and disease? To mine the presumable genome-wide determinants of this phenomenon ",
+                 "I'm fond of integrating gene expression and epigenomic data, and to develop methods for doing so. "),
+          paste0("BSc Computer Engineering, Open University of Catalonia (2014)<br/>",
+                 "PhD, Technical University of Cartagena (2012)<br/>",
+                 "MSc Agriculture Engineering, Technical University of Cartagena (2008)<br/>",
+                 "MSc Biology, University of Murcia (2007)</br>"))
 )
 
 tbl_lukas <- data.frame(
-  img = "![](img/lukas.jpg)", 
+  img = "![](img/thumbnail/lukas.jpg)", 
   bio = c("Lukas Weber", 
           paste0("<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
                  "<i class='fa fa-github'></i> GitHub [lmweber](https://github.com/lmweber)<br>", 
@@ -114,7 +116,7 @@ tbl_kathi <- data.frame(
 )
 
 tbl_stephan <- data.frame(
-  img = "![](img/stephan.jpg)", 
+  img = "![](img/thumbnail/stephan.jpg)", 
   bio = c("Stephan Schmeing",
           paste0("<i class='fa fa-twitter'></i> Twitter [\\@StephanSchmeing](https://twitter.com/StephanSchmeing)<br>", 
                  "<i class='fa fa-github'></i> GitHub [schmeing](https://github.com/schmeing)<br>"), 
@@ -128,7 +130,7 @@ tbl_stephan <- data.frame(
 )
 
 tbl_fiona <- data.frame(
-  img = "![](img/fiona.jpg)", 
+  img = "![](img/thumbnail/fiona.jpg)", 
   bio = c("Ruizhu Huang", 
           paste0("My major research interest is in the development and application of statistical ", 
                  "methods in biological data. Currently, I am working on the project about tree ", 
@@ -150,7 +152,7 @@ tbl_vladimir <- data.frame(
 )
 
 tbl_stephany <- data.frame(
-  img = "![](img/stephany.jpg)", 
+  img = "![](img/thumbnail/stephany.jpg)", 
   bio = c("Stephany Orjuela", 
           "<i class='fa fa-github'></i> GitHub [sorjuela](https://github.com/sorjuela)<br>",
           paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ", 
@@ -162,7 +164,7 @@ tbl_stephany <- data.frame(
 )
 
 tbl_stefan <- data.frame(
-  img = "![](img/stefan.jpg)", 
+  img = "![](img/thumbnail/stefan.jpg)", 
   bio = c("Stefan Milosavljevic", 
           paste0("I am a PhD student with a background in biology and bioinformatics. I am currently ", 
                  "working on the rapid evolution of a plant species called Arabidopsis kamchatica. ", 
@@ -174,7 +176,7 @@ tbl_stefan <- data.frame(
 )
 
 tbl_helena <- data.frame(
-  img = "![](img/helena.png)", 
+  img = "![](img/thumbnail/helena.png)", 
   bio = c("Helena Lucia Crowell", 
           paste0("In collaboration with the [Bodenmiller lab](http://www.bodenmillerlab.com) lab, ", 
                  "I have worked on correcting for spillover ", 
