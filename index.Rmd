@@ -6,5 +6,6 @@ title: Robinson Statistical Bioinformatics Group @UZH @SIB
 
 We are located in the [Institute of Molecular Life Sciences](http://www.imls.uzh.ch/en.html) within the [Faculty of Science](http://www.mnf.uzh.ch/en.html) at the [University of Zurich](http://www.uzh.ch/en.html).
 
-Research in our laboratory is focused on statistical and computational methods for processing and interpreting genomic data.
+Research in our laboratory is focused on statistical methods and data science tools for processing and interpreting genomic data. You can learn about [our research](research.html), [who we are](people.html), the [resources](tools.html) we make or the [papers](publications.html) we publish.
 
+![Irchel Campus](img/irchel_up.jpg)
