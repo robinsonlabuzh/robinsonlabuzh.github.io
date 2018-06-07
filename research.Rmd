@@ -8,7 +8,7 @@ output: html_document
 cat("<br>")
 ```
 
-```{r, echo= FALSE}
+```{r, echo= FALSE, message= FALSE, warning=FALSE}
 #++++++++++++++++++++++++++++++++++
 # rquery.wordcloud() : Word cloud generator
 # - http://www.sthda.com
