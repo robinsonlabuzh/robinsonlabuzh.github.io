@@ -68,9 +68,12 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-suppressPackageStartupMessages(library(dplyr))
-suppressPackageStartupMessages(library(rentrez))
-suppressPackageStartupMessages(library(rvest))
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(rentrez)
+  library(rvest)
+  library(XML)
+})
 ```
 
 ```{r}
@@ -107,6 +110,15 @@ x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", retmax = 1000)
 
 ## Add and remove PubMed IDs manually
 x$ids <- unique(c(setdiff(x$ids, pmid_remove), pmid_add))
+
+## Get abstracts and save to file
+pubmed_fetch <- entrez_fetch(db = "pubmed", id = x$ids,
+                             rettype = "xml", parsed = TRUE)
+abstracts = xpathApply(pubmed_fetch, '//PubmedArticle//Article', 
+                       function(x) {xmlValue(xmlChildren(x)$Abstract)})
+write.table(paste(unlist(abstracts), collapse = " "), 
+            file = "pubmed_abstracts_combined.txt",
+            row.names = FALSE, col.names = FALSE, quote = FALSE)
 
 ## Extract info
 summ <- entrez_summary(db = "pubmed", id = x$ids)
