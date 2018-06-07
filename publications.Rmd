@@ -119,7 +119,12 @@ abstracts = xpathApply(pubmed_fetch, '//PubmedArticle//Article',
                        function(x) {xmlValue(xmlChildren(x)$Abstract)})
 abstracts_all <- paste(unlist(abstracts), collapse = " ")
 
-
+## Generate word cloud
+source("generate_wordcloud.R")
+png("abstracts_pubmed_wordcloud.png", width = 10, height = 8, unit = "in", res = 300)
+rquery.wordcloud(x = abstracts_all, type = "text", 
+                 textStemming = FALSE, min.freq = 2, lang = "english")
+dev.off()
 ```
 
 ```{r}
