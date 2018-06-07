@@ -103,24 +103,27 @@ make_link_altmetric <- function(doi) {
 }
 ```
 
-
 ```{r}
 ## Search PubMed
 x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", retmax = 1000)
 
 ## Add and remove PubMed IDs manually
 x$ids <- unique(c(setdiff(x$ids, pmid_remove), pmid_add))
+```
 
-## Get abstracts and save to file
+```{r}
+## Get abstracts and generate word cloud
 pubmed_fetch <- entrez_fetch(db = "pubmed", id = x$ids,
                              rettype = "xml", parsed = TRUE)
 abstracts = xpathApply(pubmed_fetch, '//PubmedArticle//Article', 
                        function(x) {xmlValue(xmlChildren(x)$Abstract)})
-write.table(paste(unlist(abstracts), collapse = " "), 
-            file = "pubmed_abstracts_combined.txt",
-            row.names = FALSE, col.names = FALSE, quote = FALSE)
+abstracts_all <- paste(unlist(abstracts), collapse = " ")
 
-## Extract info
+
+```
+
+```{r}
+## Extract info for summary table
 summ <- entrez_summary(db = "pubmed", id = x$ids)
 summ <- lapply(summ, function(w) {
   data.frame(title = fix_null(w$title), 
