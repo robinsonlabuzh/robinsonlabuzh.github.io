@@ -111,7 +111,7 @@ x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", retmax = 1000)
 x$ids <- unique(c(setdiff(x$ids, pmid_remove), pmid_add))
 ```
 
-```{r}
+```{r, results = "hide"}
 ## Get abstracts and generate word cloud
 pubmed_fetch <- entrez_fetch(db = "pubmed", id = x$ids,
                              rettype = "xml", parsed = TRUE)
