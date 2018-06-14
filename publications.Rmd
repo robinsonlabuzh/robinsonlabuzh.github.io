@@ -121,7 +121,7 @@ abstracts_all <- paste(unlist(abstracts), collapse = " ")
 
 ## Generate word cloud
 source("generate_wordcloud.R")
-png("img/abstracts_pubmed_wordcloud.png", width = 10, height = 8, unit = "in", res = 300)
+svg("img/abstracts_pubmed_wordcloud.svg", width = 10, height = 8)
 rquery.wordcloud(x = abstracts_all, type = "text", 
                  textStemming = FALSE, min.freq = 2, lang = "english")
 dev.off()
