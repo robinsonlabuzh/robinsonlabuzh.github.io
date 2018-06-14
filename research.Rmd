@@ -4,6 +4,8 @@ author: ""
 output: html_document
 ---
 
+![Figure: wordcloud from abstracts of all publication](abstracts_pubmed_wordcloud.png)
+
 ```{r, echo= FALSE, results = "asis"}
 cat("<br>")
 ```
@@ -109,5 +111,3 @@ cat("<br>")
 # end of a division (CSS code)
 cat("</div>")
 ```
-
-![](abstracts_pubmed_wordcloud.png)
