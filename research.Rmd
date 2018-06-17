@@ -4,9 +4,12 @@ author: ""
 output: html_document
 ---
 
+![Figure: wordcloud from abstracts of all publications](img/abstracts_pubmed_wordcloud.svg)
+
 ```{r, echo= FALSE, results = "asis"}
 cat("<br>")
 ```
+
 
 #### **Overall philosophy of interdisciplinary methods research**
 
