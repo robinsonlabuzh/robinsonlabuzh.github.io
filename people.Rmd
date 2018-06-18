@@ -138,7 +138,7 @@ tbl_fiona <- data.frame(
 )
 
 tbl_vladimir <- data.frame(
-  img = "", 
+  img = "![](img/thumbnail/vladimir.jpg)", 
   bio = c("Vladimir Barbosa C. de Souza", 
           paste0("I am a PhD candidate in Bioinformatics, and I am working with PacBio data ", 
                  "(third-generation sequencing). As there is just few documentation about the data, ", 
