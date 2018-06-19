@@ -30,6 +30,14 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/349738", github = "https://github.com/lmweber/diffcyt-evaluations")
 )
 
+## data repos
+pmid_data <- rbind(
+  c(pmid = "27992111", data = "http://flowrepository.org/id/FR-FCM-ZZPH")
+)
+biorxiv_data <- rbind(
+  c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
+)
+
 ## software packages
 pmid_software <- rbind(
   c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"),
@@ -174,7 +182,11 @@ summ$authors <- sapply(summ$authors, function(a) {
 summ <- dplyr::left_join(summ, data.frame(pmid_github, stringsAsFactors = FALSE)) %>%
   dplyr::mutate(github = replace(github, is.na(github), ""))
 
-## Add colum with links to software packages
+## Add column with links to data repos
+summ <- dplyr::left_join(summ, data.frame(pmid_data, stringsAsFactors = FALSE)) %>%
+  dplyr::mutate(data = replace(data, is.na(data), ""))
+
+## Add column with links to software packages
 summ <- dplyr::left_join(summ, data.frame(pmid_software, stringsAsFactors = FALSE)) %>%
     dplyr::mutate(software = replace(software, is.na(software), ""))
 ```
@@ -209,7 +221,11 @@ if (!is.null(biorxiv)) {
   biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_github, stringsAsFactors = FALSE)) %>%
     dplyr::mutate(github = replace(github, is.na(github), ""))
   
-  ## Add colum with links to software packages
+  ## Add column with links to data repos
+  biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_data, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(data = replace(data, is.na(data), ""))
+  
+  ## Add column with links to software packages
   biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_software, stringsAsFactors = FALSE)) %>%
     dplyr::mutate(software = replace(software, is.na(software), ""))
 }
@@ -232,6 +248,7 @@ if (!is.null(biorxiv)) {
                   ". bioRxiv doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
                   biorxiv[j, "pubdate"], " ", 
                   ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "data"] == "", "", paste0(make_link_text(address = biorxiv[j, "data"], title = "Data"), ". ")), 
                   ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")), 
                   make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
                   "\n\n")
@@ -250,6 +267,7 @@ for (i in years) {
                   " (", i, "). DOI: ", summ[[i]][j, "doi"],
                   ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
                   ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"), ". ")), 
+                  ifelse(summ[[i]][j, "data"] == "", "", paste0(make_link_text(address = summ[[i]][j, "data"], title = "Data"), ". ")), 
                   ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], title = "Software"), ". ")), 
                   make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
                   "\n\n")
