@@ -18,7 +18,7 @@ pmid_add <- c("11743205","15761153","23857251","26493315")
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
-biorxiv_dois <- c()
+biorxiv_dois <- c("10.1101/349738")
 
 ## github repos
 pmid_github <- rbind(
@@ -27,7 +27,7 @@ pmid_github <- rbind(
   c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper")
 )
 biorxiv_github <- rbind(
-  c(doi = "", github = "")
+  c(doi = "10.1101/349738", github = "https://github.com/lmweber/diffcyt-evaluations")
 )
 
 ## software packages
@@ -38,7 +38,7 @@ pmid_software <- rbind(
   c(pmid = "29605184", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html")
 )
 biorxiv_software <- rbind(
-  c(doi = "", software = "")
+  c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html")
 )
 
 ## names of members to highlight in publication list
