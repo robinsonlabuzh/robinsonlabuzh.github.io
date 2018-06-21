@@ -64,6 +64,8 @@ The following parts of `publications.Rmd` may need to be modified (all done with
 
 ### Adding news item
 
+News items can be added by simply cutting and pasting an existing snippet (i.e., a row of the `tbl_news` table) and filling in the new content (a few more details about line breaks, etc. are given in `news.Rmd`).  As usual, the news item should be created in a separate branch (see above), a pull request submitted and then peer-reviewed.  In this case, it should be approved by Mark so set the reviewer to be Mark.
+
 ## Template examples
 
 Previous examples of this website template:
