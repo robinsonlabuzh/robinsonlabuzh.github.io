@@ -62,6 +62,8 @@ The following parts of `publications.Rmd` may need to be modified (all done with
 
 ### Adding members
 
+The members of the group are listed in the people.Rmd file. To add a new member, you can copy an existing entry and simply change its content. Add the path to your picture in the img component, but make sure that the picture is less than 100KB. The compressed picture should be saved in img/thumbnails (see below for tips on image optimization). Under bio, you can add a description of your research and your university degree(s). If you want, you can also add links to your website, twitter or github accounts. Commit your changes to a new branch, submit a pull request and assign a reviewer (follow the explanations above on how to create a pull request).
+
 ### Adding news item
 
 News items can be added by simply cutting and pasting an existing snippet (i.e., a row of the `tbl_news` table) and filling in the new content (a few more details about line breaks, etc. are given in `news.Rmd`).  As usual, the news item should be created in a separate branch (see above), a pull request submitted and then peer-reviewed.  In this case, it should be approved by Mark so set the reviewer to be Mark.
