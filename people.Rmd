@@ -111,7 +111,7 @@ tbl_kathi <- data.frame(
                  "development of a pipeline for the identification and quantification of alternative splicing events, ", 
                  "specifically microexons and cryptic exons, from RNA-seq data."), 
           paste0("MSc in Bioinformatics (2015), LMU and TU Munich<br>",
-                 "BSc in Bioinformatics (2013), LMU and TU Munich"))
+                 "BSc in Bioinformatics (2012), LMU and TU Munich"))
 )
 
 tbl_stephan <- data.frame(
