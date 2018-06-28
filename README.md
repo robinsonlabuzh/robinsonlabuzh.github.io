@@ -66,6 +66,14 @@ The following parts of `publications.Rmd` may need to be modified (all done with
 
 News items can be added by simply cutting and pasting an existing snippet (i.e., a row of the `tbl_news` table) and filling in the new content (a few more details about line breaks, etc. are given in `news.Rmd`).  As usual, the news item should be created in a separate branch (see above), a pull request submitted and then peer-reviewed.  In this case, it should be approved by Mark so set the reviewer to be Mark.
 
+### Tips on image optimization
+
+When uploading images please mind their format and filesize, as unnecesarily big files will require longer loading times and thus will impact web performance. We recommend following the [good practices by Ryan Boudreaux](https://www.techrepublic.com/blog/web-designer/tips-for-optimizing-your-web-images/): in brief, small JPGs (less than 100 KB) are preferred for high end photographs.
+
+Images can be compressed using an image editor (i.e. Gimp) or in bulk (i.e. with [Imagemagick](https://www.imagemagick.org/script/index.php)). We provide a [thumbnail generator](https://github.com/robinsonlabuzh/robinsonlabuzh.github.io/blob/master/utils/bulk_thumbnail_generator.sh) based in Imagemagick for batch resizing. To run the thumbnail generator place your original image(s) at the folder encoded at `$INPUT_PATH` (the variable is set to the current directory `.` by default) and execute the bash script, which will generate an output folder (variable `$OUTPUT_PATH`, by default `$INPUT_PATH/thumbnail`) with the compressed images.
+
+Mind that compression is a trade off between file size and quality, so make sure you have a saved copy of the original image as a lossless version. To encourage a separation of originals and thumbnails the repository has a folder [img](https://github.com/robinsonlabuzh/robinsonlabuzh.github.io/tree/master/img) for the former and a subfolder [thumbnail](https://github.com/robinsonlabuzh/robinsonlabuzh.github.io/tree/master/img/thumbnail) for the latter. Note that `Rmd` and `html` files should point to the thumbnails, not to the originals.
+
 ## Template examples
 
 Previous examples of this website template:
