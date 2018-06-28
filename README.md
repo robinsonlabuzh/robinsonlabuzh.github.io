@@ -62,7 +62,7 @@ The following parts of `publications.Rmd` may need to be modified (all done with
 
 ### Adding members
 
-The members of the group are listed in the people.Rmd file. To add a new member, you can copy an existing entry and simply change its content. Add the path to your picture in the img component, but make sure that the picture is less than 100KB. The compressed picture should be saved in img/thumbnails (see below for tips on image optimization). Under bio, you can add a description of your research and your university degree(s). If you want, you can also add links to your website, twitter or github accounts. Commit your changes to a new branch, submit a pull request and assign a reviewer (follow the explanations above on how to create a pull request).
+The members of the group are listed in the `people.Rmd` file. To add a new member, you can copy an existing entry and simply change its content. Add the path to your picture in the `img` component, but make sure that the picture is less than 100KB. The compressed picture should be saved in `img/thumbnails` (see below for tips on image optimization). Under `bio`, you can add a description of your research and your university degree(s). If you want, you can also add links to your website, twitter or github accounts. Commit your changes to a new branch, submit a pull request and assign a reviewer (follow the explanations above on how to create a pull request).
 
 ### Adding news item
 
