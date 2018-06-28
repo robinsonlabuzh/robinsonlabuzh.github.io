@@ -189,7 +189,7 @@ tbl_helena <- data.frame(
                  "(**C**ytometry d**AT**a an**ALYS**is **T**ools): a [Bioconductor](https://bioconductor.org) ", 
                  "package providing tools for preprocessing and analysis of cytometry data; and have further ", 
                  "integrated M. Nowicka's [CyTOF workflow](https://f1000research.com/articles/6-748/v2) for ",
-                 "differential analysis into the package. Currently, I am working my Masters thesis project, ", 
+                 "differential analysis into the package. Currently, I am working my MScs thesis project, ", 
                  "which is predicated on differential discovery for scRNA-seq data."), 
           paste0("MSc in Computational Biology & Bioinformatics (present), ETH Zurich<br>", 
                  "BSc in Biochemistry (2015), University of Heidelberg"))
@@ -263,5 +263,25 @@ for (i in seq_along(tables_all)) {
     print
 }
 ```
+
+## Alumni
+- Helen Lindsay (postdoc, author of CrispRVariants; now at [EPFL](https://www.epfl.ch/))
+- Charity Law (postdoc, worked on differential splicing; now at [WEHI](https://www.wehi.edu.au/))
+- Andrea Riebler (postdoc, author of [BayMeth](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r35) in [Repitools](http://bioconductor.org/packages/release/bioc/html/Repitools.html) package; now at [NTNU](https://www.ntnu.edu/imf))
+- Ian Morilla (postdoc, involved in differential expression analysis using de novo RNA-seq assemblies; now at [INSERM](https://www.inserm.fr/))
+- Xiaobei Zhou (PhD student; author of edgeR robust)
+- Malgorzata Nowicka (PhD student, author of [DRIMSeq](https://bioconductor.org/packages/DRIMSeq) and 
+[cytofWorkflow](https://bioconductor.org/packages/cytofWorkflow/); now at [Hoffman La Roche](https://www.roche.ch/))
+- Hadi Gharibi (PhD student, analyzed BS-seq data; now at [Uni. Tehran](http://ut.ac.ir/en))
+- Andrea Komljenovic (PhD student, analyzed DNA methylation data; now at [UNIL](https://www.unil.ch/dee/home/menuinst/people/graduate-students.html))
+- Olga Nikolayeva (PhD student, analyzed PacBio DNA-seq data)
+- Imran Fanaswala (Research Assistant, worked on assembly with PacBio and Illumina DNA-seq)
+- Lourdes Rosano González (MSc student, analyzed transformations of CyTOF data)
+- Katarina Matthes (MSc student, compared differential splicing methods)
+- Dania Machlab (MSc student, analyzed allele-specific methylation from BS-seq data; now at [FMI](https://www.fmi.ch/))
+- Buildman Biyong (MSc student, established components of CrispRVariantsLite)
+- Angelo Duò (MSc student, compared scRNA-seq clustering algorithms)
+- Amr Elriedy (MSc student, analyzed isoform detection using PacBio cDNA-seq)
+- Romy Schleiss (MSc student, compared normalization for CyTOF data)
 
 
