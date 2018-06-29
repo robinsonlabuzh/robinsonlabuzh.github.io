@@ -8,6 +8,7 @@ title: "Software & Resources"
 
 Name      | Author(s)               | Description 
 ----------|---------------|-----------------------------------
+[aroma.affymetrix](http://aroma-project.org/) | Henrik Bengtsson<br>James Bullard<br>Kasper Hansen<br>Pierre Neuvial<br>Elizabeth Purdom<br>**Mark D Robinson**<br>Ken Simpson | An open-source R framework for microarray analysis
 [CATALYST](http://bioconductor.org/packages/release/bioc/html/CATALYST.html) | **Helena L Crowell**<br>**Mark D Robinson**<br>Vito RT Zanotelli<br>Stéphane Chevrier<br>Bernd Bodenmiller | Pipeline for preprocessing of cytometry data<br>& visualization tools for differential analysis 
 [countsimQC](https://github.com/csoneson/countsimQC) | **Charlotte Soneson** | Comparison of characteristic features of count data sets
 [CrispRVariants](http://bioconductor.org/packages/release/bioc/html/CrispRVariants.html) | **Helen Lindsay** | Tools for counting and visualising mutations in a target location
@@ -15,6 +16,7 @@ Name      | Author(s)               | Description
 [diffcyt](http://bioconductor.org/packages/release/bioc/html/diffcyt.html) | **Lukas M Weber** | Statistical methods for differential discovery in high-dimensional cytometry data
 [DRIMSeq](http://bioconductor.org/packages/release/bioc/html/DRIMSeq.html) | **Malgorzata Nowicka** | Differential transcript usage and tuQTL analyses<br>with Dirichlet-multinomial model in RNA-seq [Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/drimseq/)
 [edgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) | Yunshun Chen<br>Aaron Lun<br>Davis McCarthy<br>**Xiaobei Zhou**<br>**Mark D Robinson**<br>Gordon Smyth | Empirical Analysis of Digital Gene Expression Data in R
+[FIRMAGene](https://rdrr.io/rforge/FIRMAGene/) | **Mark D Robinson** | Analysis of differential splicing with Affymetrix Gene ST array data
 [flagme](http://bioconductor.org/packages/release/bioc/html/flagme.html) | **Mark D Robinson**<br>Riccardo Romoli | Analysis of Metabolomics GC/MS Data
 [iCOBRA](http://bioconductor.org/packages/release/bioc/html/iCOBRA.html) | **Charlotte Soneson** | Comparison and Visualization of Ranking and Assignment Methods
 [iSEE](http://bioconductor.org/packages/release/bioc/html/iSEE.html) | **Charlotte Soneson**<br>Aaron Lun<br>Federico Marini<br>Kevin Rue-Albrecht | Interactive SummarizedExperiment Explorer
