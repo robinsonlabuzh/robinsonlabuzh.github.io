@@ -32,6 +32,8 @@ For exact information on schedule, registration and location, please refer to th
 
 ###2017
 
+* [Data Carpentry Ecology Workshop](https://pennekampster.github.io/2017-11-06-lugano/). Lugano, Switzerland
+* [Data Carpentry Genomics Workshop](https://pennekampster.github.io/2017-11-08-lugano/). Lugano, Switzerland
 * [de.NBI Summer School: Computational Genomics and RNA biology](https://www.denbi.de/22-training-cat/training-courses/278-de-nbi-summer-school-computational-genomics-and-rna-biology). Berlin, Germany
 * [Statistics for Life Scientists](https://www.sib.swiss/training/course/stats-basel2017). Basel, Switzerland
 * [Statistical data analysis for genome scale biology (CSAMA 2017)](http://www.huber.embl.de/csama2017/#home). Brixen, Italy
@@ -39,7 +41,8 @@ For exact information on schedule, registration and location, please refer to th
 
 ###2016
 
-* [Data Carpentry: Introduction to Data Analysis and Visualization in R](https://markrobinsonuzh.github.io/2016-07-18-zurich/). University of Zurich
+* [Data Carpentry: Introduction to Data Analysis and Visualization in R (May 2016)](https://lmweber.github.io/2016-05-30-Zurich/). University of Zurich
+* [Data Carpentry: Introduction to Data Analysis and Visualization in R (July 2016)](https://markrobinsonuzh.github.io/2016-07-18-zurich/). University of Zurich
 * [Computational Genomics: A hands-on course on data analysis](http://compgen2016.mdc-berlin.de/). Max-Delbrück Center for Molecular Medicine, Berlin, Germany 
 * Advanced course on edgeR and DESeq2. Leuven, Belgium
 * [Statistics for Life Scientists](http://edu.isb-sib.ch/course/view.php?id=269). Basel, Switzerland
