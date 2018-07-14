@@ -36,7 +36,7 @@ tbl_news[nrow(tbl_news) + 1,] <- list("01.06.2018","New website is published!","
 [//]: # Add Mark's twitter feed
 <a class="twitter-timeline" data-height="400" href="https://twitter.com/markrobinsonca">Tweets by markrobinsonca</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-```{r, echo=FALSE, message=FALSE, results="asis"}
+```{r, echo=FALSE, message=FALSE, results="asis", warning=FALSE}
 # R code to output HTML code
 
 library(knitr)
