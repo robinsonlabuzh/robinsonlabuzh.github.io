@@ -116,7 +116,7 @@ make_link_altmetric <- function(doi) {
 x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", retmax = 1000)
 
 ## Add and remove PubMed IDs manually
-x$ids <- unique(c(setdiff(x$ids, pmid_remove), pmid_add))
+x$ids <- unique(c(base::setdiff(x$ids, pmid_remove), pmid_add))
 ```
 
 ```{r, results = "hide"}
@@ -128,7 +128,7 @@ abstracts = xpathApply(pubmed_fetch, '//PubmedArticle//Article',
 abstracts_all <- paste(unlist(abstracts), collapse = " ")
 
 ## Generate word cloud
-source("generate_wordcloud.R")
+base::source("generate_wordcloud.R")
 #svg("img/abstracts_pubmed_wordcloud.svg", width = 10, height = 8)
 svglite::svglite("img/abstracts_pubmed_wordcloud.svg", width = 10, height = 8)
 rquery.wordcloud(x = abstracts_all, type = "text", 
