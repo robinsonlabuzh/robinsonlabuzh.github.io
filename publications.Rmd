@@ -12,7 +12,7 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
                  "18025499", "15786672", "15779224", "15322224")
 
 ## PubMed IDs to add
-pmid_add <- c("11743205","15761153","23857251","26493315")
+pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819")
 
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
@@ -116,7 +116,7 @@ make_link_altmetric <- function(doi) {
 x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", retmax = 1000)
 
 ## Add and remove PubMed IDs manually
-x$ids <- unique(c(setdiff(x$ids, pmid_remove), pmid_add))
+x$ids <- unique(c(base::setdiff(x$ids, pmid_remove), pmid_add))
 ```
 
 ```{r, results = "hide"}
@@ -128,7 +128,7 @@ abstracts = xpathApply(pubmed_fetch, '//PubmedArticle//Article',
 abstracts_all <- paste(unlist(abstracts), collapse = " ")
 
 ## Generate word cloud
-source("generate_wordcloud.R")
+base::source("generate_wordcloud.R")
 #svg("img/abstracts_pubmed_wordcloud.svg", width = 10, height = 8)
 svglite::svglite("img/abstracts_pubmed_wordcloud.svg", width = 10, height = 8)
 rquery.wordcloud(x = abstracts_all, type = "text", 
