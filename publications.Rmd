@@ -66,6 +66,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Nowicka M", "Malgorzata Nowicka",
                    "Zhou X", "Xiaobei Zhou",
                    "Nikolayeva O", 
+                   "Komljenovic A",
                    "Morilla I", 
                    "Law CW", 
                    "Riebler A",
