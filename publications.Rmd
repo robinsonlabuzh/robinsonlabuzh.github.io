@@ -12,7 +12,7 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
                  "18025499", "15786672", "15779224", "15322224")
 
 ## PubMed IDs to add
-pmid_add <- c("11743205","15761153","23857251","26493315")
+pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819")
 
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
@@ -66,6 +66,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Nowicka M", "Malgorzata Nowicka",
                    "Zhou X", "Xiaobei Zhou",
                    "Nikolayeva O", 
+                   "Komljenovic A",
                    "Morilla I", 
                    "Law CW", 
                    "Riebler A",
