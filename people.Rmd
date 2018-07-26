@@ -171,7 +171,7 @@ tbl_stefan <- data.frame(
                  "<i class='fa fa-github'></i> GitHub [supermaxiste](https://github.com/supermaxiste)<br>"),
           paste0("I have a shared PhD position with the ",
                  "[Shimizu lab](http://www.ieu.uzh.ch/en/research/evolbiol/ecogenomics.html). ",
-                 "I've got a background in biology and bioinformatic and I'm currently ", 
+                 "I've got a background in biology and bioinformatics and I'm currently ", 
                  "working on the rapid evolution of a plant species called _Arabidopsis_ _kamchatica_. ", 
                  "My project focuses on epigenetic modifications over short timescales and my general ", 
                  "aim is to assess the impact and the importance of DNA methylation in evolution over ", 
