@@ -9,7 +9,7 @@ editor_options:
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 ## PubMed IDs to remove
 pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830", 
-                 "18025499", "15786672", "15779224", "15322224")
+                 "18025499", "15786672", "15779224", "15322224", "30039500")
 
 ## PubMed IDs to add
 pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819")
@@ -49,6 +49,25 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html")
 )
 
+## F1000Research articles awaiting peer review
+f1000_preprints <- data.frame(
+  title = c("Swimming downstream: statistical analysis of differential transcript usage following Salmon quantification",
+            "A systematic performance evaluation of clustering methods for single-cell RNA-seq data"),
+  pubdate = c("Posted June 27, 2018.",
+              "Posted July 26, 2018."),
+  pubyear = c("Preprints", "Preprints"),
+  journal = c("F1000Research", "F1000Research"),
+  authors = c("Michael I Love, Charlotte Soneson, Rob Patro",
+              "Angelo Duò, Mark D Robinson, Charlotte Soneson"),
+  volume = c(7, 7),
+  issue = c(952, 1141),
+  pages = c("", ""),
+  doi = c("10.12688/f1000research.15398.1",
+          "10.12688/f1000research.15666.1"),
+  pmid = c("", ""),
+  elocationid = c("", "")
+)
+
 ## names of members to highlight in publication list
 group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robinson M",
                    "Soneson C", "Charlotte Soneson",
@@ -62,7 +81,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Orjuela S", "Stephany Orjuela", 
                    "Crowell HL", "Crowell H", "Helena L Crowell", "Helena Crowell",
                    "Mallona I", "Izaskun Mallona",
-                   "Duo A", "Angelo Duo", 
+                   "Duo A", "Angelo Duo", "Duò A", "Angelo Duò",
                    "Nowicka M", "Malgorzata Nowicka",
                    "Zhou X", "Xiaobei Zhou",
                    "Nikolayeva O", 
@@ -205,6 +224,18 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
              pages = "", doi = doi, pmid = "", elocationid = "", 
              stringsAsFactors = FALSE)
 }))
+```
+
+```{r}
+## Add F1000Research preprints
+if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
+  f1000_preprints <- f1000_preprints[, match(colnames(biorxiv), 
+                                             colnames(f1000_preprints))]
+  colnames(f1000_preprints) <- colnames(biorxiv)
+  biorxiv <- rbind(biorxiv, f1000_preprints)
+} else if (!is.null(f1000_preprints)) {
+  biorxiv <- f1000_preprints
+}
 ```
 
 ```{r}
