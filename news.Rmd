@@ -30,6 +30,9 @@ tbl_news <- data.frame(matrix(vector(), 0, 3,
 # tbl_news[nrow(tbl_news) + 1,] <- list("30.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
 # tbl_news[nrow(tbl_news) + 1,] <- list("29.5.2018","Test", "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test")
 tbl_news[nrow(tbl_news) + 1,] <- list("01.06.2018","New website is published!","After a major collaborative effort from everyone in the lab, the new github-based lab website is finished.")
+tbl_news[nrow(tbl_news) + 1,] <- list("18.06.2018","New bioRxiv preprint!","Weber LM, Nowicka G, Soneson C and Robinson MD: [diffcyt: Differential discovery in high-dimensional cytometry via high-resolution clustering](https://doi.org/10.1101/349738)")
+tbl_news[nrow(tbl_news) + 1,] <- list("27.06.2018","New bioRxiv preprint!","Parker HR, Orjuela S, Martinho Oliveira A, Cereatti F, Sauter M, Heinrich H, Tanzi G, Weber A, Komminoth P, Vavricka S, Albanese L, Buffoli F, Robinson MD, Marra G: [The proto CpG island methylator phenotype of sessile serrated adenoma/polyps](https://doi.org/10.1101/357178)")
+tbl_news[nrow(tbl_news) + 1,] <- list("26.06.2018","New F1000Research publication!","Duò A, Robinson MD and Soneson C: [A systematic performance evaluation of clustering methods for single-cell RNA-seq data](https://doi.org/10.12688/f1000research.15666.1)")
 
 ```
 
