@@ -41,7 +41,7 @@ fax <i class="fa fa-fax"></i> +41 44 635 68 68
 
 **PhD Students**. Recruitment for PhD students is conducted through the [Life Science Zurich Graduate School](https://www.lifescience-graduateschool.uzh.ch/en.html), typically through the [Epidemiology and Biostatistics Structured PhD Program](http://www.epibiostat-phd.uzh.ch/en.html). For further information, please refer to the LSZGS website. Once selected, candidates can express an interest in our group; intake (and interviews) take place twice per year.  
 
-**Postdoctoral fellows**. No positions are available at present. However, strong candidates are encouraged to email me directly and discuss an application for funding with UZH and other funding bodies.  
+**Postdoctoral fellows**. We have a 2 year postdoc position open; details are [here](http://imlspenticton.uzh.ch/dump/JobAd_RobinsonStatisticalBioinformatics_PD_7Aug2018.pdf) and applications are due *September 15 2018*. In addition, strong candidates are encouraged at any time to email me directly and discuss an application for funding with UZH and other funding bodies.  
 
 
 ## Code of conduct
