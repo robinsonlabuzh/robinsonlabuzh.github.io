@@ -34,7 +34,8 @@ tbl_news[nrow(tbl_news) + 1,] <- list("18.06.2018","New bioRxiv preprint!","Webe
 tbl_news[nrow(tbl_news) + 1,] <- list("27.06.2018","New bioRxiv preprint!","Parker HR, Orjuela S, Martinho Oliveira A, Cereatti F, Sauter M, Heinrich H, Tanzi G, Weber A, Komminoth P, Vavricka S, Albanese L, Buffoli F, Robinson MD, Marra G: [The proto CpG island methylator phenotype of sessile serrated adenoma/polyps](https://doi.org/10.1101/357178)")
 tbl_news[nrow(tbl_news) + 1,] <- list("26.07.2018","New F1000Research publication!","Duò A, Robinson MD and Soneson C: [A systematic performance evaluation of clustering methods for single-cell RNA-seq data](https://doi.org/10.12688/f1000research.15666.1)")
 tbl_news[nrow(tbl_news) + 1,] <- list("28.07.2018","New bioRxiv preprint!","Soneson C, Love MI, Patro R, Hussain S, Malhotra D and Robinson MD: [A junction coverage compatibility score to quantify the reliability of transcript abundance estimates and annotation catalogs](https://doi.org/10.1101/378539)")
-
+tbl_news[nrow(tbl_news) + 1,] <- list("06.08.2018","New BMC Genomics publication!","Bick JT, Flöter VL, Robinson MD, Bauersachs S, Ulbrich SE.
+[Small RNA-seq analysis of single porcine blastocysts revealed that maternal estradiol-17beta exposure does not affect miRNA isoform (isomiR) expression](https://doi.org/10.1186/s12864-018-4954-9)")
 ```
 
 [//]: # Add Mark's twitter feed
