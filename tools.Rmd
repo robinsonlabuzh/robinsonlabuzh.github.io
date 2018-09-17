@@ -31,9 +31,11 @@ Name      | Author(s)     | Description
 ----------|---------------|-----------------------------------
 [Benchmark collection](http://imlspenticton.uzh.ch/robinson_lab/benchmark_collection) | **Robinson group** | Collection of high-throughput computational biology benchmarking data sets
 [conquer](http://imlspenticton.uzh.ch:3838/conquer/) | **Charlotte Soneson** | Repository providing consistently processed<br>public single-cell RNA-seq data sets
+[DuoClustering2018](https://bioconductor.org/packages/DuoClustering2018/) | **Angelo Duò**<br>**Charlotte Soneson** | Data package with processed data and clustering results from [Duò et al. (2018)](https://f1000research.com/articles/7-1141/v2)
 [FlowRepository FR-FCM-ZZPH](http://flowrepository.org/id/FR-FCM-ZZPH) | **Lukas M Weber** | Data files for benchmark data sets used in *"Comparison of clustering methods for high-dimensional single-cell flow and mass cytometry data"* ([Weber and Robinson, 2016](https://www.ncbi.nlm.nih.gov/pubmed/27992111))
 [FlowRepository FR-FCM-ZYL8](http://flowrepository.org/id/FR-FCM-ZYL8) | **Lukas M Weber** | Data files for benchmark data sets used in our paper introducing the 'diffcyt' framework ([Weber et al., 2018](https://www.biorxiv.org/content/early/2018/06/18/349738))
 [HDCytoData](http://bioconductor.org/packages/release/data/experiment/html/HDCytoData.html) | **Lukas M Weber**<br>**Charlotte Soneson** | Data package of high-dimensional cytometry data sets in<br>SummarizedExperiment and flowSet formats
+[TabulaMurisData](https://bioconductor.org/packages/TabulaMurisData/) | **Charlotte Soneson** | Bioconductor package providing access to scRNA-seq data from the [Tabula Muris Consortium](http://tabula-muris.ds.czbiohub.org/) 
 
 ---
 
