@@ -284,7 +284,7 @@ for (i in seq_along(tables_all)) {
 - Katarina Matthes (MSc student, compared [differential splicing methods](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3))
 - Dania Machlab (MSc student, analyzed allele-specific methylation from BS-seq data; now at [FMI](https://www.fmi.ch/))
 - Buildman Biyong (MSc student, established components of CrispRVariantsLite)
-- Angelo Duò (MSc student, compared scRNA-seq clustering algorithms)
+- Angelo Duò (MSc student, [compared scRNA-seq clustering algorithms](https://f1000research.com/articles/7-1141/v2))
 - Amr Elriedy (MSc student, analyzed isoform detection using PacBio cDNA-seq)
 - Romy Schleiss (MSc student, compared normalization for CyTOF data)
 
