@@ -222,7 +222,7 @@ tbl_almut <- data.frame(
           paste0("I'm a PhD student with a background in Molecular Biotechnology, ",
                  "but already during my master I focused on Bioinformatics. ",
                  "I'm interested in all kinds of genomic analysis, but mainly worked with transcriptomic data, so far. ", 
-                 "My PhD project is about methods in single cell RNAseq and part of a Sinergia collaboration on defining",
+                 "My PhD project is about methods in single cell RNAseq and part of a Sinergia collaboration on defining ",
                  "the  identity  and  differentiation  pathways of the immune-stimulating fibroblastic tumor stroma."), 
           paste0("MSc in Molecular Biotechnology (2018), University of Heidelberg<br>", 
                  "BSc Molecular Biotechnology (2013), University of Heidelberg"))
