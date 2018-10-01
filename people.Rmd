@@ -235,7 +235,6 @@ tbl_almut <- data.frame(
 # combine all in list (re-order here as appropriate, e.g. by seniority)
 tables_all <- list(
   tbl_mark, 
-  tbl_charlotte, 
   tbl_simone,
   tbl_izaskun,
   tbl_lukas, 
@@ -247,6 +246,7 @@ tables_all <- list(
   tbl_stefan, 
   tbl_helena,
   tbl_almut#,
+#  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
   )
@@ -282,6 +282,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- [Charlotte Soneson](http://csoneson.github.io/) (postdoc, investigated [various](https://f1000research.com/articles/4-1521/) [aspects](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3) of [RNA-seq](https://www.nature.com/articles/nmeth.4612) [data](https://www.biorxiv.org/content/early/2018/07/28/378539) and [method](https://www.nature.com/articles/nmeth.3805) [benchmarking](https://academic.oup.com/bioinformatics/article/34/4/691/4345646); now at [FMI](https://www.fmi.ch))
 - Helen Lindsay (postdoc, author of [CrispRVariants](https://bioconductor.org/packages/release/bioc/html/CrispRVariants.html); now at [EPFL](https://www.epfl.ch/))
 - Charity Law (postdoc, worked on differential splicing; now at [WEHI](https://www.wehi.edu.au/))
 - Andrea Riebler (postdoc, author of [BayMeth](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r35) in [Repitools](http://bioconductor.org/packages/release/bioc/html/Repitools.html) package; now at [NTNU](https://www.ntnu.edu/imf))
