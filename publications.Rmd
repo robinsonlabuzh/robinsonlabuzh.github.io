@@ -25,7 +25,8 @@ biorxiv_dois <- c("10.1101/349738", "10.1101/357178",
 pmid_github <- rbind(
   c(pmid = "27992111", github = "https://github.com/lmweber/cytometry-clustering-comparison"),
   c(pmid = "29481549", github = "https://github.com/csoneson/conquer_comparison"),
-  c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper")
+  c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
+  c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scRNAseq_clustering_comparison")
 )
 biorxiv_github <- rbind(
   c(doi = "10.1101/349738", github = "https://github.com/lmweber/diffcyt-evaluations"),
@@ -34,7 +35,8 @@ biorxiv_github <- rbind(
 
 ## data repos
 pmid_data <- rbind(
-  c(pmid = "27992111", data = "http://flowrepository.org/id/FR-FCM-ZZPH")
+  c(pmid = "27992111", data = "http://flowrepository.org/id/FR-FCM-ZZPH"),
+  c(pmid = "30271584", data = "https://bioconductor.org/packages/DuoClustering2018/")
 )
 biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
@@ -53,21 +55,17 @@ biorxiv_software <- rbind(
 
 ## F1000Research articles awaiting peer review
 f1000_preprints <- data.frame(
-  title = c("Swimming downstream: statistical analysis of differential transcript usage following Salmon quantification",
-            "A systematic performance evaluation of clustering methods for single-cell RNA-seq data"),
-  pubdate = c("Posted June 27, 2018.",
-              "Posted July 26, 2018."),
-  pubyear = c("Preprints", "Preprints"),
-  journal = c("F1000Research", "F1000Research"),
-  authors = c("Michael I Love, Charlotte Soneson, Rob Patro",
-              "Angelo Duò, Mark D Robinson, Charlotte Soneson"),
-  volume = c(7, 7),
-  issue = c(952, 1141),
-  pages = c("", ""),
-  doi = c("10.12688/f1000research.15398.1",
-          "10.12688/f1000research.15666.1"),
-  pmid = c("", ""),
-  elocationid = c("", "")
+  title = c("Swimming downstream: statistical analysis of differential transcript usage following Salmon quantification"),
+  pubdate = c("Posted June 27, 2018."),
+  pubyear = c("Preprints"),
+  journal = c("F1000Research"),
+  authors = c("Michael I Love, Charlotte Soneson, Rob Patro"),
+  volume = c(7),
+  issue = c(952),
+  pages = c(""),
+  doi = c("10.12688/f1000research.15398.1"),
+  pmid = c(""),
+  elocationid = c("")
 )
 
 ## names of members to highlight in publication list
