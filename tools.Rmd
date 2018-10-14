@@ -10,7 +10,7 @@ Name      | Author(s)               | Description
 ----------|---------------|-----------------------------------
 [aroma.affymetrix](http://aroma-project.org/) | Henrik Bengtsson<br>James Bullard<br>Kasper Hansen<br>Pierre Neuvial<br>Elizabeth Purdom<br>**Mark D Robinson**<br>Ken Simpson | An open-source R framework for microarray analysis
 [CATALYST](http://bioconductor.org/packages/release/bioc/html/CATALYST.html) | **Helena L Crowell**<br>**Mark D Robinson**<br>Vito RT Zanotelli<br>Stéphane Chevrier<br>Bernd Bodenmiller | Pipeline for preprocessing of cytometry data<br>& visualization tools for differential analysis 
-[countsimQC](https://github.com/csoneson/countsimQC) | **Charlotte Soneson** | Comparison of characteristic features of count data sets
+[countsimQC](https://bioconductor.org/packages/countsimQC/) | **Charlotte Soneson** | Comparison of characteristic features of count data sets
 [CrispRVariants](http://bioconductor.org/packages/release/bioc/html/CrispRVariants.html) | **Helen Lindsay** | Tools for counting and visualising mutations in a target location
 [cytofWorkflow](https://www.bioconductor.org/packages/release/workflows/html/cytofWorkflow.html) | **Malgorzata Nowicka** | CyTOF workflow: differential discovery in high-throughput high-dimensional cytometry datasets
 [diffcyt](http://bioconductor.org/packages/release/bioc/html/diffcyt.html) | **Lukas M Weber** | Statistical methods for differential discovery in high-dimensional cytometry data
