@@ -236,7 +236,7 @@ peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
   title <- html_text(html_nodes(html, ".article-title"))
   authors <- paste(unique(paste(html_text(html_nodes(html, ".given-names")), 
                                 html_text(html_nodes(html, ".surname")))), collapse = ", ")
-  pubdate <- paste0("Posted ", html_text(html_nodes(html, "time"))[1])
+  pubdate <- paste0("Posted ", format(as.Date(html_text(html_nodes(html, "time"))[1]), "%B %d, %Y."))
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
              journal = "PeerJ", authors = authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
