@@ -223,7 +223,7 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
                                 html_text(html_nodes(html, ".nlm-surname")))), collapse = ", ")
   pubdate <- html_text(html_nodes(html, ".published"))
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
-             journal = "", authors = authors, volume = "", issue = "", 
+             journal = "bioRxiv", authors = authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
              stringsAsFactors = FALSE)
 }))
@@ -238,7 +238,7 @@ peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
                                 html_text(html_nodes(html, ".surname")))), collapse = ", ")
   pubdate <- paste0("Posted ", html_text(html_nodes(html, "time"))[1])
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
-             journal = "", authors = authors, volume = "", issue = "", 
+             journal = "PeerJ", authors = authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
              stringsAsFactors = FALSE)
 }))
