@@ -21,7 +21,7 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819")
 biorxiv_dois <- c("10.1101/349738", "10.1101/357178",
                   "10.1101/378539")
 
-peerj_dois <-   c("10.7287/peerj.preprints.27283v1")
+peerj_dois <- c("10.7287/peerj.preprints.27283v1")
 
 
 ## github repos
@@ -72,7 +72,7 @@ f1000_preprints <- data.frame(
 )
 
 ## names of members to highlight in publication list
-group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robinson M",
+group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robinson M", "Mark Robinson",
                    "Soneson C", "Charlotte Soneson",
                    "Lindsay H", "Helen Lindsay",
                    "Tiberi S", "Simone Tiberi",
