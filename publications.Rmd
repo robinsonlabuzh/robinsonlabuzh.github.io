@@ -21,6 +21,9 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819")
 biorxiv_dois <- c("10.1101/349738", "10.1101/357178",
                   "10.1101/378539")
 
+peerj_dois <- c("10.7287/peerj.preprints.27283v1")
+
+
 ## github repos
 pmid_github <- rbind(
   c(pmid = "27992111", github = "https://github.com/lmweber/cytometry-clustering-comparison"),
@@ -69,12 +72,12 @@ f1000_preprints <- data.frame(
 )
 
 ## names of members to highlight in publication list
-group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robinson M",
+group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robinson M", "Mark Robinson",
                    "Soneson C", "Charlotte Soneson",
                    "Lindsay H", "Helen Lindsay",
                    "Tiberi S", "Simone Tiberi",
                    "Weber LM", "Lukas M Weber",
-                   "Hembach K", "Katarina Hembach",
+                   "Hembach K", "Katarina Hembach", "Katharina Hembach",
                    "de Souza Vladimir", "Vladimir de Souza",
                    "Huang R", "Ruizhu Huang", 
                    "Schmeing S", "Stephan Schmeing", 
@@ -220,7 +223,22 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
                                 html_text(html_nodes(html, ".nlm-surname")))), collapse = ", ")
   pubdate <- html_text(html_nodes(html, ".published"))
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
-             journal = "", authors = authors, volume = "", issue = "", 
+             journal = "bioRxiv", authors = authors, volume = "", issue = "", 
+             pages = "", doi = doi, pmid = "", elocationid = "", 
+             stringsAsFactors = FALSE)
+}))
+```
+
+```{r}
+## Add PeerJ preprints by doi
+peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
+  html <- read_html(paste0("https://doi.org/", doi))
+  title <- html_text(html_nodes(html, ".article-title"))
+  authors <- paste(unique(paste(html_text(html_nodes(html, ".given-names")), 
+                                html_text(html_nodes(html, ".surname")))), collapse = ", ")
+  pubdate <- paste0("Posted ", format(as.Date(html_text(html_nodes(html, "time"))[1]), "%B %d, %Y."))
+  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
+             journal = "PeerJ", authors = authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
              stringsAsFactors = FALSE)
 }))
@@ -239,6 +257,11 @@ if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
 ```
 
 ```{r}
+## soak list of PeerJ preprints into bioRxiv
+biorxiv <- bind_rows(biorxiv, peerj)
+```
+
+```{r}
 if (!is.null(biorxiv)) {
   ## Highlight group members in bold
   biorxiv$authors <- sapply(biorxiv$authors, function(a) {
@@ -246,6 +269,8 @@ if (!is.null(biorxiv)) {
   })
 }
 ```
+
+
 
 ```{r add_links_preprints, message = FALSE, warning = FALSE}
 if (!is.null(biorxiv)) {
@@ -264,6 +289,8 @@ if (!is.null(biorxiv)) {
 ```
 
 
+
+
 ```{r}
 ## Split by publication year
 years <- as.character(unique(summ$pubyear))
@@ -272,12 +299,15 @@ summ <- split(summ, summ$pubyear)
 ## Generate final text string to display
 txt <- "<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>\n\n"
 
+
+
 ## Preprints
 if (!is.null(biorxiv)) {
   txt <- paste0(txt, "\n## Preprints\n\n")
   for (j in seq_len(nrow(biorxiv))) {
     txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
-                  ". bioRxiv doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
+                  ". ", biorxiv[j, "journal"], 
+                  " doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
                   biorxiv[j, "pubdate"], " ", 
                   ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
                   ifelse(biorxiv[j, "data"] == "", "", paste0(make_link_text(address = biorxiv[j, "data"], title = "Data"), ". ")), 
