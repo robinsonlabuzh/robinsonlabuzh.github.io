@@ -228,6 +228,20 @@ tbl_almut <- data.frame(
                  "BSc Molecular Biotechnology (2013), University of Heidelberg"))
 )
 
+tbl_plger <- data.frame(
+  img = "![](img/thumbnail/pierreluc.jpg)", 
+  bio = c("Pierre-Luc Germain",
+          paste0( "I gradually shifted from the humanities to bioinformatics towards the end of my PhD, ",
+                  "worked a lot in the past on linking chromatin alterations to gene expression, and currently ",
+                  "work mostly on the analysis of short RNA-seq and single-cell RNA-seq, as well as pre- and ",
+                  "post-transcriptional regulation of gene expression especially in the context of neurodevelopment. ",
+                  "I have a shared position with the ETH's D-HEST Institute for Neurosciences." ),
+          paste0( "PhD in Philosophy of science (2014), SEMM and University of Milan<br/>",
+                  "MA in Philosophy (2009), University of Montreal<br/>",
+                  "BA in Philosophy (2007)" )
+        )
+)
+
 ```
 
 
@@ -245,7 +259,8 @@ tables_all <- list(
   tbl_stephany, 
   tbl_stefan, 
   tbl_helena,
-  tbl_almut#,
+  tbl_almut,
+  tbl_plger#,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
