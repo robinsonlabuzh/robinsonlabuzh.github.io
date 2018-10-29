@@ -251,6 +251,7 @@ tables_all <- list(
   tbl_mark, 
   tbl_simone,
   tbl_izaskun,
+  tbl_plger,
   tbl_lukas, 
   tbl_kathi, 
   tbl_stephan, 
@@ -259,8 +260,7 @@ tables_all <- list(
   tbl_stephany, 
   tbl_stefan, 
   tbl_helena,
-  tbl_almut,
-  tbl_plger#,
+  tbl_almut#,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
