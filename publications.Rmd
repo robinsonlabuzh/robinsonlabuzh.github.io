@@ -12,7 +12,7 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
                  "18025499", "15786672", "15779224", "15322224", "30039500")
 
 ## PubMed IDs to add
-pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819")
+pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819", "30356428")
 
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
@@ -57,19 +57,20 @@ biorxiv_software <- rbind(
 )
 
 ## F1000Research articles awaiting peer review
-f1000_preprints <- data.frame(
-  title = c("Swimming downstream: statistical analysis of differential transcript usage following Salmon quantification"),
-  pubdate = c("Posted June 27, 2018."),
-  pubyear = c("Preprints"),
-  journal = c("F1000Research"),
-  authors = c("Michael I Love, Charlotte Soneson, Rob Patro"),
-  volume = c(7),
-  issue = c(952),
-  pages = c(""),
-  doi = c("10.12688/f1000research.15398.1"),
-  pmid = c(""),
-  elocationid = c("")
-)
+f1000_preprints <- NULL
+# f1000_preprints <- data.frame(
+#   title = c("Swimming downstream: statistical analysis of differential transcript usage following Salmon quantification"),
+#   pubdate = c("Posted June 27, 2018."),
+#   pubyear = c("Preprints"),
+#   journal = c("F1000Research"),
+#   authors = c("Michael I Love, Charlotte Soneson, Rob Patro"),
+#   volume = c(7),
+#   issue = c(952),
+#   pages = c(""),
+#   doi = c("10.12688/f1000research.15398.1"),
+#   pmid = c(""),
+#   elocationid = c("")
+# )
 
 ## names of members to highlight in publication list
 group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robinson M", "Mark Robinson",
