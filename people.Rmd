@@ -183,6 +183,7 @@ tbl_stefan <- data.frame(
 tbl_helena <- data.frame(
   img = "![](img/thumbnail/helena.png)", 
   bio = c("Helena Lucia Crowell", 
+          "<i class='fa fa-twitter'></i> Twitter [\\@CrowellHL](https://twitter.com/CrowellHL)<br>",
           paste0("In collaboration with the [Bodenmiller lab](http://www.bodenmillerlab.com) lab, ", 
                  "I have worked on correcting for spillover in CyTOF data. The preprint to this ", 
                  "project is available on [bioRxiv](https://doi.org/10.1101/185744) and has been ", 
@@ -194,9 +195,10 @@ tbl_helena <- data.frame(
                  "(**C**ytometry d**AT**a an**ALYS**is **T**ools): a [Bioconductor](https://bioconductor.org) ", 
                  "package providing tools for preprocessing and analysis of cytometry data; and have further ", 
                  "integrated M. Nowicka's [CyTOF workflow](https://f1000research.com/articles/6-748/v2) for ",
-                 "differential analysis into the package. Currently, I am working my MSc thesis project, ", 
-                 "which is predicated on differential discovery for scRNA-seq data."), 
-          paste0("MSc in Computational Biology & Bioinformatics (present), ETH Zurich<br>", 
+                 "differential analysis into the package. As a PhD student, I am currently working on ",
+                 "extending this framework for differential discovery to scRNA-seq data with complex ",
+                 "experimental designs."), 
+          paste0("MSc in Computational Biology & Bioinformatics (2018), ETH Zurich<br>", 
                  "BSc in Biochemistry (2015), University of Heidelberg"))
 )
 
