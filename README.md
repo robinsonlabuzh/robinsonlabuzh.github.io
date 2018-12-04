@@ -9,6 +9,7 @@ More details on making HTML documents from Rmarkdown can be found [here](http://
 - Once you've cloned the repo and have all the packages installed, the updating the website is done via:
 
 ```
+Sys.setlocale(category = "LC_ALL", locale = "en_US.UTF-8")
 rmarkdown::render_site(encoding = "UTF-8")
 ```
 
