@@ -19,8 +19,8 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819", "30356
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
 biorxiv_dois <- c("10.1101/349738", "10.1101/378539")
-
 peerj_dois <- c("10.7287/peerj.preprints.27283v1")
+arxiv_dois <- c("1812.00661")
 
 
 ## github repos
@@ -72,7 +72,8 @@ f1000_preprints <- NULL
 # )
 
 ## names of members to highlight in publication list
-group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robinson M", "Mark Robinson",
+group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", 
+                   "Robinson M", "Mark Robinson",
                    "Soneson C", "Charlotte Soneson",
                    "Lindsay H", "Helen Lindsay",
                    "Tiberi S", "Simone Tiberi",
@@ -84,7 +85,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Orjuela S", "Stephany Orjuela", 
                    "Crowell HL", "Crowell H", "Helena L Crowell", "Helena Crowell",
                    "Mallona I", "Izaskun Mallona",
-                   "Duo A", "Angelo Duo", "DuÃ² A", "Angelo DuÃ²",
+                   "Duo A", "Angelo Duo", "Duò A", "Angelo Duò",
                    "Nowicka M", "Malgorzata Nowicka",
                    "Zhou X", "Xiaobei Zhou",
                    "Nikolayeva O", 
@@ -104,6 +105,7 @@ suppressPackageStartupMessages({
   library(rentrez)
   library(rvest)
   library(XML)
+  library(aRxiv)
 })
 ```
 
@@ -220,8 +222,16 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
   html <- read_html(paste0("https://doi.org/", doi))
   title <- html_text(html_nodes(html, "#page-title"))
   authors <- paste(unique(paste(html_text(html_nodes(html, ".nlm-given-names")), 
-                                html_text(html_nodes(html, ".nlm-surname")))), collapse = ", ")
-  pubdate <- html_text(html_nodes(html, ".published"))
+                                html_text(html_nodes(html, ".nlm-surname")))),
+                   collapse = ", ")
+  # pubdate <- html_text(html_nodes(html, ".published_time"))
+  m <- html_nodes(html, "meta")
+  df <- data.frame(name=html_attr(m,"name"),
+             content=html_attr(m,"content"), 
+             stringsAsFactors = FALSE, row.names = NULL) %>%
+    filter(name=="DC.Date")
+  pubdate <- paste0("Posted ", format(as.Date(df$content), "%B %d, %Y."))
+
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
              journal = "bioRxiv", authors = authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
@@ -236,13 +246,33 @@ peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
   title <- html_text(html_nodes(html, ".article-title"))
   authors <- paste(unique(paste(html_text(html_nodes(html, ".given-names")), 
                                 html_text(html_nodes(html, ".surname")))), collapse = ", ")
-  pubdate <- paste0("Posted ", format(as.Date(html_text(html_nodes(html, "time"))[1]), "%B %d, %Y."))
+  pubdate <- paste0("Posted ", 
+                    format(as.Date(html_text(html_nodes(html, "time"))[1]), 
+                           "%B %d, %Y."))
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
              journal = "PeerJ", authors = authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
              stringsAsFactors = FALSE)
 }))
 ```
+
+
+```{r}
+## Add PeerJ preprints by doi
+arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
+  df <- aRxiv::arxiv_search(id_list=doi)
+  title <- df$title
+  authors <- gsub("|", ", ", df$authors, fixed = TRUE)
+  authors <- gsub(".", "", authors, fixed = TRUE)
+  pubdate <- paste0("Posted ", format(as.Date(df$updated),"%B %d, %Y."))
+  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
+             journal = "arXiv", authors = authors, volume = "", issue = "", 
+             pages = "", doi = doi, pmid = "", elocationid = "", 
+             stringsAsFactors = FALSE)
+}))
+```
+
+
 
 ```{r}
 ## Add F1000Research preprints
@@ -259,6 +289,11 @@ if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
 ```{r}
 ## soak list of PeerJ preprints into bioRxiv
 biorxiv <- bind_rows(biorxiv, peerj)
+```
+
+```{r}
+## soak list of arXiv preprints into bioRxiv
+biorxiv <- bind_rows(biorxiv, arxiv)
 ```
 
 ```{r}
