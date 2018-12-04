@@ -86,7 +86,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Crowell HL", "Crowell H", "Helena L Crowell", "Helena Crowell",
                    "Mallona I", "Izaskun Mallona",
                    "Duo A", "Angelo Duo", "Duo A", "Angelo Duo",
-                   "Duò A", "Angelo Duò",
+                   "DuÃ² A", "Angelo DuÃ²",
                    "Nowicka M", "Malgorzata Nowicka",
                    "Zhou X", "Xiaobei Zhou",
                    "Nikolayeva O", 
@@ -134,6 +134,11 @@ make_link_pmid <- function(pmid) {
 make_link_altmetric <- function(doi) {
   sprintf('<div data-badge-popover="right" data-badge-type="4" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
           doi)
+}
+
+make_link_altmetric_arxiv <- function(arxivid) {
+  sprintf('<div data-badge-popover="right" data-badge-type="4" data-arxiv-id="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+          arxivid)
 }
 ```
 
@@ -341,6 +346,17 @@ txt <- "<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.ne
 if (!is.null(biorxiv)) {
   txt <- paste0(txt, "\n## Preprints\n\n")
   for (j in seq_len(nrow(biorxiv))) {
+    if (biorxiv[j, "journal"] == "arXiv") {
+      txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
+                  ". ", biorxiv[j, "journal"], 
+                  " ID:", make_link_text(address = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"]), title = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"])), ". ", 
+                  biorxiv[j, "pubdate"], " ", 
+                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "data"] == "", "", paste0(make_link_text(address = biorxiv[j, "data"], title = "Data"), ". ")), 
+                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")), 
+                  make_link_altmetric_arxiv(biorxiv[j, "doi"]),
+                  "\n\n")
+    } else {
     txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
                   ". ", biorxiv[j, "journal"], 
                   " doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
@@ -350,6 +366,7 @@ if (!is.null(biorxiv)) {
                   ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")), 
                   make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
                   "\n\n")
+    }
   }
 }
 
