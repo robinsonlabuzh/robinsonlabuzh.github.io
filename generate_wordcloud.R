@@ -19,7 +19,7 @@ html_to_text <- function(url) {
   doc <- htmlParse(html.doc, asText = TRUE)
   
   ## "//text()" returns all text outside of HTML tags.
-  ## We also don’t want text such as style and script codes
+  ## We also do not want text such as style and script codes
   text <- xpathSApply(doc, "//text()[not(ancestor::script)][not(ancestor::style)][not(ancestor::noscript)][not(ancestor::form)][not(ancestor::strong)]", xmlValue)
   
   ## Format text vector into one character string

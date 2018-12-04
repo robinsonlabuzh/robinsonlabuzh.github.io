@@ -254,7 +254,8 @@ $(document).ready(function () {
 <ul>
 <li>Once you’ve cloned the repo and have all the packages installed, the updating the website is done via:</li>
 </ul>
-<pre><code>rmarkdown::render_site(encoding = &quot;UTF-8&quot;)</code></pre>
+<pre><code>Sys.setlocale(category = &quot;LC_ALL&quot;, locale = &quot;en_US.UTF-8&quot;)
+rmarkdown::render_site(encoding = &quot;UTF-8&quot;)</code></pre>
 <ul>
 <li>Then, commit and push everything back to the robinsonlab.github.io repo</li>
 </ul>
