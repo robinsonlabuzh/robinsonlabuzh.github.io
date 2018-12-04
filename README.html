@@ -11,7 +11,7 @@
 
 
 
-<title></title>
+<title>README.utf8.md</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -254,7 +254,8 @@ $(document).ready(function () {
 <ul>
 <li>Once you’ve cloned the repo and have all the packages installed, the updating the website is done via:</li>
 </ul>
-<pre><code>rmarkdown::render_site(encoding = &quot;UTF-8&quot;)</code></pre>
+<pre><code>Sys.setlocale(category = &quot;LC_ALL&quot;, locale = &quot;en_US.UTF-8&quot;)
+rmarkdown::render_site(encoding = &quot;UTF-8&quot;)</code></pre>
 <ul>
 <li>Then, commit and push everything back to the robinsonlab.github.io repo</li>
 </ul>

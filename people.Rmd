@@ -220,7 +220,7 @@ tbl_helen <- data.frame(
 
 tbl_almut <- data.frame(
   img = "![](img/thumbnail/almut.jpg)", 
-  bio = c("Almut Luetge",
+  bio = c("Almut Lütge",
           paste0("I'm a PhD student with a background in Molecular Biotechnology, ",
                  "but already during my master I focused on Bioinformatics. ",
                  "I'm interested in all kinds of genomic analysis, but mainly worked with transcriptomic data, so far. ", 
