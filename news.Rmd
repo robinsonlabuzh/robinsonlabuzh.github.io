@@ -38,6 +38,7 @@ tbl_news[nrow(tbl_news) + 1,] <- list("06.08.2018","New BMC Genomics publication
 [Small RNA-seq analysis of single porcine blastocysts revealed that maternal estradiol-17beta exposure does not affect miRNA isoform (isomiR) expression](https://doi.org/10.1186/s12864-018-4954-9)")
 tbl_news[nrow(tbl_news) + 1,] <- list("17.10.2018","New PeerJ preprint!","Van den Berge K, Hembach K, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD.
 [RNA sequencing data: hitchhiker’s guide to expression analysis](https://doi.org/10.7287/peerj.preprints.27283v1)")
+tbl_news[nrow(tbl_news) + 1,] <- list("21.01.2019","New Life Science Alliance publication!","Soneson C, Love MI, Patro R, Hussain S, Malhotra D and Robinson MD: [A junction coverage compatibility score to quantify the reliability of transcript abundance estimates and annotation catalogs](http://www.life-science-alliance.org/content/2/1/e201800175)")
 ```
 
 [//]: # Add Mark's twitter feed
