@@ -23,9 +23,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -100,6 +99,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -114,7 +116,6 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
-
 .section h2 {
   padding-top: 65px;
   margin-top: -65px;
@@ -134,6 +135,43 @@ body {
 .section h6 {
   padding-top: 65px;
   margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,18 +193,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -258,28 +355,37 @@ $(document).ready(function () {
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1101/349738" data-hide-no-mentions="true">
 
 </div></li>
-<li><strong>Charlotte Soneson</strong>, Michael I Love, Rob Patro, Shobbir Hussain, Dheeraj Malhotra, <strong>Mark D Robinson</strong>: A junction coverage compatibility score to quantify the reliability of transcript abundance estimates and annotation catalogs. bioRxiv doi: <a href="https://doi.org/10.1101/378539" target="_blank"> https://doi.org/10.1101/378539</a>. Posted July 28, 2018. <a href="https://github.com/csoneson/annotation_problem_txabundance" target="_blank"> GitHub repo</a>.
-<div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1101/378539" data-hide-no-mentions="true">
+<li>Gianluca D’Agati, Elena M. Cabello, Karl Frontzek, Elisabeth J. Rushing, Robin Klemm, <strong>Mark Robinson</strong>, Richard M. White, Christian Mosimann, Alexa Burger: Active Receptor Tyrosine Kinases, but not Brachyury, are sufficient to trigger chordoma in zebrafish. bioRxiv doi: <a href="https://doi.org/10.1101/482687" target="_blank"> https://doi.org/10.1101/482687</a>. Posted November 29, 2018.
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1101/482687" data-hide-no-mentions="true">
 
 </div></li>
 <li>Koen Van Den Berge, <strong>Katharina Hembach</strong>, <strong>Charlotte Soneson</strong>, <strong>Simone Tiberi</strong>, Lieven Clement, Michael I Love, Rob Patro, <strong>Mark Robinson</strong>: RNA sequencing data: hitchhiker’s guide to expression analysis. PeerJ doi: <a href="https://doi.org/10.7287/peerj.preprints.27283v1" target="_blank"> https://doi.org/10.7287/peerj.preprints.27283v1</a>. Posted November 24, 2018.
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.7287/peerj.preprints.27283v1" data-hide-no-mentions="true">
 
 </div></li>
-<li><strong>Lukas M Weber</strong>, Wouter Saelens, Robrecht Cannoodt, <strong>Charlotte Soneson</strong>, Yvan Saeys, <strong>Mark D Robinson</strong>: Essential guidelines for computational method benchmarking. arXiv ID: <a href="https://arxiv.org/abs/1812.00661" target="_blank"> https://arxiv.org/abs/1812.00661</a>. Posted December 03, 2018.
+<li><strong>Lukas M Weber</strong>, Wouter Saelens, Robrecht Cannoodt, <strong>Charlotte Soneson</strong>, Alexander Hapfelmeier, Paul Gardner, Anne-Laure Boulesteix, Yvan Saeys, <strong>Mark D Robinson</strong>: Essential guidelines for computational method benchmarking. arXiv ID: <a href="https://arxiv.org/abs/1812.00661" target="_blank"> https://arxiv.org/abs/1812.00661</a>. Posted December 20, 2018.
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-arxiv-id="1812.00661" data-hide-no-mentions="true">
 
 </div></li>
 </ul>
 </div>
 <div id="section" class="section level2">
-<h2>2018</h2>
+<h2>2019</h2>
 <ul>
-<li>Doumpas N, Lampart F, <strong>Robinson MD</strong>, Lentini A, Nestor CE, Cantù C, Basler K: TCF/LEF dependent and independent transcriptional regulation of Wnt/β-catenin target genes. EMBO J : (2018). DOI: 10.15252/embj.201798873. <a href="http://www.ncbi.nlm.nih.gov/pubmed/30425074" target="_blank"> PMID 30425074</a>.
+<li><strong>Soneson C</strong>, Love MI, Patro R, Hussain S, Malhotra D, <strong>Robinson MD</strong>: A junction coverage compatibility score to quantify the reliability of transcript abundance estimates and annotation catalogs. Life Sci Alliance 2(1): (2019). DOI: 10.26508/lsa.201800175. <a href="http://www.ncbi.nlm.nih.gov/pubmed/30655364" target="_blank"> PMID 30655364</a>. <a href="https://github.com/csoneson/annotation_problem_txabundance" target="_blank"> GitHub repo</a>.
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.26508/lsa.201800175" data-hide-no-mentions="true">
+
+</div></li>
+<li>Doumpas N, Lampart F, <strong>Robinson MD</strong>, Lentini A, Nestor CE, Cantù C, Basler K: TCF/LEF dependent and independent transcriptional regulation of Wnt/β-catenin target genes. EMBO J 38(2): (2019). DOI: 10.15252/embj.201798873. <a href="http://www.ncbi.nlm.nih.gov/pubmed/30425074" target="_blank"> PMID 30425074</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.15252/embj.201798873" data-hide-no-mentions="true">
 
 </div></li>
-<li>Parker HR, <strong>Orjuela S</strong>, Martinho Oliveira A, Cereatti F, Sauter M, Heinrich H, Tanzi G, Weber A, Komminoth P, Vavricka S, Albanese L, Buffoli F, <strong>Robinson MD</strong>, Marra G: The proto CpG island methylator phenotype of sessile serrated adenomas/polyps. Epigenetics :1-18 (2018). DOI: 10.1080/15592294.2018.1543504. <a href="http://www.ncbi.nlm.nih.gov/pubmed/30398409" target="_blank"> PMID 30398409</a>.
+</ul>
+</div>
+<div id="section-1" class="section level2">
+<h2>2018</h2>
+<ul>
+<li>Parker HR, <strong>Orjuela S</strong>, Martinho Oliveira A, Cereatti F, Sauter M, Heinrich H, Tanzi G, Weber A, Komminoth P, Vavricka S, Albanese L, Buffoli F, <strong>Robinson MD</strong>, Marra G: The proto CpG island methylator phenotype of sessile serrated adenomas/polyps. Epigenetics 13(10-11):1088-1105 (2018). DOI: 10.1080/15592294.2018.1543504. <a href="http://www.ncbi.nlm.nih.gov/pubmed/30398409" target="_blank"> PMID 30398409</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1080/15592294.2018.1543504" data-hide-no-mentions="true">
 
 </div></li>
@@ -349,7 +455,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-1" class="section level2">
+<div id="section-2" class="section level2">
 <h2>2017</h2>
 <ul>
 <li><strong>Nowicka M</strong>, Krieg C, <strong>Weber LM</strong>, Hartmann FJ, Guglietta S, Becher B, Levesque MP, <strong>Robinson MD</strong>: CyTOF workflow: differential discovery in high-throughput high-dimensional cytometry datasets. F1000Res 6:748 (2017). DOI: 10.12688/f1000research.11622.2. <a href="http://www.ncbi.nlm.nih.gov/pubmed/28663787" target="_blank"> PMID 28663787</a>.
@@ -386,7 +492,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-2" class="section level2">
+<div id="section-3" class="section level2">
 <h2>2016</h2>
 <ul>
 <li><strong>Nowicka M</strong>, <strong>Robinson MD</strong>: DRIMSeq: a Dirichlet-multinomial framework for multivariate count outcomes in genomics. F1000Res 5:1356 (2016). DOI: 10.12688/f1000research.8900.2. <a href="http://www.ncbi.nlm.nih.gov/pubmed/28105305" target="_blank"> PMID 28105305</a>.
@@ -431,7 +537,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-3" class="section level2">
+<div id="section-4" class="section level2">
 <h2>2015</h2>
 <ul>
 <li><strong>Soneson C</strong>, Love MI, <strong>Robinson MD</strong>: Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences. F1000Res 4:1521 (2015). DOI: 10.12688/f1000research.7563.2. <a href="http://www.ncbi.nlm.nih.gov/pubmed/26925227" target="_blank"> PMID 26925227</a>.
@@ -480,7 +586,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-4" class="section level2">
+<div id="section-5" class="section level2">
 <h2>2014</h2>
 <ul>
 <li><strong>Robinson MD</strong>, Kahraman A, <strong>Law CW</strong>, <strong>Lindsay H</strong>, <strong>Nowicka M</strong>, <strong>Weber LM</strong>, <strong>Zhou X</strong>: Statistical methods for detecting differentially methylated loci and regions. Front Genet 5:324 (2014). DOI: 10.3389/fgene.2014.00324. <a href="http://www.ncbi.nlm.nih.gov/pubmed/25278959" target="_blank"> PMID 25278959</a>.
@@ -513,7 +619,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-5" class="section level2">
+<div id="section-6" class="section level2">
 <h2>2013</h2>
 <ul>
 <li>Maier L, Vyas R, Cordova CD, <strong>Lindsay H</strong>, Schmidt TS, Brugiroux S, Periaswamy B, Bauer R, Sturm A, Schreiber F, von Mering C, <strong>Robinson MD</strong>, Stecher B, Hardt WD: Microbiota-derived hydrogen fuels Salmonella typhimurium invasion of the gut ecosystem. Cell Host Microbe 14(6):641-51 (2013). DOI: 10.1016/j.chom.2013.11.002. <a href="http://www.ncbi.nlm.nih.gov/pubmed/24331462" target="_blank"> PMID 24331462</a>.
@@ -542,7 +648,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-6" class="section level2">
+<div id="section-7" class="section level2">
 <h2>2012</h2>
 <ul>
 <li><strong>Robinson MD</strong>, Strbenac D, Stirzaker C, Statham AL, Song J, Speed TP, Clark SJ: Copy-number-aware differential analysis of quantitative DNA sequencing data. Genome Res 22(12):2489-96 (2012). DOI: 10.1101/gr.139055.112. <a href="http://www.ncbi.nlm.nih.gov/pubmed/22879430" target="_blank"> PMID 22879430</a>.
@@ -563,7 +669,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-7" class="section level2">
+<div id="section-8" class="section level2">
 <h2>2011</h2>
 <ul>
 <li>Siebert S, <strong>Robinson MD</strong>, Tintori SC, Goetz F, Helm RR, Smith SA, Shaner N, Haddock SH, Dunn CW: Differential gene expression in the siphonophore Nanomia bijuga (Cnidaria) assessed with multiple next-generation sequencing workflows. PLoS One 6(7):e22953 (2011). DOI: 10.1371/journal.pone.0022953. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21829563" target="_blank"> PMID 21829563</a>.
@@ -580,7 +686,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-8" class="section level2">
+<div id="section-9" class="section level2">
 <h2>2010</h2>
 <ul>
 <li><strong>Robinson MD</strong>, Statham AL, Speed TP, Clark SJ: Protocol matters: which methylome are you actually studying? Epigenomics 2(4):587-98 (2010). DOI: 10.2217/epi.10.36. <a href="http://www.ncbi.nlm.nih.gov/pubmed/21566704" target="_blank"> PMID 21566704</a>.
@@ -613,7 +719,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-9" class="section level2">
+<div id="section-10" class="section level2">
 <h2>2009</h2>
 <ul>
 <li><strong>Robinson MD</strong>, Speed TP: Differential splicing using whole-transcript microarrays. BMC Bioinformatics 10:156 (2009). DOI: 10.1186/1471-2105-10-156. <a href="http://www.ncbi.nlm.nih.gov/pubmed/19463149" target="_blank"> PMID 19463149</a>.
@@ -622,7 +728,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-10" class="section level2">
+<div id="section-11" class="section level2">
 <h2>2008</h2>
 <ul>
 <li><strong>Robinson MD</strong>, Smyth GK: Small-sample estimation of negative binomial dispersion, with applications to SAGE data. Biostatistics 9(2):321-32 (2008). DOI: 10.1093/biostatistics/kxm030. <a href="http://www.ncbi.nlm.nih.gov/pubmed/17728317" target="_blank"> PMID 17728317</a>.
@@ -631,7 +737,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-11" class="section level2">
+<div id="section-12" class="section level2">
 <h2>2007</h2>
 <ul>
 <li><strong>Robinson MD</strong>, Speed TP: A comparison of Affymetrix gene expression arrays. BMC Bioinformatics 8:449 (2007). DOI: 10.1186/1471-2105-8-449. <a href="http://www.ncbi.nlm.nih.gov/pubmed/18005448" target="_blank"> PMID 18005448</a>.
@@ -652,7 +758,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-12" class="section level2">
+<div id="section-13" class="section level2">
 <h2>2006</h2>
 <ul>
 <li>Chua G, Morris QD, Sopko R, <strong>Robinson MD</strong>, Ryan O, Chan ET, Frey BJ, Andrews BJ, Boone C, Hughes TR: Identifying transcription factor functions and targets by phenotypic activation. Proc Natl Acad Sci U S A 103(32):12045-50 (2006). DOI: 10.1073/pnas.0605140103. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16880382" target="_blank"> PMID 16880382</a>.
@@ -669,7 +775,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-13" class="section level2">
+<div id="section-14" class="section level2">
 <h2>2005</h2>
 <ul>
 <li>Davierwala AP, Haynes J, Li Z, Brost RL, <strong>Robinson MD</strong>, Yu L, Mnaimneh S, Ding H, Zhu H, Chen Y, Cheng X, Brown GW, Boone C, Andrews BJ, Hughes TR: The synthetic genetic interaction spectrum of essential genes. Nat Genet 37(10):1147-52 (2005). DOI: 10.1038/ng1640. <a href="http://www.ncbi.nlm.nih.gov/pubmed/16155567" target="_blank"> PMID 16155567</a>.
@@ -686,7 +792,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-14" class="section level2">
+<div id="section-15" class="section level2">
 <h2>2004</h2>
 <ul>
 <li>Le Bihan T, <strong>Robinson MD</strong>, Stewart II, Figeys D: Definition and characterization of a “trypsinosome” from specific peptide characteristics by nano-HPLC-MS/MS and in silico analysis of complex protein mixtures. J Proteome Res 3(6):1138-48 (2004). DOI: 10.1021/pr049909x. <a href="http://www.ncbi.nlm.nih.gov/pubmed/15595722" target="_blank"> PMID 15595722</a>.
@@ -715,7 +821,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-15" class="section level2">
+<div id="section-16" class="section level2">
 <h2>2003</h2>
 <ul>
 <li>Peng WT, <strong>Robinson MD</strong>, Mnaimneh S, Krogan NJ, Cagney G, Morris Q, Davierwala AP, Grigull J, Yang X, Zhang W, Mitsakakis N, Ryan OW, Datta N, Jojic V, Pal C, Canadien V, Richards D, Beattie B, Wu LF, Altschuler SJ, Roweis S, Frey BJ, Emili A, Greenblatt JF, Hughes TR: A panoramic view of yeast noncoding RNA processing. Cell 113(7):919-33 (2003). DOI: NA. <a href="http://www.ncbi.nlm.nih.gov/pubmed/12837249" target="_blank"> PMID 12837249</a>.
@@ -724,7 +830,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-16" class="section level2">
+<div id="section-17" class="section level2">
 <h2>2002</h2>
 <ul>
 <li>Jorgensen P, Nelson B, <strong>Robinson MD</strong>, Chen Y, Andrews B, Tyers M, Boone C: High-resolution genetic mapping with ordered arrays of Saccharomyces cerevisiae deletion mutants. Genetics 162(3):1091-9 (2002). DOI: NA. <a href="http://www.ncbi.nlm.nih.gov/pubmed/12454058" target="_blank"> PMID 12454058</a>.
@@ -741,7 +847,7 @@ $(document).ready(function () {
 </div></li>
 </ul>
 </div>
-<div id="section-17" class="section level2">
+<div id="section-18" class="section level2">
 <h2>2001</h2>
 <ul>
 <li>Tong AH, Evangelista M, Parsons AB, Xu H, Bader GD, Pagé N, <strong>Robinson M</strong>, Raghibizadeh S, Hogue CW, Bussey H, Andrews B, Tyers M, Boone C: Systematic genetic analysis with ordered arrays of yeast deletion mutants. Science 294(5550):2364-8 (2001). DOI: 10.1126/science.1065810. <a href="http://www.ncbi.nlm.nih.gov/pubmed/11743205" target="_blank"> PMID 11743205</a>.

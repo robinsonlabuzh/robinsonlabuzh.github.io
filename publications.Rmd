@@ -18,7 +18,7 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819", "30356
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
-biorxiv_dois <- c("10.1101/349738", "10.1101/378539")
+biorxiv_dois <- c("10.1101/349738", "10.1101/482687")
 peerj_dois <- c("10.7287/peerj.preprints.27283v1")
 arxiv_dois <- c("1812.00661")
 
@@ -28,11 +28,11 @@ pmid_github <- rbind(
   c(pmid = "27992111", github = "https://github.com/lmweber/cytometry-clustering-comparison"),
   c(pmid = "29481549", github = "https://github.com/csoneson/conquer_comparison"),
   c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
-  c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scRNAseq_clustering_comparison")
+  c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scRNAseq_clustering_comparison"),
+  c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance")
 )
 biorxiv_github <- rbind(
-  c(doi = "10.1101/349738", github = "https://github.com/lmweber/diffcyt-evaluations"),
-  c(doi = "10.1101/378539", github = "https://github.com/csoneson/annotation_problem_txabundance")
+  c(doi = "10.1101/349738", github = "https://github.com/lmweber/diffcyt-evaluations")
 )
 
 ## data repos
