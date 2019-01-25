@@ -55,14 +55,20 @@ tbl_charlotte <- data.frame(
 tbl_simone <- data.frame(
   img = "![](img/thumbnail/simone.png)", 
   bio = c("Simone Tiberi", 
-          paste0("I am a postdoctoral research associate working on the development of cutting-edge ", 
-                 "statistical methods for RNA-seq data. In particular, I am currently focusing on a ", 
-                 "Bayesian hierarchical model to detect genes showing differential transcript usage (DTU); ", 
-                 "the method accounts for the subject-to-subject variability in the transcripts ", 
-                 "proportions and for the uncertainty in the allocation of each fragment to the ", 
-                 "corresponding transcript, which is treated as a latent variable. In general terms, ", 
-                 "my interests are quite broad and lie in the development of statistical methods for ", 
-                 "applications in the medical and biological fields."), 
+                  paste0("<i class='fa fa-desktop'></i> [Website](https://sites.google.com/view/simonetiberi)<br>",
+                  "<i class='fa fa-twitter'></i> Twitter [\\@tiberi_simone](https://twitter.com/tiberi_simone)<br>",
+                  "<i class='fa fa-github'></i> GitHub [SimoneTiberi](https://github.com/SimoneTiberi)<br>", 
+                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.com/citations?hl=en&user=58nWpq8AAAAJ&view_op=list_works&gmla=AJsN-F4oKYjm4oTFUio_EFmbXkpF5n0dgQOv-C9pfBGgyBq4ffqGAeJ2R6HwC1VNmMuSkj_NTMa-BQ5H7RyLxqZ6hr5yUsTej9kccy4vFeVjIAIgGy1uIH8)"), 
+          paste0("I am a Postdoc working on the development of cutting-edge ",
+                 "statistical methods in bioinformatics, mostly for bulk and single-cell RNA-seq data.",
+                 "In particular, I am currently focusing on two methodological projects. ",
+                 "The first one consists in developing a Bayesian hierarchical model to identify differentially spliced genes, ",
+                  "via  differential transcript usage (DTU), from bulk RNA-seq data. ",
+                  "The second project (in its early stages) aims at creating a methodology, ",
+                 "based on permutation tests, to perform differential state analyses from single-cell RNA-seq data. ",
+                 "Previously, I was a PhD student at the Department of Statistics at the University of Warwick, ", 
+                 "where I worked on Bayesian hierarchical models to investigate stochastic systems in single cells. ",
+                 "In general terms, my interests are broad and lie in  the development of statistical methods for applications in biology."), 
           paste0("PhD in Statistics (2017), The University of Warwick<br>", 
                  "MSc in Statistics (2012), The University of Padua<br>", 
                  "BSc in Statistics (2010), Sapienza University of Rome"))
@@ -177,7 +183,7 @@ tbl_stefan <- data.frame(
                  "aim is to assess the impact and the importance of DNA methylation in evolution over ", 
                  "short periods (rapid evolution)."), 
           paste0("MSc in Computational Biology and Bioinformatics (2017), ETH Zurich and University of Zurich<br>", 
-                 "BSc in Biology (2015), Université de Lausanne"))
+                 "BSc in Biology (2015), Universit?? de Lausanne"))
 )
 
 tbl_helena <- data.frame(
@@ -220,7 +226,7 @@ tbl_helen <- data.frame(
 
 tbl_almut <- data.frame(
   img = "![](img/thumbnail/almut.jpg)", 
-  bio = c("Almut Lütge",
+  bio = c("Almut L??tge",
           paste0("I'm a PhD student with a background in Molecular Biotechnology, ",
                  "but already during my master I focused on Bioinformatics. ",
                  "I'm interested in all kinds of genomic analysis, but mainly worked with transcriptomic data, so far. ", 
@@ -310,11 +316,11 @@ for (i in seq_along(tables_all)) {
 - Andrea Komljenovic (PhD student, analyzed DNA methylation data; now at [UNIL](https://www.unil.ch/dee/home/menuinst/people/graduate-students.html))
 - Olga Nikolayeva (PhD student, analyzed PacBio DNA-seq data)
 - Imran Fanaswala (Research Assistant, worked on assembly with PacBio and Illumina DNA-seq; now at [SimplicityBio](http://www.simplicitybio.com/))
-- Lourdes Rosano González (MSc student, analyzed transformations of CyTOF data)
+- Lourdes Rosano Gonz??lez (MSc student, analyzed transformations of CyTOF data)
 - Katarina Matthes (MSc student, compared [differential splicing methods](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3))
 - Dania Machlab (MSc student, analyzed allele-specific methylation from BS-seq data; now at [FMI](https://www.fmi.ch/))
 - Buildman Biyong (MSc student, established components of CrispRVariantsLite)
-- Angelo Duò (MSc student, [compared scRNA-seq clustering algorithms](https://f1000research.com/articles/7-1141/v2))
+- Angelo Du?? (MSc student, [compared scRNA-seq clustering algorithms](https://f1000research.com/articles/7-1141/v2))
 - Amr Elriedy (MSc student, analyzed isoform detection using PacBio cDNA-seq)
 - Romy Schleiss (MSc student, compared normalization for CyTOF data)
 

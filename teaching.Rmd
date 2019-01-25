@@ -23,6 +23,10 @@ For exact information on schedule, registration and location, please refer to th
 
 ### **Past external courses** 
 
+###2019
+* [Whole transcriptome sequencing data analysis](https://www.acgt.co.za/newsroom/events/whole-transcriptome-sequencing-data-analysis-workshop-01-08th-february-2019-university-of-pretoria/).
+University of Pretoria (South Africa), February 1-8 2019
+
 ###2018
 
 * [CSAMA 2018](http://www-huber.embl.de/csama2018/). Brixen (Italy), July 8-13 2018
