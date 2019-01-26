@@ -11,7 +11,7 @@
 
 
 
-<title>people.utf8.md</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,9 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -99,6 +98,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -113,7 +115,6 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
-
 .section h2 {
   padding-top: 65px;
   margin-top: -65px;
@@ -133,6 +134,43 @@ body {
 .section h6 {
   padding-top: 65px;
   margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -154,18 +192,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -278,7 +375,7 @@ PhD in Medical Biology (2008), University of Melbourne (Walter and Eliza Hall In
 <table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="border:none;text-align:left;width: 3cm; font-weight: bold;font-size: 18px;vertical-align: top !important;" rowspan="3">
+<td style="border:none;text-align:left;width: 3cm; font-weight: bold;font-size: 18px;vertical-align: top !important;" rowspan="4">
 <img src="img/thumbnail/simone.png" />
 </td>
 <td style="border:none;text-align:left;width: 20cm; font-weight: bold;font-size: 18px;">
@@ -287,7 +384,12 @@ Simone Tiberi
 </tr>
 <tr>
 <td style="border:none;text-align:left;width: 20cm; ">
-I am a postdoctoral research associate working on the development of cutting-edge statistical methods for RNA-seq data. In particular, I am currently focusing on a Bayesian hierarchical model to detect genes showing differential transcript usage (DTU); the method accounts for the subject-to-subject variability in the transcripts proportions and for the uncertainty in the allocation of each fragment to the corresponding transcript, which is treated as a latent variable. In general terms, my interests are quite broad and lie in the development of statistical methods for applications in the medical and biological fields.
+<i class="fa fa-desktop"></i> <a href="https://sites.google.com/view/simonetiberi">Website</a><br><i class="fa fa-twitter"></i> Twitter <a href="https://twitter.com/tiberi_simone">@tiberi_simone</a><br><i class="fa fa-github"></i> GitHub <a href="https://github.com/SimoneTiberi">SimoneTiberi</a><br><i class="fa fa-newspaper-o"></i> <a href="https://scholar.google.com/citations?hl=en&amp;user=58nWpq8AAAAJ&amp;view_op=list_works&amp;gmla=AJsN-F4oKYjm4oTFUio_EFmbXkpF5n0dgQOv-C9pfBGgyBq4ffqGAeJ2R6HwC1VNmMuSkj_NTMa-BQ5H7RyLxqZ6hr5yUsTej9kccy4vFeVjIAIgGy1uIH8">Google Scholar</a>
+</td>
+</tr>
+<tr>
+<td style="border:none;text-align:left;width: 20cm; ">
+I am a Postdoc working on the development of cutting-edge statistical methods in bioinformatics, mostly for bulk and single-cell RNA-seq data.In particular, I am currently focusing on two methodological projects. The first one consists in developing a Bayesian hierarchical model to identify differentially spliced genes, via differential transcript usage (DTU), from bulk RNA-seq data. The second project (in its early stages) aims at creating a methodology, based on permutation tests, to perform differential state analyses from single-cell RNA-seq data. Previously, I was a PhD student at the Department of Statistics at the University of Warwick, where I worked on Bayesian hierarchical models to investigate stochastic systems in single cells. In general terms, my interests are broad and lie in the development of statistical methods for applications in biology.
 </td>
 </tr>
 <tr>
