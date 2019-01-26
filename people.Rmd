@@ -183,7 +183,7 @@ tbl_stefan <- data.frame(
                  "aim is to assess the impact and the importance of DNA methylation in evolution over ", 
                  "short periods (rapid evolution)."), 
           paste0("MSc in Computational Biology and Bioinformatics (2017), ETH Zurich and University of Zurich<br>", 
-                 "BSc in Biology (2015), Universit?? de Lausanne"))
+                 "BSc in Biology (2015), Université de Lausanne"))
 )
 
 tbl_helena <- data.frame(
@@ -226,7 +226,7 @@ tbl_helen <- data.frame(
 
 tbl_almut <- data.frame(
   img = "![](img/thumbnail/almut.jpg)", 
-  bio = c("Almut L??tge",
+  bio = c("Almut Lütge",
           paste0("I'm a PhD student with a background in Molecular Biotechnology, ",
                  "but already during my master I focused on Bioinformatics. ",
                  "I'm interested in all kinds of genomic analysis, but mainly worked with transcriptomic data, so far. ", 
@@ -316,11 +316,11 @@ for (i in seq_along(tables_all)) {
 - Andrea Komljenovic (PhD student, analyzed DNA methylation data; now at [UNIL](https://www.unil.ch/dee/home/menuinst/people/graduate-students.html))
 - Olga Nikolayeva (PhD student, analyzed PacBio DNA-seq data)
 - Imran Fanaswala (Research Assistant, worked on assembly with PacBio and Illumina DNA-seq; now at [SimplicityBio](http://www.simplicitybio.com/))
-- Lourdes Rosano Gonz??lez (MSc student, analyzed transformations of CyTOF data)
+- Lourdes Rosano González (MSc student, analyzed transformations of CyTOF data)
 - Katarina Matthes (MSc student, compared [differential splicing methods](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3))
 - Dania Machlab (MSc student, analyzed allele-specific methylation from BS-seq data; now at [FMI](https://www.fmi.ch/))
 - Buildman Biyong (MSc student, established components of CrispRVariantsLite)
-- Angelo Du?? (MSc student, [compared scRNA-seq clustering algorithms](https://f1000research.com/articles/7-1141/v2))
+- Angelo Duò (MSc student, [compared scRNA-seq clustering algorithms](https://f1000research.com/articles/7-1141/v2))
 - Amr Elriedy (MSc student, analyzed isoform detection using PacBio cDNA-seq)
 - Romy Schleiss (MSc student, compared normalization for CyTOF data)
 
