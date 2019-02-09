@@ -18,7 +18,7 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819", "30356
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
-biorxiv_dois <- c("10.1101/349738", "10.1101/482687")
+biorxiv_dois <- c("10.1101/349738", "10.1101/482687", "10.1101/533646")
 peerj_dois <- c("10.7287/peerj.preprints.27283v1")
 arxiv_dois <- c("1812.00661")
 
@@ -144,7 +144,8 @@ make_link_altmetric_arxiv <- function(arxivid) {
 
 ```{r}
 ## Search PubMed
-x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", retmax = 1000)
+x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", 
+                   retmax = 1000)
 
 ## Add and remove PubMed IDs manually
 x$ids <- unique(c(base::setdiff(x$ids, pmid_remove), pmid_add))
