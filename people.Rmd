@@ -305,7 +305,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
-- [Charlotte Soneson](http://csoneson.github.io/) (postdoc, investigated [various](https://f1000research.com/articles/4-1521/) [aspects](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3) of [RNA-seq](https://www.nature.com/articles/nmeth.4612) [data](https://www.biorxiv.org/content/early/2018/07/28/378539) and [method](https://www.nature.com/articles/nmeth.3805) [benchmarking](https://academic.oup.com/bioinformatics/article/34/4/691/4345646); now at [FMI](https://www.fmi.ch))
+- [Charlotte Soneson](http://csoneson.github.io/) (postdoc, investigated [various](https://f1000research.com/articles/4-1521/) [aspects](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3) of [RNA-seq](https://www.nature.com/articles/nmeth.4612) [data](http://www.life-science-alliance.org/content/2/1/e201800175) and [method](https://www.nature.com/articles/nmeth.3805) [benchmarking](https://academic.oup.com/bioinformatics/article/34/4/691/4345646); now at [FMI](https://www.fmi.ch))
 - Helen Lindsay (postdoc, author of [CrispRVariants](https://bioconductor.org/packages/release/bioc/html/CrispRVariants.html); now at [EPFL](https://www.epfl.ch/))
 - Charity Law (postdoc, worked on differential splicing; now at [WEHI](https://www.wehi.edu.au/))
 - Andrea Riebler (postdoc, author of [BayMeth](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r35) in [Repitools](http://bioconductor.org/packages/release/bioc/html/Repitools.html) package; now at [NTNU](https://www.ntnu.edu/imf))
@@ -316,12 +316,12 @@ for (i in seq_along(tables_all)) {
 - Andrea Komljenovic (PhD student, analyzed DNA methylation data; now at [UNIL](https://www.unil.ch/dee/home/menuinst/people/graduate-students.html))
 - Olga Nikolayeva (PhD student, analyzed PacBio DNA-seq data)
 - Imran Fanaswala (Research Assistant, worked on assembly with PacBio and Illumina DNA-seq; now at [SimplicityBio](http://www.simplicitybio.com/))
-- Lourdes Rosano González (MSc student, analyzed transformations of CyTOF data)
+- Lourdes Rosano González (MSc student, analyzed transformations of CyTOF data; now at [ETH NEXUS](http://www.nexus.ethz.ch/))
 - Katarina Matthes (MSc student, compared [differential splicing methods](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3))
 - Dania Machlab (MSc student, analyzed allele-specific methylation from BS-seq data; now at [FMI](https://www.fmi.ch/))
 - Buildman Biyong (MSc student, established components of CrispRVariantsLite)
-- Angelo Duò (MSc student, [compared scRNA-seq clustering algorithms](https://f1000research.com/articles/7-1141/v2))
-- Amr Elriedy (MSc student, analyzed isoform detection using PacBio cDNA-seq)
+- Angelo Duò (MSc student, [compared scRNA-seq clustering algorithms](https://f1000research.com/articles/7-1141/v2); now at [Scailyte](https://www.scailyte.com/))
+- Amr Elriedy (MSc student, analyzed isoform detection using PacBio cDNA-seq; now at University of Oxford)
 - Romy Schleiss (MSc student, compared normalization for CyTOF data)
 
 
