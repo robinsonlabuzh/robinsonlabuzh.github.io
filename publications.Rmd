@@ -31,8 +31,11 @@ pmid_github <- rbind(
   c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scRNAseq_clustering_comparison"),
   c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance")
 )
+
 biorxiv_github <- rbind(
-  c(doi = "10.1101/349738", github = "https://github.com/lmweber/diffcyt-evaluations")
+  c(doi = "10.1101/349738", github = "https://github.com/lmweber/diffcyt-evaluations"),
+  c(doi = "10.1101/574525", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
+  c(doi = "10.1101/575951", github = "https://github.com/csoneson/ARMOR")
 )
 
 ## data repos
