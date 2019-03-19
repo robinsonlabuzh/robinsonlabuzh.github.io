@@ -19,21 +19,22 @@ output: html_document
 
 For exact information on schedule, registration and location, please refer to the official UZH [course catalogue](https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=EN&sap-ui-language=EN)
 
-### **Upcoming external courses**
+### **External courses**
 
-### **Past external courses** 
-
-###2019
+### 2019
+* [BC]2 tutorial [Analysis of multi-sample multi-condition scRNA-seq datasets](https://www.basellife.org/2019/basel-life-structure/bc2/programme/tutorials-and-workshops.html#c68325). University of Basel, September 9th 2019
+* SIB course [Introduction to R Shiny](https://www.sib.swiss/training/course/2019-05-zu-shiny). University of Zurich, May 6th 2019 
+* [Data Carpentry R Workshop](https://traviscg.github.io/2019-04-17-semmelweis/). Semmelweis University, Budapest, April 17-18 2019 
 * [Whole transcriptome sequencing data analysis](https://www.acgt.co.za/newsroom/events/whole-transcriptome-sequencing-data-analysis-workshop-01-08th-february-2019-university-of-pretoria/).
 University of Pretoria (South Africa), February 1-8 2019
 
-###2018
+### 2018
 
 * [CSAMA 2018](http://www-huber.embl.de/csama2018/). Brixen (Italy), July 8-13 2018
 * [Advanced RNA-seq analysis](https://www.ebi.ac.uk/training/events/2018/advanced-rna-seq-analysis). Hinxton (UK), April 16-20 2018
 * [Winter school on Bioinformatics for Adaptation Genomics:](http://www.adaptation.ethz.ch/education/bag-winter-school-2018.html) Weggis (Switzerland) from the 11th to the 17th of February 2018
 
-###2017
+### 2017
 
 * [Data Carpentry Ecology Workshop](https://pennekampster.github.io/2017-11-06-lugano/). Lugano, Switzerland
 * [Data Carpentry Genomics Workshop](https://pennekampster.github.io/2017-11-08-lugano/). Lugano, Switzerland
@@ -42,7 +43,7 @@ University of Pretoria (South Africa), February 1-8 2019
 * [Statistical data analysis for genome scale biology (CSAMA 2017)](http://www.huber.embl.de/csama2017/#home). Brixen, Italy
 * [Advanced RNA-seq and ChIP-seq data analysis](http://www.ebi.ac.uk/training/events/2017/advanced-rna-seq-and-chip-seq-data-analysis-1). EBI, Hinxton, UK
 
-###2016
+### 2016
 
 * [Data Carpentry: Introduction to Data Analysis and Visualization in R (May 2016)](https://lmweber.github.io/2016-05-30-Zurich/). University of Zurich
 * [Data Carpentry: Introduction to Data Analysis and Visualization in R (July 2016)](https://markrobinsonuzh.github.io/2016-07-18-zurich/). University of Zurich
