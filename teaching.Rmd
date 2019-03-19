@@ -19,14 +19,12 @@ output: html_document
 
 For exact information on schedule, registration and location, please refer to the official UZH [course catalogue](https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=EN&sap-ui-language=EN)
 
-### **Upcoming external courses**
-
-- SIB course [Introduction to R Shiny](https://www.sib.swiss/training/course/2019-05-zu-shiny). University of Zurich, May 6th
-- [BC]2 tutorial [Analysis of multi-sample multi-condition scRNA-seq datasets](https://www.basellife.org/2019/basel-life-structure/bc2/programme/tutorials-and-workshops.html#c68325). University of Basel, September 9th
-
-### **Past external courses** 
+### **External courses**
 
 ### 2019
+* [BC]2 tutorial [Analysis of multi-sample multi-condition scRNA-seq datasets](https://www.basellife.org/2019/basel-life-structure/bc2/programme/tutorials-and-workshops.html#c68325). University of Basel, September 9th 2019
+* SIB course [Introduction to R Shiny](https://www.sib.swiss/training/course/2019-05-zu-shiny). University of Zurich, May 6th 2019 
+* [Data Carpentry R Workshop](https://traviscg.github.io/2019-04-17-semmelweis/). Semmelweis University, 1st Department of Pathology and Experimental Cancer Research, April 17-18 2019 
 * [Whole transcriptome sequencing data analysis](https://www.acgt.co.za/newsroom/events/whole-transcriptome-sequencing-data-analysis-workshop-01-08th-february-2019-university-of-pretoria/).
 University of Pretoria (South Africa), February 1-8 2019
 
