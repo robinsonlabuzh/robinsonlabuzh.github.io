@@ -21,37 +21,38 @@ For exact information on schedule, registration and location, please refer to th
 
 ### **External courses**
 
+<!-- LETS KEEP TO THE STYLE: URL. Place, Country, Date(s) .. newest to oldest -->
+
 ### 2019
-* [BC]2 tutorial [Analysis of multi-sample multi-condition scRNA-seq datasets](https://www.basellife.org/2019/basel-life-structure/bc2/programme/tutorials-and-workshops.html#c68325). University of Basel, September 9th 2019
-* SIB course [Introduction to R Shiny](https://www.sib.swiss/training/course/2019-05-zu-shiny). University of Zurich, May 6th 2019 
-* [Data Carpentry R Workshop](https://traviscg.github.io/2019-04-17-semmelweis/). Semmelweis University, Budapest, April 17-18 2019 
+* [Analysis of multi-sample multi-condition scRNA-seq datasets @[BC]2](https://www.basellife.org/2019/basel-life-structure/bc2/programme/tutorials-and-workshops.html#c68325). University of Basel, Switzerland, September 9th
+* [Introduction to R Shiny](https://www.sib.swiss/training/course/2019-05-zu-shiny). University of Zurich, Switzerland, May 6th 
+* [Data Carpentry R Workshop](https://traviscg.github.io/2019-04-17-semmelweis/). Semmelweis University, Budapest, April 17th-18th 
 * [Whole transcriptome sequencing data analysis](https://www.acgt.co.za/newsroom/events/whole-transcriptome-sequencing-data-analysis-workshop-01-08th-february-2019-university-of-pretoria/).
-University of Pretoria (South Africa), February 1-8 2019
+University of Pretoria, South Africa, February 1st-8th
 
 ### 2018
 
-* [CSAMA 2018](http://www-huber.embl.de/csama2018/). Brixen (Italy), July 8-13 2018
-* [Advanced RNA-seq analysis](https://www.ebi.ac.uk/training/events/2018/advanced-rna-seq-analysis). Hinxton (UK), April 16-20 2018
-* [Winter school on Bioinformatics for Adaptation Genomics:](http://www.adaptation.ethz.ch/education/bag-winter-school-2018.html) Weggis (Switzerland) from the 11th to the 17th of February 2018
+* [CSAMA 2018](http://www-huber.embl.de/csama2018/). Brixen, Italy, July 8th-13th
+* [Advanced RNA-seq analysis](https://www.ebi.ac.uk/training/events/2018/advanced-rna-seq-analysis). Hinxton, UK, April 16th-20th
+* [Winter school on Bioinformatics for Adaptation Genomics:](http://www.adaptation.ethz.ch/education/bag-winter-school-2018.html). Weggis, Switzerland, February 11th-17th
 
 ### 2017
 
-* [Data Carpentry Ecology Workshop](https://pennekampster.github.io/2017-11-06-lugano/). Lugano, Switzerland
-* [Data Carpentry Genomics Workshop](https://pennekampster.github.io/2017-11-08-lugano/). Lugano, Switzerland
-* [de.NBI Summer School: Computational Genomics and RNA biology](https://www.denbi.de/22-training-cat/training-courses/278-de-nbi-summer-school-computational-genomics-and-rna-biology). Berlin, Germany
-* [Statistics for Life Scientists](https://www.sib.swiss/training/course/stats-basel2017). Basel, Switzerland
-* [Statistical data analysis for genome scale biology (CSAMA 2017)](http://www.huber.embl.de/csama2017/#home). Brixen, Italy
-* [Advanced RNA-seq and ChIP-seq data analysis](http://www.ebi.ac.uk/training/events/2017/advanced-rna-seq-and-chip-seq-data-analysis-1). EBI, Hinxton, UK
+* [Statistics for Life Scientists](https://www.sib.swiss/training/course/stats-basel2017). Basel, Switzerland, December 11th-14th
+* [Data Carpentry Genomics Workshop](https://pennekampster.github.io/2017-11-08-lugano/). Lugano, Switzerland, November 8th
+* [Data Carpentry Ecology Workshop](https://pennekampster.github.io/2017-11-06-lugano/). Lugano, Switzerland, November 6th
+* [de.NBI Summer School: Computational Genomics and RNA biology](https://www.denbi.de/22-training-cat/training-courses/278-de-nbi-summer-school-computational-genomics-and-rna-biology). Berlin, Germany, September 25th-29th
+* [Statistical data analysis for genome scale biology (CSAMA 2017)](http://www.huber.embl.de/csama2017/#home). Brixen, Italy, July 8th-13th
+* [Advanced RNA-seq and ChIP-seq data analysis](http://www.ebi.ac.uk/training/events/2017/advanced-rna-seq-and-chip-seq-data-analysis-1). Hinxton, UK, April 24th-27th
 
 ### 2016
 
-* [Data Carpentry: Introduction to Data Analysis and Visualization in R (May 2016)](https://lmweber.github.io/2016-05-30-Zurich/). University of Zurich
-* [Data Carpentry: Introduction to Data Analysis and Visualization in R (July 2016)](https://markrobinsonuzh.github.io/2016-07-18-zurich/). University of Zurich
-* [Computational Genomics: A hands-on course on data analysis](http://compgen2016.mdc-berlin.de/). Max-Delbrück Center for Molecular Medicine, Berlin, Germany 
-* Advanced course on edgeR and DESeq2. Leuven, Belgium
-* [Statistics for Life Scientists](http://edu.isb-sib.ch/course/view.php?id=269). Basel, Switzerland
-* [Method course - Analysis of NextGen RNA-seq data for expression profiling and protein-binding RNAs](http://www.uni-regensburg.de/medicine/statistical-bioinformatics/method-course-oct-16/program/index.html). Regensburg, Germany
-* [Analysis of high-throughput sequencing data](http://events.embo.org/16-htp-seq/). Cambridge, UK
-* [Statistics and computing in genome data science (CSAMA 2016)](http://www.huber.embl.de/csama2016/about/). Brixen, Italy
+* [Statistics for Life Scientists](http://edu.isb-sib.ch/course/view.php?id=269). Basel, Switzerland, October 17th-20th
+* [Method course - Analysis of NextGen RNA-seq data for expression profiling and protein-binding RNAs](http://www.uni-regensburg.de/medicine/statistical-bioinformatics/method-course-oct-16/program/index.html). Regensburg, Germany, October 10th-14th
+* [Computational Genomics: A hands-on course on data analysis](http://compgen2016.mdc-berlin.de/). Max-Delbrück Center for Molecular Medicine, Berlin, Germany, September 12th-23rd
+* [Analysis of high-throughput sequencing data](http://events.embo.org/16-htp-seq/). Cambridge, UK, September 5th-10th
+* [Data Carpentry: Introduction to Data Analysis and Visualization in R (July 2016)](https://markrobinsonuzh.github.io/2016-07-18-zurich/). University of Zurich, Switzerland, July 18th-19th
+* [Statistics and computing in genome data science (CSAMA 2016)](http://www.huber.embl.de/csama2016/about/). Brixen, Italy, July 10th-15th
+* [Data Carpentry: Introduction to Data Analysis and Visualization in R (May 2016)](https://lmweber.github.io/2016-05-30-Zurich/). University of Zurich, Switzerland, May 30th-31st
 
 Other teaching activities are listed in members' personal webpage or cv.
