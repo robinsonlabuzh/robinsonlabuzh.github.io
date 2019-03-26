@@ -2,7 +2,8 @@
 title: "Software & Resources"
 ---
 
-![](stickers/Bioconductor.png){width=2.5cm}![](stickers/CATALYST.png){width=2.5cm}![](stickers/countsimQC.png){width=2.5cm}![](stickers/CrispRVariants.png){width=2.5cm}![](stickers/diffcyt.png){width=2.5cm}![](stickers/DRIMSeq.png){width=2.5cm}![](stickers/edgeR.png){width=2.5cm}![](stickers/iCOBRA.png){width=2.5cm}![](stickers/iSEE.png){width=2.5cm}![](stickers/regsplice.png){width=2.5cm}
+![](stickers/Bioconductor.png){width=2.5cm}![](stickers/CATALYST.png){width=2.5cm}![](stickers/countsimQC.png){width=2.5cm}![](stickers/CrispRVariants.png){width=2.5cm}![](stickers/diffcyt.png){width=2.5cm}![](stickers/DRIMSeq.png){width=2.5cm}![](stickers/edgeR.png){width=2.5cm}![](stickers/iCOBRA.png){width=2.5cm}![](stickers/iSEE.png){width=2.5cm}![](stickers/regsplice.png){width=2.5cm}![](stickers/treeAGG.png){width=2.5cm}![](stickers/TreeSumExp.png){width=2.5cm}<br>  
+![](stickers/ARMOR.png){width=2.5cm}
 
 ### **R packages**
 
@@ -22,6 +23,16 @@ Name      | Author(s)               | Description
 [iSEE](http://bioconductor.org/packages/iSEE/) | **Charlotte Soneson**<br>Aaron Lun<br>Federico Marini<br>Kevin Rue-Albrecht | Interactive SummarizedExperiment Explorer
 [regsplice](http://bioconductor.org/packages/regsplice/) | **Lukas M Weber** | L1-regularization based methods for detection of differential splicing
 [Repitools](http://bioconductor.org/packages/Repitools/) | **Mark D Robinson**<br>Dario Strbenac<br>Aaron Statham<br>Andrea Riebler | Epigenomic tools (BayMeth)
+[treeAGG](https://github.com/markrobinsonuzh/treeAGG) | **Ruizhu Huang** | Search for the optimal level of a tree to interpret signal by combining with edgeR or DESeq2
+[TreeSummarizedExperiment](https://github.com/fionarhuang/TreeSummarizedExperiment) | **Ruizhu Huang** | SummarizedExperiment-based object to store tree-like data
+
+---
+
+### **Pipelines**
+
+Name      | Author(s)     | Description 
+----------|---------------|-----------------------------------
+[ARMOR](https://github.com/csoneson/ARMOR) | **Stephany Orjuela**<br>**Ruizhu Huang**<br>**Katharina Hembach**<br>**Mark D Robinson**<br>**Charlotte Soneson** |  Snakemake workflow to perform an end-to-end RNA-seq analysis
 
 ---
 
