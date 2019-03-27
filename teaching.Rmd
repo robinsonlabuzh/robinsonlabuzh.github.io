@@ -19,6 +19,8 @@ output: html_document
 
 For exact information on schedule, registration and location, please refer to the official UZH [course catalogue](https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=EN&sap-ui-language=EN)
 
+---
+
 ### **External courses**
 
 <!-- LETS KEEP TO THE STYLE: URL. Place, Country, Date(s) .. newest to oldest -->
