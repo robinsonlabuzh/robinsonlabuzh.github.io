@@ -250,6 +250,21 @@ tbl_plger <- data.frame(
         )
 )
 
+tbl_anthony <- data.frame(
+  img = "![](img/thumbnail/Anthony.png)", 
+  bio = c("Anthony Sonrel", 
+          "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/anthony-sonrel-612505114/) <br>",  
+          paste0("I am a PhD student that joined the Robinson Lab as part of the Life Science Zürich Graduate School.", 
+                 " Through my past projects in academia and industry I worked on various topics such as NGS,", 
+                 " GWAS summary statistics,  epigenetic analyses (ChIP/ATAC-seq) and deep neural networks.", 
+                 " In my current project, I’m evaluating and developing tools (mainly R packages) for single-cell", 
+                 " RNA sequencing datasets. More specifically,  I’m interested in developing new methodologies",
+                 " and new effective tools."), 
+          paste0("MSc in Molecular Life Sciences - Bioinformatics (2018), University of Lausanne<br>", 
+                 "BSc of Science in Biology (2015), University of Lausanne"))
+)
+
+
 ```
 
 
@@ -268,7 +283,8 @@ tables_all <- list(
   tbl_stephany, 
   tbl_stefan, 
   tbl_helena,
-  tbl_almut#,
+  tbl_almut,
+  tbl_anthony #,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
