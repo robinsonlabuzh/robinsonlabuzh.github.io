@@ -58,6 +58,6 @@ If you are being harassed, notice that someone else is being harassed, or have a
 
 For official concerns, please see the [University of Zurich House Regulations](http://www.uzh.ch/en/about/basics/houseregulations.html) website.
 
-(This code of conduct is adapted from [Laurent Gatto, University of Cambridge](https://lgatto.github.io/cpu-coc/) and [Titus Brown, UC Davis](http://ivory.idyll.org/lab/coc.html).)
+(This code of conduct is adapted from [Laurent Gatto, UCLouvain](https://lgatto.github.io/cbio-coc/) and [Titus Brown, UC Davis](http://ivory.idyll.org/lab/coc.html).)
 
 
