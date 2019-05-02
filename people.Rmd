@@ -91,6 +91,32 @@ tbl_izaskun <- data.frame(
                  "MSc in Biology (2007), University of Murcia"))
 )
 
+tbl_will <- data.frame(
+  img = "![](img/thumbnail/will.jpg)", 
+  bio = c(
+    "Will Macnair", 
+    paste0(
+      "<i class='fa fa-twitter'></i> Twitter [\\@willmacnair](https://twitter.com/willmacnair)<br>", 
+      "<i class='fa fa-github'></i> GitHub [wmacnair](https://github.com/wmacnair)<br>"
+      ), 
+    paste0(
+      "I am a postdoc developing statistical and computational methods for analysis of single cell data, ", 
+      "mainly different flavours of single cell RNA-seq, but also cytometry data. ",
+      "I'm motivated by sharp, biologically-driven research questions, and empirically sound methods to answer them. ",
+      "My PhD focused on analysis of trajectories in single cell data, via testing for the presence of branchpoints ([
+        TreeTop](https://github.com/wmacnair/TreeTop)), and identification of genes underlying sequential labels ([
+        psupertime](https://github.com/wmacnair/psupertime)).", 
+      ""
+      ), 
+    paste0(
+      "PhD in Computational Biology (2018), ETH Zurich <br/>",
+      "MSc in Systems Biology (2013), University of Warwick <br/>",
+      "Certificate of Advanced Studies in Mathematics (2004), University of Cambridge <br/>",
+      "BA in Mathematics (2003), University of Cambridge <br/>"
+    )
+  )
+)
+  
 tbl_lukas <- data.frame(
   img = "![](img/thumbnail/lukas.jpg)", 
   bio = c("Lukas Weber", 
@@ -275,6 +301,7 @@ tables_all <- list(
   tbl_simone,
   tbl_izaskun,
   tbl_plger,
+  tbl_will,
   tbl_lukas, 
   tbl_kathi, 
   tbl_stephan, 
