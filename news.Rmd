@@ -41,6 +41,7 @@ tbl_news[nrow(tbl_news) + 1,] <- list("17.10.2018","New PeerJ preprint!","Van de
 tbl_news[nrow(tbl_news) + 1,] <- list("21.01.2019","New Life Science Alliance publication!","Soneson C, Love MI, Patro R, Hussain S, Malhotra D and Robinson MD: [A junction coverage compatibility score to quantify the reliability of transcript abundance estimates and annotation catalogs](http://www.life-science-alliance.org/content/2/1/e201800175)")
 tbl_news[nrow(tbl_news) + 1,] <- list("12.03.2019","New bioRxiv preprint!","Soneson C, Yao Y, Bratus-Neuenschwander A, Patrignani A, Robinson MC and Hussain S: [A comprehensive examination of Nanopore native RNA sequencing for characterization of complex transcriptomes](https://doi.org/10.1101/574525)")
 tbl_news[nrow(tbl_news) + 1,] <- list("13.03.2019","New bioRxiv preprint!","Orjuela S, Huang R, Hembach K, Robinson MD, Soneson C: [ARMOR: an Automated Reproducible MOdular workflow for preprocessing and differential analysis of RNA-seq data](https://doi.org/10.1101/575951)")
+tbl_news[nrow(tbl_news) + 1,] <- list("17.05.2019","New G3 publication!","Orjuela S, Huang R, Hembach K, Robinson MD, Soneson C: [ARMOR: an Automated Reproducible MOdular workflow for preprocessing and differential analysis of RNA-seq data](https://www.g3journal.org/content/early/2019/05/14/g3.119.400185.long)")
 ```
 
 [//]: # Add Mark's twitter feed
