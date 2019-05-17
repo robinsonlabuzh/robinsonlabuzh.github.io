@@ -52,7 +52,8 @@ pmid_software <- rbind(
   c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"),
   c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC"),
   c(pmid = "27130213", software = "http://lmweber.github.io/CrispantCal/"),
-  c(pmid = "29605184", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html")
+  c(pmid = "29605184", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html"),
+  c(pmid = "31088905", software = "https://github.com/csoneson/ARMOR")
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html")
@@ -81,7 +82,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Lindsay H", "Helen Lindsay",
                    "Tiberi S", "Simone Tiberi",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", 
-                   "Hembach K", "Katarina Hembach", "Katharina Hembach",
+                   "Hembach K", "Katarina Hembach", "Katharina Hembach", "Hembach KM",
                    "Katharina M. Hembach", "Yao Yao",
                    "de Souza Vladimir", "Vladimir de Souza",
                    "Souza VBC",
