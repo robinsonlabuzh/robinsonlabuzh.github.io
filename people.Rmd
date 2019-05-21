@@ -38,7 +38,7 @@ tbl_mark <- data.frame(
 )
 
 tbl_joanna <- data.frame(
-  img = "![](img/thumbnail/Joanna.jpg)", 
+  img = "![](img/thumbnail/joanna.jpg)", 
   bio = c("Joanna Zyprych-Walczak", 
           paste0("<i class='fa fa-github'></i> GitHub [joanna](https://github.com/zjanna)<br>"), 
           paste0("My scientific work focuses mainly on the development and applications of various statistical",
