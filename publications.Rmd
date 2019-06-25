@@ -12,30 +12,30 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
                  "18025499", "15786672", "15779224", "15322224", "30039500")
 
 ## PubMed IDs to add
-pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819", "30356428", "31178352")
+pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819", "30356428")
 
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
-biorxiv_dois <- c("10.1101/482687", "10.1101/533646", "10.1101/550749", "10.1101/574525")
+biorxiv_dois <- c("10.1101/533646", "10.1101/550749", "10.1101/574525")
 peerj_dois <- c("10.7287/peerj.preprints.27283v1")
-arxiv_dois <- c("1812.00661")
+# arxiv_dois <- c("1812.00661")
+arxiv_dois <- c()
 
 
 ## github repos
 pmid_github <- rbind(
+  c(pmid = "31098416", github = "https://github.com/lmweber/diffcyt-evaluations"),
   c(pmid = "27992111", github = "https://github.com/lmweber/cytometry-clustering-comparison"),
   c(pmid = "29481549", github = "https://github.com/csoneson/conquer_comparison"),
   c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
   c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scRNAseq_clustering_comparison"),
-  c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance"),
-  c(pmid = "31098416", github = "https://github.com/lmweber/diffcyt-evaluations")
+  c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance")
 )
 
 biorxiv_github <- rbind(
-  c(doi = "10.1101/574525", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
-  c(doi = "10.1101/575951", github = "https://github.com/csoneson/ARMOR")
+  c(doi = "10.1101/574525", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome")
 )
 
 ## data repos
@@ -44,21 +44,22 @@ pmid_data <- rbind(
   c(pmid = "30271584", data = "https://bioconductor.org/packages/DuoClustering2018/"),
   c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
 )
+
 biorxiv_data <- rbind(
-  c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
+   c(doi="", data="")
 )
 
 ## software packages
 pmid_software <- rbind(
   c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"),
-  c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC"),
+  c(pmid = "29028961", software = "https://github.com/csoneson/countsimQC"),
   c(pmid = "27130213", software = "http://lmweber.github.io/CrispantCal/"),
   c(pmid = "29605184", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html"),
   c(pmid = "31088905", software = "https://github.com/csoneson/ARMOR"),
   c(pmid = "31098416", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html")
 )
 biorxiv_software <- rbind(
-  c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html")
+   c(doi="", software="")
 )
 
 ## F1000Research articles awaiting peer review
