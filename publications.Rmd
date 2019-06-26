@@ -24,12 +24,15 @@ peerj_dois <- c("10.7287/peerj.preprints.27283v1")
 arxiv_dois <- c()
 
 
+
+
 ## github repos
 pmid_github <- rbind(
   c(pmid = "31098416", github = "https://github.com/lmweber/diffcyt-evaluations"),
   c(pmid = "27992111", github = "https://github.com/lmweber/cytometry-clustering-comparison"),
   c(pmid = "29481549", github = "https://github.com/csoneson/conquer_comparison"),
   c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
+  c(pmid = "28663787", github = "https://github.com/markrobinsonuzh/cytofWorkflow"),
   c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scRNAseq_clustering_comparison"),
   c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance")
 )
@@ -195,7 +198,9 @@ summ <- lapply(summ, function(w) {
              stringsAsFactors = FALSE)
 })
 ## Put into data frame and arrange by year
-summ <- do.call(rbind, summ) %>% dplyr::arrange(desc(pubyear))
+summ <- do.call(rbind, summ) 
+summ$pubyear[summ$pmid=="28663787"] <- 2019 # hack to get F1000 cytofWorkflow to a 2019 date
+summ <- summ %>% dplyr::arrange(desc(pubyear))
 ```
 
 ```{r}
