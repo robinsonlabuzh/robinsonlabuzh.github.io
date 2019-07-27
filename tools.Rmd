@@ -22,6 +22,7 @@ Name      | Author(s)               | Description
 [flagme](http://bioconductor.org/packages/flagme/) | **Mark D Robinson**<br>Riccardo Romoli | Analysis of Metabolomics GC/MS Data
 [iCOBRA](http://bioconductor.org/packages/iCOBRA/) | **Charlotte Soneson** | Comparison and Visualization of Ranking and Assignment Methods
 [iSEE](http://bioconductor.org/packages/iSEE/) | **Charlotte Soneson**<br>Aaron Lun<br>Federico Marini<br>Kevin Rue-Albrecht | Interactive SummarizedExperiment Explorer
+[muscat](http://github.com/HelenaLC/muscat/) | **Helena L Crowell** | Multi-sample multi-group scRNA-seq data analysis tools
 [regsplice](http://bioconductor.org/packages/regsplice/) | **Lukas M Weber** | L1-regularization based methods for detection of differential splicing
 [Repitools](http://bioconductor.org/packages/Repitools/) | **Mark D Robinson**<br>Dario Strbenac<br>Aaron Statham<br>Andrea Riebler | Epigenomic tools (BayMeth)
 [treeAGG](https://github.com/markrobinsonuzh/treeAGG) | **Ruizhu Huang** | Search for the optimal level of a tree to interpret signal by combining with edgeR or DESeq2
@@ -68,6 +69,7 @@ Name      | Author(s)     | Description
 [cyTOF compensation](https://github.com/BodenmillerGroup/cyTOFcompensation) | Vito RT Zanotelli<br>**Helena L Crowell**<br>**Mark D Robinson** | Repository containing scripts to reproduce a majority of the figures from *"Compensation of Signal Spillover in Suspension and Imaging Mass Cytometry"* ([Chevrier et al., 2018](https://doi.org/10.1016/j.cels.2018.02.010)).
 [cytometry-clustering-comparison](https://github.com/lmweber/cytometry-clustering-comparison) | **Lukas M Weber** | Repository of scripts to reproduce and extend analyses and figures in *"Comparison of clustering methods for high-dimensional single-cell flow and mass cytometry data"* ([Weber and Robinson, 2016](https://www.ncbi.nlm.nih.gov/pubmed/27992111))
 [diffcyt-evaluations](https://github.com/lmweber/diffcyt-evaluations) | **Lukas M Weber** | Repository of scripts to reproduce evaluations and figures in our paper introducing the 'diffcyt' framework ([Weber et al., 2018](https://www.biorxiv.org/content/early/2018/06/18/349738))
+[muscat-comparison](https://github.com/HelenaLC/muscat-comparison/) | **Helena L Crowell** | Repository of scripts to reproduce comparisons and figures for 'muscat' framework ([Crowell et al., 2019](https://www.biorxiv.org/content/10.1101/713412v1))
 [Differential splicing comparison](https://github.com/markrobinsonuzh/diff_splice_paper) | **Charlotte Soneson**<br>**Katharina Matthes** |  Repository containing the code for the comparison of various methods for differential isoform usage (differential splicing) detection ([Soneson, Matthes et al., 2016](https://www.ncbi.nlm.nih.gov/pubmed/26813113)) [Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/splicing_comparison/).
 [edgeR robust](http://imlspenticton.uzh.ch/robinson_lab/edgeR_robust/) | **Xiaobei Zhou** |  Supplementary Page with Supplementary Data, R Code for simulations and analyses ([Zhou et al., 2014](https://www.ncbi.nlm.nih.gov/pubmed/24753412)).
 
