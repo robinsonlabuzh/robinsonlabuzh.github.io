@@ -20,7 +20,8 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819", "30356
 ## Should be of the format "10.1101/185744"
 biorxiv_dois <- c("10.1101/533646", "10.1101/550749", "10.1101/574525", "10.1101/713412")
 peerj_dois <- c("10.7287/peerj.preprints.27283v1")
-arxiv_dois <- c("1812.00661")
+#arxiv_dois <- c("1812.00661")
+arxiv_dois <- c()
 
 
 ## github repos
