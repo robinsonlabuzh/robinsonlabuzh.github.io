@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -246,18 +247,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -351,14 +340,14 @@ $(document).ready(function () {
 </div>
 
 
-<p><a href="http://bioconductor.org/packages/CATALYST/"><img src="stickers/CATALYST.png" width="151" /></a><a href="https://bioconductor.org/packages/countsimQC/"><img src="stickers/countsimQC.png" width="151" /></a><a href="http://bioconductor.org/packages/CrispRVariants/"><img src="stickers/CrispRVariants.png" width="151" /></a><a href="http://bioconductor.org/packages/diffcyt/"><img src="stickers/diffcyt.png" width="151" /></a><a href="http://bioconductor.org/packages/DRIMSeq/"><img src="stickers/DRIMSeq.png" width="151" /></a><a href="http://bioconductor.org/packages/edgeR/"><img src="stickers/edgeR.png" width="151" /></a><a href="http://bioconductor.org/packages/iCOBRA/"><img src="stickers/iCOBRA.png" width="151" /></a><a href="http://bioconductor.org/packages/iSEE/"><img src="stickers/iSEE.png" width="151" /></a><a href="http://bioconductor.org/packages/regsplice/"><img src="stickers/regsplice.png" width="151" /></a><a href="https://github.com/markrobinsonuzh/treeAGG"><img src="stickers/treeAGG.png" width="151" /></a><a href="https://github.com/fionarhuang/TreeSummarizedExperiment"><img src="stickers/TreeSumExp.png" width="151" /></a><a href="https://github.com/csoneson/ARMOR"><img src="stickers/ARMOR.png" width="151" /></a></p>
+<p><a href="http://bioconductor.org/packages/CATALYST/"><img src="stickers/CATALYST.png" style="width:4cm" /></a><a href="https://bioconductor.org/packages/countsimQC/"><img src="stickers/countsimQC.png" style="width:4cm" /></a><a href="http://bioconductor.org/packages/CrispRVariants/"><img src="stickers/CrispRVariants.png" style="width:4cm" /></a><a href="http://bioconductor.org/packages/diffcyt/"><img src="stickers/diffcyt.png" style="width:4cm" /></a><a href="http://bioconductor.org/packages/DRIMSeq/"><img src="stickers/DRIMSeq.png" style="width:4cm" /></a><a href="http://bioconductor.org/packages/edgeR/"><img src="stickers/edgeR.png" style="width:4cm" /></a><a href="http://bioconductor.org/packages/iCOBRA/"><img src="stickers/iCOBRA.png" style="width:4cm" /></a><a href="http://bioconductor.org/packages/iSEE/"><img src="stickers/iSEE.png" style="width:4cm" /></a><a href="http://bioconductor.org/packages/regsplice/"><img src="stickers/regsplice.png" style="width:4cm" /></a><a href="https://github.com/markrobinsonuzh/treeAGG"><img src="stickers/treeAGG.png" style="width:4cm" /></a><a href="https://github.com/fionarhuang/TreeSummarizedExperiment"><img src="stickers/TreeSumExp.png" style="width:4cm" /></a><a href="https://github.com/csoneson/ARMOR"><img src="stickers/ARMOR.png" style="width:4cm" /></a></p>
 <div id="r-packages" class="section level3">
 <h3><strong>R packages</strong></h3>
-<table style="width:88%;">
+<table>
 <colgroup>
-<col width="15%" />
-<col width="22%" />
-<col width="50%" />
+<col width="16%" />
+<col width="25%" />
+<col width="58%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -439,21 +428,26 @@ $(document).ready(function () {
 <td>Interactive SummarizedExperiment Explorer</td>
 </tr>
 <tr class="odd">
+<td><a href="http://github.com/HelenaLC/muscat/">muscat</a></td>
+<td><strong>Helena L Crowell</strong></td>
+<td>Multi-sample multi-group scRNA-seq data analysis tools</td>
+</tr>
+<tr class="even">
 <td><a href="http://bioconductor.org/packages/regsplice/">regsplice</a></td>
 <td><strong>Lukas M Weber</strong></td>
 <td>L1-regularization based methods for detection of differential splicing</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="http://bioconductor.org/packages/Repitools/">Repitools</a></td>
 <td><strong>Mark D Robinson</strong><br>Dario Strbenac<br>Aaron Statham<br>Andrea Riebler</td>
 <td>Epigenomic tools (BayMeth)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="https://github.com/markrobinsonuzh/treeAGG">treeAGG</a></td>
 <td><strong>Ruizhu Huang</strong></td>
 <td>Search for the optimal level of a tree to interpret signal by combining with edgeR or DESeq2</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="https://github.com/fionarhuang/TreeSummarizedExperiment">TreeSummarizedExperiment</a></td>
 <td><strong>Ruizhu Huang</strong></td>
 <td>SummarizedExperiment-based object to store tree-like data</td>
@@ -464,11 +458,11 @@ $(document).ready(function () {
 </div>
 <div id="data-resources" class="section level3">
 <h3><strong>Data resources</strong></h3>
-<table style="width:88%;">
+<table>
 <colgroup>
-<col width="15%" />
-<col width="22%" />
-<col width="50%" />
+<col width="16%" />
+<col width="25%" />
+<col width="58%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -519,11 +513,11 @@ $(document).ready(function () {
 </div>
 <div id="web-applications" class="section level3">
 <h3><strong>Web applications</strong></h3>
-<table style="width:88%;">
+<table>
 <colgroup>
-<col width="15%" />
-<col width="22%" />
-<col width="50%" />
+<col width="16%" />
+<col width="25%" />
+<col width="58%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -564,11 +558,11 @@ $(document).ready(function () {
 </div>
 <div id="other-resources" class="section level3">
 <h3><strong>Other resources</strong></h3>
-<table style="width:88%;">
+<table>
 <colgroup>
-<col width="15%" />
-<col width="22%" />
-<col width="50%" />
+<col width="16%" />
+<col width="25%" />
+<col width="58%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -619,11 +613,16 @@ $(document).ready(function () {
 <td>Repository of scripts to reproduce evaluations and figures in our paper introducing the ‘diffcyt’ framework (<a href="https://www.biorxiv.org/content/early/2018/06/18/349738">Weber et al., 2018</a>)</td>
 </tr>
 <tr class="odd">
+<td><a href="https://github.com/HelenaLC/muscat-comparison/">muscat-comparison</a></td>
+<td><strong>Helena L Crowell</strong></td>
+<td>Repository of scripts to reproduce comparisons and figures for ‘muscat’ framework (<a href="https://www.biorxiv.org/content/10.1101/713412v1">Crowell et al., 2019</a>)</td>
+</tr>
+<tr class="even">
 <td><a href="https://github.com/markrobinsonuzh/diff_splice_paper">Differential splicing comparison</a></td>
 <td><strong>Charlotte Soneson</strong><br><strong>Katharina Matthes</strong></td>
 <td>Repository containing the code for the comparison of various methods for differential isoform usage (differential splicing) detection (<a href="https://www.ncbi.nlm.nih.gov/pubmed/26813113">Soneson, Matthes et al., 2016</a>) <a href="http://imlspenticton.uzh.ch/robinson_lab/splicing_comparison/">Supplementary Page</a>.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="http://imlspenticton.uzh.ch/robinson_lab/edgeR_robust/">edgeR robust</a></td>
 <td><strong>Xiaobei Zhou</strong></td>
 <td>Supplementary Page with Supplementary Data, R Code for simulations and analyses (<a href="https://www.ncbi.nlm.nih.gov/pubmed/24753412">Zhou et al., 2014</a>).</td>
@@ -649,6 +648,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

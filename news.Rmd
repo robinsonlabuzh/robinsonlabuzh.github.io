@@ -47,6 +47,7 @@ tbl_news[nrow(tbl_news) + 1,] <- list("25.06.2019","A little flurry of publicati
 Weber LM, Saelens W, Cannoodt R, Soneson C, Hapfelmeier A, Gardner PP, Boulesteix AL, Saeys Y, Robinson MD: [Essential guidelines for computational method benchmarking.](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1738-8)
 
 Weber LM, Nowicka M, Soneson C, Robinson MD: [diffcyt: Differential discovery in high-dimensional cytometry via high-resolution clustering](https://www.nature.com/articles/s42003-019-0415-5)")
+tbl_news[nrow(tbl_news) + 1,] <- list("26.07.2019","New bioRxiv preprint!","Crowell HL, Soneson C, Germain P-L, Calini D, Collin L, Raposo C, Malhotra D, Robinson MD:  [On the discovery of population-specific state transitions from multi-sample multi-condition single-cell RNA sequencing data](https://doi.org/10.1101/713412")
 ```
 
 [//]: # Add Mark's twitter feed
