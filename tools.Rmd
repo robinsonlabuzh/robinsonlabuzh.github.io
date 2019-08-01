@@ -2,7 +2,9 @@
 title: "Software & Resources"
 ---
 
-[![](stickers/CATALYST.png){width=4cm}](http://bioconductor.org/packages/CATALYST/)[![](stickers/countsimQC.png){width=4cm}](https://bioconductor.org/packages/countsimQC/)[![](stickers/CrispRVariants.png){width=4cm}](http://bioconductor.org/packages/CrispRVariants/)[![](stickers/diffcyt.png){width=4cm}](http://bioconductor.org/packages/diffcyt/)[![](stickers/DRIMSeq.png){width=4cm}](http://bioconductor.org/packages/DRIMSeq/)[![](stickers/edgeR.png){width=4cm}](http://bioconductor.org/packages/edgeR/)[![](stickers/iCOBRA.png){width=4cm}](http://bioconductor.org/packages/iCOBRA/)[![](stickers/iSEE.png){width=4cm}](http://bioconductor.org/packages/iSEE/)[![](stickers/regsplice.png){width=4cm}](http://bioconductor.org/packages/regsplice/)[![](stickers/treeAGG.png){width=4cm}](https://github.com/markrobinsonuzh/treeAGG)[![](stickers/TreeSumExp.png){width=4cm}](https://github.com/fionarhuang/TreeSummarizedExperiment)[![](stickers/ARMOR.png){width=4cm}](https://github.com/csoneson/ARMOR)
+<center>
+[![](stickers/CATALYST.png){width=3cm}](http://bioconductor.org/packages/CATALYST/)[![](stickers/countsimQC.png){width=3cm}](https://bioconductor.org/packages/countsimQC/)[![](stickers/CrispRVariants.png){width=3cm}](http://bioconductor.org/packages/CrispRVariants/)[![](stickers/diffcyt.png){width=3cm}](http://bioconductor.org/packages/diffcyt/)[![](stickers/DRIMSeq.png){width=3cm}](http://bioconductor.org/packages/DRIMSeq/)[![](stickers/edgeR.png){width=3cm}](http://bioconductor.org/packages/edgeR/)[![](stickers/iCOBRA.png){width=3cm}](http://bioconductor.org/packages/iCOBRA/)[![](stickers/iSEE.png){width=3cm}](http://bioconductor.org/packages/iSEE/)[![](stickers/muscat.png){width=3cm}](https://github.com/HelenaLC/muscat)[![](stickers/regsplice.png){width=3cm}](http://bioconductor.org/packages/regsplice/)[![](stickers/treeAGG.png){width=3cm}](https://github.com/markrobinsonuzh/treeAGG)[![](stickers/TreeSumExp.png){width=3cm}](https://github.com/fionarhuang/TreeSummarizedExperiment)[![](stickers/ARMOR.png){width=3cm}](https://github.com/csoneson/ARMOR)
+</center>
 
 ### **R packages**
 
