@@ -62,7 +62,7 @@ pmid_software <- rbind(
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
-  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison")
+  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat")
 )
 
 ## F1000Research articles awaiting peer review
