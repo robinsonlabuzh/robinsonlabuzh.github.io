@@ -18,7 +18,7 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819", "30356
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
-biorxiv_dois <- c("10.1101/533646", "10.1101/550749", "10.1101/574525", "10.1101/713412")
+biorxiv_dois <- c("10.1101/533646", "10.1101/550749", "10.1101/713412")
 peerj_dois <- c("10.7287/peerj.preprints.27283v1")
 #arxiv_dois <- c("1812.00661")
 arxiv_dois <- c()
@@ -31,11 +31,11 @@ pmid_github <- rbind(
   c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
   c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scRNAseq_clustering_comparison"),
   c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance"),
-  c(pmid = "31098416", github = "https://github.com/lmweber/diffcyt-evaluations")
+  c(pmid = "31098416", github = "https://github.com/lmweber/diffcyt-evaluations"),
+  c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome")
 )
 
 biorxiv_github <- rbind(
-  c(doi = "10.1101/574525", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
   c(doi = "10.1101/575951", github = "https://github.com/csoneson/ARMOR"),
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison")
 )
@@ -62,7 +62,7 @@ pmid_software <- rbind(
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
-  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison")
+  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat")
 )
 
 ## F1000Research articles awaiting peer review
@@ -90,13 +90,13 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Germain P-L", "Germain PL", "Pierre-Luc Germain",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", 
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", "Hembach KM",
-                   "Katharina M. Hembach", "Yao Yao",
+                   "Katharina M. Hembach", "Yao Yao", "Yao Y",
                    "de Souza Vladimir", "Vladimir de Souza",
                    "Souza VBC", "de Souza VBC",
                    "Huang R", "Ruizhu Huang", 
                    "Schmeing S", "Stephan Schmeing", 
                    "Orjuela S", "Stephany Orjuela", 
-                   "Crowell HL", "Crowell H", "Helena L Crowell", "Helena Crowell",
+                   "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell", "Helena Crowell",
                    "Mallona I", "Izaskun Mallona",
                    "Duo A", "Angelo Duo", "Duo A", "Angelo Duo",
                    "Duò A", "Angelo Duò",
