@@ -159,7 +159,7 @@ make_link_pmid <- function(pmid) {
   if (pmid != "") {
     sprintf(' <a href="%s" target="_blank"> %s</a>',
             paste0("http://www.ncbi.nlm.nih.gov/pubmed/", pmid),
-            paste0("PMID ", pmid, ". "))
+            paste0("PMID ", pmid))
   } else {
     ""
   }
@@ -425,7 +425,7 @@ for (i in years) {
                          paste0("(", summ[[i]][j, "issue"], ")")), ":",
                   summ[[i]][j, "pages"], 
                   " (", i, "). DOI: ", summ[[i]][j, "doi"],
-                  ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]),  
+                  ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]),  ifelse(summ[[i]][j, "pmid"]=="", "", ". "),
                   ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"), ". ")), 
                   ifelse(summ[[i]][j, "data"] == "", "", paste0(make_link_text(address = summ[[i]][j, "data"], title = "Data"), ". ")), 
                   ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], title = "Software"), ". ")), 
