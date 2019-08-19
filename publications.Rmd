@@ -37,7 +37,8 @@ pmid_github <- rbind(
 
 biorxiv_github <- rbind(
   c(doi = "10.1101/575951", github = "https://github.com/csoneson/ARMOR"),
-  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison")
+  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison"), 
+  c(doi = "10.12688/f1000research.20210.1", github = "https://github.com/lmweber/HDCytoData")
 )
 
 ## data repos
@@ -62,24 +63,25 @@ pmid_software <- rbind(
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
-  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat")
+  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat"), 
+  c(doi = "10.12688/f1000research.20210.1", software = "http://bioconductor.org/packages/HDCytoData")
 )
 
 ## F1000Research articles awaiting peer review
-f1000_preprints <- NULL
-# f1000_preprints <- data.frame(
-#   title = c("Swimming downstream: statistical analysis of differential transcript usage following Salmon quantification"),
-#   pubdate = c("Posted June 27, 2018."),
-#   pubyear = c("Preprints"),
-#   journal = c("F1000Research"),
-#   authors = c("Michael I Love, Charlotte Soneson, Rob Patro"),
-#   volume = c(7),
-#   issue = c(952),
-#   pages = c(""),
-#   doi = c("10.12688/f1000research.15398.1"),
-#   pmid = c(""),
-#   elocationid = c("")
-# )
+# f1000_preprints <- NULL
+f1000_preprints <- data.frame(
+  title = c("HDCytoData: Collection of high-dimensional cytometry benchmark datasets in Bioconductor object formats"),
+  pubdate = c("Posted August 19, 2019."),
+  pubyear = c("Preprints"),
+  journal = c("F1000Research"),
+  authors = c("Lukas M. Weber, Charlotte Soneson"),
+  volume = c(8),
+  issue = c(1459),
+  pages = c(""),
+  doi = c("10.12688/f1000research.20210.1"),
+  pmid = c(""),
+  elocationid = c("")
+)
 
 ## names of members to highlight in publication list
 group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", 
