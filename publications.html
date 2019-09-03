@@ -7,10 +7,8 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="" />
 
 
 <title>Publications</title>
@@ -248,6 +246,18 @@ $(document).ready(function () {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
 
@@ -345,10 +355,6 @@ $(document).ready(function () {
 <div id="preprints" class="section level2">
 <h2>Preprints</h2>
 <ul>
-<li>Angela Meccariello, Marco Salvemini, Pasquale Primo, Brantley Hall, Panagiota Koskinioti, Martina Dalikova, Andrea Gravina, Michela Anna Gucciardino, Federica Forlenza, Maria Eleni Gregoriou, Domenica Ippolito, Simona Maria Monti, Valeria Petrella, Maryanna Martina Perrotta, <strong>Stephan Schmeing</strong>, Alessia Ruggiero, Francesca Scolari, Ennio Giordano, Konstantina T Tsoumani, Frantisek Marec, Nikolai Windbichler, Javaregowda Nagaraju, Kallare P Arunkumar, Kostas Bourtzis, Kostas D Mathiopoulos, Jiannis Ragoussis, Luigi Vitagliano, Zhijian Tu, Philippos Aris Papathanos, <strong>Mark D Robinson</strong>, Giuseppe Saccone: Maleness-on-the-Y (MoY) orchestrates male sex determination in major agricultural fruit fly pests. bioRxiv doi: <a href="https://doi.org/10.1101/533646" target="_blank"> https://doi.org/10.1101/533646</a>. Posted February 07, 2019.
-<div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1101/533646" data-hide-no-mentions="true">
-
-</div></li>
 <li>Janin Knop, Lisanne M Spilgies, Stefanie Rufli, Ramona Reinhardt, Lazaros Vasilikos, Monica Yabal, Phillip J Jost, Harald Wajant, <strong>Mark D. Robinson</strong>, Thomas Kaufmann, W. Wei-Lynn Wong: TNFR2 induced priming of NLRP3-inflammasome via RIPK1 leads to pyroptosis in XIAP deficient cells. bioRxiv doi: <a href="https://doi.org/10.1101/550749" target="_blank"> https://doi.org/10.1101/550749</a>. Posted February 15, 2019.
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1101/550749" data-hide-no-mentions="true">
 
@@ -357,11 +363,19 @@ $(document).ready(function () {
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1101/713412" data-hide-no-mentions="true">
 
 </div></li>
+<li><strong>Simone Tiberi</strong>, <strong>Mark D Robinson</strong>: BANDITS: Bayesian differential splicing accounting for sample-to-sample variability and mapping uncertainty. bioRxiv doi: <a href="https://doi.org/10.1101/750018" target="_blank"> https://doi.org/10.1101/750018</a>. Posted August 29, 2019. <a href="https://github.com/SimoneTiberi/BANDITS_manuscript" target="_blank"> GitHub repo</a>. <a href="http://bioconductor.org/packages/release/bioc/html/BANDITS.html" target="_blank"> Software</a>.
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1101/750018" data-hide-no-mentions="true">
+
+</div></li>
 <li><strong>Lukas M. Weber</strong>, <strong>Charlotte Soneson</strong>: HDCytoData: Collection of high-dimensional cytometry benchmark datasets in Bioconductor object formats. F1000Research doi: <a href="https://doi.org/10.12688/f1000research.20210.1" target="_blank"> https://doi.org/10.12688/f1000research.20210.1</a>. Posted August 19, 2019. <a href="https://github.com/lmweber/HDCytoData" target="_blank"> GitHub repo</a>. <a href="http://bioconductor.org/packages/HDCytoData" target="_blank"> Software</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.12688/f1000research.20210.1" data-hide-no-mentions="true">
 
 </div></li>
-<li>David Laehnemann, Johannes Köster, Ewa Szczurek, Davis J McCarthy, Stephanie C Hicks, <strong>Mark D Robinson</strong>, Catalina A Vallejos, Niko Beerenwinkel, Kieran R Campbell, Ahmed Mahfouz, Luca Pinello, Pavel Skums, Alexandros Stamatakis, Camille Stephan-Otto Attolini, Samuel Aparicio, Jasmijn Baaijens, Marleen Balvert, Buys de Barbanson, Antonio Cappuccio, Giacomo Corleone, Bas Dutilh, Maria Florescu, Victor Guryev, Rens Holmer, Katharin Jahn, Thamar Jessurun Lobo, Emma M Keizer, Indu Khatri, Szymon M Kiełbasa, Jan O Korbel, Alexey M Kozlov, Tzu-Hao Kuo, Boudewijn PF Lelieveldt, Ion I Mandoiu, John C Marioni, Tobias Marschall, Felix Mölder, Amir Niknejad, Łukasz Rączkowski, Marcel Reinders, Jeroen de Ridder, Antoine-Emmanuel Saliba, Antonios Somarakis, Oliver Stegle, Fabian J Theis, Huan Yang, Alex Zelikovsky, Alice C McHardy, Benjamin J Raphael, Sohrab P Shah, Alexander Schönhuth: 12 Grand challenges in single-cell data science. PeerJ doi: <a href="https://doi.org/10.7287/peerj.preprints.27885v2" target="_blank"> https://doi.org/10.7287/peerj.preprints.27885v2</a>. Posted August 07, 2019.
+<li>Koen Van Den Berge, <strong>Katharina Hembach</strong>, <strong>Charlotte Soneson</strong>, <strong>Simone Tiberi</strong>, Lieven Clement, Michael I Love, Rob Patro, <strong>Mark Robinson</strong>: RNA sequencing data: hitchhiker’s guide to expression analysis. PeerJ doi: <a href="https://doi.org/10.7287/peerj.preprints.27283v1" target="_blank"> https://doi.org/10.7287/peerj.preprints.27283v1</a>. Posted November 24, 2018.
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.7287/peerj.preprints.27283v1" data-hide-no-mentions="true">
+
+</div></li>
+<li>David Laehnemann, Johannes Köster, Ewa Szczurek, Davis J McCarthy, Stephanie C Hicks, <strong>Mark D Robinson</strong>, Catalina A Vallejos, Niko Beerenwinkel, Kieran R Campbell, Ahmed Mahfouz, Luca Pinello, Pavel Skums, Alexandros Stamatakis, Camille Stephan-Otto Attolini, Samuel Aparicio, Jasmijn Baaijens, Marleen Balvert, Buys de Barbanson, Antonio Cappuccio, Giacomo Corleone, Bas E Dutilh, Maria Florescu, Victor Guryev, Rens Holmer, Katharina Jahn, Thamar Jessurun Lobo, Emma M Keizer, Indu Khatri, Szymon M Kiełbasa, Jan O Korbel, Alexey M Kozlov, Tzu-Hao Kuo, Boudewijn PF Lelieveldt, Ion I Mandoiu, John C Marioni, Tobias Marschall, Felix Mölder, Amir Niknejad, Łukasz Rączkowski, Marcel Reinders, Jeroen de Ridder, Antoine-Emmanuel Saliba, Antonios Somarakis, Oliver Stegle, Fabian J Theis, Huan Yang, Alex Zelikovsky, Alice C McHardy, Benjamin J Raphael, Sohrab P Shah, Alexander Schönhuth: 12 Grand Challenges in Single-Cell Data Science. PeerJ doi: <a href="https://doi.org/10.7287/peerj.preprints.27885v2" target="_blank"> https://doi.org/10.7287/peerj.preprints.27885v2</a>. Posted August 23, 2019.
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.7287/peerj.preprints.27885v2" data-hide-no-mentions="true">
 
 </div></li>
@@ -370,6 +384,10 @@ $(document).ready(function () {
 <div id="section" class="section level2">
 <h2>2019</h2>
 <ul>
+<li>Meccariello A, Salvemini M, Primo P, Hall B, Koskinioti P, Dalíková M, Gravina A, Gucciardino MA, Forlenza F, Gregoriou ME, Ippolito D, Monti SM, Petrella V, Perrotta MM, <strong>Schmeing S</strong>, Ruggiero A, Scolari F, Giordano E, Tsoumani KT, Marec F, Windbichler N, Arunkumar KP, Bourtzis K, Mathiopoulos KD, Ragoussis J, Vitagliano L, Tu Z, Papathanos PA, <strong>Robinson MD</strong>, Saccone G: <em>Maleness-on-the-Y</em> (<em>MoY</em>) orchestrates male sex determination in major agricultural fruit fly pests. Science : (2019). DOI: 10.1126/science.aax1318. <a href="http://www.ncbi.nlm.nih.gov/pubmed/31467189" target="_blank"> PMID 31467189</a>.
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1126/science.aax1318" data-hide-no-mentions="true">
+
+</div></li>
 <li><strong>Soneson C</strong>, <strong>Yao Y</strong>, Bratus-Neuenschwander A, Patrignani A, <strong>Robinson MD</strong>, Hussain S: A comprehensive examination of Nanopore native RNA sequencing for characterization of complex transcriptomes. Nat Commun 10(1):3359 (2019). DOI: 10.1038/s41467-019-11272-z. <a href="http://www.ncbi.nlm.nih.gov/pubmed/31366910" target="_blank"> PMID 31366910</a>. <a href="https://github.com/csoneson/NativeRNAseqComplexTranscriptome" target="_blank"> GitHub repo</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1038/s41467-019-11272-z" data-hide-no-mentions="true">
 
@@ -420,10 +438,6 @@ $(document).ready(function () {
 </div></li>
 <li>Mariani SA, Li Z, Rice S, Krieg C, Fragkogianni S, <strong>Robinson M</strong>, Vink CS, Pollard JW, Dzierzak E: Pro-inflammatory Aorta-Associated Macrophages Are Involved in Embryonic Development of Hematopoietic Stem Cells. Immunity 50(6):1439-1452.e5 (2019). DOI: 10.1016/j.immuni.2019.05.003. <a href="http://www.ncbi.nlm.nih.gov/pubmed/31178352" target="_blank"> PMID 31178352</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1016/j.immuni.2019.05.003" data-hide-no-mentions="true">
-
-</div></li>
-<li>Van den Berge K, <strong>Hembach KM</strong>, <strong>Soneson C</strong>, <strong>Tiberi S</strong>, Clement L, Love MI, Patro R, <strong>Robinson MD</strong>: RNA Sequencing Data: Hitchhiker’s Guide to Expression Analysis. Annual Review of Biomedical Data Science 2:139-173 (2019). DOI: 10.1146/annurev-biodatasci-072018-021255.
-<div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1146/annurev-biodatasci-072018-021255" data-hide-no-mentions="true">
 
 </div></li>
 </ul>
@@ -920,23 +934,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
