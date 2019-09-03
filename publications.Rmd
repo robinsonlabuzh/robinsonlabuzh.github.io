@@ -19,7 +19,7 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819", "30356
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
 biorxiv_dois <- c("10.1101/550749", "10.1101/713412", "10.1101/750018")
-peerj_dois <- c("10.7287/peerj.preprints.27283v1", "10.7287/peerj.preprints.27885v2")
+peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 #arxiv_dois <- c("1812.00661")
 arxiv_dois <- c()
 
@@ -68,6 +68,22 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/750018", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html"), 
   c(doi = "10.12688/f1000research.20210.1", software = "http://bioconductor.org/packages/HDCytoData")
 )
+
+## publications not in PubMed/bioRxiv	
+unlisted_publications <- data.frame(	
+  title = c("RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis."),	
+  pubdate = c(""),	
+  pubyear = c("2019"),	
+  journal = c("Annual Review of Biomedical Data Science"),	
+  authors = c("Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD"),	
+  volume = c("2"),	
+  issue = c(""),	
+  pages = c("139-173"),	
+  doi = c("10.1146/annurev-biodatasci-072018-021255"),	
+  pmid = c(""),	
+  elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255")	
+)
+
 
 ## F1000Research articles awaiting peer review
 # f1000_preprints <- NULL
@@ -142,10 +158,15 @@ make_link_text <- function(address, title) {
   sprintf(' <a href="%s" target="_blank"> %s</a>', address, title)
 }
 
+
 make_link_pmid <- function(pmid) {
-  sprintf(' <a href="%s" target="_blank"> %s</a>',
-          paste0("http://www.ncbi.nlm.nih.gov/pubmed/", pmid),
-          paste0("PMID ", pmid))
+  if (pmid != "") {	  
+    sprintf(' <a href="%s" target="_blank"> %s</a>',
+            paste0("http://www.ncbi.nlm.nih.gov/pubmed/", pmid),
+            paste0("PMID ", pmid))
+  } else {	
+    ""	
+  }	
 }
 
 make_link_altmetric <- function(doi) {
@@ -158,6 +179,7 @@ make_link_altmetric_arxiv <- function(arxivid) {
           arxivid)
 }
 ```
+
 
 ```{r}
 ## Search PubMed
@@ -204,6 +226,15 @@ summ <- lapply(summ, function(w) {
 })
 ## Put into data frame and arrange by year
 summ <- do.call(rbind, summ) %>% dplyr::arrange(desc(pubyear))
+```
+
+```{r}	
+## Add unlisted publications	
+unlisted_publications <- 	
+  unlisted_publications[, match(colnames(summ), 	
+                                colnames(unlisted_publications))]	
+colnames(unlisted_publications) <- colnames(summ)	
+summ <- rbind(summ, unlisted_publications)	
 ```
 
 ```{r}
@@ -368,11 +399,15 @@ if (!is.null(biorxiv)) {
     if (biorxiv[j, "journal"] == "arXiv") {
       txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
                   ". ", biorxiv[j, "journal"], 
-                  " ID:", make_link_text(address = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"]), title = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"])), ". ", 
+                  " ID:", make_link_text(address = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"]), 
+                                         title = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"])), ". ", 
                   biorxiv[j, "pubdate"], " ", 
-                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
-                  ifelse(biorxiv[j, "data"] == "", "", paste0(make_link_text(address = biorxiv[j, "data"], title = "Data"), ". ")), 
-                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")), 
+                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], 
+                                                                               title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "data"] == "", "", paste0(make_link_text(address = biorxiv[j, "data"], 
+                                                                             title = "Data"), ". ")), 
+                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], 
+                                                                                 title = "Software"), ". ")), 
                   make_link_altmetric_arxiv(biorxiv[j, "doi"]),
                   "\n\n")
     } else {
@@ -380,10 +415,14 @@ if (!is.null(biorxiv)) {
                   ". ", biorxiv[j, "journal"], 
                   " doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
                   biorxiv[j, "pubdate"], " ", 
-                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
-                  ifelse(biorxiv[j, "data"] == "", "", paste0(make_link_text(address = biorxiv[j, "data"], title = "Data"), ". ")), 
-                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")), 
-                  make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
+                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], 
+                                                                               title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "data"] == "", "", paste0(make_link_text(address = biorxiv[j, "data"], 
+                                                                             title = "Data"), ". ")), 
+                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], 
+                                                                                 title = "Software"), ". ")), 
+                  make_link_altmetric(biorxiv[j, "doi"]),
+                  #make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
                   "\n\n")
     }
   }
@@ -399,10 +438,14 @@ for (i in years) {
                          paste0("(", summ[[i]][j, "issue"], ")")), ":",
                   summ[[i]][j, "pages"], 
                   " (", i, "). DOI: ", summ[[i]][j, "doi"],
-                  ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
-                  ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"), ". ")), 
-                  ifelse(summ[[i]][j, "data"] == "", "", paste0(make_link_text(address = summ[[i]][j, "data"], title = "Data"), ". ")), 
-                  ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], title = "Software"), ". ")), 
+                  ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]),  ifelse(summ[[i]][j, "pmid"]=="", "", ". "),  
+                  #". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
+                  ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], 
+                                                                                 title = "GitHub repo"), ". ")), 
+                  ifelse(summ[[i]][j, "data"] == "", "", paste0(make_link_text(address = summ[[i]][j, "data"], 
+                                                                               title = "Data"), ". ")), 
+                  ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], 
+                                                                                   title = "Software"), ". ")), 
                   make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
                   "\n\n")
   }
