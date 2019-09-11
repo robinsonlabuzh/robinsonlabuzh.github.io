@@ -304,6 +304,17 @@ tbl_anthony <- data.frame(
                  "BSc of Science in Biology (2015), University of Lausanne"))
 )
 
+tbl_reto <- data.frame(
+  img = "![](img/thumbnail/Reto.jpg)", 
+  bio = c("Reto Gerber",  
+          paste0("I am a Master student in the Computational Biology & Bioinformatics study program currently  ",
+                 "working on my master thesis. The focus of this project lies on using censored predictors in ",
+                  " single cell models (mainly for flow and mass cytometry).",
+                 " In past projects I worked among other things on docking of biomolecules and signalling networks in cells, ",
+                  "before turning more to the statistical aspect of bioinformatics."
+                  ), 
+          paste0("BSc of Science in Biology (2017), University of Zurich"))
+)
 
 ```
 
@@ -326,7 +337,8 @@ tables_all <- list(
   tbl_stefan, 
   tbl_helena,
   tbl_almut,
-  tbl_anthony #,
+  tbl_anthony,
+  tbl_reto #,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
