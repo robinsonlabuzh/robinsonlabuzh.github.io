@@ -375,7 +375,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
-- Lukas Weber (PhD student, [compared clustering algorithms for CyTOF](https://onlinelibrary.wiley.com/doi/pdf/10.1002/cyto.a.23030), author of [diffcyt](https://www.nature.com/articles/s42003-019-0415-5); now at Johns Hopkins University)
+- [Lukas Weber](https://lmweber.github.io/) (PhD student, [compared CyTOF clustering algorithms](https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.23030), author of [diffcyt](https://www.nature.com/articles/s42003-019-0415-5), reviewed [benchmarking](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1738-8); now at [JHU](https://www.jhsph.edu/departments/biostatistics/index.html))
 - [Joanna Zyprych-Walczak](http://merlin.up.poznan.pl/kmmis2/index.php?id=158&id2=105) (visiting professor)
 - [Charlotte Soneson](http://csoneson.github.io/) (postdoc, investigated [various](https://f1000research.com/articles/4-1521/) [aspects](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3) of [RNA-seq](https://www.nature.com/articles/nmeth.4612) [data](http://www.life-science-alliance.org/content/2/1/e201800175) and [method](https://www.nature.com/articles/nmeth.3805) [benchmarking](https://academic.oup.com/bioinformatics/article/34/4/691/4345646); now at [FMI](https://www.fmi.ch))
 - Helen Lindsay (postdoc, author of [CrispRVariants](https://bioconductor.org/packages/release/bioc/html/CrispRVariants.html); now at [EPFL](https://www.epfl.ch/))
