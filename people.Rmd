@@ -375,13 +375,13 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
-- [Lukas Weber](https://lmweber.github.io/) (PhD student, [compared CyTOF clustering algorithms](https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.23030), author of [diffcyt](https://www.nature.com/articles/s42003-019-0415-5), reviewed [benchmarking](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1738-8); now at [JHU](https://www.jhsph.edu/departments/biostatistics/index.html))
 - [Joanna Zyprych-Walczak](http://merlin.up.poznan.pl/kmmis2/index.php?id=158&id2=105) (visiting professor)
 - [Charlotte Soneson](http://csoneson.github.io/) (postdoc, investigated [various](https://f1000research.com/articles/4-1521/) [aspects](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3) of [RNA-seq](https://www.nature.com/articles/nmeth.4612) [data](http://www.life-science-alliance.org/content/2/1/e201800175) and [method](https://www.nature.com/articles/nmeth.3805) [benchmarking](https://academic.oup.com/bioinformatics/article/34/4/691/4345646); now at [FMI](https://www.fmi.ch))
 - Helen Lindsay (postdoc, author of [CrispRVariants](https://bioconductor.org/packages/release/bioc/html/CrispRVariants.html); now at [EPFL](https://www.epfl.ch/))
 - Charity Law (postdoc, worked on differential splicing; now at [WEHI](https://www.wehi.edu.au/))
 - Andrea Riebler (postdoc, author of [BayMeth](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r35) in [Repitools](http://bioconductor.org/packages/release/bioc/html/Repitools.html) package; now at [NTNU](https://www.ntnu.edu/imf))
 - Ian Morilla (postdoc, involved in differential expression analysis using de novo RNA-seq assemblies; now at [INSERM](https://www.inserm.fr/))
+- [Lukas Weber](https://lmweber.github.io/) (PhD student, [compared CyTOF clustering algorithms](https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.23030), author of [diffcyt](https://www.nature.com/articles/s42003-019-0415-5), reviewed [benchmarking](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1738-8); now at [JHU](https://www.jhsph.edu/departments/biostatistics/index.html))
 - Xiaobei Zhou (PhD student; author of [edgeR robust](https://academic.oup.com/nar/article/42/11/e91/1427925))
 - Malgorzata Nowicka (PhD student, author of [DRIMSeq](https://bioconductor.org/packages/DRIMSeq) and [cytofWorkflow](https://bioconductor.org/packages/cytofWorkflow/); now at [Hoffman La Roche](https://www.roche.ch/))
 - Hadi Gharibi (PhD student, analyzed BS-seq data; now at [Uni. Tehran](http://ut.ac.ir/en))
