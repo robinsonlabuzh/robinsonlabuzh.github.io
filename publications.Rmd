@@ -18,7 +18,7 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315", "30002819", "30356
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
-biorxiv_dois <- c("10.1101/713412", "10.1101/750018")
+biorxiv_dois <- c("10.1101/800383","10.1101/713412", "10.1101/750018")
 peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 #arxiv_dois <- c("1812.00661")
 arxiv_dois <- c()
@@ -39,7 +39,8 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/575951", github = "https://github.com/csoneson/ARMOR"),
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison"), 
   c(doi = "10.1101/750018", github = "https://github.com/SimoneTiberi/BANDITS_manuscript"), 
-  c(doi = "10.12688/f1000research.20210.1", github = "https://github.com/lmweber/HDCytoData")
+  c(doi = "10.12688/f1000research.20210.1", github = "https://github.com/lmweber/HDCytoData"),
+  c(doi = "10.1101/800383", github = "https://github.com/markrobinsonuzh/allele_specificity_paper")
 )
 
 ## data repos
@@ -66,7 +67,8 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat"), 
   c(doi = "10.1101/750018", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html"), 
-  c(doi = "10.12688/f1000research.20210.1", software = "http://bioconductor.org/packages/HDCytoData")
+  c(doi = "10.12688/f1000research.20210.1", software = "http://bioconductor.org/packages/HDCytoData"),
+  c(doi = "10.1101/800383", github = "https://github.com/markrobinsonuzh/DAMEfinder")
 )
 
 ## publications not in PubMed/bioRxiv	
@@ -122,6 +124,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Duò A", "Angelo Duò",
                    "Nowicka M", "Malgorzata Nowicka",
                    "Zhou X", "Xiaobei Zhou",
+                   "Dania Machlab",
                    "Nikolayeva O", 
                    "Komljenovic A",
                    "Morilla I", 
