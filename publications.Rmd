@@ -39,7 +39,8 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/575951", github = "https://github.com/csoneson/ARMOR"),
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison"), 
   c(doi = "10.1101/750018", github = "https://github.com/SimoneTiberi/BANDITS_manuscript"), 
-  c(doi = "10.12688/f1000research.20210.1", github = "https://github.com/lmweber/HDCytoData")
+  c(doi = "10.12688/f1000research.20210.1", github = "https://github.com/lmweber/HDCytoData"),
+  c(doi = "10.1101/800383", github = "https://github.com/markrobinsonuzh/allele_specificity_paper")
 )
 
 ## data repos
@@ -66,7 +67,8 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat"), 
   c(doi = "10.1101/750018", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html"), 
-  c(doi = "10.12688/f1000research.20210.1", software = "http://bioconductor.org/packages/HDCytoData")
+  c(doi = "10.12688/f1000research.20210.1", software = "http://bioconductor.org/packages/HDCytoData"),
+  c(doi = "10.1101/800383", github = "https://github.com/markrobinsonuzh/DAMEfinder")
 )
 
 ## publications not in PubMed/bioRxiv	
