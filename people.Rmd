@@ -320,7 +320,7 @@ tbl_reto <- data.frame(
 )
 
 tbl_elyas <- data.frame(
-  img = "![](img/thumbnail/elyas.jpg)", 
+  img = "![](img/thumbnail/elyas.jpeg)", 
   bio = c("Elyas Heidari",  
           paste0("I am a Master student of Computational Biology & Bioinformatics at ETH university. I am interested",
                  " in developing analysis pipelines for single-cell multi-omics data. Currently, I am exploring",
