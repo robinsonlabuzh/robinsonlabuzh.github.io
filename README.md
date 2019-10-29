@@ -6,14 +6,14 @@ More details on making HTML documents from Rmarkdown can be found [here](http://
 
 ### Updates to the website
 
-- Once you've cloned the repo and have all the packages installed, the updating the website is done via:
+- Once you've cloned the repo, created a branch to make changes on, have all the packages installed, the updating the website is done via:
 
 ```
 Sys.setlocale(category = "LC_ALL", locale = "en_US.UTF-8")
 rmarkdown::render_site(encoding = "UTF-8")
 ```
 
-- Then, commit and push everything back to the robinsonlab.github.io repo
+- Then, commit and push the files changed (RMD + HTML + any graphics) back to your branch
 
 ### Pull requests
 
