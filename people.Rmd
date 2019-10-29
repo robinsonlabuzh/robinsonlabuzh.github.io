@@ -325,7 +325,7 @@ tbl_elyas <- data.frame(
                  " Prior to joining Robinson lab, I worked on developing a number of machine/deep learning tools", 
                  " for biomedical data. I have developed [MUVIS](https://baio-lab.github.io/muvis/index.html) for general medical data analysis and [SeqLearner](http://seqlearner.readthedocs.io/) for semi-supervised learning on biological sequences."
                   ), 
-          paste0("BSc of Science in Applied Mathematics (2019), Sharif University of Technology, Tehran<br>", "BSc of Science in Computer Engineering (2019), Sharif University of Technology, Tehran<br>"))
+          paste0("BSc of Science in Applied Mathematics (2019), Sharif University of Technology<br>", "BSc of Science in Computer Engineering (2019), Sharif University of Technology<br>"))
 )
 
 ```
