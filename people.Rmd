@@ -319,10 +319,11 @@ tbl_reto <- data.frame(
 tbl_elyas <- data.frame(
   img = "![](img/thumbnail/elihei.jpeg)", 
   bio = c("Elyas Heidari",  
-          paste0("I am a Master student of Computational Biology & Bioinformatics at ETH university.",
-                 "I am mainly interested in developing analysis pipelines for single-cell multi-omics data.",
-                  "  Prior to joining Robinson lab I have been conducting research on development of Machine Learning,", "and Deep Learning  methods for biomedical data. I have developed [MUVIS](https://baio-lab.github.io/muvis/index.html) for general medical data analysis",
-                 "and [SeqLearner](http://seqlearner.readthedocs.io/) for semi-supervised learning on biological sequences."
+          paste0("I am a Master student of Computational Biology & Bioinformatics at ETH university. I am interested",
+                 " in developing analysis pipelines for single-cell multi-omics data. Currently, I am exploring",
+                 " single-cell B/T-cell receptor data to understand the diversity in immune repertoire and phenotypes.",
+                 " Prior to joining Robinson lab, I worked on developing a number of machine/deep learning tools", 
+                 " for biomedical data. I have developed [MUVIS](https://baio-lab.github.io/muvis/index.html) for general medical data analysis and [SeqLearner](http://seqlearner.readthedocs.io/) for semi-supervised learning on biological sequences."
                   ), 
           paste0("BSc of Science in Applied Mathematics (2019), Sharif University of Technology, Tehran<br>", "BSc of Science in Computer Engineering (2019), Sharif University of Technology, Tehran<br>"))
 )
