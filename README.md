@@ -6,18 +6,17 @@ More details on making HTML documents from Rmarkdown can be found [here](http://
 
 ### Updates to the website
 
-- Once you've cloned the repo, created a branch to make changes on, have all the packages installed, the updating the website is done via:
+- Once you've cloned the repo, created a branch to make changes on, have all the packages installed, updating the website is done via the following commands (in R):
 
 ```
 Sys.setlocale(category = "LC_ALL", locale = "en_US.UTF-8")
 rmarkdown::render_site(encoding = "UTF-8")
 ```
-
-- Then, commit and push the files changed (RMD + HTML + any graphics) back to your branch
+- Then once you are happy with the look of the website, commit and push the files changed (RMD + HTML + any graphics) back to your branch, and send a pull request
 
 ### Pull requests
 
-Please do not push to master. Instead, create a separate branch, add your changes to this branch, push it to GitHub and create a pull request in the master branch. This pull request needs to be reviewed by someone else in the group, who will also merge it into the master branch if he or she approves the changes. The procedure is described in more detail below. 
+Please do not push to master. Instead, create a separate branch, add your changes to this branch, push it to GitHub and create a pull request to the master branch. This pull request needs to be reviewed by someone else in the group, who will also merge it into the master branch if he or she approves the changes. The procedure is described in more detail below. 
 
 You can create the new branch either on your local machine, or on GitHub. If you are creating it locally, first make sure that you have the latest changes to the master branch available, and create a new branch from this state (replace <new_branch_name> with the name you want to give your branch. Ideally this should describe what changes you are intending to make):
 
