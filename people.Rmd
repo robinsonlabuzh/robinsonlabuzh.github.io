@@ -2,13 +2,16 @@
 output: html_document
 ---
 
-```{r, include=FALSE}
+
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
 # required to use 'Font Awesome' (FA) icons (Website, Twitter, GitHub, etc)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
 
-```{r, echo=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # Instructions:
 # - Add one new block of code for each team member.
 # - To add custom linebreaks in text sections, use the HTML tag <br> for linebreaks.
@@ -331,7 +334,8 @@ tbl_elyas <- data.frame(
 ```
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=F}
+
 # combine all in list (re-order here as appropriate, e.g. by seniority)
 tables_all <- list(
   tbl_mark, 
@@ -359,7 +363,7 @@ tables_all <- list(
 ```
 
 
-```{r, echo=FALSE, message=FALSE, results="asis"}
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, results="asis"}
 # R code to output HTML code
 
 library(knitr)
