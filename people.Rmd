@@ -2,13 +2,16 @@
 output: html_document
 ---
 
-```{r, include=FALSE}
+
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
 # required to use 'Font Awesome' (FA) icons (Website, Twitter, GitHub, etc)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
 
-```{r, echo=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # Instructions:
 # - Add one new block of code for each team member.
 # - To add custom linebreaks in text sections, use the HTML tag <br> for linebreaks.
@@ -123,7 +126,7 @@ tbl_will <- data.frame(
       ""
       ), 
     paste0(
-      "PhD in Computational Biology (2018), ETH Zurich <br/>",
+      "PhD in Computational Biology (2018), ETH Zürich <br/>",
       "MSc in Systems Biology (2013), University of Warwick <br/>",
       "Certificate of Advanced Studies in Mathematics (2004), University of Cambridge <br/>",
       "BA in Mathematics (2003), University of Cambridge <br/>"
@@ -144,7 +147,7 @@ tbl_lukas <- data.frame(
                  "[diffcyt](http://bioconductor.org/packages/diffcyt) R package from Bioconductor. ", 
                  "I also enjoy teaching, especially R programming and data analysis skills as an instructor for ", 
                  "[Software and Data Carpentry](https://carpentries.org/)."), 
-          paste0("MSc in Statistics (2014), ETH Zurich"))
+          paste0("MSc in Statistics (2014), ETH Zürich"))
 )
 
 tbl_kathi <- data.frame(
@@ -182,7 +185,7 @@ tbl_fiona <- data.frame(
           paste0("My major research interest is in the development and application of statistical ", 
                  "methods in biological data. Currently, I am working on the project about tree ", 
                  "signal aggregation."), 
-          paste0("MSc in Biostatistics (2015), University of Zurich<br>", 
+          paste0("MSc in Biostatistics (2015), University of Zürich<br>", 
                  "BSc in Applied Chemsitry (2010), Wuhan University"))
 )
 
@@ -206,7 +209,7 @@ tbl_stephany <- data.frame(
                  "which focuses on studying the molecular mechanisms underlying the development ", 
                  "and progression of Colorectal Cancer. Most of my work focuses on analyzing and ", 
                  "developing methods to process methylation data obtained from Bisulfite-seq. I am currently developing a method to identify differential allele-specific methylation. "), 
-          paste0("MSc in Biology (2017), University of Zurich<br>", 
+          paste0("MSc in Biology (2017), University of Zürich<br>", 
                  "BSc in Biology (2015), Universidad Nacional de Colombia"))
 )
 
@@ -222,7 +225,7 @@ tbl_stefan <- data.frame(
                  "My project focuses on epigenetic modifications over short timescales and my general ", 
                  "aim is to assess the impact and the importance of DNA methylation in evolution over ", 
                  "short periods (rapid evolution)."), 
-          paste0("MSc in Computational Biology and Bioinformatics (2017), ETH Zurich and University of Zurich<br>", 
+          paste0("MSc in Computational Biology and Bioinformatics (2017), ETH Zürich and University of Zürich<br>", 
                  "BSc in Biology (2015), Université de Lausanne"))
 )
 
@@ -244,7 +247,7 @@ tbl_helena <- data.frame(
                  "differential analysis into the package. As a PhD student, I am currently working on ",
                  "extending this framework for differential discovery to scRNA-seq data with complex ",
                  "experimental designs."), 
-          paste0("MSc in Computational Biology & Bioinformatics (2018), ETH Zurich<br>", 
+          paste0("MSc in Computational Biology & Bioinformatics (2018), ETH Zürich<br>", 
                  "BSc in Biochemistry (2015), University of Heidelberg"))
 )
 
@@ -297,8 +300,8 @@ tbl_anthony <- data.frame(
           paste0("I am a PhD student that joined the Robinson Lab as part of the Life Science Zürich Graduate School.", 
                  " Through my past projects in academia and industry I worked on various topics such as NGS,", 
                  " GWAS summary statistics,  epigenetic analyses (ChIP/ATAC-seq) and deep neural networks.", 
-                 " In my current project, I’m evaluating and developing tools (mainly R packages) for single-cell", 
-                 " RNA sequencing datasets. More specifically,  I’m interested in developing new methodologies",
+                 " In my current project, I'm evaluating and developing tools (mainly R packages) for single-cell", 
+                 " RNA sequencing datasets. More specifically,  I'm interested in developing new methodologies",
                  " and new effective tools."), 
           paste0("MSc in Molecular Life Sciences - Bioinformatics (2018), University of Lausanne<br>", 
                  "BSc of Science in Biology (2015), University of Lausanne"))
@@ -313,13 +316,26 @@ tbl_reto <- data.frame(
                  " In past projects I worked among other things on docking of biomolecules and signalling networks in cells, ",
                   "before turning more to the statistical aspect of bioinformatics."
                   ), 
-          paste0("BSc of Science in Biology (2017), University of Zurich"))
+          paste0("BSc of Science in Biology (2017), University of Zürich"))
+)
+
+tbl_elyas <- data.frame(
+  img = "![](img/thumbnail/elyas.jpeg)", 
+  bio = c("Elyas Heidari",  
+          paste0("I am a Master student of Computational Biology & Bioinformatics at ETH university. I am interested",
+                 " in developing analysis pipelines for single-cell multi-omics data. Currently, I am exploring",
+                 " single-cell B/T-cell receptor data to understand the diversity in immune repertoire and phenotypes.",
+                 " Prior to joining Robinson lab, I worked on developing a number of machine/deep learning tools", 
+                 " for biomedical data. I have developed [MUVIS](https://baio-lab.github.io/muvis/index.html) for general medical data analysis and [SeqLearner](http://seqlearner.readthedocs.io/) for semi-supervised learning on protein sequences."
+                  ), 
+          paste0("BSc of Science in Applied Mathematics (2019), Sharif University of Technology<br>", "BSc of Science in Computer Engineering (2019), Sharif University of Technology<br>"))
 )
 
 ```
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=F}
+
 # combine all in list (re-order here as appropriate, e.g. by seniority)
 tables_all <- list(
   tbl_mark, 
@@ -338,7 +354,8 @@ tables_all <- list(
   tbl_helena,
   tbl_almut,
   tbl_anthony,
-  tbl_reto #,
+  tbl_reto,
+  tbl_elyas #,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
@@ -346,7 +363,7 @@ tables_all <- list(
 ```
 
 
-```{r, echo=FALSE, message=FALSE, results="asis"}
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE, results="asis"}
 # R code to output HTML code
 
 library(knitr)
