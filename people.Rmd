@@ -1,4 +1,5 @@
 ---
+title: "People"
 output: html_document
 ---
 
@@ -142,10 +143,11 @@ tbl_imran <- data.frame(
       "<i class='fa fa-twitter'></i> Twitter [\\@IFanaswala](https://twitter.com/IFanaswala)<br>"
       ), 
     paste0(
-      "Imran Fanaswala has worked in academia and industry for over a decade; his passion lies in" ,
+      "Imran Fanaswala has worked in academia and industry for over a decade; his passion lies in " ,
       "value-driven research (i.e. addressing unmet needs through research as well as bringing ideas to market). ",
-      "His research has spanned various fields (robotics, phylogenetics, DNA-assembly, neuroscience), but often ",
-      "within the machine-learning/AI context (and more recently, \"ModelOps\"). He strives for succint, yet readable, code and prose."
+      "His work has spanned various fields (robotics, phylogenetics, DNA-assembly, neuroscience) but ",
+      "often within the machine-learning/AI context (and more recently, \"ModelOps\"). He strives for ",
+      "readable code, succint prose, and meaningful research."
       ), 
     paste0(
       "MSc in Computational Biology (2014), ETH Zürich (thesis at RIKEN) <br/>",
