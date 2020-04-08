@@ -12,204 +12,204 @@
   ]]></style>
 </defs>
 <rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
-<text x='313.29' y='304.90' style='font-size: 48.00px; fill: #666666; font-family: Arial;' textLength='93.42px' lengthAdjust='spacingAndGlyphs'>data</text>
-<text x='338.55' y='257.39' style='font-size: 43.26px; fill: #666666; font-family: Arial;' textLength='95.66px' lengthAdjust='spacingAndGlyphs'>gene</text>
-<text x='251.75' y='333.42' style='font-size: 40.42px; fill: #A6761D; font-family: Arial;' textLength='193.44px' lengthAdjust='spacingAndGlyphs'>expression</text>
-<text x='334.00' y='220.56' style='font-size: 39.47px; fill: #A6761D; font-family: Arial;' textLength='106.26px' lengthAdjust='spacingAndGlyphs'>genes</text>
-<text x='244.80' y='364.49' style='font-size: 34.74px; fill: #E6AB02; font-family: Arial;' textLength='126.45px' lengthAdjust='spacingAndGlyphs'>analysis</text>
-<text x='278.78' y='243.71' style='font-size: 29.68px; fill: #66A61E; font-family: Arial;' textLength='50.05px' lengthAdjust='spacingAndGlyphs'>dna</text>
-<text transform='translate(296.72,298.24) rotate(-90)' style='font-size: 26.84px; fill: #E7298A; font-family: Arial;' textLength='54.01px' lengthAdjust='spacingAndGlyphs'>cells</text>
-<text transform='translate(463.42,378.30) rotate(-90)' style='font-size: 25.89px; fill: #E7298A; font-family: Arial;' textLength='132.96px' lengthAdjust='spacingAndGlyphs'>methylation</text>
-<text x='279.06' y='387.57' style='font-size: 25.58px; fill: #E7298A; font-family: Arial;' textLength='78.04px' lengthAdjust='spacingAndGlyphs'>cancer</text>
-<text x='373.59' y='366.75' style='font-size: 25.58px; fill: #E7298A; font-family: Arial;' textLength='62.16px' lengthAdjust='spacingAndGlyphs'>using</text>
-<text x='362.25' y='389.92' style='font-size: 24.63px; fill: #E7298A; font-family: Arial;' textLength='40.31px' lengthAdjust='spacingAndGlyphs'>can</text>
-<text x='294.18' y='215.36' style='font-size: 23.37px; fill: #E7298A; font-family: Arial;' textLength='34.51px' lengthAdjust='spacingAndGlyphs'>cell</text>
-<text transform='translate(270.35,265.77) rotate(-90)' style='font-size: 22.42px; fill: #E7298A; font-family: Arial;' textLength='101.50px' lengthAdjust='spacingAndGlyphs'>differential</text>
-<text transform='translate(251.90,305.66) rotate(-90)' style='font-size: 22.42px; fill: #E7298A; font-family: Arial;' textLength='84.38px' lengthAdjust='spacingAndGlyphs'>methods</text>
-<text x='341.95' y='190.22' style='font-size: 20.53px; fill: #7570B3; font-family: Arial;' textLength='107.42px' lengthAdjust='spacingAndGlyphs'>sequencing</text>
-<text transform='translate(485.05,382.57) rotate(-90)' style='font-size: 19.26px; fill: #7570B3; font-family: Arial;' textLength='86.62px' lengthAdjust='spacingAndGlyphs'>epigenetic</text>
-<text x='297.80' y='185.13' style='font-size: 18.32px; fill: #7570B3; font-family: Arial;' textLength='42.02px' lengthAdjust='spacingAndGlyphs'>show</text>
-<text x='273.59' y='408.40' style='font-size: 18.00px; fill: #7570B3; font-family: Arial;' textLength='55.04px' lengthAdjust='spacingAndGlyphs'>protein</text>
-<text x='328.87' y='408.01' style='font-size: 17.68px; fill: #7570B3; font-family: Arial;' textLength='65.05px' lengthAdjust='spacingAndGlyphs'>genome</text>
-<text transform='translate(426.52,304.67) rotate(-90)' style='font-size: 17.68px; fill: #7570B3; font-family: Arial;' textLength='26.02px' lengthAdjust='spacingAndGlyphs'>rna</text>
-<text transform='translate(289.52,221.92) rotate(-90)' style='font-size: 17.37px; fill: #7570B3; font-family: Arial;' textLength='51.98px' lengthAdjust='spacingAndGlyphs'>human</text>
-<text x='304.41' y='262.27' style='font-size: 17.05px; fill: #7570B3; font-family: Arial;' textLength='31.19px' lengthAdjust='spacingAndGlyphs'>new</text>
-<text x='444.53' y='242.73' style='font-size: 17.05px; fill: #7570B3; font-family: Arial;' textLength='36.86px' lengthAdjust='spacingAndGlyphs'>used</text>
-<text x='359.90' y='172.67' style='font-size: 16.42px; fill: #D95F02; font-family: Arial;' textLength='64.05px' lengthAdjust='spacingAndGlyphs'>identified</text>
-<text transform='translate(233.82,291.82) rotate(-90)' style='font-size: 16.11px; fill: #D95F02; font-family: Arial;' textLength='76.49px' lengthAdjust='spacingAndGlyphs'>associated</text>
-<text transform='translate(426.12,433.37) rotate(-90)' style='font-size: 16.11px; fill: #D95F02; font-family: Arial;' textLength='55.15px' lengthAdjust='spacingAndGlyphs'>disease</text>
-<text x='452.85' y='229.08' style='font-size: 16.11px; fill: #D95F02; font-family: Arial;' textLength='54.25px' lengthAdjust='spacingAndGlyphs'>number</text>
-<text x='310.68' y='425.05' style='font-size: 16.11px; fill: #D95F02; font-family: Arial;' textLength='56.92px' lengthAdjust='spacingAndGlyphs'>proteins</text>
-<text transform='translate(494.68,295.38) rotate(-90)' style='font-size: 16.11px; fill: #D95F02; font-family: Arial;' textLength='52.48px' lengthAdjust='spacingAndGlyphs'>regions</text>
-<text x='289.27' y='164.21' style='font-size: 15.79px; fill: #D95F02; font-family: Arial;' textLength='63.16px' lengthAdjust='spacingAndGlyphs'>including</text>
-<text x='205.26' y='317.98' style='font-size: 15.79px; fill: #D95F02; font-family: Arial;' textLength='39.12px' lengthAdjust='spacingAndGlyphs'>many</text>
-<text transform='translate(460.50,216.42) rotate(-90)' style='font-size: 15.47px; fill: #D95F02; font-family: Arial;' textLength='40.87px' lengthAdjust='spacingAndGlyphs'>based</text>
-<text x='385.16' y='153.88' style='font-size: 15.47px; fill: #D95F02; font-family: Arial;' textLength='52.54px' lengthAdjust='spacingAndGlyphs'>patients</text>
-<text x='430.90' y='404.18' style='font-size: 15.47px; fill: #D95F02; font-family: Arial;' textLength='44.18px' lengthAdjust='spacingAndGlyphs'>results</text>
-<text x='283.10' y='439.48' style='font-size: 15.47px; fill: #D95F02; font-family: Arial;' textLength='81.70px' lengthAdjust='spacingAndGlyphs'>transcription</text>
-<text transform='translate(269.20,302.84) rotate(-90)' style='font-size: 15.16px; fill: #D95F02; font-family: Arial;' textLength='35.85px' lengthAdjust='spacingAndGlyphs'>study</text>
-<text transform='translate(216.98,283.71) rotate(-90)' style='font-size: 14.84px; fill: #D95F02; font-family: Arial;' textLength='59.20px' lengthAdjust='spacingAndGlyphs'>analyses</text>
-<text x='319.92' y='146.38' style='font-size: 14.53px; fill: #D95F02; font-family: Arial;' textLength='59.21px' lengthAdjust='spacingAndGlyphs'>available</text>
-<text x='194.31' y='214.56' style='font-size: 14.53px; fill: #D95F02; font-family: Arial;' textLength='56.70px' lengthAdjust='spacingAndGlyphs'>however</text>
-<text transform='translate(406.87,439.29) rotate(-90)' style='font-size: 14.53px; fill: #D95F02; font-family: Arial;' textLength='45.86px' lengthAdjust='spacingAndGlyphs'>rnaseq</text>
-<text transform='translate(228.01,376.31) rotate(-90)' style='font-size: 14.53px; fill: #D95F02; font-family: Arial;' textLength='48.35px' lengthAdjust='spacingAndGlyphs'>several</text>
-<text x='187.34' y='306.73' style='font-size: 14.21px; fill: #D95F02; font-family: Arial;' textLength='41.23px' lengthAdjust='spacingAndGlyphs'>across</text>
-<text transform='translate(439.77,303.80) rotate(-90)' style='font-size: 14.21px; fill: #D95F02; font-family: Arial;' textLength='21.79px' lengthAdjust='spacingAndGlyphs'>two</text>
-<text x='434.30' y='389.79' style='font-size: 13.89px; fill: #D95F02; font-family: Arial;' textLength='25.68px' lengthAdjust='spacingAndGlyphs'>also</text>
-<text transform='translate(264.73,432.20) rotate(-90)' style='font-size: 13.89px; fill: #D95F02; font-family: Arial;' textLength='52.13px' lengthAdjust='spacingAndGlyphs'>complex</text>
-<text transform='translate(242.15,394.19) rotate(-90)' style='font-size: 13.89px; fill: #D95F02; font-family: Arial;' textLength='64.59px' lengthAdjust='spacingAndGlyphs'>expressed</text>
-<text x='316.44' y='453.71' style='font-size: 13.89px; fill: #D95F02; font-family: Arial;' textLength='59.93px' lengthAdjust='spacingAndGlyphs'>functional</text>
-<text x='326.56' y='135.48' style='font-size: 13.89px; fill: #D95F02; font-family: Arial;' textLength='71.59px' lengthAdjust='spacingAndGlyphs'>interactions</text>
-<text transform='translate(499.73,366.36) rotate(-90)' style='font-size: 13.58px; fill: #D95F02; font-family: Arial;' textLength='58.38px' lengthAdjust='spacingAndGlyphs'>approach</text>
-<text x='467.25' y='211.65' style='font-size: 13.58px; fill: #D95F02; font-family: Arial;' textLength='52.93px' lengthAdjust='spacingAndGlyphs'>changes</text>
-<text transform='translate(517.36,397.02) rotate(-90)' style='font-size: 13.58px; fill: #D95F02; font-family: Arial;' textLength='80.17px' lengthAdjust='spacingAndGlyphs'>development</text>
-<text x='463.53' y='193.88' style='font-size: 13.58px; fill: #D95F02; font-family: Arial;' textLength='50.59px' lengthAdjust='spacingAndGlyphs'>different</text>
-<text x='428.98' y='173.23' style='font-size: 13.58px; fill: #D95F02; font-family: Arial;' textLength='42.01px' lengthAdjust='spacingAndGlyphs'>factors</text>
-<text transform='translate(439.23,435.90) rotate(-90)' style='font-size: 13.58px; fill: #D95F02; font-family: Arial;' textLength='26.47px' lengthAdjust='spacingAndGlyphs'>high</text>
-<text x='271.50' y='141.68' style='font-size: 13.58px; fill: #D95F02; font-family: Arial;' textLength='46.69px' lengthAdjust='spacingAndGlyphs'>splicing</text>
-<text transform='translate(507.99,306.68) rotate(-90)' style='font-size: 13.58px; fill: #D95F02; font-family: Arial;' textLength='57.57px' lengthAdjust='spacingAndGlyphs'>transcript</text>
-<text x='377.79' y='456.64' style='font-size: 13.26px; fill: #D95F02; font-family: Arial;' textLength='54.92px' lengthAdjust='spacingAndGlyphs'>activation</text>
-<text x='501.65' y='244.74' style='font-size: 13.26px; fill: #D95F02; font-family: Arial;' textLength='43.36px' lengthAdjust='spacingAndGlyphs'>method</text>
-<text x='378.57' y='425.52' style='font-size: 13.26px; fill: #D95F02; font-family: Arial;' textLength='17.34px' lengthAdjust='spacingAndGlyphs'>set</text>
-<text transform='translate(246.62,196.04) rotate(-90)' style='font-size: 13.26px; fill: #D95F02; font-family: Arial;' textLength='43.35px' lengthAdjust='spacingAndGlyphs'>specific</text>
-<text transform='translate(531.13,398.11) rotate(-90)' style='font-size: 13.26px; fill: #D95F02; font-family: Arial;' textLength='80.93px' lengthAdjust='spacingAndGlyphs'>transcriptional</text>
-<text transform='translate(522.11,303.86) rotate(-90)' style='font-size: 12.95px; fill: #D95F02; font-family: Arial;' textLength='32.53px' lengthAdjust='spacingAndGlyphs'>found</text>
-<text x='444.42' y='423.85' style='font-size: 12.95px; fill: #D95F02; font-family: Arial;' textLength='41.92px' lengthAdjust='spacingAndGlyphs'>genetic</text>
-<text x='441.74' y='159.48' style='font-size: 12.95px; fill: #D95F02; font-family: Arial;' textLength='49.14px' lengthAdjust='spacingAndGlyphs'>genomic</text>
-<text x='473.90' y='392.99' style='font-size: 12.95px; fill: #D95F02; font-family: Arial;' textLength='33.24px' lengthAdjust='spacingAndGlyphs'>levels</text>
-<text x='310.53' y='194.43' style='font-size: 12.95px; fill: #D95F02; font-family: Arial;' textLength='31.06px' lengthAdjust='spacingAndGlyphs'>mass</text>
-<text x='513.60' y='266.79' style='font-size: 12.95px; fill: #D95F02; font-family: Arial;' textLength='43.36px' lengthAdjust='spacingAndGlyphs'>present</text>
-<text x='404.60' y='136.63' style='font-size: 12.95px; fill: #D95F02; font-family: Arial;' textLength='48.41px' lengthAdjust='spacingAndGlyphs'>samples</text>
-<text x='359.43' y='123.25' style='font-size: 12.63px; fill: #D95F02; font-family: Arial;' textLength='35.41px' lengthAdjust='spacingAndGlyphs'>model</text>
-<text x='288.75' y='421.48' style='font-size: 12.63px; fill: #D95F02; font-family: Arial;' textLength='21.69px' lengthAdjust='spacingAndGlyphs'>one</text>
-<text x='200.09' y='404.01' style='font-size: 12.63px; fill: #D95F02; font-family: Arial;' textLength='49.15px' lengthAdjust='spacingAndGlyphs'>package</text>
-<text x='166.25' y='293.16' style='font-size: 12.63px; fill: #D95F02; font-family: Arial;' textLength='41.19px' lengthAdjust='spacingAndGlyphs'>studies</text>
-<text transform='translate(231.21,193.97) rotate(-90)' style='font-size: 12.63px; fill: #D95F02; font-family: Arial;' textLength='59.96px' lengthAdjust='spacingAndGlyphs'>transcripts</text>
-<text transform='translate(311.48,300.36) rotate(-90)' style='font-size: 12.32px; fill: #D95F02; font-family: Arial;' textLength='36.02px' lengthAdjust='spacingAndGlyphs'>control</text>
-<text transform='translate(477.44,285.07) rotate(-90)' style='font-size: 12.32px; fill: #D95F02; font-family: Arial;' textLength='34.69px' lengthAdjust='spacingAndGlyphs'>known</text>
-<text x='475.45' y='175.93' style='font-size: 12.32px; fill: #D95F02; font-family: Arial;' textLength='26.68px' lengthAdjust='spacingAndGlyphs'>large</text>
-<text x='166.19' y='330.95' style='font-size: 12.32px; fill: #D95F02; font-family: Arial;' textLength='45.37px' lengthAdjust='spacingAndGlyphs'>potential</text>
-<text x='322.85' y='119.28' style='font-size: 12.32px; fill: #D95F02; font-family: Arial;' textLength='28.68px' lengthAdjust='spacingAndGlyphs'>yeast</text>
-<text transform='translate(267.56,162.91) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Arial;' textLength='52.01px' lengthAdjust='spacingAndGlyphs'>cytometry</text>
-<text transform='translate(205.54,274.61) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Arial;' textLength='30.01px' lengthAdjust='spacingAndGlyphs'>factor</text>
-<text transform='translate(313.57,131.94) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Arial;' textLength='42.03px' lengthAdjust='spacingAndGlyphs'>function</text>
-<text x='244.65' y='457.24' style='font-size: 12.00px; fill: #D95F02; font-family: Arial;' textLength='68.04px' lengthAdjust='spacingAndGlyphs'>genomewide</text>
-<text transform='translate(215.64,382.27) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Arial;' textLength='42.68px' lengthAdjust='spacingAndGlyphs'>immune</text>
-<text transform='translate(192.48,270.41) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Arial;' textLength='41.35px' lengthAdjust='spacingAndGlyphs'>multiple</text>
-<text transform='translate(202.52,386.68) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Arial;' textLength='49.37px' lengthAdjust='spacingAndGlyphs'>observed</text>
-<text transform='translate(544.55,387.95) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Arial;' textLength='67.37px' lengthAdjust='spacingAndGlyphs'>performance</text>
-<text x='186.08' y='202.76' style='font-size: 12.00px; fill: #D95F02; font-family: Arial;' textLength='49.35px' lengthAdjust='spacingAndGlyphs'>statistical</text>
-<text x='454.43' y='413.16' style='font-size: 12.00px; fill: #D95F02; font-family: Arial;' textLength='20.67px' lengthAdjust='spacingAndGlyphs'>well</text>
-<text transform='translate(183.05,276.07) rotate(-90)' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='59.39px' lengthAdjust='spacingAndGlyphs'>abundance</text>
-<text x='400.31' y='124.27' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='50.03px' lengthAdjust='spacingAndGlyphs'>biological</text>
-<text x='312.99' y='465.87' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='51.36px' lengthAdjust='spacingAndGlyphs'>clustering</text>
-<text x='372.78' y='434.18' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='19.35px' lengthAdjust='spacingAndGlyphs'>cpg</text>
-<text x='371.32' y='467.79' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='68.70px' lengthAdjust='spacingAndGlyphs'>experimental</text>
-<text x='213.37' y='419.35' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='31.35px' lengthAdjust='spacingAndGlyphs'>highly</text>
-<text x='522.31' y='280.27' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='38.02px' lengthAdjust='spacingAndGlyphs'>identify</text>
-<text transform='translate(301.84,131.22) rotate(-90)' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='50.02px' lengthAdjust='spacingAndGlyphs'>important</text>
-<text x='509.21' y='229.50' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='58.70px' lengthAdjust='spacingAndGlyphs'>methylated</text>
-<text x='379.54' y='111.81' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='45.36px' lengthAdjust='spacingAndGlyphs'>provides</text>
-<text transform='translate(190.35,393.50) rotate(-90)' style='font-size: 11.68px; fill: #D95F02; font-family: Arial;' textLength='49.37px' lengthAdjust='spacingAndGlyphs'>response</text>
-<text x='437.77' y='450.42' style='font-size: 11.37px; fill: #D95F02; font-family: Arial;' textLength='43.41px' lengthAdjust='spacingAndGlyphs'>essential</text>
-<text transform='translate(466.80,147.37) rotate(-90)' style='font-size: 11.37px; fill: #D95F02; font-family: Arial;' textLength='26.30px' lengthAdjust='spacingAndGlyphs'>novel</text>
-<text x='449.34' y='436.93' style='font-size: 11.37px; fill: #D95F02; font-family: Arial;' textLength='47.09px' lengthAdjust='spacingAndGlyphs'>published</text>
-<text x='252.29' y='443.48' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='25.06px' lengthAdjust='spacingAndGlyphs'>array</text>
-<text transform='translate(219.05,193.31) rotate(-90)' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='48.91px' lengthAdjust='spacingAndGlyphs'>compared</text>
-<text transform='translate(170.21,268.16) rotate(-90)' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='44.64px' lengthAdjust='spacingAndGlyphs'>detection</text>
-<text x='321.04' y='104.70' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='46.46px' lengthAdjust='spacingAndGlyphs'>discovery</text>
-<text transform='translate(495.33,416.37) rotate(-90)' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='17.12px' lengthAdjust='spacingAndGlyphs'>key</text>
-<text transform='translate(442.23,265.71) rotate(-90)' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='33.01px' lengthAdjust='spacingAndGlyphs'>mirnas</text>
-<text x='503.68' y='314.92' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='23.85px' lengthAdjust='spacingAndGlyphs'>peak</text>
-<text transform='translate(532.77,215.88) rotate(-90)' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='49.52px' lengthAdjust='spacingAndGlyphs'>previously</text>
-<text x='301.14' y='479.09' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='50.13px' lengthAdjust='spacingAndGlyphs'>processes</text>
-<text x='525.23' y='304.46' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='36.08px' lengthAdjust='spacingAndGlyphs'>provide</text>
-<text x='356.07' y='476.78' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='47.71px' lengthAdjust='spacingAndGlyphs'>sequence</text>
-<text transform='translate(285.01,127.60) rotate(-90)' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='37.30px' lengthAdjust='spacingAndGlyphs'>species</text>
-<text x='537.01' y='316.76' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='28.12px' lengthAdjust='spacingAndGlyphs'>within</text>
-<text x='152.01' y='319.02' style='font-size: 10.74px; fill: #1B9E77; font-family: Arial;' textLength='50.75px' lengthAdjust='spacingAndGlyphs'>alternative</text>
-<text transform='translate(246.64,152.10) rotate(-90)' style='font-size: 10.74px; fill: #1B9E77; font-family: Arial;' textLength='58.70px' lengthAdjust='spacingAndGlyphs'>differentially</text>
-<text x='522.84' y='296.42' style='font-size: 10.74px; fill: #1B9E77; font-family: Arial;' textLength='32.40px' lengthAdjust='spacingAndGlyphs'>effects</text>
-<text x='512.06' y='254.28' style='font-size: 10.74px; fill: #1B9E77; font-family: Arial;' textLength='22.62px' lengthAdjust='spacingAndGlyphs'>level</text>
-<text transform='translate(505.15,464.37) rotate(-90)' style='font-size: 10.74px; fill: #1B9E77; font-family: Arial;' textLength='56.85px' lengthAdjust='spacingAndGlyphs'>mammalian</text>
-<text x='353.90' y='159.07' style='font-size: 10.74px; fill: #1B9E77; font-family: Arial;' textLength='18.34px' lengthAdjust='spacingAndGlyphs'>role</text>
-<text x='430.31' y='112.51' style='font-size: 10.74px; fill: #1B9E77; font-family: Arial;' textLength='61.77px' lengthAdjust='spacingAndGlyphs'>technologies</text>
-<text x='281.35' y='469.79' style='font-size: 10.74px; fill: #1B9E77; font-family: Arial;' textLength='20.78px' lengthAdjust='spacingAndGlyphs'>time</text>
-<text transform='translate(283.81,167.50) rotate(-90)' style='font-size: 10.74px; fill: #1B9E77; font-family: Arial;' textLength='23.24px' lengthAdjust='spacingAndGlyphs'>tools</text>
-<text x='153.26' y='301.77' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='30.58px' lengthAdjust='spacingAndGlyphs'>among</text>
-<text x='393.10' y='103.30' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='46.71px' lengthAdjust='spacingAndGlyphs'>annotation</text>
-<text x='355.38' y='488.35' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='46.15px' lengthAdjust='spacingAndGlyphs'>developed</text>
-<text transform='translate(196.44,188.06) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='54.47px' lengthAdjust='spacingAndGlyphs'>experiments</text>
-<text x='382.52' y='348.87' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='16.11px' lengthAdjust='spacingAndGlyphs'>first</text>
-<text transform='translate(206.11,189.03) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='30.01px' lengthAdjust='spacingAndGlyphs'>growth</text>
-<text x='422.64' y='275.64' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='18.89px' lengthAdjust='spacingAndGlyphs'>may</text>
-<text x='217.84' y='433.70' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='30.57px' lengthAdjust='spacingAndGlyphs'>normal</text>
-<text x='468.18' y='146.83' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='46.71px' lengthAdjust='spacingAndGlyphs'>phenotype</text>
-<text transform='translate(443.65,376.46) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='32.24px' lengthAdjust='spacingAndGlyphs'>sample</text>
-<text x='405.38' y='480.66' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='18.34px' lengthAdjust='spacingAndGlyphs'>sets</text>
-<text x='496.74' y='158.42' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='38.91px' lengthAdjust='spacingAndGlyphs'>silencing</text>
-<text x='157.67' y='341.76' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='26.13px' lengthAdjust='spacingAndGlyphs'>single</text>
-<text x='306.18' y='251.08' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='20.56px' lengthAdjust='spacingAndGlyphs'>sites</text>
-<text x='223.28' y='443.10' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='23.33px' lengthAdjust='spacingAndGlyphs'>small</text>
-<text x='453.48' y='458.32' style='font-size: 10.42px; fill: #1B9E77; font-family: Arial;' textLength='42.24px' lengthAdjust='spacingAndGlyphs'>treatment</text>
-<text x='499.38' y='405.44' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='30.56px' lengthAdjust='spacingAndGlyphs'>activity</text>
-<text transform='translate(555.72,402.06) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='52.26px' lengthAdjust='spacingAndGlyphs'>approaches</text>
-<text transform='translate(178.04,377.78) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='27.78px' lengthAdjust='spacingAndGlyphs'>arrays</text>
-<text transform='translate(515.47,456.25) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='43.91px' lengthAdjust='spacingAndGlyphs'>chromatin</text>
-<text transform='translate(320.82,122.28) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='53.92px' lengthAdjust='spacingAndGlyphs'>combination</text>
-<text x='236.50' y='466.06' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='38.34px' lengthAdjust='spacingAndGlyphs'>common</text>
-<text x='375.16' y='93.25' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='37.80px' lengthAdjust='spacingAndGlyphs'>datasets</text>
-<text x='227.73' y='479.46' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='60.04px' lengthAdjust='spacingAndGlyphs'>differentiation</text>
-<text transform='translate(183.69,207.39) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='33.91px' lengthAdjust='spacingAndGlyphs'>existing</text>
-<text x='298.30' y='490.19' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='49.47px' lengthAdjust='spacingAndGlyphs'>information</text>
-<text transform='translate(336.62,251.25) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='15.00px' lengthAdjust='spacingAndGlyphs'>low</text>
-<text transform='translate(205.66,241.59) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='25.00px' lengthAdjust='spacingAndGlyphs'>mirna</text>
-<text transform='translate(569.28,364.63) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='42.25px' lengthAdjust='spacingAndGlyphs'>reference</text>
-<text transform='translate(158.81,291.31) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='43.92px' lengthAdjust='spacingAndGlyphs'>regulation</text>
-<text transform='translate(166.63,388.16) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='37.79px' lengthAdjust='spacingAndGlyphs'>software</text>
-<text transform='translate(193.33,432.56) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='35.57px' lengthAdjust='spacingAndGlyphs'>strategy</text>
-<text transform='translate(549.03,215.23) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='22.79px' lengthAdjust='spacingAndGlyphs'>three</text>
-<text x='445.94' y='465.75' style='font-size: 10.11px; fill: #1B9E77; font-family: Arial;' textLength='25.56px' lengthAdjust='spacingAndGlyphs'>tumor</text>
-<text x='328.51' y='85.87' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>conditions</text>
-<text x='474.50' y='132.89' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='48.92px' lengthAdjust='spacingAndGlyphs'>differences</text>
-<text x='415.06' y='443.35' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='21.68px' lengthAdjust='spacingAndGlyphs'>exon</text>
-<text x='171.12' y='451.58' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='72.27px' lengthAdjust='spacingAndGlyphs'>highdimensional</text>
-<text x='267.60' y='501.85' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='66.72px' lengthAdjust='spacingAndGlyphs'>highthroughput</text>
-<text x='413.15' y='87.23' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='47.23px' lengthAdjust='spacingAndGlyphs'>microarray</text>
-<text transform='translate(437.66,513.39) rotate(-90)' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='41.14px' lengthAdjust='spacingAndGlyphs'>predicted</text>
-<text x='351.97' y='496.95' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='36.13px' lengthAdjust='spacingAndGlyphs'>prostate</text>
-<text x='550.62' y='250.22' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='46.14px' lengthAdjust='spacingAndGlyphs'>responses</text>
-<text x='334.24' y='93.69' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='39.46px' lengthAdjust='spacingAndGlyphs'>synthetic</text>
-<text x='557.09' y='262.79' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='18.90px' lengthAdjust='spacingAndGlyphs'>type</text>
-<text x='266.97' y='486.55' style='font-size: 9.79px; fill: #1B9E77; font-family: Arial;' textLength='23.90px' lengthAdjust='spacingAndGlyphs'>types</text>
-<text x='441.19' y='104.18' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='23.51px' lengthAdjust='spacingAndGlyphs'>active</text>
-<text x='414.42' y='346.72' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='19.52px' lengthAdjust='spacingAndGlyphs'>adult</text>
-<text x='366.59' y='75.14' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='34.53px' lengthAdjust='spacingAndGlyphs'>although</text>
-<text transform='translate(258.00,147.58) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='40.04px' lengthAdjust='spacingAndGlyphs'>annotated</text>
-<text x='338.10' y='505.81' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='30.02px' lengthAdjust='spacingAndGlyphs'>authors</text>
-<text x='476.30' y='200.36' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='29.03px' lengthAdjust='spacingAndGlyphs'>binding</text>
-<text transform='translate(160.40,246.98) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='51.53px' lengthAdjust='spacingAndGlyphs'>bioconductor</text>
-<text x='328.03' y='71.24' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='27.01px' lengthAdjust='spacingAndGlyphs'>clinical</text>
-<text transform='translate(175.02,215.32) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='43.02px' lengthAdjust='spacingAndGlyphs'>complexes</text>
-<text x='424.74' y='95.60' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='50.03px' lengthAdjust='spacingAndGlyphs'>demonstrate</text>
-<text transform='translate(181.11,408.55) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='28.01px' lengthAdjust='spacingAndGlyphs'>distinct</text>
-<text x='388.08' y='447.19' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='18.51px' lengthAdjust='spacingAndGlyphs'>dlbcl</text>
-<text x='168.76' y='440.89' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='49.02px' lengthAdjust='spacingAndGlyphs'>downstream</text>
-<text x='452.22' y='474.70' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='42.01px' lengthAdjust='spacingAndGlyphs'>framework</text>
-<text transform='translate(274.80,434.72) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='14.51px' lengthAdjust='spacingAndGlyphs'>haz</text>
-<text transform='translate(277.17,244.39) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='15.50px' lengthAdjust='spacingAndGlyphs'>lists</text>
-<text x='549.41' y='242.51' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='22.50px' lengthAdjust='spacingAndGlyphs'>major</text>
-<text transform='translate(575.79,305.93) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='39.01px' lengthAdjust='spacingAndGlyphs'>molecular</text>
-<text x='388.43' y='507.16' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='41.54px' lengthAdjust='spacingAndGlyphs'>noncoding</text>
-<text x='394.68' y='497.03' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='33.52px' lengthAdjust='spacingAndGlyphs'>pathway</text>
-<text x='263.17' y='88.05' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='30.00px' lengthAdjust='spacingAndGlyphs'>primary</text>
-<text transform='translate(149.25,301.68) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='36.01px' lengthAdjust='spacingAndGlyphs'>promoter</text>
-<text x='375.08' y='82.19' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='32.52px' lengthAdjust='spacingAndGlyphs'>propose</text>
-<text x='271.91' y='305.10' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='22.51px' lengthAdjust='spacingAndGlyphs'>reads</text>
-<text x='451.53' y='483.65' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='40.02px' lengthAdjust='spacingAndGlyphs'>regulatory</text>
-<text x='303.46' y='222.31' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='27.52px' lengthAdjust='spacingAndGlyphs'>related</text>
-<text x='468.27' y='123.56' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='23.51px' lengthAdjust='spacingAndGlyphs'>report</text>
-<text transform='translate(556.89,216.99) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='35.53px' lengthAdjust='spacingAndGlyphs'>signaling</text>
-<text transform='translate(531.11,453.92) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Arial;' textLength='43.51px' lengthAdjust='spacingAndGlyphs'>specifically</text>
-<text x='189.08' y='133.10' style='font-size: 9.16px; fill: #1B9E77; font-family: Arial;' textLength='35.02px' lengthAdjust='spacingAndGlyphs'>retention</text>
+<text x='313.29' y='305.16' style='font-size: 48.00px; fill: #666666; font-family: Liberation Sans;' textLength='93.42px' lengthAdjust='spacingAndGlyphs'>data</text>
+<text transform='translate(382.68,270.36) rotate(-90)' style='font-size: 43.58px; fill: #666666; font-family: Liberation Sans;' textLength='96.95px' lengthAdjust='spacingAndGlyphs'>gene</text>
+<text transform='translate(305.00,364.68) rotate(-90)' style='font-size: 40.42px; fill: #A6761D; font-family: Liberation Sans;' textLength='195.47px' lengthAdjust='spacingAndGlyphs'>expression</text>
+<text x='311.79' y='327.59' style='font-size: 39.47px; fill: #A6761D; font-family: Liberation Sans;' textLength='107.55px' lengthAdjust='spacingAndGlyphs'>genes</text>
+<text x='314.52' y='375.75' style='font-size: 34.74px; fill: #E6AB02; font-family: Liberation Sans;' textLength='125.50px' lengthAdjust='spacingAndGlyphs'>analysis</text>
+<text x='394.81' y='267.55' style='font-size: 30.95px; fill: #66A61E; font-family: Liberation Sans;' textLength='51.63px' lengthAdjust='spacingAndGlyphs'>dna</text>
+<text transform='translate(356.15,265.19) rotate(-90)' style='font-size: 27.16px; fill: #66A61E; font-family: Liberation Sans;' textLength='54.33px' lengthAdjust='spacingAndGlyphs'>cells</text>
+<text transform='translate(331.22,242.95) rotate(-90)' style='font-size: 26.53px; fill: #E7298A; font-family: Liberation Sans;' textLength='79.62px' lengthAdjust='spacingAndGlyphs'>cancer</text>
+<text x='229.89' y='402.36' style='font-size: 25.89px; fill: #E7298A; font-family: Liberation Sans;' textLength='132.42px' lengthAdjust='spacingAndGlyphs'>methylation</text>
+<text x='417.54' y='299.91' style='font-size: 25.58px; fill: #E7298A; font-family: Liberation Sans;' textLength='61.15px' lengthAdjust='spacingAndGlyphs'>using</text>
+<text transform='translate(416.80,243.20) rotate(-90)' style='font-size: 24.63px; fill: #E7298A; font-family: Liberation Sans;' textLength='39.71px' lengthAdjust='spacingAndGlyphs'>can</text>
+<text x='425.02' y='346.83' style='font-size: 23.37px; fill: #E7298A; font-family: Liberation Sans;' textLength='35.06px' lengthAdjust='spacingAndGlyphs'>cell</text>
+<text x='366.76' y='399.95' style='font-size: 22.42px; fill: #E7298A; font-family: Liberation Sans;' textLength='103.45px' lengthAdjust='spacingAndGlyphs'>differential</text>
+<text transform='translate(273.86,267.94) rotate(-90)' style='font-size: 22.42px; fill: #E7298A; font-family: Liberation Sans;' textLength='85.99px' lengthAdjust='spacingAndGlyphs'>methods</text>
+<text x='264.32' y='420.98' style='font-size: 21.16px; fill: #7570B3; font-family: Liberation Sans;' textLength='108.23px' lengthAdjust='spacingAndGlyphs'>sequencing</text>
+<text x='431.60' y='327.43' style='font-size: 19.26px; fill: #7570B3; font-family: Liberation Sans;' textLength='87.82px' lengthAdjust='spacingAndGlyphs'>epigenetic</text>
+<text x='419.19' y='233.68' style='font-size: 18.32px; fill: #7570B3; font-family: Liberation Sans;' textLength='66.19px' lengthAdjust='spacingAndGlyphs'>genome</text>
+<text transform='translate(271.69,315.78) rotate(-90)' style='font-size: 18.32px; fill: #7570B3; font-family: Liberation Sans;' textLength='42.76px' lengthAdjust='spacingAndGlyphs'>show</text>
+<text transform='translate(349.59,197.64) rotate(-90)' style='font-size: 18.00px; fill: #7570B3; font-family: Liberation Sans;' textLength='55.04px' lengthAdjust='spacingAndGlyphs'>protein</text>
+<text x='401.22' y='198.75' style='font-size: 18.00px; fill: #7570B3; font-family: Liberation Sans;' textLength='59.04px' lengthAdjust='spacingAndGlyphs'>regions</text>
+<text x='317.78' y='351.76' style='font-size: 17.68px; fill: #7570B3; font-family: Liberation Sans;' textLength='54.07px' lengthAdjust='spacingAndGlyphs'>human</text>
+<text transform='translate(331.97,270.51) rotate(-90)' style='font-size: 17.68px; fill: #7570B3; font-family: Liberation Sans;' textLength='25.56px' lengthAdjust='spacingAndGlyphs'>rna</text>
+<text transform='translate(473.32,278.50) rotate(-90)' style='font-size: 17.68px; fill: #7570B3; font-family: Liberation Sans;' textLength='38.35px' lengthAdjust='spacingAndGlyphs'>used</text>
+<text x='430.86' y='216.06' style='font-size: 17.05px; fill: #7570B3; font-family: Liberation Sans;' textLength='31.28px' lengthAdjust='spacingAndGlyphs'>new</text>
+<text transform='translate(256.47,288.20) rotate(-90)' style='font-size: 16.42px; fill: #D95F02; font-family: Liberation Sans;' textLength='65.73px' lengthAdjust='spacingAndGlyphs'>identified</text>
+<text x='235.46' y='382.95' style='font-size: 16.11px; fill: #D95F02; font-family: Liberation Sans;' textLength='77.00px' lengthAdjust='spacingAndGlyphs'>associated</text>
+<text transform='translate(243.93,298.22) rotate(-90)' style='font-size: 16.11px; fill: #D95F02; font-family: Liberation Sans;' textLength='55.51px' lengthAdjust='spacingAndGlyphs'>disease</text>
+<text transform='translate(257.34,352.40) rotate(-90)' style='font-size: 16.11px; fill: #D95F02; font-family: Liberation Sans;' textLength='54.61px' lengthAdjust='spacingAndGlyphs'>number</text>
+<text x='384.42' y='418.10' style='font-size: 16.11px; fill: #D95F02; font-family: Liberation Sans;' textLength='57.30px' lengthAdjust='spacingAndGlyphs'>proteins</text>
+<text x='394.04' y='181.24' style='font-size: 15.79px; fill: #D95F02; font-family: Liberation Sans;' textLength='62.33px' lengthAdjust='spacingAndGlyphs'>including</text>
+<text transform='translate(266.52,357.10) rotate(-90)' style='font-size: 15.79px; fill: #D95F02; font-family: Liberation Sans;' textLength='38.61px' lengthAdjust='spacingAndGlyphs'>many</text>
+<text x='375.60' y='352.19' style='font-size: 15.47px; fill: #D95F02; font-family: Liberation Sans;' textLength='42.16px' lengthAdjust='spacingAndGlyphs'>based</text>
+<text transform='translate(238.44,354.39) rotate(-90)' style='font-size: 15.47px; fill: #D95F02; font-family: Liberation Sans;' textLength='54.20px' lengthAdjust='spacingAndGlyphs'>patients</text>
+<text x='440.07' y='373.51' style='font-size: 15.47px; fill: #D95F02; font-family: Liberation Sans;' textLength='45.57px' lengthAdjust='spacingAndGlyphs'>results</text>
+<text x='407.11' y='280.33' style='font-size: 15.47px; fill: #D95F02; font-family: Liberation Sans;' textLength='36.98px' lengthAdjust='spacingAndGlyphs'>study</text>
+<text transform='translate(495.81,313.65) rotate(-90)' style='font-size: 15.47px; fill: #D95F02; font-family: Liberation Sans;' textLength='84.28px' lengthAdjust='spacingAndGlyphs'>transcription</text>
+<text x='371.07' y='164.38' style='font-size: 14.84px; fill: #D95F02; font-family: Liberation Sans;' textLength='58.58px' lengthAdjust='spacingAndGlyphs'>analyses</text>
+<text transform='translate(509.68,305.94) rotate(-90)' style='font-size: 14.84px; fill: #D95F02; font-family: Liberation Sans;' textLength='56.10px' lengthAdjust='spacingAndGlyphs'>however</text>
+<text x='324.55' y='435.21' style='font-size: 14.53px; fill: #D95F02; font-family: Liberation Sans;' textLength='57.34px' lengthAdjust='spacingAndGlyphs'>available</text>
+<text x='229.93' y='365.74' style='font-size: 14.53px; fill: #D95F02; font-family: Liberation Sans;' textLength='44.42px' lengthAdjust='spacingAndGlyphs'>rnaseq</text>
+<text x='461.15' y='356.29' style='font-size: 14.53px; fill: #D95F02; font-family: Liberation Sans;' textLength='46.83px' lengthAdjust='spacingAndGlyphs'>several</text>
+<text transform='translate(231.11,269.57) rotate(-90)' style='font-size: 14.21px; fill: #D95F02; font-family: Liberation Sans;' textLength='41.85px' lengthAdjust='spacingAndGlyphs'>across</text>
+<text transform='translate(364.24,162.40) rotate(-90)' style='font-size: 14.21px; fill: #D95F02; font-family: Liberation Sans;' textLength='22.11px' lengthAdjust='spacingAndGlyphs'>two</text>
+<text transform='translate(252.96,214.56) rotate(-90)' style='font-size: 13.89px; fill: #D95F02; font-family: Liberation Sans;' textLength='25.49px' lengthAdjust='spacingAndGlyphs'>also</text>
+<text x='391.28' y='151.27' style='font-size: 13.89px; fill: #D95F02; font-family: Liberation Sans;' textLength='51.74px' lengthAdjust='spacingAndGlyphs'>complex</text>
+<text x='269.99' y='156.20' style='font-size: 13.89px; fill: #D95F02; font-family: Liberation Sans;' textLength='64.11px' lengthAdjust='spacingAndGlyphs'>expressed</text>
+<text x='285.40' y='446.11' style='font-size: 13.89px; fill: #D95F02; font-family: Liberation Sans;' textLength='59.48px' lengthAdjust='spacingAndGlyphs'>functional</text>
+<text x='461.57' y='344.38' style='font-size: 13.89px; fill: #D95F02; font-family: Liberation Sans;' textLength='71.05px' lengthAdjust='spacingAndGlyphs'>interactions</text>
+<text x='463.40' y='215.77' style='font-size: 13.58px; fill: #D95F02; font-family: Liberation Sans;' textLength='56.62px' lengthAdjust='spacingAndGlyphs'>approach</text>
+<text x='353.79' y='448.62' style='font-size: 13.58px; fill: #D95F02; font-family: Liberation Sans;' textLength='51.34px' lengthAdjust='spacingAndGlyphs'>changes</text>
+<text x='389.02' y='435.46' style='font-size: 13.58px; fill: #D95F02; font-family: Liberation Sans;' textLength='77.75px' lengthAdjust='spacingAndGlyphs'>development</text>
+<text x='463.44' y='206.31' style='font-size: 13.58px; fill: #D95F02; font-family: Liberation Sans;' textLength='49.06px' lengthAdjust='spacingAndGlyphs'>different</text>
+<text x='443.25' y='313.59' style='font-size: 13.58px; fill: #D95F02; font-family: Liberation Sans;' textLength='40.75px' lengthAdjust='spacingAndGlyphs'>factors</text>
+<text x='200.75' y='289.54' style='font-size: 13.58px; fill: #D95F02; font-family: Liberation Sans;' textLength='25.67px' lengthAdjust='spacingAndGlyphs'>high</text>
+<text transform='translate(217.92,256.74) rotate(-90)' style='font-size: 13.58px; fill: #D95F02; font-family: Liberation Sans;' textLength='50.56px' lengthAdjust='spacingAndGlyphs'>samples</text>
+<text transform='translate(237.17,216.68) rotate(-90)' style='font-size: 13.58px; fill: #D95F02; font-family: Liberation Sans;' textLength='45.29px' lengthAdjust='spacingAndGlyphs'>splicing</text>
+<text transform='translate(213.10,354.71) rotate(-90)' style='font-size: 13.58px; fill: #D95F02; font-family: Liberation Sans;' textLength='55.84px' lengthAdjust='spacingAndGlyphs'>transcript</text>
+<text x='254.89' y='433.91' style='font-size: 13.26px; fill: #D95F02; font-family: Liberation Sans;' textLength='56.03px' lengthAdjust='spacingAndGlyphs'>activation</text>
+<text x='463.64' y='189.39' style='font-size: 13.26px; fill: #D95F02; font-family: Liberation Sans;' textLength='50.13px' lengthAdjust='spacingAndGlyphs'>genomic</text>
+<text x='451.47' y='409.02' style='font-size: 13.26px; fill: #D95F02; font-family: Liberation Sans;' textLength='44.24px' lengthAdjust='spacingAndGlyphs'>method</text>
+<text transform='translate(531.88,321.31) rotate(-90)' style='font-size: 13.26px; fill: #D95F02; font-family: Liberation Sans;' textLength='44.24px' lengthAdjust='spacingAndGlyphs'>present</text>
+<text transform='translate(458.01,274.79) rotate(-90)' style='font-size: 13.26px; fill: #D95F02; font-family: Liberation Sans;' textLength='17.69px' lengthAdjust='spacingAndGlyphs'>set</text>
+<text transform='translate(204.82,276.54) rotate(-90)' style='font-size: 13.26px; fill: #D95F02; font-family: Liberation Sans;' textLength='44.23px' lengthAdjust='spacingAndGlyphs'>specific</text>
+<text x='430.38' y='162.43' style='font-size: 13.26px; fill: #D95F02; font-family: Liberation Sans;' textLength='82.56px' lengthAdjust='spacingAndGlyphs'>transcriptional</text>
+<text transform='translate(482.02,263.83) rotate(-90)' style='font-size: 12.95px; fill: #D95F02; font-family: Liberation Sans;' textLength='20.88px' lengthAdjust='spacingAndGlyphs'>cpg</text>
+<text transform='translate(498.55,391.76) rotate(-90)' style='font-size: 12.95px; fill: #D95F02; font-family: Liberation Sans;' textLength='32.40px' lengthAdjust='spacingAndGlyphs'>found</text>
+<text transform='translate(224.92,369.42) rotate(-90)' style='font-size: 12.95px; fill: #D95F02; font-family: Liberation Sans;' textLength='41.75px' lengthAdjust='spacingAndGlyphs'>genetic</text>
+<text transform='translate(528.98,265.56) rotate(-90)' style='font-size: 12.95px; fill: #D95F02; font-family: Liberation Sans;' textLength='33.10px' lengthAdjust='spacingAndGlyphs'>levels</text>
+<text x='496.11' y='227.06' style='font-size: 12.95px; fill: #D95F02; font-family: Liberation Sans;' textLength='30.93px' lengthAdjust='spacingAndGlyphs'>mass</text>
+<text x='252.12' y='167.22' style='font-size: 12.63px; fill: #D95F02; font-family: Liberation Sans;' textLength='61.79px' lengthAdjust='spacingAndGlyphs'>methylated</text>
+<text transform='translate(375.51,152.38) rotate(-90)' style='font-size: 12.63px; fill: #D95F02; font-family: Liberation Sans;' textLength='34.40px' lengthAdjust='spacingAndGlyphs'>model</text>
+<text x='378.42' y='140.89' style='font-size: 12.63px; fill: #D95F02; font-family: Liberation Sans;' textLength='21.08px' lengthAdjust='spacingAndGlyphs'>one</text>
+<text x='316.48' y='128.62' style='font-size: 12.63px; fill: #D95F02; font-family: Liberation Sans;' textLength='47.76px' lengthAdjust='spacingAndGlyphs'>package</text>
+<text x='290.75' y='140.28' style='font-size: 12.63px; fill: #D95F02; font-family: Liberation Sans;' textLength='40.02px' lengthAdjust='spacingAndGlyphs'>studies</text>
+<text x='269.66' y='460.49' style='font-size: 12.63px; fill: #D95F02; font-family: Liberation Sans;' textLength='58.26px' lengthAdjust='spacingAndGlyphs'>transcripts</text>
+<text x='407.81' y='137.09' style='font-size: 12.32px; fill: #D95F02; font-family: Liberation Sans;' textLength='54.77px' lengthAdjust='spacingAndGlyphs'>compared</text>
+<text x='222.21' y='415.55' style='font-size: 12.32px; fill: #D95F02; font-family: Liberation Sans;' textLength='36.97px' lengthAdjust='spacingAndGlyphs'>control</text>
+<text transform='translate(521.40,309.09) rotate(-90)' style='font-size: 12.32px; fill: #D95F02; font-family: Liberation Sans;' textLength='35.60px' lengthAdjust='spacingAndGlyphs'>known</text>
+<text x='172.36' y='286.56' style='font-size: 12.32px; fill: #D95F02; font-family: Liberation Sans;' textLength='27.39px' lengthAdjust='spacingAndGlyphs'>large</text>
+<text x='344.40' y='462.44' style='font-size: 12.32px; fill: #D95F02; font-family: Liberation Sans;' textLength='69.14px' lengthAdjust='spacingAndGlyphs'>performance</text>
+<text transform='translate(216.99,197.84) rotate(-90)' style='font-size: 12.32px; fill: #D95F02; font-family: Liberation Sans;' textLength='46.56px' lengthAdjust='spacingAndGlyphs'>potential</text>
+<text x='441.80' y='419.38' style='font-size: 12.32px; fill: #D95F02; font-family: Liberation Sans;' textLength='29.44px' lengthAdjust='spacingAndGlyphs'>yeast</text>
+<text transform='translate(198.77,350.21) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Liberation Sans;' textLength='50.03px' lengthAdjust='spacingAndGlyphs'>biological</text>
+<text x='180.81' y='380.11' style='font-size: 12.00px; fill: #D95F02; font-family: Liberation Sans;' textLength='52.01px' lengthAdjust='spacingAndGlyphs'>cytometry</text>
+<text x='441.70' y='383.98' style='font-size: 12.00px; fill: #D95F02; font-family: Liberation Sans;' textLength='30.01px' lengthAdjust='spacingAndGlyphs'>factor</text>
+<text transform='translate(512.60,400.02) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Liberation Sans;' textLength='42.03px' lengthAdjust='spacingAndGlyphs'>function</text>
+<text transform='translate(545.39,353.83) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Liberation Sans;' textLength='68.04px' lengthAdjust='spacingAndGlyphs'>genomewide</text>
+<text x='410.90' y='451.53' style='font-size: 12.00px; fill: #D95F02; font-family: Liberation Sans;' textLength='42.68px' lengthAdjust='spacingAndGlyphs'>immune</text>
+<text transform='translate(543.12,278.69) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Liberation Sans;' textLength='41.35px' lengthAdjust='spacingAndGlyphs'>multiple</text>
+<text transform='translate(191.20,271.89) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Liberation Sans;' textLength='49.37px' lengthAdjust='spacingAndGlyphs'>observed</text>
+<text x='483.14' y='176.78' style='font-size: 12.00px; fill: #D95F02; font-family: Liberation Sans;' textLength='49.35px' lengthAdjust='spacingAndGlyphs'>statistical</text>
+<text transform='translate(393.44,128.08) rotate(-90)' style='font-size: 12.00px; fill: #D95F02; font-family: Liberation Sans;' textLength='20.67px' lengthAdjust='spacingAndGlyphs'>well</text>
+<text x='319.41' y='112.60' style='font-size: 11.68px; fill: #D95F02; font-family: Liberation Sans;' textLength='57.83px' lengthAdjust='spacingAndGlyphs'>abundance</text>
+<text x='416.29' y='120.55' style='font-size: 11.68px; fill: #D95F02; font-family: Liberation Sans;' textLength='50.01px' lengthAdjust='spacingAndGlyphs'>clustering</text>
+<text x='231.78' y='444.39' style='font-size: 11.68px; fill: #D95F02; font-family: Liberation Sans;' textLength='49.35px' lengthAdjust='spacingAndGlyphs'>discovery</text>
+<text transform='translate(523.32,413.04) rotate(-90)' style='font-size: 11.68px; fill: #D95F02; font-family: Liberation Sans;' textLength='66.89px' lengthAdjust='spacingAndGlyphs'>experimental</text>
+<text x='279.39' y='128.83' style='font-size: 11.68px; fill: #D95F02; font-family: Liberation Sans;' textLength='30.53px' lengthAdjust='spacingAndGlyphs'>highly</text>
+<text x='237.17' y='144.39' style='font-size: 11.68px; fill: #D95F02; font-family: Liberation Sans;' textLength='37.02px' lengthAdjust='spacingAndGlyphs'>identify</text>
+<text transform='translate(205.23,231.27) rotate(-90)' style='font-size: 11.68px; fill: #D95F02; font-family: Liberation Sans;' textLength='48.71px' lengthAdjust='spacingAndGlyphs'>important</text>
+<text x='463.28' y='151.77' style='font-size: 11.68px; fill: #D95F02; font-family: Liberation Sans;' textLength='27.93px' lengthAdjust='spacingAndGlyphs'>novel</text>
+<text x='185.72' y='391.73' style='font-size: 11.68px; fill: #D95F02; font-family: Liberation Sans;' textLength='44.16px' lengthAdjust='spacingAndGlyphs'>provides</text>
+<text transform='translate(175.25,260.99) rotate(-90)' style='font-size: 11.68px; fill: #D95F02; font-family: Liberation Sans;' textLength='48.07px' lengthAdjust='spacingAndGlyphs'>response</text>
+<text x='254.64' y='118.54' style='font-size: 11.37px; fill: #D95F02; font-family: Liberation Sans;' textLength='60.66px' lengthAdjust='spacingAndGlyphs'>differentially</text>
+<text x='163.32' y='364.93' style='font-size: 11.37px; fill: #D95F02; font-family: Liberation Sans;' textLength='44.87px' lengthAdjust='spacingAndGlyphs'>essential</text>
+<text x='204.68' y='427.00' style='font-size: 11.37px; fill: #D95F02; font-family: Liberation Sans;' textLength='48.67px' lengthAdjust='spacingAndGlyphs'>published</text>
+<text transform='translate(406.05,126.89) rotate(-90)' style='font-size: 11.37px; fill: #D95F02; font-family: Liberation Sans;' textLength='23.38px' lengthAdjust='spacingAndGlyphs'>sites</text>
+<text x='252.10' y='128.75' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='25.18px' lengthAdjust='spacingAndGlyphs'>array</text>
+<text x='310.14' y='473.66' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='44.86px' lengthAdjust='spacingAndGlyphs'>detection</text>
+<text x='179.45' y='210.72' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='17.20px' lengthAdjust='spacingAndGlyphs'>key</text>
+<text transform='translate(179.62,328.66) rotate(-90)' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='33.16px' lengthAdjust='spacingAndGlyphs'>mirnas</text>
+<text x='299.41' y='482.23' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='33.78px' lengthAdjust='spacingAndGlyphs'>normal</text>
+<text transform='translate(479.55,399.26) rotate(-90)' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='23.97px' lengthAdjust='spacingAndGlyphs'>peak</text>
+<text x='175.88' y='403.80' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='49.76px' lengthAdjust='spacingAndGlyphs'>previously</text>
+<text x='336.05' y='484.31' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='36.84px' lengthAdjust='spacingAndGlyphs'>primary</text>
+<text x='371.72' y='471.59' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='50.37px' lengthAdjust='spacingAndGlyphs'>processes</text>
+<text transform='translate(482.91,450.82) rotate(-90)' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='36.25px' lengthAdjust='spacingAndGlyphs'>provide</text>
+<text x='427.48' y='465.19' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='47.93px' lengthAdjust='spacingAndGlyphs'>sequence</text>
+<text x='374.91' y='483.60' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='37.48px' lengthAdjust='spacingAndGlyphs'>species</text>
+<text x='358.05' y='104.34' style='font-size: 11.05px; fill: #1B9E77; font-family: Liberation Sans;' textLength='28.26px' lengthAdjust='spacingAndGlyphs'>within</text>
+<text x='250.59' y='473.87' style='font-size: 10.74px; fill: #1B9E77; font-family: Liberation Sans;' textLength='49.54px' lengthAdjust='spacingAndGlyphs'>alternative</text>
+<text x='157.84' y='345.62' style='font-size: 10.74px; fill: #1B9E77; font-family: Liberation Sans;' textLength='31.63px' lengthAdjust='spacingAndGlyphs'>effects</text>
+<text x='458.37' y='179.79' style='font-size: 10.74px; fill: #1B9E77; font-family: Liberation Sans;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>level</text>
+<text x='412.08' y='108.10' style='font-size: 10.74px; fill: #1B9E77; font-family: Liberation Sans;' textLength='55.49px' lengthAdjust='spacingAndGlyphs'>mammalian</text>
+<text transform='translate(166.31,276.17) rotate(-90)' style='font-size: 10.74px; fill: #1B9E77; font-family: Liberation Sans;' textLength='50.15px' lengthAdjust='spacingAndGlyphs'>phenotype</text>
+<text transform='translate(222.24,276.77) rotate(-90)' style='font-size: 10.74px; fill: #1B9E77; font-family: Liberation Sans;' textLength='17.90px' lengthAdjust='spacingAndGlyphs'>role</text>
+<text transform='translate(499.09,478.56) rotate(-90)' style='font-size: 10.74px; fill: #1B9E77; font-family: Liberation Sans;' textLength='60.29px' lengthAdjust='spacingAndGlyphs'>technologies</text>
+<text transform='translate(227.73,190.41) rotate(-90)' style='font-size: 10.74px; fill: #1B9E77; font-family: Liberation Sans;' textLength='20.28px' lengthAdjust='spacingAndGlyphs'>time</text>
+<text x='516.15' y='205.49' style='font-size: 10.74px; fill: #1B9E77; font-family: Liberation Sans;' textLength='22.68px' lengthAdjust='spacingAndGlyphs'>tools</text>
+<text x='227.47' y='154.90' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='31.86px' lengthAdjust='spacingAndGlyphs'>among</text>
+<text x='386.87' y='96.74' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='48.68px' lengthAdjust='spacingAndGlyphs'>annotation</text>
+<text transform='translate(533.63,396.28) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='48.10px' lengthAdjust='spacingAndGlyphs'>developed</text>
+<text x='334.86' y='493.54' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='56.76px' lengthAdjust='spacingAndGlyphs'>experiments</text>
+<text transform='translate(320.35,265.12) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='16.79px' lengthAdjust='spacingAndGlyphs'>first</text>
+<text transform='translate(166.12,315.37) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='31.28px' lengthAdjust='spacingAndGlyphs'>growth</text>
+<text transform='translate(381.73,424.44) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='19.69px' lengthAdjust='spacingAndGlyphs'>may</text>
+<text transform='translate(554.29,295.15) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='33.59px' lengthAdjust='spacingAndGlyphs'>sample</text>
+<text transform='translate(473.43,457.23) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='19.11px' lengthAdjust='spacingAndGlyphs'>sets</text>
+<text transform='translate(187.58,199.28) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='40.55px' lengthAdjust='spacingAndGlyphs'>silencing</text>
+<text transform='translate(555.95,355.95) rotate(-90)' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='27.23px' lengthAdjust='spacingAndGlyphs'>single</text>
+<text x='197.44' y='414.87' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='24.32px' lengthAdjust='spacingAndGlyphs'>small</text>
+<text x='528.49' y='229.36' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='44.02px' lengthAdjust='spacingAndGlyphs'>treatment</text>
+<text x='238.46' y='457.36' style='font-size: 10.42px; fill: #1B9E77; font-family: Liberation Sans;' textLength='26.64px' lengthAdjust='spacingAndGlyphs'>tumor</text>
+<text x='239.38' y='177.46' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='30.88px' lengthAdjust='spacingAndGlyphs'>activity</text>
+<text x='527.51' y='219.07' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='52.81px' lengthAdjust='spacingAndGlyphs'>approaches</text>
+<text x='519.97' y='185.37' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='28.08px' lengthAdjust='spacingAndGlyphs'>arrays</text>
+<text x='390.90' y='407.34' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='44.37px' lengthAdjust='spacingAndGlyphs'>chromatin</text>
+<text transform='translate(157.68,278.22) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='54.49px' lengthAdjust='spacingAndGlyphs'>combination</text>
+<text x='303.96' y='100.21' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='38.75px' lengthAdjust='spacingAndGlyphs'>common</text>
+<text x='264.66' y='108.66' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='38.20px' lengthAdjust='spacingAndGlyphs'>datasets</text>
+<text x='271.39' y='490.41' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='49.43px' lengthAdjust='spacingAndGlyphs'>differences</text>
+<text x='471.82' y='135.20' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='60.67px' lengthAdjust='spacingAndGlyphs'>differentiation</text>
+<text x='332.92' y='90.11' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='34.26px' lengthAdjust='spacingAndGlyphs'>existing</text>
+<text x='389.17' y='89.07' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='49.99px' lengthAdjust='spacingAndGlyphs'>information</text>
+<text x='445.10' y='354.57' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='15.16px' lengthAdjust='spacingAndGlyphs'>low</text>
+<text x='414.02' y='485.47' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='25.27px' lengthAdjust='spacingAndGlyphs'>mirna</text>
+<text transform='translate(401.35,238.08) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='42.69px' lengthAdjust='spacingAndGlyphs'>reference</text>
+<text x='288.61' y='498.78' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='44.38px' lengthAdjust='spacingAndGlyphs'>regulation</text>
+<text x='493.18' y='146.96' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='48.88px' lengthAdjust='spacingAndGlyphs'>sequences</text>
+<text transform='translate(564.19,322.49) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='38.19px' lengthAdjust='spacingAndGlyphs'>software</text>
+<text x='553.80' y='257.22' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='35.95px' lengthAdjust='spacingAndGlyphs'>strategy</text>
+<text transform='translate(509.83,428.88) rotate(-90)' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='23.03px' lengthAdjust='spacingAndGlyphs'>three</text>
+<text x='543.39' y='363.67' style='font-size: 10.11px; fill: #1B9E77; font-family: Liberation Sans;' textLength='24.15px' lengthAdjust='spacingAndGlyphs'>types</text>
+<text transform='translate(246.98,134.98) rotate(-90)' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='31.57px' lengthAdjust='spacingAndGlyphs'>binding</text>
+<text x='250.83' y='483.10' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='41.90px' lengthAdjust='spacingAndGlyphs'>colorectal</text>
+<text x='524.57' y='195.93' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='44.08px' lengthAdjust='spacingAndGlyphs'>conditions</text>
+<text x='130.42' y='337.53' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='54.42px' lengthAdjust='spacingAndGlyphs'>demonstrate</text>
+<text transform='translate(564.01,282.55) rotate(-90)' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='21.75px' lengthAdjust='spacingAndGlyphs'>dmrs</text>
+<text transform='translate(556.18,323.84) rotate(-90)' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='21.23px' lengthAdjust='spacingAndGlyphs'>exon</text>
+<text x='332.48' y='78.89' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='70.75px' lengthAdjust='spacingAndGlyphs'>highdimensional</text>
+<text transform='translate(573.83,340.28) rotate(-90)' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='65.32px' lengthAdjust='spacingAndGlyphs'>highthroughput</text>
+<text x='282.16' y='88.58' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='46.23px' lengthAdjust='spacingAndGlyphs'>microarray</text>
+<text x='142.24' y='355.46' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='42.44px' lengthAdjust='spacingAndGlyphs'>molecular</text>
+<text x='238.06' y='97.12' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='40.27px' lengthAdjust='spacingAndGlyphs'>predicted</text>
+<text transform='translate(204.25,167.11) rotate(-90)' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='35.37px' lengthAdjust='spacingAndGlyphs'>prostate</text>
+<text x='134.37' y='370.52' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='45.17px' lengthAdjust='spacingAndGlyphs'>responses</text>
+<text x='132.15' y='324.94' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='38.63px' lengthAdjust='spacingAndGlyphs'>synthetic</text>
+<text x='189.41' y='445.80' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='35.92px' lengthAdjust='spacingAndGlyphs'>targeted</text>
+<text x='425.34' y='476.07' style='font-size: 9.79px; fill: #1B9E77; font-family: Liberation Sans;' textLength='18.50px' lengthAdjust='spacingAndGlyphs'>type</text>
+<text x='467.65' y='124.68' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='24.75px' lengthAdjust='spacingAndGlyphs'>active</text>
+<text transform='translate(519.96,267.46) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='20.54px' lengthAdjust='spacingAndGlyphs'>adult</text>
+<text transform='translate(227.61,147.85) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='36.35px' lengthAdjust='spacingAndGlyphs'>although</text>
+<text x='280.65' y='81.17' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='42.15px' lengthAdjust='spacingAndGlyphs'>annotated</text>
+<text x='197.10' y='298.51' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='31.60px' lengthAdjust='spacingAndGlyphs'>authors</text>
+<text transform='translate(236.87,142.64) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='54.25px' lengthAdjust='spacingAndGlyphs'>bioconductor</text>
+<text transform='translate(542.48,426.15) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='45.28px' lengthAdjust='spacingAndGlyphs'>complexes</text>
+<text x='344.06' y='502.32' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='29.48px' lengthAdjust='spacingAndGlyphs'>distinct</text>
+<text x='421.49' y='313.89' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='19.48px' lengthAdjust='spacingAndGlyphs'>dlbcl</text>
+<text x='437.40' y='99.19' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='51.60px' lengthAdjust='spacingAndGlyphs'>downstream</text>
+<text x='374.15' y='504.35' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='44.22px' lengthAdjust='spacingAndGlyphs'>framework</text>
+<text x='441.11' y='245.96' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='16.32px' lengthAdjust='spacingAndGlyphs'>lists</text>
+<text transform='translate(168.14,212.58) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='43.72px' lengthAdjust='spacingAndGlyphs'>noncoding</text>
+<text transform='translate(147.00,291.95) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='37.91px' lengthAdjust='spacingAndGlyphs'>promoter</text>
+<text x='280.54' y='371.50' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='23.70px' lengthAdjust='spacingAndGlyphs'>reads</text>
+<text transform='translate(483.51,496.63) rotate(-90)' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='42.13px' lengthAdjust='spacingAndGlyphs'>regulatory</text>
+<text x='206.94' y='435.46' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='28.97px' lengthAdjust='spacingAndGlyphs'>related</text>
+<text x='396.27' y='491.84' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='24.75px' lengthAdjust='spacingAndGlyphs'>report</text>
+<text x='331.33' y='508.79' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='37.40px' lengthAdjust='spacingAndGlyphs'>signaling</text>
+<text x='537.75' y='373.72' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='27.37px' lengthAdjust='spacingAndGlyphs'>similar</text>
+<text x='423.72' y='495.28' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='45.80px' lengthAdjust='spacingAndGlyphs'>specifically</text>
+<text x='331.45' y='139.22' style='font-size: 9.47px; fill: #1B9E77; font-family: Liberation Sans;' textLength='29.48px' lengthAdjust='spacingAndGlyphs'>tissues</text>
 </svg>
