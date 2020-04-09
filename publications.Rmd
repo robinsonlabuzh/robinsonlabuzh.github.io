@@ -91,21 +91,6 @@ unlisted_publications <- data.frame(
   elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255")	
 )
 
-researchsquare <- data.frame(	
-  title = "The DNA hypermethylation phenotype of colorectal cancer liver metastases resembles that of the primary colorectal cancers",	
-  pubdate = "September 19, 2019",	
-  pubyear = "Preprints",	
-  journal = "Research Square",	
-  authors = "Stephany Orjuela, Mirco Menigatti, Peter Schraml, Patrik Kambakamba, Mark D Robinson, Giancarlo Marra",
-  volume = "",	
-  issue = "",	
-  pages = "",	
-  doi = "10.21203/rs.2.15409/v1",	
-  pmid = "",	
-  elocationid = "doi: 10.21203/rs.2.15409/v1",
-  stringsAsFactors = FALSE
-)
-
 ## F1000Research articles awaiting peer review
 f1000_preprints <- NULL
 # f1000_preprints <- data.frame(
@@ -378,7 +363,7 @@ biorxiv <- bind_rows(biorxiv, arxiv)
 
 ```{r}
 ## soak list of researchsquare preprints into bioRxiv
-biorxiv <- bind_rows(biorxiv, researchsquare)
+# <- bind_rows(biorxiv, researchsquare)
 ```
 
 
