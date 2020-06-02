@@ -6,7 +6,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
 ## PubMed IDs to remove
 pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830", 
                  "18025499", "15786672", "15779224", "15322224", "30039500", 
@@ -21,7 +21,7 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315",
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
-biorxiv_dois <- c("10.1101/800383","10.1101/713412", "10.1101/834242",
+biorxiv_dois <- c("10.1101/800383","10.1101/713412",
                   "10.1101/2020.02.02.930578")
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -141,7 +141,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
 ```
 
 
-```{r, include = FALSE}
+```{r load_packages, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 suppressPackageStartupMessages({
   library(dplyr)
@@ -152,7 +152,7 @@ suppressPackageStartupMessages({
 })
 ```
 
-```{r}
+```{r functions}
 fix_null <- function(x) {
   if (is.null(x) || length(x) == 0) NA
   else x
@@ -190,7 +190,7 @@ make_link_altmetric_arxiv <- function(arxivid) {
 ```
 
 
-```{r}
+```{r entrez1}
 ## Search PubMed
 x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", 
                    retmax = 1000)
@@ -199,7 +199,7 @@ x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]",
 x$ids <- unique(c(base::setdiff(x$ids, pmid_remove), pmid_add))
 ```
 
-```{r, results = "hide"}
+```{r entrez2, results = "hide"}
 ## Get abstracts and generate word cloud
 pubmed_fetch <- entrez_fetch(db = "pubmed", id = x$ids,
                              rettype = "xml", parsed = TRUE)
@@ -216,7 +216,7 @@ rquery.wordcloud(x = abstracts_all, type = "text",
 dev.off()
 ```
 
-```{r}
+```{r extract}
 ## Extract info for summary table
 summ <- entrez_summary(db = "pubmed", id = x$ids)
 summ <- lapply(summ, function(w) {
@@ -237,7 +237,7 @@ summ <- lapply(summ, function(w) {
 summ <- do.call(rbind, summ) %>% dplyr::arrange(desc(pubyear))
 ```
 
-```{r}	
+```{r concat}	
 ## Add unlisted publications	
 unlisted_publications <- 	
   unlisted_publications[, match(colnames(summ), 	
@@ -246,7 +246,7 @@ colnames(unlisted_publications) <- colnames(summ)
 summ <- rbind(summ, unlisted_publications)	
 ```
 
-```{r}
+```{r faff}
 ## Change some HTML formatting to markdown
 summ$title <- sapply(summ$title, function(x) {
   x <- gsub("&lt;i&gt;|&lt;/i&gt;", "*", x)  ## <i>, </i>
@@ -255,7 +255,7 @@ summ$title <- sapply(summ$title, function(x) {
 })
 ```
 
-```{r}
+```{r highlight_members}
 ## Highlight group members in bold
 summ$authors <- sapply(summ$authors, function(a) {
   gsub(paste0("(", paste(group_members, collapse = "|"), ")"), "<strong>\\1</strong>", a)
