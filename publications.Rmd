@@ -21,7 +21,7 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315",
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
-biorxiv_dois <- c("10.1101/800383","10.1101/713412",
+biorxiv_dois <- c("10.1101/713412",
                   "10.1101/2020.02.02.930578")
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -42,10 +42,8 @@ pmid_github <- rbind(
 )
 
 biorxiv_github <- rbind(
-  c(doi = "10.1101/575951", github = "https://github.com/csoneson/ARMOR"),
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison"), 
-  c(doi = "10.1101/750018", github = "https://github.com/SimoneTiberi/BANDITS_manuscript"), 
-  c(doi = "10.1101/800383", github = "https://github.com/markrobinsonuzh/allele_specificity_paper")
+  c(doi = "10.1101/750018", github = "https://github.com/SimoneTiberi/BANDITS_manuscript")
 )
 
 ## data repos
@@ -67,13 +65,13 @@ pmid_software <- rbind(
   c(pmid = "29605184", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html"),
   c(pmid = "31088905", software = "https://github.com/csoneson/ARMOR"),
   c(pmid = "31098416", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
-  c(pmid = "31857895", software = "http://bioconductor.org/packages/HDCytoData/")
+  c(pmid = "31857895", software = "http://bioconductor.org/packages/HDCytoData/"),
+  c(pmid = "32487212", software = "http://bioconductor.org/packages/release/bioc/html/DAMEfinder.html")
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat"), 
-  c(doi = "10.1101/750018", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html"), 
-  c(doi = "10.1101/800383", github = "https://github.com/markrobinsonuzh/DAMEfinder")
+  c(doi = "10.1101/750018", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html")
 )
 
 ## publications not in PubMed/bioRxiv	
