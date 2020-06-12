@@ -22,7 +22,9 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315",
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744"
 biorxiv_dois <- c("10.1101/713412",
-                  "10.1101/2020.02.02.930578")
+                  "10.1101/2020.02.02.930578",
+                  "10.1101/2020.06.08.140608",
+                  "10.1101/2020.06.10.136010")
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
 #arxiv_dois <- c("1812.00661")
@@ -38,12 +40,14 @@ pmid_github <- rbind(
   c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance"),
   c(pmid = "31098416", github = "https://github.com/lmweber/diffcyt-evaluations"),
   c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
-  c(pmid = "31857895", github = "https://github.com/lmweber/HDCytoData")
+  c(pmid = "31857895", github = "https://github.com/lmweber/HDCytoData"),
+  c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript")
+
 )
 
 biorxiv_github <- rbind(
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison"), 
-  c(doi = "10.1101/750018", github = "https://github.com/SimoneTiberi/BANDITS_manuscript")
+  c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR_article")
 )
 
 ## data repos
@@ -66,12 +70,13 @@ pmid_software <- rbind(
   c(pmid = "31088905", software = "https://github.com/csoneson/ARMOR"),
   c(pmid = "31098416", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   c(pmid = "31857895", software = "http://bioconductor.org/packages/HDCytoData/"),
-  c(pmid = "32487212", software = "http://bioconductor.org/packages/release/bioc/html/DAMEfinder.html")
+  c(pmid = "32487212", software = "http://bioconductor.org/packages/release/bioc/html/DAMEfinder.html"),
+  c(pmid = "32178699", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html")
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
-  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat"), 
-  c(doi = "10.1101/750018", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html")
+  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat"),
+  c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR")
 )
 
 ## publications not in PubMed/bioRxiv	
