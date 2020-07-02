@@ -4,30 +4,57 @@ title: "Software & Resources"
 
 <style type="text/css">
 #stickers {
-  padding-top: 4cm;
-  padding-right: 1.5cm;
-  text-align: center;
+  width: 840;
+  padding: 60px 0;
+  margin: 0 auto;
 }
-#stickers div {
-  margin-top: -3cm;
-  position: relative;
-  height: 5.63cm;
+#stickers a {
+  display: inline-block;
+  height: 140px;
+  width: 120px;
+  margin-bottom: -36px;
 }
-#stickers div:nth-child(even){
-  margin-left: 2.98cm;
+#stickers a img {
+  width: 120px;
+  height: 140px;
 }
-#stickers img {
-  width: 3cm;
+
+#stickers a:nth-child(1) {
+  margin-left: 60px;
+}
+
+@media (min-width: 900px) {
+  #stickers {
+    width: 840px;
+  }
+  #stickers a:nth-child(12n+1) {
+    margin-left: 60px;
+  }
+}
+@media (max-width: 899px) {
+  #stickers a:nth-child(1) {
+    margin-left: 30px;
+  }  
+  #stickers {
+    width: 270px;
+  }
+  #stickers a {
+    height: 70px;
+    width: 60px;
+    margin-bottom: -18px;
+  }
+  #stickers a img {
+    width: 60px;
+    height: 70px;
+  }
+  #stickers a:nth-child(8n+1) {
+    margin-left: 30px;
+  }
 }
 </style>
 
 <div id="stickers">
-<div>
-[![](stickers/ARMOR.png)](https://github.com/csoneson/ARMOR)[![](stickers/CATALYST.png)](http://bioconductor.org/packages/CATALYST/)[![](stickers/countsimQC.png)](https://bioconductor.org/packages/countsimQC/)[![](stickers/CrispRVariants.png)](http://bioconductor.org/packages/CrispRVariants/)[![](stickers/DAMEfinder.png)](https://github.com/markrobinsonuzh/DAMEfinder)
-</div><div>
-[![](stickers/diffcyt.png)](http://bioconductor.org/packages/diffcyt/)[![](stickers/DRIMSeq.png)](http://bioconductor.org/packages/DRIMSeq/)[![](stickers/edgeR.png)](http://bioconductor.org/packages/edgeR/)[![](stickers/iCOBRA.png)](http://bioconductor.org/packages/iCOBRA/)[![](stickers/iSEE.png)](http://bioconductor.org/packages/iSEE/)
-</div><div>[![](stickers/muscat.png)](https://github.com/HelenaLC/muscat)[![](stickers/pipeComp.png)](https://github.com/plger/pipeComp)[![](stickers/regsplice.png)](http://bioconductor.org/packages/regsplice/)[![](stickers/treeAGG.png)](https://github.com/markrobinsonuzh/treeAGG)[![](stickers/TreeSumExp.png)](https://github.com/fionarhuang/TreeSummarizedExperiment)
-</div>
+[![](stickers/ARMOR.png)](https://github.com/csoneson/ARMOR)[![](stickers/BANDITS.png)](https://github.com/SimoneTiberi/BANDITS)[![](stickers/CATALYST.png)](http://bioconductor.org/packages/CATALYST/)[![](stickers/countsimQC.png)](https://bioconductor.org/packages/countsimQC/)[![](stickers/CrispRVariants.png)](http://bioconductor.org/packages/CrispRVariants/)[![](stickers/DAMEfinder.png)](https://github.com/markrobinsonuzh/DAMEfinder)[![](stickers/diffcyt.png)](http://bioconductor.org/packages/diffcyt/)[![](stickers/DRIMSeq.png)](http://bioconductor.org/packages/DRIMSeq/)[![](stickers/edgeR.png)](http://bioconductor.org/packages/edgeR/)[![](stickers/iCOBRA.png)](http://bioconductor.org/packages/iCOBRA/)[![](stickers/iSEE.png)](http://bioconductor.org/packages/iSEE/)[![](stickers/muscat.png)](https://github.com/HelenaLC/muscat)[![](stickers/pipeComp.png)](https://github.com/plger/pipeComp)[![](stickers/regsplice.png)](http://bioconductor.org/packages/regsplice/)[![](stickers/treeAGG.png)](https://github.com/markrobinsonuzh/treeAGG)[![](stickers/TreeSumExp.png)](https://github.com/fionarhuang/TreeSummarizedExperiment)
 </div>
 
 ### **R packages**
