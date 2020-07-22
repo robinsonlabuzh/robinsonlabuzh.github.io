@@ -20,13 +20,14 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315",
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
-## Should be of the format "10.1101/185744"
-biorxiv_dois <- c("10.1101/713412",
-                  "10.1101/2020.02.02.930578",
-                  "10.1101/2020.06.08.140608",
-                  "10.1101/2020.06.10.136010",
+## Should be of the format "10.1101/185744" (please add new ones on the top)
+biorxiv_dois <- c("10.1101/2020.07.17.209072",
+                  "10.1101/2020.07.16.206193",
                   "10.1101/2020.06.12.147991",
-                  "10.1101/2020.07.16.206193")
+                  "10.1101/2020.06.10.136010",
+                  "10.1101/2020.06.08.140608",
+                  "10.1101/2020.02.02.930578",
+                  "10.1101/713412")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -51,7 +52,8 @@ pmid_github <- rbind(
 biorxiv_github <- rbind(
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison"), 
   c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR_article"),
-  c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses")
+  c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses"),
+  c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper")
 )
 
 ## data repos
@@ -81,7 +83,8 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat"),
   c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR"),
-  c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO")
+  c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO"),
+  c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq")
 )
 
 ## publications not in PubMed/bioRxiv	
