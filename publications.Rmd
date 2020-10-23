@@ -20,14 +20,16 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315",
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
-## Should be of the format "10.1101/185744" (please add new ones on the top)
-biorxiv_dois <- c("10.1101/2020.07.17.209072",
+## Should be of the format "10.1101/185744" 
+## PLEASE ADD NEW ONES ON THE TOP
+biorxiv_dois <- c(
+                  "10.1101/2020.10.15.340596",
+                  "10.1101/713412",
+                  "10.1101/2020.07.17.209072",
                   "10.1101/2020.07.16.206193",
                   "10.1101/2020.06.12.147991",
                   "10.1101/2020.06.10.136010",
-                  "10.1101/2020.06.08.140608",
-                  "10.1101/2020.10.15.340596",
-                  "10.1101/713412")
+                  "10.1101/2020.06.08.140608")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -362,7 +364,7 @@ if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
   f1000_preprints <- f1000_preprints[, match(colnames(biorxiv), 
                                              colnames(f1000_preprints))]
   colnames(f1000_preprints) <- colnames(biorxiv)
-  biorxiv <- rbind(biorxiv, f1000_preprints)
+  biorxiv <- rbind(f1000_preprints, biorxiv)
 } else if (!is.null(f1000_preprints)) {
   biorxiv <- f1000_preprints
 }
