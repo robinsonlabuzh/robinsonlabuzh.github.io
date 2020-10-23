@@ -116,8 +116,8 @@ f1000_preprints <- data.frame(
   volume = c(9, 9),
   issue = c(1263, 1246),
   pages = c(""),
-  doi = c("10.12688/f1000research.26669.1",
-          "10.12688/f1000research.26073.1"),
+  doi = c("10.12688/f1000research.26073.1",
+          "10.12688/f1000research.26669.1"),
   pmid = c(""),
   elocationid = c("")
 )
