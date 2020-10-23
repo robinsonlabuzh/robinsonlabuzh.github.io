@@ -25,6 +25,15 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      </style>
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -390,7 +399,7 @@ $(document).ready(function () {
 }
 </style>
 <div id="stickers">
-<p><a href="https://github.com/csoneson/ARMOR"><img src="stickers/ARMOR.png" /></a><a href="https://github.com/supermaxiste/ARPEGGIO"><img src="stickers/ARPEGGIO.png" /></a><a href="https://github.com/SimoneTiberi/BANDITS"><img src="stickers/BANDITS.png" /></a><a href="http://bioconductor.org/packages/CATALYST/"><img src="stickers/CATALYST.png" /></a><a href="https://bioconductor.org/packages/countsimQC/"><img src="stickers/countsimQC.png" /></a><a href="http://bioconductor.org/packages/CrispRVariants/"><img src="stickers/CrispRVariants.png" /></a><a href="https://github.com/markrobinsonuzh/DAMEfinder"><img src="stickers/DAMEfinder.png" /></a><a href="http://bioconductor.org/packages/diffcyt/"><img src="stickers/diffcyt.png" /></a><a href="http://bioconductor.org/packages/DRIMSeq/"><img src="stickers/DRIMSeq.png" /></a><a href="http://bioconductor.org/packages/edgeR/"><img src="stickers/edgeR.png" /></a><a href="http://bioconductor.org/packages/iCOBRA/"><img src="stickers/iCOBRA.png" /></a><a href="http://bioconductor.org/packages/iSEE/"><img src="stickers/iSEE.png" /></a><a href="https://github.com/HelenaLC/muscat"><img src="stickers/muscat.png" /></a><a href="https://github.com/plger/pipeComp"><img src="stickers/pipeComp.png" /></a><a href="http://bioconductor.org/packages/regsplice/"><img src="stickers/regsplice.png" /></a><a href="https://github.com/markrobinsonuzh/treeAGG"><img src="stickers/treeAGG.png" /></a><a href="https://github.com/fionarhuang/TreeSummarizedExperiment"><img src="stickers/TreeSumExp.png" /></a></p>
+<p><a href="https://github.com/csoneson/ARMOR"><img src="stickers/ARMOR.png" /></a><a href="https://github.com/supermaxiste/ARPEGGIO"><img src="stickers/ARPEGGIO.png" /></a><a href="https://github.com/SimoneTiberi/BANDITS"><img src="stickers/BANDITS.png" /></a><a href="http://bioconductor.org/packages/CATALYST/"><img src="stickers/CATALYST.png" /></a><a href="https://bioconductor.org/packages/countsimQC/"><img src="stickers/countsimQC.png" /></a><a href="http://bioconductor.org/packages/CrispRVariants/"><img src="stickers/CrispRVariants.png" /></a><a href="https://github.com/markrobinsonuzh/DAMEfinder"><img src="stickers/DAMEfinder.png" /></a><a href="http://bioconductor.org/packages/diffcyt/"><img src="stickers/diffcyt.png" /></a><a href="http://bioconductor.org/packages/DRIMSeq/"><img src="stickers/DRIMSeq.png" /></a><a href="http://bioconductor.org/packages/edgeR/"><img src="stickers/edgeR.png" /></a><a href="http://bioconductor.org/packages/iCOBRA/"><img src="stickers/iCOBRA.png" /></a><a href="http://bioconductor.org/packages/iSEE/"><img src="stickers/iSEE.png" /></a><a href="https://github.com/HelenaLC/muscat"><img src="stickers/muscat.png" /></a><a href="https://github.com/plger/pipeComp"><img src="stickers/pipeComp.png" /></a><a href="http://bioconductor.org/packages/regsplice/"><img src="stickers/regsplice.png" /></a><a href="https://github.com/fionarhuang/treeclimbR"><img src="stickers/treeclimbR.png" /></a><a href="https://github.com/fionarhuang/TreeSummarizedExperiment"><img src="stickers/TreeSumExp.png" /></a><a href="https://github.com/fionarhuang/TreeHeatmap"><img src="stickers/TreeHeatmap.png" /></a></p>
 </div>
 <div id="r-packages" class="section level3">
 <h3><strong>R packages</strong></h3>
@@ -504,14 +513,19 @@ $(document).ready(function () {
 <td>Epigenomic tools (BayMeth)</td>
 </tr>
 <tr class="even">
-<td><a href="https://github.com/markrobinsonuzh/treeAGG">treeAGG</a></td>
+<td><a href="https://github.com/fionarhuang/treeclimbR">treeclimbR</a></td>
 <td><strong>Ruizhu Huang</strong></td>
 <td>Search for the optimal level of a tree to interpret signal by combining with edgeR or DESeq2</td>
 </tr>
 <tr class="odd">
 <td><a href="https://github.com/fionarhuang/TreeSummarizedExperiment">TreeSummarizedExperiment</a></td>
 <td><strong>Ruizhu Huang</strong></td>
-<td>SummarizedExperiment-based object to store tree-like data</td>
+<td>SummarizedExperiment-based object to store data with hierarchical structure</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/fionarhuang/TreeHeatmap">TreeHeatmap</a></td>
+<td><strong>Ruizhu Huang</strong></td>
+<td>Visualize heatmaps at arbitrary levels of a tree.</td>
 </tr>
 </tbody>
 </table>
@@ -546,7 +560,7 @@ $(document).ready(function () {
 <tr class="odd">
 <td><a href="https://bioconductor.org/packages/DuoClustering2018/">DuoClustering2018</a></td>
 <td><strong>Angelo Duò</strong><br><strong>Charlotte Soneson</strong></td>
-<td>Data package with processed data and clustering results from <a href="https://f1000research.com/articles/7-1141/v2">Duò et al. (2018)</a></td>
+<td>Data package with processed data and clustering results from <a href="https://f1000research.com/articles/7-1141/v2">Duò et al. (2018)</a></td>
 </tr>
 <tr class="even">
 <td><a href="http://flowrepository.org/id/FR-FCM-ZZPH">FlowRepository FR-FCM-ZZPH</a></td>
