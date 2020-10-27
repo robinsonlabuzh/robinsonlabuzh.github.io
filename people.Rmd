@@ -353,6 +353,21 @@ tbl_elyas <- data.frame(
           paste0("BSc of Science in Applied Mathematics (2019), Sharif University of Technology<br>", "BSc of Science in Computer Engineering (2019), Sharif University of Technology<br>"))
 )
 
+tbl_emanuel <- data.frame(
+  img = "![](img/thumbnail/emanuel.jpg)", 
+  bio = c("Emanuel Sonder",  
+          paste0("As a Master student in the Computational Biology and Bioinformatics joint program of ETH and UZH, ",
+                 "I am currently working on my master thesis. The project is about the integration of multi-omics ",
+                 "single-cell data to describe patterns of epigenetic heterogeneity, such as partially methylated ",
+                 "domains (PMDs) and their influence on gene expression. In previous projects I have worked on ",
+                 "different topics, amongst others, on a pan-cancer analysis of somatic mutations and DNA methylation
+                 alterations in the epigenetic machinery. ",
+                 "I have a broad interest in the integration and statistical analysis of (single cell) data from ",
+                 "different biological modalities."
+                  ), 
+          paste0("BSc in Biology (2018), ETH Zürich")
+          )
+  )
 ```
 
 
@@ -378,7 +393,8 @@ tables_all <- list(
   tbl_almut,
   tbl_anthony,
   tbl_reto,
-  tbl_elyas #,
+  tbl_elyas,
+  tbl_emanuel #,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
