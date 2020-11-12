@@ -22,14 +22,16 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315",
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
 ## PLEASE ADD NEW ONES ON THE TOP
-biorxiv_dois <- c(
+biorxiv_dois <- c("10.1101/2020.11.11.355693",
+                  "10.1101/2020.11.09.374447",
                   "10.1101/2020.10.15.340596",
                   "10.1101/713412",
                   "10.1101/2020.07.17.209072",
                   "10.1101/2020.07.16.206193",
                   "10.1101/2020.06.12.147991",
                   "10.1101/2020.06.10.136010",
-                  "10.1101/2020.06.08.140608")
+                  "10.1101/2020.06.08.140608"
+                  )
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -48,15 +50,18 @@ pmid_github <- rbind(
   c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
   c(pmid = "31857895", github = "https://github.com/lmweber/HDCytoData"),
   c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript")
-
 )
 
 biorxiv_github <- rbind(
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison"), 
   c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR_article"),
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses"),
-  c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper")
+  c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper"),
+  c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
+  c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898")
 )
+
+
 
 ## data repos
 pmid_data <- rbind(
@@ -66,7 +71,8 @@ pmid_data <- rbind(
 )
 biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
-  c(doi = "10.1101/713412", data = "https://doi.org/10.6084/m9.figshare.8986193.v3")
+  c(doi = "10.1101/713412", data = "https://doi.org/10.6084/m9.figshare.8986193.v3"),
+  c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
 ## software packages
@@ -86,6 +92,7 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat"),
   c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR"),
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO"),
+  c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq")
 )
 
@@ -384,6 +391,15 @@ biorxiv <- bind_rows(biorxiv, arxiv)
 ## soak list of researchsquare preprints into bioRxiv
 # <- bind_rows(biorxiv, researchsquare)
 ```
+
+```{r}
+## sort the mix of preprints by date
+pp_date <- gsub(".$", "", gsub("^Posted ","",biorxiv$pubdate))
+pp_date <- gsub(",", "", pp_date)
+pp_date <- as.Date(pp_date, format = "%B %d %Y")
+biorxiv <- biorxiv[order(pp_date, decreasing = TRUE),]
+```
+
 
 
 ```{r}
