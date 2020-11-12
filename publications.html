@@ -9,11 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="" />
 
 
 <title>Publications</title>
 
-<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -23,8 +23,19 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -336,7 +347,6 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Publications</h1>
-<h4 class="author"></h4>
 
 </div>
 
@@ -345,6 +355,14 @@ $(document).ready(function () {
 <div id="preprints" class="section level2">
 <h2>Preprints</h2>
 <ul>
+<li>Karin D. Prummel, <strong>Helena L. Crowell</strong>, Susan Nieuwenhuize, Eline C. Brombacher, Stephan Daetwyler, <strong>Charlotte Soneson</strong>, Jelena Kresoja-Rakic, Manuel Ronner, Agnese Kocere, Alexander Ernst, Zahra Labbaf, David E. Clouthier, Anthony B. Firulli, Hector Sanchez-Iranzo, Rebecca O’Rourke, Erez Raz, Nadia Mercader, Alexa Burger, Emanuela Felley-Bosco, Jan Huisken, <strong>Mark D. Robinson</strong>, Christian Mosimann: Hand2 delineates mesothelium progenitors and is reactivated in mesothelioma. bioRxiv doi: <a href="https://doi.org/10.1101/2020.11.11.355693" target="_blank"> https://doi.org/10.1101/2020.11.11.355693</a>. Posted November 11, 2020. <a href="https://doi.org/10.5281/zenodo.4267898" target="_blank"> GitHub repo</a>. <a href="https://doi.org/10.6084/m9.figshare.13221053" target="_blank"> Data</a>.
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="10.1101/2020.11.11.355693" data-hide-no-mentions="true">
+
+</div></li>
+<li>Reto Gerber, <strong>Mark Robinson</strong>: censcyt: censored covariates in differential abundance analysis in cytometry. bioRxiv doi: <a href="https://doi.org/10.1101/2020.11.09.374447" target="_blank"> https://doi.org/10.1101/2020.11.09.374447</a>. Posted November 10, 2020. <a href="https://github.com/retogerber/censcyt_paper_scripts" target="_blank"> GitHub repo</a>. <a href="https://github.com/retogerber/censcyt" target="_blank"> Software</a>.
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="10.1101/2020.11.09.374447" data-hide-no-mentions="true">
+
+</div></li>
 <li><strong>Helena L. Crowell</strong>, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, <strong>Mark D. Robinson</strong>: An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data. F1000Research doi: <a href="https://doi.org/10.12688/f1000research.26073.1" target="_blank"> https://doi.org/10.12688/f1000research.26073.1</a>. Posted October 22, 2020.
 <div class="altmetric-embed" data-badge-popover="right" data-badge-type="4" data-doi="10.12688/f1000research.26073.1" data-hide-no-mentions="true">
 
@@ -989,7 +1007,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
