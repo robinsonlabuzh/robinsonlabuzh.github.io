@@ -1,6 +1,8 @@
 ---
 title: "People"
 output: html_document
+editor_options: 
+  chunk_output_type: inline
 ---
 
 
@@ -55,20 +57,20 @@ tbl_mark <- data.frame(
 # )
 
 
-tbl_charlotte <- data.frame(
-  img = "![](img/thumbnail/charlotte.png)", 
-  bio = c("Charlotte Soneson", 
-          paste0("<i class='fa fa-desktop'></i> [Website](http://csoneson.github.io/)<br>", 
-                 "<i class='fa fa-twitter'></i> Twitter [\\@CSoneson](https://twitter.com/CSoneson)<br>", 
-                 "<i class='fa fa-github'></i> GitHub [csoneson](https://github.com/csoneson)<br>", 
-                 "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=c28GqkIAAAAJ)"), 
-          paste0("As a postdoctoral research associate, one of my main interests is the ", 
-                 "development and improvement of statistical methods and workflows, currently mainly ", 
-                 "in the field of RNA-seq. I am also interested in the process of evaluating and ", 
-                 "comparing methods in an objective, robust and reproducible manner."), 
-          paste0("PhD in Mathematics (2011), Lund University<br>", 
-                 "MSc in Engineering Physics (2005), Lund University"))
-)
+# tbl_charlotte <- data.frame(
+#   img = "![](img/thumbnail/charlotte.png)", 
+#   bio = c("Charlotte Soneson", 
+#           paste0("<i class='fa fa-desktop'></i> [Website](http://csoneson.github.io/)<br>", 
+#                  "<i class='fa fa-twitter'></i> Twitter [\\@CSoneson](https://twitter.com/CSoneson)<br>", 
+#                  "<i class='fa fa-github'></i> GitHub [csoneson](https://github.com/csoneson)<br>", 
+#                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=c28GqkIAAAAJ)"), 
+#           paste0("As a postdoctoral research associate, one of my main interests is the ", 
+#                  "development and improvement of statistical methods and workflows, currently mainly ", 
+#                  "in the field of RNA-seq. I am also interested in the process of evaluating and ", 
+#                  "comparing methods in an objective, robust and reproducible manner."), 
+#           paste0("PhD in Mathematics (2011), Lund University<br>", 
+#                  "MSc in Engineering Physics (2005), Lund University"))
+# )
 
 tbl_simone <- data.frame(
   img = "![](img/thumbnail/simone.png)", 
@@ -151,21 +153,21 @@ tbl_imran <- data.frame(
   )
 )
 
-tbl_lukas <- data.frame(
-  img = "![](img/thumbnail/lukas.jpg)", 
-  bio = c("Lukas Weber", 
-          paste0("<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
-                 "<i class='fa fa-github'></i> GitHub [lmweber](https://github.com/lmweber)<br>", 
-                 "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)"), 
-          paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
-                 "computational methods for analysis of various types of high-throughput biological data. ", 
-                 "The main focus of my project is on methods for differential discovery in high-dimensional ", 
-                 "single-cell flow and mass cytometry data. These methods are now available in the ", 
-                 "[diffcyt](http://bioconductor.org/packages/diffcyt) R package from Bioconductor. ", 
-                 "I also enjoy teaching, especially R programming and data analysis skills as an instructor for ", 
-                 "[Software and Data Carpentry](https://carpentries.org/)."), 
-          paste0("MSc in Statistics (2014), ETH Zürich"))
-)
+# tbl_lukas <- data.frame(
+#   img = "![](img/thumbnail/lukas.jpg)", 
+#   bio = c("Lukas Weber", 
+#           paste0("<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
+#                  "<i class='fa fa-github'></i> GitHub [lmweber](https://github.com/lmweber)<br>", 
+#                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)"), 
+#           paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
+#                  "computational methods for analysis of various types of high-throughput biological data. ", 
+#                  "The main focus of my project is on methods for differential discovery in high-dimensional ", 
+#                  "single-cell flow and mass cytometry data. These methods are now available in the ", 
+#                  "[diffcyt](http://bioconductor.org/packages/diffcyt) R package from Bioconductor. ", 
+#                  "I also enjoy teaching, especially R programming and data analysis skills as an instructor for ", 
+#                  "[Software and Data Carpentry](https://carpentries.org/)."), 
+#           paste0("MSc in Statistics (2014), ETH Zürich"))
+# )
 
 tbl_kathi <- data.frame(
   img = "![](img/thumbnail/kathi.jpg)", 
@@ -268,21 +270,21 @@ tbl_helena <- data.frame(
                  "BSc in Biochemistry (2015), University of Heidelberg"))
 )
 
-tbl_angelo <- data.frame(
-  img = "", 
-  bio = c("Angelo Duo", 
-          paste0("Text here"), 
-          "More text here")
-)
+# tbl_angelo <- data.frame(
+#   img = "", 
+#   bio = c("Angelo Duo", 
+#           paste0("Text here"), 
+#           "More text here")
+# )
 
-tbl_helen <- data.frame(
-  img = "![](img/helen.jpg)", 
-  bio = c("Helen Lindsay", 
-          paste0("Text text text text text text text text text text text text text text ", 
-                 "text text text text text text text text text text text text text "), 
-          paste0("More text (e.g. qualifications)<br>", 
-                 "More text"))
-)
+# tbl_helen <- data.frame(
+#   img = "![](img/helen.jpg)", 
+#   bio = c("Helen Lindsay", 
+#           paste0("Text text text text text text text text text text text text text text ", 
+#                  "text text text text text text text text text text text text text "), 
+#           paste0("More text (e.g. qualifications)<br>", 
+#                  "More text"))
+# )
 
 tbl_almut <- data.frame(
   img = "![](img/thumbnail/almut.jpg)", 
@@ -421,7 +423,7 @@ for (i in seq_along(tables_all)) {
     collapse_rows(columns = 1, valign = "top") %>% 
     # hack to remove row borders between table cells (by adding additional options to HTML code for table cells)
     gsub('<td style="', '<td style="border:none;', .) %>% 
-    print
+    cat
 }
 ```
 
