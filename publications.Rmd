@@ -22,7 +22,8 @@ pmid_add <- c("11743205", "15761153", "23857251", "26493315",
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
 ## PLEASE ADD NEW ONES ON THE TOP
-biorxiv_dois <- c("10.1101/2020.11.11.355693",
+biorxiv_dois <- c("10.1101/2020.11.24.394213",
+                  "10.1101/2020.11.11.355693",
                   "10.1101/2020.11.09.374447",
                   "10.1101/2020.10.15.340596",
                   "10.1101/713412",
@@ -58,7 +59,8 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
-  c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898")
+  c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
+  c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
 
 
@@ -93,7 +95,8 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR"),
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt"),
-  c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq")
+  c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq"),
+  c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct")
 )
 
 ## publications not in PubMed/bioRxiv	
