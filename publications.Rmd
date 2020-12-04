@@ -26,7 +26,7 @@ biorxiv_dois <- c("10.1101/2020.11.24.394213",
                   "10.1101/2020.11.11.355693",
                   "10.1101/2020.11.09.374447",
                   "10.1101/2020.10.15.340596",
-                  "10.1101/713412",
+                  #"10.1101/713412",
                   "10.1101/2020.07.17.209072",
                   "10.1101/2020.07.16.206193",
                   "10.1101/2020.06.12.147991",
@@ -50,11 +50,15 @@ pmid_github <- rbind(
   c(pmid = "31098416", github = "https://github.com/lmweber/diffcyt-evaluations"),
   c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
   c(pmid = "31857895", github = "https://github.com/lmweber/HDCytoData"),
+  c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat-comparison"), 
+  #c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat"),
+  c(pmid = "32873325", github = "https://github.com/plger/pipeComp"), 
   c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript")
 )
 
+
+
 biorxiv_github <- rbind(
-  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat-comparison"), 
   c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR_article"),
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper"),
@@ -69,11 +73,11 @@ biorxiv_github <- rbind(
 pmid_data <- rbind(
   c(pmid = "27992111", data = "http://flowrepository.org/id/FR-FCM-ZZPH"),
   c(pmid = "30271584", data = "https://bioconductor.org/packages/DuoClustering2018/"),
+  c(pmid = "33257685", data = "https://doi.org/10.6084/m9.figshare.8986193.v3"),
   c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
 )
 biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
-  c(doi = "10.1101/713412", data = "https://doi.org/10.6084/m9.figshare.8986193.v3"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
@@ -87,11 +91,12 @@ pmid_software <- rbind(
   c(pmid = "31098416", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   c(pmid = "31857895", software = "http://bioconductor.org/packages/HDCytoData/"),
   c(pmid = "32487212", software = "http://bioconductor.org/packages/release/bioc/html/DAMEfinder.html"),
+  c(pmid = "33257685", software = "http://bioconductor.org/packages/release/bioc/html/muscat.html"),
+  c(pmid = "32873325", software = "http://bioconductor.org/packages/release/bioc/html/pipeComp.html"),
   c(pmid = "32178699", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html")
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
-  c(doi = "10.1101/713412", github = "https://github.com/HelenaLC/muscat"),
   c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR"),
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt"),
