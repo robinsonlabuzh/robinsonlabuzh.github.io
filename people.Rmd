@@ -329,13 +329,15 @@ tbl_anthony <- data.frame(
 tbl_reto <- data.frame(
   img = "![](img/thumbnail/Reto.jpg)", 
   bio = c("Reto Gerber",  
-          paste0("I am a Master student in the Computational Biology & Bioinformatics study program currently  ",
-                 "working on my master thesis. The focus of this project lies on using censored predictors in ",
-                  " single cell models (mainly for flow and mass cytometry).",
-                 " In past projects I worked among other things on docking of biomolecules and signalling networks in cells, ",
-                  "before turning more to the statistical aspect of bioinformatics."
+          paste("I am a Research Assistant in the Robinson lab. In my lastest project I developed a
+                 method for differential abundance analysis in cytometry where a covariate is subject to censoring 
+                 (Preprint on [bioRxiv](https://doi.org/10.1101/2020.11.09.374447)). Currently I develop 
+                a R shiny web app helping in exploration and visualization of open access publication profiles of individual authors.
+                In past projects I worked among other things on docking of biomolecules and signalling networks in cells,
+                before turning more to the statistical aspect of bioinformatics."
                   ), 
-          paste0("BSc of Science in Biology (2017), University of Zürich"))
+          paste0("MSc of Science in Computational Biology and Bioinformatics (2020), ETH, University of Zürich<br>",
+                 "BSc of Science in Biology (2017), University of Zürich"))
 )
 
 tbl_elyas <- data.frame(
