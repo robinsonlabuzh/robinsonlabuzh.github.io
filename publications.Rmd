@@ -126,20 +126,17 @@ unlisted_publications <- data.frame(
 
 ## F1000Research articles awaiting peer review
 # f1000_preprints <- NULL
+
 f1000_preprints <- data.frame(
-  title = c("An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data",
-            "TreeSummarizedExperiment: a S4 class for data with hierarchical structure"),
-  pubdate = c("Posted October 22, 2020.",
-              "Posted October 15, 2020."),
+  title = c("An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data"),
+  pubdate = c("Posted October 22, 2020."),
   pubyear = c("Preprints"),
   journal = c("F1000Research"),
-  authors = c("Helena L. Crowell, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, Mark D. Robinson",
-              "Ruizhu Huang, Charlotte Soneson, Felix G.M. Ernst, Kevin C. Rue-Albrecht, Guangchuang Yu, Stephanie C. Hicks, Mark D. Robinson"),
-  volume = c(9, 9),
-  issue = c(1263, 1246),
+  authors = c("Helena L. Crowell, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, Mark D. Robinson"),
+  volume = c(9),
+  issue = c(1263),
   pages = c(""),
-  doi = c("10.12688/f1000research.26073.1",
-          "10.12688/f1000research.26669.1"),
+  doi = c("10.12688/f1000research.26073.1"),
   pmid = c(""),
   elocationid = c("")
 )
@@ -503,7 +500,10 @@ for (i in years) {
                   ifelse(summ[[i]][j, "issue"] == "", "", 
                          paste0("(", summ[[i]][j, "issue"], ")")), ":",
                   summ[[i]][j, "pages"], 
-                  " (", i, "). DOI: ", summ[[i]][j, "doi"],
+                  #" (", i, "). DOI: ", summ[[i]][j, "doi"],
+                  " (", i, "). ",
+                  make_link_text(paste0("https://doi.org/", summ[[i]][j, "doi"]),
+                                 paste0("DOI: ", summ[[i]][j, "doi"])),
                   ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]),  ifelse(summ[[i]][j, "pmid"]=="", "", ". "),  
                   #". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
                   ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], 
