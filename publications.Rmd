@@ -203,10 +203,7 @@ make_link_button <- function(address, title) {
 }
 
 make_link_text <- function(address, title) {
-  if(is.na(address))
-    sprintf("")
-  else
-    sprintf(' <a href="%s" target="_blank"> %s</a>', address, title)
+  sprintf(' <a href="%s" target="_blank"> %s</a>', address, title)
 }
 
 
