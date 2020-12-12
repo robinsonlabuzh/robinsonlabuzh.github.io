@@ -203,7 +203,10 @@ make_link_button <- function(address, title) {
 }
 
 make_link_text <- function(address, title) {
-  sprintf(' <a href="%s" target="_blank"> %s</a>', address, title)
+  if(is.na(address))
+    sprintf("")
+  else
+    sprintf(' <a href="%s" target="_blank"> %s</a>', address, title)
 }
 
 
@@ -502,9 +505,11 @@ for (i in years) {
                   summ[[i]][j, "pages"], 
                   #" (", i, "). DOI: ", summ[[i]][j, "doi"],
                   " (", i, "). ",
-                  make_link_text(paste0("https://doi.org/", summ[[i]][j, "doi"]),
-                                 paste0("DOI: ", summ[[i]][j, "doi"])),
-                  ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]),  ifelse(summ[[i]][j, "pmid"]=="", "", ". "),  
+                  ifelse(!is.na(summ[[i]][j, "doi"]), 
+                         paste0(make_link_text(paste0("https://doi.org/", summ[[i]][j, "doi"]),
+                                        paste0("DOI: ", summ[[i]][j, "doi"])),". "),
+                         ""),
+                  make_link_pmid(pmid = summ[[i]][j, "pmid"]),  ifelse(summ[[i]][j, "pmid"]=="", "", ". "),  
                   #". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
                   ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], 
                                                                                  title = "GitHub repo"), ". ")), 
