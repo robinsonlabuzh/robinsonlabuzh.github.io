@@ -15,14 +15,15 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
 ## PubMed IDs to add
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
               "30002819", "30356428", "31178352", "31857895", "18772890",
-              "18573797")
+              "18573797", "33300035")
 
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
 ## PLEASE ADD NEW ONES ON THE TOP
-biorxiv_dois <- c("10.1101/2020.11.24.394213",
+biorxiv_dois <- c("10.1101/2020.12.11.420885",
+                  "10.1101/2020.11.24.394213",
                   "10.1101/2020.11.11.355693",
                   "10.1101/2020.11.09.374447",
                   "10.1101/2020.10.15.340596",
@@ -62,11 +63,10 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
+  c(doi = "10.1101/2020.12.11.420885", github = "https://github.com/almutlue/mixing_benchmark"),
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
-
-
 
 ## data repos
 pmid_data <- rbind(
@@ -77,8 +77,11 @@ pmid_data <- rbind(
 )
 biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
+  c(doi = "10.1101/2020.12.11.420885", data = "https://doi.org/10.6084/m9.figshare.13341200"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
+
+
 
 ## software packages
 pmid_software <- rbind(
@@ -99,9 +102,12 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR"),
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt"),
+  c(doi = "10.1101/2020.12.11.420885", github = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct")
 )
+
+
 
 ## publications not in PubMed/bioRxiv	
 unlisted_publications <- data.frame(	
@@ -120,20 +126,17 @@ unlisted_publications <- data.frame(
 
 ## F1000Research articles awaiting peer review
 # f1000_preprints <- NULL
+
 f1000_preprints <- data.frame(
-  title = c("An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data",
-            "TreeSummarizedExperiment: a S4 class for data with hierarchical structure"),
-  pubdate = c("Posted October 22, 2020.",
-              "Posted October 15, 2020."),
+  title = c("An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data"),
+  pubdate = c("Posted October 22, 2020."),
   pubyear = c("Preprints"),
   journal = c("F1000Research"),
-  authors = c("Helena L. Crowell, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, Mark D. Robinson",
-              "Ruizhu Huang, Charlotte Soneson, Felix G.M. Ernst, Kevin C. Rue-Albrecht, Guangchuang Yu, Stephanie C. Hicks, Mark D. Robinson"),
-  volume = c(9, 9),
-  issue = c(1263, 1246),
+  authors = c("Helena L. Crowell, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, Mark D. Robinson"),
+  volume = c(9),
+  issue = c(1263),
   pages = c(""),
-  doi = c("10.12688/f1000research.26073.1",
-          "10.12688/f1000research.26669.1"),
+  doi = c("10.12688/f1000research.26073.1"),
   pmid = c(""),
   elocationid = c("")
 )
@@ -146,6 +149,8 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Lindsay H", "Helen Lindsay",
                    "Tiberi S", "Simone Tiberi",
                    "Germain P-L", "Germain PL", "Pierre-Luc Germain",
+                   "Almut Luetge", "Luetge A",
+                   "Joanna Zyprych-Walczak",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", 
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", "Hembach KM",
                    "Katharina M. Hembach", "Yao Yao", "Yao Y",
@@ -495,8 +500,13 @@ for (i in years) {
                   ifelse(summ[[i]][j, "issue"] == "", "", 
                          paste0("(", summ[[i]][j, "issue"], ")")), ":",
                   summ[[i]][j, "pages"], 
-                  " (", i, "). DOI: ", summ[[i]][j, "doi"],
-                  ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]),  ifelse(summ[[i]][j, "pmid"]=="", "", ". "),  
+                  #" (", i, "). DOI: ", summ[[i]][j, "doi"],
+                  " (", i, "). ",
+                  ifelse(!is.na(summ[[i]][j, "doi"]), 
+                         paste0(make_link_text(paste0("https://doi.org/", summ[[i]][j, "doi"]),
+                                        paste0("DOI: ", summ[[i]][j, "doi"])),". "),
+                         ""),
+                  make_link_pmid(pmid = summ[[i]][j, "pmid"]),  ifelse(summ[[i]][j, "pmid"]=="", "", ". "),  
                   #". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
                   ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], 
                                                                                  title = "GitHub repo"), ". ")), 
