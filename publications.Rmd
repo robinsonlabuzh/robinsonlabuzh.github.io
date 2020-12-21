@@ -149,7 +149,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Lindsay H", "Helen Lindsay",
                    "Tiberi S", "Simone Tiberi",
                    "Germain P-L", "Germain PL", "Pierre-Luc Germain",
-                   "Almut Luetge", "Luetge A",
+                   "Almut Luetge", "Luetge A", "Almut Lütge",
                    "Joanna Zyprych-Walczak",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", 
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", "Hembach KM",
@@ -159,7 +159,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Huang R", "Ruizhu Huang", 
                    "Schmeing S", "Stephan Schmeing", 
                    "Orjuela S", "Stephany Orjuela", 
-                   "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell", "Helena Crowell",
+                   "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell", "Helena Crowell", "HelenaL Crowell",
                    "Mallona I", "Izaskun Mallona",
                    "Reto Gerber","Gerber Reto","Gerber R",
                    "Manca P",
@@ -296,6 +296,8 @@ summ$title <- sapply(summ$title, function(x) {
 
 ```{r highlight_members}
 ## Highlight group members in bold
+summ$authors <- gsub("HelenaL", "Helena L", summ$authors)
+
 summ$authors <- sapply(summ$authors, function(a) {
   gsub(paste0("(", paste(group_members, collapse = "|"), ")"), "<strong>\\1</strong>", a)
 })
