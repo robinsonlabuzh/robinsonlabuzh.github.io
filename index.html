@@ -22,8 +22,19 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -341,10 +352,10 @@ $(document).ready(function () {
 
 <div id="welcome-to-the-robinson-lab" class="section level1">
 <h1>Welcome to the Robinson Lab!</h1>
-<p>We are located in the <a href="http://www.imls.uzh.ch/en.html">Institute of Molecular Life Sciences</a> within the <a href="http://www.mnf.uzh.ch/en.html">Faculty of Science</a> at the <a href="http://www.uzh.ch/en.html">University of Zurich</a>.</p>
+<p>We are located in the <a href="http://www.mls.uzh.ch/en.html">Institute of Molecular Life Sciences</a> within the <a href="http://www.mnf.uzh.ch/en.html">Faculty of Science</a> at the <a href="http://www.uzh.ch/en.html">University of Zurich</a>.</p>
 <p>Research in our laboratory is focused on creating, comparing and understanding statistical methods and data science tools for processing and interpreting various types of genomic data. You can learn about <a href="research.html">our research</a>, the <a href="tools.html">resources</a> we make, <a href="people.html">who we are</a> or the <a href="publications.html">papers</a> we publish.</p>
 <div class="figure">
-<img src="img/irchel_up.JPG" alt="Irchel Campus" />
+<img src="img/irchel_up.jpg" alt="Irchel Campus" />
 <p class="caption">Irchel Campus</p>
 </div>
 </div>
@@ -358,7 +369,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
