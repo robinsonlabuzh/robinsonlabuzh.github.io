@@ -218,7 +218,7 @@ make_link_pmid <- function(pmid) {
 }
 
 make_link_altmetric <- function(doi) {
-  sprintf('<div data-badge-popover="right" data-badge-type="4" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+  sprintf('<div data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
           doi)
 }
 
