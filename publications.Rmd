@@ -448,15 +448,24 @@ if (!is.null(biorxiv)) {
 
 
 ```{r}
+
+k <- grepl("pii", summ$elocationid) & summ$pages == ""
+summ$pages[k] <- sapply(strsplit(summ$elocationid[k], ". "), .subset2, 2)
+
 ## Split by publication year
 years <- as.character(unique(summ$pubyear))
 summ <- split(summ, summ$pubyear)
 
 ## write out table of publications/preprints to disk
-write.table(bind_rows(summ), "publications.csv", quote=FALSE, sep=";", row.names = FALSE)
+write.table(bind_rows(summ), "publications.tsv", 
+            quote=FALSE, sep="\t", row.names = FALSE)
 saveRDS(bind_rows(summ), file="publications.rds")
-write.table(biorxiv, "preprints.csv", quote=FALSE, sep=";", row.names = FALSE)
+write.table(biorxiv, "preprints.tsv", 
+            quote=FALSE, sep="\t", row.names = FALSE)
 saveRDS(biorxiv, file="preprints.rds")
+
+# z <- read.table("publications.tsv", sep="\t", header = TRUE, quote="")
+# z <- read.table("preprints.tsv", sep="\t", header = TRUE, quote="")
 
  
 
