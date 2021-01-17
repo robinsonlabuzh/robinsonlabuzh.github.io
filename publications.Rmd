@@ -218,7 +218,7 @@ make_link_pmid <- function(pmid) {
 }
 
 make_link_altmetric <- function(doi) {
-  sprintf('<div data-badge-popover="right" data-badge-type="4" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+  sprintf('<div data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
           doi)
 }
 
@@ -448,9 +448,26 @@ if (!is.null(biorxiv)) {
 
 
 ```{r}
+
+k <- grepl("pii", summ$elocationid) & summ$pages == ""
+summ$pages[k] <- sapply(strsplit(summ$elocationid[k], ". "), .subset2, 2)
+
 ## Split by publication year
 years <- as.character(unique(summ$pubyear))
 summ <- split(summ, summ$pubyear)
+
+## write out table of publications/preprints to disk
+write.table(bind_rows(summ), "publications.tsv", 
+            quote=FALSE, sep="\t", row.names = FALSE)
+saveRDS(bind_rows(summ), file="publications.rds")
+write.table(biorxiv, "preprints.tsv", 
+            quote=FALSE, sep="\t", row.names = FALSE)
+saveRDS(biorxiv, file="preprints.rds")
+
+# z <- read.table("publications.tsv", sep="\t", header = TRUE, quote="")
+# z <- read.table("preprints.tsv", sep="\t", header = TRUE, quote="")
+
+ 
 
 ## Generate final text string to display
 txt <- "<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>\n\n"
@@ -478,7 +495,8 @@ if (!is.null(biorxiv)) {
     } else {
     txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
                   ". ", biorxiv[j, "journal"], 
-                  " doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
+                  " doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), 
+                                          title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
                   biorxiv[j, "pubdate"], " ", 
                   ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], 
                                                                                title = "GitHub repo"), ". ")), 

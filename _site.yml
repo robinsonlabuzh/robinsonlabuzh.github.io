@@ -20,9 +20,6 @@ navbar:
     - text: "teaching"
       icon: fa-graduation-cap
       href: teaching.html
-    - text: "news"
-      icon: fa-newspaper-o
-      href: news.html
     - text: "more info"
       icon: fa-info-circle
       href: more_info.html
