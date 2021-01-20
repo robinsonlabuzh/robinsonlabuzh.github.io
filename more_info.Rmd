@@ -16,7 +16,7 @@ GitHub <i class="fa fa-github"></i> [robinsonlabuzh](https://github.com/robinson
 
 **Address:**
 
-Institute of Molecular Life Sciences  
+Department of Molecular Life Sciences  
 University of Zurich  
 Winterthurerstrasse 190  
 CH-8057 Zurich, Switzerland
@@ -28,7 +28,7 @@ fax <i class="fa fa-fax"></i> +41 44 635 68 68
 
 ## Links
 
-[Institute of Molecular Life Sciences, University of Zurich](http://www.imls.uzh.ch/en.html)  
+[Department of Molecular Life Sciences, University of Zurich](http://www.mls.uzh.ch/en.html)  
 [Faculty of Science, University of Zurich](http://www.mnf.uzh.ch/en.html)  
 [University of Zurich](http://www.uzh.ch/en.html)  
 [Swiss Institute of Bioinformatics](https://www.sib.swiss/)
