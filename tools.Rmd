@@ -82,7 +82,7 @@ Name      | Author(s)               | Description
 [pipeComp](http://github.com/plger/pipeComp/) | **Pierre-Luc Germain**<br>**Anthony Sonrel**<br>**Mark D Robinson** | Pipeline benchmarking framework
 [regsplice](http://bioconductor.org/packages/regsplice/) | **Lukas M Weber** | L1-regularization based methods for detection of differential splicing
 [Repitools](http://bioconductor.org/packages/Repitools/) | **Mark D Robinson**<br>Dario Strbenac<br>Aaron Statham<br>Andrea Riebler | Epigenomic tools (BayMeth)
-[SpatialExperiment](https://github.com/fionarhuang/treeclimbR) | **Helena L Crowell** | SpatialExperiment package provides an S4 class for Spatial Omics data handling.
+[SpatialExperiment](https://github.com/drighelli/SpatialExperiment) | **Helena L Crowell** | SpatialExperiment package provides an S4 class for Spatial Omics data handling.
 [treeclimbR](https://github.com/fionarhuang/treeclimbR) | **Ruizhu Huang** | Search for the optimal level of a tree to interpret signal by combining with edgeR or DESeq2
 [TreeSummarizedExperiment](https://github.com/fionarhuang/TreeSummarizedExperiment) | **Ruizhu Huang** | SummarizedExperiment-based object to store data with hierarchical structure
 [TreeHeatmap](https://github.com/fionarhuang/TreeHeatmap) | **Ruizhu Huang** | Visualize heatmaps at arbitrary levels of a tree.
