@@ -198,15 +198,15 @@ tbl_stephan <- data.frame(
                  "BSc in Physics (2011), TU Munich"))
 )
 
-tbl_fiona <- data.frame(
-  img = "![](img/thumbnail/fiona.jpg)", 
-  bio = c("Ruizhu Huang", 
-          paste0("My major research interest is in the development and application of statistical ", 
-                 "methods in biological data. Currently, I am working on the project about tree ", 
-                 "signal aggregation."), 
-          paste0("MSc in Biostatistics (2015), University of Zürich<br>", 
-                 "BSc in Applied Chemsitry (2010), Wuhan University"))
-)
+# tbl_fiona <- data.frame(
+#   img = "![](img/thumbnail/fiona.jpg)", 
+#   bio = c("Ruizhu Huang", 
+#           paste0("My major research interest is in the development and application of statistical ", 
+#                  "methods in biological data. Currently, I am working on the project about tree ", 
+#                  "signal aggregation."), 
+#           paste0("MSc in Biostatistics (2015), University of Zürich<br>", 
+#                  "BSc in Applied Chemsitry (2010), Wuhan University"))
+# )
 
 tbl_vladimir <- data.frame(
   img = "![](img/thumbnail/vladimir.jpg)", 
@@ -384,7 +384,7 @@ tables_all <- list(
   #tbl_lukas, 
   tbl_kathi, 
   tbl_stephan, 
-  tbl_fiona, 
+  # tbl_fiona, 
   tbl_vladimir, 
   tbl_stephany, 
   tbl_stefan, 
@@ -430,6 +430,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Ruizhu (Fiona) Huang (PhD student; author of [treeclimbR](https://github.com/fionarhuang/treeclimbR), [TreeSummarizeExperiment](https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html), co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Biostatistician at Cardio-CARE)
 - [Joanna Zyprych-Walczak](http://merlin.up.poznan.pl/kmmis2/index.php?id=158&id2=105) (visiting professor)
 - [Charlotte Soneson](http://csoneson.github.io/) (postdoc, investigated [various](https://f1000research.com/articles/4-1521/) [aspects](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3) of [RNA-seq](https://www.nature.com/articles/nmeth.4612) [data](http://www.life-science-alliance.org/content/2/1/e201800175) and [method](https://www.nature.com/articles/nmeth.3805) [benchmarking](https://academic.oup.com/bioinformatics/article/34/4/691/4345646); now at [FMI](https://www.fmi.ch))
 - Helen Lindsay (postdoc, author of [CrispRVariants](https://bioconductor.org/packages/release/bioc/html/CrispRVariants.html); now at [EPFL](https://www.epfl.ch/))

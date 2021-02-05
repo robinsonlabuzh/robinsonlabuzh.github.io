@@ -10,7 +10,7 @@ editor_options:
 ## PubMed IDs to remove
 pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830", 
                  "18025499", "15786672", "15779224", "15322224", "30039500", 
-                 "31925006")
+                 "31925006", "31974356")
 
 ## PubMed IDs to add
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
@@ -22,7 +22,8 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
 ## PLEASE ADD NEW ONES ON THE TOP
-biorxiv_dois <- c("10.1101/2021.01.18.426963",
+biorxiv_dois <- c("10.1101/2021.01.27.428431",
+                  "10.1101/2021.01.18.426963",
                   "10.1101/2020.12.11.420885",
                   "10.1101/2020.11.24.394213",
                   "10.1101/2020.11.11.355693",
@@ -66,6 +67,7 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
   c(doi = "10.1101/2020.12.11.420885", github = "https://github.com/almutlue/mixing_benchmark"),
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
+  c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
 
@@ -96,6 +98,7 @@ pmid_software <- rbind(
   c(pmid = "32487212", software = "http://bioconductor.org/packages/release/bioc/html/DAMEfinder.html"),
   c(pmid = "33257685", software = "http://bioconductor.org/packages/release/bioc/html/muscat.html"),
   c(pmid = "32873325", software = "http://bioconductor.org/packages/release/bioc/html/pipeComp.html"),
+  c(pmid = "33274053", software = "https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html"),
   c(pmid = "32178699", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html")
 )
 biorxiv_software <- rbind(
@@ -105,6 +108,7 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt"),
   c(doi = "10.1101/2020.12.11.420885", github = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq"),
+  c(doi = "10.1101/2021.01.27.428431", github = "https://bioconductor.org/packages/SpatialExperiment"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct")
 )
 
