@@ -367,6 +367,15 @@ tbl_emanuel <- data.frame(
           paste0("BSc in Biology (2018), ETH Zürich")
           )
   )
+
+tbl_joel <- data.frame(
+  img = "![](img/thumbnail/joel.jpg)",
+  bio = c("Joël Meili",
+          "<i class='fa fa-github'></i> GitHub [joelmeili](https://github.com/joelmeili)<br>",
+          paste0("I am a master's student in the Biostatistics program at UZH. Currently I am working on my master's thesis which aims to propose a novel method that compares RNA velocities to identify cell clusters and genes within the clusters with different RNA velocities. The main aim is to compare experimental conditions (e.g. healthy vs. disease). However, the framework shoud also allow for comparisions of cell clusters from individual samples (e.g. B cells vs. T cells)."), 
+          paste0("BSc in Engineering and Management (2019), Zurich University of Applied Sciences")
+          )
+  )
 ```
 
 
@@ -393,7 +402,8 @@ tables_all <- list(
   tbl_anthony,
   tbl_reto,
   tbl_elyas,
-  tbl_emanuel #,
+  tbl_emanuel,
+  tbl_joel #,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
