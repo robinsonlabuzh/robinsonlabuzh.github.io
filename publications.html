@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
 <title>Publications</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -25,15 +24,6 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -81,8 +71,9 @@ h6 {
 </style>
 
 
+</head>
 
-
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -96,6 +87,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -200,6 +192,8 @@ $(document).ready(function () {
 });
 </script>
 
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
 
 <style type="text/css">
@@ -244,7 +238,6 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -257,17 +250,20 @@ $(document).ready(function () {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -289,42 +285,42 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="research.html">
-    <span class="fas fa-area-chart"></span>
+    <span class="fa fa-area-chart"></span>
      
     research
   </a>
 </li>
 <li>
   <a href="publications.html">
-    <span class="fas fa-file-text-o"></span>
+    <span class="fa fa-file-text-o"></span>
      
     publications
   </a>
 </li>
 <li>
   <a href="tools.html">
-    <span class="fas fa-code"></span>
+    <span class="fa fa-code"></span>
      
     resources
   </a>
 </li>
 <li>
   <a href="people.html">
-    <span class="fas fa-user"></span>
+    <span class="fa fa-user"></span>
      
     people
   </a>
 </li>
 <li>
   <a href="teaching.html">
-    <span class="fas fa-graduation-cap"></span>
+    <span class="fa fa-graduation-cap"></span>
      
     teaching
   </a>
 </li>
 <li>
   <a href="more_info.html">
-    <span class="fas fa-info-circle"></span>
+    <span class="fa fa-info-circle"></span>
      
     more info
   </a>
@@ -339,7 +335,7 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Publications</h1>
-<h4 class="author"></h4>
+<h4 class="author"><em></em></h4>
 
 </div>
 
@@ -348,52 +344,48 @@ $(document).ready(function () {
 <div id="preprints" class="section level2">
 <h2>Preprints</h2>
 <ul>
-<li>Dario Righelli, <strong>Lukas M. Weber</strong>, <strong>Helena L. Crowell</strong>, Brenda Pardo, Leonardo Collado-Torres, Shila Ghazanfar, Aaron T. L. Lun, Stephanie C. Hicks, Davide Risso: SpatialExperiment: infrastructure for spatially resolved transcriptomics data in R using Bioconductor. bioRxiv doi: <a href="https://doi.org/10.1101/2021.01.27.428431" target="_blank"> https://doi.org/10.1101/2021.01.27.428431</a>. Posted January 27, 2021. <a href="https://github.com/drighelli/SpatialExperiment" target="_blank"> GitHub repo</a>. <a href="https://bioconductor.org/packages/SpatialExperiment" target="_blank"> Software</a>.
+<li>Karin D. Prummel, <strong>Helena L. Crowell</strong>, Susan Nieuwenhuize, Eline C. Brombacher, Stephan Daetwyler, <strong>Charlotte Soneson</strong>, Jelena Kresoja-Rakic, Manuel Ronner, Agnese Kocere, Alexander Ernst, Zahra Labbaf, David E. Clouthier, Anthony B. Firulli, Héctor Sánchez-Iranzo, Sundar R. Naganathan, Rebecca O’Rourke, Erez Raz, Nadia Mercader, Alexa Burger, Emanuela Felley-Bosco, Jan Huisken, <strong>Mark D. Robinson</strong>, Christian Mosimann: Hand2 delineates mesothelium progenitors and is reactivated in mesothelioma. bioRxiv doi: <a href="https://doi.org/10.1101/2020.11.11.355693" target="_blank"> https://doi.org/10.1101/2020.11.11.355693</a>. Posted Februar 03, 2021. <a href="https://doi.org/10.5281/zenodo.4267898" target="_blank"> GitHub repo</a>. <a href="https://doi.org/10.6084/m9.figshare.13221053" target="_blank"> Data</a>.
+<div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2020.11.11.355693" data-hide-no-mentions="true">
+
+</div></li>
+<li>Dario Righelli, <strong>Lukas M. Weber</strong>, <strong>Helena L. Crowell</strong>, Brenda Pardo, Leonardo Collado-Torres, Shila Ghazanfar, Aaron T. L. Lun, Stephanie C. Hicks, Davide Risso: SpatialExperiment: infrastructure for spatially resolved transcriptomics data in R using Bioconductor. bioRxiv doi: <a href="https://doi.org/10.1101/2021.01.27.428431" target="_blank"> https://doi.org/10.1101/2021.01.27.428431</a>. Posted Januar 27, 2021. <a href="https://github.com/drighelli/SpatialExperiment" target="_blank"> GitHub repo</a>. <a href="https://bioconductor.org/packages/SpatialExperiment" target="_blank"> Software</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2021.01.27.428431" data-hide-no-mentions="true">
 
 </div></li>
-<li>Carsten Krieg, Sara Carloni, <strong>Lukas M. Weber</strong>, Bruno Fosso, Gary Hardiman, Erika Mileti, Sahar El Aidy, Marinella Marzano, Graziano Pesole, Francesco Asnicar, Nicola Segata, <strong>Mark D. Robinson</strong>, Silvia Guglietta: Loss of C3aR induces immune infiltration and inflammatory microbiota in a new spontaneous model of colon cancer. bioRxiv doi: <a href="https://doi.org/10.1101/2021.01.18.426963" target="_blank"> https://doi.org/10.1101/2021.01.18.426963</a>. Posted January 19, 2021.
+<li>Carsten Krieg, Sara Carloni, <strong>Lukas M. Weber</strong>, Bruno Fosso, Gary Hardiman, Erika Mileti, Sahar El Aidy, Marinella Marzano, Graziano Pesole, Francesco Asnicar, Nicola Segata, <strong>Mark D. Robinson</strong>, Silvia Guglietta: Loss of C3aR induces immune infiltration and inflammatory microbiota in a new spontaneous model of colon cancer. bioRxiv doi: <a href="https://doi.org/10.1101/2021.01.18.426963" target="_blank"> https://doi.org/10.1101/2021.01.18.426963</a>. Posted Januar 19, 2021.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2021.01.18.426963" data-hide-no-mentions="true">
 
 </div></li>
-<li><strong>Almut Lütge</strong>, <strong>Joanna Zyprych-Walczak</strong>, Urszula Brykczynska Kunzmann, <strong>HelenaL Crowell</strong>, Daniela Calini, Dheeraj Malhotra, <strong>Charlotte Soneson</strong>, <strong>Mark D Robinson</strong>: CellMixS: quantifying and visualizing batch effects in single cell RNA-seq data. bioRxiv doi: <a href="https://doi.org/10.1101/2020.12.11.420885" target="_blank"> https://doi.org/10.1101/2020.12.11.420885</a>. Posted December 11, 2020. <a href="https://github.com/almutlue/mixing_benchmark" target="_blank"> GitHub repo</a>. <a href="https://doi.org/10.6084/m9.figshare.13341200" target="_blank"> Data</a>. <a href="https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html" target="_blank"> Software</a>.
+<li><strong>Almut Lütge</strong>, <strong>Joanna Zyprych-Walczak</strong>, Urszula Brykczynska Kunzmann, <strong>HelenaL Crowell</strong>, Daniela Calini, Dheeraj Malhotra, <strong>Charlotte Soneson</strong>, <strong>Mark D Robinson</strong>: CellMixS: quantifying and visualizing batch effects in single cell RNA-seq data. bioRxiv doi: <a href="https://doi.org/10.1101/2020.12.11.420885" target="_blank"> https://doi.org/10.1101/2020.12.11.420885</a>. Posted Dezember 11, 2020. <a href="https://github.com/almutlue/mixing_benchmark" target="_blank"> GitHub repo</a>. <a href="https://doi.org/10.6084/m9.figshare.13341200" target="_blank"> Data</a>. <a href="https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html" target="_blank"> Software</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2020.12.11.420885" data-hide-no-mentions="true">
 
 </div></li>
-<li><strong>Simone Tiberi</strong>, <strong>Helena L Crowell</strong>, <strong>Lukas M Weber</strong>, Pantelis Samartsidis, <strong>Mark D Robinson</strong>: distinct: a novel approach to differential distribution analyses. bioRxiv doi: <a href="https://doi.org/10.1101/2020.11.24.394213" target="_blank"> https://doi.org/10.1101/2020.11.24.394213</a>. Posted December 11, 2020. <a href="https://github.com/SimoneTiberi/distinct_manuscript" target="_blank"> GitHub repo</a>. <a href="https://github.com/SimoneTiberi/distinct" target="_blank"> Software</a>.
+<li><strong>Simone Tiberi</strong>, <strong>Helena L Crowell</strong>, <strong>Lukas M Weber</strong>, Pantelis Samartsidis, <strong>Mark D Robinson</strong>: distinct: a novel approach to differential distribution analyses. bioRxiv doi: <a href="https://doi.org/10.1101/2020.11.24.394213" target="_blank"> https://doi.org/10.1101/2020.11.24.394213</a>. Posted Dezember 11, 2020. <a href="https://github.com/SimoneTiberi/distinct_manuscript" target="_blank"> GitHub repo</a>. <a href="https://github.com/SimoneTiberi/distinct" target="_blank"> Software</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2020.11.24.394213" data-hide-no-mentions="true">
-
-</div></li>
-<li>Karin D. Prummel, <strong>Helena L. Crowell</strong>, Susan Nieuwenhuize, Eline C. Brombacher, Stephan Daetwyler, <strong>Charlotte Soneson</strong>, Jelena Kresoja-Rakic, Manuel Ronner, Agnese Kocere, Alexander Ernst, Zahra Labbaf, David E. Clouthier, Anthony B. Firulli, Héctor Sánchez-Iranzo, Rebecca O’Rourke, Erez Raz, Nadia Mercader, Alexa Burger, Emanuela Felley-Bosco, Jan Huisken, <strong>Mark D. Robinson</strong>, Christian Mosimann: Hand2 delineates mesothelium progenitors and is reactivated in mesothelioma. bioRxiv doi: <a href="https://doi.org/10.1101/2020.11.11.355693" target="_blank"> https://doi.org/10.1101/2020.11.11.355693</a>. Posted November 24, 2020. <a href="https://doi.org/10.5281/zenodo.4267898" target="_blank"> GitHub repo</a>. <a href="https://doi.org/10.6084/m9.figshare.13221053" target="_blank"> Data</a>.
-<div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2020.11.11.355693" data-hide-no-mentions="true">
 
 </div></li>
 <li><strong>Reto Gerber</strong>, <strong>Mark D. Robinson</strong>: censcyt: censored covariates in differential abundance analysis in cytometry. bioRxiv doi: <a href="https://doi.org/10.1101/2020.11.09.374447" target="_blank"> https://doi.org/10.1101/2020.11.09.374447</a>. Posted November 10, 2020. <a href="https://github.com/retogerber/censcyt_paper_scripts" target="_blank"> GitHub repo</a>. <a href="https://github.com/retogerber/censcyt" target="_blank"> Software</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2020.11.09.374447" data-hide-no-mentions="true">
 
 </div></li>
-<li><strong>Helena L. Crowell</strong>, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, <strong>Mark D. Robinson</strong>: An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data. F1000Research doi: <a href="https://doi.org/10.12688/f1000research.26073.1" target="_blank"> https://doi.org/10.12688/f1000research.26073.1</a>. Posted October 22, 2020.
-<div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.12688/f1000research.26073.1" data-hide-no-mentions="true">
-
-</div></li>
-<li>Yu Bai, Emmanuel Caussinus, Stefano Leo, Fritz Bosshardt, Faina Myachina, Gregor Rot, <strong>Mark D. Robinson</strong>, Christian F. Lehner: A cis-regulatory element promoting increased transcription at low temperature in cultured ectothermic Drosophila cells. bioRxiv doi: <a href="https://doi.org/10.1101/2020.10.15.340596" target="_blank"> https://doi.org/10.1101/2020.10.15.340596</a>. Posted October 15, 2020.
+<li>Yu Bai, Emmanuel Caussinus, Stefano Leo, Fritz Bosshardt, Faina Myachina, Gregor Rot, <strong>Mark D. Robinson</strong>, Christian F. Lehner: A cis-regulatory element promoting increased transcription at low temperature in cultured ectothermic Drosophila cells. bioRxiv doi: <a href="https://doi.org/10.1101/2020.10.15.340596" target="_blank"> https://doi.org/10.1101/2020.10.15.340596</a>. Posted Oktober 15, 2020.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2020.10.15.340596" data-hide-no-mentions="true">
 
 </div></li>
-<li><strong>Stephan Schmeing</strong>, <strong>Mark D. Robinson</strong>: ReSeq simulates realistic Illumina high-throughput sequencing data. bioRxiv doi: <a href="https://doi.org/10.1101/2020.07.17.209072" target="_blank"> https://doi.org/10.1101/2020.07.17.209072</a>. Posted July 17, 2020. <a href="https://github.com/schmeing/ReSeq-paper" target="_blank"> GitHub repo</a>. <a href="https://github.com/schmeing/ReSeq" target="_blank"> Software</a>.
-<div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2020.07.17.209072" data-hide-no-mentions="true">
-
-</div></li>
-<li><strong>Stefan Milosavljevic</strong>, Tony Kuo, Samuele Decarli, Lucas Mohn, Jun Sese, Kentaro K. Shimizu, Rie Shimizu-Inatsugi, <strong>Mark D. Robinson</strong>: ARPEGGIO: Automated Reproducible Polyploid EpiGenetic GuIdance workflOw. bioRxiv doi: <a href="https://doi.org/10.1101/2020.07.16.206193" target="_blank"> https://doi.org/10.1101/2020.07.16.206193</a>. Posted July 16, 2020. <a href="https://github.com/supermaxiste/ARPEGGIO_paperAnalyses" target="_blank"> GitHub repo</a>. <a href="https://github.com/supermaxiste/ARPEGGIO" target="_blank"> Software</a>.
+<li><strong>Stefan Milosavljevic</strong>, Tony Kuo, Samuele Decarli, Lucas Mohn, Jun Sese, Kentaro K. Shimizu, Rie Shimizu-Inatsugi, <strong>Mark D. Robinson</strong>: ARPEGGIO: Automated Reproducible Polyploid EpiGenetic GuIdance workflOw. bioRxiv doi: <a href="https://doi.org/10.1101/2020.07.16.206193" target="_blank"> https://doi.org/10.1101/2020.07.16.206193</a>. Posted Juli 16, 2020. <a href="https://github.com/supermaxiste/ARPEGGIO_paperAnalyses" target="_blank"> GitHub repo</a>. <a href="https://github.com/supermaxiste/ARPEGGIO" target="_blank"> Software</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2020.07.16.206193" data-hide-no-mentions="true">
 
 </div></li>
-<li>Sonu Sahadevan, <strong>Katharina M. Hembach</strong>, Elena Tantardini, Manuela Pérez-Berlanga, Marian Hruska-Plochan, Julien Weber, Petra Schwarz, Luc Dupuis, <strong>Mark D. Robinson</strong>, Pierre De Rossi, Magdalini Polymenidou: Synaptic accumulation of FUS triggers age-dependent misregulation of inhibitory synapses in ALS-FUS mice. bioRxiv doi: <a href="https://doi.org/10.1101/2020.06.10.136010" target="_blank"> https://doi.org/10.1101/2020.06.10.136010</a>. Posted June 10, 2020.
+<li>Sonu Sahadevan, <strong>Katharina M. Hembach</strong>, Elena Tantardini, Manuela Pérez-Berlanga, Marian Hruska-Plochan, Julien Weber, Petra Schwarz, Luc Dupuis, <strong>Mark D. Robinson</strong>, Pierre De Rossi, Magdalini Polymenidou: Synaptic accumulation of FUS triggers age-dependent misregulation of inhibitory synapses in ALS-FUS mice. bioRxiv doi: <a href="https://doi.org/10.1101/2020.06.10.136010" target="_blank"> https://doi.org/10.1101/2020.06.10.136010</a>. Posted Juni 10, 2020.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2020.06.10.136010" data-hide-no-mentions="true">
 
 </div></li>
-<li><strong>Ruizhu Huang</strong>, <strong>Charlotte Soneson</strong>, <strong>Pierre-Luc Germain</strong>, Thomas S.B. Schmidt, Christian Von Mering, <strong>Mark D. Robinson</strong>: treeclimbR pinpoints the data-dependent resolution of hierarchical hypotheses. bioRxiv doi: <a href="https://doi.org/10.1101/2020.06.08.140608" target="_blank"> https://doi.org/10.1101/2020.06.08.140608</a>. Posted June 09, 2020. <a href="https://github.com/fionarhuang/treeclimbR_article" target="_blank"> GitHub repo</a>. <a href="https://github.com/fionarhuang/treeclimbR" target="_blank"> Software</a>.
+<li><strong>Ruizhu Huang</strong>, <strong>Charlotte Soneson</strong>, <strong>Pierre-Luc Germain</strong>, Thomas S.B. Schmidt, Christian Von Mering, <strong>Mark D. Robinson</strong>: treeclimbR pinpoints the data-dependent resolution of hierarchical hypotheses. bioRxiv doi: <a href="https://doi.org/10.1101/2020.06.08.140608" target="_blank"> https://doi.org/10.1101/2020.06.08.140608</a>. Posted Juni 09, 2020. <a href="https://github.com/fionarhuang/treeclimbR_article" target="_blank"> GitHub repo</a>. <a href="https://github.com/fionarhuang/treeclimbR" target="_blank"> Software</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.1101/2020.06.08.140608" data-hide-no-mentions="true">
+
+</div></li>
+<li><strong>Helena L. Crowell</strong>, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, <strong>Mark D. Robinson</strong>: An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data. F1000Research doi: <a href="https://doi.org/10.12688/f1000research.26073.1" target="_blank"> https://doi.org/10.12688/f1000research.26073.1</a>. Posted October 22, 2020.
+<div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="10.12688/f1000research.26073.1" data-hide-no-mentions="true">
 
 </div></li>
 </ul>
@@ -401,12 +393,20 @@ $(document).ready(function () {
 <div id="section" class="section level2">
 <h2>2021</h2>
 <ul>
+<li><strong>Schmeing S</strong>, <strong>Robinson MD</strong>: ReSeq simulates realistic Illumina high-throughput sequencing data. Genome Biol 22(1):67 (2021). <a href="https://doi.org/10.1186/s13059-021-02265-7" target="_blank"> DOI: 10.1186/s13059-021-02265-7</a>. <a href="http://www.ncbi.nlm.nih.gov/pubmed/33608040" target="_blank"> PMID 33608040</a>. <a href="https://github.com/schmeing/ReSeq-paper" target="_blank"> GitHub repo</a>. <a href="https://github.com/schmeing/ReSeq" target="_blank"> Software</a>.
+<div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="https://doi.org/10.1186/s13059-021-02265-7" data-hide-no-mentions="true">
+
+</div></li>
 <li>Wang Y, <strong>Soneson C</strong>, Malinowska AL, Laski A, Ghosh S, Kanitz A, Gebert LFR, <strong>Robinson MD</strong>, Hall J: MiR-CLIP reveals iso-miR selective regulation in the miR-124 targetome. Nucleic Acids Res 49(1):25-37 (2021). <a href="https://doi.org/10.1093/nar/gkaa1117" target="_blank"> DOI: 10.1093/nar/gkaa1117</a>. <a href="http://www.ncbi.nlm.nih.gov/pubmed/33300035" target="_blank"> PMID 33300035</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="https://doi.org/10.1093/nar/gkaa1117" data-hide-no-mentions="true">
 
 </div></li>
 <li><strong>Mallona I</strong>, Ilie IM, Karemaker ID, Butz S, Manzo M, Caflisch A, Baubec T: Flanking sequence preference modulates de novo DNA methylation in the mouse genome. Nucleic Acids Res 49(1):145-157 (2021). <a href="https://doi.org/10.1093/nar/gkaa1168" target="_blank"> DOI: 10.1093/nar/gkaa1168</a>. <a href="http://www.ncbi.nlm.nih.gov/pubmed/33290556" target="_blank"> PMID 33290556</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="https://doi.org/10.1093/nar/gkaa1168" data-hide-no-mentions="true">
+
+</div></li>
+<li>Bottes S, Jaeger BN, Pilz GA, Jörg DJ, Cole JD, Kruse M, Harris L, Korobeynyk VI, <strong>Mallona I</strong>, Helmchen F, Guillemot F, Simons BD, Jessberger S: Long-term self-renewing stem cells in the adult mouse hippocampus identified by intravital imaging. Nat Neurosci 24(2):225-233 (2021). <a href="https://doi.org/10.1038/s41593-020-00759-4" target="_blank"> DOI: 10.1038/s41593-020-00759-4</a>. <a href="http://www.ncbi.nlm.nih.gov/pubmed/33349709" target="_blank"> PMID 33349709</a>.
+<div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="https://doi.org/10.1038/s41593-020-00759-4" data-hide-no-mentions="true">
 
 </div></li>
 </ul>
@@ -452,10 +452,6 @@ $(document).ready(function () {
 </div></li>
 <li>Shaul ME, Eyal O, Guglietta S, Aloni P, Zlotnik A, Forkosh E, Levy L, <strong>Weber LM</strong>, Levin Y, Pomerantz A, Nechushtan H, Eruslanov E, Singhal S, <strong>Robinson MD</strong>, Krieg C, Fridlender ZG: Circulating neutrophil subsets in advanced lung cancer patients exhibit unique immune signature and relate to prognosis. FASEB J 34(3):4204-4218 (2020). <a href="https://doi.org/10.1096/fj.201902467R" target="_blank"> DOI: 10.1096/fj.201902467R</a>. <a href="http://www.ncbi.nlm.nih.gov/pubmed/31957112" target="_blank"> PMID 31957112</a>.
 <div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="https://doi.org/10.1096/fj.201902467R" data-hide-no-mentions="true">
-
-</div></li>
-<li>Bottes S, Jaeger BN, Pilz GA, Jörg DJ, Cole JD, Kruse M, Harris L, Korobeynyk VI, <strong>Mallona I</strong>, Helmchen F, Guillemot F, Simons BD, Jessberger S: Long-term self-renewing stem cells in the adult mouse hippocampus identified by intravital imaging. Nat Neurosci : (2020). <a href="https://doi.org/10.1038/s41593-020-00759-4" target="_blank"> DOI: 10.1038/s41593-020-00759-4</a>. <a href="http://www.ncbi.nlm.nih.gov/pubmed/33349709" target="_blank"> PMID 33349709</a>.
-<div class="altmetric-embed" data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="https://doi.org/10.1038/s41593-020-00759-4" data-hide-no-mentions="true">
 
 </div></li>
 </ul>
@@ -1029,7 +1025,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -1037,23 +1033,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
