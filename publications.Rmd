@@ -30,7 +30,6 @@ biorxiv_dois <- c("10.1101/2021.01.27.428431",
                   "10.1101/2020.11.09.374447",
                   "10.1101/2020.10.15.340596",
                   #"10.1101/713412",
-                  "10.1101/2020.07.17.209072",
                   "10.1101/2020.07.16.206193",
                   "10.1101/2020.06.10.136010",
                   "10.1101/2020.06.08.140608"
@@ -55,7 +54,8 @@ pmid_github <- rbind(
   c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat-comparison"), 
   #c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat"),
   c(pmid = "32873325", github = "https://github.com/plger/pipeComp"), 
-  c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript")
+  c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript"),
+  c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq-paper")
 )
 
 
@@ -99,7 +99,8 @@ pmid_software <- rbind(
   c(pmid = "33257685", software = "http://bioconductor.org/packages/release/bioc/html/muscat.html"),
   c(pmid = "32873325", software = "http://bioconductor.org/packages/release/bioc/html/pipeComp.html"),
   c(pmid = "33274053", software = "https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html"),
-  c(pmid = "32178699", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html")
+  c(pmid = "32178699", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html"),
+  c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq")
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
@@ -107,7 +108,6 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt"),
   c(doi = "10.1101/2020.12.11.420885", github = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
-  c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://bioconductor.org/packages/SpatialExperiment"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct")
 )
