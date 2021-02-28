@@ -301,6 +301,8 @@ tbl_almut <- data.frame(
 tbl_plger <- data.frame(
   img = "![](img/thumbnail/pierreluc.jpg)", 
   bio = c("Pierre-Luc Germain",
+          paste0("<i class='fa fa-github'></i> GitHub [plger](https://github.com/plger)<br>", 
+          "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.com/citations?user=788GnysAAAAJ)"), 
           paste0( "I gradually shifted from the humanities to bioinformatics towards the end of my PhD, ",
                   "worked a lot in the past on linking chromatin alterations to gene expression, and currently ",
                   "work mostly on the analysis of short RNA-seq and single-cell RNA-seq, as well as pre- and ",
