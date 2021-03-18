@@ -388,7 +388,7 @@ tbl_ahmad <- data.frame(
                  " during my internship at Roche. The project is about implementation and extension of", 
                  " existing reference-based methods for cell annotation in single-cell RNA sequencing.", 
                  " Throughout the years, I have developed particular interest in immunology, data analysis", 
-                 " and integreation of single-cell data from different biological modalities. "), 
+                 " and integration of single-cell data from different biological modalities. "), 
           paste0("BSc in Genetics and Bioinformatics (2018), Bahcesehir University"))
 )
 ```

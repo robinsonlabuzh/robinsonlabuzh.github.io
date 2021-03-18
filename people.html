@@ -25,6 +25,15 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -69,6 +78,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -278,42 +288,42 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="research.html">
-    <span class="fa fa-area-chart"></span>
+    <span class="fas fa-area-chart"></span>
      
     research
   </a>
 </li>
 <li>
   <a href="publications.html">
-    <span class="fa fa-file-text-o"></span>
+    <span class="fas fa-file-text-o"></span>
      
     publications
   </a>
 </li>
 <li>
   <a href="tools.html">
-    <span class="fa fa-code"></span>
+    <span class="fas fa-code"></span>
      
     resources
   </a>
 </li>
 <li>
   <a href="people.html">
-    <span class="fa fa-user"></span>
+    <span class="fas fa-user"></span>
      
     people
   </a>
 </li>
 <li>
   <a href="teaching.html">
-    <span class="fa fa-graduation-cap"></span>
+    <span class="fas fa-graduation-cap"></span>
      
     teaching
   </a>
 </li>
 <li>
   <a href="more_info.html">
-    <span class="fa fa-info-circle"></span>
+    <span class="fas fa-info-circle"></span>
      
     more info
   </a>
@@ -805,7 +815,7 @@ Ahmad Al Ajami
 </tr>
 <tr>
 <td style="border:none;text-align:left;width: 20cm; ">
-I am a master’s student in the Computational Biology and Bioinformatics joint program of ETHZ and UZH. I am currently working on my master’s thesis where I am continuing work that I conducted during my internship at Roche. The project is about implementation and extension of existing reference-based methods for cell annotation in single-cell RNA sequencing. Throughout the years, I have developed particular interest in immunology, data analysis and integreation of single-cell data from different biological modalities.
+I am a master’s student in the Computational Biology and Bioinformatics joint program of ETHZ and UZH. I am currently working on my master’s thesis where I am continuing work that I conducted during my internship at Roche. The project is about implementation and extension of existing reference-based methods for cell annotation in single-cell RNA sequencing. Throughout the years, I have developed particular interest in immunology, data analysis and integration of single-cell data from different biological modalities.
 </td>
 </tr>
 <tr>
@@ -850,7 +860,7 @@ BSc in Genetics and Bioinformatics (2018), Bahcesehir University
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
