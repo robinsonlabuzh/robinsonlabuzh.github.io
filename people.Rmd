@@ -378,6 +378,19 @@ tbl_joel <- data.frame(
           paste0("BSc in Engineering and Management (2019), Zurich University of Applied Sciences")
           )
   )
+
+tbl_ahmad <- data.frame(
+  img = "![](img/thumbnail/aalajami.jpg)", 
+  bio = c("Ahmad Al Ajami", 
+          "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/ahmad-al-ajami-2ba577168/) <br>",  
+          paste0("I am a master's student in the Computational Biology and Bioinformatics joint program of ETHZ and UZH.", 
+                 " I am currently working on my master's thesis where I am continuing work that I conducted", 
+                 " during my internship at Roche. The project is about implementation and extension of", 
+                 " existing reference-based methods for cell annotation in single-cell RNA sequencing.", 
+                 " Throughout the years, I have developed particular interest in immunology, data analysis", 
+                 " and integreation of single-cell data from different biological modalities. "), 
+          paste0("BSc in Genetics and Bioinformatics (2018), Bahcesehir University"))
+)
 ```
 
 
@@ -405,7 +418,8 @@ tables_all <- list(
   tbl_reto,
   tbl_elyas,
   tbl_emanuel,
-  tbl_joel #,
+  tbl_joel,
+  tbl_ahmad #,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
