@@ -22,14 +22,13 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
 ## PLEASE ADD NEW ONES ON THE TOP
-biorxiv_dois <- c("10.1101/2021.01.27.428431",
+biorxiv_dois <- c("10.1101/2021.03.26.436976",
+                  "10.1101/2021.01.27.428431",
                   "10.1101/2021.01.18.426963",
-                  "10.1101/2020.12.11.420885",
                   "10.1101/2020.11.24.394213",
                   "10.1101/2020.11.11.355693",
                   "10.1101/2020.11.09.374447",
                   "10.1101/2020.10.15.340596",
-                  #"10.1101/713412",
                   "10.1101/2020.07.16.206193",
                   "10.1101/2020.06.10.136010",
                   "10.1101/2020.06.08.140608"
@@ -53,6 +52,7 @@ pmid_github <- rbind(
   c(pmid = "31857895", github = "https://github.com/lmweber/HDCytoData"),
   c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat-comparison"), 
   #c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat"),
+  c(pmid = "33758076", github = "https://github.com/almutlue/mixing_benchmark"),
   c(pmid = "32873325", github = "https://github.com/plger/pipeComp"), 
   c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript"),
   c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq-paper")
@@ -65,6 +65,7 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
+  c(doi = "10.1101/2021.03.26.436976", github = "https://github.com/csoneson/WagnerEMT2020"),
   c(doi = "10.1101/2020.12.11.420885", github = "https://github.com/almutlue/mixing_benchmark"),
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
@@ -76,11 +77,11 @@ pmid_data <- rbind(
   c(pmid = "27992111", data = "http://flowrepository.org/id/FR-FCM-ZZPH"),
   c(pmid = "30271584", data = "https://bioconductor.org/packages/DuoClustering2018/"),
   c(pmid = "33257685", data = "https://doi.org/10.6084/m9.figshare.8986193.v3"),
+  c(pmid = "33758076", data = "https://doi.org/10.6084/m9.figshare.13341200"),
   c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
 )
 biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
-  c(doi = "10.1101/2020.12.11.420885", data = "https://doi.org/10.6084/m9.figshare.13341200"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
@@ -99,6 +100,7 @@ pmid_software <- rbind(
   c(pmid = "33257685", software = "http://bioconductor.org/packages/release/bioc/html/muscat.html"),
   c(pmid = "32873325", software = "http://bioconductor.org/packages/release/bioc/html/pipeComp.html"),
   c(pmid = "33274053", software = "https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html"),
+  c(pmid = "33758076", github = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(pmid = "32178699", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html"),
   c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq")
 )
@@ -154,8 +156,8 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Lindsay H", "Helen Lindsay",
                    "Tiberi S", "Simone Tiberi",
                    "Germain P-L", "Germain PL", "Pierre-Luc Germain",
-                   "Almut Luetge", "Luetge A", "Almut Lütge",
-                   "Joanna Zyprych-Walczak",
+                   "Almut Luetge", "Luetge A", "Almut Lütge", "Lütge A",
+                   "Joanna Zyprych-Walczak", "Zyprych-Walczak J",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", 
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", "Hembach KM",
                    "Katharina M. Hembach", "Yao Yao", "Yao Y",
