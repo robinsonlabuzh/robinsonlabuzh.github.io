@@ -401,7 +401,7 @@ tbl_cpy <- data.frame(
                  "Furthermore, the method will also investigate how spatial expression patterns vary between conditions (e.g., healthy vs. disease). ",
                  "Then, ideally the framework could be extended to do the same things with cell types."
                   ), 
-          paste0("BSc in Statistics (2019), Xiamen University"))
+          paste0("BSc of Science in Statistics (2019), Xiamen University"))
   )
 ```
 
