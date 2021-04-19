@@ -391,6 +391,18 @@ tbl_ahmad <- data.frame(
                  " and integration of single-cell data from different biological modalities. "), 
           paste0("BSc in Genetics and Bioinformatics (2018), Bahcesehir University"))
 )
+
+tbl_cpy <- data.frame(
+  img = "![](img/thumbnail/cpy.jpg)", 
+  bio = c("Peiying Cai",  
+          paste0("As a Master student in the Biostatistics program of UZH, ",
+                 "I am currently working on my master thesis. The project aims to propose a novel methodology for differential analyses from spatial transcriptomics data, ",
+                 "that identifies spatially variable (SV) genes as well as the specific areas of the tissue affected by SV. ",
+                 "Furthermore, the method will also investigate how spatial expression patterns vary between conditions (e.g., healthy vs. disease). ",
+                 "Then, ideally the framework could be extended to do the same things with cell types."
+                  ), 
+          paste0("BSc in Statistics (2019), Xiamen University"))
+  )
 ```
 
 
@@ -419,7 +431,8 @@ tables_all <- list(
   tbl_elyas,
   tbl_emanuel,
   tbl_joel,
-  tbl_ahmad #,
+  tbl_ahmad,
+  tbl_cpy #,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
