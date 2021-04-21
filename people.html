@@ -13,12 +13,22 @@
 
 <title>People</title>
 
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -35,11 +45,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -52,32 +57,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
 
@@ -88,10 +67,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -108,40 +83,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -169,7 +117,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -181,7 +129,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -192,10 +140,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -207,7 +168,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -333,7 +293,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -446,33 +406,6 @@ I gradually shifted from the humanities to bioinformatics towards the end of my 
 <tr>
 <td style="border:none;text-align:left;width: 20cm; ">
 PhD in Philosophy of science (2014), SEMM and University of Milan<br>MA in Philosophy (2009), University of Montreal<br>BA in Philosophy (2007)
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="border:none;text-align:left;width: 3cm; font-weight: bold;font-size: 18px;vertical-align: top !important;" rowspan="4">
-<img src="img/thumbnail/will.jpg" />
-</td>
-<td style="border:none;text-align:left;width: 20cm; font-weight: bold;font-size: 18px;">
-Will Macnair
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-<i class="fa fa-twitter"></i> Twitter <a href="https://twitter.com/willmacnair">@willmacnair</a><br><i class="fa fa-github"></i> GitHub <a href="https://github.com/wmacnair">wmacnair</a><br>
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-I am a postdoc developing statistical and computational methods for analysis of single cell data, mainly different flavours of single cell RNA-seq, but also cytometry data. I’m motivated by sharp, biologically-driven research questions, and empirically sound methods to answer them. My PhD focused on analysis of trajectories in single cell data, via testing for the presence of branchpoints (<a href="https://github.com/wmacnair/TreeTop">TreeTop</a>), and identification of genes underlying sequential labels (<a href="https://github.com/wmacnair/psupertime">psupertime</a>).
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-PhD in Computational Biology (2018), ETH Zürich <br>MSc in Systems Biology (2013), University of Warwick <br>Certificate of Advanced Studies in Mathematics (2004), University of Cambridge <br>BA in Mathematics (2003), University of Cambridge <br>
 </td>
 </tr>
 </tbody>
@@ -825,6 +758,55 @@ BSc in Genetics and Bioinformatics (2018), Bahcesehir University
 </tr>
 </tbody>
 </table>
+<table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="border:none;text-align:left;width: 3cm; font-weight: bold;font-size: 18px;vertical-align: top !important;" rowspan="4">
+<img src="img/thumbnail/dominique.jpg" />
+</td>
+<td style="border:none;text-align:left;width: 20cm; font-weight: bold;font-size: 18px;">
+Dominique Paul
+</td>
+</tr>
+<tr>
+<td style="border:none;text-align:left;width: 20cm; ">
+<i class="fa fa-desktop"></i> <a href="http://www.thisiscrispin.com/">Website</a><br><i class="fa fa-twitter"></i> Twitter <a href="https://twitter.com/DominiqueCAPaul">@dominiquecapaul</a><br><i class="fa fa-github"></i> GitHub <a href="https://github.com/DominiquePaul">dominiquepaul</a><br>
+</td>
+</tr>
+<tr>
+<td style="border:none;text-align:left;width: 20cm; ">
+I am a Research Assistant at the Robinson lab. Currently I am working on a project with the lab team and researchers from the the university hospital to understand the effects of a new treatment method on systemic scleroris. I mainly work with and am interested in methods for single-cell RNA-seq data
+</td>
+</tr>
+<tr>
+<td style="border:none;text-align:left;width: 20cm; ">
+Master student in Statistics, ETH Zurich
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="border:none;text-align:left;width: 3cm; font-weight: bold;font-size: 18px;vertical-align: top !important;" rowspan="3">
+<img src="img/thumbnail/cpy.jpg" />
+</td>
+<td style="border:none;text-align:left;width: 20cm; font-weight: bold;font-size: 18px;">
+Peiying Cai
+</td>
+</tr>
+<tr>
+<td style="border:none;text-align:left;width: 20cm; ">
+As a Master student in the Biostatistics program of UZH, I am currently working on my master thesis. The project aims to propose a novel methodology for differential analyses from spatial transcriptomics data, that identifies spatially variable (SV) genes as well as the specific areas of the tissue affected by SV. Furthermore, the method will also investigate how spatial expression patterns vary between conditions (e.g., healthy vs. disease). Then, ideally the framework could be extended to do the same things with cell types.
+</td>
+</tr>
+<tr>
+<td style="border:none;text-align:left;width: 20cm; ">
+BSc of Science in Statistics (2019), Xiamen University
+</td>
+</tr>
+</tbody>
+</table>
 <div id="alumni" class="section level2">
 <h2>Alumni</h2>
 <ul>
@@ -878,7 +860,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
