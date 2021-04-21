@@ -393,6 +393,20 @@ tbl_ahmad <- data.frame(
 )
 
 
+tbl_dominique <- data.frame(
+  img = "![](img/thumbnail/dominique.jpg)", 
+  bio = c("Dominique Paul", 
+          paste0("<i class='fa fa-desktop'></i> [Website](http://www.thisiscrispin.com/)<br>",
+                 "<i class='fa fa-twitter'></i> Twitter [\\@dominiquecapaul](https://twitter.com/DominiqueCAPaul)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [dominiquepaul](https://github.com/DominiquePaul)<br>"), 
+          paste0("I am a Research Assistant at the Robinson lab. Currently I am working on a project with",
+                 " the lab team and researchers from the the university hospital to understand the effects",
+                 " of a new treatment method on systemic scleroris. I mainly work with and am interested",
+                 " in methods for single-cell RNA-seq data"),
+          paste0("Master student in Statistics, ETH Zurich"))
+)
+
+
 tbl_cpy <- data.frame(
   img = "![](img/thumbnail/cpy.jpg)", 
   bio = c("Peiying Cai",  
@@ -433,6 +447,7 @@ tables_all <- list(
   tbl_emanuel,
   tbl_joel,
   tbl_ahmad,
+  tbl_dominique,
   tbl_cpy#,
 #  tbl_charlotte, 
 #  tbl_angelo,
