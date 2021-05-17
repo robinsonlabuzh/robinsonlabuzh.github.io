@@ -485,6 +485,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Will Macnair (Postdoc; author of [SampleQC](https://github.com/wmacnair/SampleQC/); now at [Hoffman La Roche](https://www.roche.ch/))
 - Ruizhu (Fiona) Huang (PhD student; author of [treeclimbR](https://github.com/fionarhuang/treeclimbR), [TreeSummarizeExperiment](https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html), co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Biostatistician at Cardio-CARE)
 - [Joanna Zyprych-Walczak](http://merlin.up.poznan.pl/kmmis2/index.php?id=158&id2=105) (visiting professor)
 - [Charlotte Soneson](http://csoneson.github.io/) (postdoc, investigated [various](https://f1000research.com/articles/4-1521/) [aspects](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3) of [RNA-seq](https://www.nature.com/articles/nmeth.4612) [data](http://www.life-science-alliance.org/content/2/1/e201800175) and [method](https://www.nature.com/articles/nmeth.3805) [benchmarking](https://academic.oup.com/bioinformatics/article/34/4/691/4345646); now at [FMI](https://www.fmi.ch))
