@@ -27,7 +27,7 @@ biorxiv_dois <- c("10.1101/2021.03.26.436976",
                   "10.1101/2021.01.18.426963",
                   "10.1101/2020.11.24.394213",
                   "10.1101/2020.11.11.355693",
-                  "10.1101/2020.11.09.374447",
+                  #"10.1101/2020.11.09.374447",
                   "10.1101/2020.10.15.340596",
                   "10.1101/2020.07.16.206193",
                   "10.1101/2020.06.10.136010",
@@ -51,7 +51,7 @@ pmid_github <- rbind(
   c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
   c(pmid = "31857895", github = "https://github.com/lmweber/HDCytoData"),
   c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat-comparison"), 
-  #c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat"),
+  c(pmid = "33971812", github = "https://github.com/retogerber/censcyt_paper_scripts"),
   c(pmid = "33758076", github = "https://github.com/almutlue/mixing_benchmark"),
   c(pmid = "32873325", github = "https://github.com/plger/pipeComp"), 
   c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript"),
@@ -90,7 +90,7 @@ biorxiv_data <- rbind(
 ## software packages
 pmid_software <- rbind(
   c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"),
-  c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC"),
+  c(pmid = "29028961", software = "https://www.bioconductor.org/packages/countsimQC/"),
   c(pmid = "27130213", software = "http://lmweber.github.io/CrispantCal/"),
   c(pmid = "29605184", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html"),
   c(pmid = "31088905", software = "https://github.com/csoneson/ARMOR"),
@@ -100,15 +100,15 @@ pmid_software <- rbind(
   c(pmid = "33257685", software = "http://bioconductor.org/packages/release/bioc/html/muscat.html"),
   c(pmid = "32873325", software = "http://bioconductor.org/packages/release/bioc/html/pipeComp.html"),
   c(pmid = "33274053", software = "https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html"),
-  c(pmid = "33758076", github = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
-  c(pmid = "32178699", github = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html"),
-  c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq")
+  c(pmid = "33758076", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
+  c(pmid = "32178699", software = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html"),
+  c(pmid = "33971812", software = "https://bioconductor.org/packages/censcyt"),
+  c(pmid = "33608040", software = "https://github.com/schmeing/ReSeq")
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   c(doi = "10.1101/2020.06.08.140608", github = "https://github.com/fionarhuang/treeclimbR"),
   c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO"),
-  c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt"),
   c(doi = "10.1101/2020.12.11.420885", github = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://bioconductor.org/packages/SpatialExperiment"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct")
