@@ -220,17 +220,17 @@ tbl_vladimir <- data.frame(
                  "BSc in Biology, specialization Genetics (2013), University of Vicosa"))
 )
 
-tbl_stephany <- data.frame(
-  img = "![](img/thumbnail/stephany.jpg)", 
-  bio = c("Stephany Orjuela", 
-          "<i class='fa fa-github'></i> GitHub [sorjuela](https://github.com/sorjuela)<br>",
-          paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ", 
-                 "which focuses on studying the molecular mechanisms underlying the development ", 
-                 "and progression of Colorectal Cancer. Most of my work focuses on analyzing and ", 
-                 "developing methods to process methylation data obtained from Bisulfite-seq. I am currently developing a method to identify differential allele-specific methylation. "), 
-          paste0("MSc in Biology (2017), University of Zürich<br>", 
-                 "BSc in Biology (2015), Universidad Nacional de Colombia"))
-)
+# tbl_stephany <- data.frame(
+#   img = "![](img/thumbnail/stephany.jpg)", 
+#   bio = c("Stephany Orjuela", 
+#           "<i class='fa fa-github'></i> GitHub [sorjuela](https://github.com/sorjuela)<br>",
+#           paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ", 
+#                  "which focuses on studying the molecular mechanisms underlying the development ", 
+#                  "and progression of Colorectal Cancer. Most of my work focuses on analyzing and ", 
+#                  "developing methods to process methylation data obtained from Bisulfite-seq. I am currently developing a method to identify differential allele-specific methylation. "), 
+#           paste0("MSc in Biology (2017), University of Zürich<br>", 
+#                  "BSc in Biology (2015), Universidad Nacional de Colombia"))
+# )
 
 tbl_stefan <- data.frame(
   img = "![](img/thumbnail/stefan.jpg)", 
@@ -437,7 +437,7 @@ tables_all <- list(
   tbl_stephan, 
   # tbl_fiona, 
   tbl_vladimir, 
-  tbl_stephany, 
+  #tbl_stephany, 
   tbl_stefan, 
   tbl_helena,
   tbl_almut,
@@ -485,7 +485,8 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
-- Will Macnair (Postdoc; author of [SampleQC](https://github.com/wmacnair/SampleQC/); now at [Hoffman La Roche](https://www.roche.ch/))
+- Stephany Orjuela (PhD student; author of [DAMEfinder](https://github.com/markrobinsonuzh/DAMEfinder); co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Scientific software developer at [Oncobit](https://oncobit.com/))
+- Will Macnair (Postdoc; author of [SampleQC](https://github.com/wmacnair/SampleQC/); now Data Scientist at [Hoffman La Roche](https://www.roche.ch/))
 - Ruizhu (Fiona) Huang (PhD student; author of [treeclimbR](https://github.com/fionarhuang/treeclimbR), [TreeSummarizeExperiment](https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html), co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Biostatistician at Cardio-CARE)
 - [Joanna Zyprych-Walczak](http://merlin.up.poznan.pl/kmmis2/index.php?id=158&id2=105) (visiting professor)
 - [Charlotte Soneson](http://csoneson.github.io/) (postdoc, investigated [various](https://f1000research.com/articles/4-1521/) [aspects](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3) of [RNA-seq](https://www.nature.com/articles/nmeth.4612) [data](http://www.life-science-alliance.org/content/2/1/e201800175) and [method](https://www.nature.com/articles/nmeth.3805) [benchmarking](https://academic.oup.com/bioinformatics/article/34/4/691/4345646); now at [FMI](https://www.fmi.ch))
