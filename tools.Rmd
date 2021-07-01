@@ -66,6 +66,7 @@ Name      | Author(s)               | Description
 [BANDITS](http://bioconductor.org/packages/BANDITS/) | **Simone Tiberi**<br>**Mark D Robinson** | A Bayesian hierarchical model for differential splicing, via differential transcript usage, accounting for sample-to-sample variability and mapping uncertainty
 [CATALYST](http://bioconductor.org/packages/CATALYST/) | **Helena L Crowell**<br>**Mark D Robinson**<br>Vito RT Zanotelli<br>Stéphane Chevrier<br>Bernd Bodenmiller | Pipeline for preprocessing of cytometry data<br>& visualization tools for differential analysis
 [CellMixS](http://bioconductor.org/packages/release/bioc/html/CellMixS.html) | **Almut Lütge**<br>**Mark D Robinson** | Toolbox to evaluate Cellspecific Mixing Scores (CMS) for different batches in scRNA-seq data
+[censcyt](https://bioconductor.org/packages/censcyt) | **Reto Gerber** | censored covariates in differential abundance analysis in cytometry
 [countsimQC](https://bioconductor.org/packages/countsimQC/) | **Charlotte Soneson** | Comparison of characteristic features of count data sets
 [CrispRVariants](http://bioconductor.org/packages/CrispRVariants/) | **Helen Lindsay** | Tools for counting and visualising mutations in a target location
 [cytofWorkflow](https://www.bioconductor.org/packages/release/workflows/html/cytofWorkflow.html) | **Malgorzata Nowicka** | CyTOF workflow: differential discovery in high-throughput high-dimensional cytometry datasets
