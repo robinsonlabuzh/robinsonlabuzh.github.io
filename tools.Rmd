@@ -66,6 +66,7 @@ Name      | Author(s)               | Description
 [BANDITS](http://bioconductor.org/packages/BANDITS/) | **Simone Tiberi**<br>**Mark D Robinson** | A Bayesian hierarchical model for differential splicing, via differential transcript usage, accounting for sample-to-sample variability and mapping uncertainty
 [CATALYST](http://bioconductor.org/packages/CATALYST/) | **Helena L Crowell**<br>**Mark D Robinson**<br>Vito RT Zanotelli<br>Stéphane Chevrier<br>Bernd Bodenmiller | Pipeline for preprocessing of cytometry data<br>& visualization tools for differential analysis
 [CellMixS](http://bioconductor.org/packages/release/bioc/html/CellMixS.html) | **Almut Lütge**<br>**Mark D Robinson** | Toolbox to evaluate Cellspecific Mixing Scores (CMS) for different batches in scRNA-seq data
+[censcyt](https://bioconductor.org/packages/censcyt) | **Reto Gerber** | censored covariates in differential abundance analysis in cytometry
 [countsimQC](https://bioconductor.org/packages/countsimQC/) | **Charlotte Soneson** | Comparison of characteristic features of count data sets
 [CrispRVariants](http://bioconductor.org/packages/CrispRVariants/) | **Helen Lindsay** | Tools for counting and visualising mutations in a target location
 [cytofWorkflow](https://www.bioconductor.org/packages/release/workflows/html/cytofWorkflow.html) | **Malgorzata Nowicka** | CyTOF workflow: differential discovery in high-throughput high-dimensional cytometry datasets
@@ -112,6 +113,7 @@ Name      | Author(s)     | Description
 [CrispantCal](http://lmweber.github.io/CrispantCal/) | **Lukas M Weber** | R/Shiny web app to calculate injection mix volumes for<br>CRISPR-Cas9 experiments
 [CrispRVariantsLite](http://imlspenticton.uzh.ch:3838/CrispRVariantsLite/) | **Helen Lindsay** | Graphical user interface to the R/Bioconductor CrispRVariants package
 [iCOBRA](http://imlspenticton.uzh.ch:3838/iCOBRA/) | **Charlotte Soneson** | Graphical User interface to the R/Bioconductor iCOBRA package
+[pubassistant](https://pubassistant.ch/general_oa_app) | **Reto Gerber** <br> **Mark D Robinson** | Interactive explorer of publications and open access
 [scrnaseq_de_evaluation](http://imlspenticton.uzh.ch:3838/scrnaseq_de_evaluation/) | **Charlotte Soneson** |  Interactive browsing and exploration of the scRNA-seq differential expression results from [Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)
 
 
