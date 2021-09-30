@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
 <title>Software &amp; Resources</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -25,15 +24,6 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -81,8 +71,9 @@ h6 {
 </style>
 
 
+</head>
 
-
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -96,6 +87,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -200,6 +192,8 @@ $(document).ready(function () {
 });
 </script>
 
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
 
 <style type="text/css">
@@ -244,7 +238,6 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -257,17 +250,20 @@ $(document).ready(function () {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -289,42 +285,42 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="research.html">
-    <span class="fas fa-area-chart"></span>
+    <span class="fa fa-area-chart"></span>
      
     research
   </a>
 </li>
 <li>
   <a href="publications.html">
-    <span class="fas fa-file-text-o"></span>
+    <span class="fa fa-file-text-o"></span>
      
     publications
   </a>
 </li>
 <li>
   <a href="tools.html">
-    <span class="fas fa-code"></span>
+    <span class="fa fa-code"></span>
      
     resources
   </a>
 </li>
 <li>
   <a href="people.html">
-    <span class="fas fa-user"></span>
+    <span class="fa fa-user"></span>
      
     people
   </a>
 </li>
 <li>
   <a href="teaching.html">
-    <span class="fas fa-graduation-cap"></span>
+    <span class="fa fa-graduation-cap"></span>
      
     teaching
   </a>
 </li>
 <li>
   <a href="more_info.html">
-    <span class="fas fa-info-circle"></span>
+    <span class="fa fa-info-circle"></span>
      
     more info
   </a>
@@ -398,11 +394,11 @@ $(document).ready(function () {
 </div>
 <div id="r-packages" class="section level3">
 <h3><strong>R packages</strong></h3>
-<table>
+<table style="width:88%;">
 <colgroup>
-<col width="16%" />
-<col width="25%" />
-<col width="58%" />
+<col width="15%" />
+<col width="22%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -513,7 +509,7 @@ $(document).ready(function () {
 <td>Epigenomic tools (BayMeth)</td>
 </tr>
 <tr class="odd">
-<td><a href="https://github.com/fionarhuang/treeclimbR">SpatialExperiment</a></td>
+<td><a href="https://github.com/drighelli/SpatialExperiment">SpatialExperiment</a></td>
 <td><strong>Helena L Crowell</strong></td>
 <td>SpatialExperiment package provides an S4 class for Spatial Omics data handling.</td>
 </tr>
@@ -538,11 +534,11 @@ $(document).ready(function () {
 </div>
 <div id="data-resources" class="section level3">
 <h3><strong>Data resources</strong></h3>
-<table>
+<table style="width:88%;">
 <colgroup>
-<col width="16%" />
-<col width="25%" />
-<col width="58%" />
+<col width="15%" />
+<col width="22%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -565,7 +561,7 @@ $(document).ready(function () {
 <tr class="odd">
 <td><a href="https://bioconductor.org/packages/DuoClustering2018/">DuoClustering2018</a></td>
 <td><strong>Angelo Duò</strong><br><strong>Charlotte Soneson</strong></td>
-<td>Data package with processed data and clustering results from <a href="https://f1000research.com/articles/7-1141/v2">Duò et al. (2018)</a></td>
+<td>Data package with processed data and clustering results from <a href="https://f1000research.com/articles/7-1141/v2">Duò et al. (2018)</a></td>
 </tr>
 <tr class="even">
 <td><a href="http://flowrepository.org/id/FR-FCM-ZZPH">FlowRepository FR-FCM-ZZPH</a></td>
@@ -593,11 +589,11 @@ $(document).ready(function () {
 </div>
 <div id="web-applications" class="section level3">
 <h3><strong>Web applications</strong></h3>
-<table>
+<table style="width:88%;">
 <colgroup>
-<col width="16%" />
-<col width="25%" />
-<col width="58%" />
+<col width="15%" />
+<col width="22%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -636,13 +632,53 @@ $(document).ready(function () {
 </table>
 <hr />
 </div>
+<div id="software-workflows" class="section level3">
+<h3><strong>Software &amp; Workflows</strong></h3>
+<table style="width:88%;">
+<colgroup>
+<col width="15%" />
+<col width="22%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Author(s)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://github.com/csoneson/ARMOR">ARMOR</a></td>
+<td><strong>Stephany Orjuela</strong><br><strong>Ruizhu Huang</strong><br><strong>Katharina Hembach</strong><br><strong>Mark D Robinson</strong><br><strong>Charlotte Soneson</strong></td>
+<td>Snakemake workflow to perform an end-to-end RNA-seq analysis.</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/supermaxiste/ARPEGGIO">ARPEGGIO</a></td>
+<td><strong>Stefan Milosavljevic</strong><br>Tony Kuo<br>Samuele Decarli<br>Lucas Mohn<br>Jun Sese<br>Kentaro K. Shimizu<br>Rie Shimizu-Inatsugi<br><strong>Mark D Robinson</strong></td>
+<td>SnakeMake workflow to analyse whole genome bisulfite sequencing data from allopolyploids.</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/schmeing/gapless">gapless</a></td>
+<td><strong>Stephan Schmeing</strong></td>
+<td>Combined scaffolding, gap-closing and assembly correction with long reads.</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/schmeing/ReSeq">ReSeq</a></td>
+<td><strong>Stephan Schmeing</strong></td>
+<td>More realistic simulator for genomic DNA sequences from Illumina machines that achieves a similar k-mer spectrum as the original sequences.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
 <div id="other-resources" class="section level3">
 <h3><strong>Other resources</strong></h3>
-<table>
+<table style="width:88%;">
 <colgroup>
-<col width="16%" />
-<col width="25%" />
-<col width="58%" />
+<col width="15%" />
+<col width="22%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -656,16 +692,6 @@ $(document).ready(function () {
 <td><a href="http://imlspenticton.uzh.ch/robinson_lab/ABCD-DNA/">ABCD-DNA Supplementary Page</a></td>
 <td><strong>Mark D Robinson</strong></td>
 <td>Supplementary Page with Supplementary Data (semi-processed), R Code for all Figures and analyses (<a href="https://www.ncbi.nlm.nih.gov/pubmed/22879430">Robinson et al., 2012</a>).</td>
-</tr>
-<tr class="even">
-<td><a href="https://github.com/csoneson/ARMOR">ARMOR</a></td>
-<td><strong>Stephany Orjuela</strong><br><strong>Ruizhu Huang</strong><br><strong>Katharina Hembach</strong><br><strong>Mark D Robinson</strong><br><strong>Charlotte Soneson</strong></td>
-<td>Snakemake workflow to perform an end-to-end RNA-seq analysis.</td>
-</tr>
-<tr class="odd">
-<td><a href="https://github.com/supermaxiste/ARPEGGIO">ARPEGGIO</a></td>
-<td><strong>Stefan Milosavljevic</strong><br>Tony Kuo<br>Samuele Decarli<br>Lucas Mohn<br>Jun Sese<br>Kentaro K. Shimizu<br>Rie Shimizu-Inatsugi<br><strong>Mark D Robinson</strong></td>
-<td>SnakeMake workflow to analyse whole genome bisulfite sequencing data from allopolyploids.</td>
 </tr>
 <tr class="even">
 <td><a href="https://github.com/markrobinsonuzh/conquer">conquer (build scripts)</a></td>
@@ -725,7 +751,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -733,23 +759,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
