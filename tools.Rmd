@@ -54,7 +54,7 @@ title: "Software & Resources"
 </style>
 
 <div id="stickers">
-[![](stickers/ARMOR.png)](https://github.com/csoneson/ARMOR)[![](stickers/ARPEGGIO.png)](https://github.com/supermaxiste/ARPEGGIO)[![](stickers/BANDITS.png)](https://github.com/SimoneTiberi/BANDITS)[![](stickers/CATALYST.png)](http://bioconductor.org/packages/CATALYST/)[![](stickers/countsimQC.png)](https://bioconductor.org/packages/countsimQC/)[![](stickers/CrispRVariants.png)](http://bioconductor.org/packages/CrispRVariants/)[![](stickers/DAMEfinder.png)](https://github.com/markrobinsonuzh/DAMEfinder)[![](stickers/diffcyt.png)](http://bioconductor.org/packages/diffcyt/)[![](stickers/distinct.png)](https://github.com/SimoneTiberi/distinct)[![](stickers/DRIMSeq.png)](http://bioconductor.org/packages/DRIMSeq/)[![](stickers/edgeR.png)](http://bioconductor.org/packages/edgeR/)[![](stickers/iCOBRA.png)](http://bioconductor.org/packages/iCOBRA/)[![](stickers/iSEE.png)](http://bioconductor.org/packages/iSEE/)[![](stickers/muscat.png)](https://github.com/HelenaLC/muscat)[![](stickers/pipeComp.png)](https://github.com/plger/pipeComp)[![](stickers/regsplice.png)](http://bioconductor.org/packages/regsplice/)[![](stickers/treeclimbR.png)](https://github.com/fionarhuang/treeclimbR)[![](stickers/TreeSumExp.png)](https://github.com/fionarhuang/TreeSummarizedExperiment)[![](stickers/TreeHeatmap.png)](https://github.com/fionarhuang/TreeHeatmap)[![](https://github.com/Bioconductor/BiocStickers/raw/master/SpatialExperiment/SpatialExperiment.png)](https://bioconductor.org/packages/SpatialExperiment)
+[![](stickers/ARMOR.png)](https://github.com/csoneson/ARMOR)[![](stickers/ARPEGGIO.png)](https://github.com/supermaxiste/ARPEGGIO)[![](stickers/BANDITS.png)](https://github.com/SimoneTiberi/BANDITS)[![](stickers/CATALYST.png)](http://bioconductor.org/packages/CATALYST/)[![](stickers/countsimQC.png)](https://bioconductor.org/packages/countsimQC/)[![](stickers/CrispRVariants.png)](http://bioconductor.org/packages/CrispRVariants/)[![](stickers/DAMEfinder.png)](https://github.com/markrobinsonuzh/DAMEfinder)[![](stickers/diffcyt.png)](http://bioconductor.org/packages/diffcyt/)[![](stickers/distinct.png)](https://github.com/SimoneTiberi/distinct)[![](stickers/DRIMSeq.png)](http://bioconductor.org/packages/DRIMSeq/)[![](stickers/edgeR.png)](http://bioconductor.org/packages/edgeR/)[![](stickers/iCOBRA.png)](http://bioconductor.org/packages/iCOBRA/)[![](stickers/iSEE.png)](http://bioconductor.org/packages/iSEE/)[![](stickers/muscat.png)](https://github.com/HelenaLC/muscat)[![](stickers/pipeComp.png)](https://github.com/plger/pipeComp)[![](stickers/regsplice.png)](http://bioconductor.org/packages/regsplice/)[![](stickers/scDblFinder.png)](https://github.com/plger/scDblFinder)[![](https://github.com/Bioconductor/BiocStickers/raw/master/SpatialExperiment/SpatialExperiment.png)](https://bioconductor.org/packages/SpatialExperiment)[![](stickers/treeclimbR.png)](https://github.com/fionarhuang/treeclimbR)[![](stickers/TreeHeatmap.png)](https://github.com/fionarhuang/TreeHeatmap)[![](stickers/TreeSumExp.png)](https://github.com/fionarhuang/TreeSummarizedExperiment)
 
 </div>
 
@@ -66,11 +66,13 @@ Name      | Author(s)               | Description
 [BANDITS](http://bioconductor.org/packages/BANDITS/) | **Simone Tiberi**<br>**Mark D Robinson** | A Bayesian hierarchical model for differential splicing, via differential transcript usage, accounting for sample-to-sample variability and mapping uncertainty
 [CATALYST](http://bioconductor.org/packages/CATALYST/) | **Helena L Crowell**<br>**Mark D Robinson**<br>Vito RT Zanotelli<br>Stéphane Chevrier<br>Bernd Bodenmiller | Pipeline for preprocessing of cytometry data<br>& visualization tools for differential analysis
 [CellMixS](http://bioconductor.org/packages/release/bioc/html/CellMixS.html) | **Almut Lütge**<br>**Mark D Robinson** | Toolbox to evaluate Cellspecific Mixing Scores (CMS) for different batches in scRNA-seq data
+[censcyt](https://bioconductor.org/packages/censcyt) | **Reto Gerber** | censored covariates in differential abundance analysis in cytometry
 [countsimQC](https://bioconductor.org/packages/countsimQC/) | **Charlotte Soneson** | Comparison of characteristic features of count data sets
 [CrispRVariants](http://bioconductor.org/packages/CrispRVariants/) | **Helen Lindsay** | Tools for counting and visualising mutations in a target location
 [cytofWorkflow](https://www.bioconductor.org/packages/release/workflows/html/cytofWorkflow.html) | **Malgorzata Nowicka** | CyTOF workflow: differential discovery in high-throughput high-dimensional cytometry datasets
 [DAMEfinder](https://github.com/markrobinsonuzh/DAMEfinder) | **Stephany Orjuela**<br>Dania Machlab<br>**Mark D Robinson** | Method to detect differential allele-specific methylation
 [diffcyt](http://bioconductor.org/packages/diffcyt/) | **Lukas M Weber** | Statistical methods for differential discovery in high-dimensional cytometry data
+[diffUTR](https://github.com/ETHZ-INS/diffUTR) | Stefan Gerber<br/>**Pierre-Luc Germain** | Streamlining differential exon and UTR usage analysis
 [distinct](http://bioconductor.org/packages/distinct/) | **Simone Tiberi**<br>**Mark D Robinson** | A statistical method to perform differential analyses between groups of distributions, ideal for applications to high-throughput single-cell data. By comparing full distributions, *distinct* identifies both, differential patterns involving changes in the mean, as well as more subtle variations that do not involve the mean.
 [DRIMSeq](http://bioconductor.org/packages/DRIMSeq/) | **Malgorzata Nowicka** | Differential transcript usage and tuQTL analyses<br>with Dirichlet-multinomial model in RNA-seq [Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/drimseq/)
 [edgeR](http://bioconductor.org/packages/edgeR/) | Yunshun Chen<br>Aaron Lun<br>Davis McCarthy<br>**Xiaobei Zhou**<br>**Mark D Robinson**<br>Gordon Smyth | Empirical Analysis of Digital Gene Expression Data in R
@@ -82,10 +84,11 @@ Name      | Author(s)               | Description
 [pipeComp](http://github.com/plger/pipeComp/) | **Pierre-Luc Germain**<br>**Anthony Sonrel**<br>**Mark D Robinson** | Pipeline benchmarking framework
 [regsplice](http://bioconductor.org/packages/regsplice/) | **Lukas M Weber** | L1-regularization based methods for detection of differential splicing
 [Repitools](http://bioconductor.org/packages/Repitools/) | **Mark D Robinson**<br>Dario Strbenac<br>Aaron Statham<br>Andrea Riebler | Epigenomic tools (BayMeth)
+[scDblFinder](https://github.com/plger/scDblFinder) | **Pierre-Luc Germain** | Identifies doublets in single-cell sequencing data
 [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) | **Helena L Crowell** | SpatialExperiment package provides an S4 class for Spatial Omics data handling.
 [treeclimbR](https://github.com/fionarhuang/treeclimbR) | **Ruizhu Huang** | Search for the optimal level of a tree to interpret signal by combining with edgeR or DESeq2
-[TreeSummarizedExperiment](https://github.com/fionarhuang/TreeSummarizedExperiment) | **Ruizhu Huang** | SummarizedExperiment-based object to store data with hierarchical structure
 [TreeHeatmap](https://github.com/fionarhuang/TreeHeatmap) | **Ruizhu Huang** | Visualize heatmaps at arbitrary levels of a tree.
+[TreeSummarizedExperiment](https://github.com/fionarhuang/TreeSummarizedExperiment) | **Ruizhu Huang** | SummarizedExperiment-based object to store data with hierarchical structure
 ---
 
 ### **Data resources**
@@ -110,6 +113,7 @@ Name      | Author(s)     | Description
 [CrispantCal](http://lmweber.github.io/CrispantCal/) | **Lukas M Weber** | R/Shiny web app to calculate injection mix volumes for<br>CRISPR-Cas9 experiments
 [CrispRVariantsLite](http://imlspenticton.uzh.ch:3838/CrispRVariantsLite/) | **Helen Lindsay** | Graphical user interface to the R/Bioconductor CrispRVariants package
 [iCOBRA](http://imlspenticton.uzh.ch:3838/iCOBRA/) | **Charlotte Soneson** | Graphical User interface to the R/Bioconductor iCOBRA package
+[pubassistant](https://pubassistant.ch/general_oa_app) | **Reto Gerber** <br> **Mark D Robinson** | Interactive explorer of publications and open access
 [scrnaseq_de_evaluation](http://imlspenticton.uzh.ch:3838/scrnaseq_de_evaluation/) | **Charlotte Soneson** |  Interactive browsing and exploration of the scRNA-seq differential expression results from [Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)
 
 ---

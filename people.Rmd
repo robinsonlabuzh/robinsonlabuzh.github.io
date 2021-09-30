@@ -106,31 +106,31 @@ tbl_izaskun <- data.frame(
                  "MSc in Biology (2007), University of Murcia"))
 )
 
-tbl_will <- data.frame(
-  img = "![](img/thumbnail/will.jpg)", 
-  bio = c(
-    "Will Macnair", 
-    paste0(
-      "<i class='fa fa-twitter'></i> Twitter [\\@willmacnair](https://twitter.com/willmacnair)<br>", 
-      "<i class='fa fa-github'></i> GitHub [wmacnair](https://github.com/wmacnair)<br>"
-      ), 
-    paste0(
-      "I am a postdoc developing statistical and computational methods for analysis of single cell data, ", 
-      "mainly different flavours of single cell RNA-seq, but also cytometry data. ",
-      "I'm motivated by sharp, biologically-driven research questions, and empirically sound methods to answer them. ",
-      "My PhD focused on analysis of trajectories in single cell data, via testing for the presence of branchpoints ([
-        TreeTop](https://github.com/wmacnair/TreeTop)), and identification of genes underlying sequential labels ([
-        psupertime](https://github.com/wmacnair/psupertime)).", 
-      ""
-      ), 
-    paste0(
-      "PhD in Computational Biology (2018), ETH Zürich <br/>",
-      "MSc in Systems Biology (2013), University of Warwick <br/>",
-      "Certificate of Advanced Studies in Mathematics (2004), University of Cambridge <br/>",
-      "BA in Mathematics (2003), University of Cambridge <br/>"
-    )
-  )
-)
+# tbl_will <- data.frame(
+#   img = "![](img/thumbnail/will.jpg)", 
+#   bio = c(
+#     "Will Macnair", 
+#     paste0(
+#       "<i class='fa fa-twitter'></i> Twitter [\\@willmacnair](https://twitter.com/willmacnair)<br>", 
+#       "<i class='fa fa-github'></i> GitHub [wmacnair](https://github.com/wmacnair)<br>"
+#       ), 
+#     paste0(
+#       "I am a postdoc developing statistical and computational methods for analysis of single cell data, ", 
+#       "mainly different flavours of single cell RNA-seq, but also cytometry data. ",
+#       "I'm motivated by sharp, biologically-driven research questions, and empirically sound methods to answer them. ",
+#       "My PhD focused on analysis of trajectories in single cell data, via testing for the presence of branchpoints ([
+#         TreeTop](https://github.com/wmacnair/TreeTop)), and identification of genes underlying sequential labels ([
+#         psupertime](https://github.com/wmacnair/psupertime)).", 
+#       ""
+#       ), 
+#     paste0(
+#       "PhD in Computational Biology (2018), ETH Zürich <br/>",
+#       "MSc in Systems Biology (2013), University of Warwick <br/>",
+#       "Certificate of Advanced Studies in Mathematics (2004), University of Cambridge <br/>",
+#       "BA in Mathematics (2003), University of Cambridge <br/>"
+#     )
+#   )
+# )
 
 tbl_imran <- data.frame(
   img = "![](img/thumbnail/imran.jpg)", 
@@ -220,17 +220,17 @@ tbl_vladimir <- data.frame(
                  "BSc in Biology, specialization Genetics (2013), University of Vicosa"))
 )
 
-tbl_stephany <- data.frame(
-  img = "![](img/thumbnail/stephany.jpg)", 
-  bio = c("Stephany Orjuela", 
-          "<i class='fa fa-github'></i> GitHub [sorjuela](https://github.com/sorjuela)<br>",
-          paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ", 
-                 "which focuses on studying the molecular mechanisms underlying the development ", 
-                 "and progression of Colorectal Cancer. Most of my work focuses on analyzing and ", 
-                 "developing methods to process methylation data obtained from Bisulfite-seq. I am currently developing a method to identify differential allele-specific methylation. "), 
-          paste0("MSc in Biology (2017), University of Zürich<br>", 
-                 "BSc in Biology (2015), Universidad Nacional de Colombia"))
-)
+# tbl_stephany <- data.frame(
+#   img = "![](img/thumbnail/stephany.jpg)", 
+#   bio = c("Stephany Orjuela", 
+#           "<i class='fa fa-github'></i> GitHub [sorjuela](https://github.com/sorjuela)<br>",
+#           paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ", 
+#                  "which focuses on studying the molecular mechanisms underlying the development ", 
+#                  "and progression of Colorectal Cancer. Most of my work focuses on analyzing and ", 
+#                  "developing methods to process methylation data obtained from Bisulfite-seq. I am currently developing a method to identify differential allele-specific methylation. "), 
+#           paste0("MSc in Biology (2017), University of Zürich<br>", 
+#                  "BSc in Biology (2015), Universidad Nacional de Colombia"))
+# )
 
 tbl_stefan <- data.frame(
   img = "![](img/thumbnail/stefan.jpg)", 
@@ -301,6 +301,8 @@ tbl_almut <- data.frame(
 tbl_plger <- data.frame(
   img = "![](img/thumbnail/pierreluc.jpg)", 
   bio = c("Pierre-Luc Germain",
+          paste0("<i class='fa fa-github'></i> GitHub [plger](https://github.com/plger)<br>", 
+          "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.com/citations?user=788GnysAAAAJ)"), 
           paste0( "I gradually shifted from the humanities to bioinformatics towards the end of my PhD, ",
                   "worked a lot in the past on linking chromatin alterations to gene expression, and currently ",
                   "work mostly on the analysis of short RNA-seq and single-cell RNA-seq, as well as pre- and ",
@@ -376,6 +378,46 @@ tbl_joel <- data.frame(
           paste0("BSc in Engineering and Management (2019), Zurich University of Applied Sciences")
           )
   )
+
+tbl_ahmad <- data.frame(
+  img = "![](img/thumbnail/aalajami.jpg)", 
+  bio = c("Ahmad Al Ajami", 
+          "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/ahmad-al-ajami-2ba577168/) <br>",  
+          paste0("I am a master's student in the Computational Biology and Bioinformatics joint program of ETHZ and UZH.", 
+                 " I am currently working on my master's thesis where I am continuing work that I conducted", 
+                 " during my internship at Roche. The project is about implementation and extension of", 
+                 " existing reference-based methods for cell annotation in single-cell RNA sequencing.", 
+                 " Throughout the years, I have developed particular interest in immunology, data analysis", 
+                 " and integration of single-cell data from different biological modalities. "), 
+          paste0("BSc in Genetics and Bioinformatics (2018), Bahcesehir University"))
+)
+
+
+tbl_dominique <- data.frame(
+  img = "![](img/thumbnail/dominique.jpg)", 
+  bio = c("Dominique Paul", 
+          paste0("<i class='fa fa-desktop'></i> [Website](http://www.thisiscrispin.com/)<br>",
+                 "<i class='fa fa-twitter'></i> Twitter [\\@dominiquecapaul](https://twitter.com/DominiqueCAPaul)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [dominiquepaul](https://github.com/DominiquePaul)<br>"), 
+          paste0("I am a Research Assistant at the Robinson lab. Currently I am working on a project with",
+                 " the lab team and researchers from the the university hospital to understand the effects",
+                 " of a new treatment method on systemic scleroris. I mainly work with and am interested",
+                 " in methods for single-cell RNA-seq data"),
+          paste0("Master student in Statistics, ETH Zurich"))
+)
+
+
+tbl_cpy <- data.frame(
+  img = "![](img/thumbnail/cpy.jpg)", 
+  bio = c("Peiying Cai",  
+          paste0("As a Master student in the Biostatistics program of UZH, ",
+                 "I am currently working on my master thesis. The project aims to propose a novel methodology for differential analyses from spatial transcriptomics data, ",
+                 "that identifies spatially variable (SV) genes as well as the specific areas of the tissue affected by SV. ",
+                 "Furthermore, the method will also investigate how spatial expression patterns vary between conditions (e.g., healthy vs. disease). ",
+                 "Then, ideally the framework could be extended to do the same things with cell types."
+                  ), 
+          paste0("BSc of Science in Statistics (2019), Xiamen University"))
+  )
 ```
 
 
@@ -388,14 +430,14 @@ tables_all <- list(
   tbl_simone,
   tbl_izaskun,
   tbl_plger,
-  tbl_will,
+  #tbl_will,
   tbl_imran,
   #tbl_lukas, 
   tbl_kathi, 
   tbl_stephan, 
   # tbl_fiona, 
   tbl_vladimir, 
-  tbl_stephany, 
+  #tbl_stephany, 
   tbl_stefan, 
   tbl_helena,
   tbl_almut,
@@ -403,7 +445,10 @@ tables_all <- list(
   tbl_reto,
   tbl_elyas,
   tbl_emanuel,
-  tbl_joel #,
+  tbl_joel,
+  tbl_ahmad,
+  tbl_dominique,
+  tbl_cpy#,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
@@ -440,6 +485,8 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Stephany Orjuela (PhD student; author of [DAMEfinder](https://github.com/markrobinsonuzh/DAMEfinder); co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Scientific software developer at [Oncobit](https://oncobit.com/))
+- Will Macnair (Postdoc; author of [SampleQC](https://github.com/wmacnair/SampleQC/); now Data Scientist at [Hoffman La Roche](https://www.roche.ch/))
 - Ruizhu (Fiona) Huang (PhD student; author of [treeclimbR](https://github.com/fionarhuang/treeclimbR), [TreeSummarizeExperiment](https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html), co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Biostatistician at Cardio-CARE)
 - [Joanna Zyprych-Walczak](http://merlin.up.poznan.pl/kmmis2/index.php?id=158&id2=105) (visiting professor)
 - [Charlotte Soneson](http://csoneson.github.io/) (postdoc, investigated [various](https://f1000research.com/articles/4-1521/) [aspects](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3) of [RNA-seq](https://www.nature.com/articles/nmeth.4612) [data](http://www.life-science-alliance.org/content/2/1/e201800175) and [method](https://www.nature.com/articles/nmeth.3805) [benchmarking](https://academic.oup.com/bioinformatics/article/34/4/691/4345646); now at [FMI](https://www.fmi.ch))
