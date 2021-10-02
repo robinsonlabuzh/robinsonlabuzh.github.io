@@ -116,6 +116,16 @@ Name      | Author(s)     | Description
 [pubassistant](https://pubassistant.ch/general_oa_app) | **Reto Gerber** <br> **Mark D Robinson** | Interactive explorer of publications and open access
 [scrnaseq_de_evaluation](http://imlspenticton.uzh.ch:3838/scrnaseq_de_evaluation/) | **Charlotte Soneson** |  Interactive browsing and exploration of the scRNA-seq differential expression results from [Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)
 
+---
+
+### **Software & Workflows**
+
+Name      | Author(s)     | Description
+----------|---------------|-----------------------------------
+[ARMOR](https://github.com/csoneson/ARMOR) | **Stephany Orjuela**<br>**Ruizhu Huang**<br>**Katharina Hembach**<br>**Mark D Robinson**<br>**Charlotte Soneson** |  Snakemake workflow to perform an end-to-end RNA-seq analysis.
+[ARPEGGIO](https://github.com/supermaxiste/ARPEGGIO) | **Stefan Milosavljevic**<br>Tony Kuo<br>Samuele Decarli<br>Lucas Mohn<br>Jun Sese<br>Kentaro K. Shimizu<br>Rie Shimizu-Inatsugi<br>**Mark D Robinson** |  SnakeMake workflow to analyse whole genome bisulfite sequencing data from allopolyploids.
+[gapless](https://github.com/schmeing/gapless) | **Stephan Schmeing** | Combined scaffolding, gap-closing and assembly correction with long reads.
+[ReSeq](https://github.com/schmeing/ReSeq) | **Stephan Schmeing** | More realistic simulator for genomic DNA sequences from Illumina machines that achieves a similar k-mer spectrum as the original sequences.
 
 ---
 
@@ -124,8 +134,6 @@ Name      | Author(s)     | Description
 Name      | Author(s)     | Description
 ----------|---------------|-----------------------------------
 [ABCD-DNA Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/ABCD-DNA/) | **Mark D Robinson** |  Supplementary Page with Supplementary Data (semi-processed), R Code for all Figures and analyses ([Robinson et al., 2012](https://www.ncbi.nlm.nih.gov/pubmed/22879430)).
-[ARMOR](https://github.com/csoneson/ARMOR) | **Stephany Orjuela**<br>**Ruizhu Huang**<br>**Katharina Hembach**<br>**Mark D Robinson**<br>**Charlotte Soneson** |  Snakemake workflow to perform an end-to-end RNA-seq analysis.
-[ARPEGGIO](https://github.com/supermaxiste/ARPEGGIO) | **Stefan Milosavljevic**<br>Tony Kuo<br>Samuele Decarli<br>Lucas Mohn<br>Jun Sese<br>Kentaro K. Shimizu<br>Rie Shimizu-Inatsugi<br>**Mark D Robinson** |  SnakeMake workflow to analyse whole genome bisulfite sequencing data from allopolyploids. 
 [conquer (build scripts)](https://github.com/markrobinsonuzh/conquer) | **Charlotte Soneson**<br>**Mark D Robinson** |  Repository containing the code used to prepare the conquer (consistent quantification of external RNA-seq data sets) repository ([Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)).
 [conquer (differential expression evaluation)](https://github.com/csoneson/conquer_comparison) | **Charlotte Soneson** | Repository containing the code used to perform the evalutaion of differential expression analysis methods in single-cell RNA-seq data ([Soneson and Robinson, 2018](https://www.ncbi.nlm.nih.gov/pubmed/29481549)) [Supplementary Page](http://imlspenticton.uzh.ch/robinson_lab/conquer_de_comparison/)
 [CrispRVariants (shiny app code)](https://github.com/markrobinsonuzh/CrispRVariantsLite) | **Helen Lindsay** |  Repository containing the code underlying the CrispRVariantsLite Shiny-based web app ([Lindsay et al, 2016](https://www.ncbi.nlm.nih.gov/pubmed/27404876)).
