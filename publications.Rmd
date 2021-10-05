@@ -137,18 +137,22 @@ unlisted_publications <- data.frame(
 
 f1000_preprints <- data.frame(
   title = c("An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data",
-            "Doublet identification in single-cell sequencing data using scDblFinder"),
+            "Doublet identification in single-cell sequencing data using scDblFinder",
+            "pubassistant.ch: consolidating publication profiles of researchers"),
   pubdate = c("Posted October 22, 2020.",
-              "Posted September 28, 2021,"),
+              "Posted September 28, 2021.",
+              "Posted September 30, 2021."),
   pubyear = c("Preprints"),
   journal = c("F1000Research"),
   authors = c("Helena L. Crowell, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, Mark D. Robinson",
-              "Pierre-Luc Germain, Aaron Lun, Will Macnair, Mark D. Robinson"),
-  volume = c(9, 10),
-  issue = c(1263, 979),
+              "Pierre-Luc Germain, Aaron Lun, Will Macnair, Mark D. Robinson",
+              "Reto Gerber, Mark D. Robinson"),
+  volume = c(9, 10, 10),
+  issue = c(1263, 979, 989),
   pages = c(""),
   doi = c("10.12688/f1000research.26073.1",
-          "10.12688/f1000research.73600.1"),
+          "10.12688/f1000research.73600.1",
+          "10.12688/f1000research.73493.1"),
   pmid = c(""),
   elocationid = c("")
 )
