@@ -68,6 +68,8 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.12.11.420885", github = "https://github.com/almutlue/mixing_benchmark"),
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
+  c(doi = "10.12688/f1000research.73600.1", github = "https://github.com/plger/scDblFinder"),
+  c(doi = "10.12688/f1000research.73493.1", github = "https://github.com/markrobinsonuzh/os_monitor"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
 
@@ -108,12 +110,14 @@ pmid_software <- rbind(
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
-  #c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO"),
-  c(doi = "10.1101/2021.08.28.458012", github = "https://github.com/wmacnair/SampleQC"),
-  c(doi = "10.1101/2020.12.11.420885", github = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
-  c(doi = "10.1101/2021.01.27.428431", github = "https://bioconductor.org/packages/SpatialExperiment"),
-  c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct")
+  c(doi = "10.1101/2021.08.28.458012", software = "https://github.com/wmacnair/SampleQC"),
+  c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
+  c(doi = "10.1101/2021.01.27.428431", software = "https://bioconductor.org/packages/SpatialExperiment"),
+  c(doi = "10.12688/f1000research.73600.1", software = "https://bioconductor.org/packages/scDblFinder"),
+  c(doi = "10.12688/f1000research.73493.1", software = "http://pubassistant.ch/"),
+  c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
 )
+
 
 
 
