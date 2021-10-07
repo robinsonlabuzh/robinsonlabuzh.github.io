@@ -76,6 +76,23 @@ Images can be compressed using an image editor (i.e. Gimp) or in bulk (i.e. with
 
 Keep in mind that compression is a trade off between file size and quality, so make sure you have a saved copy of the original image as a lossless version. To encourage a separation of originals and thumbnails the repository has a folder [img](https://github.com/robinsonlabuzh/robinsonlabuzh.github.io/tree/master/img) for the former and a subfolder [thumbnail](https://github.com/robinsonlabuzh/robinsonlabuzh.github.io/tree/master/img/thumbnail) for the latter. Note that `Rmd` and `html` files should point to the thumbnails, not to the originals.
 
+### Running with Docker
+
+In case there are issues with missing dependencies a possibility is to render the site in a docker container. Run the following in a terminal (assuming [docker](https://docs.docker.com/engine/install/) is installed):
+```
+docker run --rm -w /home/rstudio/webpage -v "$(pwd):/home/rstudio/webpage" retogerber/rstudio_robinsonlab_webpage:latest R -e "Sys.setlocale(category = 'LC_ALL', locale = 'en_US.UTF-8');rmarkdown::render_site(encoding = 'UTF-8')"
+```
+
+
+To run Rstudio in a docker container with all the necessary dependencies installed, run:
+```
+docker run --rm -v "$(pwd):/home/rstudio/" -p 8787:8787 -e PASSWORD=my_passwd retogerber/rstudio_robinsonlab_webpage:latest 
+```
+Then open your favorite browser and go to `http://localhost:8787/`. Login with username=*rstudio* and password=*my_passwd*.
+
+
+
+
 ## Template examples
 
 Previous examples of this website template:
