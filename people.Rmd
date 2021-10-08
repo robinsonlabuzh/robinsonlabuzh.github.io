@@ -442,7 +442,7 @@ tables_all <- list(
   #tbl_will,
   tbl_imran,
   #tbl_lukas, 
-  tbl_kathi, 
+  #tbl_kathi, 
   tbl_stephan, 
   # tbl_fiona, 
   tbl_vladimir, 
@@ -451,14 +451,14 @@ tables_all <- list(
   tbl_helena,
   tbl_almut,
   tbl_anthony,
+  tbl_haolyu,
   tbl_reto,
   tbl_elyas,
   tbl_emanuel,
   tbl_joel,
-  tbl_ahmad,
+  #tbl_ahmad,
   tbl_dominique,
-  tbl_cpy,
-  tbl_haolyu
+  tbl_cpy
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
