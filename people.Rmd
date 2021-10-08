@@ -415,6 +415,17 @@ tbl_cpy <- data.frame(
                  "Then, ideally the framework could be extended to do the same things with cell types."
                   ), 
           paste0("BSc of Science in Statistics (2019), Xiamen University"))
+)
+
+tbl_haolyu <- data.frame(
+  img = "![](img/thumbnail/HaoLyu.png)", 
+  bio = c("Hao Lyu", 
+          paste0("<i class='fa fa-desktop'></i>[Website](https://scholar.google.com/citations?user=llaoggIAAAAJ&hl=en&oi=ao)<br>"),
+          paste0("I am a visiting PhD student with a background in bioinformatics",
+                 "Prior to joining Robinson lab, I worked on developing machine learning/deep learning tools for identifying DNA, RNA, and protein modification sites",
+                 "Currently, I am interested in developing computational pipeline to identify chromatin loops from single-cell Hi-C data."
+                 ),
+          paste0("MSc of Biophysics (2019), University of Electronic Science and Technology of China<br>","BSc of Bioinformatics (2017), Shanxi agricutural university<br>"))
   )
 ```
 
@@ -431,7 +442,7 @@ tables_all <- list(
   #tbl_will,
   tbl_imran,
   #tbl_lukas, 
-  tbl_kathi, 
+  #tbl_kathi, 
   tbl_stephan, 
   # tbl_fiona, 
   tbl_vladimir, 
@@ -440,13 +451,14 @@ tables_all <- list(
   tbl_helena,
   tbl_almut,
   tbl_anthony,
+  tbl_haolyu,
   tbl_reto,
   tbl_elyas,
   tbl_emanuel,
   tbl_joel,
-  tbl_ahmad,
+  #tbl_ahmad,
   tbl_dominique,
-  tbl_cpy#,
+  tbl_cpy
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
@@ -483,6 +495,8 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Ahmad Al Ajami (MSc student)
+- Kathi Hembach (PhD student; author of [DISCERNS](https://github.com/khembach/DISCERNS); co-author of [ARMOR](https://github.com/csoneson/ARMOR))
 - Stephany Orjuela (PhD student; author of [DAMEfinder](https://github.com/markrobinsonuzh/DAMEfinder); co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Scientific software developer at [Oncobit](https://oncobit.com/))
 - Will Macnair (Postdoc; author of [SampleQC](https://github.com/wmacnair/SampleQC/); now Data Scientist at [Hoffman La Roche](https://www.roche.ch/))
 - Ruizhu (Fiona) Huang (PhD student; author of [treeclimbR](https://github.com/fionarhuang/treeclimbR), [TreeSummarizeExperiment](https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html), co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Biostatistician at Cardio-CARE)
