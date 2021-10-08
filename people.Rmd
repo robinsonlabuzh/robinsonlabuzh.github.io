@@ -415,6 +415,17 @@ tbl_cpy <- data.frame(
                  "Then, ideally the framework could be extended to do the same things with cell types."
                   ), 
           paste0("BSc of Science in Statistics (2019), Xiamen University"))
+)
+
+tbl_haolyu <- data.frame(
+  img = "![](img/thumbnail/HaoLyu.png)", 
+  bio = c("Hao Lyu", 
+          paste0("<i class='fa fa-desktop'></i>[Website](https://scholar.google.com/citations?user=llaoggIAAAAJ&hl=en&oi=ao)<br>"),
+          paste0("I am a visiting PhD student with a background in bioinformatics",
+                 "Prior to joining Robinson lab, I worked on developing machine learning/deep learning tools for identifying DNA, RNA, and protein modification sites",
+                 "Currently, I am interested in developing computational pipeline to identify chromatin loops from single-cell Hi-C data."
+                 ),
+          paste0("MSc of Biophysics (2019), University of Electronic Science and Technology of China<br>","BSc of Bioinformatics (2017), Shanxi agricutural university<br>"))
   )
 ```
 
@@ -446,7 +457,8 @@ tables_all <- list(
   tbl_joel,
   tbl_ahmad,
   tbl_dominique,
-  tbl_cpy#,
+  tbl_cpy,
+  tbl_haolyu
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
