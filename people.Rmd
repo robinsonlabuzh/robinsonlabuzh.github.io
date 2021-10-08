@@ -495,6 +495,8 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Ahmad Al Ajami (MSc student)
+- Kathi Hembach (PhD student; author of [DISCERNS](https://github.com/khembach/DISCERNS); co-author of [ARMOR](https://github.com/csoneson/ARMOR))
 - Stephany Orjuela (PhD student; author of [DAMEfinder](https://github.com/markrobinsonuzh/DAMEfinder); co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Scientific software developer at [Oncobit](https://oncobit.com/))
 - Will Macnair (Postdoc; author of [SampleQC](https://github.com/wmacnair/SampleQC/); now Data Scientist at [Hoffman La Roche](https://www.roche.ch/))
 - Ruizhu (Fiona) Huang (PhD student; author of [treeclimbR](https://github.com/fionarhuang/treeclimbR), [TreeSummarizeExperiment](https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html), co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Biostatistician at Cardio-CARE)
