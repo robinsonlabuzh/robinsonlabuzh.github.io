@@ -354,17 +354,12 @@ tbl_elyas <- data.frame(
 
 tbl_emanuel <- data.frame(
   img = "![](img/thumbnail/emanuel.jpg)", 
-  bio = c("Emanuel Sonder",  
-          paste0("As a Master student in the Computational Biology and Bioinformatics joint program of ETH and UZH, ",
-                 "I am currently working on my master thesis. The project is about the integration of multi-omics ",
-                 "single-cell data to describe patterns of epigenetic heterogeneity, such as partially methylated ",
-                 "domains (PMDs) and their influence on gene expression. In previous projects I have worked on ",
-                 "different topics, amongst others, on a pan-cancer analysis of somatic mutations and DNA methylation
-                 alterations in the epigenetic machinery. ",
-                 "I have a broad interest in the integration and statistical analysis of (single cell) data from ",
-                 "different biological modalities."
-                  ), 
-          paste0("BSc in Biology (2018), ETH Zürich")
+  bio = c("Emanuel Sonder", 
+	        paste0("<i class='fa fa-twitter'></i> Twitter [\\@EmanuelSonder](https://twitter.com/EmanuelSonder)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [emsonder](https://github.com/emsonder)<br>"), 
+          paste0("After finishing my Master’s Thesis in the Robinson Group, I started a shared PhD position with the [Schratt lab](https://schrattlab.ethz.ch/the-group.html). I have a general interest in the analysis of epigenetic data (ATAC-seq, WGBS). My PhD project is focused on the reverse engineering of cell type-specific transcriptional networks by integrating different data modalities. The overarching goal is to provide insights in brain cell type specific responses to different stressors when compared with neuronal activity."),
+          paste0("MSc in Computational Biology and Bioinformatics (2021), ETH Zürich, University of Zürich<br>",
+                 "BSc in Biology (2018), ETH Zürich")
           )
   )
 
