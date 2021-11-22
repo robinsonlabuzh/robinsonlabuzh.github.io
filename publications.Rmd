@@ -28,7 +28,8 @@ biorxiv_dois <- c("10.1101/2021.08.28.458012",
                   "10.1101/2021.01.18.426963",
                   "10.1101/2020.11.24.394213",
                   "10.1101/2020.11.11.355693",
-                  "10.1101/2020.10.15.340596")
+                  "10.1101/2021.11.11.467877",
+                  "10.1101/2021.11.15.468676")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -68,6 +69,7 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.12.11.420885", github = "https://github.com/almutlue/mixing_benchmark"),
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
+  c(doi = "10.1101/2021.11.15.468676", github = "https://github.com/HelenaLC/simulation-comparison"),
   c(doi = "10.12688/f1000research.73600.1", github = "https://github.com/plger/scDblFinder"),
   c(doi = "10.12688/f1000research.73493.1", github = "https://github.com/markrobinsonuzh/os_monitor"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
@@ -83,6 +85,7 @@ pmid_data <- rbind(
 )
 biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
+  c(doi = "10.1101/2021.11.15.468676", data = "https://doi.org/10.5281/zenodo.5678872"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
@@ -164,14 +167,14 @@ f1000_preprints <- data.frame(
 
 ## names of members to highlight in publication list
 group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", 
-                   "Robinson M", "Mark Robinson",
-                   "Soneson C", "Charlotte Soneson",
+                   "Robinson M", "Mark Robinson", "Robinson, M. D.",
+                   "Soneson C", "Charlotte Soneson", "Soneson, C.",
                    "Lindsay H", "Helen Lindsay",
-                   "Tiberi S", "Simone Tiberi",
+                   "Tiberi S", "Simone Tiberi","Tiberi, S.",
                    "Germain P-L", "Germain PL", "Pierre-Luc Germain",
                    "Almut Luetge", "Luetge A", "Almut Lütge", "Lütge A",
                    "Joanna Zyprych-Walczak", "Zyprych-Walczak J",
-                   "Weber LM", "Lukas M Weber", "Lukas M. Weber", 
+                   "Weber LM", "Lukas M Weber", "Lukas M. Weber", "Weber, L. M.",
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", "Hembach KM",
                    "Katharina M. Hembach", "Yao Yao", "Yao Y",
                    "de Souza Vladimir", "Vladimir de Souza","Vladimir Barbosa C. de Souza",
@@ -179,7 +182,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Huang R", "Ruizhu Huang", 
                    "Schmeing S", "Stephan Schmeing", 
                    "Orjuela S", "Stephany Orjuela", 
-                   "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell", "Helena Crowell", "HelenaL Crowell",
+                   "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell", "Helena Crowell", "HelenaL Crowell", "Crowell, H. L.",
                    "Mallona I", "Izaskun Mallona",
                    "Reto Gerber","Gerber Reto","Gerber R",
                    "Manca P",
@@ -196,6 +199,8 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Riebler A",
                    "Biyong B",
                    "Matthes KL",
+                   "Will Macnair","Macnair, W.",
+                   "Leonardo, S. X. M",
                    "Milosavljevic S", "Stefan Milosavljevic")
 ```
 
@@ -208,6 +213,7 @@ suppressPackageStartupMessages({
   library(rvest)
   library(XML)
   library(aRxiv)
+  library(medrxivr)
 })
 ```
 
@@ -344,25 +350,41 @@ summ <- dplyr::left_join(summ, data.frame(pmid_software, stringsAsFactors = FALS
 
 ```{r}
 ## Add bioRxiv preprints by doi
+# took Charlotte's code here to fix the lockdown from parsing biorxiv directly
+# 
 biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
-  html <- read_html(paste0("https://doi.org/", doi))
-  title <- html_text(html_nodes(html, "#page-title"))
-  authors <- paste(unique(paste(html_text(html_nodes(html, ".nlm-given-names")), 
-                                html_text(html_nodes(html, ".nlm-surname")))),
-                   collapse = ", ")
-  # pubdate <- html_text(html_nodes(html, ".published_time"))
-  m <- html_nodes(html, "meta")
-  df <- data.frame(name=html_attr(m,"name"),
-             content=html_attr(m,"content"), 
-             stringsAsFactors = FALSE, row.names = NULL) %>%
-    filter(name=="DC.Date")
-  pubdate <- paste0("Posted ", format(as.Date(df$content), "%B %d, %Y."))
-
-  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
-             journal = "bioRxiv", authors = authors, volume = "", issue = "", 
-             pages = "", doi = doi, pmid = "", elocationid = "", 
+  brx <- medrxivr::mx_api_doi(doi, server = "biorxiv", clean = TRUE) %>%
+    dplyr::slice_max(node, n = 1)
+  data.frame(title = brx$title,
+             pubdate = paste0("Posted ", 
+                              format(lubridate::ymd(brx$date), 
+                                     "%B %d, %Y"), "."),
+             pubyear = "Preprints",
+             journal = "bioRxiv", 
+             authors = brx$authors, 
+             volume = "", issue = "", pages = "",
+             doi = doi, pmid = "", elocationid = "",
              stringsAsFactors = FALSE)
 }))
+# biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
+#   html <- read_html(paste0("https://doi.org/", doi))
+#   title <- html_text(html_nodes(html, "#page-title"))
+#   authors <- paste(unique(paste(html_text(html_nodes(html, ".nlm-given-names")), 
+#                                 html_text(html_nodes(html, ".nlm-surname")))),
+#                    collapse = ", ")
+#   # pubdate <- html_text(html_nodes(html, ".published_time"))
+#   m <- html_nodes(html, "meta")
+#   df <- data.frame(name=html_attr(m,"name"),
+#              content=html_attr(m,"content"), 
+#              stringsAsFactors = FALSE, row.names = NULL) %>%
+#     filter(name=="DC.Date")
+#   pubdate <- paste0("Posted ", format(as.Date(df$content), "%B %d, %Y."))
+# 
+#   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
+#              journal = "bioRxiv", authors = authors, volume = "", issue = "", 
+#              pages = "", doi = doi, pmid = "", elocationid = "", 
+#              stringsAsFactors = FALSE)
+# }))
 ```
 
 ```{r}
