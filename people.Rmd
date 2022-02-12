@@ -438,7 +438,7 @@ tables_all <- list(
   tbl_imran,
   #tbl_lukas, 
   #tbl_kathi, 
-  tbl_stephan, 
+  # tbl_stephan, 
   # tbl_fiona, 
   tbl_vladimir, 
   #tbl_stephany, 
