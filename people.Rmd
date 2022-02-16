@@ -214,7 +214,7 @@ tbl_vladimir <- data.frame(
           paste0("I am a PhD candidate in Bioinformatics, and I work with method development for long-read ",
                  "RNA-seq from PacBio data (Iso-Seq). I have developed a ",
                  "[pipeline](https://github.com/vladimirsouza/lrRNAseqVariantCalling) that allows variant ",
-                 "calling wiht high performance from Iso-Seq data. The preprint of this work is available ",
+                 "calling with high performance from Iso-Seq data. The preprint of this work is available ",
                  "in [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.02.08.479579v1)."),
           paste0("MSc in Applied Statistics (2015), University of Vicosa<br>",
                  "BSc in Biology (2013), University of Vicosa"))
@@ -490,6 +490,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Stephan Schmeing (PhD student; author of [ReSeq](https://github.com/schmeing/ReSeq))
 - Ahmad Al Ajami (MSc student)
 - Kathi Hembach (PhD student; author of [DISCERNS](https://github.com/khembach/DISCERNS); co-author of [ARMOR](https://github.com/csoneson/ARMOR))
 - Stephany Orjuela (PhD student; author of [DAMEfinder](https://github.com/markrobinsonuzh/DAMEfinder); co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Scientific software developer at [Oncobit](https://oncobit.com/))
