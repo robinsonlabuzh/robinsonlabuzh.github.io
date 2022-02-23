@@ -363,6 +363,16 @@ tbl_emanuel <- data.frame(
           )
   )
 
+tbl_vlad <- data.frame(
+   img = "![](img/thumbnail/vlad.png)",
+   bio = c("Vladyslav Korobeynyk",
+            "<i class='fa fa-github'></i> GitHub [vkorobeynyk](https://github.com/vkorobeynyk)<br>",
+           paste0("I did my master thesis in single cell analysis of the adult mouse hippocampus in Jessberger Lab, HIFO, UZH. Shortly after, I sta    rted working as an intern in Systems Biology group at Roche, where I gained experience in ML and different type of sequencing technologies. Curren    tly I am doing a shared PhD with Jessberger Lab, where my project is based on using single-cell and spatial transcriptomics data to identify molec    ular changes, mainly in the neurogenic niche, that drive neurogenesis to decline with age. "),
+           paste0("MSc in Biochemistry (2021), University of Zurich<br>",
+                  "BSc in Biochemistry (2017), University Nova of Lisbon")
+           )
+   )
+
 tbl_joel <- data.frame(
   img = "![](img/thumbnail/joel.jpg)",
   bio = c("Joël Meili",
@@ -450,6 +460,7 @@ tables_all <- list(
   tbl_reto,
   tbl_elyas,
   tbl_emanuel,
+  tbl_vlad,
   tbl_joel,
   #tbl_ahmad,
   tbl_dominique,
