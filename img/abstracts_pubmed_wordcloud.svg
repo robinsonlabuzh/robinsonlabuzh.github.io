@@ -9,6 +9,9 @@
       stroke-linejoin: round;
       stroke-miterlimit: 10.00;
     }
+    .svglite text {
+      white-space: pre;
+    }
   ]]></style>
 </defs>
 <rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
@@ -18,205 +21,205 @@
   </clipPath>
 </defs>
 <g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
-<text x='360.00' y='304.83' text-anchor='middle' style='font-size: 48.00px; fill: #666666; font-family: Arial;' textLength='93.43px' lengthAdjust='spacingAndGlyphs'>data</text>
-<text x='336.36' y='329.41' text-anchor='middle' style='font-size: 39.23px; fill: #A6761D; font-family: Arial;' textLength='87.24px' lengthAdjust='spacingAndGlyphs'>gene</text>
-<text x='367.93' y='263.41' text-anchor='middle' style='font-size: 36.57px; fill: #E6AB02; font-family: Arial;' textLength='176.80px' lengthAdjust='spacingAndGlyphs'>expression</text>
-<text x='330.64' y='363.12' text-anchor='middle' style='font-size: 34.97px; fill: #E6AB02; font-family: Arial;' textLength='95.27px' lengthAdjust='spacingAndGlyphs'>genes</text>
-<text x='356.96' y='232.38' text-anchor='middle' style='font-size: 33.38px; fill: #E6AB02; font-family: Arial;' textLength='120.59px' lengthAdjust='spacingAndGlyphs'>analysis</text>
-<text x='406.81' y='361.09' text-anchor='middle' style='font-size: 30.19px; fill: #66A61E; font-family: Arial;' textLength='50.37px' lengthAdjust='spacingAndGlyphs'>dna</text>
-<text x='410.44' y='336.35' text-anchor='middle' style='font-size: 27.27px; fill: #66A61E; font-family: Arial;' textLength='54.53px' lengthAdjust='spacingAndGlyphs'>cells</text>
-<text x='394.00' y='204.75' text-anchor='middle' style='font-size: 27.27px; fill: #66A61E; font-family: Arial;' textLength='139.42px' lengthAdjust='spacingAndGlyphs'>methylation</text>
-<text transform='translate(278.45,307.75) rotate(-90)' text-anchor='middle' style='font-size: 25.14px; fill: #E7298A; font-family: Arial;' textLength='60.07px' lengthAdjust='spacingAndGlyphs'>using</text>
-<text x='446.48' y='309.25' text-anchor='middle' style='font-size: 24.08px; fill: #E7298A; font-family: Arial;' textLength='36.10px' lengthAdjust='spacingAndGlyphs'>cell</text>
-<text transform='translate(277.71,209.92) rotate(-90)' text-anchor='middle' style='font-size: 24.08px; fill: #E7298A; font-family: Arial;' textLength='92.30px' lengthAdjust='spacingAndGlyphs'>methods</text>
-<text x='451.32' y='286.16' text-anchor='middle' style='font-size: 23.81px; fill: #E7298A; font-family: Arial;' textLength='71.43px' lengthAdjust='spacingAndGlyphs'>cancer</text>
-<text transform='translate(395.34,388.21) rotate(-90)' text-anchor='middle' style='font-size: 23.28px; fill: #E7298A; font-family: Arial;' textLength='37.51px' lengthAdjust='spacingAndGlyphs'>can</text>
-<text x='326.70' y='392.06' text-anchor='middle' style='font-size: 23.28px; fill: #E7298A; font-family: Arial;' textLength='107.34px' lengthAdjust='spacingAndGlyphs'>differential</text>
-<text x='358.45' y='182.35' text-anchor='middle' style='font-size: 20.62px; fill: #7570B3; font-family: Arial;' textLength='105.42px' lengthAdjust='spacingAndGlyphs'>sequencing</text>
-<text x='435.10' y='377.08' text-anchor='middle' style='font-size: 19.29px; fill: #7570B3; font-family: Arial;' textLength='63.23px' lengthAdjust='spacingAndGlyphs'>regions</text>
-<text x='330.88' y='405.98' text-anchor='middle' style='font-size: 18.23px; fill: #7570B3; font-family: Arial;' textLength='83.04px' lengthAdjust='spacingAndGlyphs'>epigenetic</text>
-<text x='471.16' y='336.33' text-anchor='middle' style='font-size: 17.96px; fill: #7570B3; font-family: Arial;' textLength='64.89px' lengthAdjust='spacingAndGlyphs'>genome</text>
-<text transform='translate(310.02,283.54) rotate(-90)' text-anchor='middle' style='font-size: 17.70px; fill: #7570B3; font-family: Arial;' textLength='25.56px' lengthAdjust='spacingAndGlyphs'>rna</text>
-<text x='447.91' y='235.54' text-anchor='middle' style='font-size: 17.70px; fill: #7570B3; font-family: Arial;' textLength='41.28px' lengthAdjust='spacingAndGlyphs'>show</text>
-<text transform='translate(254.66,233.15) rotate(-90)' text-anchor='middle' style='font-size: 17.16px; fill: #7570B3; font-family: Arial;' textLength='52.45px' lengthAdjust='spacingAndGlyphs'>protein</text>
-<text x='303.92' y='198.48' text-anchor='middle' style='font-size: 17.16px; fill: #7570B3; font-family: Arial;' textLength='37.20px' lengthAdjust='spacingAndGlyphs'>used</text>
-<text x='452.65' y='356.05' text-anchor='middle' style='font-size: 16.63px; fill: #7570B3; font-family: Arial;' textLength='30.50px' lengthAdjust='spacingAndGlyphs'>new</text>
-<text x='430.57' y='399.11' text-anchor='middle' style='font-size: 16.37px; fill: #D95F02; font-family: Arial;' textLength='64.58px' lengthAdjust='spacingAndGlyphs'>analyses</text>
-<text x='481.79' y='266.58' text-anchor='middle' style='font-size: 16.37px; fill: #D95F02; font-family: Arial;' textLength='50.03px' lengthAdjust='spacingAndGlyphs'>human</text>
-<text transform='translate(255.13,293.23) rotate(-90)' text-anchor='middle' style='font-size: 16.37px; fill: #D95F02; font-family: Arial;' textLength='64.59px' lengthAdjust='spacingAndGlyphs'>including</text>
-<text transform='translate(242.03,226.78) rotate(-90)' text-anchor='middle' style='font-size: 16.10px; fill: #D95F02; font-family: Arial;' textLength='76.95px' lengthAdjust='spacingAndGlyphs'>associated</text>
-<text x='383.56' y='167.98' text-anchor='middle' style='font-size: 15.84px; fill: #D95F02; font-family: Arial;' textLength='43.14px' lengthAdjust='spacingAndGlyphs'>based</text>
-<text x='248.33' y='351.98' text-anchor='middle' style='font-size: 15.57px; fill: #D95F02; font-family: Arial;' textLength='62.29px' lengthAdjust='spacingAndGlyphs'>identified</text>
-<text x='333.64' y='421.13' text-anchor='middle' style='font-size: 15.57px; fill: #D95F02; font-family: Arial;' textLength='38.06px' lengthAdjust='spacingAndGlyphs'>many</text>
-<text transform='translate(228.49,258.25) rotate(-90)' text-anchor='middle' style='font-size: 15.30px; fill: #D95F02; font-family: Arial;' textLength='52.73px' lengthAdjust='spacingAndGlyphs'>disease</text>
-<text x='330.89' y='165.30' text-anchor='middle' style='font-size: 15.30px; fill: #D95F02; font-family: Arial;' textLength='36.56px' lengthAdjust='spacingAndGlyphs'>study</text>
-<text transform='translate(262.48,380.95) rotate(-90)' text-anchor='middle' style='font-size: 15.04px; fill: #D95F02; font-family: Arial;' textLength='53.47px' lengthAdjust='spacingAndGlyphs'>proteins</text>
-<text x='464.43' y='221.88' text-anchor='middle' style='font-size: 15.04px; fill: #D95F02; font-family: Arial;' textLength='44.27px' lengthAdjust='spacingAndGlyphs'>results</text>
-<text x='232.24' y='340.49' text-anchor='middle' style='font-size: 14.77px; fill: #D95F02; font-family: Arial;' textLength='55.82px' lengthAdjust='spacingAndGlyphs'>however</text>
-<text x='400.99' y='430.11' text-anchor='middle' style='font-size: 14.77px; fill: #D95F02; font-family: Arial;' textLength='80.45px' lengthAdjust='spacingAndGlyphs'>transcription</text>
-<text x='406.20' y='316.45' text-anchor='middle' style='font-size: 14.51px; fill: #D95F02; font-family: Arial;' textLength='26.60px' lengthAdjust='spacingAndGlyphs'>also</text>
-<text x='472.04' y='322.60' text-anchor='middle' style='font-size: 14.51px; fill: #D95F02; font-family: Arial;' textLength='57.23px' lengthAdjust='spacingAndGlyphs'>available</text>
-<text x='415.59' y='417.46' text-anchor='middle' style='font-size: 14.51px; fill: #D95F02; font-family: Arial;' textLength='49.17px' lengthAdjust='spacingAndGlyphs'>number</text>
-<text transform='translate(301.41,139.69) rotate(-90)' text-anchor='middle' style='font-size: 14.51px; fill: #D95F02; font-family: Arial;' textLength='90.27px' lengthAdjust='spacingAndGlyphs'>transcriptional</text>
-<text x='503.65' y='299.74' text-anchor='middle' style='font-size: 14.24px; fill: #D95F02; font-family: Arial;' textLength='49.87px' lengthAdjust='spacingAndGlyphs'>patients</text>
-<text x='496.16' y='241.34' text-anchor='middle' style='font-size: 14.24px; fill: #D95F02; font-family: Arial;' textLength='53.02px' lengthAdjust='spacingAndGlyphs'>samples</text>
-<text x='230.72' y='299.27' text-anchor='middle' style='font-size: 14.24px; fill: #D95F02; font-family: Arial;' textLength='22.15px' lengthAdjust='spacingAndGlyphs'>two</text>
-<text x='452.32' y='175.09' text-anchor='middle' style='font-size: 13.97px; fill: #D95F02; font-family: Arial;' textLength='52.80px' lengthAdjust='spacingAndGlyphs'>genomic</text>
-<text x='378.93' y='152.78' text-anchor='middle' style='font-size: 13.71px; fill: #D95F02; font-family: Arial;' textLength='40.36px' lengthAdjust='spacingAndGlyphs'>across</text>
-<text x='216.00' y='321.56' text-anchor='middle' style='font-size: 13.71px; fill: #D95F02; font-family: Arial;' textLength='45.69px' lengthAdjust='spacingAndGlyphs'>method</text>
-<text x='334.50' y='146.44' text-anchor='middle' style='font-size: 13.71px; fill: #D95F02; font-family: Arial;' textLength='44.17px' lengthAdjust='spacingAndGlyphs'>several</text>
-<text transform='translate(291.38,220.14) rotate(-90)' text-anchor='middle' style='font-size: 13.44px; fill: #D95F02; font-family: Arial;' textLength='21.66px' lengthAdjust='spacingAndGlyphs'>cpg</text>
-<text x='499.70' y='351.17' text-anchor='middle' style='font-size: 13.44px; fill: #D95F02; font-family: Arial;' textLength='62.00px' lengthAdjust='spacingAndGlyphs'>expressed</text>
-<text x='214.71' y='362.69' text-anchor='middle' style='font-size: 13.44px; fill: #D95F02; font-family: Arial;' textLength='68.73px' lengthAdjust='spacingAndGlyphs'>interactions</text>
-<text x='291.09' y='421.90' text-anchor='middle' style='font-size: 13.44px; fill: #D95F02; font-family: Arial;' textLength='36.60px' lengthAdjust='spacingAndGlyphs'>model</text>
-<text transform='translate(481.17,381.15) rotate(-90)' text-anchor='middle' style='font-size: 13.44px; fill: #D95F02; font-family: Arial;' textLength='41.09px' lengthAdjust='spacingAndGlyphs'>rnaseq</text>
-<text x='269.86' y='273.49' text-anchor='middle' style='font-size: 13.44px; fill: #D95F02; font-family: Arial;' textLength='17.93px' lengthAdjust='spacingAndGlyphs'>set</text>
-<text x='304.22' y='435.40' text-anchor='middle' style='font-size: 13.44px; fill: #D95F02; font-family: Arial;' textLength='44.82px' lengthAdjust='spacingAndGlyphs'>splicing</text>
-<text transform='translate(212.81,223.42) rotate(-90)' text-anchor='middle' style='font-size: 13.18px; fill: #D95F02; font-family: Arial;' textLength='75.40px' lengthAdjust='spacingAndGlyphs'>development</text>
-<text transform='translate(292.46,308.71) rotate(-90)' text-anchor='middle' style='font-size: 13.18px; fill: #D95F02; font-family: Arial;' textLength='47.57px' lengthAdjust='spacingAndGlyphs'>different</text>
-<text x='505.50' y='253.57' text-anchor='middle' style='font-size: 13.18px; fill: #D95F02; font-family: Arial;' textLength='56.36px' lengthAdjust='spacingAndGlyphs'>functional</text>
-<text x='365.64' y='446.47' text-anchor='middle' style='font-size: 12.91px; fill: #D95F02; font-family: Arial;' textLength='54.52px' lengthAdjust='spacingAndGlyphs'>activation</text>
-<text transform='translate(255.76,177.67) rotate(-90)' text-anchor='middle' style='font-size: 12.91px; fill: #D95F02; font-family: Arial;' textLength='53.82px' lengthAdjust='spacingAndGlyphs'>approach</text>
-<text x='492.86' y='196.83' text-anchor='middle' style='font-size: 12.91px; fill: #D95F02; font-family: Arial;' textLength='48.79px' lengthAdjust='spacingAndGlyphs'>changes</text>
-<text x='434.04' y='161.53' text-anchor='middle' style='font-size: 12.91px; fill: #D95F02; font-family: Arial;' textLength='48.05px' lengthAdjust='spacingAndGlyphs'>complex</text>
-<text x='463.25' y='412.56' text-anchor='middle' style='font-size: 12.91px; fill: #D95F02; font-family: Arial;' textLength='38.73px' lengthAdjust='spacingAndGlyphs'>factors</text>
-<text x='505.38' y='285.07' text-anchor='middle' style='font-size: 12.91px; fill: #D95F02; font-family: Arial;' textLength='32.99px' lengthAdjust='spacingAndGlyphs'>levels</text>
-<text x='225.33' y='375.22' text-anchor='middle' style='font-size: 12.91px; fill: #D95F02; font-family: Arial;' textLength='48.79px' lengthAdjust='spacingAndGlyphs'>package</text>
-<text x='395.54' y='140.57' text-anchor='middle' style='font-size: 12.91px; fill: #D95F02; font-family: Arial;' textLength='72.45px' lengthAdjust='spacingAndGlyphs'>performance</text>
-<text transform='translate(245.19,399.42) rotate(-90)' text-anchor='middle' style='font-size: 12.91px; fill: #D95F02; font-family: Arial;' textLength='43.05px' lengthAdjust='spacingAndGlyphs'>present</text>
-<text x='207.01' y='299.40' text-anchor='middle' style='font-size: 12.65px; fill: #D95F02; font-family: Arial;' textLength='23.89px' lengthAdjust='spacingAndGlyphs'>high</text>
-<text x='509.07' y='365.09' text-anchor='middle' style='font-size: 12.65px; fill: #D95F02; font-family: Arial;' textLength='43.55px' lengthAdjust='spacingAndGlyphs'>multiple</text>
-<text transform='translate(225.90,188.90) rotate(-90)' text-anchor='middle' style='font-size: 12.65px; fill: #D95F02; font-family: Arial;' textLength='51.98px' lengthAdjust='spacingAndGlyphs'>transcript</text>
-<text transform='translate(198.47,229.02) rotate(-90)' text-anchor='middle' style='font-size: 12.38px; fill: #D95F02; font-family: Arial;' textLength='51.60px' lengthAdjust='spacingAndGlyphs'>biological</text>
-<text x='333.34' y='133.33' text-anchor='middle' style='font-size: 12.38px; fill: #D95F02; font-family: Arial;' textLength='30.97px' lengthAdjust='spacingAndGlyphs'>found</text>
-<text x='521.03' y='321.30' text-anchor='middle' style='font-size: 12.38px; fill: #D95F02; font-family: Arial;' textLength='39.22px' lengthAdjust='spacingAndGlyphs'>identify</text>
-<text transform='translate(538.96,279.17) rotate(-90)' text-anchor='middle' style='font-size: 12.38px; fill: #D95F02; font-family: Arial;' textLength='50.90px' lengthAdjust='spacingAndGlyphs'>observed</text>
-<text transform='translate(331.52,450.02) rotate(-90)' text-anchor='middle' style='font-size: 12.38px; fill: #D95F02; font-family: Arial;' textLength='20.65px' lengthAdjust='spacingAndGlyphs'>one</text>
-<text transform='translate(289.71,157.60) rotate(-90)' text-anchor='middle' style='font-size: 12.38px; fill: #D95F02; font-family: Arial;' textLength='39.21px' lengthAdjust='spacingAndGlyphs'>studies</text>
-<text x='493.60' y='207.83' text-anchor='middle' style='font-size: 12.38px; fill: #D95F02; font-family: Arial;' textLength='57.07px' lengthAdjust='spacingAndGlyphs'>transcripts</text>
-<text x='353.42' y='458.09' text-anchor='middle' style='font-size: 12.11px; fill: #D95F02; font-family: Arial;' textLength='39.04px' lengthAdjust='spacingAndGlyphs'>genetic</text>
-<text x='501.39' y='227.88' text-anchor='middle' style='font-size: 12.11px; fill: #D95F02; font-family: Arial;' textLength='24.90px' lengthAdjust='spacingAndGlyphs'>sites</text>
-<text x='415.26' y='128.38' text-anchor='middle' style='font-size: 12.11px; fill: #D95F02; font-family: Arial;' textLength='40.38px' lengthAdjust='spacingAndGlyphs'>specific</text>
-<text transform='translate(451.18,428.89) rotate(-90)' text-anchor='middle' style='font-size: 12.11px; fill: #D95F02; font-family: Arial;' textLength='30.96px' lengthAdjust='spacingAndGlyphs'>within</text>
-<text x='189.21' y='281.73' text-anchor='middle' style='font-size: 11.85px; fill: #D95F02; font-family: Arial;' textLength='52.67px' lengthAdjust='spacingAndGlyphs'>compared</text>
-<text transform='translate(408.00,453.32) rotate(-90)' text-anchor='middle' style='font-size: 11.85px; fill: #D95F02; font-family: Arial;' textLength='35.55px' lengthAdjust='spacingAndGlyphs'>control</text>
-<text transform='translate(233.43,395.00) rotate(-90)' text-anchor='middle' style='font-size: 11.85px; fill: #D95F02; font-family: Arial;' textLength='34.24px' lengthAdjust='spacingAndGlyphs'>known</text>
-<text x='220.81' y='310.04' text-anchor='middle' style='font-size: 11.85px; fill: #D95F02; font-family: Arial;' textLength='28.29px' lengthAdjust='spacingAndGlyphs'>mass</text>
-<text transform='translate(275.25,128.46) rotate(-90)' text-anchor='middle' style='font-size: 11.85px; fill: #D95F02; font-family: Arial;' textLength='57.93px' lengthAdjust='spacingAndGlyphs'>methylated</text>
-<text x='368.70' y='126.84' text-anchor='middle' style='font-size: 11.85px; fill: #D95F02; font-family: Arial;' textLength='36.20px' lengthAdjust='spacingAndGlyphs'>normal</text>
-<text x='247.92' y='429.08' text-anchor='middle' style='font-size: 11.85px; fill: #D95F02; font-family: Arial;' textLength='44.78px' lengthAdjust='spacingAndGlyphs'>potential</text>
-<text x='353.32' y='114.80' text-anchor='middle' style='font-size: 11.85px; fill: #D95F02; font-family: Arial;' textLength='48.72px' lengthAdjust='spacingAndGlyphs'>response</text>
-<text x='283.66' y='451.15' text-anchor='middle' style='font-size: 11.85px; fill: #D95F02; font-family: Arial;' textLength='40.15px' lengthAdjust='spacingAndGlyphs'>species</text>
-<text transform='translate(493.52,409.63) rotate(-90)' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='50.18px' lengthAdjust='spacingAndGlyphs'>cytometry</text>
-<text transform='translate(312.27,118.32) rotate(-90)' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='43.76px' lengthAdjust='spacingAndGlyphs'>datasets</text>
-<text transform='translate(242.47,169.56) rotate(-90)' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='34.11px' lengthAdjust='spacingAndGlyphs'>effects</text>
-<text x='514.25' y='377.13' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='40.54px' lengthAdjust='spacingAndGlyphs'>function</text>
-<text x='285.06' y='467.48' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='65.64px' lengthAdjust='spacingAndGlyphs'>genomewide</text>
-<text x='350.48' y='473.14' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='30.24px' lengthAdjust='spacingAndGlyphs'>highly</text>
-<text transform='translate(188.38,299.32) rotate(-90)' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='25.74px' lengthAdjust='spacingAndGlyphs'>large</text>
-<text x='447.66' y='150.14' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='27.67px' lengthAdjust='spacingAndGlyphs'>novel</text>
-<text x='440.56' y='456.13' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='43.75px' lengthAdjust='spacingAndGlyphs'>provides</text>
-<text x='532.49' y='332.42' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='49.55px' lengthAdjust='spacingAndGlyphs'>published</text>
-<text x='255.97' y='439.91' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='47.61px' lengthAdjust='spacingAndGlyphs'>statistical</text>
-<text x='423.94' y='185.88' text-anchor='middle' style='font-size: 11.58px; fill: #D95F02; font-family: Arial;' textLength='19.94px' lengthAdjust='spacingAndGlyphs'>well</text>
-<text transform='translate(550.49,288.37) rotate(-90)' text-anchor='middle' style='font-size: 11.32px; fill: #D95F02; font-family: Arial;' textLength='60.38px' lengthAdjust='spacingAndGlyphs'>differentially</text>
-<text x='307.32' y='208.31' text-anchor='middle' style='font-size: 11.32px; fill: #D95F02; font-family: Arial;' textLength='18.23px' lengthAdjust='spacingAndGlyphs'>first</text>
-<text x='511.52' y='218.25' text-anchor='middle' style='font-size: 11.32px; fill: #D95F02; font-family: Arial;' textLength='40.24px' lengthAdjust='spacingAndGlyphs'>immune</text>
-<text transform='translate(185.59,244.12) rotate(-90)' text-anchor='middle' style='font-size: 11.32px; fill: #D95F02; font-family: Arial;' textLength='49.08px' lengthAdjust='spacingAndGlyphs'>sequence</text>
-<text x='186.10' y='338.23' text-anchor='middle' style='font-size: 11.32px; fill: #D95F02; font-family: Arial;' textLength='23.90px' lengthAdjust='spacingAndGlyphs'>tools</text>
-<text x='202.97' y='388.46' text-anchor='middle' style='font-size: 11.32px; fill: #D95F02; font-family: Arial;' textLength='27.05px' lengthAdjust='spacingAndGlyphs'>yeast</text>
-<text x='472.50' y='186.00' text-anchor='middle' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='54.66px' lengthAdjust='spacingAndGlyphs'>abundance</text>
-<text x='363.24' y='482.98' text-anchor='middle' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='47.27px' lengthAdjust='spacingAndGlyphs'>clustering</text>
-<text x='491.46' y='153.45' text-anchor='middle' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='50.97px' lengthAdjust='spacingAndGlyphs'>developed</text>
-<text transform='translate(173.15,241.59) rotate(-90)' text-anchor='middle' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='46.65px' lengthAdjust='spacingAndGlyphs'>discovery</text>
-<text x='499.47' y='311.97' text-anchor='middle' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='27.62px' lengthAdjust='spacingAndGlyphs'>factor</text>
-<text transform='translate(394.57,475.04) rotate(-90)' text-anchor='middle' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='46.04px' lengthAdjust='spacingAndGlyphs'>important</text>
-<text x='416.22' y='299.34' text-anchor='middle' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='17.19px' lengthAdjust='spacingAndGlyphs'>key</text>
-<text x='362.38' y='418.32' text-anchor='middle' style='font-size: 11.05px; fill: #1B9E77; font-family: Arial;' textLength='18.42px' lengthAdjust='spacingAndGlyphs'>role</text>
-<text x='506.55' y='176.04' text-anchor='middle' style='font-size: 10.78px; fill: #1B9E77; font-family: Arial;' textLength='43.77px' lengthAdjust='spacingAndGlyphs'>detection</text>
-<text transform='translate(224.38,414.82) rotate(-90)' text-anchor='middle' style='font-size: 10.78px; fill: #1B9E77; font-family: Arial;' textLength='42.57px' lengthAdjust='spacingAndGlyphs'>essential</text>
-<text transform='translate(170.08,324.45) rotate(-90)' text-anchor='middle' style='font-size: 10.78px; fill: #1B9E77; font-family: Arial;' textLength='61.74px' lengthAdjust='spacingAndGlyphs'>experimental</text>
-<text transform='translate(278.09,363.45) rotate(-90)' text-anchor='middle' style='font-size: 10.78px; fill: #1B9E77; font-family: Arial;' textLength='22.18px' lengthAdjust='spacingAndGlyphs'>level</text>
-<text x='471.02' y='444.07' text-anchor='middle' style='font-size: 10.78px; fill: #1B9E77; font-family: Arial;' textLength='35.37px' lengthAdjust='spacingAndGlyphs'>provide</text>
-<text x='394.34' y='114.43' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='32.13px' lengthAdjust='spacingAndGlyphs'>activity</text>
-<text x='462.62' y='137.70' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='48.50px' lengthAdjust='spacingAndGlyphs'>alternative</text>
-<text transform='translate(510.96,423.21) rotate(-90)' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='51.42px' lengthAdjust='spacingAndGlyphs'>differences</text>
-<text x='437.67' y='115.34' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='54.34px' lengthAdjust='spacingAndGlyphs'>mammalian</text>
-<text x='321.98' y='154.23' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='31.54px' lengthAdjust='spacingAndGlyphs'>mirnas</text>
-<text x='239.63' y='145.85' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='47.91px' lengthAdjust='spacingAndGlyphs'>processes</text>
-<text x='539.21' y='228.36' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='46.17px' lengthAdjust='spacingAndGlyphs'>regulation</text>
-<text transform='translate(416.05,468.70) rotate(-90)' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='27.46px' lengthAdjust='spacingAndGlyphs'>single</text>
-<text x='422.20' y='103.77' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='59.03px' lengthAdjust='spacingAndGlyphs'>technologies</text>
-<text x='466.55' y='434.58' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='19.86px' lengthAdjust='spacingAndGlyphs'>time</text>
-<text x='197.30' y='349.66' text-anchor='middle' style='font-size: 10.52px; fill: #1B9E77; font-family: Arial;' textLength='25.13px' lengthAdjust='spacingAndGlyphs'>types</text>
-<text x='518.23' y='388.82' text-anchor='middle' style='font-size: 10.25px; fill: #1B9E77; font-family: Arial;' textLength='23.36px' lengthAdjust='spacingAndGlyphs'>array</text>
-<text x='359.53' y='103.43' text-anchor='middle' style='font-size: 10.25px; fill: #1B9E77; font-family: Arial;' textLength='39.31px' lengthAdjust='spacingAndGlyphs'>embryos</text>
-<text x='533.92' y='241.20' text-anchor='middle' style='font-size: 10.25px; fill: #1B9E77; font-family: Arial;' textLength='22.23px' lengthAdjust='spacingAndGlyphs'>peak</text>
-<text x='409.89' y='93.50' text-anchor='middle' style='font-size: 10.25px; fill: #1B9E77; font-family: Arial;' textLength='46.15px' lengthAdjust='spacingAndGlyphs'>previously</text>
-<text x='500.48' y='164.98' text-anchor='middle' style='font-size: 10.25px; fill: #1B9E77; font-family: Arial;' textLength='34.17px' lengthAdjust='spacingAndGlyphs'>primary</text>
-<text x='524.54' y='183.18' text-anchor='middle' style='font-size: 10.25px; fill: #1B9E77; font-family: Arial;' textLength='33.05px' lengthAdjust='spacingAndGlyphs'>sample</text>
-<text x='458.49' y='123.09' text-anchor='middle' style='font-size: 10.25px; fill: #1B9E77; font-family: Arial;' textLength='41.60px' lengthAdjust='spacingAndGlyphs'>scrnaseq</text>
-<text transform='translate(321.02,449.34) rotate(-90)' text-anchor='middle' style='font-size: 10.25px; fill: #1B9E77; font-family: Arial;' textLength='18.81px' lengthAdjust='spacingAndGlyphs'>sets</text>
-<text x='191.13' y='329.81' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='21.64px' lengthAdjust='spacingAndGlyphs'>adult</text>
-<text transform='translate(327.59,104.74) rotate(-90)' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='33.29px' lengthAdjust='spacingAndGlyphs'>authors</text>
-<text x='277.57' y='408.14' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='21.63px' lengthAdjust='spacingAndGlyphs'>cctra</text>
-<text x='355.88' y='94.19' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='43.83px' lengthAdjust='spacingAndGlyphs'>chromatin</text>
-<text x='241.77' y='130.30' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='42.72px' lengthAdjust='spacingAndGlyphs'>colorectal</text>
-<text transform='translate(543.61,361.13) rotate(-90)' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='38.28px' lengthAdjust='spacingAndGlyphs'>common</text>
-<text transform='translate(552.53,360.45) rotate(-90)' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='44.94px' lengthAdjust='spacingAndGlyphs'>conditions</text>
-<text x='465.33' y='424.37' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='18.86px' lengthAdjust='spacingAndGlyphs'>may</text>
-<text x='203.65' y='160.90' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='56.02px' lengthAdjust='spacingAndGlyphs'>mechanisms</text>
-<text transform='translate(188.51,184.52) rotate(-90)' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='24.96px' lengthAdjust='spacingAndGlyphs'>mirna</text>
-<text x='175.40' y='374.66' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='46.62px' lengthAdjust='spacingAndGlyphs'>phenotype</text>
-<text x='192.94' y='399.55' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='41.06px' lengthAdjust='spacingAndGlyphs'>predicted</text>
-<text transform='translate(159.32,238.11) rotate(-90)' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='46.05px' lengthAdjust='spacingAndGlyphs'>responses</text>
-<text transform='translate(559.80,284.56) rotate(-90)' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='41.05px' lengthAdjust='spacingAndGlyphs'>singlecell</text>
-<text x='240.79' y='454.67' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='39.38px' lengthAdjust='spacingAndGlyphs'>synthetic</text>
-<text transform='translate(327.37,479.66) rotate(-90)' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='30.51px' lengthAdjust='spacingAndGlyphs'>targets</text>
-<text transform='translate(428.37,477.52) rotate(-90)' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='31.06px' lengthAdjust='spacingAndGlyphs'>tissues</text>
-<text x='294.20' y='482.25' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='42.16px' lengthAdjust='spacingAndGlyphs'>treatment</text>
-<text x='262.35' y='418.62' text-anchor='middle' style='font-size: 9.99px; fill: #1B9E77; font-family: Arial;' textLength='18.86px' lengthAdjust='spacingAndGlyphs'>type</text>
-<text x='196.26' y='408.60' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='29.72px' lengthAdjust='spacingAndGlyphs'>among</text>
-<text x='363.10' y='501.88' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='45.41px' lengthAdjust='spacingAndGlyphs'>annotation</text>
-<text transform='translate(160.74,298.50) rotate(-90)' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='50.81px' lengthAdjust='spacingAndGlyphs'>approaches</text>
-<text x='450.61' y='481.38' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='31.36px' lengthAdjust='spacingAndGlyphs'>binding</text>
-<text x='228.45' y='139.20' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='54.04px' lengthAdjust='spacingAndGlyphs'>demonstrate</text>
-<text x='498.22' y='462.95' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='58.37px' lengthAdjust='spacingAndGlyphs'>differentiation</text>
-<text x='232.52' y='327.88' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='21.08px' lengthAdjust='spacingAndGlyphs'>exon</text>
-<text x='376.34' y='83.58' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='52.95px' lengthAdjust='spacingAndGlyphs'>experiments</text>
-<text transform='translate(523.85,413.66) rotate(-90)' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='29.18px' lengthAdjust='spacingAndGlyphs'>growth</text>
-<text x='580.37' y='243.24' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='64.87px' lengthAdjust='spacingAndGlyphs'>highthroughput</text>
-<text x='478.63' y='469.98' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='74.03px' lengthAdjust='spacingAndGlyphs'>hypermethylation</text>
-<text transform='translate(565.71,343.19) rotate(-90)' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='48.09px' lengthAdjust='spacingAndGlyphs'>information</text>
-<text x='304.41' y='303.42' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='14.59px' lengthAdjust='spacingAndGlyphs'>low</text>
-<text x='545.64' y='203.44' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='42.14px' lengthAdjust='spacingAndGlyphs'>molecular</text>
-<text x='278.73' y='489.67' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='44.87px' lengthAdjust='spacingAndGlyphs'>noncoding</text>
-<text transform='translate(570.16,297.39) rotate(-90)' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='37.83px' lengthAdjust='spacingAndGlyphs'>silencing</text>
-<text x='203.62' y='427.83' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='22.68px' lengthAdjust='spacingAndGlyphs'>small</text>
-<text transform='translate(497.89,128.47) rotate(-90)' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='24.85px' lengthAdjust='spacingAndGlyphs'>tumor</text>
-<text transform='translate(503.12,411.31) rotate(-90)' text-anchor='middle' style='font-size: 9.72px; fill: #1B9E77; font-family: Arial;' textLength='37.81px' lengthAdjust='spacingAndGlyphs'>workflow</text>
-<text x='343.37' y='433.29' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='26.25px' lengthAdjust='spacingAndGlyphs'>arrays</text>
-<text transform='translate(578.69,304.70) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='50.97px' lengthAdjust='spacingAndGlyphs'>combination</text>
-<text x='241.89' y='477.34' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='58.85px' lengthAdjust='spacingAndGlyphs'>computational</text>
-<text transform='translate(177.75,198.86) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='32.05px' lengthAdjust='spacingAndGlyphs'>existing</text>
-<text transform='translate(180.15,307.13) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='44.11px' lengthAdjust='spacingAndGlyphs'>framework</text>
-<text x='507.16' y='273.54' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='23.64px' lengthAdjust='spacingAndGlyphs'>major</text>
-<text transform='translate(426.84,231.62) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='13.13px' lengthAdjust='spacingAndGlyphs'>mir</text>
-<text transform='translate(284.59,125.76) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='21.54px' lengthAdjust='spacingAndGlyphs'>mrna</text>
-<text transform='translate(160.87,344.01) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='39.92px' lengthAdjust='spacingAndGlyphs'>reference</text>
-<text transform='translate(149.58,262.18) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='42.03px' lengthAdjust='spacingAndGlyphs'>regulatory</text>
-<text transform='translate(168.00,193.02) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='45.71px' lengthAdjust='spacingAndGlyphs'>sequences</text>
-<text transform='translate(201.12,174.80) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='27.31px' lengthAdjust='spacingAndGlyphs'>similar</text>
-<text x='322.56' y='85.05' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='35.72px' lengthAdjust='spacingAndGlyphs'>software</text>
-<text transform='translate(288.43,94.89) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='33.62px' lengthAdjust='spacingAndGlyphs'>strategy</text>
-<text x='169.31' y='383.44' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='32.03px' lengthAdjust='spacingAndGlyphs'>survival</text>
-<text x='534.88' y='192.44' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='29.93px' lengthAdjust='spacingAndGlyphs'>system</text>
-<text x='573.48' y='257.26' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='34.68px' lengthAdjust='spacingAndGlyphs'>targeted</text>
-<text x='376.16' y='74.50' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='36.78px' lengthAdjust='spacingAndGlyphs'>targeting</text>
-<text x='230.85' y='120.73' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='50.96px' lengthAdjust='spacingAndGlyphs'>temperature</text>
-<text x='430.64' y='316.87' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='21.54px' lengthAdjust='spacingAndGlyphs'>three</text>
-<text transform='translate(384.78,460.68) rotate(-90)' text-anchor='middle' style='font-size: 9.46px; fill: #1B9E77; font-family: Arial;' textLength='24.69px' lengthAdjust='spacingAndGlyphs'>tissue</text>
-<text transform='translate(540.70,414.99) rotate(-90)' text-anchor='middle' style='font-size: 9.19px; fill: #1B9E77; font-family: Arial;' textLength='44.45px' lengthAdjust='spacingAndGlyphs'>processing</text>
-<text x='471.46' y='163.13' text-anchor='middle' style='font-size: 9.19px; fill: #1B9E77; font-family: Arial;' textLength='23.51px' lengthAdjust='spacingAndGlyphs'>target</text>
+<text x='360.00' y='304.83' text-anchor='middle' style='font-size: 48.00px;fill: #666666; font-family: "Arial";' textLength='93.43px' lengthAdjust='spacingAndGlyphs'>data</text>
+<text transform='translate(380.43,225.96) rotate(-90)' text-anchor='middle' style='font-size: 39.02px;fill: #A6761D; font-family: "Arial";' textLength='86.80px' lengthAdjust='spacingAndGlyphs'>gene</text>
+<text x='339.00' y='330.67' text-anchor='middle' style='font-size: 36.38px;fill: #E6AB02; font-family: "Arial";' textLength='175.91px' lengthAdjust='spacingAndGlyphs'>expression</text>
+<text x='308.90' y='243.15' text-anchor='middle' style='font-size: 34.79px;fill: #E6AB02; font-family: "Arial";' textLength='94.77px' lengthAdjust='spacingAndGlyphs'>genes</text>
+<text x='329.32' y='359.77' text-anchor='middle' style='font-size: 33.21px;fill: #E6AB02; font-family: "Arial";' textLength='119.97px' lengthAdjust='spacingAndGlyphs'>analysis</text>
+<text x='424.18' y='264.64' text-anchor='middle' style='font-size: 30.04px;fill: #66A61E; font-family: "Arial";' textLength='50.11px' lengthAdjust='spacingAndGlyphs'>dna</text>
+<text transform='translate(410.35,369.37) rotate(-90)' text-anchor='middle' style='font-size: 28.72px;fill: #66A61E; font-family: "Arial";' textLength='57.42px' lengthAdjust='spacingAndGlyphs'>cells</text>
+<text transform='translate(450.82,337.78) rotate(-90)' text-anchor='middle' style='font-size: 27.13px;fill: #66A61E; font-family: "Arial";' textLength='138.71px' lengthAdjust='spacingAndGlyphs'>methylation</text>
+<text x='282.73' y='273.87' text-anchor='middle' style='font-size: 25.55px;fill: #E7298A; font-family: "Arial";' textLength='38.33px' lengthAdjust='spacingAndGlyphs'>cell</text>
+<text x='426.15' y='237.75' text-anchor='middle' style='font-size: 25.28px;fill: #E7298A; font-family: "Arial";' textLength='60.44px' lengthAdjust='spacingAndGlyphs'>using</text>
+<text x='320.39' y='207.00' text-anchor='middle' style='font-size: 24.49px;fill: #E7298A; font-family: "Arial";' textLength='73.48px' lengthAdjust='spacingAndGlyphs'>cancer</text>
+<text transform='translate(473.62,355.82) rotate(-90)' text-anchor='middle' style='font-size: 23.96px;fill: #E7298A; font-family: "Arial";' textLength='91.86px' lengthAdjust='spacingAndGlyphs'>methods</text>
+<text x='277.68' y='295.88' text-anchor='middle' style='font-size: 23.43px;fill: #E7298A; font-family: "Arial";' textLength='37.76px' lengthAdjust='spacingAndGlyphs'>can</text>
+<text transform='translate(485.55,253.77) rotate(-90)' text-anchor='middle' style='font-size: 23.17px;fill: #E7298A; font-family: "Arial";' textLength='106.87px' lengthAdjust='spacingAndGlyphs'>differential</text>
+<text x='292.51' y='385.76' text-anchor='middle' style='font-size: 20.79px;fill: #7570B3; font-family: "Arial";' textLength='106.29px' lengthAdjust='spacingAndGlyphs'>sequencing</text>
+<text x='422.78' y='216.91' text-anchor='middle' style='font-size: 19.21px;fill: #7570B3; font-family: "Arial";' textLength='62.98px' lengthAdjust='spacingAndGlyphs'>regions</text>
+<text x='333.82' y='404.93' text-anchor='middle' style='font-size: 18.15px;fill: #7570B3; font-family: "Arial";' textLength='82.70px' lengthAdjust='spacingAndGlyphs'>epigenetic</text>
+<text x='360.66' y='177.09' text-anchor='middle' style='font-size: 17.89px;fill: #7570B3; font-family: "Arial";' textLength='64.61px' lengthAdjust='spacingAndGlyphs'>genome</text>
+<text x='322.15' y='263.88' text-anchor='middle' style='font-size: 17.89px;fill: #7570B3; font-family: "Arial";' textLength='25.84px' lengthAdjust='spacingAndGlyphs'>rna</text>
+<text x='293.81' y='222.41' text-anchor='middle' style='font-size: 17.62px;fill: #7570B3; font-family: "Arial";' textLength='41.10px' lengthAdjust='spacingAndGlyphs'>show</text>
+<text transform='translate(258.41,254.41) rotate(-90)' text-anchor='middle' style='font-size: 17.36px;fill: #7570B3; font-family: "Arial";' textLength='53.04px' lengthAdjust='spacingAndGlyphs'>protein</text>
+<text x='366.81' y='378.25' text-anchor='middle' style='font-size: 17.36px;fill: #7570B3; font-family: "Arial";' textLength='37.61px' lengthAdjust='spacingAndGlyphs'>used</text>
+<text x='431.64' y='196.54' text-anchor='middle' style='font-size: 17.09px;fill: #7570B3; font-family: "Arial";' textLength='52.26px' lengthAdjust='spacingAndGlyphs'>human</text>
+<text x='309.05' y='178.84' text-anchor='middle' style='font-size: 16.57px;fill: #7570B3; font-family: "Arial";' textLength='30.38px' lengthAdjust='spacingAndGlyphs'>new</text>
+<text x='315.84' y='421.43' text-anchor='middle' style='font-size: 16.30px;fill: #D95F02; font-family: "Arial";' textLength='64.33px' lengthAdjust='spacingAndGlyphs'>analyses</text>
+<text x='441.89' y='181.06' text-anchor='middle' style='font-size: 16.30px;fill: #D95F02; font-family: "Arial";' textLength='64.34px' lengthAdjust='spacingAndGlyphs'>including</text>
+<text x='404.97' y='163.21' text-anchor='middle' style='font-size: 16.04px;fill: #D95F02; font-family: "Arial";' textLength='76.63px' lengthAdjust='spacingAndGlyphs'>associated</text>
+<text x='232.29' y='304.38' text-anchor='middle' style='font-size: 15.77px;fill: #D95F02; font-family: "Arial";' textLength='42.96px' lengthAdjust='spacingAndGlyphs'>based</text>
+<text transform='translate(424.54,381.22) rotate(-90)' text-anchor='middle' style='font-size: 15.51px;fill: #D95F02; font-family: "Arial";' textLength='62.03px' lengthAdjust='spacingAndGlyphs'>identified</text>
+<text x='345.51' y='157.16' text-anchor='middle' style='font-size: 15.51px;fill: #D95F02; font-family: "Arial";' textLength='37.89px' lengthAdjust='spacingAndGlyphs'>many</text>
+<text x='227.89' y='282.95' text-anchor='middle' style='font-size: 15.51px;fill: #D95F02; font-family: "Arial";' textLength='37.04px' lengthAdjust='spacingAndGlyphs'>study</text>
+<text x='255.59' y='201.90' text-anchor='middle' style='font-size: 15.25px;fill: #D95F02; font-family: "Arial";' textLength='52.52px' lengthAdjust='spacingAndGlyphs'>disease</text>
+<text transform='translate(388.20,407.21) rotate(-90)' text-anchor='middle' style='font-size: 15.25px;fill: #D95F02; font-family: "Arial";' textLength='44.88px' lengthAdjust='spacingAndGlyphs'>results</text>
+<text x='239.08' y='215.27' text-anchor='middle' style='font-size: 14.98px;fill: #D95F02; font-family: "Arial";' textLength='56.57px' lengthAdjust='spacingAndGlyphs'>however</text>
+<text x='294.17' y='162.92' text-anchor='middle' style='font-size: 14.98px;fill: #D95F02; font-family: "Arial";' textLength='53.25px' lengthAdjust='spacingAndGlyphs'>proteins</text>
+<text transform='translate(234.71,244.48) rotate(-90)' text-anchor='middle' style='font-size: 14.72px;fill: #D95F02; font-family: "Arial";' textLength='49.86px' lengthAdjust='spacingAndGlyphs'>number</text>
+<text transform='translate(499.74,319.64) rotate(-90)' text-anchor='middle' style='font-size: 14.72px;fill: #D95F02; font-family: "Arial";' textLength='80.09px' lengthAdjust='spacingAndGlyphs'>transcription</text>
+<text x='334.00' y='219.85' text-anchor='middle' style='font-size: 14.45px;fill: #D95F02; font-family: "Arial";' textLength='26.48px' lengthAdjust='spacingAndGlyphs'>also</text>
+<text x='259.00' y='190.60' text-anchor='middle' style='font-size: 14.45px;fill: #D95F02; font-family: "Arial";' textLength='56.97px' lengthAdjust='spacingAndGlyphs'>available</text>
+<text transform='translate(484.03,362.89) rotate(-90)' text-anchor='middle' style='font-size: 14.45px;fill: #D95F02; font-family: "Arial";' textLength='89.86px' lengthAdjust='spacingAndGlyphs'>transcriptional</text>
+<text x='254.95' y='356.01' text-anchor='middle' style='font-size: 14.45px;fill: #D95F02; font-family: "Arial";' textLength='22.46px' lengthAdjust='spacingAndGlyphs'>two</text>
+<text x='407.05' y='148.92' text-anchor='middle' style='font-size: 14.19px;fill: #D95F02; font-family: "Arial";' textLength='49.69px' lengthAdjust='spacingAndGlyphs'>patients</text>
+<text x='213.06' y='318.55' text-anchor='middle' style='font-size: 14.19px;fill: #D95F02; font-family: "Arial";' textLength='52.83px' lengthAdjust='spacingAndGlyphs'>samples</text>
+<text x='347.78' y='139.58' text-anchor='middle' style='font-size: 13.92px;fill: #D95F02; font-family: "Arial";' textLength='52.62px' lengthAdjust='spacingAndGlyphs'>genomic</text>
+<text x='258.27' y='177.54' text-anchor='middle' style='font-size: 13.66px;fill: #D95F02; font-family: "Arial";' textLength='40.22px' lengthAdjust='spacingAndGlyphs'>across</text>
+<text x='244.34' y='368.71' text-anchor='middle' style='font-size: 13.66px;fill: #D95F02; font-family: "Arial";' textLength='45.55px' lengthAdjust='spacingAndGlyphs'>method</text>
+<text transform='translate(466.13,221.23) rotate(-90)' text-anchor='middle' style='font-size: 13.66px;fill: #D95F02; font-family: "Arial";' textLength='44.02px' lengthAdjust='spacingAndGlyphs'>several</text>
+<text x='418.29' y='299.23' text-anchor='middle' style='font-size: 13.40px;fill: #D95F02; font-family: "Arial";' textLength='21.59px' lengthAdjust='spacingAndGlyphs'>cpg</text>
+<text x='209.96' y='336.13' text-anchor='middle' style='font-size: 13.40px;fill: #D95F02; font-family: "Arial";' textLength='48.38px' lengthAdjust='spacingAndGlyphs'>different</text>
+<text transform='translate(361.49,439.93) rotate(-90)' text-anchor='middle' style='font-size: 13.40px;fill: #D95F02; font-family: "Arial";' textLength='61.77px' lengthAdjust='spacingAndGlyphs'>expressed</text>
+<text transform='translate(375.37,444.24) rotate(-90)' text-anchor='middle' style='font-size: 13.40px;fill: #D95F02; font-family: "Arial";' textLength='68.46px' lengthAdjust='spacingAndGlyphs'>interactions</text>
+<text x='267.89' y='403.77' text-anchor='middle' style='font-size: 13.40px;fill: #D95F02; font-family: "Arial";' textLength='36.46px' lengthAdjust='spacingAndGlyphs'>model</text>
+<text x='297.15' y='433.17' text-anchor='middle' style='font-size: 13.40px;fill: #D95F02; font-family: "Arial";' textLength='40.93px' lengthAdjust='spacingAndGlyphs'>rnaseq</text>
+<text transform='translate(311.27,278.61) rotate(-90)' text-anchor='middle' style='font-size: 13.40px;fill: #D95F02; font-family: "Arial";' textLength='17.86px' lengthAdjust='spacingAndGlyphs'>set</text>
+<text transform='translate(403.49,422.62) rotate(-90)' text-anchor='middle' style='font-size: 13.40px;fill: #D95F02; font-family: "Arial";' textLength='44.65px' lengthAdjust='spacingAndGlyphs'>splicing</text>
+<text transform='translate(495.61,233.55) rotate(-90)' text-anchor='middle' style='font-size: 13.13px;fill: #D95F02; font-family: "Arial";' textLength='75.16px' lengthAdjust='spacingAndGlyphs'>development</text>
+<text x='435.96' y='422.77' text-anchor='middle' style='font-size: 13.13px;fill: #D95F02; font-family: "Arial";' textLength='56.18px' lengthAdjust='spacingAndGlyphs'>functional</text>
+<text x='299.02' y='149.25' text-anchor='middle' style='font-size: 13.13px;fill: #D95F02; font-family: "Arial";' textLength='33.55px' lengthAdjust='spacingAndGlyphs'>levels</text>
+<text x='203.87' y='355.84' text-anchor='middle' style='font-size: 12.87px;fill: #D95F02; font-family: "Arial";' textLength='54.32px' lengthAdjust='spacingAndGlyphs'>activation</text>
+<text x='439.75' y='432.44' text-anchor='middle' style='font-size: 12.87px;fill: #D95F02; font-family: "Arial";' textLength='53.61px' lengthAdjust='spacingAndGlyphs'>approach</text>
+<text transform='translate(213.78,245.57) rotate(-90)' text-anchor='middle' style='font-size: 12.87px;fill: #D95F02; font-family: "Arial";' textLength='48.61px' lengthAdjust='spacingAndGlyphs'>changes</text>
+<text x='405.71' y='134.40' text-anchor='middle' style='font-size: 12.87px;fill: #D95F02; font-family: "Arial";' textLength='47.88px' lengthAdjust='spacingAndGlyphs'>complex</text>
+<text transform='translate(512.71,307.11) rotate(-90)' text-anchor='middle' style='font-size: 12.87px;fill: #D95F02; font-family: "Arial";' textLength='38.58px' lengthAdjust='spacingAndGlyphs'>factors</text>
+<text transform='translate(512.86,253.33) rotate(-90)' text-anchor='middle' style='font-size: 12.87px;fill: #D95F02; font-family: "Arial";' textLength='48.61px' lengthAdjust='spacingAndGlyphs'>package</text>
+<text x='290.33' y='448.01' text-anchor='middle' style='font-size: 12.87px;fill: #D95F02; font-family: "Arial";' textLength='72.18px' lengthAdjust='spacingAndGlyphs'>performance</text>
+<text transform='translate(337.25,451.94) rotate(-90)' text-anchor='middle' style='font-size: 12.87px;fill: #D95F02; font-family: "Arial";' textLength='42.88px' lengthAdjust='spacingAndGlyphs'>present</text>
+<text x='365.50' y='390.30' text-anchor='middle' style='font-size: 12.60px;fill: #D95F02; font-family: "Arial";' textLength='23.82px' lengthAdjust='spacingAndGlyphs'>high</text>
+<text x='350.00' y='123.86' text-anchor='middle' style='font-size: 12.60px;fill: #D95F02; font-family: "Arial";' textLength='43.41px' lengthAdjust='spacingAndGlyphs'>multiple</text>
+<text x='500.30' y='193.37' text-anchor='middle' style='font-size: 12.60px;fill: #D95F02; font-family: "Arial";' textLength='51.80px' lengthAdjust='spacingAndGlyphs'>transcript</text>
+<text x='295.21' y='136.45' text-anchor='middle' style='font-size: 12.34px;fill: #D95F02; font-family: "Arial";' textLength='51.38px' lengthAdjust='spacingAndGlyphs'>biological</text>
+<text transform='translate(466.23,287.92) rotate(-90)' text-anchor='middle' style='font-size: 12.34px;fill: #D95F02; font-family: "Arial";' textLength='30.84px' lengthAdjust='spacingAndGlyphs'>found</text>
+<text transform='translate(385.61,449.85) rotate(-90)' text-anchor='middle' style='font-size: 12.34px;fill: #D95F02; font-family: "Arial";' textLength='39.05px' lengthAdjust='spacingAndGlyphs'>identify</text>
+<text transform='translate(522.11,308.72) rotate(-90)' text-anchor='middle' style='font-size: 12.34px;fill: #D95F02; font-family: "Arial";' textLength='50.70px' lengthAdjust='spacingAndGlyphs'>observed</text>
+<text x='346.40' y='267.69' text-anchor='middle' style='font-size: 12.34px;fill: #D95F02; font-family: "Arial";' textLength='20.56px' lengthAdjust='spacingAndGlyphs'>one</text>
+<text x='252.21' y='415.67' text-anchor='middle' style='font-size: 12.34px;fill: #D95F02; font-family: "Arial";' textLength='39.05px' lengthAdjust='spacingAndGlyphs'>studies</text>
+<text x='205.19' y='379.49' text-anchor='middle' style='font-size: 12.34px;fill: #D95F02; font-family: "Arial";' textLength='56.85px' lengthAdjust='spacingAndGlyphs'>transcripts</text>
+<text transform='translate(199.56,231.04) rotate(-90)' text-anchor='middle' style='font-size: 12.08px;fill: #D95F02; font-family: "Arial";' textLength='53.65px' lengthAdjust='spacingAndGlyphs'>compared</text>
+<text x='184.37' y='304.08' text-anchor='middle' style='font-size: 12.08px;fill: #D95F02; font-family: "Arial";' textLength='52.29px' lengthAdjust='spacingAndGlyphs'>cytometry</text>
+<text x='467.22' y='164.89' text-anchor='middle' style='font-size: 12.08px;fill: #D95F02; font-family: "Arial";' textLength='38.90px' lengthAdjust='spacingAndGlyphs'>genetic</text>
+<text x='230.40' y='344.22' text-anchor='middle' style='font-size: 12.08px;fill: #D95F02; font-family: "Arial";' textLength='28.83px' lengthAdjust='spacingAndGlyphs'>mass</text>
+<text x='501.48' y='369.62' text-anchor='middle' style='font-size: 12.08px;fill: #D95F02; font-family: "Arial";' textLength='24.80px' lengthAdjust='spacingAndGlyphs'>sites</text>
+<text x='430.54' y='443.68' text-anchor='middle' style='font-size: 12.08px;fill: #D95F02; font-family: "Arial";' textLength='40.23px' lengthAdjust='spacingAndGlyphs'>specific</text>
+<text transform='translate(508.76,212.57) rotate(-90)' text-anchor='middle' style='font-size: 12.08px;fill: #D95F02; font-family: "Arial";' textLength='30.84px' lengthAdjust='spacingAndGlyphs'>within</text>
+<text x='520.10' y='344.64' text-anchor='middle' style='font-size: 11.81px;fill: #D95F02; font-family: "Arial";' textLength='35.40px' lengthAdjust='spacingAndGlyphs'>control</text>
+<text x='397.27' y='123.89' text-anchor='middle' style='font-size: 11.81px;fill: #D95F02; font-family: "Arial";' textLength='34.09px' lengthAdjust='spacingAndGlyphs'>known</text>
+<text transform='translate(531.01,305.26) rotate(-90)' text-anchor='middle' style='font-size: 11.81px;fill: #D95F02; font-family: "Arial";' textLength='57.69px' lengthAdjust='spacingAndGlyphs'>methylated</text>
+<text x='451.48' y='149.11' text-anchor='middle' style='font-size: 11.81px;fill: #D95F02; font-family: "Arial";' textLength='36.06px' lengthAdjust='spacingAndGlyphs'>normal</text>
+<text x='302.81' y='123.07' text-anchor='middle' style='font-size: 11.81px;fill: #D95F02; font-family: "Arial";' textLength='44.59px' lengthAdjust='spacingAndGlyphs'>potential</text>
+<text x='511.77' y='378.49' text-anchor='middle' style='font-size: 11.81px;fill: #D95F02; font-family: "Arial";' textLength='48.52px' lengthAdjust='spacingAndGlyphs'>response</text>
+<text x='367.43' y='112.48' text-anchor='middle' style='font-size: 11.81px;fill: #D95F02; font-family: "Arial";' textLength='39.99px' lengthAdjust='spacingAndGlyphs'>species</text>
+<text x='306.06' y='190.06' text-anchor='middle' style='font-size: 11.81px;fill: #D95F02; font-family: "Arial";' textLength='20.32px' lengthAdjust='spacingAndGlyphs'>well</text>
+<text transform='translate(501.85,403.71) rotate(-90)' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='43.66px' lengthAdjust='spacingAndGlyphs'>datasets</text>
+<text x='245.00' y='156.44' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='34.03px' lengthAdjust='spacingAndGlyphs'>effects</text>
+<text transform='translate(527.63,240.88) rotate(-90)' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='40.45px' lengthAdjust='spacingAndGlyphs'>function</text>
+<text x='243.77' y='429.92' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='65.48px' lengthAdjust='spacingAndGlyphs'>genomewide</text>
+<text x='187.77' y='277.64' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='30.17px' lengthAdjust='spacingAndGlyphs'>highly</text>
+<text x='218.07' y='391.24' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='41.07px' lengthAdjust='spacingAndGlyphs'>immune</text>
+<text transform='translate(218.89,175.86) rotate(-90)' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='25.68px' lengthAdjust='spacingAndGlyphs'>large</text>
+<text transform='translate(404.96,189.19) rotate(-90)' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='27.60px' lengthAdjust='spacingAndGlyphs'>novel</text>
+<text transform='translate(537.55,250.04) rotate(-90)' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='43.65px' lengthAdjust='spacingAndGlyphs'>provides</text>
+<text x='180.05' y='290.51' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='49.44px' lengthAdjust='spacingAndGlyphs'>published</text>
+<text x='322.66' y='114.69' text-anchor='middle' style='font-size: 11.55px;fill: #D95F02; font-family: "Arial";' textLength='47.49px' lengthAdjust='spacingAndGlyphs'>statistical</text>
+<text x='420.86' y='455.72' text-anchor='middle' style='font-size: 11.28px;fill: #D95F02; font-family: "Arial";' textLength='60.17px' lengthAdjust='spacingAndGlyphs'>differentially</text>
+<text transform='translate(348.96,456.67) rotate(-90)' text-anchor='middle' style='font-size: 11.28px;fill: #D95F02; font-family: "Arial";' textLength='18.17px' lengthAdjust='spacingAndGlyphs'>first</text>
+<text x='224.03' y='403.81' text-anchor='middle' style='font-size: 11.28px;fill: #D95F02; font-family: "Arial";' textLength='48.90px' lengthAdjust='spacingAndGlyphs'>sequence</text>
+<text x='216.25' y='196.92' text-anchor='middle' style='font-size: 11.28px;fill: #D95F02; font-family: "Arial";' textLength='23.82px' lengthAdjust='spacingAndGlyphs'>tools</text>
+<text x='502.00' y='178.65' text-anchor='middle' style='font-size: 11.28px;fill: #D95F02; font-family: "Arial";' textLength='26.95px' lengthAdjust='spacingAndGlyphs'>yeast</text>
+<text x='534.39' y='358.64' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='54.53px' lengthAdjust='spacingAndGlyphs'>abundance</text>
+<text transform='translate(188.42,245.04) rotate(-90)' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='47.15px' lengthAdjust='spacingAndGlyphs'>clustering</text>
+<text x='292.03' y='462.14' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='44.71px' lengthAdjust='spacingAndGlyphs'>detection</text>
+<text x='465.34' y='137.13' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='50.85px' lengthAdjust='spacingAndGlyphs'>developed</text>
+<text x='444.74' y='121.04' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='46.53px' lengthAdjust='spacingAndGlyphs'>discovery</text>
+<text x='242.23' y='166.12' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='27.55px' lengthAdjust='spacingAndGlyphs'>factor</text>
+<text x='237.14' y='145.69' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='45.91px' lengthAdjust='spacingAndGlyphs'>important</text>
+<text x='479.75' y='419.93' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='17.14px' lengthAdjust='spacingAndGlyphs'>key</text>
+<text x='302.79' y='472.73' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='22.66px' lengthAdjust='spacingAndGlyphs'>level</text>
+<text x='530.16' y='212.86' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='36.13px' lengthAdjust='spacingAndGlyphs'>provide</text>
+<text x='420.84' y='286.09' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='18.37px' lengthAdjust='spacingAndGlyphs'>role</text>
+<text x='415.66' y='466.99' text-anchor='middle' style='font-size: 11.02px;fill: #1B9E77; font-family: "Arial";' textLength='20.81px' lengthAdjust='spacingAndGlyphs'>time</text>
+<text transform='translate(484.81,443.86) rotate(-90)' text-anchor='middle' style='font-size: 10.75px;fill: #1B9E77; font-family: "Arial";' textLength='42.43px' lengthAdjust='spacingAndGlyphs'>essential</text>
+<text x='377.11' y='99.67' text-anchor='middle' style='font-size: 10.75px;fill: #1B9E77; font-family: "Arial";' textLength='61.54px' lengthAdjust='spacingAndGlyphs'>experimental</text>
+<text transform='translate(541.62,294.40) rotate(-90)' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='32.05px' lengthAdjust='spacingAndGlyphs'>activity</text>
+<text x='180.62' y='365.44' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='48.39px' lengthAdjust='spacingAndGlyphs'>alternative</text>
+<text x='496.28' y='153.70' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='51.30px' lengthAdjust='spacingAndGlyphs'>differences</text>
+<text x='430.23' y='109.05' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='54.19px' lengthAdjust='spacingAndGlyphs'>mammalian</text>
+<text transform='translate(244.04,240.78) rotate(-90)' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='31.46px' lengthAdjust='spacingAndGlyphs'>mirnas</text>
+<text transform='translate(177.68,245.79) rotate(-90)' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='34.96px' lengthAdjust='spacingAndGlyphs'>primary</text>
+<text x='336.77' y='482.72' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='47.79px' lengthAdjust='spacingAndGlyphs'>processes</text>
+<text x='305.38' y='96.98' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='46.07px' lengthAdjust='spacingAndGlyphs'>regulation</text>
+<text transform='translate(550.48,324.61) rotate(-90)' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='27.40px' lengthAdjust='spacingAndGlyphs'>single</text>
+<text x='221.59' y='441.25' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='58.89px' lengthAdjust='spacingAndGlyphs'>technologies</text>
+<text x='500.43' y='167.29' text-anchor='middle' style='font-size: 10.49px;fill: #1B9E77; font-family: "Arial";' textLength='25.06px' lengthAdjust='spacingAndGlyphs'>types</text>
+<text transform='translate(393.93,475.38) rotate(-90)' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='23.28px' lengthAdjust='spacingAndGlyphs'>array</text>
+<text transform='translate(514.41,410.61) rotate(-90)' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='34.08px' lengthAdjust='spacingAndGlyphs'>authors</text>
+<text x='247.85' y='131.37' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='39.18px' lengthAdjust='spacingAndGlyphs'>common</text>
+<text transform='translate(460.86,459.63) rotate(-90)' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='39.18px' lengthAdjust='spacingAndGlyphs'>embryos</text>
+<text transform='translate(173.37,326.49) rotate(-90)' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='22.15px' lengthAdjust='spacingAndGlyphs'>peak</text>
+<text x='353.55' y='493.76' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='46.00px' lengthAdjust='spacingAndGlyphs'>previously</text>
+<text x='539.87' y='367.58' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='32.93px' lengthAdjust='spacingAndGlyphs'>sample</text>
+<text x='291.23' y='482.79' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='41.46px' lengthAdjust='spacingAndGlyphs'>scrnaseq</text>
+<text x='416.44' y='277.32' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='18.74px' lengthAdjust='spacingAndGlyphs'>sets</text>
+<text transform='translate(550.97,289.21) rotate(-90)' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='42.02px' lengthAdjust='spacingAndGlyphs'>singlecell</text>
+<text x='182.51' y='197.53' text-anchor='middle' style='font-size: 10.23px;fill: #1B9E77; font-family: "Arial";' textLength='43.15px' lengthAdjust='spacingAndGlyphs'>treatment</text>
+<text x='279.82' y='108.37' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='21.59px' lengthAdjust='spacingAndGlyphs'>adult</text>
+<text x='220.82' y='416.38' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='21.56px' lengthAdjust='spacingAndGlyphs'>cctra</text>
+<text x='529.88' y='389.40' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='43.70px' lengthAdjust='spacingAndGlyphs'>chromatin</text>
+<text x='429.58' y='474.79' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='42.60px' lengthAdjust='spacingAndGlyphs'>colorectal</text>
+<text transform='translate(524.90,413.66) rotate(-90)' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='44.82px' lengthAdjust='spacingAndGlyphs'>conditions</text>
+<text x='554.89' y='251.28' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='18.81px' lengthAdjust='spacingAndGlyphs'>may</text>
+<text x='238.61' y='462.94' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='55.87px' lengthAdjust='spacingAndGlyphs'>mechanisms</text>
+<text transform='translate(205.48,174.05) rotate(-90)' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='24.89px' lengthAdjust='spacingAndGlyphs'>mirna</text>
+<text x='404.51' y='86.94' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='46.50px' lengthAdjust='spacingAndGlyphs'>phenotype</text>
+<text x='562.07' y='261.56' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='40.95px' lengthAdjust='spacingAndGlyphs'>predicted</text>
+<text x='348.94' y='86.23' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='45.92px' lengthAdjust='spacingAndGlyphs'>responses</text>
+<text transform='translate(567.87,318.02) rotate(-90)' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='39.28px' lengthAdjust='spacingAndGlyphs'>synthetic</text>
+<text x='171.80' y='214.50' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='30.43px' lengthAdjust='spacingAndGlyphs'>targets</text>
+<text transform='translate(556.21,213.37) rotate(-90)' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='30.97px' lengthAdjust='spacingAndGlyphs'>tissues</text>
+<text transform='translate(227.81,178.89) rotate(-90)' text-anchor='middle' style='font-size: 9.96px;fill: #1B9E77; font-family: "Arial";' textLength='18.81px' lengthAdjust='spacingAndGlyphs'>type</text>
+<text x='559.97' y='238.97' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='29.61px' lengthAdjust='spacingAndGlyphs'>among</text>
+<text transform='translate(166.95,240.80) rotate(-90)' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='45.24px' lengthAdjust='spacingAndGlyphs'>annotation</text>
+<text x='144.48' y='270.43' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='50.62px' lengthAdjust='spacingAndGlyphs'>approaches</text>
+<text transform='translate(160.92,339.48) rotate(-90)' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='31.23px' lengthAdjust='spacingAndGlyphs'>binding</text>
+<text transform='translate(560.18,295.39) rotate(-90)' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='53.84px' lengthAdjust='spacingAndGlyphs'>demonstrate</text>
+<text x='197.52' y='156.26' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='58.15px' lengthAdjust='spacingAndGlyphs'>differentiation</text>
+<text transform='translate(431.17,367.22) rotate(-90)' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='21.00px' lengthAdjust='spacingAndGlyphs'>exon</text>
+<text transform='translate(151.60,307.76) rotate(-90)' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='52.76px' lengthAdjust='spacingAndGlyphs'>experiments</text>
+<text transform='translate(174.34,383.51) rotate(-90)' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='29.07px' lengthAdjust='spacingAndGlyphs'>growth</text>
+<text transform='translate(471.29,483.37) rotate(-90)' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='64.62px' lengthAdjust='spacingAndGlyphs'>highthroughput</text>
+<text transform='translate(186.27,420.22) rotate(-90)' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='73.76px' lengthAdjust='spacingAndGlyphs'>hypermethylation</text>
+<text transform='translate(576.64,298.88) rotate(-90)' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='47.92px' lengthAdjust='spacingAndGlyphs'>information</text>
+<text x='304.30' y='297.41' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='14.54px' lengthAdjust='spacingAndGlyphs'>low</text>
+<text transform='translate(411.90,501.99) rotate(-90)' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='41.99px' lengthAdjust='spacingAndGlyphs'>molecular</text>
+<text x='240.25' y='122.99' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='44.70px' lengthAdjust='spacingAndGlyphs'>noncoding</text>
+<text x='295.31' y='497.40' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='37.69px' lengthAdjust='spacingAndGlyphs'>silencing</text>
+<text x='231.30' y='452.02' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='22.61px' lengthAdjust='spacingAndGlyphs'>small</text>
+<text x='197.29' y='345.22' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='24.76px' lengthAdjust='spacingAndGlyphs'>tumor</text>
+<text x='248.63' y='110.30' text-anchor='middle' style='font-size: 9.70px;fill: #1B9E77; font-family: "Arial";' textLength='37.68px' lengthAdjust='spacingAndGlyphs'>workflow</text>
+<text x='542.34' y='180.96' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='26.18px' lengthAdjust='spacingAndGlyphs'>arrays</text>
+<text transform='translate(152.34,229.21) rotate(-90)' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='50.82px' lengthAdjust='spacingAndGlyphs'>combination</text>
+<text transform='translate(494.55,461.03) rotate(-90)' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='58.68px' lengthAdjust='spacingAndGlyphs'>computational</text>
+<text x='533.19' y='203.01' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='31.95px' lengthAdjust='spacingAndGlyphs'>existing</text>
+<text x='260.40' y='470.02' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='43.98px' lengthAdjust='spacingAndGlyphs'>framework</text>
+<text x='185.29' y='181.54' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='23.57px' lengthAdjust='spacingAndGlyphs'>major</text>
+<text x='338.31' y='189.69' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='13.08px' lengthAdjust='spacingAndGlyphs'>mir</text>
+<text x='244.15' y='292.23' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='21.47px' lengthAdjust='spacingAndGlyphs'>mrna</text>
+<text x='349.70' y='506.69' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='39.82px' lengthAdjust='spacingAndGlyphs'>reference</text>
+<text x='441.90' y='487.02' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='41.91px' lengthAdjust='spacingAndGlyphs'>regulatory</text>
+<text transform='translate(389.09,511.25) rotate(-90)' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='45.58px' lengthAdjust='spacingAndGlyphs'>sequences</text>
+<text x='426.08' y='99.93' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='27.22px' lengthAdjust='spacingAndGlyphs'>similar</text>
+<text transform='translate(517.06,446.35) rotate(-90)' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='35.62px' lengthAdjust='spacingAndGlyphs'>software</text>
+<text x='489.52' y='127.40' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='33.52px' lengthAdjust='spacingAndGlyphs'>strategy</text>
+<text x='546.78' y='401.50' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='31.94px' lengthAdjust='spacingAndGlyphs'>survival</text>
+<text x='534.78' y='166.82' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='29.84px' lengthAdjust='spacingAndGlyphs'>system</text>
+<text x='477.97' y='106.84' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='34.59px' lengthAdjust='spacingAndGlyphs'>targeted</text>
+<text transform='translate(505.47,458.21) rotate(-90)' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='36.68px' lengthAdjust='spacingAndGlyphs'>targeting</text>
+<text x='527.83' y='139.76' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='50.82px' lengthAdjust='spacingAndGlyphs'>temperature</text>
+<text x='249.09' y='223.74' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='21.48px' lengthAdjust='spacingAndGlyphs'>three</text>
+<text x='423.09' y='203.36' text-anchor='middle' style='font-size: 9.43px;fill: #1B9E77; font-family: "Arial";' textLength='24.62px' lengthAdjust='spacingAndGlyphs'>tissue</text>
+<text transform='translate(582.96,289.86) rotate(-90)' text-anchor='middle' style='font-size: 9.17px;fill: #1B9E77; font-family: "Arial";' textLength='36.14px' lengthAdjust='spacingAndGlyphs'>signaling</text>
+<text transform='translate(243.08,353.17) rotate(-90)' text-anchor='middle' style='font-size: 9.17px;fill: #1B9E77; font-family: "Arial";' textLength='11.71px' lengthAdjust='spacingAndGlyphs'>via</text>
 </g>
 </svg>

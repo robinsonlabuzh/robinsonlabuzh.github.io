@@ -32,6 +32,7 @@ biorxiv_dois <- c("10.1101/2021.08.28.458012",
                   "10.1101/2021.11.15.468676",
                   "10.1101/2021.12.08.471089",
                   "10.1101/2021.12.22.473434",
+                  "10.1101/2022.03.08.483466",
                   "10.1101/2022.02.08.479579")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
@@ -122,10 +123,12 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(doi = "10.1101/2021.01.27.428431", software = "https://bioconductor.org/packages/SpatialExperiment"),
   c(doi = "10.1101/2022.02.08.479579", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
+  c(doi = "10.1101/2022.03.08.483466", software = "https://github.com/schmeing/gapless"),
   c(doi = "10.12688/f1000research.73600.1", software = "https://bioconductor.org/packages/scDblFinder"),
   c(doi = "10.12688/f1000research.73493.1", software = "http://pubassistant.ch/"),
   c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
 )
+
 
 
 
