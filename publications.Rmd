@@ -33,7 +33,8 @@ biorxiv_dois <- c("10.1101/2021.08.28.458012",
                   "10.1101/2021.12.08.471089",
                   "10.1101/2021.12.22.473434",
                   "10.1101/2022.03.08.483466",
-                  "10.1101/2022.02.08.479579")
+                  "10.1101/2022.02.08.479579",
+                  "10.1101/2022.04.06.487263")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -77,8 +78,11 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2021.11.15.468676", github = "https://github.com/HelenaLC/simulation-comparison"),
   c(doi = "10.12688/f1000research.73600.1", github = "https://github.com/plger/scDblFinder"),
   c(doi = "10.12688/f1000research.73493.1", github = "https://github.com/markrobinsonuzh/os_monitor"),
+  c(doi = "10.1101/2022.04.06.487263", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
+
+
 
 ## data repos
 pmid_data <- rbind(
