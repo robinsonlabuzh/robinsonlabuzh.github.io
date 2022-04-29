@@ -15,7 +15,7 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
 ## PubMed IDs to add
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
               "30002819", "30356428", "31178352", "31857895", "18772890",
-              "18573797", "33300035", "33349709", "35354817")
+              "18573797", "33300035", "33349709", "35354817", "35482478")
 
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
@@ -24,7 +24,7 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## PLEASE ADD NEW ONES ON THE TOP
 biorxiv_dois <- c("10.1101/2021.08.28.458012",
                   #"10.1101/2021.03.26.436976",
-                  "10.1101/2021.01.27.428431",
+                  #"10.1101/2021.01.27.428431",
                   "10.1101/2021.01.18.426963",
                   "10.1101/2020.11.24.394213",
                   #"10.1101/2020.11.11.355693",
@@ -122,13 +122,13 @@ pmid_software <- rbind(
   c(pmid = "33758076", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(pmid = "32178699", software = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html"),
   c(pmid = "33971812", software = "https://bioconductor.org/packages/censcyt"),
-  c(pmid = "33608040", software = "https://github.com/schmeing/ReSeq")
+  c(pmid = "33608040", software = "https://github.com/schmeing/ReSeq"),
+  c(pmid = "35482478", software = "https://bioconductor.org/packages/SpatialExperiment")
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   c(doi = "10.1101/2021.08.28.458012", software = "https://github.com/wmacnair/SampleQC"),
   c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
-  c(doi = "10.1101/2021.01.27.428431", software = "https://bioconductor.org/packages/SpatialExperiment"),
   c(doi = "10.1101/2022.02.08.479579", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
   c(doi = "10.1101/2022.04.14.488419", software = "https://github.com/MarioniLab/SageNet"),
   c(doi = "10.1101/2022.03.08.483466", software = "https://github.com/schmeing/gapless"),
