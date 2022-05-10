@@ -143,17 +143,22 @@ biorxiv_software <- rbind(
 
 ## publications not in PubMed/bioRxiv	
 unlisted_publications <- data.frame(	
-  title = c("RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis."),	
+  title = c("RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis.",
+            "An Optimized Tissue Dissociation Protocol for Single-Cell RNA Sequencing Analysis of Fresh and Cultured Human Skin Biopsies"),	
   pubdate = c(""),	
-  pubyear = c("2019"),	
-  journal = c("Annual Review of Biomedical Data Science"),	
-  authors = c("Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD"),	
-  volume = c("2"),	
+  pubyear = c("2019","2022"),	
+  journal = c("Annual Review of Biomedical Data Science",
+              "Front. Cell Dev. Biol."),	
+  authors = c("Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD",
+              "Burja B, Paul D, Tastanova A, Edalat SG, Gerber R, Houtman M, Elhai M, Bürki K, Staeger R, Restivo G, Lang R, Sodin-Semrl S, Lakota K, Tomšič M, Levesque MP, Distler O, Rotar Ž, Robinson MD and Frank-Bertoncelj M"),	
+  volume = c("2",""),	
   issue = c(""),	
-  pages = c("139-173"),	
-  doi = c("10.1146/annurev-biodatasci-072018-021255"),	
+  pages = c("139-173",""),	
+  doi = c("10.1146/annurev-biodatasci-072018-021255",
+          "10.3389/fcell.2022.872688"),	
   pmid = c(""),	
-  elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255")	
+  elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255",
+                  "doi: 10.3389/fcell.2022.872688")	
 )
 
 ## F1000Research articles awaiting peer review
@@ -161,22 +166,18 @@ unlisted_publications <- data.frame(
 
 f1000_preprints <- data.frame(
   title = c("An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data",
-            "Doublet identification in single-cell sequencing data using scDblFinder",
-            "pubassistant.ch: consolidating publication profiles of researchers"),
+            "Doublet identification in single-cell sequencing data using scDblFinder"),
   pubdate = c("Posted October 22, 2020.",
-              "Posted September 28, 2021.",
-              "Posted September 30, 2021."),
+              "Posted September 28, 2021."),
   pubyear = c("Preprints"),
   journal = c("F1000Research"),
   authors = c("Helena L. Crowell, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, Mark D. Robinson",
-              "Pierre-Luc Germain, Aaron Lun, Will Macnair, Mark D. Robinson",
-              "Reto Gerber, Mark D. Robinson"),
-  volume = c(9, 10, 10),
-  issue = c(1263, 979, 989),
+              "Pierre-Luc Germain, Aaron Lun, Will Macnair, Mark D. Robinson"),
+  volume = c(9, 10),
+  issue = c(1263, 979),
   pages = c(""),
   doi = c("10.12688/f1000research.26073.1",
-          "10.12688/f1000research.73600.1",
-          "10.12688/f1000research.73493.1"),
+          "10.12688/f1000research.73600.1"),
   pmid = c(""),
   elocationid = c("")
 )
@@ -215,6 +216,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Komljenovic A",
                    "Morilla I", 
                    "Law CW", 
+                   "Paul D",
                    "Riebler A",
                    "Biyong B",
                    "Matthes KL",
@@ -318,7 +320,11 @@ summ <- lapply(summ, function(w) {
              stringsAsFactors = FALSE)
 })
 ## Put into data frame and arrange by year
-summ <- do.call(rbind, summ) %>% dplyr::arrange(desc(pubyear))
+summ <- do.call(rbind, summ)
+summ$pubyear[summ$pmid==35475034] <- 2022 # hack for Reto's F1000 pub (lists the wrong year)
+summ <- summ %>% dplyr::arrange(desc(pubyear))
+
+
 ```
 
 ```{r concat}	
