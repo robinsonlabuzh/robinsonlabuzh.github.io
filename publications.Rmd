@@ -143,17 +143,22 @@ biorxiv_software <- rbind(
 
 ## publications not in PubMed/bioRxiv	
 unlisted_publications <- data.frame(	
-  title = c("RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis."),	
+  title = c("RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis.",
+            "An Optimized Tissue Dissociation Protocol for Single-Cell RNA Sequencing Analysis of Fresh and Cultured Human Skin Biopsies"),	
   pubdate = c(""),	
-  pubyear = c("2019"),	
-  journal = c("Annual Review of Biomedical Data Science"),	
-  authors = c("Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD"),	
-  volume = c("2"),	
+  pubyear = c("2019","2022"),	
+  journal = c("Annual Review of Biomedical Data Science",
+              "Front. Cell Dev. Biol."),	
+  authors = c("Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD",
+              "Burja B, Paul D, Tastanova A, Edalat SG, Gerber R, Houtman M, Elhai M, Bürki K, Staeger R, Restivo G, Lang R, Sodin-Semrl S, Lakota K, Tomšič M, Levesque MP, Distler O, Rotar Ž, Robinson MD and Frank-Bertoncelj M"),	
+  volume = c("2",""),	
   issue = c(""),	
-  pages = c("139-173"),	
-  doi = c("10.1146/annurev-biodatasci-072018-021255"),	
+  pages = c("139-173",""),	
+  doi = c("10.1146/annurev-biodatasci-072018-021255",
+          "10.3389/fcell.2022.872688"),	
   pmid = c(""),	
-  elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255")	
+  elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255",
+                  "doi: 10.3389/fcell.2022.872688")	
 )
 
 ## F1000Research articles awaiting peer review
@@ -211,6 +216,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Komljenovic A",
                    "Morilla I", 
                    "Law CW", 
+                   "Paul D",
                    "Riebler A",
                    "Biyong B",
                    "Matthes KL",
