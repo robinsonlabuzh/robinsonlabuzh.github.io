@@ -75,7 +75,7 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
   c(doi = "10.1101/2021.11.15.468676", github = "https://github.com/HelenaLC/simulation-comparison"),
-  c(doi = "10.12688/f1000research.73600.1", github = "https://github.com/plger/scDblFinder"),
+  c(doi = "10.12688/f1000research.73600.2", github = "https://github.com/plger/scDblFinder"),
   c(doi = "10.12688/f1000research.73493.1", github = "https://github.com/markrobinsonuzh/os_monitor"),
   c(doi = "10.1101/2022.04.06.487263", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
   c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
@@ -130,7 +130,7 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2022.02.08.479579", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
   c(doi = "10.1101/2022.04.14.488419", software = "https://github.com/MarioniLab/SageNet"),
   c(doi = "10.1101/2022.03.08.483466", software = "https://github.com/schmeing/gapless"),
-  c(doi = "10.12688/f1000research.73600.1", software = "https://bioconductor.org/packages/scDblFinder"),
+  c(doi = "10.12688/f1000research.73600.2", software = "https://bioconductor.org/packages/scDblFinder"),
   c(doi = "10.12688/f1000research.73493.1", software = "http://pubassistant.ch/"),
   c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
 )
