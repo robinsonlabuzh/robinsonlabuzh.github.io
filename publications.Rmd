@@ -23,11 +23,8 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## Should be of the format "10.1101/185744" 
 ## PLEASE ADD NEW ONES ON THE TOP
 biorxiv_dois <- c("10.1101/2021.08.28.458012",
-                  #"10.1101/2021.03.26.436976",
-                  #"10.1101/2021.01.27.428431",
                   "10.1101/2021.01.18.426963",
                   "10.1101/2020.11.24.394213",
-                  #"10.1101/2020.11.11.355693",
                   "10.1101/2021.11.11.467877",
                   "10.1101/2021.11.15.468676",
                   "10.1101/2021.12.08.471089",
@@ -35,7 +32,8 @@ biorxiv_dois <- c("10.1101/2021.08.28.458012",
                   "10.1101/2022.03.08.483466",
                   "10.1101/2022.02.08.479579",
                   "10.1101/2022.04.06.487263",
-                  "10.1101/2022.04.14.488419")
+                  "10.1101/2022.04.14.488419",
+                  "10.1101/2022.05.24.493251")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -77,7 +75,7 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
   c(doi = "10.1101/2021.11.15.468676", github = "https://github.com/HelenaLC/simulation-comparison"),
-  c(doi = "10.12688/f1000research.73600.1", github = "https://github.com/plger/scDblFinder"),
+  c(doi = "10.12688/f1000research.73600.2", github = "https://github.com/plger/scDblFinder"),
   c(doi = "10.12688/f1000research.73493.1", github = "https://github.com/markrobinsonuzh/os_monitor"),
   c(doi = "10.1101/2022.04.06.487263", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
   c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
@@ -132,7 +130,7 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2022.02.08.479579", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
   c(doi = "10.1101/2022.04.14.488419", software = "https://github.com/MarioniLab/SageNet"),
   c(doi = "10.1101/2022.03.08.483466", software = "https://github.com/schmeing/gapless"),
-  c(doi = "10.12688/f1000research.73600.1", software = "https://bioconductor.org/packages/scDblFinder"),
+  c(doi = "10.12688/f1000research.73600.2", software = "https://bioconductor.org/packages/scDblFinder"),
   c(doi = "10.12688/f1000research.73493.1", software = "http://pubassistant.ch/"),
   c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
 )
@@ -168,7 +166,7 @@ f1000_preprints <- data.frame(
   title = c("An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data",
             "Doublet identification in single-cell sequencing data using scDblFinder"),
   pubdate = c("Posted October 22, 2020.",
-              "Posted September 28, 2021."),
+              "Posted May 16, 2022."),
   pubyear = c("Preprints"),
   journal = c("F1000Research"),
   authors = c("Helena L. Crowell, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, Mark D. Robinson",
@@ -177,7 +175,7 @@ f1000_preprints <- data.frame(
   issue = c(1263, 979),
   pages = c(""),
   doi = c("10.12688/f1000research.26073.1",
-          "10.12688/f1000research.73600.1"),
+          "10.12688/f1000research.73600.2"),
   pmid = c(""),
   elocationid = c("")
 )
@@ -193,7 +191,8 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Almut Luetge", "Luetge A", "Almut Lütge", "Lütge A",
                    "Joanna Zyprych-Walczak", "Zyprych-Walczak J",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", "Weber, L. M.",
-                   "Hembach K", "Katarina Hembach", "Katharina Hembach", "Hembach KM", "Hembach, K. M.",
+                   "Hembach K", "Katarina Hembach", "Katharina Hembach", 
+                   "Hembach KM", "Hembach, K. M.","Betz, K. M.",
                    "Katharina M. Hembach", "Yao Yao", "Yao Y",
                    "de Souza Vladimir", "Vladimir de Souza","Vladimir Barbosa C. de Souza",
                    "Souza VBC", "de Souza VBC","De Souza, V. B. C.",
