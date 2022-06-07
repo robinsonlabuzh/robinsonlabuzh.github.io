@@ -21,7 +21,6 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
-## PLEASE ADD NEW ONES ON THE TOP
 biorxiv_dois <- c("10.1101/2021.08.28.458012",
                   "10.1101/2021.01.18.426963",
                   "10.1101/2020.11.24.394213",
@@ -33,7 +32,8 @@ biorxiv_dois <- c("10.1101/2021.08.28.458012",
                   "10.1101/2022.02.08.479579",
                   "10.1101/2022.04.06.487263",
                   "10.1101/2022.04.14.488419",
-                  "10.1101/2022.05.24.493251")
+                  "10.1101/2022.05.24.493251",
+                  "10.1101/2022.06.01.493823")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -79,6 +79,7 @@ biorxiv_github <- rbind(
   c(doi = "10.12688/f1000research.73493.1", github = "https://github.com/markrobinsonuzh/os_monitor"),
   c(doi = "10.1101/2022.04.06.487263", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
   c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
+  c(doi = "10.1101/2022.06.01.493823", github = "https://retogerber.pages.uzh.ch/synovialscrnaseq/"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
 
