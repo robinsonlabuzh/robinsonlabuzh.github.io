@@ -13,7 +13,7 @@
 
 <title>People</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +83,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -234,7 +238,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -406,55 +410,6 @@ I gradually shifted from the humanities to bioinformatics towards the end of my 
 <tr>
 <td style="border:none;text-align:left;width: 20cm; ">
 PhD in Philosophy of science (2014), SEMM and University of Milan<br>MA in Philosophy (2009), University of Montreal<br>BA in Philosophy (2007)
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="border:none;text-align:left;width: 3cm; font-weight: bold;font-size: 18px;vertical-align: top !important;" rowspan="4">
-<img src="img/thumbnail/imran.jpg" />
-</td>
-<td style="border:none;text-align:left;width: 20cm; font-weight: bold;font-size: 18px;">
-Imran Fanaswala
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-<i class="fa fa-twitter"></i> Twitter <a href="https://twitter.com/IFanaswala">@IFanaswala</a><br>
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-Imran Fanaswala has worked in academia and industry for over a decade; his passion lies in value-driven research (i.e. addressing unmet needs through research as well as bringing ideas to market). His work has spanned various fields (robotics, phylogenetics, DNA-assembly, neuroscience) but often within the machine-learning/AI context (and more recently, “ModelOps”). He strives for readable code, succint prose, and meaningful research.
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-MSc in Computational Biology (2014), ETH Zürich (thesis at RIKEN) <br>BSc in Computer Science (2006), American University of Sharjah <br>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="border:none;text-align:left;width: 3cm; font-weight: bold;font-size: 18px;vertical-align: top !important;" rowspan="3">
-<img src="img/thumbnail/vladimir.jpg" />
-</td>
-<td style="border:none;text-align:left;width: 20cm; font-weight: bold;font-size: 18px;">
-Vladimir B. C. de Souza
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-I am a PhD candidate in Bioinformatics, and I work with method development for long-read RNA-seq from PacBio data (Iso-Seq). I have developed a <a href="https://github.com/vladimirsouza/lrRNAseqVariantCalling">pipeline</a> that allows variant calling with high performance from Iso-Seq data. The preprint of this work is available in <a href="https://www.biorxiv.org/content/10.1101/2022.02.08.479579v1">bioRxiv</a>.
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-MSc in Applied Statistics (2015), University of Vicosa<br>BSc in Biology (2013), University of Vicosa
 </td>
 </tr>
 </tbody>
@@ -766,6 +721,8 @@ BSc of Science in Statistics (2019), Xiamen University
 <div id="alumni" class="section level2">
 <h2>Alumni</h2>
 <ul>
+<li>Vladimir B. C. de Souza (PhD student; author of <a href="https://github.com/vladimirsouza/lrRNAseqVariantCalling">lrRNAseqVariantCalling</a>)</li>
+<li>Imran Fanaswala (Research assistant; founder of <a href="https://yugacell.com/">YugaCell</a>)</li>
 <li>Stephan Schmeing (PhD student; author of <a href="https://github.com/schmeing/ReSeq">ReSeq</a>)</li>
 <li>Ahmad Al Ajami (MSc student)</li>
 <li>Kathi Hembach (PhD student; author of <a href="https://github.com/khembach/DISCERNS">DISCERNS</a>; co-author of <a href="https://github.com/csoneson/ARMOR">ARMOR</a>)</li>

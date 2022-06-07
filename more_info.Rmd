@@ -10,7 +10,7 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 ## Contact
 
-Email: mark.robinson (at) imls.uzh.ch  
+Email: mark.robinson (at) mls.uzh.ch  
 Twitter <i class="fa fa-twitter"></i> [\@markrobinsonca](https://twitter.com/markrobinsonca)  
 GitHub <i class="fa fa-github"></i> [robinsonlabuzh](https://github.com/robinsonlabuzh) and [markrobinsonuzh](https://github.com/markrobinsonuzh)
 

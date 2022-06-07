@@ -445,12 +445,12 @@ tables_all <- list(
   tbl_izaskun,
   tbl_plger,
   #tbl_will,
-  tbl_imran,
+  #tbl_imran,
   #tbl_lukas, 
   #tbl_kathi, 
   # tbl_stephan, 
   # tbl_fiona, 
-  tbl_vladimir, 
+  # tbl_vladimir, 
   #tbl_stephany, 
   tbl_stefan, 
   tbl_helena,
@@ -501,6 +501,8 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Vladimir B. C. de Souza (PhD student; author of [lrRNAseqVariantCalling](https://github.com/vladimirsouza/lrRNAseqVariantCalling))
+- Imran Fanaswala (Research assistant; founder of [YugaCell](https://yugacell.com/))
 - Stephan Schmeing (PhD student; author of [ReSeq](https://github.com/schmeing/ReSeq))
 - Ahmad Al Ajami (MSc student)
 - Kathi Hembach (PhD student; author of [DISCERNS](https://github.com/khembach/DISCERNS); co-author of [ARMOR](https://github.com/csoneson/ARMOR))
