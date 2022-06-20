@@ -432,6 +432,18 @@ tbl_haolyu <- data.frame(
                  ),
           paste0("MSc of Biophysics (2019), University of Electronic Science and Technology of China<br>","BSc of Bioinformatics (2017), Shanxi agricutural university<br>"))
   )
+
+tbl_david <- data.frame(
+  img = "![](img/thumbnail/David.jpg)",
+  bio = c(
+    "David Wissel",
+    paste0(
+      "I am a shared PhD student between the Robinson Lab at UZH and the BoevaLab at ETH. ",
+      "I am broadly interested in survival analysis, single-cell and spatial transcriptomics as well as applications of machine learning to all of these."
+    ),
+    paste0("MSc Statistics (2021), ETH Zurich<br>", "BSc Business Administration (2019), Free University of Berlin<br>")
+  )
+)
 ```
 
 
@@ -461,6 +473,7 @@ tables_all <- list(
   tbl_elyas,
   tbl_emanuel,
   tbl_vlad,
+  tbl_david,
   tbl_joel,
   #tbl_ahmad,
   tbl_dominique,
