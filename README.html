@@ -347,10 +347,23 @@ git merge master</code></pre>
 <div id="adding-members" class="section level3">
 <h3>Adding members</h3>
 <p>The members of the group are listed in the <code>people.Rmd</code> file. To add a new member, you can copy an existing entry and simply change its content. Add the path to your picture in the <code>img</code> component, but make sure that the picture is less than 100KB. The compressed picture should be saved in <code>img/thumbnails</code> (see below for tips on image optimization). Under <code>bio</code>, you can add a description of your research and your university degree(s). If you want, you can also add links to your website, twitter or github accounts. Commit your changes to a new branch, submit a pull request and assign a reviewer (follow the explanations above on how to create a pull request).</p>
+<p>Please note that as of <code>kableExtra</code> version 1.3.4 on CRAN,
+    there are issues with the <code>collapse_rows</code> function which may
+    lead to duplicated thumbnails when knitting the <code>people.Rmd</code>
+    file (see <a href="https://github.com/haozhu233/kableExtra/issues/596">here</a> and
+    <a href="https://github.com/haozhu233/kableExtra/issues/624">here</a>
+    for details). In case you encounter this issue, please install
+    <code>kableExtra</code> from Github instead, by using
+    <code>devtools::install_github("haozhu233/kableExtra")</code>.
+</p>
 </div>
 <div id="adding-news-item" class="section level3">
 <h3>Adding news item</h3>
 <p>News items can be added by simply cutting and pasting an existing snippet (i.e., a row of the <code>tbl_news</code> table) and filling in the new content (a few more details about line breaks, etc. are given in <code>news.Rmd</code>). As usual, the news item should be created in a separate branch (see above), a pull request submitted and then peer-reviewed. In this case, it should be approved by Mark so set the reviewer to be Mark.</p>
+<p>Please also note the paragraph related to the <code>kableExtra</code>
+package in the <a href="#adding-members">member section</a> as the
+<code>collapse_rows</code> function is also used within
+<code>news.Rmd</code>.</p>
 </div>
 <div id="tips-on-image-optimization" class="section level3">
 <h3>Tips on image optimization</h3>
