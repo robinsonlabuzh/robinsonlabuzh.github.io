@@ -470,11 +470,11 @@ tables_all <- list(
   tbl_anthony,
   tbl_haolyu,
   tbl_reto,
-  tbl_elyas,
+  #tbl_elyas,
   tbl_emanuel,
   tbl_vlad,
   tbl_david,
-  tbl_joel,
+  #tbl_joel,
   #tbl_ahmad,
   tbl_dominique,
   tbl_cpy
@@ -514,6 +514,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Elyas Heidari (Research assistant; author of [SageNet](https://github.com/MarioniLab/SageNet); now PhD student at EMBL Heidelberg)
 - Vladimir B. C. de Souza (PhD student; author of [lrRNAseqVariantCalling](https://github.com/vladimirsouza/lrRNAseqVariantCalling))
 - Imran Fanaswala (Research assistant; founder of [YugaCell](https://yugacell.com/))
 - Stephan Schmeing (PhD student; author of [ReSeq](https://github.com/schmeing/ReSeq))
