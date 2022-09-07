@@ -444,6 +444,21 @@ tbl_david <- data.frame(
     paste0("MSc Statistics (2021), ETH Zurich<br>", "BSc Business Administration (2019), Free University of Berlin<br>")
   )
 )
+
+tbl_siyuan <- data.frame(
+  img = "![](img/thumbnail/Siyuan.jpg)",
+  bio = c(
+    "Siyuan Luo",
+    paste0(
+      "I'm an external PhD student from the [von Meyenn lab](https://epigenetics.ethz.ch/) with a background in computational biology and bioinformatics.",
+      "During my master study, I worked on various topics including copy number variation and TCR/BCR repertoire analysis.",
+      "Now I'm mainly interested in analyzing single-cell epigenetic data (ATAC-seq/CUT&Tag).",
+      "My PhD is about methods for single-cell multi-omics data to reveal the interplay between the epigenetic layers ",
+      "and transcriptomics and provide insights for chronic diseases like obesity and ageing."
+    ),
+    paste0("MSc in Computational Biology and Bioinformatics (2021), ETH Zürich, University of Zürich<br>", "BSc in Biotechnology (2018), Harbin Institute of Technology<br>")
+  )
+)
 ```
 
 
@@ -474,6 +489,7 @@ tables_all <- list(
   tbl_emanuel,
   tbl_vlad,
   tbl_david,
+  tbl_siyuan,
   #tbl_joel,
   #tbl_ahmad,
   tbl_dominique,
