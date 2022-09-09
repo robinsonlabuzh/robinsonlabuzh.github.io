@@ -450,9 +450,9 @@ tbl_siyuan <- data.frame(
   bio = c(
     "Siyuan Luo",
     paste0(
-      "I'm an external PhD student from the [von Meyenn lab](https://epigenetics.ethz.ch/) with a background in computational biology and bioinformatics.",
-      "During my master study, I worked on various topics including copy number variation and TCR/BCR repertoire analysis.",
-      "Now I'm mainly interested in analyzing single-cell epigenetic data (ATAC-seq/CUT&Tag).",
+      "I'm an external PhD student from the [von Meyenn lab](https://epigenetics.ethz.ch/) with a background in computational biology and bioinformatics. ",
+      "During my master study, I worked on various topics including copy number variation and TCR/BCR repertoire analysis. ",
+      "Now I'm mainly interested in analyzing single-cell epigenetic data (ATAC-seq/CUT&Tag). ",
       "My PhD is about methods for single-cell multi-omics data to reveal the interplay between the epigenetic layers ",
       "and transcriptomics and provide insights for chronic diseases like obesity and ageing."
     ),
@@ -483,7 +483,7 @@ tables_all <- list(
   tbl_helena,
   tbl_almut,
   tbl_anthony,
-  tbl_haolyu,
+  #tbl_haolyu,
   tbl_reto,
   #tbl_elyas,
   tbl_emanuel,
@@ -530,6 +530,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Hao Lyu (visiting PhD student)
 - Elyas Heidari (Research assistant; author of [SageNet](https://github.com/MarioniLab/SageNet); now PhD student at EMBL Heidelberg)
 - Vladimir B. C. de Souza (PhD student; author of [lrRNAseqVariantCalling](https://github.com/vladimirsouza/lrRNAseqVariantCalling))
 - Imran Fanaswala (Research assistant; founder of [YugaCell](https://yugacell.com/))
