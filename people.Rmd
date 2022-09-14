@@ -459,6 +459,17 @@ tbl_siyuan <- data.frame(
     paste0("MSc in Computational Biology and Bioinformatics (2021), ETH Zürich, University of Zürich<br>", "BSc in Biotechnology (2018), Harbin Institute of Technology<br>")
   )
 )
+
+tbl_martin <- data.frame(
+  img = "![](img/thumbnail/martin.jpg)", 
+  bio = c("Martin Emons", 
+	        paste0("<i class='fa fa-twitter'></i> Twitter [\\@EmonsMartin](https://twitter.com/EmonsMartin)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [mjemons](https://github.com/mjemons)<br>"), 
+          paste0("I am a PhD student in the Robinson Group since 2022 in the Epidemiology and Biostatistics PhD program. My general interest lies in the development of methods for biological and biomedical data science. In my master studies I worked on various topics such as statistical analysis of temporal trends or survival analysis at Roche Diagnostics. Currently, I am interested in spatial transcriptomics and the challenges in this new field."),
+          paste0("MSc in Computational Biology and Bioinformatics (2022), ETH Zürich, University of Zürich<br>",
+                 "BSc in Biology (2019), University of Bern")
+          )
+  )
 ```
 
 
@@ -490,6 +501,7 @@ tables_all <- list(
   tbl_vlad,
   tbl_david,
   tbl_siyuan,
+  tbl_martin,
   #tbl_joel,
   #tbl_ahmad,
   tbl_dominique,
