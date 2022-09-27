@@ -504,8 +504,8 @@ tables_all <- list(
   tbl_martin,
   #tbl_joel,
   #tbl_ahmad,
-  tbl_dominique,
-  tbl_cpy
+  tbl_dominique
+#  tbl_cpy
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
@@ -542,6 +542,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Peiying Cai (MSc student)
 - Hao Lyu (visiting PhD student)
 - Elyas Heidari (Research assistant; author of [SageNet](https://github.com/MarioniLab/SageNet); now PhD student at EMBL Heidelberg)
 - Vladimir B. C. de Souza (PhD student; author of [lrRNAseqVariantCalling](https://github.com/vladimirsouza/lrRNAseqVariantCalling))
