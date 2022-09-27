@@ -22,7 +22,6 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
 biorxiv_dois <- c("10.1101/2021.08.28.458012",
-                  "10.1101/2021.01.18.426963",
                   "10.1101/2020.11.24.394213",
                   "10.1101/2021.11.11.467877",
                   "10.1101/2021.11.15.468676",
@@ -33,7 +32,8 @@ biorxiv_dois <- c("10.1101/2021.08.28.458012",
                   "10.1101/2022.04.06.487263",
                   "10.1101/2022.04.14.488419",
                   "10.1101/2022.05.24.493251",
-                  "10.1101/2022.06.01.493823")
+                  "10.1101/2022.06.01.493823",
+                  "10.1101/2022.09.22.508982")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -79,6 +79,7 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2021.11.15.468676", github = "https://github.com/HelenaLC/simulation-comparison"),
   c(doi = "10.1101/2022.04.06.487263", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
   c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
+  c(doi = "10.1101/2022.09.22.508982", github = "https://github.com/markrobinsonuzh/sc_benchmark_metaanalysis"),
   c(doi = "10.1101/2022.06.01.493823", github = "https://retogerber.pages.uzh.ch/synovialscrnaseq/"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
@@ -91,6 +92,7 @@ pmid_data <- rbind(
   c(pmid = "27992111", data = "http://flowrepository.org/id/FR-FCM-ZZPH"),
   c(pmid = "30271584", data = "https://bioconductor.org/packages/DuoClustering2018/"),
   c(pmid = "33257685", data = "https://doi.org/10.6084/m9.figshare.8986193.v3"),
+  c(pmid = "36072920", data = "https://doi.org/10.6084/m9.figshare.c.5063984.v1"),
   c(pmid = "33758076", data = "https://doi.org/10.6084/m9.figshare.13341200"),
   c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
 )
@@ -98,7 +100,7 @@ biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
   c(doi = "10.1101/2021.11.15.468676", data = "https://doi.org/10.5281/zenodo.5678872"),
   c(doi = "10.1101/2022.02.08.479579", data = "https://doi.org/10.5281/zenodo.5960321"),
-  c(doi = "10.12688/f1000research.26073.2", data = "https://doi.org/10.6084/m9.figshare.c.5063984.v1"),
+  c(doi = "10.1101/2022.09.22.508982", data = "https://doi.org/10.5281/zenodo.7096030"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
@@ -160,21 +162,22 @@ unlisted_publications <- data.frame(
 )
 
 ## F1000Research articles awaiting peer review
-# f1000_preprints <- NULL
+f1000_preprints <- NULL
 
-f1000_preprints <- data.frame(
-  title = c("An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data"),
-  pubdate = c("Posted August 8, 2022."),
-  pubyear = c("Preprints"),
-  journal = c("F1000Research"),
-  authors = c("Helena L. Crowell, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, Mark D. Robinson"),
-  volume = c(9),
-  issue = c(1263),
-  pages = c(""),
-  doi = c("10.12688/f1000research.26073.2"),
-  pmid = c(""),
-  elocationid = c("")
-)
+# f1000_preprints <- data.frame(
+#   title = c("An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data"),
+#   pubdate = c("Posted August 8, 2022."),
+#   pubyear = c("Preprints"),
+#   journal = c("F1000Research"),
+#   authors = c("Helena L. Crowell, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, Mark D. Robinson"),
+#   volume = c(9),
+#   issue = c(1263),
+#   pages = c(""),
+#   doi = c("10.12688/f1000research.26073.2"),
+#   pmid = c(""),
+#   elocationid = c("")
+# )
+
 
 
 ## names of members to highlight in publication list
@@ -183,8 +186,8 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Soneson C", "Charlotte Soneson", "Soneson, C.",
                    "Lindsay H", "Helen Lindsay",
                    "Tiberi S", "Simone Tiberi","Tiberi, S.",
-                   "Germain P-L", "Germain PL", "Pierre-Luc Germain",
-                   "Almut Luetge", "Luetge A", "Almut Lütge", "Lütge A",
+                   "Germain P-L", "Germain PL", "Pierre-Luc Germain","Germain, P.-L.",
+                   "Almut Luetge", "Luetge A", "Almut Lütge", "Lütge A","Luetge, A.",
                    "Joanna Zyprych-Walczak", "Zyprych-Walczak J",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", "Weber, L. M.",
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", 
@@ -193,20 +196,21 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "de Souza Vladimir", "Vladimir de Souza","Vladimir Barbosa C. de Souza",
                    "Souza VBC", "de Souza VBC","De Souza, V. B. C.",
                    "Huang R", "Ruizhu Huang", 
-                   "Schmeing S", "Stephan Schmeing", 
+                   "Schmeing S", "Stephan Schmeing", "Schmeing, S.",
                    "Orjuela S", "Stephany Orjuela", 
-                   "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell", 
+                   "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell",
                    "Helena Crowell", "HelenaL Crowell", "Crowell, H. L.",
-                   "Mallona I", "Izaskun Mallona",
+                   "Mallona I", "Izaskun Mallona","Mallona Gonzalez, I.",
                    "Reto Gerber","Gerber Reto","Gerber R","Gerber, R.",
                    "Manca P",
-                   "Sonrel A", "Anthony Sonrel",
+                   "Sonrel A", "Anthony Sonrel","Sonrel, A.",
                    "Duo A", "Angelo Duo", "Duo A", "Angelo Duo",
                    "Duò A", "Angelo Duò",
                    "Nowicka M", "Malgorzata Nowicka",
                    "Zhou X", "Xiaobei Zhou",
                    "Dania Machlab",
                    "Heidari, E.",
+                   "Paul, D.","Sonder, E.","Fanaswala, I.","Al Ajami, A.",
                    "Nikolayeva O", 
                    "Komljenovic A",
                    "Morilla I", 
@@ -217,7 +221,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Matthes KL",
                    "Will Macnair","Macnair, W.",
                    "Leonardo, S. X. M",
-                   "Milosavljevic S", "Stefan Milosavljevic")
+                   "Milosavljevic S", "Stefan Milosavljevic","Milosavljevic, S.")
 ```
 
 
@@ -316,8 +320,10 @@ summ <- lapply(summ, function(w) {
 })
 ## Put into data frame and arrange by year
 summ <- do.call(rbind, summ)
+
 summ$pubyear[summ$pmid==35475034] <- 2022 # hack for Reto's F1000 pub (lists the wrong year)
 summ$pubyear[summ$pmid==35814628] <- 2022 # hack for PL's F1000 pub (lists the wrong year)
+summ$pubyear[summ$pmid==36072920] <- 2022 # hack for Helena's F1000 pub (lists the wrong year)
 summ <- summ %>% dplyr::arrange(desc(pubyear))
 
 
