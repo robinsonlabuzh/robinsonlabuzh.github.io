@@ -13,7 +13,7 @@
 
 <title>More Information</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -143,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -176,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -185,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -309,8 +306,11 @@ $(document).ready(function () {
 <div id="contact" class="section level2">
 <h2>Contact</h2>
 <p>Email: mark.robinson (at) mls.uzh.ch<br />
-Twitter <i class="fa fa-twitter"></i> <a href="https://twitter.com/markrobinsonca">@markrobinsonca</a><br />
-GitHub <i class="fa fa-github"></i> <a href="https://github.com/robinsonlabuzh">robinsonlabuzh</a> and <a href="https://github.com/markrobinsonuzh">markrobinsonuzh</a></p>
+Twitter <i class="fa fa-twitter"></i> <a
+href="https://twitter.com/markrobinsonca">@markrobinsonca</a><br />
+GitHub <i class="fa fa-github"></i> <a
+href="https://github.com/robinsonlabuzh">robinsonlabuzh</a> and <a
+href="https://github.com/markrobinsonuzh">markrobinsonuzh</a></p>
 <p><strong>Address:</strong></p>
 <p>Department of Molecular Life Sciences<br />
 University of Zurich<br />
@@ -322,29 +322,69 @@ fax <i class="fa fa-fax"></i> +41 44 635 68 68</p>
 </div>
 <div id="links" class="section level2">
 <h2>Links</h2>
-<p><a href="http://www.mls.uzh.ch/en.html">Department of Molecular Life Sciences, University of Zurich</a><br />
-<a href="http://www.mnf.uzh.ch/en.html">Faculty of Science, University of Zurich</a><br />
+<p><a href="http://www.mls.uzh.ch/en.html">Department of Molecular Life
+Sciences, University of Zurich</a><br />
+<a href="http://www.mnf.uzh.ch/en.html">Faculty of Science, University
+of Zurich</a><br />
 <a href="http://www.uzh.ch/en.html">University of Zurich</a><br />
-<a href="https://www.sib.swiss/">Swiss Institute of Bioinformatics</a></p>
+<a href="https://www.sib.swiss/">Swiss Institute of
+Bioinformatics</a></p>
 </div>
 <div id="open-positions" class="section level2">
 <h2>Open positions</h2>
-<p><strong>Research Assistants</strong>. From time to time, we have openings for dedicated numerically-inclined people (e.g., BSc or MSc in Statistics) who are interested in real-world genomics data analysis and gaining research experience before embarking on a PhD. Email me directly if you fit this description.</p>
-<p><strong>PhD Students</strong>. Recruitment for PhD students is conducted through the <a href="https://www.lifescience-graduateschool.uzh.ch/en.html">Life Science Zurich Graduate School</a>, typically through the <a href="http://www.epibiostat-phd.uzh.ch/en.html">Epidemiology and Biostatistics Structured PhD Program</a>. For further information, please refer to the LSZGS website. Once selected, candidates can express an interest in our group; intake (and interviews) take place twice per year.</p>
-<p><strong>Postdoctoral fellows</strong>. There are no open positions at the moment. However, strong candidates are encouraged to email Mark directly and discuss an application for funding with UZH and other funding bodies.</p>
+<p><strong>Research Assistants</strong>. From time to time, we have
+openings for dedicated numerically-inclined people (e.g., BSc or MSc in
+Statistics) who are interested in real-world genomics data analysis and
+gaining research experience before embarking on a PhD. Email me directly
+if you fit this description.</p>
+<p><strong>PhD Students</strong>. Recruitment for PhD students is
+conducted through the <a
+href="https://www.lifescience-graduateschool.uzh.ch/en.html">Life
+Science Zurich Graduate School</a>, typically through the <a
+href="http://www.epibiostat-phd.uzh.ch/en.html">Epidemiology and
+Biostatistics Structured PhD Program</a>. For further information,
+please refer to the LSZGS website. Once selected, candidates can express
+an interest in our group; intake (and interviews) take place twice per
+year.</p>
+<p><strong>Postdoctoral fellows</strong>. There are no open positions at
+the moment. However, strong candidates are encouraged to email Mark
+directly and discuss an application for funding with UZH and other
+funding bodies.</p>
 <!--
 We have a 2 year postdoc position open; details are [here](http://imlspenticton.uzh.ch/dump/JobAd_RobinsonStatisticalBioinformatics_PD_7Aug2018.pdf) and applications are due *September 15 2018*.
 -->
 </div>
 <div id="code-of-conduct" class="section level2">
 <h2>Code of conduct</h2>
-<p>All members of the lab, along with visitors, are expected to agree with the following code of conduct. We will enforce this code as needed. We expect cooperation from all members to help ensuring a safe environment for everybody.</p>
-<p>The lab is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of lab members in any form. Sexual language and imagery is generally not appropriate for any lab venue, including lab meetings, presentations, or discussions.</p>
-<p>Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
-<p>Members asked to stop any harassing behavior are expected to comply immediately.</p>
-<p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact Mark Robinson without hesitation.</p>
-<p>For official concerns, please see the <a href="http://www.uzh.ch/en/about/basics/houseregulations.html">University of Zurich House Regulations</a> website.</p>
-<p>(This code of conduct is adapted from <a href="https://lgatto.github.io/cbio-coc/">Laurent Gatto, UCLouvain</a> and <a href="http://ivory.idyll.org/lab/coc.html">Titus Brown, UC Davis</a>.)</p>
+<p>All members of the lab, along with visitors, are expected to agree
+with the following code of conduct. We will enforce this code as needed.
+We expect cooperation from all members to help ensuring a safe
+environment for everybody.</p>
+<p>The lab is dedicated to providing a harassment-free experience for
+everyone, regardless of gender, gender identity and expression, age,
+sexual orientation, disability, physical appearance, body size, race, or
+religion (or lack thereof). We do not tolerate harassment of lab members
+in any form. Sexual language and imagery is generally not appropriate
+for any lab venue, including lab meetings, presentations, or
+discussions.</p>
+<p>Harassment includes offensive verbal comments related to gender,
+gender identity and expression, age, sexual orientation, disability,
+physical appearance, body size, race, religion, sexual images in public
+spaces, deliberate intimidation, stalking, following, harassing
+photography or recording, sustained disruption of talks or other events,
+inappropriate physical contact, and unwelcome sexual attention.</p>
+<p>Members asked to stop any harassing behavior are expected to comply
+immediately.</p>
+<p>If you are being harassed, notice that someone else is being
+harassed, or have any other concerns, please contact Mark Robinson
+without hesitation.</p>
+<p>For official concerns, please see the <a
+href="http://www.uzh.ch/en/about/basics/houseregulations.html">University
+of Zurich House Regulations</a> website.</p>
+<p>(This code of conduct is adapted from <a
+href="https://lgatto.github.io/cbio-coc/">Laurent Gatto, UCLouvain</a>
+and <a href="http://ivory.idyll.org/lab/coc.html">Titus Brown, UC
+Davis</a>.)</p>
 </div>
 
 
