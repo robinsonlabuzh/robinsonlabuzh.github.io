@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
 <title>Software &amp; Resources</title>
 
-<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
 <style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -57,11 +43,37 @@ if (window.hljs) {
 
 
 
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
 
 
+</head>
 
-
-
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -69,8 +81,13 @@ if (window.hljs) {
   margin-left: auto;
   margin-right: auto;
 }
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -84,16 +101,40 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
 </style>
 
 
 <style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
 .dropdown-submenu {
   position: relative;
 }
@@ -121,7 +162,7 @@ pre code {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
+  border-left-color: #ffffff;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -133,7 +174,7 @@ pre code {
 }
 </style>
 
-<script type="text/javascript">
+<script>
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -143,30 +184,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
+  // mark it active
+  menuAnchor.parent().addClass('active');
 
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
 });
 </script>
+
+<div class="container-fluid main-container">
 
 <!-- tabsets -->
 
@@ -176,12 +202,13 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
+  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -189,9 +216,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -204,7 +238,6 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -217,17 +250,20 @@ $(document).ready(function () {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -235,7 +271,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -294,7 +330,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div id="header">
+<div class="fluid-row" id="header">
 
 
 
@@ -354,56 +390,15 @@ $(document).ready(function () {
 }
 </style>
 <div id="stickers">
-<p><a href="https://github.com/csoneson/ARMOR"><img
-src="stickers/ARMOR.png" /></a><a
-href="https://github.com/supermaxiste/ARPEGGIO"><img
-src="stickers/ARPEGGIO.png" /></a><a
-href="https://github.com/SimoneTiberi/BANDITS"><img
-src="stickers/BANDITS.png" /></a><a
-href="http://bioconductor.org/packages/CATALYST/"><img
-src="stickers/CATALYST.png" /></a><a
-href="https://bioconductor.org/packages/countsimQC/"><img
-src="stickers/countsimQC.png" /></a><a
-href="http://bioconductor.org/packages/CrispRVariants/"><img
-src="stickers/CrispRVariants.png" /></a><a
-href="https://github.com/markrobinsonuzh/DAMEfinder"><img
-src="stickers/DAMEfinder.png" /></a><a
-href="http://bioconductor.org/packages/diffcyt/"><img
-src="stickers/diffcyt.png" /></a><a
-href="https://github.com/SimoneTiberi/distinct"><img
-src="stickers/distinct.png" /></a><a
-href="http://bioconductor.org/packages/DRIMSeq/"><img
-src="stickers/DRIMSeq.png" /></a><a
-href="http://bioconductor.org/packages/edgeR/"><img
-src="stickers/edgeR.png" /></a><a
-href="http://bioconductor.org/packages/iCOBRA/"><img
-src="stickers/iCOBRA.png" /></a><a
-href="http://bioconductor.org/packages/iSEE/"><img
-src="stickers/iSEE.png" /></a><a
-href="https://github.com/HelenaLC/muscat"><img
-src="stickers/muscat.png" /></a><a
-href="https://github.com/plger/pipeComp"><img
-src="stickers/pipeComp.png" /></a><a
-href="http://bioconductor.org/packages/regsplice/"><img
-src="stickers/regsplice.png" /></a><a
-href="https://github.com/plger/scDblFinder"><img
-src="stickers/scDblFinder.png" /></a><a
-href="https://bioconductor.org/packages/SpatialExperiment"><img
-src="https://github.com/Bioconductor/BiocStickers/raw/master/SpatialExperiment/SpatialExperiment.png" /></a><a
-href="https://github.com/fionarhuang/treeclimbR"><img
-src="stickers/treeclimbR.png" /></a><a
-href="https://github.com/fionarhuang/TreeHeatmap"><img
-src="stickers/TreeHeatmap.png" /></a><a
-href="https://github.com/fionarhuang/TreeSummarizedExperiment"><img
-src="stickers/TreeSumExp.png" /></a></p>
+<p><a href="https://github.com/csoneson/ARMOR"><img src="stickers/ARMOR.png" /></a><a href="https://github.com/supermaxiste/ARPEGGIO"><img src="stickers/ARPEGGIO.png" /></a><a href="https://github.com/SimoneTiberi/BANDITS"><img src="stickers/BANDITS.png" /></a><a href="http://bioconductor.org/packages/CATALYST/"><img src="stickers/CATALYST.png" /></a><a href="https://bioconductor.org/packages/countsimQC/"><img src="stickers/countsimQC.png" /></a><a href="http://bioconductor.org/packages/CrispRVariants/"><img src="stickers/CrispRVariants.png" /></a><a href="https://github.com/markrobinsonuzh/DAMEfinder"><img src="stickers/DAMEfinder.png" /></a><a href="http://bioconductor.org/packages/diffcyt/"><img src="stickers/diffcyt.png" /></a><a href="https://github.com/SimoneTiberi/distinct"><img src="stickers/distinct.png" /></a><a href="http://bioconductor.org/packages/DRIMSeq/"><img src="stickers/DRIMSeq.png" /></a><a href="http://bioconductor.org/packages/edgeR/"><img src="stickers/edgeR.png" /></a><a href="http://bioconductor.org/packages/iCOBRA/"><img src="stickers/iCOBRA.png" /></a><a href="http://bioconductor.org/packages/iSEE/"><img src="stickers/iSEE.png" /></a><a href="https://github.com/HelenaLC/muscat"><img src="stickers/muscat.png" /></a><a href="https://github.com/plger/pipeComp"><img src="stickers/pipeComp.png" /></a><a href="http://bioconductor.org/packages/regsplice/"><img src="stickers/regsplice.png" /></a><a href="https://github.com/plger/scDblFinder"><img src="stickers/scDblFinder.png" /></a><a href="https://bioconductor.org/packages/SpatialExperiment"><img src="https://github.com/Bioconductor/BiocStickers/raw/master/SpatialExperiment/SpatialExperiment.png" /></a><a href="https://github.com/fionarhuang/treeclimbR"><img src="stickers/treeclimbR.png" /></a><a href="https://github.com/fionarhuang/TreeHeatmap"><img src="stickers/TreeHeatmap.png" /></a><a href="https://github.com/fionarhuang/TreeSummarizedExperiment"><img src="stickers/TreeSumExp.png" /></a></p>
 </div>
 <div id="r-packages" class="section level3">
 <h3><strong>R packages</strong></h3>
-<table>
+<table style="width:88%;">
 <colgroup>
-<col width="16%" />
-<col width="25%" />
-<col width="58%" />
+<col width="15%" />
+<col width="22%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -415,74 +410,53 @@ src="stickers/TreeSumExp.png" /></a></p>
 <tbody>
 <tr class="odd">
 <td><a href="http://aroma-project.org/">aroma.affymetrix</a></td>
-<td>Henrik Bengtsson<br>James Bullard<br>Kasper Hansen<br>Pierre
-Neuvial<br>Elizabeth Purdom<br><strong>Mark D Robinson</strong><br>Ken
-Simpson</td>
+<td>Henrik Bengtsson<br>James Bullard<br>Kasper Hansen<br>Pierre Neuvial<br>Elizabeth Purdom<br><strong>Mark D Robinson</strong><br>Ken Simpson</td>
 <td>An open-source R framework for microarray analysis</td>
 </tr>
 <tr class="even">
 <td><a href="http://bioconductor.org/packages/BANDITS/">BANDITS</a></td>
-<td><strong>Simone Tiberi</strong><br><strong>Mark D
-Robinson</strong></td>
-<td>A Bayesian hierarchical model for differential splicing, via
-differential transcript usage, accounting for sample-to-sample
-variability and mapping uncertainty</td>
+<td><strong>Simone Tiberi</strong><br><strong>Mark D Robinson</strong></td>
+<td>A Bayesian hierarchical model for differential splicing, via differential transcript usage, accounting for sample-to-sample variability and mapping uncertainty</td>
 </tr>
 <tr class="odd">
-<td><a
-href="http://bioconductor.org/packages/CATALYST/">CATALYST</a></td>
-<td><strong>Helena L Crowell</strong><br><strong>Mark D
-Robinson</strong><br>Vito RT Zanotelli<br>Stéphane Chevrier<br>Bernd
-Bodenmiller</td>
-<td>Pipeline for preprocessing of cytometry data<br>&amp; visualization
-tools for differential analysis</td>
+<td><a href="http://bioconductor.org/packages/CATALYST/">CATALYST</a></td>
+<td><strong>Helena L Crowell</strong><br><strong>Mark D Robinson</strong><br>Vito RT Zanotelli<br>Stéphane Chevrier<br>Bernd Bodenmiller</td>
+<td>Pipeline for preprocessing of cytometry data<br>&amp; visualization tools for differential analysis</td>
 </tr>
 <tr class="even">
-<td><a
-href="http://bioconductor.org/packages/release/bioc/html/CellMixS.html">CellMixS</a></td>
-<td><strong>Almut Lütge</strong><br><strong>Mark D
-Robinson</strong></td>
-<td>Toolbox to evaluate Cellspecific Mixing Scores (CMS) for different
-batches in scRNA-seq data</td>
+<td><a href="http://bioconductor.org/packages/release/bioc/html/CellMixS.html">CellMixS</a></td>
+<td><strong>Almut Lütge</strong><br><strong>Mark D Robinson</strong></td>
+<td>Toolbox to evaluate Cellspecific Mixing Scores (CMS) for different batches in scRNA-seq data</td>
 </tr>
 <tr class="odd">
 <td><a href="https://bioconductor.org/packages/censcyt">censcyt</a></td>
 <td><strong>Reto Gerber</strong></td>
-<td>censored covariates in differential abundance analysis in
-cytometry</td>
+<td>censored covariates in differential abundance analysis in cytometry</td>
 </tr>
 <tr class="even">
-<td><a
-href="https://bioconductor.org/packages/countsimQC/">countsimQC</a></td>
+<td><a href="https://bioconductor.org/packages/countsimQC/">countsimQC</a></td>
 <td><strong>Charlotte Soneson</strong></td>
 <td>Comparison of characteristic features of count data sets</td>
 </tr>
 <tr class="odd">
-<td><a
-href="http://bioconductor.org/packages/CrispRVariants/">CrispRVariants</a></td>
+<td><a href="http://bioconductor.org/packages/CrispRVariants/">CrispRVariants</a></td>
 <td><strong>Helen Lindsay</strong></td>
-<td>Tools for counting and visualising mutations in a target
-location</td>
+<td>Tools for counting and visualising mutations in a target location</td>
 </tr>
 <tr class="even">
-<td><a
-href="https://www.bioconductor.org/packages/release/workflows/html/cytofWorkflow.html">cytofWorkflow</a></td>
+<td><a href="https://www.bioconductor.org/packages/release/workflows/html/cytofWorkflow.html">cytofWorkflow</a></td>
 <td><strong>Malgorzata Nowicka</strong></td>
-<td>CyTOF workflow: differential discovery in high-throughput
-high-dimensional cytometry datasets</td>
+<td>CyTOF workflow: differential discovery in high-throughput high-dimensional cytometry datasets</td>
 </tr>
 <tr class="odd">
-<td><a
-href="https://github.com/markrobinsonuzh/DAMEfinder">DAMEfinder</a></td>
-<td><strong>Stephany Orjuela</strong><br>Dania Machlab<br><strong>Mark D
-Robinson</strong></td>
+<td><a href="https://github.com/markrobinsonuzh/DAMEfinder">DAMEfinder</a></td>
+<td><strong>Stephany Orjuela</strong><br>Dania Machlab<br><strong>Mark D Robinson</strong></td>
 <td>Method to detect differential allele-specific methylation</td>
 </tr>
 <tr class="even">
 <td><a href="http://bioconductor.org/packages/diffcyt/">diffcyt</a></td>
 <td><strong>Lukas M Weber</strong></td>
-<td>Statistical methods for differential discovery in high-dimensional
-cytometry data</td>
+<td>Statistical methods for differential discovery in high-dimensional cytometry data</td>
 </tr>
 <tr class="odd">
 <td><a href="https://github.com/ETHZ-INS/diffUTR">diffUTR</a></td>
@@ -490,35 +464,24 @@ cytometry data</td>
 <td>Streamlining differential exon and UTR usage analysis</td>
 </tr>
 <tr class="even">
-<td><a
-href="http://bioconductor.org/packages/distinct/">distinct</a></td>
-<td><strong>Simone Tiberi</strong><br><strong>Mark D
-Robinson</strong></td>
-<td>A statistical method to perform differential analyses between groups
-of distributions, ideal for applications to high-throughput single-cell
-data. By comparing full distributions, <em>distinct</em> identifies
-both, differential patterns involving changes in the mean, as well as
-more subtle variations that do not involve the mean.</td>
+<td><a href="http://bioconductor.org/packages/distinct/">distinct</a></td>
+<td><strong>Simone Tiberi</strong><br><strong>Mark D Robinson</strong></td>
+<td>A statistical method to perform differential analyses between groups of distributions, ideal for applications to high-throughput single-cell data. By comparing full distributions, <em>distinct</em> identifies both, differential patterns involving changes in the mean, as well as more subtle variations that do not involve the mean.</td>
 </tr>
 <tr class="odd">
 <td><a href="http://bioconductor.org/packages/DRIMSeq/">DRIMSeq</a></td>
 <td><strong>Malgorzata Nowicka</strong></td>
-<td>Differential transcript usage and tuQTL analyses<br>with
-Dirichlet-multinomial model in RNA-seq <a
-href="http://imlspenticton.uzh.ch/robinson_lab/drimseq/">Supplementary
-Page</a></td>
+<td>Differential transcript usage and tuQTL analyses<br>with Dirichlet-multinomial model in RNA-seq <a href="http://imlspenticton.uzh.ch/robinson_lab/drimseq/">Supplementary Page</a></td>
 </tr>
 <tr class="even">
 <td><a href="http://bioconductor.org/packages/edgeR/">edgeR</a></td>
-<td>Yunshun Chen<br>Aaron Lun<br>Davis McCarthy<br><strong>Xiaobei
-Zhou</strong><br><strong>Mark D Robinson</strong><br>Gordon Smyth</td>
+<td>Yunshun Chen<br>Aaron Lun<br>Davis McCarthy<br><strong>Xiaobei Zhou</strong><br><strong>Mark D Robinson</strong><br>Gordon Smyth</td>
 <td>Empirical Analysis of Digital Gene Expression Data in R</td>
 </tr>
 <tr class="odd">
 <td><a href="https://rdrr.io/rforge/FIRMAGene/">FIRMAGene</a></td>
 <td><strong>Mark D Robinson</strong></td>
-<td>Analysis of differential splicing with Affymetrix Gene ST array
-data</td>
+<td>Analysis of differential splicing with Affymetrix Gene ST array data</td>
 </tr>
 <tr class="even">
 <td><a href="http://bioconductor.org/packages/flagme/">flagme</a></td>
@@ -532,35 +495,27 @@ data</td>
 </tr>
 <tr class="even">
 <td><a href="http://bioconductor.org/packages/iSEE/">iSEE</a></td>
-<td><strong>Charlotte Soneson</strong><br>Aaron Lun<br>Federico
-Marini<br>Kevin Rue-Albrecht</td>
+<td><strong>Charlotte Soneson</strong><br>Aaron Lun<br>Federico Marini<br>Kevin Rue-Albrecht</td>
 <td>Interactive SummarizedExperiment Explorer</td>
 </tr>
 <tr class="odd">
 <td><a href="http://github.com/HelenaLC/muscat/">muscat</a></td>
-<td><strong>Helena L Crowell</strong><br><strong>Charlotte
-Soneson</strong><br><strong>Pierre-Luc Germain</strong><br><strong>Mark
-D Robinson</strong></td>
+<td><strong>Helena L Crowell</strong><br><strong>Charlotte Soneson</strong><br><strong>Pierre-Luc Germain</strong><br><strong>Mark D Robinson</strong></td>
 <td>Multi-sample multi-group scRNA-seq data analysis tools</td>
 </tr>
 <tr class="even">
 <td><a href="http://github.com/plger/pipeComp/">pipeComp</a></td>
-<td><strong>Pierre-Luc Germain</strong><br><strong>Anthony
-Sonrel</strong><br><strong>Mark D Robinson</strong></td>
+<td><strong>Pierre-Luc Germain</strong><br><strong>Anthony Sonrel</strong><br><strong>Mark D Robinson</strong></td>
 <td>Pipeline benchmarking framework</td>
 </tr>
 <tr class="odd">
-<td><a
-href="http://bioconductor.org/packages/regsplice/">regsplice</a></td>
+<td><a href="http://bioconductor.org/packages/regsplice/">regsplice</a></td>
 <td><strong>Lukas M Weber</strong></td>
-<td>L1-regularization based methods for detection of differential
-splicing</td>
+<td>L1-regularization based methods for detection of differential splicing</td>
 </tr>
 <tr class="even">
-<td><a
-href="http://bioconductor.org/packages/Repitools/">Repitools</a></td>
-<td><strong>Mark D Robinson</strong><br>Dario Strbenac<br>Aaron
-Statham<br>Andrea Riebler</td>
+<td><a href="http://bioconductor.org/packages/Repitools/">Repitools</a></td>
+<td><strong>Mark D Robinson</strong><br>Dario Strbenac<br>Aaron Statham<br>Andrea Riebler</td>
 <td>Epigenomic tools (BayMeth)</td>
 </tr>
 <tr class="odd">
@@ -569,31 +524,24 @@ Statham<br>Andrea Riebler</td>
 <td>Identifies doublets in single-cell sequencing data</td>
 </tr>
 <tr class="even">
-<td><a
-href="https://github.com/drighelli/SpatialExperiment">SpatialExperiment</a></td>
+<td><a href="https://github.com/drighelli/SpatialExperiment">SpatialExperiment</a></td>
 <td><strong>Helena L Crowell</strong></td>
-<td>SpatialExperiment package provides an S4 class for Spatial Omics
-data handling.</td>
+<td>SpatialExperiment package provides an S4 class for Spatial Omics data handling.</td>
 </tr>
 <tr class="odd">
-<td><a
-href="https://github.com/fionarhuang/treeclimbR">treeclimbR</a></td>
+<td><a href="https://github.com/fionarhuang/treeclimbR">treeclimbR</a></td>
 <td><strong>Ruizhu Huang</strong></td>
-<td>Search for the optimal level of a tree to interpret signal by
-combining with edgeR or DESeq2</td>
+<td>Search for the optimal level of a tree to interpret signal by combining with edgeR or DESeq2</td>
 </tr>
 <tr class="even">
-<td><a
-href="https://github.com/fionarhuang/TreeHeatmap">TreeHeatmap</a></td>
+<td><a href="https://github.com/fionarhuang/TreeHeatmap">TreeHeatmap</a></td>
 <td><strong>Ruizhu Huang</strong></td>
 <td>Visualize heatmaps at arbitrary levels of a tree.</td>
 </tr>
 <tr class="odd">
-<td><a
-href="https://github.com/fionarhuang/TreeSummarizedExperiment">TreeSummarizedExperiment</a></td>
+<td><a href="https://github.com/fionarhuang/TreeSummarizedExperiment">TreeSummarizedExperiment</a></td>
 <td><strong>Ruizhu Huang</strong></td>
-<td>SummarizedExperiment-based object to store data with hierarchical
-structure</td>
+<td>SummarizedExperiment-based object to store data with hierarchical structure</td>
 </tr>
 </tbody>
 </table>
@@ -601,11 +549,11 @@ structure</td>
 </div>
 <div id="data-resources" class="section level3">
 <h3><strong>Data resources</strong></h3>
-<table>
+<table style="width:88%;">
 <colgroup>
-<col width="16%" />
-<col width="25%" />
-<col width="58%" />
+<col width="15%" />
+<col width="22%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -616,62 +564,39 @@ structure</td>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a
-href="http://imlspenticton.uzh.ch/robinson_lab/benchmark_collection">Benchmark
-collection</a></td>
+<td><a href="http://imlspenticton.uzh.ch/robinson_lab/benchmark_collection">Benchmark collection</a></td>
 <td><strong>Robinson group</strong></td>
-<td>Collection of high-throughput computational biology benchmarking
-data sets</td>
+<td>Collection of high-throughput computational biology benchmarking data sets</td>
 </tr>
 <tr class="even">
 <td><a href="http://imlspenticton.uzh.ch:3838/conquer/">conquer</a></td>
 <td><strong>Charlotte Soneson</strong></td>
-<td>Repository providing consistently processed<br>public single-cell
-RNA-seq data sets</td>
+<td>Repository providing consistently processed<br>public single-cell RNA-seq data sets</td>
 </tr>
 <tr class="odd">
-<td><a
-href="https://bioconductor.org/packages/DuoClustering2018/">DuoClustering2018</a></td>
-<td><strong>Angelo Duò</strong><br><strong>Charlotte
-Soneson</strong></td>
-<td>Data package with processed data and clustering results from <a
-href="https://f1000research.com/articles/7-1141/v2">Duò et
-al. (2018)</a></td>
+<td><a href="https://bioconductor.org/packages/DuoClustering2018/">DuoClustering2018</a></td>
+<td><strong>Angelo Duò</strong><br><strong>Charlotte Soneson</strong></td>
+<td>Data package with processed data and clustering results from <a href="https://f1000research.com/articles/7-1141/v2">Duò et al. (2018)</a></td>
 </tr>
 <tr class="even">
-<td><a href="http://flowrepository.org/id/FR-FCM-ZZPH">FlowRepository
-FR-FCM-ZZPH</a></td>
+<td><a href="http://flowrepository.org/id/FR-FCM-ZZPH">FlowRepository FR-FCM-ZZPH</a></td>
 <td><strong>Lukas M Weber</strong></td>
-<td>Data files for benchmark data sets used in <em>“Comparison of
-clustering methods for high-dimensional single-cell flow and mass
-cytometry data”</em> (<a
-href="https://www.ncbi.nlm.nih.gov/pubmed/27992111">Weber and Robinson,
-2016</a>)</td>
+<td>Data files for benchmark data sets used in <em>“Comparison of clustering methods for high-dimensional single-cell flow and mass cytometry data”</em> (<a href="https://www.ncbi.nlm.nih.gov/pubmed/27992111">Weber and Robinson, 2016</a>)</td>
 </tr>
 <tr class="odd">
-<td><a href="http://flowrepository.org/id/FR-FCM-ZYL8">FlowRepository
-FR-FCM-ZYL8</a></td>
+<td><a href="http://flowrepository.org/id/FR-FCM-ZYL8">FlowRepository FR-FCM-ZYL8</a></td>
 <td><strong>Lukas M Weber</strong></td>
-<td>Data files for benchmark data sets used in our paper introducing the
-‘diffcyt’ framework (<a
-href="https://www.biorxiv.org/content/early/2018/06/18/349738">Weber et
-al., 2018</a>)</td>
+<td>Data files for benchmark data sets used in our paper introducing the ‘diffcyt’ framework (<a href="https://www.biorxiv.org/content/early/2018/06/18/349738">Weber et al., 2018</a>)</td>
 </tr>
 <tr class="even">
-<td><a
-href="http://bioconductor.org/packages/release/data/experiment/html/HDCytoData.html">HDCytoData</a></td>
-<td><strong>Lukas M Weber</strong><br><strong>Charlotte
-Soneson</strong></td>
-<td>Data package of high-dimensional cytometry data sets
-in<br>SummarizedExperiment and flowSet formats</td>
+<td><a href="http://bioconductor.org/packages/release/data/experiment/html/HDCytoData.html">HDCytoData</a></td>
+<td><strong>Lukas M Weber</strong><br><strong>Charlotte Soneson</strong></td>
+<td>Data package of high-dimensional cytometry data sets in<br>SummarizedExperiment and flowSet formats</td>
 </tr>
 <tr class="odd">
-<td><a
-href="https://bioconductor.org/packages/TabulaMurisData/">TabulaMurisData</a></td>
+<td><a href="https://bioconductor.org/packages/TabulaMurisData/">TabulaMurisData</a></td>
 <td><strong>Charlotte Soneson</strong></td>
-<td>Bioconductor package providing access to scRNA-seq data from the <a
-href="http://tabula-muris.ds.czbiohub.org/">Tabula Muris
-Consortium</a></td>
+<td>Bioconductor package providing access to scRNA-seq data from the <a href="http://tabula-muris.ds.czbiohub.org/">Tabula Muris Consortium</a></td>
 </tr>
 </tbody>
 </table>
@@ -679,11 +604,11 @@ Consortium</a></td>
 </div>
 <div id="web-applications" class="section level3">
 <h3><strong>Web applications</strong></h3>
-<table>
+<table style="width:88%;">
 <colgroup>
-<col width="16%" />
-<col width="25%" />
-<col width="58%" />
+<col width="15%" />
+<col width="22%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -696,21 +621,17 @@ Consortium</a></td>
 <tr class="odd">
 <td><a href="https://catalyst-project.github.io">CATALYST</a></td>
 <td><strong>Helena L Crowell</strong></td>
-<td>Tools for preprocessing of cytometry data
-including<br>normalization, debarcoding, and compensation</td>
+<td>Tools for preprocessing of cytometry data including<br>normalization, debarcoding, and compensation</td>
 </tr>
 <tr class="even">
 <td><a href="http://lmweber.github.io/CrispantCal/">CrispantCal</a></td>
 <td><strong>Lukas M Weber</strong></td>
-<td>R/Shiny web app to calculate injection mix volumes
-for<br>CRISPR-Cas9 experiments</td>
+<td>R/Shiny web app to calculate injection mix volumes for<br>CRISPR-Cas9 experiments</td>
 </tr>
 <tr class="odd">
-<td><a
-href="http://imlspenticton.uzh.ch:3838/CrispRVariantsLite/">CrispRVariantsLite</a></td>
+<td><a href="http://imlspenticton.uzh.ch:3838/CrispRVariantsLite/">CrispRVariantsLite</a></td>
 <td><strong>Helen Lindsay</strong></td>
-<td>Graphical user interface to the R/Bioconductor CrispRVariants
-package</td>
+<td>Graphical user interface to the R/Bioconductor CrispRVariants package</td>
 </tr>
 <tr class="even">
 <td><a href="http://imlspenticton.uzh.ch:3838/iCOBRA/">iCOBRA</a></td>
@@ -718,20 +639,14 @@ package</td>
 <td>Graphical User interface to the R/Bioconductor iCOBRA package</td>
 </tr>
 <tr class="odd">
-<td><a
-href="https://pubassistant.ch/general_oa_app">pubassistant</a></td>
-<td><strong>Reto Gerber</strong> <br> <strong>Mark D
-Robinson</strong></td>
+<td><a href="https://pubassistant.ch/general_oa_app">pubassistant</a></td>
+<td><strong>Reto Gerber</strong> <br> <strong>Mark D Robinson</strong></td>
 <td>Interactive explorer of publications and open access</td>
 </tr>
 <tr class="even">
-<td><a
-href="http://imlspenticton.uzh.ch:3838/scrnaseq_de_evaluation/">scrnaseq_de_evaluation</a></td>
+<td><a href="http://imlspenticton.uzh.ch:3838/scrnaseq_de_evaluation/">scrnaseq_de_evaluation</a></td>
 <td><strong>Charlotte Soneson</strong></td>
-<td>Interactive browsing and exploration of the scRNA-seq differential
-expression results from <a
-href="https://www.ncbi.nlm.nih.gov/pubmed/29481549">Soneson and
-Robinson, 2018</a></td>
+<td>Interactive browsing and exploration of the scRNA-seq differential expression results from <a href="https://www.ncbi.nlm.nih.gov/pubmed/29481549">Soneson and Robinson, 2018</a></td>
 </tr>
 </tbody>
 </table>
@@ -739,11 +654,11 @@ Robinson, 2018</a></td>
 </div>
 <div id="software-workflows" class="section level3">
 <h3><strong>Software &amp; Workflows</strong></h3>
-<table>
+<table style="width:88%;">
 <colgroup>
-<col width="16%" />
-<col width="25%" />
-<col width="58%" />
+<col width="15%" />
+<col width="22%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -755,31 +670,23 @@ Robinson, 2018</a></td>
 <tbody>
 <tr class="odd">
 <td><a href="https://github.com/csoneson/ARMOR">ARMOR</a></td>
-<td><strong>Stephany Orjuela</strong><br><strong>Ruizhu
-Huang</strong><br><strong>Katharina Hembach</strong><br><strong>Mark D
-Robinson</strong><br><strong>Charlotte Soneson</strong></td>
+<td><strong>Stephany Orjuela</strong><br><strong>Ruizhu Huang</strong><br><strong>Katharina Hembach</strong><br><strong>Mark D Robinson</strong><br><strong>Charlotte Soneson</strong></td>
 <td>Snakemake workflow to perform an end-to-end RNA-seq analysis.</td>
 </tr>
 <tr class="even">
 <td><a href="https://github.com/supermaxiste/ARPEGGIO">ARPEGGIO</a></td>
-<td><strong>Stefan Milosavljevic</strong><br>Tony Kuo<br>Samuele
-Decarli<br>Lucas Mohn<br>Jun Sese<br>Kentaro K. Shimizu<br>Rie
-Shimizu-Inatsugi<br><strong>Mark D Robinson</strong></td>
-<td>SnakeMake workflow to analyse whole genome bisulfite sequencing data
-from allopolyploids.</td>
+<td><strong>Stefan Milosavljevic</strong><br>Tony Kuo<br>Samuele Decarli<br>Lucas Mohn<br>Jun Sese<br>Kentaro K. Shimizu<br>Rie Shimizu-Inatsugi<br><strong>Mark D Robinson</strong></td>
+<td>SnakeMake workflow to analyse whole genome bisulfite sequencing data from allopolyploids.</td>
 </tr>
 <tr class="odd">
 <td><a href="https://github.com/schmeing/gapless">gapless</a></td>
 <td><strong>Stephan Schmeing</strong></td>
-<td>Combined scaffolding, gap-closing and assembly correction with long
-reads.</td>
+<td>Combined scaffolding, gap-closing and assembly correction with long reads.</td>
 </tr>
 <tr class="even">
 <td><a href="https://github.com/schmeing/ReSeq">ReSeq</a></td>
 <td><strong>Stephan Schmeing</strong></td>
-<td>More realistic simulator for genomic DNA sequences from Illumina
-machines that achieves a similar k-mer spectrum as the original
-sequences.</td>
+<td>More realistic simulator for genomic DNA sequences from Illumina machines that achieves a similar k-mer spectrum as the original sequences.</td>
 </tr>
 </tbody>
 </table>
@@ -787,11 +694,11 @@ sequences.</td>
 </div>
 <div id="other-resources" class="section level3">
 <h3><strong>Other resources</strong></h3>
-<table>
+<table style="width:88%;">
 <colgroup>
-<col width="16%" />
-<col width="25%" />
-<col width="58%" />
+<col width="15%" />
+<col width="22%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -802,108 +709,54 @@ sequences.</td>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a
-href="http://imlspenticton.uzh.ch/robinson_lab/ABCD-DNA/">ABCD-DNA
-Supplementary Page</a></td>
+<td><a href="http://imlspenticton.uzh.ch/robinson_lab/ABCD-DNA/">ABCD-DNA Supplementary Page</a></td>
 <td><strong>Mark D Robinson</strong></td>
-<td>Supplementary Page with Supplementary Data (semi-processed), R Code
-for all Figures and analyses (<a
-href="https://www.ncbi.nlm.nih.gov/pubmed/22879430">Robinson et al.,
-2012</a>).</td>
+<td>Supplementary Page with Supplementary Data (semi-processed), R Code for all Figures and analyses (<a href="https://www.ncbi.nlm.nih.gov/pubmed/22879430">Robinson et al., 2012</a>).</td>
 </tr>
 <tr class="even">
-<td><a href="https://github.com/markrobinsonuzh/conquer">conquer (build
-scripts)</a></td>
-<td><strong>Charlotte Soneson</strong><br><strong>Mark D
-Robinson</strong></td>
-<td>Repository containing the code used to prepare the conquer
-(consistent quantification of external RNA-seq data sets) repository (<a
-href="https://www.ncbi.nlm.nih.gov/pubmed/29481549">Soneson and
-Robinson, 2018</a>).</td>
+<td><a href="https://github.com/markrobinsonuzh/conquer">conquer (build scripts)</a></td>
+<td><strong>Charlotte Soneson</strong><br><strong>Mark D Robinson</strong></td>
+<td>Repository containing the code used to prepare the conquer (consistent quantification of external RNA-seq data sets) repository (<a href="https://www.ncbi.nlm.nih.gov/pubmed/29481549">Soneson and Robinson, 2018</a>).</td>
 </tr>
 <tr class="odd">
-<td><a href="https://github.com/csoneson/conquer_comparison">conquer
-(differential expression evaluation)</a></td>
+<td><a href="https://github.com/csoneson/conquer_comparison">conquer (differential expression evaluation)</a></td>
 <td><strong>Charlotte Soneson</strong></td>
-<td>Repository containing the code used to perform the evalutaion of
-differential expression analysis methods in single-cell RNA-seq data (<a
-href="https://www.ncbi.nlm.nih.gov/pubmed/29481549">Soneson and
-Robinson, 2018</a>) <a
-href="http://imlspenticton.uzh.ch/robinson_lab/conquer_de_comparison/">Supplementary
-Page</a></td>
+<td>Repository containing the code used to perform the evalutaion of differential expression analysis methods in single-cell RNA-seq data (<a href="https://www.ncbi.nlm.nih.gov/pubmed/29481549">Soneson and Robinson, 2018</a>) <a href="http://imlspenticton.uzh.ch/robinson_lab/conquer_de_comparison/">Supplementary Page</a></td>
 </tr>
 <tr class="even">
-<td><a
-href="https://github.com/markrobinsonuzh/CrispRVariantsLite">CrispRVariants
-(shiny app code)</a></td>
+<td><a href="https://github.com/markrobinsonuzh/CrispRVariantsLite">CrispRVariants (shiny app code)</a></td>
 <td><strong>Helen Lindsay</strong></td>
-<td>Repository containing the code underlying the CrispRVariantsLite
-Shiny-based web app (<a
-href="https://www.ncbi.nlm.nih.gov/pubmed/27404876">Lindsay et al,
-2016</a>).</td>
+<td>Repository containing the code underlying the CrispRVariantsLite Shiny-based web app (<a href="https://www.ncbi.nlm.nih.gov/pubmed/27404876">Lindsay et al, 2016</a>).</td>
 </tr>
 <tr class="odd">
-<td><a
-href="https://github.com/BodenmillerGroup/cyTOFcompensation">cyTOF
-compensation</a></td>
-<td>Vito RT Zanotelli<br><strong>Helena L
-Crowell</strong><br><strong>Mark D Robinson</strong></td>
-<td>Repository containing scripts to reproduce a majority of the figures
-from <em>“Compensation of Signal Spillover in Suspension and Imaging
-Mass Cytometry”</em> (<a
-href="https://doi.org/10.1016/j.cels.2018.02.010">Chevrier et al.,
-2018</a>).</td>
+<td><a href="https://github.com/BodenmillerGroup/cyTOFcompensation">cyTOF compensation</a></td>
+<td>Vito RT Zanotelli<br><strong>Helena L Crowell</strong><br><strong>Mark D Robinson</strong></td>
+<td>Repository containing scripts to reproduce a majority of the figures from <em>“Compensation of Signal Spillover in Suspension and Imaging Mass Cytometry”</em> (<a href="https://doi.org/10.1016/j.cels.2018.02.010">Chevrier et al., 2018</a>).</td>
 </tr>
 <tr class="even">
-<td><a
-href="https://github.com/lmweber/cytometry-clustering-comparison">cytometry-clustering-comparison</a></td>
+<td><a href="https://github.com/lmweber/cytometry-clustering-comparison">cytometry-clustering-comparison</a></td>
 <td><strong>Lukas M Weber</strong></td>
-<td>Repository of scripts to reproduce and extend analyses and figures
-in <em>“Comparison of clustering methods for high-dimensional
-single-cell flow and mass cytometry data”</em> (<a
-href="https://www.ncbi.nlm.nih.gov/pubmed/27992111">Weber and Robinson,
-2016</a>)</td>
+<td>Repository of scripts to reproduce and extend analyses and figures in <em>“Comparison of clustering methods for high-dimensional single-cell flow and mass cytometry data”</em> (<a href="https://www.ncbi.nlm.nih.gov/pubmed/27992111">Weber and Robinson, 2016</a>)</td>
 </tr>
 <tr class="odd">
-<td><a
-href="https://github.com/lmweber/diffcyt-evaluations">diffcyt-evaluations</a></td>
+<td><a href="https://github.com/lmweber/diffcyt-evaluations">diffcyt-evaluations</a></td>
 <td><strong>Lukas M Weber</strong></td>
-<td>Repository of scripts to reproduce evaluations and figures in our
-paper introducing the ‘diffcyt’ framework (<a
-href="https://www.biorxiv.org/content/early/2018/06/18/349738">Weber et
-al., 2018</a>)</td>
+<td>Repository of scripts to reproduce evaluations and figures in our paper introducing the ‘diffcyt’ framework (<a href="https://www.biorxiv.org/content/early/2018/06/18/349738">Weber et al., 2018</a>)</td>
 </tr>
 <tr class="even">
-<td><a
-href="https://github.com/HelenaLC/muscat-comparison/">muscat-comparison</a></td>
+<td><a href="https://github.com/HelenaLC/muscat-comparison/">muscat-comparison</a></td>
 <td><strong>Helena L Crowell</strong></td>
-<td>Repository of scripts to reproduce comparisons and figures for
-‘muscat’ framework (<a
-href="https://www.biorxiv.org/content/10.1101/713412v1">Crowell et al.,
-2019</a>)</td>
+<td>Repository of scripts to reproduce comparisons and figures for ‘muscat’ framework (<a href="https://www.biorxiv.org/content/10.1101/713412v1">Crowell et al., 2019</a>)</td>
 </tr>
 <tr class="odd">
-<td><a
-href="https://github.com/markrobinsonuzh/diff_splice_paper">Differential
-splicing comparison</a></td>
-<td><strong>Charlotte Soneson</strong><br><strong>Katharina
-Matthes</strong></td>
-<td>Repository containing the code for the comparison of various methods
-for differential isoform usage (differential splicing) detection (<a
-href="https://www.ncbi.nlm.nih.gov/pubmed/26813113">Soneson, Matthes et
-al., 2016</a>) <a
-href="http://imlspenticton.uzh.ch/robinson_lab/splicing_comparison/">Supplementary
-Page</a>.</td>
+<td><a href="https://github.com/markrobinsonuzh/diff_splice_paper">Differential splicing comparison</a></td>
+<td><strong>Charlotte Soneson</strong><br><strong>Katharina Matthes</strong></td>
+<td>Repository containing the code for the comparison of various methods for differential isoform usage (differential splicing) detection (<a href="https://www.ncbi.nlm.nih.gov/pubmed/26813113">Soneson, Matthes et al., 2016</a>) <a href="http://imlspenticton.uzh.ch/robinson_lab/splicing_comparison/">Supplementary Page</a>.</td>
 </tr>
 <tr class="even">
-<td><a
-href="http://imlspenticton.uzh.ch/robinson_lab/edgeR_robust/">edgeR
-robust</a></td>
+<td><a href="http://imlspenticton.uzh.ch/robinson_lab/edgeR_robust/">edgeR robust</a></td>
 <td><strong>Xiaobei Zhou</strong></td>
-<td>Supplementary Page with Supplementary Data, R Code for simulations
-and analyses (<a
-href="https://www.ncbi.nlm.nih.gov/pubmed/24753412">Zhou et al.,
-2014</a>).</td>
+<td>Supplementary Page with Supplementary Data, R Code for simulations and analyses (<a href="https://www.ncbi.nlm.nih.gov/pubmed/24753412">Zhou et al., 2014</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -918,7 +771,7 @@ href="https://www.ncbi.nlm.nih.gov/pubmed/24753412">Zhou et al.,
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -926,23 +779,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

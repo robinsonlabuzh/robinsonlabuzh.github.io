@@ -13,7 +13,7 @@
 
 <title>People</title>
 
-<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -143,15 +143,11 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -180,8 +176,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -189,9 +185,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -810,44 +813,6 @@ new field.
 <td style="border:none;text-align:left;width: 20cm; ">
 MSc in Computational Biology and Bioinformatics (2022), ETH Zürich,
 University of Zürich<br>BSc in Biology (2019), University of Bern
-</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="border:none;text-align:left;width: 3cm; font-weight: bold;font-size: 18px;vertical-align: top !important;" rowspan="4">
-<img src="img/thumbnail/samuel.jpeg" />
-</td>
-<td style="border:none;text-align:left;width: 20cm; font-weight: bold;font-size: 18px;">
-Samuel Gunz
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-<i class="fa fa-twitter"></i> Twitter <a
-href="https://twitter.com/samuelgunz">@samuelgunz</a><br><i class="fa fa-github"></i>
-GitHub <a href="https://github.com/sgunz">sgunz</a><br>
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-I am a PhD student in the Robinson lab as part of the Epidemiology and
-Biostatistics program of the Life Science Graduate School Zurich. During
-my past studies, I worked with all sorts of biological data, ranging
-from microbial community analysis to characterizing epigenetic
-modifications in cancer. During this time, I acknowledged the importance
-of having robust and reproducible tools in research and that my interest
-lies in developing such. My PhD project will focus on methods for
-analyzing spatial omics data.
-</td>
-</tr>
-<tr>
-<td style="border:none;text-align:left;width: 20cm; ">
-MSc in Computational Biology and Bioinformatics (2022), ETH Zurich,
-University of Basel and University of Zurich<br>BSc in Biology (2018),
-University of Zurich
 </td>
 </tr>
 </tbody>
