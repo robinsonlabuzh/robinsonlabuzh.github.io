@@ -470,6 +470,17 @@ tbl_martin <- data.frame(
                  "BSc in Biology (2019), University of Bern")
           )
   )
+
+tbl_samuel <- data.frame(
+  img = "![](img/thumbnail/samuel.jpeg)", 
+  bio = c("Samuel Gunz", 
+          paste0("<i class='fa fa-twitter'></i> Twitter [\\@samuelgunz](https://twitter.com/samuelgunz)<br>", 
+                 "<i class='fa fa-github'></i> GitHub [sgunz](https://github.com/sgunz)<br>"), 
+          paste0("I am a PhD student in the Robinson lab as part of the Epidemiology and Biostatistics program of the Life Science Graduate School Zurich. During my past studies, I worked with all sorts of biological data, ranging from microbial community analysis to characterizing epigenetic modifications in cancer. During this time, I acknowledged the importance of having robust and reproducible tools in research and that my interest lies in developing such. My PhD project will focus on methods for analyzing spatial omics data."),
+          paste0("MSc in Computational Biology and Bioinformatics (2022), ETH Zurich, University of Basel and University of Zurich<br>", "BSc in Biology (2018), University of Zurich")
+  )
+)
+
 ```
 
 
@@ -479,7 +490,7 @@ tbl_martin <- data.frame(
 tables_all <- list(
   tbl_mark, 
   #tbl_joanna, 
-  tbl_simone,
+  #tbl_simone,
   tbl_izaskun,
   tbl_plger,
   #tbl_will,
@@ -502,9 +513,10 @@ tables_all <- list(
   tbl_david,
   tbl_siyuan,
   tbl_martin,
+  tbl_samuel
   #tbl_joel,
   #tbl_ahmad,
-  tbl_dominique
+  #tbl_dominique
 #  tbl_cpy
 #  tbl_charlotte, 
 #  tbl_angelo,
@@ -542,6 +554,8 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Simone Tiberi (postdoc; author of [BANDITS](https://bioconductor.org/packages/release/bioc/html/BANDITS.html) and [distinct](https://bioconductor.org/packages/release/bioc/html/distinct.html); now Assistant Professor at Università di Bologna)
+- Dominique Paul (research assistant)
 - Peiying Cai (MSc student)
 - Hao Lyu (visiting PhD student)
 - Elyas Heidari (Research assistant; author of [SageNet](https://github.com/MarioniLab/SageNet); now PhD student at EMBL Heidelberg)
