@@ -490,7 +490,7 @@ tbl_samuel <- data.frame(
 tables_all <- list(
   tbl_mark, 
   #tbl_joanna, 
-  tbl_simone,
+  #tbl_simone,
   tbl_izaskun,
   tbl_plger,
   #tbl_will,
@@ -513,10 +513,10 @@ tables_all <- list(
   tbl_david,
   tbl_siyuan,
   tbl_martin,
-  tbl_samuel,
+  tbl_samuel
   #tbl_joel,
   #tbl_ahmad,
-  tbl_dominique
+  #tbl_dominique
 #  tbl_cpy
 #  tbl_charlotte, 
 #  tbl_angelo,
@@ -554,6 +554,8 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Simone Tiberi (postdoc; author of [BANDITS](https://bioconductor.org/packages/release/bioc/html/BANDITS.html) and [distinct](https://bioconductor.org/packages/release/bioc/html/distinct.html); now Assistant Professor at Università di Bologna)
+- Dominique Paul (research assistant)
 - Peiying Cai (MSc student)
 - Hao Lyu (visiting PhD student)
 - Elyas Heidari (Research assistant; author of [SageNet](https://github.com/MarioniLab/SageNet); now PhD student at EMBL Heidelberg)
