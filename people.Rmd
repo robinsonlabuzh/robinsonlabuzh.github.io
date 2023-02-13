@@ -411,15 +411,14 @@ tbl_dominique <- data.frame(
 
 
 tbl_cpy <- data.frame(
-  img = "![](img/thumbnail/cpy.jpg)", 
+  img = "![](img/thumbnail/peiying.jpg)", 
   bio = c("Peiying Cai",  
-          paste0("As a Master student in the Biostatistics program of UZH, ",
-                 "I am currently working on my master thesis. The project aims to propose a novel methodology for differential analyses from spatial transcriptomics data, ",
-                 "that identifies spatially variable (SV) genes as well as the specific areas of the tissue affected by SV. ",
-                 "Furthermore, the method will also investigate how spatial expression patterns vary between conditions (e.g., healthy vs. disease). ",
-                 "Then, ideally the framework could be extended to do the same things with cell types."
-                  ), 
-          paste0("BSc of Science in Statistics (2019), Xiamen University"))
+          paste0("In February 2023, I started working as a PhD student in the Robinson lab. ",
+	         "Previously, I worked on developing analysis tools and pipelines to identify spatially variable genes from spatial transcriptomics data. ",
+                 "My PhD research will focus on the development of statistical methods in bioinformatics, ",
+		 "mostly for single-cell RNA-seq and spatial transcriptomics data. "),
+	  paste0("MSc in Biostatistics (2022), University of Zürich<br>",
+		 "BSc of Science in Statistics (2019), Xiamen University"))
 )
 
 tbl_haolyu <- data.frame(
@@ -513,11 +512,11 @@ tables_all <- list(
   tbl_david,
   tbl_siyuan,
   tbl_martin,
-  tbl_samuel
+  tbl_samuel,
   #tbl_joel,
   #tbl_ahmad,
   #tbl_dominique
-#  tbl_cpy
+  tbl_cpy
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
@@ -556,7 +555,6 @@ for (i in seq_along(tables_all)) {
 ## Alumni
 - Simone Tiberi (postdoc; author of [BANDITS](https://bioconductor.org/packages/release/bioc/html/BANDITS.html) and [distinct](https://bioconductor.org/packages/release/bioc/html/distinct.html); now Assistant Professor at Università di Bologna)
 - Dominique Paul (research assistant)
-- Peiying Cai (MSc student)
 - Hao Lyu (visiting PhD student)
 - Elyas Heidari (Research assistant; author of [SageNet](https://github.com/MarioniLab/SageNet); now PhD student at EMBL Heidelberg)
 - Vladimir B. C. de Souza (PhD student; author of [lrRNAseqVariantCalling](https://github.com/vladimirsouza/lrRNAseqVariantCalling))
