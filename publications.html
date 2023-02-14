@@ -9,11 +9,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="" />
 
 
 <title>Publications</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -143,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -176,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -185,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -311,6 +309,23 @@ $(document).ready(function () {
 <div id="preprints" class="section level2">
 <h2>Preprints</h2>
 <ul>
+<li><strong>De Souza, V. B. C.</strong>; Jordan, B. T.; Tseng, E.;
+Nelson, E. A.; Hirschi, K. K.; Sheynkman, G. M.; <strong>Robinson, M.
+D.</strong>: Transformation of alignment files improves performance of
+variant callers for long-read RNA sequencing data. bioRxiv doi:
+<a href="https://doi.org/10.1101/2022.02.08.479579" target="_blank">
+https://doi.org/10.1101/2022.02.08.479579</a>. Posted February 02, 2023.
+<a href="https://github.com/vladimirsouza/lrRNAseqBenchmark" target="_blank">
+GitHub repo</a>.
+<a href="https://doi.org/10.5281/zenodo.5960321" target="_blank">
+Data</a>.
+<a href="https://github.com/vladimirsouza/lrRNAseqVariantCalling" target="_blank">
+Software</a>.
+<div class="altmetric-embed" data-badge-popover="right"
+data-no-score="true" data-badge-type="bar"
+data-doi="10.1101/2022.02.08.479579" data-hide-no-mentions="true">
+
+</div></li>
 <li><strong>Sonrel, A.</strong>; <strong>Luetge, A.</strong>;
 <strong>Soneson, C.</strong>; <strong>Mallona Gonzalez, I.</strong>;
 <strong>Germain, P.-L.</strong>; Knyazev, S.; Gilis, J.; <strong>Gerber,
@@ -457,23 +472,6 @@ data-no-score="true" data-badge-type="bar"
 data-doi="10.1101/2022.03.08.483466" data-hide-no-mentions="true">
 
 </div></li>
-<li><strong>De Souza, V. B. C.</strong>; Jordan, B. T.; Tseng, E.;
-Nelson, E. A.; Hirschi, K. K.; Sheynkman, G. M.; <strong>Robinson, M.
-D.</strong>: Transformation of alignment files improves performance of
-variant callers for long-read RNA sequencing data. bioRxiv doi:
-<a href="https://doi.org/10.1101/2022.02.08.479579" target="_blank">
-https://doi.org/10.1101/2022.02.08.479579</a>. Posted March 09, 2022.
-<a href="https://github.com/vladimirsouza/lrRNAseqBenchmark" target="_blank">
-GitHub repo</a>.
-<a href="https://doi.org/10.5281/zenodo.5960321" target="_blank">
-Data</a>.
-<a href="https://github.com/vladimirsouza/lrRNAseqVariantCalling" target="_blank">
-Software</a>.
-<div class="altmetric-embed" data-badge-popover="right"
-data-no-score="true" data-badge-type="bar"
-data-doi="10.1101/2022.02.08.479579" data-hide-no-mentions="true">
-
-</div></li>
 <li>Hruska-Plochan, M.; <strong>Hembach, K. M.</strong>; Ronchi, S.;
 Wiersma, V. I.; Maniecka, Z.; Hock, E.-M.; Laferriere, F.; Sahadevan,
 S.; Hoop, V.; Delvendahl, I.; Panatta, M.; Van Der Bourg, A.;
@@ -508,7 +506,7 @@ data-doi="10.1101/2021.11.11.467877" data-hide-no-mentions="true">
 Olcina MM, Domingo E, El Aidy S, Mallah K, <strong>Robinson MD</strong>,
 Guglietta S: Complement downregulation promotes an inflammatory
 signature that renders colorectal cancer susceptible to immunotherapy. J
-Immunother Cancer 10(9):e004717 (2022).
+Immunother Cancer 10(9): (2022).
 <a href="https://doi.org/10.1136/jitc-2022-004717" target="_blank"> DOI:
 10.1136/jitc-2022-004717</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/36137652" target="_blank">
@@ -521,7 +519,7 @@ data-hide-no-mentions="true">
 </div></li>
 <li><strong>Germain PL</strong>, Lun A, Garcia Meixide C, Macnair W,
 <strong>Robinson MD</strong>: Doublet identification in single-cell
-sequencing data using <i>scDblFinder</i>. F1000Res 10:979 (2022).
+sequencing data using scDblFinder. F1000Res 10:979 (2022).
 <a href="https://doi.org/10.12688/f1000research.73600.2" target="_blank">
 DOI: 10.12688/f1000research.73600.2</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/35814628" target="_blank">
@@ -633,7 +631,7 @@ data-hide-no-mentions="true">
 
 </div></li>
 <li><strong>Crowell HL</strong>, Chevrier S, Jacobs A, Sivapatham S,
-Tumor Profiler Consortium., Bodenmiller B, <strong>Robinson MD</strong>:
+Tumor Profiler Consortium, Bodenmiller B, <strong>Robinson MD</strong>:
 An R-based reproducible and user-friendly preprocessing pipeline for
 CyTOF data. F1000Res 9:1263 (2022).
 <a href="https://doi.org/10.12688/f1000research.26073.2" target="_blank">
@@ -650,8 +648,8 @@ data-hide-no-mentions="true">
 </div></li>
 <li>Righelli D, <strong>Weber LM</strong>, <strong>Crowell HL</strong>,
 Pardo B, Collado-Torres L, Ghazanfar S, Lun ATL, Hicks SC, Risso D:
-SpatialExperiment: infrastructure for spatially resolved transcriptomics
-data in R using Bioconductor. Bioinformatics :btac299 (2022).
+SpatialExperiment: infrastructure for spatially-resolved transcriptomics
+data in R using Bioconductor. Bioinformatics 38(11):3128-3131 (2022).
 <a href="https://doi.org/10.1093/bioinformatics/btac299" target="_blank">
 DOI: 10.1093/bioinformatics/btac299</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/35482478" target="_blank">
@@ -755,7 +753,7 @@ data-hide-no-mentions="true">
 Brykczynska Kunzmann U, <strong>Crowell HL</strong>, Calini D, Malhotra
 D, <strong>Soneson C</strong>, <strong>Robinson MD</strong>: CellMixS:
 quantifying and visualizing batch effects in single-cell RNA-seq data.
-Life Sci Alliance 4(6):e202001004 (2021).
+Life Sci Alliance 4(6): (2021).
 <a href="https://doi.org/10.26508/lsa.202001004" target="_blank"> DOI:
 10.26508/lsa.202001004</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/33758076" target="_blank">
@@ -1042,9 +1040,8 @@ Monti SM, Petrella V, Perrotta MM, <strong>Schmeing S</strong>, Ruggiero
 A, Scolari F, Giordano E, Tsoumani KT, Marec F, Windbichler N, Arunkumar
 KP, Bourtzis K, Mathiopoulos KD, Ragoussis J, Vitagliano L, Tu Z,
 Papathanos PA, <strong>Robinson MD</strong>, Saccone G:
-<i>Maleness-on-the-Y</i> (<i>MoY</i>) orchestrates male sex
-determination in major agricultural fruit fly pests. Science
-365(6460):1457-1460 (2019).
+Maleness-on-the-Y (MoY) orchestrates male sex determination in major
+agricultural fruit fly pests. Science 365(6460):1457-1460 (2019).
 <a href="https://doi.org/10.1126/science.aax1318" target="_blank"> DOI:
 10.1126/science.aax1318</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/31467189" target="_blank">
@@ -1075,7 +1072,7 @@ data-hide-no-mentions="true">
 <li>Bick JT, Zeng S, <strong>Robinson MD</strong>, Ulbrich SE,
 Bauersachs S: Mammalian Annotation Database for improved annotation and
 functional classification of Omics datasets from less well-annotated
-organisms. Database (Oxford) 2019:baz086 (2019).
+organisms. Database (Oxford) 2019: (2019).
 <a href="https://doi.org/10.1093/database/baz086" target="_blank"> DOI:
 10.1093/database/baz086</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/31353404" target="_blank">
@@ -1089,7 +1086,7 @@ data-hide-no-mentions="true">
 <li>D’Agati G, Cabello EM, Frontzek K, Rushing EJ, Klemm R,
 <strong>Robinson MD</strong>, White RM, Mosimann C, Burger A: Active
 receptor tyrosine kinases, but not Brachyury, are sufficient to trigger
-chordoma in zebrafish. Dis Model Mech 12(7):dmm039545 (2019).
+chordoma in zebrafish. Dis Model Mech 12(7): (2019).
 <a href="https://doi.org/10.1242/dmm.039545" target="_blank"> DOI:
 10.1242/dmm.039545</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/31221659" target="_blank">
@@ -1152,10 +1149,9 @@ data-hide-no-mentions="true">
 </div></li>
 <li><strong>Orjuela S</strong>, <strong>Huang R</strong>,
 <strong>Hembach KM</strong>, <strong>Robinson MD</strong>,
-<strong>Soneson C</strong>: ARMOR: An <u>A</u>utomated
-<u>R</u>eproducible <u>MO</u>dular Workflow for Preprocessing and
-Differential Analysis of <u>R</u>NA-seq Data. G3 (Bethesda)
-9(7):2089-2096 (2019).
+<strong>Soneson C</strong>: ARMOR: An Automated Reproducible MOdular
+Workflow for Preprocessing and Differential Analysis of RNA-seq Data. G3
+(Bethesda) 9(7):2089-2096 (2019).
 <a href="https://doi.org/10.1534/g3.119.400185" target="_blank"> DOI:
 10.1534/g3.119.400185</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/31088905" target="_blank">
@@ -1216,7 +1212,7 @@ data-hide-no-mentions="true">
 <li><strong>Soneson C</strong>, Love MI, Patro R, Hussain S, Malhotra D,
 <strong>Robinson MD</strong>: A junction coverage compatibility score to
 quantify the reliability of transcript abundance estimates and
-annotation catalogs. Life Sci Alliance 2(1):e201800175 (2019).
+annotation catalogs. Life Sci Alliance 2(1): (2019).
 <a href="https://doi.org/10.26508/lsa.201800175" target="_blank"> DOI:
 10.26508/lsa.201800175</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/30655364" target="_blank">
@@ -1231,8 +1227,8 @@ data-hide-no-mentions="true">
 </div></li>
 <li>Doumpas N, Lampart F, <strong>Robinson MD</strong>, Lentini A,
 Nestor CE, Cantù C, Basler K: TCF/LEF dependent and independent
-transcriptional regulation of Wnt/β-catenin target genes. EMBO J
-38(2):e98873 (2019).
+transcriptional regulation of Wnt/β-catenin target genes. EMBO J 38(2):
+(2019).
 <a href="https://doi.org/10.15252/embj.201798873" target="_blank"> DOI:
 10.15252/embj.201798873</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/30425074" target="_blank">
@@ -1387,9 +1383,9 @@ data-hide-no-mentions="true">
 <li>Savic N, Ringnalda FC, <strong>Lindsay H</strong>, Berk C, Bargsten
 K, Li Y, Neri D, <strong>Robinson MD</strong>, Ciaudo C, Hall J, Jinek
 M, Schwank G: Covalent linkage of the DNA repair template to the
-CRISPR-Cas9 nuclease enhances homology-directed repair. Elife 7:e33761
-(2018). <a href="https://doi.org/10.7554/eLife.33761" target="_blank">
-DOI: 10.7554/eLife.33761</a>.
+CRISPR-Cas9 nuclease enhances homology-directed repair. Elife 7: (2018).
+<a href="https://doi.org/10.7554/eLife.33761" target="_blank"> DOI:
+10.7554/eLife.33761</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/29809142" target="_blank">
 PMID 29809142</a>.
 <div class="altmetric-embed" data-badge-popover="right"
@@ -1615,8 +1611,8 @@ data-hide-no-mentions="true">
 <li>Sharma A, Heinze SD, Wu Y, Kohlbrenner T, <strong>Morilla
 I</strong>, Brunner C, Wimmer EA, van de Zande L, <strong>Robinson
 MD</strong>, Beukeboom LW, Bopp D: Male sex in houseflies is determined
-by <i>Mdmd</i>, a paralog of the generic splice factor gene
-<i>CWC22</i>. Science 356(6338):642-645 (2017).
+by Mdmd, a paralog of the generic splice factor gene CWC22. Science
+356(6338):642-645 (2017).
 <a href="https://doi.org/10.1126/science.aam5498" target="_blank"> DOI:
 10.1126/science.aam5498</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/28495751" target="_blank">
@@ -1643,10 +1639,10 @@ data-hide-no-mentions="true">
 </div></li>
 <li>Sauerwald J, <strong>Soneson C</strong>, <strong>Robinson
 MD</strong>, Luschnig S: Faithful mRNA splicing depends on the Prp19
-complex subunit <i>faint sausage</i> and is required for tracheal
-branching morphogenesis in <i>Drosophila</i>. Development 144(4):657-663
-(2017). <a href="https://doi.org/10.1242/dev.144535" target="_blank">
-DOI: 10.1242/dev.144535</a>.
+complex subunit faint sausage and is required for tracheal branching
+morphogenesis in Drosophila. Development 144(4):657-663 (2017).
+<a href="https://doi.org/10.1242/dev.144535" target="_blank"> DOI:
+10.1242/dev.144535</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/28087625" target="_blank">
 PMID 28087625</a>.
 <div class="altmetric-embed" data-badge-popover="right"
@@ -1860,7 +1856,7 @@ data-hide-no-mentions="true">
 <li>Locke WJ, Zotenko E, Stirzaker C, <strong>Robinson MD</strong>,
 Hinshelwood RA, Stone A, Reddel RR, Huschtscha LI, Clark SJ: Coordinated
 epigenetic remodelling of transcriptional networks occurs during early
-breast carcinogenesis. Clin Epigenetics 7:52 (2015).
+breast carcinogenesis. Clin Epigenetics 7(1):52 (2015).
 <a href="https://doi.org/10.1186/s13148-015-0086-0" target="_blank">
 DOI: 10.1186/s13148-015-0086-0</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/25960784" target="_blank">
@@ -1946,7 +1942,7 @@ data-hide-no-mentions="true">
 <li>Gu L, Frommel SC, Oakes CC, Simon R, Grupp K, Gerig CY, Bär D,
 <strong>Robinson MD</strong>, Baer C, Weiss M, Gu Z, Schapira M, Kuner
 R, Sültmann H, Provenzano M, ICGC Project on Early Onset Prostate
-Cancer., Yaspo ML, Brors B, Korbel J, Schlomm T, Sauter G, Eils R, Plass
+Cancer, Yaspo ML, Brors B, Korbel J, Schlomm T, Sauter G, Eils R, Plass
 C, Santoro R: BAZ2A (TIP5) is involved in epigenetic alterations in
 prostate cancer and its overexpression predicts disease recurrence. Nat
 Genet 47(1):22-30 (2015).
@@ -2017,7 +2013,7 @@ Rattray M, <strong>Robinson MD</strong>, Roelen B, Sauer S, Schinzer D,
 Slagboom E, Spector T, Stunnenberg HG, Tiligada E, Torres-Padilla ME,
 Tsonaka R, Van Soom A, Vidaković M, Widschwendter M: Relationship
 between genome and epigenome–challenges and requirements for future
-research. BMC Genomics 15:487 (2014).
+research. BMC Genomics 15(1):487 (2014).
 <a href="https://doi.org/10.1186/1471-2164-15-487" target="_blank"> DOI:
 10.1186/1471-2164-15-487</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/24942464" target="_blank">
@@ -2162,7 +2158,7 @@ data-hide-no-mentions="true">
 <li>Menigatti M, Staiano T, Manser CN, Bauerfeind P, <strong>Komljenovic
 A</strong>, <strong>Robinson M</strong>, Jiricny J, Buffoli F, Marra G:
 Epigenetic silencing of monoallelically methylated miRNA loci in
-precancerous colorectal lesions. Oncogenesis 2:e56 (2013).
+precancerous colorectal lesions. Oncogenesis 2(7):e56 (2013).
 <a href="https://doi.org/10.1038/oncsis.2013.21" target="_blank"> DOI:
 10.1038/oncsis.2013.21</a>.
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/23857251" target="_blank">
@@ -2417,7 +2413,7 @@ data-doi="https://doi.org/10.1093/biostatistics/kxm030"
 data-hide-no-mentions="true">
 
 </div></li>
-<li>Cancer Genome Atlas Research Network.: Comprehensive genomic
+<li>Cancer Genome Atlas Research Network: Comprehensive genomic
 characterization defines human glioblastoma genes and core pathways.
 Nature 455(7216):1061-8 (2008).
 <a href="https://doi.org/10.1038/nature07385" target="_blank"> DOI:
