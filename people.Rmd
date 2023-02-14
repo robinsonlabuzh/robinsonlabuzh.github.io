@@ -480,6 +480,15 @@ tbl_samuel <- data.frame(
   )
 )
 
+
+tbl_yinguo <- data.frame(
+  img = "![](img/thumbnail/YinGuo.jpg)",
+  bio = c("Yin Guo",
+          paste0("I am a visiting PhD student with a background in statistics. ", "I am interested in biostatistics and machine learning. My PhD project is about multi-view (multi-omics) learning. Now I'm mainly interested in the integration analysis of single-cell multi-omics datasets."),
+          paste0("BSc of Applied Statistics (2018), Minzu University of China")
+)
+)
+
 ```
 
 
@@ -516,7 +525,8 @@ tables_all <- list(
   #tbl_joel,
   #tbl_ahmad,
   #tbl_dominique
-  tbl_cpy
+  tbl_cpy,
+  tbl_yinguo
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen
