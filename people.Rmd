@@ -563,7 +563,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
-- Stefan Milosajevic (PhD student shared with Shimizu group; author of [ARPEGGIO](https://github.com/supermaxiste/ARPEGGIO); now Biomedical Data Engineer at [https://datascience.ch](Swiss Data Science Center))
+- Stefan Milosavljevic (PhD student shared with Shimizu group; author of [ARPEGGIO](https://github.com/supermaxiste/ARPEGGIO); now Biomedical Data Engineer at [Swiss Data Science Center](https://datascience.ch))
 - Simone Tiberi (postdoc; author of [BANDITS](https://bioconductor.org/packages/release/bioc/html/BANDITS.html) and [distinct](https://bioconductor.org/packages/release/bioc/html/distinct.html); now Assistant Professor at Università di Bologna)
 - Dominique Paul (research assistant)
 - Hao Lyu (visiting PhD student)

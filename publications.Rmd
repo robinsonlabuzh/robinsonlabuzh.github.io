@@ -221,7 +221,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Riebler A",
                    "Biyong B",
                    "Matthes KL",
-                   "Will Macnair","Macnair, W.",
+                   "Will Macnair","Macnair, W.","Macnair W",
                    "Leonardo, S. X. M",
                    "Milosavljevic S", "Stefan Milosavljevic","Milosavljevic, S.")
 ```
