@@ -15,14 +15,14 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
 ## PubMed IDs to add
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
               "30002819", "30356428", "31178352", "31857895", "18772890",
-              "18573797", "33300035", "33349709", "35354817", "35482478")
+              "18573797", "33300035", "33349709", "35354817", "35482478",
+              "36765378")
 
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
-biorxiv_dois <- c("10.1101/2021.08.28.458012",
-                  "10.1101/2020.11.24.394213",
+biorxiv_dois <- c("10.1101/2020.11.24.394213",
                   "10.1101/2021.11.11.467877",
                   "10.1101/2021.11.15.468676",
                   "10.1101/2021.12.08.471089",
@@ -46,6 +46,7 @@ pmid_github <- rbind(
   c(pmid = "27992111", github = "https://github.com/lmweber/cytometry-clustering-comparison"),
   c(pmid = "34001188", github = "https://github.com/fionarhuang/treeclimbR_article"),
   c(pmid = "29481549", github = "https://github.com/csoneson/conquer_comparison"),
+  c(pmid = "36765378", github = "https://github.com/wmacnair/SampleQC_paper_analyses"),
   c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
   c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scRNAseq_clustering_comparison"),
   c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance"),
@@ -68,7 +69,7 @@ pmid_github <- rbind(
 
 biorxiv_github <- rbind(
   #c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses"),
-  c(doi = "10.1101/2021.08.28.458012", github = "https://github.com/wmacnair/SampleQC_paper_analyses"),
+  #c(doi = "10.1101/2021.08.28.458012", github = "https://github.com/wmacnair/SampleQC_paper_analyses"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
   #c(doi = "10.1101/2021.03.26.436976", github = "https://github.com/csoneson/WagnerEMT2020"),
@@ -128,13 +129,14 @@ pmid_software <- rbind(
   c(pmid = "33971812", software = "https://bioconductor.org/packages/censcyt"),
   c(pmid = "35814628", software = "https://bioconductor.org/packages/scDblFinder"),
   c(pmid = "35475034", software = "http://pubassistant.ch/"),
+  c(pmid = "36765378", software = "https://github.com/wmacnair/SampleQC"),
   c(pmid = "33608040", software = "https://github.com/schmeing/ReSeq"),
   c(pmid = "35482478", software = "https://bioconductor.org/packages/SpatialExperiment")
 )
 
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
-  c(doi = "10.1101/2021.08.28.458012", software = "https://github.com/wmacnair/SampleQC"),
+  #c(doi = "10.1101/2021.08.28.458012", software = "https://github.com/wmacnair/SampleQC"),
   c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(doi = "10.1101/2022.02.08.479579", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
   c(doi = "10.1101/2022.04.14.488419", software = "https://github.com/MarioniLab/SageNet"),
