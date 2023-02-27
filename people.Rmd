@@ -232,21 +232,21 @@ tbl_vladimir <- data.frame(
 #                  "BSc in Biology (2015), Universidad Nacional de Colombia"))
 # )
 
-tbl_stefan <- data.frame(
-  img = "![](img/thumbnail/stefan.jpg)", 
-  bio = c("Stefan Milosavljevic",
-          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/stefan-milosavljevic-07361b8a/) <br>",  
-                 "<i class='fa fa-github'></i> GitHub [supermaxiste](https://github.com/supermaxiste)<br>"),
-          paste0("I have a shared PhD position with the ",
-                 "[Shimizu lab](http://www.ieu.uzh.ch/en/research/evolbiol/ecogenomics.html). ",
-                 "I've got a background in biology and bioinformatics and I'm currently ", 
-                 "working on the rapid evolution of a plant species called _Arabidopsis_ _kamchatica_. ", 
-                 "My project focuses on epigenetic modifications over short timescales and my general ", 
-                 "aim is to assess the impact and the importance of DNA methylation in evolution over ", 
-                 "short periods (rapid evolution)."), 
-          paste0("MSc in Computational Biology and Bioinformatics (2017), ETH Zürich and University of Zürich<br>", 
-                 "BSc in Biology (2015), Université de Lausanne"))
-)
+# tbl_stefan <- data.frame(
+#   img = "![](img/thumbnail/stefan.jpg)", 
+#   bio = c("Stefan Milosavljevic",
+#           paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/stefan-milosavljevic-07361b8a/) <br>",  
+#                  "<i class='fa fa-github'></i> GitHub [supermaxiste](https://github.com/supermaxiste)<br>"),
+#           paste0("I have a shared PhD position with the ",
+#                  "[Shimizu lab](http://www.ieu.uzh.ch/en/research/evolbiol/ecogenomics.html). ",
+#                  "I've got a background in biology and bioinformatics and I'm currently ", 
+#                  "working on the rapid evolution of a plant species called _Arabidopsis_ _kamchatica_. ", 
+#                  "My project focuses on epigenetic modifications over short timescales and my general ", 
+#                  "aim is to assess the impact and the importance of DNA methylation in evolution over ", 
+#                  "short periods (rapid evolution)."), 
+#           paste0("MSc in Computational Biology and Bioinformatics (2017), ETH Zürich and University of Zürich<br>", 
+#                  "BSc in Biology (2015), Université de Lausanne"))
+# )
 
 tbl_helena <- data.frame(
   img = "![](img/thumbnail/helena.png)", 
@@ -509,7 +509,7 @@ tables_all <- list(
   # tbl_fiona, 
   # tbl_vladimir, 
   #tbl_stephany, 
-  tbl_stefan, 
+  #tbl_stefan, 
   tbl_helena,
   tbl_almut,
   tbl_anthony,
@@ -563,6 +563,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Stefan Milosajevic (PhD student shared with Shimizu group; author of [ARPEGGIO](); now Biomedical Data Engineer at [https://datascience.ch](Swiss Data Science Center))
 - Simone Tiberi (postdoc; author of [BANDITS](https://bioconductor.org/packages/release/bioc/html/BANDITS.html) and [distinct](https://bioconductor.org/packages/release/bioc/html/distinct.html); now Assistant Professor at Università di Bologna)
 - Dominique Paul (research assistant)
 - Hao Lyu (visiting PhD student)
