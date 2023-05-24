@@ -16,23 +16,19 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
               "30002819", "30356428", "31178352", "31857895", "18772890",
               "18573797", "33300035", "33349709", "35354817", "35482478",
-              "36765378")
+              "36765378", "36495456")
 
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
-biorxiv_dois <- c("10.1101/2020.11.24.394213",
-                  "10.1101/2021.11.11.467877",
+biorxiv_dois <- c("10.1101/2021.11.11.467877",
                   "10.1101/2021.12.08.471089",
-                  "10.1101/2021.12.22.473434",
-                  "10.1101/2022.03.08.483466",
-                  "10.1101/2022.02.08.479579",
                   "10.1101/2022.04.06.487263",
                   "10.1101/2022.04.14.488419",
                   "10.1101/2022.05.24.493251",
                   "10.1101/2022.06.01.493823",
-                  "10.1101/2022.09.22.508982")
+                  "10.1101/2023.04.17.537189")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -57,8 +53,10 @@ pmid_github <- rbind(
   c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat-comparison"), 
   c(pmid = "33971812", github = "https://github.com/retogerber/censcyt_paper_scripts"),
   c(pmid = "33758076", github = "https://github.com/almutlue/mixing_benchmark"),
+  c(pmid = "37095564", github = "https://github.com/vladimirsouza/lrRNAseqBenchmark"),
   c(pmid = "32873325", github = "https://github.com/plger/pipeComp"), 
   c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript"),
+  c(pmid = "37198712", github = "https://github.com/markrobinsonuzh/sc_benchmark_metaanalysis"),
   c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020"),
   c(pmid = "35814628", github = "https://github.com/plger/scDblFinder"),
   c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq-paper"),
@@ -74,15 +72,16 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
   #c(doi = "10.1101/2021.03.26.436976", github = "https://github.com/csoneson/WagnerEMT2020"),
   c(doi = "10.1101/2020.12.11.420885", github = "https://github.com/almutlue/mixing_benchmark"),
-  c(doi = "10.1101/2022.02.08.479579", github = "https://github.com/vladimirsouza/lrRNAseqBenchmark"),
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
   c(doi = "10.1101/2022.04.06.487263", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
   c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
-  c(doi = "10.1101/2022.09.22.508982", github = "https://github.com/markrobinsonuzh/sc_benchmark_metaanalysis"),
+  c(doi = "10.1101/2023.04.17.537189", github = "https://github.com/peicai/DESpace_manuscript"),
   c(doi = "10.1101/2022.06.01.493823", github = "https://retogerber.pages.uzh.ch/synovialscrnaseq/"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
+
+
 
 
 
@@ -94,13 +93,15 @@ pmid_data <- rbind(
   c(pmid = "33257685", data = "https://doi.org/10.6084/m9.figshare.8986193.v3"),
   c(pmid = "36072920", data = "https://doi.org/10.6084/m9.figshare.c.5063984.v1"),
   c(pmid = "36991470", data = "https://doi.org/10.5281/zenodo.6980272"),
+  c(pmid = "37198712", data = "https://doi.org/10.5281/zenodo.7096030"),
+  c(pmid = "37095564", data = "https://doi.org/10.5281/zenodo.7777147"),
   c(pmid = "33758076", data = "https://doi.org/10.6084/m9.figshare.13341200"),
   c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
 )
 biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
   c(doi = "10.1101/2022.02.08.479579", data = "https://doi.org/10.5281/zenodo.5960321"),
-  c(doi = "10.1101/2022.09.22.508982", data = "https://doi.org/10.5281/zenodo.7096030"),
+  c(doi = "10.1101/2023.04.17.537189", data = "https://doi.org/10.5281/zenodo.5960321"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
@@ -129,6 +130,8 @@ pmid_software <- rbind(
   c(pmid = "35814628", software = "https://bioconductor.org/packages/scDblFinder"),
   c(pmid = "35475034", software = "http://pubassistant.ch/"),
   c(pmid = "36765378", software = "https://github.com/wmacnair/SampleQC"),
+  c(pmid = "37142439", software = "https://github.com/schmeing/gapless"),
+  c(pmid = "37095564", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
   c(pmid = "33608040", software = "https://github.com/schmeing/ReSeq"),
   c(pmid = "35482478", software = "https://bioconductor.org/packages/SpatialExperiment")
 )
@@ -137,29 +140,31 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   #c(doi = "10.1101/2021.08.28.458012", software = "https://github.com/wmacnair/SampleQC"),
   c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
-  c(doi = "10.1101/2022.02.08.479579", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
   c(doi = "10.1101/2022.04.14.488419", software = "https://github.com/MarioniLab/SageNet"),
-  c(doi = "10.1101/2022.03.08.483466", software = "https://github.com/schmeing/gapless"),
+  c(doi = "10.1101/2023.04.17.537189", software = "https://bioconductor.org/packages/release/bioc/html/DESpace.html"),
   c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
 )
 
 
 
 
-
 ## publications not in PubMed/bioRxiv	
 unlisted_publications <- data.frame(	
-  title = c("RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis."),	
+  title = c("RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis.",
+            "distinct: A novel approach to differential distribution analyses"),
   pubdate = c(""),	
-  pubyear = c("2019"),	
-  journal = c("Annual Review of Biomedical Data Science"),	
-  authors = c("Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD"),	
-  volume = c("2"),	
-  issue = c(""),	
-  pages = c("139-173"),	
-  doi = c("10.1146/annurev-biodatasci-072018-021255"),	
+  pubyear = c("2019", "2023"),	
+  journal = c("Annual Review of Biomedical Data Science",
+              "Ann. Appl. Stat."),	
+  authors = c("Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD",
+              "Tiberi S, Crowell HL, Samartsidis P, Weber LM, Robinson MD"),	
+  volume = c("2", "17"),	
+  issue = c("", "2"),	
+  pages = c("139-173", "1681-1700"),	
+  doi = c("10.1146/annurev-biodatasci-072018-021255", "10.1214/22-AOAS1689"),	
   pmid = c(""),	
-  elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255")	
+  elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255",
+                  "doi: 10.1214/22-AOAS1689")	
 )
 
 ## F1000Research articles awaiting peer review
@@ -210,8 +215,8 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Nowicka M", "Malgorzata Nowicka",
                    "Zhou X", "Xiaobei Zhou",
                    "Dania Machlab",
-                   "Heidari, E.",
-                   "Paul, D.","Sonder, E.","Fanaswala, I.","Al Ajami, A.",
+                   "Heidari, E.", "Heidari E",
+                   "Paul, D.","Sonder E","Fanaswala I","Al Ajami A",
                    "Nikolayeva O", 
                    "Komljenovic A",
                    "Morilla I", 
@@ -220,6 +225,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Riebler A",
                    "Biyong B",
                    "Matthes KL",
+                   "Cai, P.",
                    "Will Macnair","Macnair, W.","Macnair W",
                    "Leonardo, S. X. M","Morillo Leonardo SX",
                    "Milosavljevic S", "Stefan Milosavljevic","Milosavljevic, S.")
@@ -374,6 +380,14 @@ summ <- dplyr::left_join(summ, data.frame(pmid_data, stringsAsFactors = FALSE)) 
 ## Add column with links to software packages
 summ <- dplyr::left_join(summ, data.frame(pmid_software, stringsAsFactors = FALSE)) %>%
     dplyr::mutate(software = replace(software, is.na(software), ""))
+
+# hack to add software/github to Simone's AOAS paper (not in Pubmed)
+summ$software[summ$doi=="10.1214/22-AOAS1689"] <- "https://bioconductor.org/packages/distinct"
+summ$github[summ$doi=="10.1214/22-AOAS1689"] <- "https://github.com/SimoneTiberi/distinct_manuscript"
+
+
+
+
 ```
 
 ```{r}
