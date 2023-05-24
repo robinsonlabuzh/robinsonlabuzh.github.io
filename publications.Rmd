@@ -101,7 +101,7 @@ pmid_data <- rbind(
 biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
   c(doi = "10.1101/2022.02.08.479579", data = "https://doi.org/10.5281/zenodo.5960321"),
-  c(doi = "10.1101/2023.04.17.537189", data = "https://doi.org/10.5281/zenodo.5960321"),
+  c(doi = "10.1101/2023.04.17.537189", data = "https://doi.org/10.5281/zenodo.7829817"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
