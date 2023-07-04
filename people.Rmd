@@ -433,7 +433,7 @@ tbl_haolyu <- data.frame(
   )
 
 tbl_david <- data.frame(
-  img = "![](img/thumbnail/David.jpg)",
+  img = "![](img/thumbnail/david.jpg)",
   bio = c(
     "David Wissel",
     paste0(
@@ -489,6 +489,19 @@ tbl_yinguo <- data.frame(
 )
 )
 
+tbl_dani <- data.frame(
+  img = "![](img/thumbnail/danincicau.jpg)", 
+  bio = c("Daniel Incicau", 
+          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/daniel-incicau/)<br>",  
+                 "<i class='fa fa-github'></i> [DanInci](https://github.com/DanInci)<br>"), 
+          paste0("I am a Master's student in Computational Biology and Bioinformatics. ",
+                 "I'm currently working on my thesis which involves evaluating cell phenotyping methods in highly multiplexed imaging, with a focus on mass cytometry images. ",
+                 "I have a particular interest in immunology and I'm your typical functional programming enthusiast."),
+          paste0("MSc in Computational Biology and Bioinformatics (ongoing), ETH Zürich<br>",
+                 "BSc in Computer Engineering (2020), Polytechnic University of Timisoara")
+          )
+)
+
 ```
 
 
@@ -526,10 +539,11 @@ tables_all <- list(
   #tbl_ahmad,
   #tbl_dominique
   tbl_cpy,
-  tbl_yinguo
+  tbl_yinguo,
+  tbl_dani
 #  tbl_charlotte, 
 #  tbl_angelo,
-#  tbl_helen
+#  tbl_helen,
   )
 ```
 
