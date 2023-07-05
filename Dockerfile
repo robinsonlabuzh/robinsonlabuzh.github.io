@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
 # Install R packages
 RUN install2.r  --error \
 	aRxiv \
+	medrxivr \
 	dplyr \
 	wordcloud \
 	RCurl \
