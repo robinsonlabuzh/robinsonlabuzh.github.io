@@ -502,6 +502,18 @@ tbl_dani <- data.frame(
           )
 )
 
+tbl_jiayi <- data.frame(
+  img = "![](img/thumbnail/jiayi.jpg)", 
+  bio = c("Jiayi Wang", 
+          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/jiayi-wang-14a3261ba/)<br>"), 
+          paste0("I am a Master's student in Computational Biology and Bioinformatics. ",
+                 "I started as a part-time intern research student in the Robinson Group since March 2023, working on disentangling type and state effects on expression variability to improve analysis and interpretability of scRNA-seq data. ",
+                 "Since November 2023, I also started working on my Master's thesis on improving an R package for ATAC-seq analysis to identify motif or annotation-related peak accessibility changes. "),
+          paste0("MSc in Computational Biology and Bioinformatics (ongoing), ETH Zürich<br>",
+                 "BSc in Biomedical Sciences (2021), University College London")
+          )
+)
+
 ```
 
 
@@ -523,7 +535,7 @@ tables_all <- list(
   # tbl_vladimir, 
   #tbl_stephany, 
   #tbl_stefan, 
-  tbl_helena,
+  #tbl_helena,
   tbl_almut,
   tbl_anthony,
   #tbl_haolyu,
@@ -540,7 +552,8 @@ tables_all <- list(
   #tbl_dominique
   tbl_cpy,
   tbl_yinguo,
-  tbl_dani
+  tbl_dani,
+  tbl_jiayi
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen,
