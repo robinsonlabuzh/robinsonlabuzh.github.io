@@ -64,7 +64,7 @@ The following parts of `publications.Rmd` may need to be modified (all done with
 
 The members of the group are listed in the `people.Rmd` file. To add a new member, you can copy an existing entry and simply change its content. Add the path to your picture in the `img` component, but make sure that the picture is less than 100KB. The compressed picture should be saved in `img/thumbnails` (see below for tips on image optimization). Under `bio`, you can add a description of your research and your university degree(s). If you want, you can also add links to your website, twitter or github accounts. Commit your changes to a new branch, submit a pull request and assign a reviewer (follow the explanations above on how to create a pull request).
 
-Please note that as of `kableExtra` version 1.3.4 on CRAN, there are issues with the `collapse_rows` function which may lead to duplicated thumbnails when knitting the `people.Rmd` file (see [here](https://github.com/haozhu233/kableExtra/issues/596) and [here](https://github.com/haozhu233/kableExtra/issues/624) for details). In case you encounter this issue, please install `kableExtra` from Github instead, by using `devtools::install_github("haozhu233/kableExtra")`.
+Please note that as of `kableExtra` version 1.3.4 on CRAN, there are issues with the `collapse_rows` function which may lead to duplicated thumbnails when knitting the `people.Rmd` file (see [here](https://github.com/haozhu233/kableExtra/issues/596) and [here](https://github.com/haozhu233/kableExtra/issues/624) for details). In case you encounter this issue, please install `kableExtra` from Github instead, by using `devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0")`.
 
 ### Adding news item
 
