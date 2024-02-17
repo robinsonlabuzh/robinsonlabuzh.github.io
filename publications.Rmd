@@ -24,20 +24,18 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
 biorxiv_dois <- c("10.1101/2021.11.11.467877",
-                  "10.1101/2021.12.08.471089",
                   "10.1101/2022.04.06.487263",
                   "10.1101/2023.04.12.536513",
                   "10.1101/2022.04.14.488419",
-                  "10.1101/2022.05.24.493251",
                   "10.1101/2022.06.01.493823",
-                  "10.1101/2023.04.17.537189",
                   "10.1101/2023.08.04.552046",
-                  "10.1101/2023.08.17.553679")
+                  "10.1101/2023.08.17.553679",
+                  "10.1101/2024.02.11.579707")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
-#arxiv_dois <- c("1812.00661")
-arxiv_dois <- c()
+arxiv_dois <- c("2401.02965")
+#arxiv_dois <- c()
 
 
 ## github repos
@@ -62,6 +60,7 @@ pmid_github <- rbind(
   c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript"),
   c(pmid = "37198712", github = "https://github.com/markrobinsonuzh/sc_benchmark_metaanalysis"),
   c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020"),
+  c(pmid = "38243704", github = "https://github.com/peicai/DESpace_manuscript"),
   c(pmid = "35814628", github = "https://github.com/plger/scDblFinder"),
   c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq-paper"),
   c(pmid = "35475034", github = "https://github.com/markrobinsonuzh/os_monitor")
@@ -81,7 +80,6 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2022.04.06.487263", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
   c(doi = "10.1101/2023.08.04.552046", github = "https://github.com/RoseYuan/benchmark_paper/"),
   c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
-  c(doi = "10.1101/2023.04.17.537189", github = "https://github.com/peicai/DESpace_manuscript"),
   c(doi = "10.1101/2022.06.01.493823", github = "https://retogerber.pages.uzh.ch/synovialscrnaseq/"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
@@ -100,13 +98,13 @@ pmid_data <- rbind(
   c(pmid = "36991470", data = "https://doi.org/10.5281/zenodo.6980272"),
   c(pmid = "37198712", data = "https://doi.org/10.5281/zenodo.7096030"),
   c(pmid = "37095564", data = "https://doi.org/10.5281/zenodo.7777147"),
+  c(pmid = "38243704", data = "https://doi.org/10.5281/zenodo.7829817"),
   c(pmid = "33758076", data = "https://doi.org/10.6084/m9.figshare.13341200"),
   c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
 )
 biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
   c(doi = "10.1101/2022.02.08.479579", data = "https://doi.org/10.5281/zenodo.5960321"),
-  c(doi = "10.1101/2023.04.17.537189", data = "https://doi.org/10.5281/zenodo.7829817"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
@@ -137,6 +135,7 @@ pmid_software <- rbind(
   c(pmid = "36765378", software = "https://github.com/wmacnair/SampleQC"),
   c(pmid = "37142439", software = "https://github.com/schmeing/gapless"),
   c(pmid = "37095564", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
+  c(pmid = "38243704", software = "https://bioconductor.org/packages/release/bioc/html/DESpace.html"),
   c(pmid = "33608040", software = "https://github.com/schmeing/ReSeq"),
   c(pmid = "35482478", software = "https://bioconductor.org/packages/SpatialExperiment")
 )
@@ -147,7 +146,6 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2023.08.04.552046", github = "https://github.com/RoseYuan/sc_chromatin_benchmark"),
   c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(doi = "10.1101/2022.04.14.488419", software = "https://github.com/MarioniLab/SageNet"),
-  c(doi = "10.1101/2023.04.17.537189", software = "https://bioconductor.org/packages/release/bioc/html/DESpace.html"),
   c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
 )
 
@@ -581,7 +579,7 @@ if (!is.null(biorxiv)) {
                                                                              title = "Data"), ". ")), 
                   ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], 
                                                                                  title = "Software"), ". ")), 
-                  make_link_altmetric_arxiv(biorxiv[j, "doi"]),
+                  #make_link_altmetric_arxiv(biorxiv[j, "doi"]),
                   "\n\n")
     } else {
     txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
@@ -595,7 +593,7 @@ if (!is.null(biorxiv)) {
                                                                              title = "Data"), ". ")), 
                   ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], 
                                                                                  title = "Software"), ". ")), 
-                  make_link_altmetric(biorxiv[j, "doi"]),
+                  #make_link_altmetric(biorxiv[j, "doi"]),
                   #make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
                   "\n\n")
     }
@@ -625,7 +623,7 @@ for (i in years) {
                                                                                title = "Data"), ". ")), 
                   ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], 
                                                                                    title = "Software"), ". ")), 
-                  make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
+                  #make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
                   "\n\n")
   }
 }
