@@ -551,7 +551,7 @@ tables_all <- list(
   #tbl_ahmad,
   #tbl_dominique
   tbl_cpy,
-  tbl_yinguo,
+  #tbl_yinguo,
   tbl_dani,
   tbl_jiayi
 #  tbl_charlotte, 
@@ -590,7 +590,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
-- Yin Guo (visiting PhD student)
+- Yin Guo (visiting PhD student from Xi'an Jiaotong University)
 - Helena Crowell (PhD student; author of [CATALYST](https://bioconductor.org/packages/release/bioc/html/CATALYST.html), [muscat](), [SpatialExperiment](); now postdoc at [CNAG](https://www.cnag.eu/teams/genome-research-unit/single-cell-genomics-team), Barcelona 
 - Stefan Milosavljevic (PhD student shared with Shimizu group; author of [ARPEGGIO](https://github.com/supermaxiste/ARPEGGIO); now Biomedical Data Engineer at [Swiss Data Science Center](https://datascience.ch))
 - Simone Tiberi (postdoc; author of [BANDITS](https://bioconductor.org/packages/release/bioc/html/BANDITS.html) and [distinct](https://bioconductor.org/packages/release/bioc/html/distinct.html); now Assistant Professor at Università di Bologna)

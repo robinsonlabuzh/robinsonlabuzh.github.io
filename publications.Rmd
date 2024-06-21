@@ -11,13 +11,13 @@ editor_options:
 pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830", 
                  "18025499", "15786672", "15779224", "15322224", "30039500", 
                  "31925006", "31974356", "33877351", "35346028", "29967347",
-                 "37090609", "37645841")
+                 "37090609", "37645841", "38496482")
 
 ## PubMed IDs to add
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
               "30002819", "30356428", "31178352", "31857895", "18772890",
               "18573797", "33300035", "33349709", "35354817", "35482478",
-              "36765378", "36495456")
+              "36765378", "36495456", "38764354")
 
 ## bioRxiv dois
 ## This link could be helpful in isolating just our preprints:
@@ -27,15 +27,13 @@ biorxiv_dois <- c("10.1101/2021.11.11.467877",
                   "10.1101/2022.04.06.487263",
                   "10.1101/2023.04.12.536513",
                   "10.1101/2022.04.14.488419",
-                  "10.1101/2022.06.01.493823",
                   "10.1101/2023.08.04.552046",
-                  "10.1101/2023.08.17.553679",
-                  "10.1101/2024.02.11.579707",
-                  "10.1101/2024.03.06.583825")
+                  "10.1101/2024.03.06.583825",
+                  "10.1101/2024.05.18.594120")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
-arxiv_dois <- c("2401.02965", "2402.18348")
+arxiv_dois <- c("2401.02965")
 #arxiv_dois <- c()
 
 
@@ -62,6 +60,7 @@ pmid_github <- rbind(
   c(pmid = "37198712", github = "https://github.com/markrobinsonuzh/sc_benchmark_metaanalysis"),
   c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020"),
   c(pmid = "38243704", github = "https://github.com/peicai/DESpace_manuscript"),
+  c(pmid = "38887902", github = "https://github.com/SimoneTiberi/DifferentialRegulation_manuscript"),
   c(pmid = "35814628", github = "https://github.com/plger/scDblFinder"),
   c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq-paper"),
   c(pmid = "35475034", github = "https://github.com/markrobinsonuzh/os_monitor")
@@ -82,6 +81,7 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2023.08.04.552046", github = "https://github.com/RoseYuan/benchmark_paper/"),
   c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
   c(doi = "10.1101/2024.03.06.583825", github = "https://github.com/ETHZ-INS/DTFAB"),
+  c(doi = "10.1101/2024.05.18.594120", github = "https://github.com/imallona/rock_roi_paper"),
   c(doi = "10.1101/2022.06.01.493823", github = "https://retogerber.pages.uzh.ch/synovialscrnaseq/"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
@@ -124,6 +124,7 @@ pmid_software <- rbind(
   c(pmid = "34273949", software = "https://github.com/supermaxiste/ARPEGGIO"),
   c(pmid = "31088905", software = "https://github.com/csoneson/ARMOR"),
   c(pmid = "31098416", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
+  c(pmid = "38887902", software = "https://bioconductor.org/packages/release/bioc/html/DifferentialRegulation.html"),
   c(pmid = "31857895", software = "http://bioconductor.org/packages/HDCytoData/"),
   c(pmid = "32487212", software = "http://bioconductor.org/packages/release/bioc/html/DAMEfinder.html"),
   c(pmid = "33257685", software = "http://bioconductor.org/packages/release/bioc/html/muscat.html"),
@@ -147,6 +148,7 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   #c(doi = "10.1101/2021.08.28.458012", software = "https://github.com/wmacnair/SampleQC"),
   c(doi = "10.1101/2023.08.04.552046", github = "https://github.com/RoseYuan/sc_chromatin_benchmark"),
+  c(doi = "10.1101/2024.05.18.594120", github = "https://github.com/imallona/rock_roi_method"),
   c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(doi = "10.1101/2022.04.14.488419", software = "https://github.com/MarioniLab/SageNet"),
   c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
@@ -205,14 +207,14 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Joanna Zyprych-Walczak", "Zyprych-Walczak J",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", "Weber, L. M.",
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", 
-                   "Samuel Gunz",
-                   "Martin Emons",
+                   "Samuel Gunz","Gunz S",
+                   "Martin Emons","Emons M",
                    "Siyuan Luo",
-                   "Giulia Moro",
+                   "Giulia Moro","Moro G","Moro, G.",
                    "Emanuel Sonder","Sonder, E.",
-                   "Wang, J.","Jiayi Wang",
+                   "Wang, J.","Jiayi Wang","Wang J",
                    "Meili, J.",
-                   "David Wissel",
+                   "David Wissel","Wissel D",
                    "Hembach KM", "Hembach, K. M.","Betz, K. M.",
                    "Katharina M. Hembach", "Yao Yao", "Yao Y",
                    "de Souza Vladimir", "Vladimir de Souza","Vladimir Barbosa C. de Souza",
@@ -222,7 +224,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Orjuela S", "Stephany Orjuela", 
                    "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell",
                    "Helena Crowell", "HelenaL Crowell", "Crowell, H. L.",
-                   "Mallona I", "Izaskun Mallona","Mallona Gonzalez, I.",
+                   "Mallona I", "Izaskun Mallona","Mallona Gonzalez, I.","Mallona, I.",
                    "Reto Gerber","Gerber Reto","Gerber R","Gerber, R.",
                    "Manca P",
                    "Sonrel A", "Anthony Sonrel","Sonrel, A.",
@@ -242,7 +244,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Riebler A",
                    "Biyong B",
                    "Matthes KL",
-                   "Cai, P.","Peiying Cai",
+                   "Cai, P.","Peiying Cai","Cai P",
                    "Will Macnair","Macnair, W.","Macnair W",
                    "Leonardo, S. X. M","Morillo Leonardo SX",
                    "Milosavljevic S", "Stefan Milosavljevic","Milosavljevic, S.")
