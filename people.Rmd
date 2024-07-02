@@ -514,6 +514,16 @@ tbl_jiayi <- data.frame(
           )
 )
 
+tbl_sarusan <- data.frame(
+  img = "![](img/thumbnail/sarusan.jpg)", 
+  bio = c("Sarusan Kathirchelvan", 
+          paste0("I am a Master's student in Computational Biology and Bioinformatics. ",
+                 "I am currently working on my thesis involving the application of ensemble clustering in spatial transcriptomics and evaluating the spatial homogeneity, and the optimal cluster numbers of those detected clusters, to improve the spatial domain detection problem as well as to transition from a supervised to an unsupervised data-driven clustering."),
+          paste0("MSc in Computational Biology and Bioinformatics (ongoing), ETH Zürich<br>",
+                 "BSc in Computational Sciences (2022), University of Basel")
+          )
+)
+
 ```
 
 
@@ -553,10 +563,11 @@ tables_all <- list(
   tbl_cpy,
   #tbl_yinguo,
   tbl_dani,
-  tbl_jiayi
+  tbl_jiayi,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen,
+  tbl_sarusan
   )
 ```
 
