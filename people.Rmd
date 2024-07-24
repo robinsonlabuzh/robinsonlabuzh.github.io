@@ -529,12 +529,11 @@ tbl_anna <- data.frame(
   bio = c("Anna Schuster", 
           paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/anna-schuster-9427174b/)<br>"),
           paste0("I am a Master’s student in Computational Science with a background in Bioinformatics. ",
-                 "Currently, I am working on my Master’s thesis, which involves benchmarking several tools for detecting novel isoforms using long-read RNA-Seq data. "),
-          paste0("MSc in Computational Science (ongoing), University of Zurich <br>",
+                 "Currently, I am working on my Master’s thesis, which involves benchmarking several tools for detecting novel isoforms using long-read RNA-Seq data."),
+          paste0("MSc in Computational Science (ongoing), University of Zurich<br>",
                  "BSc in Bioinformatics (2021), Technical University of Munich and Ludwigs-Maximilian-University of Munich")
           )
 )
-
 ```
 
 
@@ -578,7 +577,8 @@ tables_all <- list(
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen,
-  tbl_sarusan
+  tbl_sarusan,
+  tbl_anna
   )
 ```
 
