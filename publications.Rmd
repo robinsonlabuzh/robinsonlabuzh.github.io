@@ -11,7 +11,7 @@ editor_options:
 pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830", 
                  "18025499", "15786672", "15779224", "15322224", "30039500", 
                  "31925006", "31974356", "33877351", "35346028", "29967347",
-                 "37090609", "37645841", "38496482")
+                 "37090609", "37645841", "38496482", "38970115")
 
 ## PubMed IDs to add
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
@@ -27,7 +27,6 @@ biorxiv_dois <- c("10.1101/2021.11.11.467877",
                   "10.1101/2022.04.06.487263",
                   "10.1101/2023.04.12.536513",
                   "10.1101/2022.04.14.488419",
-                  "10.1101/2023.08.04.552046",
                   "10.1101/2024.03.06.583825",
                   "10.1101/2024.05.18.594120")
 
@@ -63,6 +62,7 @@ pmid_github <- rbind(
   c(pmid = "38887902", github = "https://github.com/SimoneTiberi/DifferentialRegulation_manuscript"),
   c(pmid = "35814628", github = "https://github.com/plger/scDblFinder"),
   c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq-paper"),
+  c(pmid = "39152456", github = "https://github.com/RoseYuan/benchmark_paper/"),
   c(pmid = "35475034", github = "https://github.com/markrobinsonuzh/os_monitor")
 )
 
@@ -137,6 +137,7 @@ pmid_software <- rbind(
   c(pmid = "35814628", software = "https://bioconductor.org/packages/scDblFinder"),
   c(pmid = "35475034", software = "http://pubassistant.ch/"),
   c(pmid = "36765378", software = "https://github.com/wmacnair/SampleQC"),
+  c(pmid = "39152456", software = "https://github.com/RoseYuan/sc_chromatin_benchmark"),
   c(pmid = "37142439", software = "https://github.com/schmeing/gapless"),
   c(pmid = "37095564", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
   c(pmid = "38243704", software = "https://bioconductor.org/packages/release/bioc/html/DESpace.html"),
@@ -147,8 +148,8 @@ pmid_software <- rbind(
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   #c(doi = "10.1101/2021.08.28.458012", software = "https://github.com/wmacnair/SampleQC"),
-  c(doi = "10.1101/2023.08.04.552046", github = "https://github.com/RoseYuan/sc_chromatin_benchmark"),
-  c(doi = "10.1101/2024.05.18.594120", github = "https://github.com/imallona/rock_roi_method"),
+  c(doi = "10.1101/2023.08.04.552046", software = "https://github.com/RoseYuan/sc_chromatin_benchmark"),
+  c(doi = "10.1101/2024.05.18.594120", software = "https://github.com/imallona/rock_roi_method"),
   c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(doi = "10.1101/2022.04.14.488419", software = "https://github.com/MarioniLab/SageNet"),
   c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
