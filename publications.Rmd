@@ -23,8 +23,7 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
-biorxiv_dois <- c("10.1101/2021.11.11.467877",
-                  "10.1101/2022.04.06.487263",
+biorxiv_dois <- c("10.1101/2022.04.06.487263",
                   "10.1101/2023.04.12.536513",
                   "10.1101/2022.04.14.488419",
                   "10.1101/2024.03.06.583825",
@@ -32,7 +31,7 @@ biorxiv_dois <- c("10.1101/2021.11.11.467877",
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
-arxiv_dois <- c("2401.02965")
+arxiv_dois <- c("2409.15472","2409.17038")
 #arxiv_dois <- c()
 
 
@@ -207,6 +206,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Almut Luetge", "Luetge A", "Almut Lütge", "Lütge A","Luetge, A.",
                    "Joanna Zyprych-Walczak", "Zyprych-Walczak J",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", "Weber, L. M.",
+                   "Ben Carrillo", "Daniel Incicau",
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", 
                    "Samuel Gunz","Gunz S",
                    "Martin Emons","Emons M",
