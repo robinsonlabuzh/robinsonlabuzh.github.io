@@ -31,7 +31,7 @@ biorxiv_dois <- c("10.1101/2022.04.06.487263",
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
-arxiv_dois <- c("2409.15472","2409.17038")
+arxiv_dois <- c("2401.02965", "2409.15472","2409.17038")
 #arxiv_dois <- c()
 
 
