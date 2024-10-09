@@ -510,6 +510,20 @@ tbl_jiayi <- data.frame(
           )
 )
 
+tbl_marusa <- data.frame(
+  img = "![](img/thumbnail/marusa.jpg)", 
+  bio = c(
+          "Maruša Koderman",
+          paste0("I joined the Robinson lab as a PhD student in 2024. Prior to starting my PhD, ",
+                 "I worked as in intern at Roche (Pharma Research and Early Development), ",
+                 "where I focused on single-cell data analysis and construction of human brain cell type atlases. ",
+                 "In my PhD, I am continuing this work by leveraging large-scale multimodal single-cell atlases to ",
+                 "advance the development of in vitro model systems and investigate new potential drug targets."),
+          paste0("MSc in Laboratory Biomedicine (2021), University of Ljubljana<br>",
+                 "BSc in Laboratory Biomedicine(2017), University of Ljubljana")
+          )
+)
+
 tbl_sarusan <- data.frame(
   img = "![](img/thumbnail/sarusan.jpg)", 
   bio = c("Sarusan Kathirchelvan", 
@@ -569,6 +583,7 @@ tables_all <- list(
   tbl_cpy,
   #tbl_yinguo,
   tbl_jiayi,
+  tbl_marusa,
   tbl_dani,
 #  tbl_charlotte, 
 #  tbl_angelo,
