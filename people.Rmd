@@ -510,6 +510,20 @@ tbl_jiayi <- data.frame(
           )
 )
 
+tbl_marusa <- data.frame(
+  img = "![](img/thumbnail/marusa.jpg)", 
+  bio = c(
+          "Maruša Koderman",
+          paste0("I joined the Robinson lab as a PhD student in 2024. Prior to starting my PhD, ",
+                 "I worked as in intern at Roche (Pharma Research and Early Development), ",
+                 "where I focused on single-cell data analysis and construction of human brain cell type atlases. ",
+                 "In my PhD, I am continuing this work by leveraging large-scale multimodal single-cell atlases to ",
+                 "advance the development of in vitro model systems and investigate new potential drug targets."),
+          paste0("MSc in Laboratory Biomedicine (2021), University of Ljubljana<br>",
+                 "BSc in Laboratory Biomedicine(2017), University of Ljubljana")
+          )
+)
+
 tbl_sarusan <- data.frame(
   img = "![](img/thumbnail/sarusan.jpg)", 
   bio = c("Sarusan Kathirchelvan", 
@@ -552,8 +566,8 @@ tables_all <- list(
   #tbl_stephany, 
   #tbl_stefan, 
   #tbl_helena,
-  tbl_almut,
-  tbl_anthony,
+  #tbl_almut,
+  #tbl_anthony,
   #tbl_haolyu,
   tbl_reto,
   #tbl_elyas,
@@ -569,6 +583,7 @@ tables_all <- list(
   tbl_cpy,
   #tbl_yinguo,
   tbl_jiayi,
+  tbl_marusa,
   tbl_dani,
 #  tbl_charlotte, 
 #  tbl_angelo,
@@ -608,8 +623,10 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Almut Lütge (PhD student; author of [CellMixS](https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html); now Biomedical Data Engineer at [Swiss Data Science Center](https://datascience.ch))
+- Anthony Sonrel (PhD student; now Bioinformatics Scientist @Idorsia)
 - Yin Guo (visiting PhD student from Xi'an Jiaotong University)
-- Helena Crowell (PhD student; author of [CATALYST](https://bioconductor.org/packages/release/bioc/html/CATALYST.html), [muscat](), [SpatialExperiment](); now postdoc at [CNAG](https://www.cnag.eu/teams/genome-research-unit/single-cell-genomics-team), Barcelona 
+- Helena Crowell (PhD student; author of [CATALYST](https://bioconductor.org/packages/release/bioc/html/CATALYST.html), [muscat](https://bioconductor.org/packages/release/bioc/html/muscat.html), [SpatialExperiment](https://www.bioconductor.org/packages/release/bioc/html/SpatialExperiment.html); now postdoc at [CNAG](https://www.cnag.eu/teams/genome-research-unit/single-cell-genomics-team))
 - Stefan Milosavljevic (PhD student shared with Shimizu group; author of [ARPEGGIO](https://github.com/supermaxiste/ARPEGGIO); now Biomedical Data Engineer at [Swiss Data Science Center](https://datascience.ch))
 - Simone Tiberi (postdoc; author of [BANDITS](https://bioconductor.org/packages/release/bioc/html/BANDITS.html) and [distinct](https://bioconductor.org/packages/release/bioc/html/distinct.html); now Assistant Professor at Università di Bologna)
 - Dominique Paul (research assistant)
