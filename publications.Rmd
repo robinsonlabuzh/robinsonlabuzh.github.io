@@ -26,7 +26,6 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 biorxiv_dois <- c("10.1101/2022.04.06.487263",
                   "10.1101/2023.04.12.536513",
                   "10.1101/2022.04.14.488419",
-                  "10.1101/2024.03.06.583825",
                   "10.1101/2024.05.18.594120")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
@@ -62,6 +61,7 @@ pmid_github <- rbind(
   c(pmid = "35814628", github = "https://github.com/plger/scDblFinder"),
   c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq-paper"),
   c(pmid = "39152456", github = "https://github.com/RoseYuan/benchmark_paper/"),
+  c(pmid = "39441876", github = "https://github.com/ETHZ-INS/DTFAB"),
   c(pmid = "35475034", github = "https://github.com/markrobinsonuzh/os_monitor")
 )
 
@@ -79,7 +79,6 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2022.04.06.487263", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
   c(doi = "10.1101/2023.08.04.552046", github = "https://github.com/RoseYuan/benchmark_paper/"),
   c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
-  c(doi = "10.1101/2024.03.06.583825", github = "https://github.com/ETHZ-INS/DTFAB"),
   c(doi = "10.1101/2024.05.18.594120", github = "https://github.com/imallona/rock_roi_paper"),
   c(doi = "10.1101/2022.06.01.493823", github = "https://retogerber.pages.uzh.ch/synovialscrnaseq/"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
@@ -101,12 +100,12 @@ pmid_data <- rbind(
   c(pmid = "37095564", data = "https://doi.org/10.5281/zenodo.7777147"),
   c(pmid = "38243704", data = "https://doi.org/10.5281/zenodo.7829817"),
   c(pmid = "33758076", data = "https://doi.org/10.6084/m9.figshare.13341200"),
+  c(pmid = "39441876", data = "https://zenodo.org/records/10732704"),
   c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
 )
 biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
   c(doi = "10.1101/2022.02.08.479579", data = "https://doi.org/10.5281/zenodo.5960321"),
-  c(doi = "10.1101/2024.03.06.583825", data = "https://zenodo.org/records/10732704"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
