@@ -26,11 +26,13 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 biorxiv_dois <- c("10.1101/2022.04.06.487263",
                   "10.1101/2023.04.12.536513",
                   "10.1101/2022.04.14.488419",
-                  "10.1101/2024.05.18.594120")
+                  "10.1101/2024.05.18.594120",
+                  "10.1101/2024.11.28.625845",
+                  "10.1101/2024.11.29.626057")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
-arxiv_dois <- c("2401.02965", "2409.15472","2409.17038")
+arxiv_dois <- c("2401.02965", "2409.15472","2409.17038", "2412.01561")
 #arxiv_dois <- c()
 
 
@@ -68,11 +70,11 @@ pmid_github <- rbind(
 
 
 biorxiv_github <- rbind(
-  #c(doi = "10.1101/2020.07.16.206193", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses"),
-  #c(doi = "10.1101/2021.08.28.458012", github = "https://github.com/wmacnair/SampleQC_paper_analyses"),
+  c(doi = "2412.01561", github = "https://github.com/robinsonlabuzh/pasta-manuscript"),
+  c(doi = "10.1101/2024.11.28.625845", github = "https://github.com/RoseYuan/metric_paper"),
+  c(doi = "10.1101/2024.11.29.626057", github = "https://github.com/HelenaLC/type-state"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
-  #c(doi = "10.1101/2021.03.26.436976", github = "https://github.com/csoneson/WagnerEMT2020"),
   c(doi = "10.1101/2020.12.11.420885", github = "https://github.com/almutlue/mixing_benchmark"),
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
@@ -104,6 +106,7 @@ pmid_data <- rbind(
   c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
 )
 biorxiv_data <- rbind(
+  c(doi = "10.1101/2024.11.29.626057", data = "https://doi.org/10.5281/zenodo.14191288"),
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
   c(doi = "10.1101/2022.02.08.479579", data = "https://doi.org/10.5281/zenodo.5960321"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
@@ -145,7 +148,8 @@ pmid_software <- rbind(
 
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
-  #c(doi = "10.1101/2021.08.28.458012", software = "https://github.com/wmacnair/SampleQC"),
+  c(doi = "2412.01561", software = "https://robinsonlabuzh.github.io/pasta/00-home.html"),
+  c(doi = "10.1101/2024.11.28.625845", software = "https://github.com/RoseYuan/poem"),
   c(doi = "10.1101/2023.08.04.552046", software = "https://github.com/RoseYuan/sc_chromatin_benchmark"),
   c(doi = "10.1101/2024.05.18.594120", software = "https://github.com/imallona/rock_roi_method"),
   c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
@@ -223,7 +227,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Schmeing S", "Stephan Schmeing", "Schmeing, S.",
                    "Orjuela S", "Stephany Orjuela", 
                    "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell",
-                   "Helena Crowell", "HelenaL Crowell", "Crowell, H. L.",
+                   "Helena Crowell", "HelenaL Crowell", "Crowell, H. L.","Crowell, H.",
                    "Mallona I", "Izaskun Mallona","Mallona Gonzalez, I.","Mallona, I.",
                    "Reto Gerber","Gerber Reto","Gerber R","Gerber, R.",
                    "Manca P",
