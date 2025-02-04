@@ -544,6 +544,16 @@ tbl_anna <- data.frame(
                  "BSc in Bioinformatics (2021), Technical University of Munich and Ludwigs-Maximilian-University of Munich")
           )
 )
+
+tbl_pauline <- data.frame(
+  img = "![](img/thumbnail/pauline.jpg)", 
+  bio = c("Pauline Busch", 
+          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](www.linkedin.com/in/pauline-busch)<br>"),
+          paste0("I joined the Robinson lab as a PhD student at the end of 2024. My background is in biomedical research, with previous work focusing on pathophysiological processes in blood and brain. During my master’s studies I developed an interest in bioinformatics and during my PhD I aim to contribute to the development of methods for analyzing spatial transcriptomics data."),
+          paste0("MSc in Molecular Life Sciences (2022), University of Hamburg<br>",
+                 "BSc in Biology (2019), University of Hamburg")
+          )
+)
 ```
 
 
@@ -589,7 +599,8 @@ tables_all <- list(
 #  tbl_angelo,
 #  tbl_helen,
   tbl_sarusan,
-  tbl_anna
+  tbl_anna,
+  tbl_pauline
   )
 ```
 
