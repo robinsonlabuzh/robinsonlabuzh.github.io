@@ -91,7 +91,7 @@ tbl_simone <- data.frame(
 
 tbl_izaskun <- data.frame(
   img = "![](img/thumbnail/izaskun.jpg)",
-  bio = c("Izaskun Mallona",
+  bio = c("Dr. Izaskun Mallona",
           paste0("<i class='fa fa-desktop'></i> [Website](http://imallona.bitbucket.io)<br>", 
                   "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=kMfxCIYAAAAJ)"), 
           paste0("I am mainly interested in gene expression modulation, as it lays the ground for any cell fate. ",
@@ -300,7 +300,7 @@ tbl_almut <- data.frame(
 
 tbl_plger <- data.frame(
   img = "![](img/thumbnail/pierreluc.jpg)", 
-  bio = c("Pierre-Luc Germain",
+  bio = c("Dr. Pierre-Luc Germain",
           paste0("<i class='fa fa-github'></i> GitHub [plger](https://github.com/plger)<br>", 
           "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.com/citations?user=788GnysAAAAJ)"), 
           paste0( "I gradually shifted from the humanities to bioinformatics towards the end of my PhD, ",
@@ -524,15 +524,15 @@ tbl_marusa <- data.frame(
           )
 )
 
-tbl_sarusan <- data.frame(
-  img = "![](img/thumbnail/sarusan.jpg)", 
-  bio = c("Sarusan Kathirchelvan", 
-          paste0("I am a Master's student in Computational Biology and Bioinformatics. ",
-                 "I am currently working on my thesis involving the application of ensemble clustering in spatial transcriptomics and evaluating the spatial homogeneity, and the optimal cluster numbers of those detected clusters, to improve the spatial domain detection problem as well as to transition from a supervised to an unsupervised data-driven clustering."),
-          paste0("MSc in Computational Biology and Bioinformatics (ongoing), ETH Zürich<br>",
-                 "BSc in Computational Sciences (2022), University of Basel")
-          )
-)
+# tbl_sarusan <- data.frame(
+#   img = "![](img/thumbnail/sarusan.jpg)", 
+#   bio = c("Sarusan Kathirchelvan", 
+#           paste0("I am a Master's student in Computational Biology and Bioinformatics. ",
+#                  "I am currently working on my thesis involving the application of ensemble clustering in spatial transcriptomics and evaluating the spatial homogeneity, and the optimal cluster numbers of those detected clusters, to improve the spatial domain detection problem as well as to transition from a supervised to an unsupervised data-driven clustering."),
+#           paste0("MSc in Computational Biology and Bioinformatics (ongoing), ETH Zürich<br>",
+#                  "BSc in Computational Sciences (2022), University of Basel")
+#           )
+# )
 
 tbl_anna <- data.frame(
   img = "![](img/thumbnail/anna.jpg)", 
@@ -542,6 +542,16 @@ tbl_anna <- data.frame(
                  "Currently, I am working on my Master’s thesis, which involves benchmarking several tools for detecting novel isoforms using long-read RNA-Seq data."),
           paste0("MSc in Computational Science (ongoing), University of Zurich<br>",
                  "BSc in Bioinformatics (2021), Technical University of Munich and Ludwigs-Maximilian-University of Munich")
+          )
+)
+
+tbl_pauline <- data.frame(
+  img = "![](img/thumbnail/pauline.jpg)", 
+  bio = c("Pauline Busch", 
+          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](www.linkedin.com/in/pauline-busch)<br>"),
+          paste0("I joined the Robinson lab as a PhD student at the end of 2024. My background is in biomedical research, with previous work focusing on pathophysiological processes in blood and brain. During my master’s studies I developed an interest in bioinformatics and during my PhD I aim to contribute to the development of methods for analyzing spatial transcriptomics data."),
+          paste0("MSc in Molecular Life Sciences (2022), University of Hamburg<br>",
+                 "BSc in Biology (2019), University of Hamburg")
           )
 )
 ```
@@ -584,11 +594,12 @@ tables_all <- list(
   #tbl_yinguo,
   tbl_jiayi,
   tbl_marusa,
+  tbl_pauline,
   tbl_dani,
 #  tbl_charlotte, 
 #  tbl_angelo,
 #  tbl_helen,
-  tbl_sarusan,
+  # tbl_sarusan,
   tbl_anna
   )
 ```
@@ -623,6 +634,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Sarusan Kathirchelvan, MSc student
 - Almut Lütge (PhD student; author of [CellMixS](https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html); now Biomedical Data Engineer at [Swiss Data Science Center](https://datascience.ch))
 - Anthony Sonrel (PhD student; now Bioinformatics Scientist @Idorsia)
 - Yin Guo (visiting PhD student from Xi'an Jiaotong University)
