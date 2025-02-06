@@ -23,8 +23,7 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## This link could be helpful in isolating just our preprints:
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
-biorxiv_dois <- c("10.1101/2022.04.06.487263",
-                  "10.1101/2023.04.12.536513",
+biorxiv_dois <- c("10.1101/2023.04.12.536513",
                   "10.1101/2022.04.14.488419",
                   "10.1101/2024.05.18.594120",
                   "10.1101/2024.11.28.625845",
@@ -58,6 +57,7 @@ pmid_github <- rbind(
   c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript"),
   c(pmid = "37198712", github = "https://github.com/markrobinsonuzh/sc_benchmark_metaanalysis"),
   c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020"),
+  c(pmid = "39566495", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
   c(pmid = "38243704", github = "https://github.com/peicai/DESpace_manuscript"),
   c(pmid = "38887902", github = "https://github.com/SimoneTiberi/DifferentialRegulation_manuscript"),
   c(pmid = "35814628", github = "https://github.com/plger/scDblFinder"),
@@ -78,7 +78,6 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.12.11.420885", github = "https://github.com/almutlue/mixing_benchmark"),
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
-  c(doi = "10.1101/2022.04.06.487263", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
   c(doi = "10.1101/2023.08.04.552046", github = "https://github.com/RoseYuan/benchmark_paper/"),
   c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
   c(doi = "10.1101/2024.05.18.594120", github = "https://github.com/imallona/rock_roi_paper"),
