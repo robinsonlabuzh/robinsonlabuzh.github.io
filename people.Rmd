@@ -1,7 +1,7 @@
 ---
 title: "People"
 output: html_document
-editor_options: 
+editor_options:
   chunk_output_type: inline
 ---
 
@@ -28,72 +28,72 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 # https://www.w3schools.com/icons/fontawesome_icons_webapp.asp
 
 tbl_mark <- data.frame(
-  img = "![](img/thumbnail/mark.jpg)", 
-  bio = c("Mark D Robinson", 
-          paste0("<i class='fa fa-twitter'></i> Twitter [\\@markrobinsonca](https://twitter.com/markrobinsonca)<br>", 
-                 "<i class='fa fa-github'></i> GitHub [markrobinsonuzh](https://github.com/markrobinsonuzh)<br>", 
-                 "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=XPfrRQEAAAAJ)"), 
-          paste0("My research interests are diverse, but more-or-less encompass the general application of statistical ", 
+  img = "![](img/thumbnail/mark.jpg)",
+  bio = c("Mark D Robinson",
+          paste0("<i class='fa fa-twitter'></i> Twitter [\\@markrobinsonca](https://twitter.com/markrobinsonca)<br>",
+                 "<i class='fa fa-github'></i> GitHub [markrobinsonuzh](https://github.com/markrobinsonuzh)<br>",
+                 "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=XPfrRQEAAAAJ)"),
+          paste0("My research interests are diverse, but more-or-less encompass the general application of statistical ",
                  "methods and data science to experimental data with biological applications.  Often, this is within the ",
                  "context of genomics data types, but we are interested in methodological challenges and robust solutions ",
                  "in data, generally. We also try to be modern scientists, with a focus on reproducibility (repos for code) ",
                  "and open science (preprints)."),
-          paste0("PhD in Medical Biology (2008), University of Melbourne (Walter and Eliza Hall Institute)<br>", 
+          paste0("PhD in Medical Biology (2008), University of Melbourne (Walter and Eliza Hall Institute)<br>",
                  "MSc in Statistics (2001), University of British Columbia<br>",
                  "BSc in Applied Mathematics and Statistics (1999), University of Guelph"))
 )
 
 # tbl_joanna <- data.frame(
-#   img = "![](img/thumbnail/joanna.jpg)", 
-#   bio = c("Joanna Zyprych-Walczak", 
-#           paste0("<i class='fa fa-github'></i> GitHub [joanna](https://github.com/zjanna)<br>"), 
+#   img = "![](img/thumbnail/joanna.jpg)",
+#   bio = c("Joanna Zyprych-Walczak",
+#           paste0("<i class='fa fa-github'></i> GitHub [joanna](https://github.com/zjanna)<br>"),
 #           paste0("My scientific work focuses mainly on the development and applications of various statistical ",
-#                  "methods to data from microarray and next generation sequencing experiments (NGS). ", 
+#                  "methods to data from microarray and next generation sequencing experiments (NGS). ",
 #                  "Professionally I am very satisfied with being able to apply my statistical knowledge and to advise ",
 #                   "on issues such as experimental design, statistical models and testing, designing novel statistical approaches ",
 #                    "and to explain their interpretations to the domain experts in biology and medicine."),
-#           paste0("PhD in Biostatistics (2011), Poznan University of Life Sciences, Department of Mathematical and Statistical Methods<br>", 
+#           paste0("PhD in Biostatistics (2011), Poznan University of Life Sciences, Department of Mathematical and Statistical Methods<br>",
 #                  "MSc in Mathematics (2006), Adam Mickiewicz University, Faculty of Mathematics and Computer Science,<br>"))
 # )
 
 
 # tbl_charlotte <- data.frame(
-#   img = "![](img/thumbnail/charlotte.png)", 
-#   bio = c("Charlotte Soneson", 
-#           paste0("<i class='fa fa-desktop'></i> [Website](http://csoneson.github.io/)<br>", 
-#                  "<i class='fa fa-twitter'></i> Twitter [\\@CSoneson](https://twitter.com/CSoneson)<br>", 
-#                  "<i class='fa fa-github'></i> GitHub [csoneson](https://github.com/csoneson)<br>", 
-#                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=c28GqkIAAAAJ)"), 
-#           paste0("As a postdoctoral research associate, one of my main interests is the ", 
-#                  "development and improvement of statistical methods and workflows, currently mainly ", 
-#                  "in the field of RNA-seq. I am also interested in the process of evaluating and ", 
-#                  "comparing methods in an objective, robust and reproducible manner."), 
-#           paste0("PhD in Mathematics (2011), Lund University<br>", 
+#   img = "![](img/thumbnail/charlotte.png)",
+#   bio = c("Charlotte Soneson",
+#           paste0("<i class='fa fa-desktop'></i> [Website](http://csoneson.github.io/)<br>",
+#                  "<i class='fa fa-twitter'></i> Twitter [\\@CSoneson](https://twitter.com/CSoneson)<br>",
+#                  "<i class='fa fa-github'></i> GitHub [csoneson](https://github.com/csoneson)<br>",
+#                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=c28GqkIAAAAJ)"),
+#           paste0("As a postdoctoral research associate, one of my main interests is the ",
+#                  "development and improvement of statistical methods and workflows, currently mainly ",
+#                  "in the field of RNA-seq. I am also interested in the process of evaluating and ",
+#                  "comparing methods in an objective, robust and reproducible manner."),
+#           paste0("PhD in Mathematics (2011), Lund University<br>",
 #                  "MSc in Engineering Physics (2005), Lund University"))
 # )
 
 tbl_simone <- data.frame(
-  img = "![](img/thumbnail/simone.png)", 
-  bio = c("Simone Tiberi", 
+  img = "![](img/thumbnail/simone.png)",
+  bio = c("Simone Tiberi",
                   paste0("<i class='fa fa-desktop'></i> [Website](https://sites.google.com/view/simonetiberi)<br>",
                   "<i class='fa fa-twitter'></i> Twitter [\\@tiberi_simone](https://twitter.com/tiberi_simone)<br>",
-                  "<i class='fa fa-github'></i> GitHub [SimoneTiberi](https://github.com/SimoneTiberi)<br>", 
-                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.com/citations?hl=en&user=58nWpq8AAAAJ&view_op=list_works&gmla=AJsN-F4oKYjm4oTFUio_EFmbXkpF5n0dgQOv-C9pfBGgyBq4ffqGAeJ2R6HwC1VNmMuSkj_NTMa-BQ5H7RyLxqZ6hr5yUsTej9kccy4vFeVjIAIgGy1uIH8)"), 
+                  "<i class='fa fa-github'></i> GitHub [SimoneTiberi](https://github.com/SimoneTiberi)<br>",
+                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.com/citations?hl=en&user=58nWpq8AAAAJ&view_op=list_works&gmla=AJsN-F4oKYjm4oTFUio_EFmbXkpF5n0dgQOv-C9pfBGgyBq4ffqGAeJ2R6HwC1VNmMuSkj_NTMa-BQ5H7RyLxqZ6hr5yUsTej9kccy4vFeVjIAIgGy1uIH8)"),
           paste0("I am a Postdoc working on the development of cutting-edge ",
                  "statistical methods in bioinformatics, mostly for bulk and single-cell RNA-seq data.",
-                 "Previously, I was a PhD student at the Department of Statistics at the University of Warwick, ", 
+                 "Previously, I was a PhD student at the Department of Statistics at the University of Warwick, ",
                  "where I worked on stochastic Bayesian hierarchical models to investigate transcription in single cells.",
-                 "In general terms, my interests are broad and lie in  the development of statistical methods for applications in biology."), 
-          paste0("PhD in Statistics (2017), The University of Warwick<br>", 
-                 "MSc in Statistics (2012), The University of Padua<br>", 
+                 "In general terms, my interests are broad and lie in  the development of statistical methods for applications in biology."),
+          paste0("PhD in Statistics (2017), The University of Warwick<br>",
+                 "MSc in Statistics (2012), The University of Padua<br>",
                  "BSc in Statistics (2010), Sapienza University of Rome"))
 )
 
 tbl_izaskun <- data.frame(
   img = "![](img/thumbnail/izaskun.jpg)",
   bio = c("Dr. Izaskun Mallona",
-          paste0("<i class='fa fa-desktop'></i> [Website](http://imallona.bitbucket.io)<br>", 
-                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=kMfxCIYAAAAJ)"), 
+          paste0("<i class='fa fa-desktop'></i> [Website](http://imallona.bitbucket.io)<br>",
+                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=kMfxCIYAAAAJ)"),
           paste0("I am mainly interested in gene expression modulation, as it lays the ground for any cell fate. ",
                  "The questions which excite my curiosity the most are: ",
                  "How are gene expression programs coded? and maintained? ",
@@ -107,22 +107,22 @@ tbl_izaskun <- data.frame(
 )
 
 # tbl_will <- data.frame(
-#   img = "![](img/thumbnail/will.jpg)", 
+#   img = "![](img/thumbnail/will.jpg)",
 #   bio = c(
-#     "Will Macnair", 
+#     "Will Macnair",
 #     paste0(
-#       "<i class='fa fa-twitter'></i> Twitter [\\@willmacnair](https://twitter.com/willmacnair)<br>", 
+#       "<i class='fa fa-twitter'></i> Twitter [\\@willmacnair](https://twitter.com/willmacnair)<br>",
 #       "<i class='fa fa-github'></i> GitHub [wmacnair](https://github.com/wmacnair)<br>"
-#       ), 
+#       ),
 #     paste0(
-#       "I am a postdoc developing statistical and computational methods for analysis of single cell data, ", 
+#       "I am a postdoc developing statistical and computational methods for analysis of single cell data, ",
 #       "mainly different flavours of single cell RNA-seq, but also cytometry data. ",
 #       "I'm motivated by sharp, biologically-driven research questions, and empirically sound methods to answer them. ",
 #       "My PhD focused on analysis of trajectories in single cell data, via testing for the presence of branchpoints ([
 #         TreeTop](https://github.com/wmacnair/TreeTop)), and identification of genes underlying sequential labels ([
-#         psupertime](https://github.com/wmacnair/psupertime)).", 
+#         psupertime](https://github.com/wmacnair/psupertime)).",
 #       ""
-#       ), 
+#       ),
 #     paste0(
 #       "PhD in Computational Biology (2018), ETH Zürich <br/>",
 #       "MSc in Systems Biology (2013), University of Warwick <br/>",
@@ -133,19 +133,19 @@ tbl_izaskun <- data.frame(
 # )
 
 tbl_imran <- data.frame(
-  img = "![](img/thumbnail/imran.jpg)", 
+  img = "![](img/thumbnail/imran.jpg)",
   bio = c(
-    "Imran Fanaswala", 
+    "Imran Fanaswala",
     paste0(
       "<i class='fa fa-twitter'></i> Twitter [\\@IFanaswala](https://twitter.com/IFanaswala)<br>"
-      ), 
+      ),
     paste0(
       "Imran Fanaswala has worked in academia and industry for over a decade; his passion lies in " ,
       "value-driven research (i.e. addressing unmet needs through research as well as bringing ideas to market). ",
       "His work has spanned various fields (robotics, phylogenetics, DNA-assembly, neuroscience) but ",
       "often within the machine-learning/AI context (and more recently, \"ModelOps\"). He strives for ",
       "readable code, succint prose, and meaningful research."
-      ), 
+      ),
     paste0(
       "MSc in Computational Biology (2014), ETH Zürich (thesis at RIKEN) <br/>",
       "BSc in Computer Science (2006), American University of Sharjah <br/>"
@@ -154,57 +154,57 @@ tbl_imran <- data.frame(
 )
 
 # tbl_lukas <- data.frame(
-#   img = "![](img/thumbnail/lukas.jpg)", 
-#   bio = c("Lukas Weber", 
-#           paste0("<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>", 
-#                  "<i class='fa fa-github'></i> GitHub [lmweber](https://github.com/lmweber)<br>", 
-#                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)"), 
-#           paste0("I am a PhD student in biostatistics, working on the development of statistical and ", 
-#                  "computational methods for analysis of various types of high-throughput biological data. ", 
-#                  "The main focus of my project is on methods for differential discovery in high-dimensional ", 
-#                  "single-cell flow and mass cytometry data. These methods are now available in the ", 
-#                  "[diffcyt](http://bioconductor.org/packages/diffcyt) R package from Bioconductor. ", 
-#                  "I also enjoy teaching, especially R programming and data analysis skills as an instructor for ", 
-#                  "[Software and Data Carpentry](https://carpentries.org/)."), 
+#   img = "![](img/thumbnail/lukas.jpg)",
+#   bio = c("Lukas Weber",
+#           paste0("<i class='fa fa-twitter'></i> Twitter [\\@lmwebr](https://twitter.com/lmwebr)<br>",
+#                  "<i class='fa fa-github'></i> GitHub [lmweber](https://github.com/lmweber)<br>",
+#                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=M8uPSzMAAAAJ)"),
+#           paste0("I am a PhD student in biostatistics, working on the development of statistical and ",
+#                  "computational methods for analysis of various types of high-throughput biological data. ",
+#                  "The main focus of my project is on methods for differential discovery in high-dimensional ",
+#                  "single-cell flow and mass cytometry data. These methods are now available in the ",
+#                  "[diffcyt](http://bioconductor.org/packages/diffcyt) R package from Bioconductor. ",
+#                  "I also enjoy teaching, especially R programming and data analysis skills as an instructor for ",
+#                  "[Software and Data Carpentry](https://carpentries.org/)."),
 #           paste0("MSc in Statistics (2014), ETH Zürich"))
 # )
 
 tbl_kathi <- data.frame(
-  img = "![](img/thumbnail/kathi.jpg)", 
-  bio = c("Katharina Hembach", 
-          paste0("I have a background in bioinformatics and I am a shared PhD student with the ", 
-                 "[Polymenidou lab](http://www.imls.uzh.ch/en/research/polymenidou.html). ", 
-                 "They focus on understanding the ", 
-                 "molecular mechanisms of neurodegenerative diseases such as Amyotrophic Lateral Sclerosis (ALS) ", 
-                 "and Frontotemporal Lobar Degeneration (FTLD). I help with the analysis and interpretation of ", 
-                 "different sequencing data, such as RNA-seq, CLIP-seq, and iCLIP. My main project is the ", 
-                 "development of a pipeline for the identification and quantification of alternative splicing events, ", 
-                 "specifically microexons and cryptic exons, from RNA-seq data."), 
+  img = "![](img/thumbnail/kathi.jpg)",
+  bio = c("Katharina Hembach",
+          paste0("I have a background in bioinformatics and I am a shared PhD student with the ",
+                 "[Polymenidou lab](http://www.imls.uzh.ch/en/research/polymenidou.html). ",
+                 "They focus on understanding the ",
+                 "molecular mechanisms of neurodegenerative diseases such as Amyotrophic Lateral Sclerosis (ALS) ",
+                 "and Frontotemporal Lobar Degeneration (FTLD). I help with the analysis and interpretation of ",
+                 "different sequencing data, such as RNA-seq, CLIP-seq, and iCLIP. My main project is the ",
+                 "development of a pipeline for the identification and quantification of alternative splicing events, ",
+                 "specifically microexons and cryptic exons, from RNA-seq data."),
           paste0("MSc in Bioinformatics (2015), LMU and TU Munich<br>",
                  "BSc in Bioinformatics (2012), LMU and TU Munich"))
 )
 
 tbl_stephan <- data.frame(
-  img = "![](img/thumbnail/stephan.jpg)", 
+  img = "![](img/thumbnail/stephan.jpg)",
   bio = c("Stephan Schmeing",
-          paste0("<i class='fa fa-twitter'></i> Twitter [\\@StephanSchmeing](https://twitter.com/StephanSchmeing)<br>", 
-                 "<i class='fa fa-github'></i> GitHub [schmeing](https://github.com/schmeing)<br>"), 
-          paste0("As a PhD student coming from a particle physics background I am currently working ", 
-                 "on a more realistic Illumina sequence simulator called ReSequenceR. It is able to ", 
-                 "create a profile from a bam file that is then used to simulate paired-read fastq files. ", 
-                 "Furthermore I will work on an assembly and population genomics of the Indo-Pacific ", 
-                 "bottlenose dolphin (tursiops aduncus)."), 
-          paste0("MSc in Astro, Particle and Nuclear physics (2014), TU Munich<br>", 
+          paste0("<i class='fa fa-twitter'></i> Twitter [\\@StephanSchmeing](https://twitter.com/StephanSchmeing)<br>",
+                 "<i class='fa fa-github'></i> GitHub [schmeing](https://github.com/schmeing)<br>"),
+          paste0("As a PhD student coming from a particle physics background I am currently working ",
+                 "on a more realistic Illumina sequence simulator called ReSequenceR. It is able to ",
+                 "create a profile from a bam file that is then used to simulate paired-read fastq files. ",
+                 "Furthermore I will work on an assembly and population genomics of the Indo-Pacific ",
+                 "bottlenose dolphin (tursiops aduncus)."),
+          paste0("MSc in Astro, Particle and Nuclear physics (2014), TU Munich<br>",
                  "BSc in Physics (2011), TU Munich"))
 )
 
 # tbl_fiona <- data.frame(
-#   img = "![](img/thumbnail/fiona.jpg)", 
-#   bio = c("Ruizhu Huang", 
-#           paste0("My major research interest is in the development and application of statistical ", 
-#                  "methods in biological data. Currently, I am working on the project about tree ", 
-#                  "signal aggregation."), 
-#           paste0("MSc in Biostatistics (2015), University of Zürich<br>", 
+#   img = "![](img/thumbnail/fiona.jpg)",
+#   bio = c("Ruizhu Huang",
+#           paste0("My major research interest is in the development and application of statistical ",
+#                  "methods in biological data. Currently, I am working on the project about tree ",
+#                  "signal aggregation."),
+#           paste0("MSc in Biostatistics (2015), University of Zürich<br>",
 #                  "BSc in Applied Chemsitry (2010), Wuhan University"))
 # )
 
@@ -221,88 +221,88 @@ tbl_vladimir <- data.frame(
 )
 
 # tbl_stephany <- data.frame(
-#   img = "![](img/thumbnail/stephany.jpg)", 
-#   bio = c("Stephany Orjuela", 
+#   img = "![](img/thumbnail/stephany.jpg)",
+#   bio = c("Stephany Orjuela",
 #           "<i class='fa fa-github'></i> GitHub [sorjuela](https://github.com/sorjuela)<br>",
-#           paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ", 
-#                  "which focuses on studying the molecular mechanisms underlying the development ", 
-#                  "and progression of Colorectal Cancer. Most of my work focuses on analyzing and ", 
-#                  "developing methods to process methylation data obtained from Bisulfite-seq. I am currently developing a method to identify differential allele-specific methylation. "), 
-#           paste0("MSc in Biology (2017), University of Zürich<br>", 
+#           paste0("I have a shared PhD position with the [Marra lab](http://www.imcr.uzh.ch/en/research/Marra/Team.html), ",
+#                  "which focuses on studying the molecular mechanisms underlying the development ",
+#                  "and progression of Colorectal Cancer. Most of my work focuses on analyzing and ",
+#                  "developing methods to process methylation data obtained from Bisulfite-seq. I am currently developing a method to identify differential allele-specific methylation. "),
+#           paste0("MSc in Biology (2017), University of Zürich<br>",
 #                  "BSc in Biology (2015), Universidad Nacional de Colombia"))
 # )
 
 # tbl_stefan <- data.frame(
-#   img = "![](img/thumbnail/stefan.jpg)", 
+#   img = "![](img/thumbnail/stefan.jpg)",
 #   bio = c("Stefan Milosavljevic",
-#           paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/stefan-milosavljevic-07361b8a/) <br>",  
+#           paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/stefan-milosavljevic-07361b8a/) <br>",
 #                  "<i class='fa fa-github'></i> GitHub [supermaxiste](https://github.com/supermaxiste)<br>"),
 #           paste0("I have a shared PhD position with the ",
 #                  "[Shimizu lab](http://www.ieu.uzh.ch/en/research/evolbiol/ecogenomics.html). ",
-#                  "I've got a background in biology and bioinformatics and I'm currently ", 
-#                  "working on the rapid evolution of a plant species called _Arabidopsis_ _kamchatica_. ", 
-#                  "My project focuses on epigenetic modifications over short timescales and my general ", 
-#                  "aim is to assess the impact and the importance of DNA methylation in evolution over ", 
-#                  "short periods (rapid evolution)."), 
-#           paste0("MSc in Computational Biology and Bioinformatics (2017), ETH Zürich and University of Zürich<br>", 
+#                  "I've got a background in biology and bioinformatics and I'm currently ",
+#                  "working on the rapid evolution of a plant species called _Arabidopsis_ _kamchatica_. ",
+#                  "My project focuses on epigenetic modifications over short timescales and my general ",
+#                  "aim is to assess the impact and the importance of DNA methylation in evolution over ",
+#                  "short periods (rapid evolution)."),
+#           paste0("MSc in Computational Biology and Bioinformatics (2017), ETH Zürich and University of Zürich<br>",
 #                  "BSc in Biology (2015), Université de Lausanne"))
 # )
 
 tbl_helena <- data.frame(
-  img = "![](img/thumbnail/helena.png)", 
-  bio = c("Helena Lucia Crowell", 
+  img = "![](img/thumbnail/helena.png)",
+  bio = c("Helena Lucia Crowell",
           "<i class='fa fa-twitter'></i> Twitter [\\@CrowellHL](https://twitter.com/CrowellHL)<br>",
-          paste0("In collaboration with the [Bodenmiller lab](http://www.bodenmillerlab.com) lab, ", 
-                 "I have worked on correcting for spillover in CyTOF data. The preprint to this ", 
-                 "project is available on [bioRxiv](https://doi.org/10.1101/185744) and has been ", 
-                 "published in [cell systems](https://doi.org/10.1016/j.cels.2018.02.010). ", 
-                 "Alongside our compensation approach, I have made Finck et al.'s ", 
-                 "[bead-based normalization](https://doi.org/10.1002/cyto.a.22271) and Zunder et al.'s ", 
-                 "[single-cell deconvolution](https://doi.org/10.1038/nprot.2015.020) available in ", 
-                 "[CATALYST](https://bioconductor.org/packages/release/bioc/html/CATALYST.html) ", 
-                 "(**C**ytometry d**AT**a an**ALYS**is **T**ools): a [Bioconductor](https://bioconductor.org) ", 
-                 "package providing tools for preprocessing and analysis of cytometry data; and have further ", 
+          paste0("In collaboration with the [Bodenmiller lab](http://www.bodenmillerlab.com) lab, ",
+                 "I have worked on correcting for spillover in CyTOF data. The preprint to this ",
+                 "project is available on [bioRxiv](https://doi.org/10.1101/185744) and has been ",
+                 "published in [cell systems](https://doi.org/10.1016/j.cels.2018.02.010). ",
+                 "Alongside our compensation approach, I have made Finck et al.'s ",
+                 "[bead-based normalization](https://doi.org/10.1002/cyto.a.22271) and Zunder et al.'s ",
+                 "[single-cell deconvolution](https://doi.org/10.1038/nprot.2015.020) available in ",
+                 "[CATALYST](https://bioconductor.org/packages/release/bioc/html/CATALYST.html) ",
+                 "(**C**ytometry d**AT**a an**ALYS**is **T**ools): a [Bioconductor](https://bioconductor.org) ",
+                 "package providing tools for preprocessing and analysis of cytometry data; and have further ",
                  "integrated M. Nowicka's [CyTOF workflow](https://f1000research.com/articles/6-748/v2) for ",
                  "differential analysis into the package. As a PhD student, I am currently working on ",
                  "extending this framework for differential discovery to scRNA-seq data with complex ",
-                 "experimental designs."), 
-          paste0("MSc in Computational Biology & Bioinformatics (2018), ETH Zürich<br>", 
+                 "experimental designs."),
+          paste0("MSc in Computational Biology & Bioinformatics (2018), ETH Zürich<br>",
                  "BSc in Biochemistry (2015), University of Heidelberg"))
 )
 
 # tbl_angelo <- data.frame(
-#   img = "", 
-#   bio = c("Angelo Duo", 
-#           paste0("Text here"), 
+#   img = "",
+#   bio = c("Angelo Duo",
+#           paste0("Text here"),
 #           "More text here")
 # )
 
 # tbl_helen <- data.frame(
-#   img = "![](img/helen.jpg)", 
-#   bio = c("Helen Lindsay", 
-#           paste0("Text text text text text text text text text text text text text text ", 
-#                  "text text text text text text text text text text text text text "), 
-#           paste0("More text (e.g. qualifications)<br>", 
+#   img = "![](img/helen.jpg)",
+#   bio = c("Helen Lindsay",
+#           paste0("Text text text text text text text text text text text text text text ",
+#                  "text text text text text text text text text text text text text "),
+#           paste0("More text (e.g. qualifications)<br>",
 #                  "More text"))
 # )
 
 tbl_almut <- data.frame(
-  img = "![](img/thumbnail/almut.jpg)", 
+  img = "![](img/thumbnail/almut.jpg)",
   bio = c("Almut Lütge",
           paste0("I'm a PhD student with a background in Molecular Biotechnology, ",
                  "but already during my master I focused on Bioinformatics. ",
-                 "I'm interested in all kinds of genomic analysis, but mainly worked with transcriptomic data, so far. ", 
+                 "I'm interested in all kinds of genomic analysis, but mainly worked with transcriptomic data, so far. ",
                  "My PhD project is about methods in single cell RNAseq and part of a Sinergia collaboration on defining ",
-                 "the  identity  and  differentiation  pathways of the immune-stimulating fibroblastic tumor stroma."), 
-          paste0("MSc in Molecular Biotechnology (2018), University of Heidelberg<br>", 
+                 "the  identity  and  differentiation  pathways of the immune-stimulating fibroblastic tumor stroma."),
+          paste0("MSc in Molecular Biotechnology (2018), University of Heidelberg<br>",
                  "BSc Molecular Biotechnology (2013), University of Heidelberg"))
 )
 
 tbl_plger <- data.frame(
-  img = "![](img/thumbnail/pierreluc.jpg)", 
+  img = "![](img/thumbnail/pierreluc.jpg)",
   bio = c("Dr. Pierre-Luc Germain",
-          paste0("<i class='fa fa-github'></i> GitHub [plger](https://github.com/plger)<br>", 
-          "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.com/citations?user=788GnysAAAAJ)"), 
+          paste0("<i class='fa fa-github'></i> GitHub [plger](https://github.com/plger)<br>",
+          "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.com/citations?user=788GnysAAAAJ)"),
           paste0( "I gradually shifted from the humanities to bioinformatics towards the end of my PhD, ",
                   "worked a lot in the past on linking chromatin alterations to gene expression, and currently ",
                   "work mostly on the analysis of short RNA-seq and single-cell RNA-seq, as well as pre- and ",
@@ -315,48 +315,48 @@ tbl_plger <- data.frame(
 )
 
 tbl_anthony <- data.frame(
-  img = "![](img/thumbnail/Anthony.png)", 
-  bio = c("Anthony Sonrel", 
-          "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/anthony-sonrel-612505114/) <br>",  
-          paste0("I am a PhD student that joined the Robinson Lab as part of the Life Science Zürich Graduate School.", 
-                 " Through my past projects in academia and industry I worked on various topics such as NGS,", 
-                 " GWAS summary statistics,  epigenetic analyses (ChIP/ATAC-seq) and deep neural networks.", 
-                 " In my current project, I'm evaluating and developing tools (mainly R packages) for single-cell", 
+  img = "![](img/thumbnail/Anthony.png)",
+  bio = c("Anthony Sonrel",
+          "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/anthony-sonrel-612505114/) <br>",
+          paste0("I am a PhD student that joined the Robinson Lab as part of the Life Science Zürich Graduate School.",
+                 " Through my past projects in academia and industry I worked on various topics such as NGS,",
+                 " GWAS summary statistics,  epigenetic analyses (ChIP/ATAC-seq) and deep neural networks.",
+                 " In my current project, I'm evaluating and developing tools (mainly R packages) for single-cell",
                  " RNA sequencing datasets. More specifically,  I'm interested in developing new methodologies",
-                 " and new effective tools."), 
-          paste0("MSc in Molecular Life Sciences - Bioinformatics (2018), University of Lausanne<br>", 
+                 " and new effective tools."),
+          paste0("MSc in Molecular Life Sciences - Bioinformatics (2018), University of Lausanne<br>",
                  "BSc of Science in Biology (2015), University of Lausanne"))
 )
 
 tbl_reto <- data.frame(
-  img = "![](img/thumbnail/Reto.jpg)", 
-  bio = c("Reto Gerber",  
-          paste("I joined the Robinson Lab as a PhD student after working as a Research Assistant in the group. During this time I worked on 
-          scRNA-seq data from Synovial tissue in collaboration with USZ. Furthermore I developped 
-          [pubassistant.ch](https://pubassistant.ch) (R shiny app to help consolidate publication profiles of researchers) and 
+  img = "![](img/thumbnail/Reto.jpg)",
+  bio = c("Reto Gerber",
+          paste("I joined the Robinson Lab as a PhD student after working as a Research Assistant in the group. During this time I worked on
+          scRNA-seq data from Synovial tissue in collaboration with USZ. Furthermore I developped
+          [pubassistant.ch](https://pubassistant.ch) (R shiny app to help consolidate publication profiles of researchers) and
           [censcyt](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04125-4) (method for differential abundance analysis in cytometry where a covariate is subject to censoring)."
-                  ), 
+                  ),
           paste0("MSc of Science in Computational Biology and Bioinformatics (2020), ETH, University of Zürich<br>",
                  "BSc of Science in Biology (2017), University of Zürich"))
 )
 
 tbl_elyas <- data.frame(
-  img = "![](img/thumbnail/elyas.jpeg)", 
-  bio = c("Elyas Heidari",  
+  img = "![](img/thumbnail/elyas.jpeg)",
+  bio = c("Elyas Heidari",
           paste0("I am a Master student of Computational Biology & Bioinformatics at ETH university. I am interested",
                  " in developing analysis pipelines for single-cell multi-omics data. Currently, I am exploring",
                  " single-cell B/T-cell receptor data to understand the diversity in immune repertoire and phenotypes.",
-                 " Prior to joining Robinson lab, I worked on developing a number of machine/deep learning tools", 
+                 " Prior to joining Robinson lab, I worked on developing a number of machine/deep learning tools",
                  " for biomedical data. I have developed [MUVIS](https://baio-lab.github.io/muvis/index.html) for general medical data analysis and [SeqLearner](http://seqlearner.readthedocs.io/) for semi-supervised learning on protein sequences."
-                  ), 
+                  ),
           paste0("BSc of Science in Applied Mathematics (2019), Sharif University of Technology<br>", "BSc of Science in Computer Engineering (2019), Sharif University of Technology<br>"))
 )
 
 tbl_emanuel <- data.frame(
-  img = "![](img/thumbnail/emanuel.jpg)", 
-  bio = c("Emanuel Sonder", 
-	        paste0("<i class='fa fa-twitter'></i> Twitter [\\@EmanuelSonder](https://twitter.com/EmanuelSonder)<br>", 
-                 "<i class='fa fa-github'></i> GitHub [emsonder](https://github.com/emsonder)<br>"), 
+  img = "![](img/thumbnail/emanuel.jpg)",
+  bio = c("Emanuel Sonder",
+	        paste0("<i class='fa fa-twitter'></i> Twitter [\\@EmanuelSonder](https://twitter.com/EmanuelSonder)<br>",
+                 "<i class='fa fa-github'></i> GitHub [emsonder](https://github.com/emsonder)<br>"),
           paste0("After finishing my Master’s Thesis in the Robinson Group, I started a shared PhD position with the [Schratt lab](https://schrattlab.ethz.ch/the-group.html). I have a general interest in the analysis of epigenetic data (ATAC-seq, WGBS). My PhD project is focused on the reverse engineering of cell type-specific transcriptional networks by integrating different data modalities. The overarching goal is to provide insights in brain cell type specific responses to different stressors when compared with neuronal activity."),
           paste0("MSc in Computational Biology and Bioinformatics (2021), ETH Zürich, University of Zürich<br>",
                  "BSc in Biology (2018), ETH Zürich")
@@ -377,31 +377,31 @@ tbl_joel <- data.frame(
   img = "![](img/thumbnail/joel.jpg)",
   bio = c("Joël Meili",
           "<i class='fa fa-github'></i> GitHub [joelmeili](https://github.com/joelmeili)<br>",
-          paste0("I am a master's student in the Biostatistics program at UZH. Currently I am working on my master's thesis which aims to propose a novel method that compares RNA velocities to identify cell clusters and genes within the clusters with different RNA velocities. The main aim is to compare experimental conditions (e.g. healthy vs. disease). However, the framework shoud also allow for comparisions of cell clusters from individual samples (e.g. B cells vs. T cells)."), 
+          paste0("I am a master's student in the Biostatistics program at UZH. Currently I am working on my master's thesis which aims to propose a novel method that compares RNA velocities to identify cell clusters and genes within the clusters with different RNA velocities. The main aim is to compare experimental conditions (e.g. healthy vs. disease). However, the framework shoud also allow for comparisions of cell clusters from individual samples (e.g. B cells vs. T cells)."),
           paste0("BSc in Engineering and Management (2019), Zurich University of Applied Sciences")
           )
   )
 
 tbl_ahmad <- data.frame(
-  img = "![](img/thumbnail/aalajami.jpg)", 
-  bio = c("Ahmad Al Ajami", 
-          "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/ahmad-al-ajami-2ba577168/) <br>",  
-          paste0("I am a master's student in the Computational Biology and Bioinformatics joint program of ETHZ and UZH.", 
-                 " I am currently working on my master's thesis where I am continuing work that I conducted", 
-                 " during my internship at Roche. The project is about implementation and extension of", 
-                 " existing reference-based methods for cell annotation in single-cell RNA sequencing.", 
-                 " Throughout the years, I have developed particular interest in immunology, data analysis", 
-                 " and integration of single-cell data from different biological modalities. "), 
+  img = "![](img/thumbnail/aalajami.jpg)",
+  bio = c("Ahmad Al Ajami",
+          "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/ahmad-al-ajami-2ba577168/) <br>",
+          paste0("I am a master's student in the Computational Biology and Bioinformatics joint program of ETHZ and UZH.",
+                 " I am currently working on my master's thesis where I am continuing work that I conducted",
+                 " during my internship at Roche. The project is about implementation and extension of",
+                 " existing reference-based methods for cell annotation in single-cell RNA sequencing.",
+                 " Throughout the years, I have developed particular interest in immunology, data analysis",
+                 " and integration of single-cell data from different biological modalities. "),
           paste0("BSc in Genetics and Bioinformatics (2018), Bahcesehir University"))
 )
 
 
 tbl_dominique <- data.frame(
-  img = "![](img/thumbnail/dominique.jpg)", 
-  bio = c("Dominique Paul", 
+  img = "![](img/thumbnail/dominique.jpg)",
+  bio = c("Dominique Paul",
           paste0("<i class='fa fa-desktop'></i> [Website](http://www.thisiscrispin.com/)<br>",
-                 "<i class='fa fa-twitter'></i> Twitter [\\@dominiquecapaul](https://twitter.com/DominiqueCAPaul)<br>", 
-                 "<i class='fa fa-github'></i> GitHub [dominiquepaul](https://github.com/DominiquePaul)<br>"), 
+                 "<i class='fa fa-twitter'></i> Twitter [\\@dominiquecapaul](https://twitter.com/DominiqueCAPaul)<br>",
+                 "<i class='fa fa-github'></i> GitHub [dominiquepaul](https://github.com/DominiquePaul)<br>"),
           paste0("I am a Research Assistant at the Robinson lab. Currently I am working on a project with",
                  " the lab team and researchers from the the university hospital to understand the effects",
                  " of a new treatment method on systemic scleroris. I mainly work with and am interested",
@@ -411,8 +411,8 @@ tbl_dominique <- data.frame(
 
 
 tbl_cpy <- data.frame(
-  img = "![](img/thumbnail/peiying.jpg)", 
-  bio = c("Peiying Cai",  
+  img = "![](img/thumbnail/peiying.jpg)",
+  bio = c("Peiying Cai",
           paste0("In February 2023, I started working as a PhD student in the Robinson lab. ",
 	         "Previously, I worked on developing analysis tools and pipelines to identify spatially variable genes from spatial transcriptomics data. ",
                  "My PhD research will focus on the development of statistical methods in bioinformatics, ",
@@ -422,8 +422,8 @@ tbl_cpy <- data.frame(
 )
 
 tbl_haolyu <- data.frame(
-  img = "![](img/thumbnail/HaoLyu.png)", 
-  bio = c("Hao Lyu", 
+  img = "![](img/thumbnail/HaoLyu.png)",
+  bio = c("Hao Lyu",
           paste0("<i class='fa fa-desktop'></i>[Website](https://scholar.google.com/citations?user=llaoggIAAAAJ&hl=en&oi=ao)<br>"),
           paste0("I am a visiting PhD student with a background in bioinformatics",
                  "Prior to joining Robinson lab, I worked on developing machine learning/deep learning tools for identifying DNA, RNA, and protein modification sites",
@@ -460,7 +460,7 @@ tbl_siyuan <- data.frame(
 )
 
 tbl_martin <- data.frame(
-  img = "![](img/thumbnail/martin.jpg)", 
+  img = "![](img/thumbnail/martin.jpg)",
   bio = c("Martin Emons",
           paste0("I am a PhD student in the Robinson Group since 2022 in the Epidemiology and Biostatistics PhD program. My general interest lies in the development of methods for biological and biomedical data science. In my master studies I worked on various topics such as statistical analysis of temporal trends or survival analysis at Roche Diagnostics. Currently, I am interested in spatial transcriptomics and the challenges in this new field."),
           paste0("MSc in Computational Biology and Bioinformatics (2022), ETH Zürich, University of Zürich<br>",
@@ -469,10 +469,10 @@ tbl_martin <- data.frame(
   )
 
 tbl_samuel <- data.frame(
-  img = "![](img/thumbnail/samuel.jpeg)", 
-  bio = c("Samuel Gunz", 
-          paste0("<i class='fa fa-twitter'></i> Twitter [\\@samuelgunz](https://twitter.com/samuelgunz)<br>", 
-                 "<i class='fa fa-github'></i> GitHub [sgunz](https://github.com/sgunz)<br>"), 
+  img = "![](img/thumbnail/samuel.jpeg)",
+  bio = c("Samuel Gunz",
+          paste0("<i class='fa fa-twitter'></i> Twitter [\\@samuelgunz](https://twitter.com/samuelgunz)<br>",
+                 "<i class='fa fa-github'></i> GitHub [sgunz](https://github.com/sgunz)<br>"),
           paste0("I am a PhD student in the Robinson lab as part of the Epidemiology and Biostatistics program of the Life Science Graduate School Zurich. During my past studies, I worked with all sorts of biological data, ranging from microbial community analysis to characterizing epigenetic modifications in cancer. During this time, I acknowledged the importance of having robust and reproducible tools in research and that my interest lies in developing such. My PhD project will focus on methods for analyzing spatial omics data."),
           paste0("MSc in Computational Biology and Bioinformatics (2022), ETH Zurich, University of Basel and University of Zurich<br>", "BSc in Biology (2018), University of Zurich")
   )
@@ -488,10 +488,10 @@ tbl_yinguo <- data.frame(
 )
 
 tbl_dani <- data.frame(
-  img = "![](img/thumbnail/danincicau.jpg)", 
-  bio = c("Daniel Incicau", 
-          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/daniel-incicau/)<br>",  
-                 "<i class='fa fa-github'></i> [DanInci](https://github.com/DanInci)<br>"), 
+  img = "![](img/thumbnail/danincicau.jpg)",
+  bio = c("Daniel Incicau",
+          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/daniel-incicau/)<br>",
+                 "<i class='fa fa-github'></i> [DanInci](https://github.com/DanInci)<br>"),
           paste0("I am a Master's student in Computational Biology and Bioinformatics. ",
                  "I'm currently working on my thesis which involves evaluating cell phenotyping methods in highly multiplexed imaging, with a focus on mass cytometry images. ",
                  "I have a particular interest in immunology and I'm your typical functional programming enthusiast."),
@@ -501,9 +501,9 @@ tbl_dani <- data.frame(
 )
 
 tbl_jiayi <- data.frame(
-  img = "![](img/thumbnail/jiayi.jpg)", 
-  bio = c("Jiayi Wang", 
-          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/jiayi-wang-14a3261ba/)<br>"), 
+  img = "![](img/thumbnail/jiayi.jpg)",
+  bio = c("Jiayi Wang",
+          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/jiayi-wang-14a3261ba/)<br>"),
           paste0("After finishing an internship and my master thesis in the Robinson group, I joined as a PhD student. During this time I worked on disentangling type and state effects on expression variability to improve analysis and interpretability of scRNA-seq data and identifying motif accessibility changes in ATAC-seq data. My PhD project primarily focuses on data analysis of long-read scRNA data and image analysis. "),
           paste0("MSc in Computational Biology and Bioinformatics (2024), ETH Zürich<br>",
                  "BSc in Biomedical Sciences (2021), University College London")
@@ -511,7 +511,7 @@ tbl_jiayi <- data.frame(
 )
 
 tbl_marusa <- data.frame(
-  img = "![](img/thumbnail/marusa.jpg)", 
+  img = "![](img/thumbnail/marusa.jpg)",
   bio = c(
           "Maruša Koderman",
           paste0("I joined the Robinson lab as a PhD student in 2024. Prior to starting my PhD, ",
@@ -525,8 +525,8 @@ tbl_marusa <- data.frame(
 )
 
 # tbl_sarusan <- data.frame(
-#   img = "![](img/thumbnail/sarusan.jpg)", 
-#   bio = c("Sarusan Kathirchelvan", 
+#   img = "![](img/thumbnail/sarusan.jpg)",
+#   bio = c("Sarusan Kathirchelvan",
 #           paste0("I am a Master's student in Computational Biology and Bioinformatics. ",
 #                  "I am currently working on my thesis involving the application of ensemble clustering in spatial transcriptomics and evaluating the spatial homogeneity, and the optimal cluster numbers of those detected clusters, to improve the spatial domain detection problem as well as to transition from a supervised to an unsupervised data-driven clustering."),
 #           paste0("MSc in Computational Biology and Bioinformatics (ongoing), ETH Zürich<br>",
@@ -535,8 +535,8 @@ tbl_marusa <- data.frame(
 # )
 
 tbl_anna <- data.frame(
-  img = "![](img/thumbnail/anna.jpg)", 
-  bio = c("Anna Schuster", 
+  img = "![](img/thumbnail/anna.jpg)",
+  bio = c("Anna Schuster",
           paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/anna-schuster-9427174b/)<br>"),
           paste0("I am a Master’s student in Computational Science with a background in Bioinformatics. ",
                  "Currently, I am working on my Master’s thesis, which involves benchmarking several tools for detecting novel isoforms using long-read RNA-Seq data."),
@@ -546,12 +546,20 @@ tbl_anna <- data.frame(
 )
 
 tbl_pauline <- data.frame(
-  img = "![](img/thumbnail/pauline.jpg)", 
-  bio = c("Pauline Busch", 
+  img = "![](img/thumbnail/pauline.jpg)",
+  bio = c("Pauline Busch",
           paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](www.linkedin.com/in/pauline-busch)<br>"),
           paste0("I joined the Robinson lab as a PhD student at the end of 2024. My background is in biomedical research, with previous work focusing on pathophysiological processes in blood and brain. During my master’s studies I developed an interest in bioinformatics and during my PhD I aim to contribute to the development of methods for analyzing spatial transcriptomics data."),
           paste0("MSc in Molecular Life Sciences (2022), University of Hamburg<br>",
                  "BSc in Biology (2019), University of Hamburg")
+          )
+)
+
+tbl_ben <- data.frame(
+  img = "![](img/thumbnail/ben.jpg)",
+  bio = c("Ben Carrillo",
+          paste0("PhD student at Robinson lab since Spring 2025. I am interested in building robust, composable tools for reproducible biomedical research. Working on tools for methods benchmarking."),
+          paste0("MSc in Biostatistics and Bioinformatics (2023), Universitat Oberta de Catalunya<br>")
           )
 )
 ```
@@ -561,20 +569,20 @@ tbl_pauline <- data.frame(
 
 # combine all in list (re-order here as appropriate, e.g. by seniority)
 tables_all <- list(
-  tbl_mark, 
-  #tbl_joanna, 
+  tbl_mark,
+  #tbl_joanna,
   #tbl_simone,
   tbl_izaskun,
   tbl_plger,
   #tbl_will,
   #tbl_imran,
-  #tbl_lukas, 
-  #tbl_kathi, 
-  # tbl_stephan, 
-  # tbl_fiona, 
-  # tbl_vladimir, 
-  #tbl_stephany, 
-  #tbl_stefan, 
+  #tbl_lukas,
+  #tbl_kathi,
+  # tbl_stephan,
+  # tbl_fiona,
+  # tbl_vladimir,
+  #tbl_stephany,
+  #tbl_stefan,
   #tbl_helena,
   #tbl_almut,
   #tbl_anthony,
@@ -595,8 +603,9 @@ tables_all <- list(
   tbl_jiayi,
   tbl_marusa,
   tbl_pauline,
+  tbl_ben,
   tbl_dani,
-#  tbl_charlotte, 
+#  tbl_charlotte,
 #  tbl_angelo,
 #  tbl_helen,
   # tbl_sarusan,
@@ -621,14 +630,14 @@ tables_all <- lapply(tables_all, function(tbl) {
 # output HTML code using 'kableExtra' package
 # note: loop requires 'results="asis"' in code chunk header, and 'print' command at the end
 for (i in seq_along(tables_all)) {
-  kable(tables_all[[i]], escape = FALSE) %>% 
-    kable_styling(bootstrap_options = "condensed", full_width = FALSE) %>% 
-    column_spec(column = 1, width = "3cm") %>% 
-    column_spec(column = 2, width = "20cm") %>% 
-    row_spec(row = 1, bold = TRUE, font_size = 18) %>% 
-    collapse_rows(columns = 1, valign = "top") %>% 
+  kable(tables_all[[i]], escape = FALSE) %>%
+    kable_styling(bootstrap_options = "condensed", full_width = FALSE) %>%
+    column_spec(column = 1, width = "3cm") %>%
+    column_spec(column = 2, width = "20cm") %>%
+    row_spec(row = 1, bold = TRUE, font_size = 18) %>%
+    collapse_rows(columns = 1, valign = "top") %>%
     # hack to remove row borders between table cells (by adding additional options to HTML code for table cells)
-    gsub('<td style="', '<td style="border:none;', .) %>% 
+    gsub('<td style="', '<td style="border:none;', .) %>%
     cat
 }
 ```
@@ -671,5 +680,3 @@ for (i in seq_along(tables_all)) {
 - Angelo Duò (MSc student, [compared scRNA-seq clustering algorithms](https://f1000research.com/articles/7-1141/v2); now at [Scailyte](https://www.scailyte.com/))
 - Amr Elriedy (MSc student, analyzed isoform detection using PacBio cDNA-seq; now at University of Oxford)
 - Romy Schleiss (MSc student, compared normalization for CyTOF data)
-
-
