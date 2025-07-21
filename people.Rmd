@@ -643,7 +643,9 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
-- Sarusan Kathirchelvan, MSc student
+- Pierre-Luc Germain (Shared postdoc; author of [scDblFinder](https://www.bioconductor.org/packages/scDblFinder) among various other things)
+- Anna Schuster (MSc student)
+- Sarusan Kathirchelvan (MSc student)
 - Almut Lütge (PhD student; author of [CellMixS](https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html); now Biomedical Data Engineer at [Swiss Data Science Center](https://datascience.ch))
 - Anthony Sonrel (PhD student; now Bioinformatics Scientist @Idorsia)
 - Yin Guo (visiting PhD student from Xi'an Jiaotong University)
