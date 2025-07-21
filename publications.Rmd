@@ -29,7 +29,11 @@ biorxiv_dois <- c("10.1101/2023.04.12.536513",
                   "10.1101/2024.11.28.625845",
                   "10.1101/2024.11.29.626057",
                   "10.1101/2025.03.17.643621",
-                  "10.1101/2025.04.15.648932")
+                  "10.1101/2025.04.15.648932",
+                  "10.1101/2025.05.30.656561",
+                  "10.1101/2025.06.23.660861",
+                  "10.1101/2025.06.30.662268",
+                  "10.1101/2025.07.08.663623")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -71,8 +75,6 @@ pmid_github <- rbind(
 
 
 
-
-
 biorxiv_github <- rbind(
   c(doi = "2412.01561", github = "https://github.com/robinsonlabuzh/pasta-manuscript"),
   c(doi = "10.1101/2024.11.28.625845", github = "https://github.com/RoseYuan/metric_paper"),
@@ -88,10 +90,12 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2025.03.17.643621", github = "https://github.com/LiminLi-xjtu/BiCLUM_test"),
   c(doi = "10.1101/2024.05.18.594120", github = "https://github.com/imallona/rock_roi_paper"),
   c(doi = "10.1101/2022.06.01.493823", github = "https://retogerber.pages.uzh.ch/synovialscrnaseq/"),
+  c(doi = "10.1101/2025.05.30.656561", github = "https://github.com/dnwissel/kinnex-data"),
+  c(doi = "10.1101/2025.06.23.660861", github = "https://github.com/SpatialHackathon/SpaceHack2023_study"),
+  c(doi = "10.1101/2025.06.30.662268", github = "https://github.com/peicai/DESpace2_manuscript"),
+  c(doi = "10.1101/2025.07.08.663623", github = "https://gitlab.uzh.ch/retogerber/imc_to_ims_methods_analysis_scripts"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
-
-
 
 
 
@@ -115,6 +119,7 @@ biorxiv_data <- rbind(
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
   c(doi = "10.1101/2022.02.08.479579", data = "https://doi.org/10.5281/zenodo.5960321"),
   c(doi = "10.1101/2025.03.17.643621", data = "https://doi.org/10.5281/zenodo.14506611"),
+  c(doi = "10.1101/2025.07.08.663623", data = "https://doi.org/10.6019/S-BIAD2091"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
@@ -162,6 +167,9 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2025.03.17.643621", software = "https://github.com/LiminLi-xjtu/BiCLUM"),
   c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
   c(doi = "10.1101/2022.04.14.488419", software = "https://github.com/MarioniLab/SageNet"),
+  c(doi = "10.1101/2025.06.23.660861", software = "https://github.com/SpatialHackathon/SACCELERATOR"),
+  c(doi = "10.1101/2025.06.30.662268", software = "https://bioconductor.org/packages/DESpace"),
+  c(doi = "10.1101/2025.07.08.663623", software = "https://github.com/retogerber/MIMIC"),
   c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
 )
 
@@ -219,15 +227,15 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", "Weber, L. M.",
                    "Ben Carrillo", "Daniel Incicau",
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", 
-                   "Samuel Gunz","Gunz S",
-                   "Martin Emons","Emons M",
+                   "Samuel Gunz","Gunz S","Gunz, S.",
+                   "Martin Emons","Emons M","Emons, M.",
                    "Siyuan Luo",
                    "Giulia Moro","Moro G","Moro, G.",
                    "Guo, Y.",
                    "Emanuel Sonder","Sonder, E.",
                    "Wang, J.","Jiayi Wang","Wang J",
                    "Meili, J.",
-                   "David Wissel","Wissel D",
+                   "David Wissel","Wissel D","Wissel, D.",
                    "Hembach KM", "Hembach, K. M.","Betz, K. M.",
                    "Katharina M. Hembach", "Yao Yao", "Yao Y",
                    "de Souza Vladimir", "Vladimir de Souza","Vladimir Barbosa C. de Souza",
@@ -271,6 +279,7 @@ suppressPackageStartupMessages({
   library(rentrez)
   library(rvest)
   library(XML)
+  library(xml2)
   library(aRxiv)
   library(medrxivr)
 })
@@ -480,18 +489,43 @@ peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
 
 
 ```{r}
-## Add PeerJ preprints by doi
+## Add arxiv preprints by doi
+# arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
+#   df <- aRxiv::arxiv_search(id_list=doi)
+#   title <- df$title
+#   authors <- gsub("|", ", ", df$authors, fixed = TRUE)
+#   authors <- gsub(".", "", authors, fixed = TRUE)
+#   pubdate <- paste0("Posted ", format(as.Date(df$updated),"%B %d, %Y."))
+#   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
+#              journal = "arXiv", authors = authors, volume = "", issue = "", 
+#              pages = "", doi = doi, pmid = "", elocationid = "", 
+#              stringsAsFactors = FALSE)
+# }))
+
+parse_arxiv_manually <- function(stub) {
+  url <- paste0("https://export.arxiv.org/api/query?search_query=",
+                stub, "&start=0&max_results=1")
+  rx <- read_xml(url)
+  xp <- xmlParse(rx)
+  xe <- xmlToList(xp)$entry
+  nm <- names(xe)
+  authors <- sapply(xe[nm == "author"], .subset, "name") 
+  authors <- paste0(authors, collapse = ", ")
+  pubdate <- paste0("Posted ", format(as.Date(xe$updated),"%B %d, %Y."))
+  
+  return(list(title=xe$title, authors=authors, 
+              pubdate=pubdate))
+}
+
 arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
-  df <- aRxiv::arxiv_search(id_list=doi)
-  title <- df$title
-  authors <- gsub("|", ", ", df$authors, fixed = TRUE)
-  authors <- gsub(".", "", authors, fixed = TRUE)
-  pubdate <- paste0("Posted ", format(as.Date(df$updated),"%B %d, %Y."))
-  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
-             journal = "arXiv", authors = authors, volume = "", issue = "", 
+  xlist <- parse_arxiv_manually(stub=doi)
+  data.frame(title = xlist$title, pubdate = xlist$pubdate, pubyear = "Preprints", 
+             journal = "arXiv", authors = xlist$authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
              stringsAsFactors = FALSE)
 }))
+
+
 ```
 
 
