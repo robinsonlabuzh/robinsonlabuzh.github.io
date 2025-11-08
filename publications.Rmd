@@ -12,7 +12,7 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
                  "18025499", "15786672", "15779224", "15322224", "30039500", 
                  "31925006", "31974356", "33877351", "35346028", "29967347",
                  "37090609", "37645841", "38496482", "38970115", "40672226",
-                 "40667282", "40501805")
+                 "40667282", "40501805", "41000873")
 
 ## PubMed IDs to add
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
@@ -26,7 +26,6 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## Should be of the format "10.1101/185744" 
 biorxiv_dois <- c("10.1101/2022.04.14.488419",
                   "10.1101/2024.05.18.594120",
-                  "10.1101/2024.11.29.626057",
                   "10.1101/2025.03.17.643621",
                   "10.1101/2025.04.15.648932",
                   "10.1101/2025.05.30.656561",
@@ -34,7 +33,9 @@ biorxiv_dois <- c("10.1101/2022.04.14.488419",
                   "10.1101/2025.06.30.662268",
                   "10.1101/2025.07.08.663623",
                   "10.1101/2025.09.20.677495",
-                  "10.1101/2025.09.29.25335360")
+                  "10.1101/2025.09.29.25335360",
+                  "10.1101/2025.10.13.682065",
+                  "10.1101/2025.11.06.686971")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -55,6 +56,7 @@ pmid_github <- rbind(
   c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
   c(pmid = "34273949", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses"),
   c(pmid = "31857895", github = "https://github.com/lmweber/HDCytoData"),
+  c(pmid = "41199164", github = "https://github.com/HelenaLC/type-state"),
   c(pmid = "36991470", github = "https://github.com/HelenaLC/simulation-comparison"),
   c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat-comparison"), 
   c(pmid = "33971812", github = "https://github.com/retogerber/censcyt_paper_scripts"),
@@ -81,7 +83,6 @@ pmid_github <- rbind(
 biorxiv_github <- rbind(
   c(doi = "2412.01561", github = "https://github.com/robinsonlabuzh/pasta-manuscript"),
   c(doi = "10.1101/2024.11.28.625845", github = "https://github.com/RoseYuan/metric_paper"),
-  c(doi = "10.1101/2024.11.29.626057", github = "https://github.com/HelenaLC/type-state"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
   c(doi = "10.1101/2020.12.11.420885", github = "https://github.com/almutlue/mixing_benchmark"),
@@ -97,8 +98,11 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2025.06.23.660861", github = "https://github.com/SpatialHackathon/SpaceHack2023_study"),
   c(doi = "10.1101/2025.06.30.662268", github = "https://github.com/peicai/DESpace2_manuscript"),
   c(doi = "10.1101/2025.07.08.663623", github = "https://gitlab.uzh.ch/retogerber/imc_to_ims_methods_analysis_scripts"),
+  c(doi = "10.1101/2025.11.06.686971", github = "https://github.com/Jiayi-Wang-Joey/hybrid-sequencing"),
+  c(doi = "10.1101/2025.10.13.682065", github = "https://github.com/sgunz/sosta-manuscript"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
+
 
 
 
@@ -115,14 +119,17 @@ pmid_data <- rbind(
   c(pmid = "38243704", data = "https://doi.org/10.5281/zenodo.7829817"),
   c(pmid = "33758076", data = "https://doi.org/10.6084/m9.figshare.13341200"),
   c(pmid = "39441876", data = "https://zenodo.org/records/10732704"),
+  c(pmid = "41199164", data = "https://doi.org/10.5281/zenodo.14191288"),
   c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
 )
 biorxiv_data <- rbind(
   c(doi = "10.1101/2024.11.29.626057", data = "https://doi.org/10.5281/zenodo.14191288"),
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
   c(doi = "10.1101/2022.02.08.479579", data = "https://doi.org/10.5281/zenodo.5960321"),
+  c(doi = "10.1101/2025.10.13.682065", data = "https://zenodo.org/records/15574384"),
   c(doi = "10.1101/2025.03.17.643621", data = "https://doi.org/10.5281/zenodo.14506611"),
   c(doi = "10.1101/2025.07.08.663623", data = "https://doi.org/10.6019/S-BIAD2091"),
+  c(doi = "10.1101/2025.11.06.686971", data = "https://zenodo.org/records/17494517"),
   c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
 )
 
@@ -175,7 +182,11 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2025.06.23.660861", software = "https://github.com/SpatialHackathon/SACCELERATOR"),
   c(doi = "10.1101/2025.06.30.662268", software = "https://bioconductor.org/packages/DESpace"),
   c(doi = "10.1101/2025.07.08.663623", software = "https://github.com/retogerber/MIMIC"),
-  c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct"))
+  c(doi = "10.1101/2025.10.13.682065", software = "https://bioconductor.org/packages/sosta"),
+  c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
+)
+
+
 
 
 ## publications not in PubMed/bioRxiv	
