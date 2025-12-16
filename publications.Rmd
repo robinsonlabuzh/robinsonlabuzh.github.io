@@ -12,7 +12,7 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
                  "18025499", "15786672", "15779224", "15322224", "30039500", 
                  "31925006", "31974356", "33877351", "35346028", "29967347",
                  "37090609", "37645841", "38496482", "38970115", "40672226",
-                 "40667282", "40501805", "41000873")
+                 "40667282", "40501805", "41000873", "41256134", "41332620")
 
 ## PubMed IDs to add
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
@@ -27,7 +27,6 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 biorxiv_dois <- c("10.1101/2022.04.14.488419",
                   "10.1101/2024.05.18.594120",
                   "10.1101/2025.03.17.643621",
-                  "10.1101/2025.04.15.648932",
                   "10.1101/2025.05.30.656561",
                   "10.1101/2025.06.23.660861",
                   "10.1101/2025.06.30.662268",
@@ -35,11 +34,13 @@ biorxiv_dois <- c("10.1101/2022.04.14.488419",
                   "10.1101/2025.09.20.677495",
                   "10.1101/2025.09.29.25335360",
                   "10.1101/2025.10.13.682065",
-                  "10.1101/2025.11.06.686971")
+                  "10.1101/2025.11.06.686971",
+                  "10.1101/2025.11.20.688607",
+                  "10.1101/2025.11.21.689818")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
-arxiv_dois <- c("2409.15472","2409.17038")
+arxiv_dois <- c("2409.17038")
 #arxiv_dois <- c()
 
 
@@ -192,20 +193,26 @@ biorxiv_software <- rbind(
 ## publications not in PubMed/bioRxiv	
 unlisted_publications <- data.frame(	
   title = c("RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis.",
-            "distinct: A novel approach to differential distribution analyses"),
+            "distinct: A novel approach to differential distribution analyses",
+            "Bulk-based hypothesis weighing increases power in single-cell differential expression analysis"),
   pubdate = c(""),	
-  pubyear = c("2019", "2023"),	
+  pubyear = c("2019", "2023", "2025"),	
   journal = c("Annual Review of Biomedical Data Science",
-              "Ann. Appl. Stat."),	
+              "Ann. Appl. Stat.",
+              "Peer Community Journal"),	
   authors = c("Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD",
-              "Tiberi S, Crowell HL, Samartsidis P, Weber LM, Robinson MD"),	
-  volume = c("2", "17"),	
-  issue = c("", "2"),	
-  pages = c("139-173", "1681-1700"),	
-  doi = c("10.1146/annurev-biodatasci-072018-021255", "10.1214/22-AOAS1689"),	
+              "Tiberi S, Crowell HL, Samartsidis P, Weber LM, Robinson MD",
+              "Germain P-L, Wang J, Robinson MD"),	
+  volume = c("2", "17", "5"),	
+  issue = c("", "2","2005"),	
+  pages = c("139-173", "1681-1700", "e136"),	
+  doi = c("10.1146/annurev-biodatasci-072018-021255", 
+          "10.1214/22-AOAS1689",
+          "10.24072/pcjournal.663"),	
   pmid = c(""),	
   elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255",
-                  "doi: 10.1214/22-AOAS1689")	
+                  "doi: 10.1214/22-AOAS1689",
+                  "doi: 10.24072/pcjournal.663")	
 )
 
 ## F1000Research articles awaiting peer review
@@ -238,7 +245,8 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Almut Luetge", "Luetge A", "Almut Lütge", "Lütge A","Luetge, A.",
                    "Joanna Zyprych-Walczak", "Zyprych-Walczak J",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", "Weber, L. M.",
-                   "Ben Carrillo", "Daniel Incicau",
+                   "Ben Carrillo", "Carrillo B",
+                   "Daniel Incicau", "Incicau D",
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", 
                    "Samuel Gunz","Gunz S","Gunz, S.",
                    "Martin Emons","Emons M","Emons, M.",
@@ -435,9 +443,11 @@ summ <- dplyr::left_join(summ, data.frame(pmid_data, stringsAsFactors = FALSE)) 
 summ <- dplyr::left_join(summ, data.frame(pmid_software, stringsAsFactors = FALSE)) %>%
     dplyr::mutate(software = replace(software, is.na(software), ""))
 
-# hack to add software/github to Simone's AOAS paper (not in Pubmed)
+# hack to add software/github to the papers not in Pubmed
 summ$software[summ$doi=="10.1214/22-AOAS1689"] <- "https://bioconductor.org/packages/distinct"
 summ$github[summ$doi=="10.1214/22-AOAS1689"] <- "https://github.com/SimoneTiberi/distinct_manuscript"
+summ$github[summ$doi=="10.24072/pcjournal.663"] <- "https://github.com/plger/bbhw"
+summ$software[summ$doi=="10.24072/pcjournal.663"] <- "https://bioconductor.org/packages/muscat"
 
 
 
