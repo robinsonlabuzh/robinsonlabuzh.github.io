@@ -587,6 +587,7 @@ tables_all <- list(
   #tbl_joanna,
   #tbl_simone,
   tbl_izaskun,
+  tbl_meenu, 
   # tbl_plger,
   #tbl_will,
   #tbl_imran,
