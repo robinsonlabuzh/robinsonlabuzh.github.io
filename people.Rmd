@@ -576,6 +576,15 @@ tbl_ben <- data.frame(
           paste0("MSc in Biostatistics and Bioinformatics (2023), Universitat Oberta de Catalunya<br>")
           )
 )
+
+tbl_noe <- data.frame(
+  img = "![](img/thumbnail/noemi.jpeg)",
+  bio = c("Noemi Loffredi",
+          paste0("I am an external Master's student of Biotechnology and Applied AI. I am currently working on my thesis at Robinson lab focusing on the analysis of spatial omics features, with the aim of evaluating their relevance in biological systems. "),
+          paste0("MSc in Biotechnology and Applied AI for Health, University of Pisa and Aix-Marseille University (ongoing)<br>",
+                 "BSc in Biotechnology, University of Pisa(2024)")
+          )
+)
 ```
 
 
