@@ -106,6 +106,20 @@ tbl_izaskun <- data.frame(
                  "MSc in Biology (2007), University of Murcia"))
 )
 
+tbl_meenu <- data.frame(
+  img = "![](img/thumbnail/Meenu.jpeg)",
+  bio = c("Meenu Bhati",
+          paste0("<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.com/citations?user=l2kH-6EAAAAJ&hl=en&authuser=1)"),
+          paste0("My research focuses on understanding genome biology across species from functional and evolutionary ",
+                 "perspectives. I integrate genetics and multi-omics approaches to investigate regulatory mechanisms ",
+                 "within the non-coding genome, with particular emphasis on long non-coding RNAs. Through this work, ",
+                 "I aim to advance the functional interpretation of regulatory variation associated with complex traits ",
+                 "while developing computational resources for the broader scientific community."),
+          paste0("PhD in Animal Genomics (2024), ETH Zurich, Switzerland<br>",
+                 "MSc in Animal Genomics & Breeding (2017), Wageningen University, Netherlands<br>",
+                 "BVSc&AH in Veterinary & Animal Sciences (2014), Rajasthan University of Veterinary and Animal Sciences, India"))
+)
+
 # tbl_will <- data.frame(
 #   img = "![](img/thumbnail/will.jpg)",
 #   bio = c(
