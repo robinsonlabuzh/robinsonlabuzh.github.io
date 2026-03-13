@@ -106,6 +106,20 @@ tbl_izaskun <- data.frame(
                  "MSc in Biology (2007), University of Murcia"))
 )
 
+tbl_meenu <- data.frame(
+  img = "![](img/thumbnail/Meenu.jpeg)",
+  bio = c("Meenu Bhati",
+          paste0("<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.com/citations?user=l2kH-6EAAAAJ&hl=en&authuser=1)"),
+          paste0("My research focuses on understanding genome biology across species from functional and evolutionary ",
+                 "perspectives. I integrate genetics and multi-omics approaches to investigate regulatory mechanisms ",
+                 "within the non-coding genome, with particular emphasis on long non-coding RNAs. Through this work, ",
+                 "I aim to advance the functional interpretation of regulatory variation associated with complex traits ",
+                 "while developing computational resources for the broader scientific community."),
+          paste0("PhD in Animal Genomics (2024), ETH Zurich, Switzerland<br>",
+                 "MSc in Animal Genomics & Breeding (2017), Wageningen University, Netherlands<br>",
+                 "BVSc&AH in Veterinary & Animal Sciences (2014), Rajasthan University of Veterinary and Animal Sciences, India"))
+)
+
 # tbl_will <- data.frame(
 #   img = "![](img/thumbnail/will.jpg)",
 #   bio = c(
@@ -328,17 +342,17 @@ tbl_izaskun <- data.frame(
 #                  "BSc of Science in Biology (2015), University of Lausanne"))
 # )
 
-tbl_reto <- data.frame(
-  img = "![](img/thumbnail/Reto.jpg)",
-  bio = c("Reto Gerber",
-          paste("I joined the Robinson Lab as a PhD student after working as a Research Assistant in the group. During this time I worked on
-          scRNA-seq data from Synovial tissue in collaboration with USZ. Furthermore I developped
-          [pubassistant.ch](https://pubassistant.ch) (R shiny app to help consolidate publication profiles of researchers) and
-          [censcyt](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04125-4) (method for differential abundance analysis in cytometry where a covariate is subject to censoring)."
-                  ),
-          paste0("MSc of Science in Computational Biology and Bioinformatics (2020), ETH, University of Zürich<br>",
-                 "BSc of Science in Biology (2017), University of Zürich"))
-)
+# tbl_reto <- data.frame(
+#   img = "![](img/thumbnail/Reto.jpg)",
+#   bio = c("Reto Gerber",
+#           paste("I joined the Robinson Lab as a PhD student after working as a Research Assistant in the group. During this time I worked on
+#           scRNA-seq data from Synovial tissue in collaboration with USZ. Furthermore I developped
+#           [pubassistant.ch](https://pubassistant.ch) (R shiny app to help consolidate publication profiles of researchers) and
+#           [censcyt](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04125-4) (method for differential abundance analysis in cytometry where a covariate is subject to censoring)."
+#                   ),
+#           paste0("MSc of Science in Computational Biology and Bioinformatics (2020), ETH, University of Zürich<br>",
+#                  "BSc of Science in Biology (2017), University of Zürich"))
+# )
 
 # tbl_elyas <- data.frame(
 #   img = "![](img/thumbnail/elyas.jpeg)",
@@ -562,6 +576,15 @@ tbl_ben <- data.frame(
           paste0("MSc in Biostatistics and Bioinformatics (2023), Universitat Oberta de Catalunya<br>")
           )
 )
+
+tbl_noe <- data.frame(
+  img = "![](img/thumbnail/noemi.jpeg)",
+  bio = c("Noemi Loffredi",
+          paste0("I am an external Master's student of Biotechnology and Applied AI. I am currently working on my thesis at Robinson lab focusing on the analysis of spatial omics features, with the aim of evaluating their relevance in biological systems. "),
+          paste0("MSc in Biotechnology and Applied AI for Health, University of Pisa and Aix-Marseille University (ongoing)<br>",
+                 "BSc in Biotechnology, University of Pisa(2024)")
+          )
+)
 ```
 
 
@@ -573,6 +596,7 @@ tables_all <- list(
   #tbl_joanna,
   #tbl_simone,
   tbl_izaskun,
+  tbl_meenu, 
   # tbl_plger,
   #tbl_will,
   #tbl_imran,
@@ -587,7 +611,7 @@ tables_all <- list(
   #tbl_almut,
   #tbl_anthony,
   #tbl_haolyu,
-  tbl_reto,
+  # tbl_reto,
   #tbl_elyas,
   tbl_emanuel,
   tbl_vlad,
@@ -604,7 +628,8 @@ tables_all <- list(
   tbl_marusa,
   tbl_pauline,
   tbl_ben,
-  tbl_dani
+  tbl_dani,
+  tbl_noe
 #  tbl_charlotte,
 #  tbl_angelo,
 #  tbl_helen,
@@ -643,6 +668,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Reto Gerber (PhD Student; author of [MIMIC](https://github.com/retogerber/MIMIC) among various other things)
 - Pierre-Luc Germain (Shared postdoc; author of [scDblFinder](https://www.bioconductor.org/packages/scDblFinder) among various other things)
 - Anna Schuster (MSc student)
 - Sarusan Kathirchelvan (MSc student)
