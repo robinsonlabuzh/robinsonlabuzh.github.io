@@ -25,8 +25,6 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
 biorxiv_dois <- c("10.1101/2022.04.14.488419",
-                  #"10.1101/2025.03.17.643621",
-                  #"10.1101/2025.05.30.656561",
                   "10.1101/2025.06.23.660861",
                   "10.1101/2025.06.30.662268",
                   "10.1101/2025.07.08.663623",
@@ -37,7 +35,8 @@ biorxiv_dois <- c("10.1101/2022.04.14.488419",
                   "10.1101/2025.11.20.688607",
                   "10.1101/2025.11.21.689818",
                   "10.64898/2025.12.16.693927",
-                  "10.64898/2026.02.21.707206")
+                  "10.64898/2026.02.21.707206",
+                  "10.64898/2026.03.09.710141")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -104,6 +103,7 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2025.07.08.663623", github = "https://gitlab.uzh.ch/retogerber/imc_to_ims_methods_analysis_scripts"),
   c(doi = "10.1101/2025.11.06.686971", github = "https://github.com/Jiayi-Wang-Joey/hybrid-sequencing"),
   c(doi = "10.1101/2025.10.13.682065", github = "https://github.com/sgunz/sosta-manuscript"),
+  c(doi = "10.64898/2026.03.09.710141", github = "https://github.com/marusakod/scprocess"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
 
@@ -189,6 +189,7 @@ biorxiv_software <- rbind(
   c(doi = "10.1101/2025.06.30.662268", software = "https://bioconductor.org/packages/DESpace"),
   c(doi = "10.1101/2025.07.08.663623", software = "https://github.com/retogerber/MIMIC"),
   c(doi = "10.1101/2025.10.13.682065", software = "https://bioconductor.org/packages/sosta"),
+  c(doi = "10.64898/2026.03.09.710141", software = "https://marusakod.github.io/scprocess/"),
   c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
 )
 
@@ -258,6 +259,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Siyuan Luo",
                    "Giulia Moro","Moro G","Moro, G.",
                    "Guo, Y.",
+                   "Koderman, M.",
                    "Emanuel Sonder","Sonder, E.",
                    "Wang, J.","Jiayi Wang","Wang J",
                    "Meili, J.",
