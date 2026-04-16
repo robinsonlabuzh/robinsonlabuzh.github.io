@@ -12,7 +12,8 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
                  "18025499", "15786672", "15779224", "15322224", "30039500", 
                  "31925006", "31974356", "33877351", "35346028", "29967347",
                  "37090609", "37645841", "38496482", "38970115", "40672226",
-                 "40667282", "40501805", "41000873", "41256134", "41332620")
+                 "40667282", "40501805", "41000873", "41256134", "41332620",
+                 "41889850", "41835386")
 
 ## PubMed IDs to add
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
@@ -25,9 +26,9 @@ pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315",
 ## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
 ## Should be of the format "10.1101/185744" 
 biorxiv_dois <- c("10.1101/2022.04.14.488419",
+                  "10.1101/2024.12.23.630186",
                   "10.1101/2025.06.23.660861",
                   "10.1101/2025.06.30.662268",
-                  "10.1101/2025.07.08.663623",
                   "10.1101/2025.09.20.677495",
                   "10.1101/2025.09.29.25335360",
                   "10.1101/2025.10.13.682065",
@@ -36,12 +37,16 @@ biorxiv_dois <- c("10.1101/2022.04.14.488419",
                   "10.1101/2025.11.21.689818",
                   "10.64898/2025.12.16.693927",
                   "10.64898/2026.02.21.707206",
-                  "10.64898/2026.03.09.710141")
+                  "10.64898/2026.03.09.710141",
+                  "10.64898/2026.03.23.713616",
+                  "10.64898/2026.04.13.718197")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
-arxiv_dois <- c("2409.17038")
+arxiv_dois <- c("2409.17038", "2510.13818")
 #arxiv_dois <- c()
+
+
 
 
 ## github repos
@@ -60,6 +65,7 @@ pmid_github <- rbind(
   c(pmid = "41199164", github = "https://github.com/HelenaLC/type-state"),
   c(pmid = "36991470", github = "https://github.com/HelenaLC/simulation-comparison"),
   c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat-comparison"), 
+  c(pmid = "41917425", github = "https://gitlab.uzh.ch/retogerber/imc_to_ims_methods_analysis_scripts"),
   c(pmid = "41742281", github = "https://github.com/dnwissel/kinnex-data"),
   c(pmid = "33971812", github = "https://github.com/retogerber/censcyt_paper_scripts"),
   c(pmid = "33758076", github = "https://github.com/almutlue/mixing_benchmark"),
@@ -81,10 +87,13 @@ pmid_github <- rbind(
   c(pmid = "40930531", github = "https://github.com/robinsonlabuzh/pasta-manuscript")
 )
 
+# MIMIC: "10.1101/2025.07.08.663623"
 
 
 biorxiv_github <- rbind(
   c(doi = "2412.01561", github = "https://github.com/robinsonlabuzh/pasta-manuscript"),
+  c(doi = "2510.13818", github = "https://github.com/btraven00/denet"),
+  c(doi = "10.64898/2026.04.13.718197", github = "https://github.com/mjemons/spatialfda-manuscript"),
   c(doi = "10.1101/2024.11.28.625845", github = "https://github.com/RoseYuan/metric_paper"),
   c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper"),
   c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
@@ -122,6 +131,7 @@ pmid_data <- rbind(
   c(pmid = "37198712", data = "https://doi.org/10.5281/zenodo.7096030"),
   c(pmid = "37095564", data = "https://doi.org/10.5281/zenodo.7777147"),
   c(pmid = "38243704", data = "https://doi.org/10.5281/zenodo.7829817"),
+  c(pmid = "41917425", data = "https://doi.org/10.6019/S-BIAD2091"),
   c(pmid = "33758076", data = "https://doi.org/10.6084/m9.figshare.13341200"),
   c(pmid = "39441876", data = "https://zenodo.org/records/10732704"),
   c(pmid = "41199164", data = "https://doi.org/10.5281/zenodo.14191288"),
@@ -167,6 +177,7 @@ pmid_software <- rbind(
   c(pmid = "35814628", software = "https://bioconductor.org/packages/scDblFinder"),
   c(pmid = "35475034", software = "http://pubassistant.ch/"),
   c(pmid = "36765378", software = "https://github.com/wmacnair/SampleQC"),
+  c(pmid = "41917425", software = "https://github.com/retogerber/MIMIC"),
   c(pmid = "39152456", software = "https://github.com/RoseYuan/sc_chromatin_benchmark"),
   c(pmid = "37142439", software = "https://github.com/schmeing/gapless"),
   c(pmid = "37095564", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
@@ -179,7 +190,9 @@ pmid_software <- rbind(
 biorxiv_software <- rbind(
   c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
   c(doi = "2412.01561", software = "https://robinsonlabuzh.github.io/pasta/00-home.html"),
+  c(doi = "10.64898/2026.04.13.718197", software = "https://github.com/mjemons/spatialFDA"),
   c(doi = "10.1101/2024.11.28.625845", software = "https://github.com/RoseYuan/poem"),
+  c(doi = "10.1101/2024.12.23.630186", software = "https://github.com/Computational-Morphogenomics-Group/Ladder/tree/patches"),
   c(doi = "10.1101/2023.08.04.552046", software = "https://github.com/RoseYuan/sc_chromatin_benchmark"),
   c(doi = "10.1101/2024.05.18.594120", software = "https://github.com/imallona/rock_roi_method"),
   c(doi = "10.1101/2025.03.17.643621", software = "https://github.com/LiminLi-xjtu/BiCLUM"),
@@ -270,12 +283,14 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Souza VBC", "de Souza VBC","De Souza, V. B. C.",
                    "Huang R", "Ruizhu Huang", 
                    "Schmeing S", "Stephan Schmeing", "Schmeing, S.",
+                   "Tarnow, M.",
                    "Orjuela S", "Stephany Orjuela", "Orjuela, S.",
                    "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell",
                    "Helena Crowell", "HelenaL Crowell", "Crowell, H. L.","Crowell, H.",
                    "Mallona I", "Izaskun Mallona","Mallona Gonzalez, I.","Mallona, I.",
                    "Reto Gerber","Gerber Reto","Gerber R","Gerber, R.",
                    "Manca P",
+                   "Busch, M. P",
                    "Sonrel A", "Anthony Sonrel","Sonrel, A.",
                    "Duo A", "Angelo Duo", "Duo A", "Angelo Duo",
                    "Duò A", "Angelo Duò",
