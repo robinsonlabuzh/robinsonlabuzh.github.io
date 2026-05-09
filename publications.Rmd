@@ -39,7 +39,10 @@ biorxiv_dois <- c("10.1101/2022.04.14.488419",
                   "10.64898/2026.02.21.707206",
                   "10.64898/2026.03.09.710141",
                   "10.64898/2026.03.23.713616",
-                  "10.64898/2026.04.13.718197")
+                  "10.64898/2026.04.13.718197",
+                  "10.64898/2026.04.28.721304",
+                  "10.64898/2026.05.01.722166",
+                  "10.64898/2026.04.29.721619")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -102,6 +105,9 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
   c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
   c(doi = "10.1101/2023.08.04.552046", github = "https://github.com/RoseYuan/benchmark_paper/"),
+  c(doi = "10.64898/2026.04.28.721304", github = "https://github.com/imallona/rhapsodist"),
+  c(doi = "10.64898/2026.05.01.722166", github = "https://github.com/scrna-bench/pipelines-plan"),
+  c(doi = "10.64898/2026.04.29.721619", github = "https://github.com/Jiayi-Wang-Joey/variant-comparison"),
   c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
   c(doi = "10.1101/2025.03.17.643621", github = "https://github.com/LiminLi-xjtu/BiCLUM_test"),
   c(doi = "10.1101/2024.05.18.594120", github = "https://github.com/imallona/rock_roi_paper"),
@@ -115,9 +121,6 @@ biorxiv_github <- rbind(
   c(doi = "10.64898/2026.03.09.710141", github = "https://github.com/marusakod/scprocess"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
-
-
-
 
 
 ## data repos
@@ -141,6 +144,8 @@ biorxiv_data <- rbind(
   c(doi = "10.1101/2024.11.29.626057", data = "https://doi.org/10.5281/zenodo.14191288"),
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
   c(doi = "10.1101/2022.02.08.479579", data = "https://doi.org/10.5281/zenodo.5960321"),
+  c(doi = "10.64898/2026.05.01.722166", data = "https://doi.org/10.5281/zenodo.19886347"),
+  c(doi = "10.64898/2026.04.29.721619", github = "https://doi.org/10.5281/zenodo.19857089"),
   c(doi = "10.1101/2025.10.13.682065", data = "https://zenodo.org/records/15574384"),
   c(doi = "10.1101/2025.03.17.643621", data = "https://doi.org/10.5281/zenodo.14506611"),
   c(doi = "10.1101/2025.07.08.663623", data = "https://doi.org/10.6019/S-BIAD2091"),
@@ -258,6 +263,8 @@ f1000_preprints <- NULL
 group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robinson, M.",
                    "Robinson M", "Mark Robinson", "Robinson, M. D.",
                    "Soneson C", "Charlotte Soneson", "Soneson, C.",
+                   "Choudhury, A.", "Kitak, T.", "Busch, P.",
+                   "Carrillo, B.",
                    "Lindsay H", "Helen Lindsay",
                    "Tiberi S", "Simone Tiberi","Tiberi, S.",
                    "Germain P-L", "Germain PL", "Pierre-Luc Germain","Germain, P.-L.",
@@ -289,7 +296,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Helena Crowell", "HelenaL Crowell", "Crowell, H. L.","Crowell, H.",
                    "Mallona I", "Izaskun Mallona","Mallona Gonzalez, I.","Mallona, I.",
                    "Reto Gerber","Gerber Reto","Gerber R","Gerber, R.",
-                   "Manca P",
+                   "Manca P", "Meara, A.",
                    "Busch, M. P",
                    "Sonrel A", "Anthony Sonrel","Sonrel, A.",
                    "Duo A", "Angelo Duo", "Duo A", "Angelo Duo",
