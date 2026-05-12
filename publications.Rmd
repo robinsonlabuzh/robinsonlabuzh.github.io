@@ -39,10 +39,11 @@ biorxiv_dois <- c("10.1101/2022.04.14.488419",
                   "10.64898/2026.02.21.707206",
                   "10.64898/2026.03.09.710141",
                   "10.64898/2026.03.23.713616",
+                  "10.64898/2026.04.01.715783",
                   "10.64898/2026.04.13.718197",
                   "10.64898/2026.04.28.721304",
-                  "10.64898/2026.05.01.722166",
-                  "10.64898/2026.04.29.721619")
+                  "10.64898/2026.04.29.721619",
+                  "10.64898/2026.05.01.722166")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -118,9 +119,13 @@ biorxiv_github <- rbind(
   c(doi = "10.1101/2025.07.08.663623", github = "https://gitlab.uzh.ch/retogerber/imc_to_ims_methods_analysis_scripts"),
   c(doi = "10.1101/2025.11.06.686971", github = "https://github.com/Jiayi-Wang-Joey/hybrid-sequencing"),
   c(doi = "10.1101/2025.10.13.682065", github = "https://github.com/sgunz/sosta-manuscript"),
+  c(doi = "10.64898/2026.04.01.715783", github = "https://github.com/dnwissel/fxs-benchmark"),
   c(doi = "10.64898/2026.03.09.710141", github = "https://github.com/marusakod/scprocess"),
   c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
 )
+
+
+
 
 
 ## data repos
@@ -272,6 +277,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Joanna Zyprych-Walczak", "Zyprych-Walczak J",
                    "Weber LM", "Lukas M Weber", "Lukas M. Weber", "Weber, L. M.",
                    "Ben Carrillo", "Carrillo B",
+                   "Gianfranco Botta","Alexander Popescu",
                    "Daniel Incicau", "Incicau D",
                    "Hembach K", "Katarina Hembach", "Katharina Hembach", 
                    "Samuel Gunz","Gunz S","Gunz, S.",
@@ -484,7 +490,7 @@ summ$software[summ$doi=="10.24072/pcjournal.663"] <- "https://bioconductor.org/p
 
 ```
 
-```{r}
+```{r add_biorxiv}
 ## Add bioRxiv preprints by doi
 # took Charlotte's code here to fix the lockdown from parsing biorxiv directly
 # 
@@ -505,6 +511,10 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
              doi = doi, pmid = "", elocationid = "",
              stringsAsFactors = FALSE)
 }))
+
+# hack to fix Rajib's fail
+biorxiv$authors[biorxiv$authors=="Schubert, R."] <- "Gianfranco Botta, David Wissel, Samuel Higgins, Tomasz Chelmicki, Alexander Popescu, Kalina Radoynovska, Seraphin Probst, Julieta Ramírez Cuéllar, Kim Schneider, Zeynab-Mitra Nayernia, Ashley Byrne, Christopher D. Nelson, Zora Modrusan, Stormy J. Chamberlain, William Stephenson, Mark D. Robinson,  Rajib Schubert"
+
 # biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
 #   html <- read_html(paste0("https://doi.org/", doi))
 #   title <- html_text(html_nodes(html, "#page-title"))
@@ -526,7 +536,7 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
 # }))
 ```
 
-```{r}
+```{r add_peerj}
 ## Add PeerJ preprints by doi
 peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
   html <- read_html(paste0("https://doi.org/", doi))
@@ -544,7 +554,7 @@ peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
 ```
 
 
-```{r}
+```{r add_arxiv}
 ## Add arxiv preprints by doi
 # arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
 #   df <- aRxiv::arxiv_search(id_list=doi)
@@ -586,7 +596,7 @@ arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
 
 
 
-```{r}
+```{r add_f1000}
 ## Add F1000Research preprints
 if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
   f1000_preprints <- f1000_preprints[, match(colnames(biorxiv), 
