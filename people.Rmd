@@ -501,18 +501,18 @@ tbl_samuel <- data.frame(
 # )
 # )
 
-tbl_dani <- data.frame(
-  img = "![](img/thumbnail/danincicau.jpg)",
-  bio = c("Daniel Incicau",
-          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/daniel-incicau/)<br>",
-                 "<i class='fa fa-github'></i> [DanInci](https://github.com/DanInci)<br>"),
-          paste0("I am a Master's student in Computational Biology and Bioinformatics. ",
-                 "I'm currently working on my thesis which involves evaluating cell phenotyping methods in highly multiplexed imaging, with a focus on mass cytometry images. ",
-                 "I have a particular interest in immunology and I'm your typical functional programming enthusiast."),
-          paste0("MSc in Computational Biology and Bioinformatics (ongoing), ETH Zürich<br>",
-                 "BSc in Computer Engineering (2020), Polytechnic University of Timisoara")
-          )
-)
+# tbl_dani <- data.frame(
+#  img = "![](img/thumbnail/danincicau.jpg)",
+#  bio = c("Daniel Incicau",
+#          paste0("<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/daniel-incicau/)<br>",
+#                 "<i class='fa fa-github'></i> [DanInci](https://github.com/DanInci)<br>"),
+#          paste0("I am a Master's student in Computational Biology and Bioinformatics. ",
+#                 "I'm currently working on my thesis which involves evaluating cell phenotyping methods in highly multiplexed imaging, with a focus on mass cytometry images. ",
+#                 "I have a particular interest in immunology and I'm your typical functional programming enthusiast."),
+#          paste0("MSc in Computational Biology and Bioinformatics (ongoing), ETH Zürich<br>",
+#                 "BSc in Computer Engineering (2020), Polytechnic University of Timisoara")
+#          )
+#)
 
 tbl_jiayi <- data.frame(
   img = "![](img/thumbnail/jiayi.jpg)",
@@ -628,7 +628,7 @@ tables_all <- list(
   tbl_marusa,
   tbl_pauline,
   tbl_ben,
-  tbl_dani,
+#  tbl_dani,
   tbl_noe
 #  tbl_charlotte,
 #  tbl_angelo,
@@ -668,6 +668,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Daniel Incicau (research assistant)
 - Reto Gerber (PhD Student; author of [MIMIC](https://github.com/retogerber/MIMIC) among various other things)
 - Pierre-Luc Germain (Shared postdoc; author of [scDblFinder](https://www.bioconductor.org/packages/scDblFinder) among various other things)
 - Anna Schuster (MSc student)
