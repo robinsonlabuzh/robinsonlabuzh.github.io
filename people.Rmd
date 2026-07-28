@@ -89,23 +89,6 @@ tbl_mark <- data.frame(
 #                  "BSc in Statistics (2010), Sapienza University of Rome"))
 # )
 
-tbl_izaskun <- data.frame(
-  img = "![](img/thumbnail/izaskun.jpg)",
-  bio = c("Dr. Izaskun Mallona",
-          paste0("<i class='fa fa-desktop'></i> [Website](http://imallona.bitbucket.io)<br>",
-                  "<i class='fa fa-newspaper-o'></i> [Google Scholar](https://scholar.google.ch/citations?user=kMfxCIYAAAAJ)"),
-          paste0("I am mainly interested in gene expression modulation, as it lays the ground for any cell fate. ",
-                 "The questions which excite my curiosity the most are: ",
-                 "How are gene expression programs coded? and maintained? ",
-                 "how do they adapt during development? and disease? ",
-                 "To mine the regulation metastructure genome-wide I'm fond of integrating ",
-                 "gene expression and epigenomic data, and to develop methods for doing so. "),
-          paste0("BSc in Computer Engineering (2014), Open University of Catalonia<br/>",
-                 "PhD (2012), Technical University of Cartagena<br/>",
-                 "MSc in Agriculture Engineering (2008), Technical University of Cartagena<br/>",
-                 "MSc in Biology (2007), University of Murcia"))
-)
-
 tbl_meenu <- data.frame(
   img = "![](img/thumbnail/Meenu.jpeg)",
   bio = c("Meenu Bhati",
@@ -595,8 +578,7 @@ tables_all <- list(
   tbl_mark,
   #tbl_joanna,
   #tbl_simone,
-  tbl_izaskun,
-  tbl_meenu, 
+  tbl_meenu,
   # tbl_plger,
   #tbl_will,
   #tbl_imran,
@@ -668,6 +650,7 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- [Izaskun Mallona](https://izaskunmallona.org/) (Senior researcher)
 - Daniel Incicau (research assistant)
 - Reto Gerber (PhD Student; author of [MIMIC](https://github.com/retogerber/MIMIC) among various other things)
 - Pierre-Luc Germain (Shared postdoc; author of [scDblFinder](https://www.bioconductor.org/packages/scDblFinder) among various other things)
