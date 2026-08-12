@@ -13,7 +13,7 @@ pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830",
                  "31925006", "31974356", "33877351", "35346028", "29967347",
                  "37090609", "37645841", "38496482", "38970115", "40672226",
                  "40667282", "40501805", "41000873", "41256134", "41332620",
-                 "41889850", "41835386")
+                 "41889850", "41835386", "42124612")
 
 ## PubMed IDs to add
 pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
@@ -32,7 +32,6 @@ biorxiv_dois <- c("10.1101/2022.04.14.488419",
                   "10.1101/2025.09.20.677495",
                   "10.1101/2025.09.29.25335360",
                   "10.1101/2025.10.13.682065",
-                  "10.1101/2025.11.06.686971",
                   "10.1101/2025.11.20.688607",
                   "10.1101/2025.11.21.689818",
                   "10.64898/2025.12.16.693927",
@@ -43,7 +42,9 @@ biorxiv_dois <- c("10.1101/2022.04.14.488419",
                   "10.64898/2026.04.13.718197",
                   "10.64898/2026.04.28.721304",
                   "10.64898/2026.04.29.721619",
-                  "10.64898/2026.05.01.722166")
+                  "10.64898/2026.05.01.722166",
+                  "10.64898/2026.06.16.732527",
+                  "10.64898/2026.07.16.738894")
 
 # peerj_dois <- c("10.7287/peerj.preprints.27885v2")
 peerj_dois <- c()
@@ -84,6 +85,7 @@ pmid_github <- rbind(
   c(pmid = "35814628", github = "https://github.com/plger/scDblFinder"),
   c(pmid = "41014637", github = "https://github.com/RoseYuan/metric_paper"),
   c(pmid = "41632825", github = "https://github.com/LiminLi-xjtu/BiCLUM_test"),
+  c(pmid = "42219495", github = "https://github.com/Jiayi-Wang-Joey/hybrid-sequencing"),
   c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq-paper"),
   c(pmid = "39152456", github = "https://github.com/RoseYuan/benchmark_paper/"),
   c(pmid = "39441876", github = "https://github.com/ETHZ-INS/DTFAB"),
@@ -91,8 +93,11 @@ pmid_github <- rbind(
   c(pmid = "40930531", github = "https://github.com/robinsonlabuzh/pasta-manuscript")
 )
 
-# MIMIC: "10.1101/2025.07.08.663623"
 
+
+
+# MIMIC: "10.1101/2025.07.08.663623"
+# hybrid short/long: "10.1101/2025.11.06.686971",
 
 biorxiv_github <- rbind(
   c(doi = "2412.01561", github = "https://github.com/robinsonlabuzh/pasta-manuscript"),
@@ -127,7 +132,6 @@ biorxiv_github <- rbind(
 
 
 
-
 ## data repos
 pmid_data <- rbind(
   c(pmid = "27992111", data = "http://flowrepository.org/id/FR-FCM-ZZPH"),
@@ -141,10 +145,14 @@ pmid_data <- rbind(
   c(pmid = "38243704", data = "https://doi.org/10.5281/zenodo.7829817"),
   c(pmid = "41917425", data = "https://doi.org/10.6019/S-BIAD2091"),
   c(pmid = "33758076", data = "https://doi.org/10.6084/m9.figshare.13341200"),
+  c(pmid = "42219495", data = "https://zenodo.org/records/17494517"),
   c(pmid = "39441876", data = "https://zenodo.org/records/10732704"),
   c(pmid = "41199164", data = "https://doi.org/10.5281/zenodo.14191288"),
   c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
 )
+
+
+
 biorxiv_data <- rbind(
   c(doi = "10.1101/2024.11.29.626057", data = "https://doi.org/10.5281/zenodo.14191288"),
   c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
@@ -283,7 +291,7 @@ group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robins
                    "Samuel Gunz","Gunz S","Gunz, S.",
                    "Martin Emons","Emons M","Emons, M.",
                    "Siyuan Luo",
-                   "Giulia Moro","Moro G","Moro, G.",
+                   "Giulia Moro","Moro G","Moro, G.","Moro, G. A.",
                    "Guo, Y.",
                    "Koderman, M.",
                    "Emanuel Sonder","Sonder, E.",
@@ -569,8 +577,10 @@ peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
 # }))
 
 parse_arxiv_manually <- function(stub) {
-  url <- paste0("https://export.arxiv.org/api/query?search_query=",
-                stub, "&start=0&max_results=1")
+  # url <- paste0("https://export.arxiv.org/api/query?search_query=",
+  #               stub, "&start=0&max_results=1")
+  # https://export.arxiv.org/api/query?id_list=2401.12345
+  url <- paste0("https://export.arxiv.org/api/query?id_list=", stub)
   rx <- read_xml(url)
   xp <- xmlParse(rx)
   xe <- xmlToList(xp)$entry
