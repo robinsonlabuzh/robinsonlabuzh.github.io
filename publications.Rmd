@@ -599,6 +599,7 @@ parse_arxiv_manually <- function(stub) {
 }
 
 arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
+  Sys.sleep(3)
   xlist <- parse_arxiv_manually(stub=doi)
   data.frame(title = xlist$title, pubdate = xlist$pubdate, pubyear = "Preprints", 
              journal = "arXiv", authors = xlist$authors, volume = "", issue = "", 
