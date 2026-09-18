@@ -568,6 +568,15 @@ tbl_noe <- data.frame(
                  "BSc in Biotechnology, University of Pisa(2024)")
           )
 )
+
+tbl_elif <- data.frame(
+  img = "![](img/thumbnail/elif.jpg)",
+  bio = c("Elif Zeynep Demir",
+          paste0("I am a visiting Master’s student in Bioengineering, with particular interests in single-cell transcriptomics and computational cancer biology. At the Robinson Lab, my work focuses on using OmniBenchmark to study how preprocessing and representation choices alter the geometry of single-cell RNA-seq data."),
+          paste0("MSc in Bioengineering, Marmara University (ongoing)<br>",
+                 "BSc in Molecular Biology and Genetics, Bahçeşehir University (2024)")
+          )
+)
 ```
 
 
@@ -611,7 +620,8 @@ tables_all <- list(
   tbl_pauline,
   tbl_ben,
 #  tbl_dani,
-  tbl_noe
+  tbl_noe,
+  tbl_elif
 #  tbl_charlotte,
 #  tbl_angelo,
 #  tbl_helen,
