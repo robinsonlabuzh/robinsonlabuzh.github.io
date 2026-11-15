@@ -238,28 +238,33 @@ biorxiv_software <- rbind(
 
 
 ## publications not in PubMed/bioRxiv	
-unlisted_publications <- data.frame(	
+unlisted_publications <- data.frame(
   title = c("RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis.",
             "distinct: A novel approach to differential distribution analyses",
-            "Bulk-based hypothesis weighing increases power in single-cell differential expression analysis"),
-  pubdate = c(""),	
-  pubyear = c("2019", "2023", "2025"),	
+            "Bulk-based hypothesis weighing increases power in single-cell differential expression analysis",
+            "Interactive exploration of benchmarking results with bettr"),
+  pubdate = c(""),
+  pubyear = c("2019", "2023", "2025", "2026"),
   journal = c("Annual Review of Biomedical Data Science",
               "Ann. Appl. Stat.",
-              "Peer Community Journal"),	
+              "Peer Community Journal",
+              "Journal of Open Source Software"),
   authors = c("Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD",
               "Tiberi S, Crowell HL, Samartsidis P, Weber LM, Robinson MD",
-              "Germain P-L, Wang J, Robinson MD"),	
-  volume = c("2", "17", "5"),	
-  issue = c("", "2","2005"),	
-  pages = c("139-173", "1681-1700", "e136"),	
-  doi = c("10.1146/annurev-biodatasci-072018-021255", 
+              "Germain P-L, Wang J, Robinson MD",
+              "Soneson C, Marini F, Incicau D, Sonrel A, Lütge A, Gerber R, Carrillo B, Mallona I, Robinson MD"),
+  volume = c("2", "17", "5", "11"),
+  issue = c("", "2", "2005", "126"),
+  pages = c("139-173", "1681-1700", "e136", "10333"),
+  doi = c("10.1146/annurev-biodatasci-072018-021255",
           "10.1214/22-AOAS1689",
-          "10.24072/pcjournal.663"),	
-  pmid = c(""),	
+          "10.24072/pcjournal.663",
+          "10.21105/joss.10333"),
+  pmid = c(""),
   elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255",
                   "doi: 10.1214/22-AOAS1689",
-                  "doi: 10.24072/pcjournal.663")	
+                  "doi: 10.24072/pcjournal.663",
+                  "doi: 10.21105/joss.10333")
 )
 
 ## F1000Research articles awaiting peer review

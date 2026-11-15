@@ -2,7 +2,7 @@
 title: "People"
 output: html_document
 editor_options:
-  chunk_output_type: inline
+  chunk_output_type: console
 ---
 
 
@@ -595,9 +595,9 @@ tables_all <- list(
   #tbl_haolyu,
   # tbl_reto,
   #tbl_elyas,
-  tbl_emanuel,
+  #tbl_emanuel,
   tbl_vlad,
-  tbl_david,
+  #tbl_david,
   tbl_siyuan,
   tbl_martin,
   tbl_samuel,
@@ -609,9 +609,9 @@ tables_all <- list(
   tbl_jiayi,
   tbl_marusa,
   tbl_pauline,
-  tbl_ben,
+  tbl_ben
 #  tbl_dani,
-  tbl_noe
+#  tbl_noe
 #  tbl_charlotte,
 #  tbl_angelo,
 #  tbl_helen,
@@ -650,6 +650,10 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Noemi Loffredi (external MSc student
+)
+- David Wissel (PhD student co-supervised with [Valentina Boeva](https://boevalab.inf.ethz.ch/boeva_personal.html))
+- Emanuel Sonder (PhD student co-supervised with [Pierre-Luc Germain](https://hest.ethz.ch/en/department/people/organisational-units/institute-for-neuroscience/molecular-and-behavioral-neuroscience/persdetail.MjUwODk0.TGlzdC8yOTE3LDM2MjU2OTk1OA==.html))
 - [Izaskun Mallona](https://izaskunmallona.org/) (Senior researcher)
 - Daniel Incicau (research assistant)
 - Reto Gerber (PhD Student; author of [MIMIC](https://github.com/retogerber/MIMIC) among various other things)
