@@ -568,6 +568,18 @@ tbl_noe <- data.frame(
                  "BSc in Biotechnology, University of Pisa(2024)")
           )
 )
+
+tbl_atreya <- data.frame(
+  img = "![](img/thumbnail/atreya.jpeg)",
+  bio = c("Atreya Choudhury",
+          paste0("<i class='fa fa-github'></i> GitHub [atchox](https://github.com/atchox)<br>"),
+          paste0("I started in August 2026 as a shared PhD student between the [Domcke](https://domcke.github.io/domcke-lab.html) and Robinson labs. I am interested in several aspects of single-cell perturbation data, particularly methods development and the relevance of such data in understanding the landscape of cells.
+          I also work on benchmarking computational methods for omics data."),
+          paste0("MSc in Statistics (2026), ETH Zürich<br>",
+                 "Bachelor of Mathematics (Hons.) (2023), Indian Statistical Institute, Bangalore")
+          )
+)
+
 ```
 
 
@@ -609,7 +621,8 @@ tables_all <- list(
   tbl_jiayi,
   tbl_marusa,
   tbl_pauline,
-  tbl_ben
+  tbl_ben,
+  tbl_atreya
 #  tbl_dani,
 #  tbl_noe
 #  tbl_charlotte,
