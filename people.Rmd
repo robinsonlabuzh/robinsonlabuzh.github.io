@@ -580,6 +580,18 @@ tbl_atreya <- data.frame(
           )
 )
 
+tbl_xiaorou <- data.frame(
+  img = "![](img/thumbnail/xiaorou.jpg)",
+  bio = c("Xiaorou Guo",
+          "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/xiaorou-guo)<br>",
+          paste0("I joined the Robinson lab as a visiting PhD student in August 2026 for a six-month visit ending in February 2027. ",
+                 "Previously, I worked on developing reference datasets and benchmarking frameworks for genomic and epigenomic analyses. ",
+                 "I am currently benchmarking single-cell foundation models, with a focus on their performance across different biological tasks."),
+          paste0("PhD candidate in Bioinformatics (expected 2027), Fudan University, China<br>",
+                 "BSc, Beijing University of Technology, China")
+          )
+)
+
 ```
 
 
@@ -622,7 +634,8 @@ tables_all <- list(
   tbl_marusa,
   tbl_pauline,
   tbl_ben,
-  tbl_atreya
+  tbl_atreya,
+  tbl_xiaorou
 #  tbl_dani,
 #  tbl_noe
 #  tbl_charlotte,
