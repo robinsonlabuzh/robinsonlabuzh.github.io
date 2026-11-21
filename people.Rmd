@@ -588,7 +588,7 @@ tbl_xiaorou <- data.frame(
                  "Previously, I worked on developing reference datasets and benchmarking frameworks for genomic and epigenomic analyses. ",
                  "I am currently benchmarking single-cell foundation models, with a focus on their performance across different biological tasks."),
           paste0("PhD candidate in Bioinformatics (expected 2027), Fudan University, China<br>",
-                 "BSc, Beijing University of Technology, China")
+                 "BSc in Biotechnology, Beijing University of Technology, China")
           )
 )
 
