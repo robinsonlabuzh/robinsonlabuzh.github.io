@@ -2,7 +2,7 @@
 title: "People"
 output: html_document
 editor_options:
-  chunk_output_type: inline
+  chunk_output_type: console
 ---
 
 
@@ -568,6 +568,44 @@ tbl_noe <- data.frame(
                  "BSc in Biotechnology, University of Pisa(2024)")
           )
 )
+
+tbl_miguel <- data.frame(
+  img = "![](img/thumbnail/miguel.jpg)",
+  bio = c("Miguel Rosell Hidalgo",
+          paste0("<i class='fa fa-github'></i> GitHub [miguelrosell](https://github.com/miguelrosell)<br>",
+                 "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/miguel-rosell-hidalgo)"),
+          paste0("I am an external Master's student in Bioinformatics and Biostatistics, doing my thesis in the Robinson lab. ",
+                 "My project compares what pathology foundation models and classical texture descriptors (Local Binary Patterns) capture in H&E images, and how both relate to spatial transcriptomics. ",
+                 "Before joining, I applied Transcriptome-Wide Association Studies (TWAS) to psychiatric traits at the CBMSO-CSIC in Madrid. ",
+                 "I am interested in statistical methods for high-dimensional biomedical data."),
+          paste0("MSc in Bioinformatics and Biostatistics, Universitat Oberta de Catalunya (ongoing)<br>",
+                 "BSc in Bioinformatics (2026), Universidad Católica de Ávila<br>",
+                 "BA in Translation and Interpreting (2023), Universidad Complutense de Madrid")
+          )
+)
+tbl_atreya <- data.frame(
+  img = "![](img/thumbnail/atreya.jpeg)",
+  bio = c("Atreya Choudhury",
+          paste0("<i class='fa fa-github'></i> GitHub [atchox](https://github.com/atchox)<br>"),
+          paste0("I started in August 2026 as a shared PhD student between the [Domcke](https://domcke.github.io/domcke-lab.html) and Robinson labs. I am interested in several aspects of single-cell perturbation data, particularly methods development and the relevance of such data in understanding the landscape of cells.
+          I also work on benchmarking computational methods for omics data."),
+          paste0("MSc in Statistics (2026), ETH Zürich<br>",
+                 "Bachelor of Mathematics (Hons.) (2023), Indian Statistical Institute, Bangalore")
+          )
+)
+
+tbl_xiaorou <- data.frame(
+  img = "![](img/thumbnail/xiaorou.jpg)",
+  bio = c("Xiaorou Guo",
+          "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/xiaorou-guo)<br>",
+          paste0("I joined the Robinson lab as a visiting PhD student in August 2026 for a six-month visit ending in February 2027. ",
+                 "Previously, I worked on developing reference datasets and benchmarking frameworks for genomic and epigenomic analyses. ",
+                 "I am currently benchmarking single-cell foundation models, with a focus on their performance across different biological tasks."),
+          paste0("PhD candidate in Bioinformatics (expected 2027), Fudan University, China<br>",
+                 "BSc in Biotechnology, Beijing University of Technology, China")
+          )
+)
+
 ```
 
 
@@ -595,10 +633,10 @@ tables_all <- list(
   #tbl_haolyu,
   # tbl_reto,
   #tbl_elyas,
-  tbl_emanuel,
+  #tbl_emanuel,
   tbl_vlad,
-  tbl_david,
-  tbl_siyuan,
+  #tbl_david,
+  #tbl_siyuan,
   tbl_martin,
   tbl_samuel,
   #tbl_joel,
@@ -610,8 +648,11 @@ tables_all <- list(
   tbl_marusa,
   tbl_pauline,
   tbl_ben,
+  tbl_atreya,
+  tbl_xiaorou,
+  tbl_miguel
 #  tbl_dani,
-  tbl_noe
+#  tbl_noe
 #  tbl_charlotte,
 #  tbl_angelo,
 #  tbl_helen,
@@ -650,6 +691,10 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
+- Siyuan Luo (PhD student co-supervised with [Ferdinand von Meyenn](https://ifnh.ethz.ch/research/laboratory-of-nutrition-and-metabolic-epigenetics---prof--dr--fe.html))
+- Noemi Loffredi (external MSc student)
+- David Wissel (PhD student co-supervised with [Valentina Boeva](https://boevalab.inf.ethz.ch/boeva_personal.html))
+- Emanuel Sonder (PhD student co-supervised with [Pierre-Luc Germain](https://hest.ethz.ch/en/department/people/organisational-units/institute-for-neuroscience/molecular-and-behavioral-neuroscience/persdetail.MjUwODk0.TGlzdC8yOTE3LDM2MjU2OTk1OA==.html))
 - [Izaskun Mallona](https://izaskunmallona.org/) (Senior researcher)
 - Daniel Incicau (research assistant)
 - Reto Gerber (PhD Student; author of [MIMIC](https://github.com/retogerber/MIMIC) among various other things)
