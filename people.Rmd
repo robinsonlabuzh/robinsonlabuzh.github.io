@@ -569,6 +569,20 @@ tbl_noe <- data.frame(
           )
 )
 
+tbl_miguel <- data.frame(
+  img = "![](img/thumbnail/miguel.jpg)",
+  bio = c("Miguel Rosell Hidalgo",
+          paste0("<i class='fa fa-github'></i> GitHub [miguelrosell](https://github.com/miguelrosell)<br>",
+                 "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/miguel-rosell-hidalgo)"),
+          paste0("I am an external Master's student in Bioinformatics and Biostatistics, doing my thesis in the Robinson lab. ",
+                 "My project compares what pathology foundation models and classical texture descriptors (Local Binary Patterns) capture in H&E images, and how both relate to spatial transcriptomics. ",
+                 "Before joining, I applied Transcriptome-Wide Association Studies (TWAS) to psychiatric traits at the CBMSO-CSIC in Madrid. ",
+                 "I am interested in statistical methods for high-dimensional biomedical data."),
+          paste0("MSc in Bioinformatics and Biostatistics, Universitat Oberta de Catalunya (ongoing)<br>",
+                 "BSc in Bioinformatics (2026), Universidad Católica de Ávila<br>",
+                 "BA in Translation and Interpreting (2023), Universidad Complutense de Madrid")
+          )
+)
 tbl_atreya <- data.frame(
   img = "![](img/thumbnail/atreya.jpeg)",
   bio = c("Atreya Choudhury",
@@ -635,7 +649,8 @@ tables_all <- list(
   tbl_pauline,
   tbl_ben,
   tbl_atreya,
-  tbl_xiaorou
+  tbl_xiaorou,
+  tbl_miguel
 #  tbl_dani,
 #  tbl_noe
 #  tbl_charlotte,
