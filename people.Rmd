@@ -583,6 +583,29 @@ tbl_miguel <- data.frame(
                  "BA in Translation and Interpreting (2023), Universidad Complutense de Madrid")
           )
 )
+tbl_atreya <- data.frame(
+  img = "![](img/thumbnail/atreya.jpeg)",
+  bio = c("Atreya Choudhury",
+          paste0("<i class='fa fa-github'></i> GitHub [atchox](https://github.com/atchox)<br>"),
+          paste0("I started in August 2026 as a shared PhD student between the [Domcke](https://domcke.github.io/domcke-lab.html) and Robinson labs. I am interested in several aspects of single-cell perturbation data, particularly methods development and the relevance of such data in understanding the landscape of cells.
+          I also work on benchmarking computational methods for omics data."),
+          paste0("MSc in Statistics (2026), ETH Zürich<br>",
+                 "Bachelor of Mathematics (Hons.) (2023), Indian Statistical Institute, Bangalore")
+          )
+)
+
+tbl_xiaorou <- data.frame(
+  img = "![](img/thumbnail/xiaorou.jpg)",
+  bio = c("Xiaorou Guo",
+          "<i class='fa fa-linkedin-square'></i> [LinkedIn](https://www.linkedin.com/in/xiaorou-guo)<br>",
+          paste0("I joined the Robinson lab as a visiting PhD student in August 2026 for a six-month visit ending in February 2027. ",
+                 "Previously, I worked on developing reference datasets and benchmarking frameworks for genomic and epigenomic analyses. ",
+                 "I am currently benchmarking single-cell foundation models, with a focus on their performance across different biological tasks."),
+          paste0("PhD candidate in Bioinformatics (expected 2027), Fudan University, China<br>",
+                 "BSc in Biotechnology, Beijing University of Technology, China")
+          )
+)
+
 ```
 
 
@@ -625,6 +648,8 @@ tables_all <- list(
   tbl_marusa,
   tbl_pauline,
   tbl_ben,
+  tbl_atreya,
+  tbl_xiaorou,
   tbl_miguel
 #  tbl_dani,
 #  tbl_noe
