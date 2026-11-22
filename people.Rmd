@@ -636,7 +636,7 @@ tables_all <- list(
   #tbl_emanuel,
   tbl_vlad,
   #tbl_david,
-  tbl_siyuan,
+  #tbl_siyuan,
   tbl_martin,
   tbl_samuel,
   #tbl_joel,
@@ -691,8 +691,8 @@ for (i in seq_along(tables_all)) {
 ```
 
 ## Alumni
-- Noemi Loffredi (external MSc student
-)
+- Siyuan Luo (PhD student co-supervised with [Ferdinand von Meyenn](https://ifnh.ethz.ch/research/laboratory-of-nutrition-and-metabolic-epigenetics---prof--dr--fe.html))
+- Noemi Loffredi (external MSc student)
 - David Wissel (PhD student co-supervised with [Valentina Boeva](https://boevalab.inf.ethz.ch/boeva_personal.html))
 - Emanuel Sonder (PhD student co-supervised with [Pierre-Luc Germain](https://hest.ethz.ch/en/department/people/organisational-units/institute-for-neuroscience/molecular-and-behavioral-neuroscience/persdetail.MjUwODk0.TGlzdC8yOTE3LDM2MjU2OTk1OA==.html))
 - [Izaskun Mallona](https://izaskunmallona.org/) (Senior researcher)
