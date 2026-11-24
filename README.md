@@ -1,18 +1,12 @@
 # Robinson lab website
 
-This is a template that we forked from [here](https://github.com/privefl/rmarkdown-website-template) for the basic structure and added many components.
-
-More details on making HTML documents from Rmarkdown can be found [here](http://rmarkdown.rstudio.com/rmarkdown_websites.html).
+The site is built with [Quarto](https://quarto.org) from the `.qmd` pages in this repository. Every push to `master` is built and published automatically by GitHub Actions (`.github/workflows/publish.yml`), and the site is also rebuilt every Monday so the publication list stays current. The generated HTML is not stored in the repository.
 
 ### Updates to the website
 
-- Once you've cloned the repo, created a branch to make changes on, have all the packages installed, updating the website is done via the following commands (in R):
-
-```
-Sys.setlocale(category = "LC_ALL", locale = "en_US.UTF-8")
-rmarkdown::render_site(encoding = "UTF-8")
-```
-- Then once you are happy with the look of the website, commit and push the files changed (RMD + HTML + any graphics) back to your branch, and send a pull request
+- Create a branch, edit the relevant `.qmd` page (or `people.yml` for lab members), commit, push and open a pull request (see below). GitHub Actions builds the site for every pull request, so a red cross on the pull request means the site no longer builds.
+- Once the pull request is merged into `master`, the site is rebuilt and published automatically, usually within a few minutes. Progress is shown in the repository's Actions tab.
+- You do not need to build the site yourself, but you can preview it locally before pushing (see [Building locally](#building-locally)).
 
 ### Pull requests
 
@@ -49,11 +43,11 @@ git merge master
 
 ### Adding publications
 
-The publication list (`publications.html`, generated from `publications.Rmd`) is automatically populated when the website is built, by pulling down and reformatting PubMed results for the search `Robinson Mark D[au]`, using the [`rentrez`](https://cran.r-project.org/web/packages/rentrez/index.html) R package. Most of the time the results are correct, but since there are multiple authors named "Mark D Robinson" in the database, the list of publications should occasionally be checked for correctness. 
+The publication list (generated from `publications.qmd`) is automatically populated when the website is built, by pulling down and reformatting PubMed results for the search `Robinson Mark D[au]`, using the [`rentrez`](https://cran.r-project.org/web/packages/rentrez/index.html) R package. Most of the time the results are correct, but since there are multiple authors named "Mark D Robinson" in the database, the list of publications should occasionally be checked for correctness. 
 
 Also [bioRxiv](https://www.biorxiv.org/) preprints can be included, by explicitly providing the corresponding DOIs. 
 
-The following parts of `publications.Rmd` may need to be modified (all done within the first code chunk):
+The following parts of `publications.qmd` may need to be modified (all done within the first code chunk):
 
 - The list of incorrectly pulled down PubMed publication records (`pmid_remove`). Once a PubMed ID has been added to this list, it will be excluded from all future renderings of the publication list. 
 - The list of PubMed IDs to add manually (`pmid_add`).
@@ -62,15 +56,7 @@ The following parts of `publications.Rmd` may need to be modified (all done with
 
 ### Adding members
 
-The members of the group are listed in the `people.Rmd` file. To add a new member, you can copy an existing entry and simply change its content. Add the path to your picture in the `img` component, but make sure that the picture is less than 100KB. The compressed picture should be saved in `img/thumbnails` (see below for tips on image optimization). Under `bio`, you can add a description of your research and your university degree(s). If you want, you can also add links to your website, twitter or github accounts. Commit your changes to a new branch, submit a pull request and assign a reviewer (follow the explanations above on how to create a pull request).
-
-Please note that as of `kableExtra` version 1.3.4 on CRAN, there are issues with the `collapse_rows` function which may lead to duplicated thumbnails when knitting the `people.Rmd` file (see [here](https://github.com/haozhu233/kableExtra/issues/596) and [here](https://github.com/haozhu233/kableExtra/issues/624) for details). In case you encounter this issue, please install `kableExtra` from Github instead, by using `devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0")`.
-
-### Adding news item
-
-News items can be added by simply cutting and pasting an existing snippet (i.e., a row of the `tbl_news` table) and filling in the new content (a few more details about line breaks, etc. are given in `news.Rmd`).  As usual, the news item should be created in a separate branch (see above), a pull request submitted and then peer-reviewed.  In this case, it should be approved by Mark so set the reviewer to be Mark.
-
-Please also note the paragraph related to the `kableExtra` package in the [member section](#adding-members) as the `collapse_rows` function is also used within `news.Rmd`.
+Lab members are listed in `people.yml`, in the order they appear on the people page; the format is described at the top of that file. To add someone, copy an existing entry and change its content. Put the photo in `img/thumbnail/` and make sure it is less than 100KB (see below for tips on image optimization); there is no need to also commit the full-size original. When someone leaves, delete their entry from `people.yml` and add a line to the Alumni list in `people.qmd`. Commit your changes to a new branch, submit a pull request and assign a reviewer (follow the explanations above on how to create a pull request).
 
 ### Tips on image optimization
 
@@ -78,27 +64,24 @@ When uploading images please bear in mind their format and filesize, as unnecesa
 
 Images can be compressed using an image editor (i.e. Gimp) or in bulk (i.e. with [Imagemagick](https://www.imagemagick.org/script/index.php)). We provide a [thumbnail generator](https://github.com/robinsonlabuzh/robinsonlabuzh.github.io/blob/master/utils/bulk_thumbnail_generator.sh) based in Imagemagick for batch resizing. To run the thumbnail generator place your original image(s) at the folder encoded at `$INPUT_PATH` (the variable is set to the current directory `.` by default) and execute the bash script, which will generate an output folder (variable `$OUTPUT_PATH`, by default `$INPUT_PATH/thumbnail`) with the compressed images.
 
-Keep in mind that compression is a trade off between file size and quality, so make sure you have a saved copy of the original image as a lossless version. To encourage a separation of originals and thumbnails the repository has a folder [img](https://github.com/robinsonlabuzh/robinsonlabuzh.github.io/tree/master/img) for the former and a subfolder [thumbnail](https://github.com/robinsonlabuzh/robinsonlabuzh.github.io/tree/master/img/thumbnail) for the latter. Note that `Rmd` and `html` files should point to the thumbnails, not to the originals.
+Keep in mind that compression is a trade off between file size and quality, so keep a lossless copy of the original image yourself; it does not need to be committed. Pages and `people.yml` should point to the compressed images in [img/thumbnail](https://github.com/robinsonlabuzh/robinsonlabuzh.github.io/tree/master/img/thumbnail).
 
-### Running with Docker
+### Building locally
 
-In case there are issues with missing dependencies a possibility is to render the site in a docker container. Run the following in a terminal (assuming [docker](https://docs.docker.com/engine/install/) is installed):
+Install [Quarto](https://quarto.org/docs/get-started/). To preview a single page while you edit it (it reloads in the browser whenever you save):
+
 ```
-docker run --rm -w /home/rstudio/webpage -v "$(pwd):/home/rstudio/webpage" retogerber/rstudio_robinsonlab_webpage:latest R -e "Sys.setlocale(category = 'LC_ALL', locale = 'en_US.UTF-8');rmarkdown::render_site(encoding = 'UTF-8')"
+quarto preview people.qmd
 ```
 
+Only `publications.qmd` runs R code. Every other page, including the people page, needs nothing but Quarto. To build the whole site into `_site/`, you also need R and the packages listed in `DESCRIPTION`, which you can install with `pak::local_install_deps()` (or `remotes::install_deps()`), and then run:
 
-To run Rstudio in a docker container with all the necessary dependencies installed, run:
 ```
-docker run --rm -v "$(pwd):/home/rstudio/" -p 8787:8787 -e PASSWORD=my_passwd retogerber/rstudio_robinsonlab_webpage:latest 
+quarto render
 ```
-Then open your favorite browser and go to `http://localhost:8787/`. Login with username=*rstudio* and password=*my_passwd*.
 
+The publications page queries PubMed, bioRxiv/medRxiv and arXiv, so a full build takes a few minutes, and fails if one of those services is down or rate-limiting. In that case the live site keeps the last successful build.
 
+### Publishing
 
-
-## Template examples
-
-Previous examples of this website template:
-- [personal website](https://privefl.github.io/)
-- [R user group in Grenoble](https://r-in-grenoble.github.io/)
+GitHub Pages serves the output of the "Build and publish website" workflow (repository Settings → Pages → Source: GitHub Actions). The workflow runs on every push to `master`, every Monday at 05:00 UTC, and on demand from the Actions tab ("Run workflow"). Pull requests are built but not published. Optionally, an NCBI API key (created under *API Key Management* in your [NCBI account settings](https://www.ncbi.nlm.nih.gov/account/settings/)) stored as the repository secret `ENTREZ_KEY` raises the PubMed rate limit.

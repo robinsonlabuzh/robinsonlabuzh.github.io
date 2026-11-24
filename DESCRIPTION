@@ -1,0 +1,25 @@
+Package: robinsonlabwebsite
+Title: Robinson Lab Website
+Version: 0.0.1
+Description: Not an R package. This file lists the R packages needed to render
+    the website (only publications.qmd runs R code). The GitHub Actions build
+    installs them from here; locally, run pak::local_install_deps() or
+    remotes::install_deps().
+License: MIT + file LICENSE.md
+Imports:
+    aRxiv,
+    dplyr,
+    knitr,
+    lubridate,
+    medrxivr,
+    RColorBrewer,
+    RCurl,
+    rentrez,
+    rmarkdown,
+    rvest,
+    SnowballC,
+    svglite,
+    tm,
+    wordcloud,
+    XML,
+    xml2
