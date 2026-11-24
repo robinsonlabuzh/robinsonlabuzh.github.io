@@ -26,7 +26,6 @@ jobs:
     env:
       # Optional NCBI API key (repo secret) for higher PubMed rate limits.
       ENTREZ_KEY: ${{ secrets.ENTREZ_KEY }}
-      RV_CACHE_DIR: ${{ runner.temp }}/rv-cache
     steps:
       - uses: actions/checkout@v7
 
@@ -41,6 +40,9 @@ jobs:
         run: |
           curl -sSL https://raw.githubusercontent.com/A2-ai/rv/refs/heads/main/scripts/install.sh | bash
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          # rv's download cache, saved between runs by the next step. (Set here:
+          # the runner context is not available in the job-level env block.)
+          echo "RV_CACHE_DIR=$RUNNER_TEMP/rv-cache" >> "$GITHUB_ENV"
 
       - name: Cache rv downloads
         uses: actions/cache@v6
