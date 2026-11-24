@@ -56,7 +56,7 @@ The following parts of `publications.qmd` may need to be modified (all done with
 
 ### Adding members
 
-Lab members are listed in `people.yml`, in the order they appear on the people page; the format is described at the top of that file. To add someone, copy an existing entry and change its content. Put the photo in `img/thumbnail/` and make sure it is less than 100KB (see below for tips on image optimization); there is no need to also commit the full-size original. When someone leaves, delete their entry from `people.yml` and add a line to the Alumni list in `people.qmd`. Commit your changes to a new branch, submit a pull request and assign a reviewer (follow the explanations above on how to create a pull request).
+Lab members are listed in `people.yml`, in the order they appear on the people page; the format is described at the top of that file. To add someone, copy an existing entry and change its content. Put the photo in `img/thumbnail/` and make sure it is less than 100KB (see below for tips on image optimization); there is no need to also commit the full-size original. When someone leaves, comment out their entry in `people.yml` (put `# ` at the start of each of its lines) rather than deleting it, and add a line to the Alumni list in `people.qmd`. Former members' entries are kept this way so they can be restored. Commit your changes to a new branch, submit a pull request and assign a reviewer (follow the explanations above on how to create a pull request).
 
 ### Tips on image optimization
 
