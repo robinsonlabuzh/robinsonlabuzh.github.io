@@ -9,6 +9,12 @@ listing:
 
 <!-- Lab members are listed in people.yml. Alumni are listed below. -->
 
+<!-- Empty placeholder: Quarto's search indexes the first element on the page as
+     page-level text. Without it, that would be the whole member list, which
+     duplicates every member's own search result. -->
+::: {.d-none}
+:::
+
 ::: {#members}
 :::
 

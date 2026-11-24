@@ -9,7 +9,12 @@
   const id = p.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 %>
-::: {.person #<%= id %>}
+<%
+// Each person is a <section class="level2"> with an id: Quarto's site search
+// makes one search result per such section, linking straight to the person.
+%>
+<section class="level2 person" id="<%= id %>">
+
 ::: {.person-photo}
 <img src="<%= p.image %>" alt="<%= p.name %>">
 :::
@@ -36,6 +41,8 @@
 :::
 <% } %>
 :::
-:::
+
+</section>
+
 <% } %>
 :::
