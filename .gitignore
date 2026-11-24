@@ -10,6 +10,9 @@ README.html
 /_site/
 /.quarto/
 *_files/
+# leftovers from an interrupted render (pages are written here, then moved to _site/)
+/*.html
+/*-listing.json
 
 # Generated when publications.qmd renders
 /publications.tsv
