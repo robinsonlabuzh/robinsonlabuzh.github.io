@@ -4,13 +4,21 @@
 // unindented: indented lines would be read as code blocks.
 %>
 ::: {.people-list}
-<% for (const p of items) { %>
-::: {.person}
+<% for (const p of items) {
+  // anchor for linking to a person, e.g. people.html#atreya-choudhury
+  const id = p.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+%>
+::: {.person #<%= id %>}
 ::: {.person-photo}
 <img src="<%= p.image %>" alt="<%= p.name %>">
 :::
 ::: {.person-text}
-### <%= p.name %> {.person-name}
+<%
+// The name is styled as a heading but is not an <h3>: Quarto's site search
+// leaves heading text out of its index, so names would not be searchable.
+%>
+<div class="person-name h3" role="heading" aria-level="3"><%= p.name %></div>
 <% if (p.links) { %>
 ::: {.person-links}
 <% for (const l of p.links) { %>[<i class="bi bi-<%= l.icon %>"></i><%= l.text %>](<%= l.href %>) <% } %>
