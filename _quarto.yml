@@ -40,6 +40,6 @@ website:
 
 format:
   html:
-    theme: flatly
+    theme: [flatly, theme.scss]
     css: styles.css
     toc: false

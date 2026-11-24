@@ -39,12 +39,6 @@
   margin-bottom: 0.6rem;
   font-size: 0.95rem;
 }
-.person-links a {
-  text-decoration: none;
-}
-.person-links a:hover {
-  text-decoration: underline;
-}
 .person-links i {
   margin-right: 0.35rem;
 }

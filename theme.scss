@@ -1,0 +1,32 @@
+/*-- scss:defaults --*/
+
+// Navbar: white text on the teal background, as on the previous site.
+// ($navbar-hl is the text colour of the current page's link.)
+$navbar-fg: #ffffff;
+$navbar-hl: #ffffff;
+
+// No fade on hover: navbar links change colour instantly.
+$nav-link-transition: none;
+
+// Links: not underlined, except on hover.
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+/*-- scss:rules --*/
+
+// Navbar links on hover: text turns a lighter shade of the navbar's teal.
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus-visible,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+  color: mix(#ffffff, $success, 70%);
+}
+
+// Current page: white text in a darker teal box (#15a589, as on the previous site).
+.navbar .nav-link.active,
+.navbar .nav-link.active:hover,
+.navbar .nav-link.active:focus-visible {
+  color: #ffffff;
+  background-color: #15a589;
+  border-radius: 4px;
+}
