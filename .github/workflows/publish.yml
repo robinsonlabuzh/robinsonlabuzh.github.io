@@ -75,6 +75,16 @@ jobs:
         with:
           path: _site
 
+      # Pull requests: attach the built site to the run so reviewers can look at
+      # it (download from the run page's Artifacts section, unzip, open
+      # index.html). Deleted after 14 days; the live site is not affected.
+      - uses: actions/upload-artifact@v7
+        if: github.event_name == 'pull_request'
+        with:
+          name: site-preview-pr${{ github.event.pull_request.number }}
+          path: _site
+          retention-days: 14
+
   deploy:
     if: github.event_name != 'pull_request'
     needs: build
