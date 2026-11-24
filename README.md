@@ -74,11 +74,14 @@ Install [Quarto](https://quarto.org/docs/get-started/). To preview a single page
 quarto preview people.qmd
 ```
 
-Only `publications.qmd` runs R code. Every other page, including the people page, needs nothing but Quarto. To build the whole site into `_site/`, you also need R and the packages listed in `DESCRIPTION`, which you can install with `pak::local_install_deps()` (or `remotes::install_deps()`), and then run:
+Only `publications.qmd` runs R code. Every other page, including the people page, needs nothing but Quarto. To build the whole site into `_site/`, you also need R 4.6 and [rv](https://a2-ai.github.io/rv-docs/), which installs the R packages pinned in `rv.lock` (from [Posit Package Manager](https://packagemanager.posit.co)) into a project library under `rv/library/`. The `.Rprofile` activates that library whenever R starts in this folder. Then run:
 
 ```
+rv sync
 quarto render
 ```
+
+To add an R package, run `rv add <package>` and commit the updated `rproject.toml` and `rv.lock`.
 
 The publications page queries PubMed, bioRxiv/medRxiv and arXiv, so a full build takes a few minutes, and fails if one of those services is down or rate-limiting. In that case the live site keeps the last successful build.
 
