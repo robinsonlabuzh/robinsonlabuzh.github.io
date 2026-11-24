@@ -1,8 +1,8 @@
 /*-- scss:defaults --*/
 
-// Navbar: white text on the teal background, as on the previous site.
-// ($navbar-hl is the text colour of the current page's link.)
+// $navbar-fg is the navbar's foreground colour.
 $navbar-fg: #ffffff;
+// $navbar-hl is the text colour of the current page's link.
 $navbar-hl: #ffffff;
 
 // No fade on hover: navbar links change colour instantly.
@@ -14,19 +14,19 @@ $link-hover-decoration: underline;
 
 /*-- scss:rules --*/
 
-// Navbar links on hover: text turns a lighter shade of the navbar's teal.
+// Colours below are derived from the navbar background ($navbar-bg, set by
+// `navbar: background:` in _quarto.yml), so they follow it if it changes.
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus-visible,
 .navbar .nav-link:hover,
 .navbar .nav-link:focus-visible {
-  color: mix(#ffffff, $success, 70%);
+  color: mix(#ffffff, $navbar-bg, 85%);
 }
 
-// Current page: white text in a darker teal box (#15a589, as on the previous site).
 .navbar .nav-link.active,
 .navbar .nav-link.active:hover,
 .navbar .nav-link.active:focus-visible {
-  color: #ffffff;
-  background-color: #15a589;
+  color: $navbar-hl;
+  background-color: darken($navbar-bg, 5%);
   border-radius: 4px;
 }
