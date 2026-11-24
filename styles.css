@@ -1,0 +1,68 @@
+/* ---- People page (people.qmd + people.ejs) ---- */
+
+.person {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Fixed-width column; photos keep their own shape (never cropped or stretched). */
+.person-photo {
+  flex: 0 0 120px;
+}
+.person-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.person-text {
+  flex: 1;
+  min-width: 0;
+}
+.person-text p {
+  line-height: 1.6;
+}
+
+h3.person-name {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+}
+
+.person-links p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+.person-links a {
+  text-decoration: none;
+}
+.person-links a:hover {
+  text-decoration: underline;
+}
+.person-links i {
+  margin-right: 0.35rem;
+}
+
+.person-degrees {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.person-degrees p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+  .person {
+    gap: 1rem;
+  }
+  .person-photo {
+    flex-basis: 80px;
+  }
+}

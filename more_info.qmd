@@ -1,0 +1,62 @@
+---
+title: "More Information"
+---
+
+
+
+## Contact
+
+Email: mark.robinson (at) mls.uzh.ch  
+Twitter <i class="bi bi-twitter-x"></i> [\@markrobinsonca](https://twitter.com/markrobinsonca)  
+GitHub <i class="bi bi-github"></i> [robinsonlabuzh](https://github.com/robinsonlabuzh) and [markrobinsonuzh](https://github.com/markrobinsonuzh)
+
+**Address:**
+
+Department of Molecular Life Sciences  
+University of Zurich  
+Winterthurerstrasse 190  
+CH-8057 Zurich, Switzerland
+
+Building / Room: Y11-J-16  
+phone <i class="bi bi-telephone"></i> +41 44 635 48 48  
+fax <i class="bi bi-printer"></i> +41 44 635 68 68
+
+
+## Links
+
+[Department of Molecular Life Sciences, University of Zurich](http://www.mls.uzh.ch/en.html)  
+[Faculty of Science, University of Zurich](http://www.mnf.uzh.ch/en.html)  
+[University of Zurich](http://www.uzh.ch/en.html)  
+[Swiss Institute of Bioinformatics](https://www.sib.swiss/)
+
+
+
+## Open positions
+
+**Research Assistants**. From time to time, we have openings for dedicated numerically-inclined people (e.g., BSc or MSc in Statistics) who are interested in real-world genomics data analysis and gaining research experience before embarking on a PhD. Email me directly if you fit this description.  
+
+**PhD Students**. Recruitment for PhD students is conducted through the [Life Science Zurich Graduate School](https://www.lifescience-graduateschool.uzh.ch/en.html), typically through the [Epidemiology and Biostatistics Structured PhD Program](http://www.epibiostat-phd.uzh.ch/en.html). For further information, please refer to the LSZGS website. Once selected, candidates can express an interest in our group; intake (and interviews) take place twice per year.  
+
+**Postdoctoral fellows**. There are no open positions at the moment. However, strong candidates are encouraged to email Mark directly and discuss an application for funding with UZH and other funding bodies.  
+
+<!--
+We have a 2 year postdoc position open; details are [here](http://imlspenticton.uzh.ch/dump/JobAd_RobinsonStatisticalBioinformatics_PD_7Aug2018.pdf) and applications are due *September 15 2018*.
+-->
+
+## Code of conduct
+
+All members of the lab, along with visitors, are expected to agree with the following code of conduct. We will enforce this code as needed. We expect cooperation from all members to help ensuring a safe environment for everybody.
+
+The lab is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of lab members in any form. Sexual language and imagery is generally not appropriate for any lab venue, including lab meetings, presentations, or discussions.
+
+Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
+
+Members asked to stop any harassing behavior are expected to comply immediately.
+
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact Mark Robinson without hesitation.
+
+For official concerns, please see the [University of Zurich House Regulations](http://www.uzh.ch/en/about/basics/houseregulations.html) website.
+
+(This code of conduct is adapted from [Laurent Gatto, UCLouvain](https://lgatto.github.io/cbio-coc/) and [Titus Brown, UC Davis](http://ivory.idyll.org/lab/coc.html).)
+
+

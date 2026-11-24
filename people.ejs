@@ -1,0 +1,33 @@
+<%
+// Template for the lab members on people.qmd; the data is in people.yml.
+// It outputs Markdown, so [text](url) links in bios work. Keep lines
+// unindented: indented lines would be read as code blocks.
+%>
+::: {.people-list}
+<% for (const p of items) { %>
+::: {.person}
+::: {.person-photo}
+<img src="<%= p.image %>" alt="<%= p.name %>">
+:::
+::: {.person-text}
+### <%= p.name %> {.person-name}
+<% if (p.links) { %>
+::: {.person-links}
+<% for (const l of p.links) { %>[<i class="bi bi-<%= l.icon %>"></i><%= l.text %>](<%= l.href %>) <% } %>
+:::
+<% } %>
+<% if (p.bio) { %>
+<%= p.bio %>
+<% } %>
+<% if (p.degrees) { %>
+::: {.person-degrees}
+<% for (const d of p.degrees) { %>
+<%= d %>
+
+<% } %>
+:::
+<% } %>
+:::
+:::
+<% } %>
+:::

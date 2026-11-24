@@ -1,0 +1,801 @@
+---
+title: "Publications"
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
+## PubMed IDs to remove
+pmid_remove <- c("28824762", "26295592", "23288288", "21516278", "18830830", 
+                 "18025499", "15786672", "15779224", "15322224", "30039500", 
+                 "31925006", "31974356", "33877351", "35346028", "29967347",
+                 "37090609", "37645841", "38496482", "38970115", "40672226",
+                 "40667282", "40501805", "41000873", "41256134", "41332620",
+                 "41889850", "41835386", "42124612", "41446249")
+
+## PubMed IDs to add
+pmid_add <- c("33290556", "11743205", "15761153", "23857251", "26493315", 
+              "30002819", "30356428", "31178352", "31857895", "18772890",
+              "18573797", "33300035", "33349709", "35354817", "35482478",
+              "36765378", "36495456", "38764354")
+
+## bioRxiv dois
+## This link could be helpful in isolating just our preprints:
+## https://www.biorxiv.org/search/author1%3Arobinson%2Bmd%20numresults%3A100%20sort%3Apublication-date%20direction%3Adescending%20format_result%3Astandard
+## Should be of the format "10.1101/185744" 
+biorxiv_dois <- c("10.1101/2022.04.14.488419",
+                  "10.1101/2024.12.23.630186",
+                  "10.1101/2025.09.20.677495",
+                  "10.1101/2025.09.29.25335360",
+                  "10.1101/2025.11.20.688607",
+                  "10.1101/2025.11.21.689818",
+                  "10.64898/2025.12.16.693927",
+                  "10.64898/2026.02.21.707206",
+                  "10.64898/2026.03.09.710141",
+                  "10.64898/2026.03.23.713616",
+                  "10.64898/2026.04.01.715783",
+                  "10.64898/2026.04.13.718197",
+                  "10.64898/2026.04.28.721304",
+                  "10.64898/2026.04.29.721619",
+                  "10.64898/2026.05.01.722166",
+                  "10.64898/2026.06.16.732527",
+                  "10.64898/2026.07.16.738894",
+                  "10.64898/2026.08.21.746151")
+
+# peerj_dois <- c("10.7287/peerj.preprints.27885v2")
+peerj_dois <- c()
+arxiv_dois <- c("2409.17038", "2510.13818")
+#arxiv_dois <- c()
+
+
+
+
+
+## github repos
+pmid_github <- rbind(
+  c(pmid = "27992111", github = "https://github.com/lmweber/cytometry-clustering-comparison"),
+  c(pmid = "34001188", github = "https://github.com/fionarhuang/treeclimbR_article"),
+  c(pmid = "29481549", github = "https://github.com/csoneson/conquer_comparison"),
+  c(pmid = "36765378", github = "https://github.com/wmacnair/SampleQC_paper_analyses"),
+  c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
+  c(pmid = "42637977", github = "https://github.com/SpatialHackathon/SpaceHack2023_study"),
+  c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scRNAseq_clustering_comparison"),
+  c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance"),
+  c(pmid = "31098416", github = "https://github.com/lmweber/diffcyt-evaluations"),
+  c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
+  c(pmid = "34273949", github = "https://github.com/supermaxiste/ARPEGGIO_paperAnalyses"),
+  c(pmid = "31857895", github = "https://github.com/lmweber/HDCytoData"),
+  c(pmid = "41199164", github = "https://github.com/HelenaLC/type-state"),
+  c(pmid = "36991470", github = "https://github.com/HelenaLC/simulation-comparison"),
+  c(pmid = "33257685", github = "https://github.com/HelenaLC/muscat-comparison"), 
+  c(pmid = "41917425", github = "https://gitlab.uzh.ch/retogerber/imc_to_ims_methods_analysis_scripts"),
+  c(pmid = "41742281", github = "https://github.com/dnwissel/kinnex-data"),
+  c(pmid = "33971812", github = "https://github.com/retogerber/censcyt_paper_scripts"),
+  c(pmid = "33758076", github = "https://github.com/almutlue/mixing_benchmark"),
+  c(pmid = "37095564", github = "https://github.com/vladimirsouza/lrRNAseqBenchmark"),
+  c(pmid = "32873325", github = "https://github.com/plger/pipeComp"), 
+  c(pmid = "32178699", github = "https://github.com/SimoneTiberi/BANDITS_manuscript"),
+  c(pmid = "37198712", github = "https://github.com/markrobinsonuzh/sc_benchmark_metaanalysis"),
+  c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020"),
+  c(pmid = "39708806", github = "https://wmacnair.gitlab.io/MS_lesions_snRNAseq/"),
+  c(pmid = "38243704", github = "https://github.com/peicai/DESpace_manuscript"),
+  c(pmid = "38887902", github = "https://github.com/SimoneTiberi/DifferentialRegulation_manuscript"),
+  c(pmid = "35814628", github = "https://github.com/plger/scDblFinder"),
+  c(pmid = "41014637", github = "https://github.com/RoseYuan/metric_paper"),
+  c(pmid = "42635194", github = "https://github.com/peicai/DESpace2_manuscript"),
+  c(pmid = "41632825", github = "https://github.com/LiminLi-xjtu/BiCLUM_test"),
+  c(pmid = "42219495", github = "https://github.com/Jiayi-Wang-Joey/hybrid-sequencing"),
+  c(pmid = "42721220", github = "https://github.com/sgunz/sosta-manuscript"),
+  c(pmid = "33608040", github = "https://github.com/schmeing/ReSeq-paper"),
+  c(pmid = "39152456", github = "https://github.com/RoseYuan/benchmark_paper/"),
+  c(pmid = "39441876", github = "https://github.com/ETHZ-INS/DTFAB"),
+  c(pmid = "35475034", github = "https://github.com/markrobinsonuzh/os_monitor"),
+  c(pmid = "40930531", github = "https://github.com/robinsonlabuzh/pasta-manuscript")
+)
+
+# MIMIC: "10.1101/2025.07.08.663623"
+# hybrid short/long: "10.1101/2025.11.06.686971",
+# "10.1101/2025.06.23.660861", # 42637977
+
+biorxiv_github <- rbind(
+  c(doi = "2412.01561", github = "https://github.com/robinsonlabuzh/pasta-manuscript"),
+  c(doi = "2510.13818", github = "https://github.com/btraven00/denet"),
+  c(doi = "10.64898/2026.04.13.718197", github = "https://github.com/mjemons/spatialfda-manuscript"),
+  c(doi = "10.1101/2024.11.28.625845", github = "https://github.com/RoseYuan/metric_paper"),
+  c(doi = "10.1101/2020.07.17.209072", github = "https://github.com/schmeing/ReSeq-paper"),
+  c(doi = "10.1101/2020.11.09.374447", github = "https://github.com/retogerber/censcyt_paper_scripts"),
+  c(doi = "10.1101/2020.12.11.420885", github = "https://github.com/almutlue/mixing_benchmark"),
+  c(doi = "10.1101/2025.04.15.648932", github = "https://github.com/plger/bbhw"),
+  c(doi = "10.1101/2020.11.11.355693", github = "https://doi.org/10.5281/zenodo.4267898"),
+  c(doi = "10.1101/2021.01.27.428431", github = "https://github.com/drighelli/SpatialExperiment"),
+  c(doi = "10.1101/2023.08.04.552046", github = "https://github.com/RoseYuan/benchmark_paper/"),
+  c(doi = "10.64898/2026.04.28.721304", github = "https://github.com/imallona/rhapsodist"),
+  c(doi = "10.64898/2026.05.01.722166", github = "https://github.com/scrna-bench/pipelines-plan"),
+  c(doi = "10.64898/2026.04.29.721619", github = "https://github.com/Jiayi-Wang-Joey/variant-comparison"),
+  c(doi = "10.1101/2022.04.14.488419", github = "https://github.com/MarioniLab/sagenet_paper"),
+  c(doi = "10.1101/2025.03.17.643621", github = "https://github.com/LiminLi-xjtu/BiCLUM_test"),
+  c(doi = "10.1101/2024.05.18.594120", github = "https://github.com/imallona/rock_roi_paper"),
+  c(doi = "10.1101/2022.06.01.493823", github = "https://retogerber.pages.uzh.ch/synovialscrnaseq/"),
+  c(doi = "10.1101/2025.05.30.656561", github = "https://github.com/dnwissel/kinnex-data"),
+  c(doi = "10.1101/2025.06.23.660861", github = "https://github.com/SpatialHackathon/SpaceHack2023_study"),
+  c(doi = "10.64898/2026.06.16.732527", github = "https://github.com/ETHZ-INS/TFB-analysis"),
+  c(doi = "10.1101/2025.06.30.662268", github = "https://github.com/peicai/DESpace2_manuscript"),
+  c(doi = "10.1101/2025.07.08.663623", github = "https://gitlab.uzh.ch/retogerber/imc_to_ims_methods_analysis_scripts"),
+  c(doi = "10.1101/2025.11.06.686971", github = "https://github.com/Jiayi-Wang-Joey/hybrid-sequencing"),
+  c(doi = "10.1101/2025.10.13.682065", github = "https://github.com/sgunz/sosta-manuscript"),
+  c(doi = "10.64898/2026.04.01.715783", github = "https://github.com/dnwissel/fxs-benchmark"),
+  c(doi = "10.64898/2026.03.09.710141", github = "https://github.com/marusakod/scprocess"),
+  c(doi = "10.1101/2020.11.24.394213", github = "https://github.com/SimoneTiberi/distinct_manuscript")
+)
+
+
+#https://doi.org/10.5281/zenodo.19857088
+
+
+## data repos
+pmid_data <- rbind(
+  c(pmid = "27992111", data = "http://flowrepository.org/id/FR-FCM-ZZPH"),
+  c(pmid = "30271584", data = "https://bioconductor.org/packages/DuoClustering2018/"),
+  c(pmid = "33257685", data = "https://doi.org/10.6084/m9.figshare.8986193.v3"),
+  c(pmid = "36072920", data = "https://doi.org/10.6084/m9.figshare.c.5063984.v1"),
+  c(pmid = "36991470", data = "https://doi.org/10.5281/zenodo.6980272"),
+  c(pmid = "41742281", data = "https://zenodo.org/records/15763514"),
+  c(pmid = "42721220", data = "https://zenodo.org/records/15574384"),
+  c(pmid = "37198712", data = "https://doi.org/10.5281/zenodo.7096030"),
+  c(pmid = "37095564", data = "https://doi.org/10.5281/zenodo.7777147"),
+  c(pmid = "38243704", data = "https://doi.org/10.5281/zenodo.7829817"),
+  c(pmid = "41917425", data = "https://doi.org/10.6019/S-BIAD2091"),
+  c(pmid = "33758076", data = "https://doi.org/10.6084/m9.figshare.13341200"),
+  c(pmid = "42219495", data = "https://zenodo.org/records/17494517"),
+  c(pmid = "39441876", data = "https://zenodo.org/records/10732704"),
+  c(pmid = "41199164", data = "https://doi.org/10.5281/zenodo.14191288"),
+  c(pmid = "31098416", data = "http://flowrepository.org/id/FR-FCM-ZYL8")
+)
+
+
+
+biorxiv_data <- rbind(
+  c(doi = "10.1101/2024.11.29.626057", data = "https://doi.org/10.5281/zenodo.14191288"),
+  c(doi = "10.1101/349738", data = "http://flowrepository.org/id/FR-FCM-ZYL8"),
+  c(doi = "10.1101/2022.02.08.479579", data = "https://doi.org/10.5281/zenodo.5960321"),
+  c(doi = "10.64898/2026.05.01.722166", data = "https://doi.org/10.5281/zenodo.19886347"),
+  c(doi = "10.64898/2026.04.29.721619", data = "https://doi.org/10.5281/zenodo.19857088"),
+  c(doi = "10.1101/2025.10.13.682065", data = "https://zenodo.org/records/15574384"),
+  c(doi = "10.64898/2026.06.16.732527", data = "https://zenodo.org/records/18198234"),
+  c(doi = "10.1101/2025.03.17.643621", data = "https://doi.org/10.5281/zenodo.14506611"),
+  c(doi = "10.1101/2025.07.08.663623", data = "https://doi.org/10.6019/S-BIAD2091"),
+  c(doi = "10.1101/2025.11.06.686971", data = "https://zenodo.org/records/17494517"),
+  c(doi = "10.1101/2020.11.11.355693", data = "https://doi.org/10.6084/m9.figshare.13221053")
+)
+
+
+
+
+
+
+## software packages
+pmid_software <- rbind(
+  c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"),
+  c(pmid = "29028961", software = "https://www.bioconductor.org/packages/countsimQC/"),
+  c(pmid = "27130213", software = "http://lmweber.github.io/CrispantCal/"),
+  c(pmid = "29605184", software = "http://bioconductor.org/packages/release/bioc/html/CATALYST.html"),
+  c(pmid = "34273949", software = "https://github.com/supermaxiste/ARPEGGIO"),
+  c(pmid = "31088905", software = "https://github.com/csoneson/ARMOR"),
+  c(pmid = "31098416", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
+  c(pmid = "38887902", software = "https://bioconductor.org/packages/release/bioc/html/DifferentialRegulation.html"),
+  c(pmid = "31857895", software = "http://bioconductor.org/packages/HDCytoData/"),
+  c(pmid = "32487212", software = "http://bioconductor.org/packages/release/bioc/html/DAMEfinder.html"),
+  c(pmid = "33257685", software = "http://bioconductor.org/packages/release/bioc/html/muscat.html"),
+  c(pmid = "32873325", software = "http://bioconductor.org/packages/release/bioc/html/pipeComp.html"),
+  c(pmid = "41014637", software = "https://bioconductor.org/packages/poem"),
+  c(pmid = "34001188", software = "https://github.com/fionarhuang/treeclimbR"),
+  c(pmid = "33274053", software = "https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html"),
+  c(pmid = "41632825", github = "https://github.com/LiminLi-xjtu/BiCLUM"),
+  c(pmid = "33758076", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
+  c(pmid = "32178699", software = "http://bioconductor.org/packages/release/bioc/html/BANDITS.html"),
+  c(pmid = "33971812", software = "https://bioconductor.org/packages/censcyt"),
+  c(pmid = "35814628", software = "https://bioconductor.org/packages/scDblFinder"),
+  c(pmid = "35475034", software = "http://pubassistant.ch/"),
+  c(pmid = "36765378", software = "https://github.com/wmacnair/SampleQC"),
+  c(pmid = "41917425", software = "https://github.com/retogerber/MIMIC"),
+  c(pmid = "39152456", software = "https://github.com/RoseYuan/sc_chromatin_benchmark"),
+  c(pmid = "37142439", software = "https://github.com/schmeing/gapless"),
+  c(pmid = "42635194", software = "https://bioconductor.org/packages/DESpace"),
+  c(pmid = "37095564", software = "https://github.com/vladimirsouza/lrRNAseqVariantCalling"),
+  c(pmid = "38243704", software = "https://bioconductor.org/packages/release/bioc/html/DESpace.html"),
+  c(pmid = "42637977", software = "https://github.com/SpatialHackathon/SACCELERATOR"),
+  c(pmid = "42721220", software = "https://bioconductor.org/packages/sosta"),
+  c(pmid = "33608040", software = "https://github.com/schmeing/ReSeq"),
+  c(pmid = "35482478", software = "https://bioconductor.org/packages/SpatialExperiment"),
+  c(pmid = "40930531", software = "https://robinsonlabuzh.github.io/pasta/00-home.html")
+)
+
+
+
+biorxiv_software <- rbind(
+  c(doi = "10.1101/349738", software = "https://bioconductor.org/packages/release/bioc/html/diffcyt.html"),
+  c(doi = "2412.01561", software = "https://robinsonlabuzh.github.io/pasta/00-home.html"),
+  c(doi = "10.64898/2026.04.13.718197", software = "https://github.com/mjemons/spatialFDA"),
+  c(doi = "10.1101/2024.11.28.625845", software = "https://github.com/RoseYuan/poem"),
+  c(doi = "10.1101/2024.12.23.630186", software = "https://github.com/Computational-Morphogenomics-Group/Ladder/tree/patches"),
+  c(doi = "10.1101/2023.08.04.552046", software = "https://github.com/RoseYuan/sc_chromatin_benchmark"),
+  c(doi = "10.1101/2024.05.18.594120", software = "https://github.com/imallona/rock_roi_method"),
+  c(doi = "10.1101/2025.03.17.643621", software = "https://github.com/LiminLi-xjtu/BiCLUM"),
+  c(doi = "10.1101/2020.12.11.420885", software = "https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html"),
+  c(doi = "10.1101/2022.04.14.488419", software = "https://github.com/MarioniLab/SageNet"),
+  c(doi = "10.1101/2025.06.23.660861", software = "https://github.com/SpatialHackathon/SACCELERATOR"),
+  c(doi = "10.1101/2025.06.30.662268", software = "https://bioconductor.org/packages/DESpace"),
+  c(doi = "10.1101/2025.07.08.663623", software = "https://github.com/retogerber/MIMIC"),
+  c(doi = "10.64898/2026.06.16.732527", software = "https://github.com/ETHZ-INS/TFBlearner"),
+  c(doi = "10.1101/2025.10.13.682065", software = "https://bioconductor.org/packages/sosta"),
+  c(doi = "10.64898/2026.03.09.710141", software = "https://marusakod.github.io/scprocess/"),
+  c(doi = "10.1101/2020.11.24.394213", software = "https://github.com/SimoneTiberi/distinct")
+)
+
+
+
+
+## publications not in PubMed/bioRxiv	
+unlisted_publications <- data.frame(
+  title = c("RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis.",
+            "distinct: A novel approach to differential distribution analyses",
+            "Bulk-based hypothesis weighing increases power in single-cell differential expression analysis",
+            "Interactive exploration of benchmarking results with bettr"),
+  pubdate = c(""),
+  pubyear = c("2019", "2023", "2025", "2026"),
+  journal = c("Annual Review of Biomedical Data Science",
+              "Ann. Appl. Stat.",
+              "Peer Community Journal",
+              "Journal of Open Source Software"),
+  authors = c("Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD",
+              "Tiberi S, Crowell HL, Samartsidis P, Weber LM, Robinson MD",
+              "Germain P-L, Wang J, Robinson MD",
+              "Soneson C, Marini F, Incicau D, Sonrel A, Lütge A, Gerber R, Carrillo B, Mallona I, Robinson MD"),
+  volume = c("2", "17", "5", "11"),
+  issue = c("", "2", "2005", "126"),
+  pages = c("139-173", "1681-1700", "e136", "10333"),
+  doi = c("10.1146/annurev-biodatasci-072018-021255",
+          "10.1214/22-AOAS1689",
+          "10.24072/pcjournal.663",
+          "10.21105/joss.10333"),
+  pmid = c(""),
+  elocationid = c("doi: 10.1146/annurev-biodatasci-072018-021255",
+                  "doi: 10.1214/22-AOAS1689",
+                  "doi: 10.24072/pcjournal.663",
+                  "doi: 10.21105/joss.10333")
+)
+
+## F1000Research articles awaiting peer review
+f1000_preprints <- NULL
+
+# f1000_preprints <- data.frame(
+#   title = c("An R-based reproducible and user-friendly preprocessing pipeline for CyTOF data"),
+#   pubdate = c("Posted August 8, 2022."),
+#   pubyear = c("Preprints"),
+#   journal = c("F1000Research"),
+#   authors = c("Helena L. Crowell, Stéphane Chevrier, Andrea Jacobs, Sujana Sivapatham, Tumor Profiler Consortium, Bernd Bodenmiller, Mark D. Robinson"),
+#   volume = c(9),
+#   issue = c(1263),
+#   pages = c(""),
+#   doi = c("10.12688/f1000research.26073.2"),
+#   pmid = c(""),
+#   elocationid = c("")
+# )
+
+
+
+
+## names of members to highlight in publication list
+group_members <- c("Robinson MD", "Mark D. Robinson", "Mark D Robinson", "Robinson, M.",
+                   "Robinson M", "Mark Robinson", "Robinson, M. D.",
+                   "Soneson C", "Charlotte Soneson", "Soneson, C.",
+                   "Choudhury, A.", "Kitak, T.", "Busch, P.",
+                   "Carrillo, B.",
+                   "Dam SH",
+                   "Lindsay H", "Helen Lindsay",
+                   "Tiberi S", "Simone Tiberi","Tiberi, S.",
+                   "Germain P-L", "Germain PL", "Pierre-Luc Germain","Germain, P.-L.",
+                   "Almut Luetge", "Luetge A", "Almut Lütge", "Lütge A","Luetge, A.",
+                   "Joanna Zyprych-Walczak", "Zyprych-Walczak J",
+                   "Weber LM", "Lukas M Weber", "Lukas M. Weber", "Weber, L. M.",
+                   "Ben Carrillo", "Carrillo B",
+                   "Gianfranco Botta","Alexander Popescu",
+                   "Daniel Incicau", "Incicau D",
+                   "Hembach K", "Katarina Hembach", "Katharina Hembach", 
+                   "Kathirchelvan S",
+                   "Samuel Gunz","Gunz S","Gunz, S.",
+                   "Martin Emons","Emons M","Emons, M.",
+                   "Siyuan Luo",
+                   "Giulia Moro","Moro G","Moro, G.","Moro, G. A.",
+                   "Guo, Y.","Guo Y",
+                   "Aymergen, I.",
+                   "Koderman, M.",
+                   "Korobeynyk, V.",
+                   "Emanuel Sonder","Sonder, E.",
+                   "Wang, J.","Jiayi Wang","Wang J",
+                   "Meili, J.",
+                   "David Wissel","Wissel D","Wissel, D.",
+                   "Hembach KM", "Hembach, K. M.","Betz, K. M.",
+                   "Katharina M. Hembach", "Yao Yao", "Yao Y",
+                   "de Souza Vladimir", "Vladimir de Souza","Vladimir Barbosa C. de Souza",
+                   "Souza VBC", "de Souza VBC","De Souza, V. B. C.",
+                   "Huang R", "Ruizhu Huang", 
+                   "Schmeing S", "Stephan Schmeing", "Schmeing, S.",
+                   "Tarnow, M.",
+                   "Orjuela S", "Stephany Orjuela", "Orjuela, S.",
+                   "Crowell HL", "Crowell H", "Helena L Crowell", "Helena L. Crowell",
+                   "Helena Crowell", "HelenaL Crowell", "Crowell, H. L.","Crowell, H.",
+                   "Mallona I", "Izaskun Mallona","Mallona Gonzalez, I.","Mallona, I.",
+                   "Reto Gerber","Gerber Reto","Gerber R","Gerber, R.",
+                   "Manca P", "Meara, A.",
+                   "Busch, M. P",
+                   "Sonrel A", "Anthony Sonrel","Sonrel, A.",
+                   "Duo A", "Angelo Duo", "Duo A", "Angelo Duo",
+                   "Duò A", "Angelo Duò",
+                   "Nowicka M", "Malgorzata Nowicka",
+                   "Zhou X", "Xiaobei Zhou",
+                   "Dania Machlab",
+                   "Aidan Meara",
+                   "Heidari, E.", "Heidari E",
+                   "Paul, D.","Sonder E","Fanaswala I","Al Ajami A",
+                   "Nikolayeva O", 
+                   "Komljenovic A",
+                   "Morilla I", 
+                   "Luo, S.","Luo S",
+                   "Law CW", 
+                   "Paul D",
+                   "Riebler A",
+                   "Biyong B",
+                   "Matthes KL",
+                   "Cai, P.","Peiying Cai","Cai P",
+                   "Will Macnair","Macnair, W.","Macnair W",
+                   "Leonardo, S. X. M","Morillo Leonardo SX",
+                   "Milosavljevic S", "Stefan Milosavljevic","Milosavljevic, S.")
+```
+
+
+```{r load_packages, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(rentrez)
+  library(rvest)
+  library(XML)
+  library(xml2)
+  library(aRxiv)
+  library(medrxivr)
+})
+```
+
+```{r functions}
+fix_null <- function(x) {
+  if (is.null(x) || length(x) == 0) NA
+  else x
+}
+
+make_link_button <- function(address, title) {
+  sprintf(' <a href="%s" target="_blank" class="btn btn-primary">%s</a>', 
+                   address, title)
+}
+
+make_link_text <- function(address, title) {
+  sprintf(' <a href="%s" target="_blank"> %s</a>', address, title)
+}
+
+
+make_link_pmid <- function(pmid) {
+  if (pmid != "") {	  
+    sprintf(' <a href="%s" target="_blank"> %s</a>',
+            paste0("http://www.ncbi.nlm.nih.gov/pubmed/", pmid),
+            paste0("PMID ", pmid))
+  } else {	
+    ""	
+  }	
+}
+
+make_link_altmetric <- function(doi) {
+  sprintf('<div data-badge-popover="right" data-no-score="true" data-badge-type="bar" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+          doi)
+}
+
+make_link_altmetric_arxiv <- function(arxivid) {
+  sprintf('<div data-badge-popover="right" data-badge-type="4" data-arxiv-id="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+          arxivid)
+}
+```
+
+
+```{r entrez1}
+## Search PubMed
+x <- entrez_search(db = "pubmed", term = "Robinson Mark D[au]", 
+                   retmax = 1000)
+
+## Add and remove PubMed IDs manually
+x$ids <- unique(c(base::setdiff(x$ids, pmid_remove), pmid_add))
+```
+
+```{r entrez2, results = "hide"}
+## Get abstracts and generate word cloud
+pubmed_fetch <- entrez_fetch(db = "pubmed", id = x$ids,
+                             rettype = "xml", parsed = TRUE)
+abstracts = xpathApply(pubmed_fetch, '//PubmedArticle//Article', 
+                       function(x) {xmlValue(xmlChildren(x)$Abstract)})
+abstracts_all <- paste(unlist(abstracts), collapse = " ")
+
+## Generate word cloud
+base::source("generate_wordcloud.R")
+#svg("img/abstracts_pubmed_wordcloud.svg", width = 10, height = 8)
+svglite::svglite("img/abstracts_pubmed_wordcloud.svg", width = 10, height = 8)
+rquery.wordcloud(x = abstracts_all, type = "text", 
+                 textStemming = FALSE, min.freq = 2, lang = "english")
+dev.off()
+```
+
+```{r extract}
+## Extract info for summary table
+summ <- entrez_summary(db = "pubmed", id = x$ids)
+summ <- lapply(summ, function(w) {
+  data.frame(title = fix_null(w$title), 
+             pubdate = fix_null(w$pubdate),
+             pubyear = fix_null(strsplit(w$pubdate, " ")[[1]][1]), 
+             journal = fix_null(w$source), 
+             authors = fix_null(paste(w$authors$name, collapse = ", ")),
+             volume = fix_null(w$volume),
+             issue = fix_null(w$issue),
+             pages = fix_null(w$pages), 
+             doi = fix_null(w$articleids$value[w$articleids$idtype == "doi"]),
+             pmid = fix_null(w$articleids$value[w$articleids$idtype == "pubmed"]),
+             elocationid = fix_null(w$elocationid),
+             stringsAsFactors = FALSE)
+})
+## Put into data frame and arrange by year
+summ <- do.call(rbind, summ)
+
+summ$pubyear[summ$pmid==35475034] <- 2022 # hack for Reto's F1000 pub (lists the wrong year)
+summ$pubyear[summ$pmid==35814628] <- 2022 # hack for PL's F1000 pub (lists the wrong year)
+summ$pubyear[summ$pmid==36072920] <- 2022 # hack for Helena's F1000 pub (lists the wrong year)
+summ <- summ %>% dplyr::arrange(desc(pubyear))
+
+
+```
+
+```{r concat}	
+## Add unlisted publications	
+unlisted_publications <- 	
+  unlisted_publications[, match(colnames(summ), 	
+                                colnames(unlisted_publications))]	
+colnames(unlisted_publications) <- colnames(summ)	
+summ <- rbind(summ, unlisted_publications)	
+```
+
+```{r faff}
+## Change some HTML formatting to markdown
+summ$title <- sapply(summ$title, function(x) {
+  x <- gsub("&lt;i&gt;|&lt;/i&gt;", "*", x)  ## <i>, </i>
+  x <- gsub("&lt;u&gt;|&lt;/u&gt;", "*", x)  ## <u>, </u>
+  x
+})
+```
+
+```{r highlight_members}
+## Highlight group members in bold
+summ$authors <- gsub("HelenaL", "Helena L", summ$authors)
+
+summ$authors <- sapply(summ$authors, function(a) {
+  gsub(paste0("(", paste(group_members, collapse = "|"), ")"), "<strong>\\1</strong>", a)
+})
+
+## Remove mistakenly added editor as author
+summ$authors <- sapply(summ$authors, function(a) {
+  gsub(", Bar-Joseph Z", "", a)
+})
+```
+
+```{r add_links, message = FALSE, warning = FALSE}
+## Add column with links to GitHub repos
+summ <- dplyr::left_join(summ, data.frame(pmid_github, stringsAsFactors = FALSE)) %>%
+  dplyr::mutate(github = replace(github, is.na(github), ""))
+
+## Add column with links to data repos
+summ <- dplyr::left_join(summ, data.frame(pmid_data, stringsAsFactors = FALSE)) %>%
+  dplyr::mutate(data = replace(data, is.na(data), ""))
+
+## Add column with links to software packages
+summ <- dplyr::left_join(summ, data.frame(pmid_software, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(software = replace(software, is.na(software), ""))
+
+# hack to add software/github to the papers not in Pubmed
+summ$software[summ$doi=="10.1214/22-AOAS1689"] <- "https://bioconductor.org/packages/distinct"
+summ$github[summ$doi=="10.1214/22-AOAS1689"] <- "https://github.com/SimoneTiberi/distinct_manuscript"
+summ$github[summ$doi=="10.24072/pcjournal.663"] <- "https://github.com/plger/bbhw"
+summ$software[summ$doi=="10.24072/pcjournal.663"] <- "https://bioconductor.org/packages/muscat"
+
+
+
+
+```
+
+```{r add_biorxiv}
+## Add bioRxiv preprints by doi
+# took Charlotte's code here to fix the lockdown from parsing biorxiv directly
+# 
+biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
+  doi_s <- strsplit(doi, ".", fixed = TRUE)[[1]]
+  brx <- medrxivr::mx_api_doi(doi, 
+                              ifelse(nchar(tail(doi_s, 1))==6, "biorxiv", "medrxiv"),
+                              clean = TRUE) %>%
+    dplyr::slice_max(node, n = 1)
+  data.frame(title = brx$title,
+             pubdate = paste0("Posted ", 
+                              format(lubridate::ymd(brx$date), 
+                                     "%B %d, %Y"), "."),
+             pubyear = "Preprints",
+             journal = "bioRxiv", 
+             authors = brx$authors, 
+             volume = "", issue = "", pages = "",
+             doi = doi, pmid = "", elocationid = "",
+             stringsAsFactors = FALSE)
+}))
+
+# hack to fix Rajib's fail
+biorxiv$authors[biorxiv$authors=="Schubert, R."] <- "Gianfranco Botta, David Wissel, Samuel Higgins, Tomasz Chelmicki, Alexander Popescu, Kalina Radoynovska, Seraphin Probst, Julieta Ramírez Cuéllar, Kim Schneider, Zeynab-Mitra Nayernia, Ashley Byrne, Christopher D. Nelson, Zora Modrusan, Stormy J. Chamberlain, William Stephenson, Mark D. Robinson,  Rajib Schubert"
+
+# biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
+#   html <- read_html(paste0("https://doi.org/", doi))
+#   title <- html_text(html_nodes(html, "#page-title"))
+#   authors <- paste(unique(paste(html_text(html_nodes(html, ".nlm-given-names")), 
+#                                 html_text(html_nodes(html, ".nlm-surname")))),
+#                    collapse = ", ")
+#   # pubdate <- html_text(html_nodes(html, ".published_time"))
+#   m <- html_nodes(html, "meta")
+#   df <- data.frame(name=html_attr(m,"name"),
+#              content=html_attr(m,"content"), 
+#              stringsAsFactors = FALSE, row.names = NULL) %>%
+#     filter(name=="DC.Date")
+#   pubdate <- paste0("Posted ", format(as.Date(df$content), "%B %d, %Y."))
+# 
+#   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
+#              journal = "bioRxiv", authors = authors, volume = "", issue = "", 
+#              pages = "", doi = doi, pmid = "", elocationid = "", 
+#              stringsAsFactors = FALSE)
+# }))
+```
+
+```{r add_peerj}
+## Add PeerJ preprints by doi
+peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
+  html <- read_html(paste0("https://doi.org/", doi))
+  title <- html_text(html_nodes(html, ".article-title"))
+  authors <- paste(unique(paste(html_text(html_nodes(html, ".given-names")), 
+                                html_text(html_nodes(html, ".surname")))), collapse = ", ")
+  pubdate <- paste0("Posted ", 
+                    format(as.Date(html_text(html_nodes(html, "time"))[1]), 
+                           "%B %d, %Y."))
+  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
+             journal = "PeerJ", authors = authors, volume = "", issue = "", 
+             pages = "", doi = doi, pmid = "", elocationid = "", 
+             stringsAsFactors = FALSE)
+}))
+```
+
+
+```{r add_arxiv}
+## Add arxiv preprints by doi
+# arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
+#   df <- aRxiv::arxiv_search(id_list=doi)
+#   title <- df$title
+#   authors <- gsub("|", ", ", df$authors, fixed = TRUE)
+#   authors <- gsub(".", "", authors, fixed = TRUE)
+#   pubdate <- paste0("Posted ", format(as.Date(df$updated),"%B %d, %Y."))
+#   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
+#              journal = "arXiv", authors = authors, volume = "", issue = "", 
+#              pages = "", doi = doi, pmid = "", elocationid = "", 
+#              stringsAsFactors = FALSE)
+# }))
+
+parse_arxiv_manually <- function(stub) {
+  # url <- paste0("https://export.arxiv.org/api/query?search_query=",
+  #               stub, "&start=0&max_results=1")
+  # https://export.arxiv.org/api/query?id_list=2401.12345
+  url <- paste0("https://export.arxiv.org/api/query?id_list=", stub)
+  # arXiv often rate-limits (HTTP 429), especially from shared CI machines,
+  # so retry a few times with increasing waits before giving up.
+  waits <- c(15, 30, 60)
+  for (attempt in seq_len(length(waits) + 1)) {
+    rx <- tryCatch(read_xml(url), error = function(e) e)
+    if (!inherits(rx, "error")) break
+    if (attempt > length(waits)) stop("arXiv request failed for ", stub, ": ", conditionMessage(rx))
+    message("arXiv request failed (", conditionMessage(rx), "); retrying in ", waits[attempt], "s")
+    Sys.sleep(waits[attempt])
+  }
+  xp <- xmlParse(rx)
+  xe <- xmlToList(xp)$entry
+  nm <- names(xe)
+  authors <- sapply(xe[nm == "author"], .subset, "name") 
+  authors <- paste0(authors, collapse = ", ")
+  pubdate <- paste0("Posted ", format(as.Date(xe$updated),"%B %d, %Y."))
+  
+  return(list(title=xe$title, authors=authors, 
+              pubdate=pubdate))
+}
+
+arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
+  Sys.sleep(3)
+  xlist <- parse_arxiv_manually(stub=doi)
+  data.frame(title = xlist$title, pubdate = xlist$pubdate, pubyear = "Preprints", 
+             journal = "arXiv", authors = xlist$authors, volume = "", issue = "", 
+             pages = "", doi = doi, pmid = "", elocationid = "", 
+             stringsAsFactors = FALSE)
+}))
+
+
+```
+
+
+
+```{r add_f1000}
+## Add F1000Research preprints
+if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
+  f1000_preprints <- f1000_preprints[, match(colnames(biorxiv), 
+                                             colnames(f1000_preprints))]
+  colnames(f1000_preprints) <- colnames(biorxiv)
+  biorxiv <- rbind(f1000_preprints, biorxiv)
+} else if (!is.null(f1000_preprints)) {
+  biorxiv <- f1000_preprints
+}
+```
+
+```{r}
+## soak list of PeerJ preprints into bioRxiv
+biorxiv <- bind_rows(biorxiv, peerj)
+```
+
+```{r}
+## soak list of arXiv preprints into bioRxiv
+biorxiv <- bind_rows(biorxiv, arxiv)
+```
+
+```{r}
+## soak list of researchsquare preprints into bioRxiv
+# <- bind_rows(biorxiv, researchsquare)
+```
+
+```{r}
+## sort the mix of preprints by date
+pp_date <- gsub(".$", "", gsub("^Posted ","",biorxiv$pubdate))
+pp_date <- gsub(",", "", pp_date)
+pp_date <- as.Date(pp_date, format = "%B %d %Y")
+biorxiv <- biorxiv[order(pp_date, decreasing = TRUE),]
+```
+
+
+
+```{r}
+if (!is.null(biorxiv)) {
+  ## Highlight group members in bold
+  biorxiv$authors <- sapply(biorxiv$authors, function(a) {
+    gsub(paste0("(", paste(group_members, collapse = "|"), ")"), "<strong>\\1</strong>", a)
+  })
+}
+```
+
+
+
+```{r add_links_preprints, message = FALSE, warning = FALSE}
+if (!is.null(biorxiv)) {
+  ## Add column with links to GitHub repos
+  biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_github, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(github = replace(github, is.na(github), ""))
+  
+  ## Add column with links to data repos
+  biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_data, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(data = replace(data, is.na(data), ""))
+  
+  ## Add column with links to software packages
+  biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_software, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(software = replace(software, is.na(software), ""))
+}
+```
+
+
+
+
+```{r}
+
+k <- grepl("pii", summ$elocationid) & summ$pages == ""
+summ$pages[k] <- sapply(strsplit(summ$elocationid[k], ". "), .subset2, 2)
+
+## Split by publication year
+years <- as.character(unique(summ$pubyear))
+summ <- split(summ, summ$pubyear)
+
+## write out table of publications/preprints to disk
+write.table(bind_rows(summ), "publications.tsv", 
+            quote=FALSE, sep="\t", row.names = FALSE)
+saveRDS(bind_rows(summ), file="publications.rds")
+write.table(biorxiv, "preprints.tsv", 
+            quote=FALSE, sep="\t", row.names = FALSE)
+saveRDS(biorxiv, file="preprints.rds")
+
+# z <- read.table("publications.tsv", sep="\t", header = TRUE, quote="")
+# z <- read.table("preprints.tsv", sep="\t", header = TRUE, quote="")
+
+ 
+
+## Generate final text string to display
+txt <- "<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>\n\n"
+
+
+
+## Preprints
+if (!is.null(biorxiv)) {
+  txt <- paste0(txt, "\n## Preprints\n\n")
+  for (j in seq_len(nrow(biorxiv))) {
+    if (biorxiv[j, "journal"] == "arXiv") {
+      txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
+                  ". ", biorxiv[j, "journal"], 
+                  " ID:", make_link_text(address = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"]), 
+                                         title = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"])), ". ", 
+                  biorxiv[j, "pubdate"], " ", 
+                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], 
+                                                                               title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "data"] == "", "", paste0(make_link_text(address = biorxiv[j, "data"], 
+                                                                             title = "Data"), ". ")), 
+                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], 
+                                                                                 title = "Software"), ". ")), 
+                  #make_link_altmetric_arxiv(biorxiv[j, "doi"]),
+                  "\n\n")
+    } else {
+    txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
+                  ". ", biorxiv[j, "journal"], 
+                  " doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), 
+                                          title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
+                  biorxiv[j, "pubdate"], " ", 
+                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], 
+                                                                               title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "data"] == "", "", paste0(make_link_text(address = biorxiv[j, "data"], 
+                                                                             title = "Data"), ". ")), 
+                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], 
+                                                                                 title = "Software"), ". ")), 
+                  #make_link_altmetric(biorxiv[j, "doi"]),
+                  #make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
+                  "\n\n")
+    }
+  }
+}
+
+## Publications
+for (i in years) {
+  txt <- paste0(txt, "\n## ", i, "\n\n")
+  for (j in seq_len(nrow(summ[[i]]))) {
+    txt <- paste0(txt, "- ", summ[[i]][j, "authors"], ": ", summ[[i]][j, "title"], 
+                  " ", summ[[i]][j, "journal"], " ", summ[[i]][j, "volume"],
+                  ifelse(summ[[i]][j, "issue"] == "", "", 
+                         paste0("(", summ[[i]][j, "issue"], ")")), ":",
+                  summ[[i]][j, "pages"], 
+                  #" (", i, "). DOI: ", summ[[i]][j, "doi"],
+                  " (", i, "). ",
+                  ifelse(!is.na(summ[[i]][j, "doi"]), 
+                         paste0(make_link_text(paste0("https://doi.org/", summ[[i]][j, "doi"]),
+                                        paste0("DOI: ", summ[[i]][j, "doi"])),". "),
+                         ""),
+                  make_link_pmid(pmid = summ[[i]][j, "pmid"]),  ifelse(summ[[i]][j, "pmid"]=="", "", ". "),  
+                  #". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
+                  ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], 
+                                                                                 title = "GitHub repo"), ". ")), 
+                  ifelse(summ[[i]][j, "data"] == "", "", paste0(make_link_text(address = summ[[i]][j, "data"], 
+                                                                               title = "Data"), ". ")), 
+                  ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], 
+                                                                                   title = "Software"), ". ")), 
+                  #make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
+                  "\n\n")
+  }
+}
+```
+
+```{r, results = "asis"}
+cat(txt)
+```
+

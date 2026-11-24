@@ -1,0 +1,60 @@
+---
+title: "Teaching"
+# Column widths (%) for the tables on this page, as on the previous site
+tbl-colwidths: [43, 45, 12]
+---
+
+### **Courses offered at UZH**
+
+*Lecture*      | *Description*               | *Semester*
+-------------------------------|--------------------------------|--------
+**Statistical Analysis of High-Thoughput Genomic and Transcriptomic Data - STA426** | We will go through the most important statistical concepts employed in today's High-Thoughput analysis methods, implemented as R packages. The student will propose and perform a project at the end of the course | Fall 
+**Statistical Modelling - STA121** | | Fall
+**Introduction to Bionformatics I - BCH401 ** | In each lecture we give an overview of the main Bioinformatic tools currently used  | Fall
+**Topics in Evolutionary Biology - BIO554 ** | | Fall
+**Modern Genetics and Genomics - BIO323 ** | Key concepts and methods in genetics will be taught. You will conduct genetic and molecular studies in model systems and analyse data using bioinformatic tools | Fall
+**Cancer Epigenetics - BIO255** (Block Course) | The lab gives a two week practical session along with other 5 different labs. The workload is divided in applying molecular biology techniques and a bioinformatic session | Fall
+**Practical Bionformatics - BIO334** (Block Course) | The lab gives a two week section of this course. We provide the student with the basics on performing straightforward data manipulations and statistical analyses in R | Spring
+**Data Analysis in Biology - BIO144** | This course is organized by the [Petchey lab](https://www.ieu.uzh.ch/en/staff/member/petchey_owen.html). Our lab provides support in the practical sessions | Spring
+
+For exact information on schedule, registration and location, please refer to the official UZH [course catalogue](https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=EN&sap-ui-language=EN)
+
+---
+
+### **External courses**
+
+<!-- LETS KEEP TO THE STYLE: URL. Place, Country, Date(s) .. newest to oldest -->
+
+### 2019
+* [Analysis of multi-sample multi-condition scRNA-seq datasets @[BC]2](https://www.basellife.org/2019/basel-life-structure/bc2/programme/tutorials-and-workshops.html#c68325). University of Basel, Switzerland, September 9th
+* [Introduction to R Shiny](https://www.sib.swiss/training/course/2019-05-zu-shiny). University of Zurich, Switzerland, May 6th 
+* [Data Carpentry R Workshop](https://traviscg.github.io/2019-04-17-semmelweis/). Semmelweis University, Budapest, April 17th-18th 
+* [Whole transcriptome sequencing data analysis](https://www.acgt.co.za/newsroom/events/whole-transcriptome-sequencing-data-analysis-workshop-01-08th-february-2019-university-of-pretoria/).
+University of Pretoria, South Africa, February 1st-8th
+
+### 2018
+
+* [CSAMA 2018](http://www-huber.embl.de/csama2018/). Brixen, Italy, July 8th-13th
+* [Advanced RNA-seq analysis](https://www.ebi.ac.uk/training/events/2018/advanced-rna-seq-analysis). Hinxton, UK, April 16th-20th
+* [Winter school on Bioinformatics for Adaptation Genomics:](http://www.adaptation.ethz.ch/education/bag-winter-school-2018.html). Weggis, Switzerland, February 11th-17th
+
+### 2017
+
+* [Statistics for Life Scientists](https://www.sib.swiss/training/course/stats-basel2017). Basel, Switzerland, December 11th-14th
+* [Data Carpentry Genomics Workshop](https://pennekampster.github.io/2017-11-08-lugano/). Lugano, Switzerland, November 8th
+* [Data Carpentry Ecology Workshop](https://pennekampster.github.io/2017-11-06-lugano/). Lugano, Switzerland, November 6th
+* [de.NBI Summer School: Computational Genomics and RNA biology](https://www.denbi.de/22-training-cat/training-courses/278-de-nbi-summer-school-computational-genomics-and-rna-biology). Berlin, Germany, September 25th-29th
+* [Statistical data analysis for genome scale biology (CSAMA 2017)](http://www.huber.embl.de/csama2017/#home). Brixen, Italy, July 8th-13th
+* [Advanced RNA-seq and ChIP-seq data analysis](http://www.ebi.ac.uk/training/events/2017/advanced-rna-seq-and-chip-seq-data-analysis-1). Hinxton, UK, April 24th-27th
+
+### 2016
+
+* [Statistics for Life Scientists](http://edu.isb-sib.ch/course/view.php?id=269). Basel, Switzerland, October 17th-20th
+* [Method course - Analysis of NextGen RNA-seq data for expression profiling and protein-binding RNAs](http://www.uni-regensburg.de/medicine/statistical-bioinformatics/method-course-oct-16/program/index.html). Regensburg, Germany, October 10th-14th
+* [Computational Genomics: A hands-on course on data analysis](http://compgen2016.mdc-berlin.de/). Max-Delbrück Center for Molecular Medicine, Berlin, Germany, September 12th-23rd
+* [Analysis of high-throughput sequencing data](http://events.embo.org/16-htp-seq/). Cambridge, UK, September 5th-10th
+* [Data Carpentry: Introduction to Data Analysis and Visualization in R (July 2016)](https://markrobinsonuzh.github.io/2016-07-18-zurich/). University of Zurich, Switzerland, July 18th-19th
+* [Statistics and computing in genome data science (CSAMA 2016)](http://www.huber.embl.de/csama2016/about/). Brixen, Italy, July 10th-15th
+* [Data Carpentry: Introduction to Data Analysis and Visualization in R (May 2016)](https://lmweber.github.io/2016-05-30-Zurich/). University of Zurich, Switzerland, May 30th-31st
+
+Other teaching activities are listed in members' personal webpage or cv.

@@ -5,3 +5,17 @@
 rmarkdown-website-template.Rproj
 README.html
 **/.DS_Store
+
+# Quarto build output and cache
+/_site/
+/.quarto/
+*_files/
+
+# Generated when publications.qmd renders
+/publications.tsv
+/publications.rds
+/preprints.tsv
+/preprints.rds
+/img/abstracts_pubmed_wordcloud.svg
+
+**/*.quarto_ipynb

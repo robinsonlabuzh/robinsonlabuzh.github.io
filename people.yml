@@ -1,0 +1,202 @@
+# Lab members, shown on people.html in this order.
+#
+# To add someone, copy an entry and edit it. Fields:
+#   name     (required)
+#   image    (required) path to a thumbnail in img/thumbnail/, under 100KB
+#   links    (optional) list of {icon, text, href}; icon is a Bootstrap Icons
+#            name, e.g. github, linkedin, twitter-x, mortarboard (Google
+#            Scholar), globe (website), envelope. See https://icons.getbootstrap.com
+#   bio      (optional) Markdown; [text](url) links work. Use | and a blank line
+#            between paragraphs.
+#   degrees  (optional) list, one degree per line
+#
+# To move someone to alumni, delete their entry here and add a line to the
+# Alumni list in people.qmd.
+
+- name: Mark D Robinson
+  image: img/thumbnail/mark.jpg
+  links:
+    - { icon: twitter-x, text: "@markrobinsonca", href: "https://twitter.com/markrobinsonca" }
+    - { icon: github, text: "markrobinsonuzh", href: "https://github.com/markrobinsonuzh" }
+    - { icon: mortarboard, text: "Google Scholar", href: "https://scholar.google.ch/citations?user=XPfrRQEAAAAJ" }
+  bio: >-
+    My research interests are diverse, but more-or-less encompass the general application
+    of statistical methods and data science to experimental data with biological
+    applications. Often, this is within the context of genomics data types, but we are
+    interested in methodological challenges and robust solutions in data, generally. We
+    also try to be modern scientists, with a focus on reproducibility (repos for code) and
+    open science (preprints).
+  degrees:
+    - PhD in Medical Biology (2008), University of Melbourne (Walter and Eliza Hall Institute)
+    - MSc in Statistics (2001), University of British Columbia
+    - BSc in Applied Mathematics and Statistics (1999), University of Guelph
+
+- name: Meenu Bhati
+  image: img/thumbnail/Meenu.jpeg
+  links:
+    - { icon: mortarboard, text: "Google Scholar", href: "https://scholar.google.com/citations?user=l2kH-6EAAAAJ&hl=en&authuser=1" }
+  bio: >-
+    My research focuses on understanding genome biology across species from functional and
+    evolutionary perspectives. I integrate genetics and multi-omics approaches to
+    investigate regulatory mechanisms within the non-coding genome, with particular
+    emphasis on long non-coding RNAs. Through this work, I aim to advance the functional
+    interpretation of regulatory variation associated with complex traits while developing
+    computational resources for the broader scientific community.
+  degrees:
+    - PhD in Animal Genomics (2024), ETH Zurich, Switzerland
+    - MSc in Animal Genomics & Breeding (2017), Wageningen University, Netherlands
+    - BVSc&AH in Veterinary & Animal Sciences (2014), Rajasthan University of Veterinary and Animal Sciences, India
+
+- name: Vladyslav Korobeynyk
+  image: img/thumbnail/vlad.png
+  links:
+    - { icon: github, text: "vkorobeynyk", href: "https://github.com/vkorobeynyk" }
+  bio: >-
+    I did my master thesis in single cell analysis of the adult mouse hippocampus in
+    Jessberger Lab, HIFO, UZH. Shortly after, I started working as an intern in Systems
+    Biology group at Roche, where I gained experience in ML and different type of
+    sequencing technologies. Currently I am doing a shared PhD with Jessberger Lab, where
+    my project is based on using single-cell and spatial transcriptomics data to identify
+    molecular changes, mainly in the neurogenic niche, that drive neurogenesis to decline
+    with age.
+  degrees:
+    - MSc in Biochemistry (2021), University of Zurich
+    - BSc in Biochemistry (2017), University Nova of Lisbon
+
+- name: Martin Emons
+  image: img/thumbnail/martin.jpg
+  bio: >-
+    I am a PhD student in the Robinson Group since 2022 in the Epidemiology and
+    Biostatistics PhD program. My general interest lies in the development of methods for
+    biological and biomedical data science. In my master studies I worked on various topics
+    such as statistical analysis of temporal trends or survival analysis at Roche
+    Diagnostics. Currently, I am interested in spatial transcriptomics and the challenges
+    in this new field.
+  degrees:
+    - MSc in Computational Biology and Bioinformatics (2022), ETH Zürich, University of Zürich
+    - BSc in Biology (2019), University of Bern
+
+- name: Samuel Gunz
+  image: img/thumbnail/samuel.jpeg
+  links:
+    - { icon: twitter-x, text: "@samuelgunz", href: "https://twitter.com/samuelgunz" }
+    - { icon: github, text: "sgunz", href: "https://github.com/sgunz" }
+  bio: >-
+    I am a PhD student in the Robinson lab as part of the Epidemiology and Biostatistics
+    program of the Life Science Graduate School Zurich. During my past studies, I worked
+    with all sorts of biological data, ranging from microbial community analysis to
+    characterizing epigenetic modifications in cancer. During this time, I acknowledged the
+    importance of having robust and reproducible tools in research and that my interest
+    lies in developing such. My PhD project will focus on methods for analyzing spatial
+    omics data.
+  degrees:
+    - MSc in Computational Biology and Bioinformatics (2022), ETH Zurich, University of Basel and University of Zurich
+    - BSc in Biology (2018), University of Zurich
+
+- name: Peiying Cai
+  image: img/thumbnail/peiying.jpg
+  bio: >-
+    In February 2023, I started working as a PhD student in the Robinson lab. Previously, I
+    worked on developing analysis tools and pipelines to identify spatially variable genes
+    from spatial transcriptomics data. My PhD research will focus on the development of
+    statistical methods in bioinformatics, mostly for single-cell RNA-seq and spatial
+    transcriptomics data.
+  degrees:
+    - MSc in Biostatistics (2022), University of Zürich
+    - BSc of Science in Statistics (2019), Xiamen University
+
+- name: Jiayi Wang
+  image: img/thumbnail/jiayi.jpg
+  links:
+    - { icon: linkedin, text: "LinkedIn", href: "https://www.linkedin.com/in/jiayi-wang-14a3261ba/" }
+  bio: >-
+    After finishing an internship and my master thesis in the Robinson group, I joined as a
+    PhD student. During this time I worked on disentangling type and state effects on
+    expression variability to improve analysis and interpretability of scRNA-seq data and
+    identifying motif accessibility changes in ATAC-seq data. My PhD project primarily
+    focuses on data analysis of long-read scRNA data and image analysis.
+  degrees:
+    - MSc in Computational Biology and Bioinformatics (2024), ETH Zürich
+    - BSc in Biomedical Sciences (2021), University College London
+
+- name: Maruša Koderman
+  image: img/thumbnail/marusa.jpg
+  bio: >-
+    I joined the Robinson lab as a PhD student in 2024. Prior to starting my PhD, I worked
+    as in intern at Roche (Pharma Research and Early Development), where I focused on
+    single-cell data analysis and construction of human brain cell type atlases. In my PhD,
+    I am continuing this work by leveraging large-scale multimodal single-cell atlases to
+    advance the development of in vitro model systems and investigate new potential drug
+    targets.
+  degrees:
+    - MSc in Laboratory Biomedicine (2021), University of Ljubljana
+    - BSc in Laboratory Biomedicine(2017), University of Ljubljana
+
+- name: Pauline Busch
+  image: img/thumbnail/pauline.jpg
+  links:
+    - { icon: linkedin, text: "LinkedIn", href: "https://www.linkedin.com/in/pauline-busch" }
+  bio: >-
+    I joined the Robinson lab as a PhD student at the end of 2024. My background is in
+    biomedical research, with previous work focusing on pathophysiological processes in
+    blood and brain. During my master’s studies I developed an interest in bioinformatics
+    and during my PhD I aim to contribute to the development of methods for analyzing
+    spatial transcriptomics data.
+  degrees:
+    - MSc in Molecular Life Sciences (2022), University of Hamburg
+    - BSc in Biology (2019), University of Hamburg
+
+- name: Ben Carrillo
+  image: img/thumbnail/ben.jpg
+  bio: >-
+    PhD student at Robinson lab since Spring 2025. I am interested in building robust,
+    composable tools for reproducible biomedical research. Working on tools for methods
+    benchmarking.
+  degrees:
+    - MSc in Biostatistics and Bioinformatics (2023), Universitat Oberta de Catalunya
+
+- name: Atreya Choudhury
+  image: img/thumbnail/atreya.jpeg
+  links:
+    - { icon: github, text: "atchox", href: "https://github.com/atchox" }
+  bio: >-
+    I started in August 2026 as a shared PhD student between the
+    [Domcke](https://domcke.github.io/domcke-lab.html) and Robinson labs. I am interested
+    in several aspects of single-cell perturbation data, particularly methods development
+    and the relevance of such data in understanding the landscape of cells. I also work on
+    benchmarking computational methods for omics data.
+  degrees:
+    - MSc in Statistics (2026), ETH Zürich
+    - Bachelor of Mathematics (Hons.) (2023), Indian Statistical Institute, Bangalore
+
+- name: Xiaorou Guo
+  image: img/thumbnail/xiaorou.jpg
+  links:
+    - { icon: linkedin, text: "LinkedIn", href: "https://www.linkedin.com/in/xiaorou-guo" }
+  bio: >-
+    I joined the Robinson lab as a visiting PhD student in August 2026 for a six-month
+    visit ending in February 2027. Previously, I worked on developing reference datasets
+    and benchmarking frameworks for genomic and epigenomic analyses. I am currently
+    benchmarking single-cell foundation models, with a focus on their performance across
+    different biological tasks.
+  degrees:
+    - PhD candidate in Bioinformatics (expected 2027), Fudan University, China
+    - BSc in Biotechnology, Beijing University of Technology, China
+
+- name: Miguel Rosell Hidalgo
+  image: img/thumbnail/miguel.jpg
+  links:
+    - { icon: github, text: "miguelrosell", href: "https://github.com/miguelrosell" }
+    - { icon: linkedin, text: "LinkedIn", href: "https://www.linkedin.com/in/miguel-rosell-hidalgo" }
+  bio: >-
+    I am an external Master's student in Bioinformatics and Biostatistics, doing my thesis
+    in the Robinson lab. My project compares what pathology foundation models and classical
+    texture descriptors (Local Binary Patterns) capture in H&E images, and how both relate
+    to spatial transcriptomics. Before joining, I applied Transcriptome-Wide Association
+    Studies (TWAS) to psychiatric traits at the CBMSO-CSIC in Madrid. I am interested in
+    statistical methods for high-dimensional biomedical data.
+  degrees:
+    - MSc in Bioinformatics and Biostatistics, Universitat Oberta de Catalunya (ongoing)
+    - BSc in Bioinformatics (2026), Universidad Católica de Ávila
+    - BA in Translation and Interpreting (2023), Universidad Complutense de Madrid
+
