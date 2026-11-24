@@ -28,7 +28,7 @@ jobs:
       ENTREZ_KEY: ${{ secrets.ENTREZ_KEY }}
       RV_CACHE_DIR: ${{ runner.temp }}/rv-cache
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
@@ -43,7 +43,7 @@ jobs:
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Cache rv downloads
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ${{ runner.temp }}/rv-cache
           key: rv-${{ runner.os }}-${{ hashFiles('rv.lock') }}
@@ -68,7 +68,7 @@ jobs:
       - name: Render site
         run: quarto render
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         if: github.event_name != 'pull_request'
         with:
           path: _site
@@ -78,6 +78,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     permissions:
+      actions: read
       pages: write
       id-token: write
     environment:
@@ -85,4 +86,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
