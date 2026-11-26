@@ -3,18 +3,15 @@
 # To add someone, copy an entry and edit it. Fields:
 #   name     (required)
 #   image    (required) path to a thumbnail in img/thumbnail/, under 100KB
-#   links    (optional) list of {icon, text, href}; icon is a Bootstrap Icons
-#            name, e.g. github, linkedin, twitter-x, mortarboard (Google
-#            Scholar), globe (website), envelope. See https://icons.getbootstrap.com
-#   bio      (optional) Markdown; [text](url) links work. Use | and a blank line
-#            between paragraphs.
-#   degrees  (optional) list, one degree per line
+#   links    (optional) list of {icon, text, href}; icon names from
+#            https://icons.getbootstrap.com (github, linkedin, twitter-x,
+#            mortarboard for Google Scholar, globe for a website, ...)
+#   bio      (optional) Markdown; for several paragraphs use | and blank lines
+#   degrees  (optional) list, one per line
 #
-# Former members are kept below as commented-out entries (lines starting with
-# "# "), in the position they had in the list. To show someone again, remove
-# the "# " from the start of each line of their entry. To move someone to
-# alumni, comment out their entry the same way and add a line to the Alumni
-# list in people.qmd.
+# Former members are commented out in place; uncomment an entry to show it
+# again. When someone leaves, comment out their entry and add them to the
+# Alumni list in people.qmd.
 
 - name: Mark D Robinson
   image: img/thumbnail/mark.jpg

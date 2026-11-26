@@ -426,7 +426,6 @@ abstracts_all <- paste(unlist(abstracts), collapse = " ")
 
 ## Generate word cloud
 base::source("generate_wordcloud.R")
-#svg("img/abstracts_pubmed_wordcloud.svg", width = 10, height = 8)
 svglite::svglite("img/abstracts_pubmed_wordcloud.svg", width = 10, height = 8)
 rquery.wordcloud(x = abstracts_all, type = "text", 
                  textStemming = FALSE, min.freq = 2, lang = "english")
@@ -541,26 +540,6 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
 
 # hack to fix Rajib's fail
 biorxiv$authors[biorxiv$authors=="Schubert, R."] <- "Gianfranco Botta, David Wissel, Samuel Higgins, Tomasz Chelmicki, Alexander Popescu, Kalina Radoynovska, Seraphin Probst, Julieta Ramírez Cuéllar, Kim Schneider, Zeynab-Mitra Nayernia, Ashley Byrne, Christopher D. Nelson, Zora Modrusan, Stormy J. Chamberlain, William Stephenson, Mark D. Robinson,  Rajib Schubert"
-
-# biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
-#   html <- read_html(paste0("https://doi.org/", doi))
-#   title <- html_text(html_nodes(html, "#page-title"))
-#   authors <- paste(unique(paste(html_text(html_nodes(html, ".nlm-given-names")), 
-#                                 html_text(html_nodes(html, ".nlm-surname")))),
-#                    collapse = ", ")
-#   # pubdate <- html_text(html_nodes(html, ".published_time"))
-#   m <- html_nodes(html, "meta")
-#   df <- data.frame(name=html_attr(m,"name"),
-#              content=html_attr(m,"content"), 
-#              stringsAsFactors = FALSE, row.names = NULL) %>%
-#     filter(name=="DC.Date")
-#   pubdate <- paste0("Posted ", format(as.Date(df$content), "%B %d, %Y."))
-# 
-#   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
-#              journal = "bioRxiv", authors = authors, volume = "", issue = "", 
-#              pages = "", doi = doi, pmid = "", elocationid = "", 
-#              stringsAsFactors = FALSE)
-# }))
 ```
 
 ```{r add_peerj}
@@ -583,23 +562,9 @@ peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
 
 ```{r add_arxiv}
 ## Add arxiv preprints by doi
-# arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
-#   df <- aRxiv::arxiv_search(id_list=doi)
-#   title <- df$title
-#   authors <- gsub("|", ", ", df$authors, fixed = TRUE)
-#   authors <- gsub(".", "", authors, fixed = TRUE)
-#   pubdate <- paste0("Posted ", format(as.Date(df$updated),"%B %d, %Y."))
-#   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
-#              journal = "arXiv", authors = authors, volume = "", issue = "", 
-#              pages = "", doi = doi, pmid = "", elocationid = "", 
-#              stringsAsFactors = FALSE)
-# }))
-
 parse_arxiv_manually <- function(stub) {
-  # Metadata comes from DataCite, where arXiv registers a DOI for every paper
-  # (10.48550/arXiv.<id>). arXiv's own API (export.arxiv.org) rate-limits
-  # heavily (HTTP 429), especially from shared CI machines; DataCite returns
-  # the same title, authors and dates.
+  # Via DataCite (arXiv DOIs are 10.48550/arXiv.<id>): arXiv's own API
+  # rate-limits heavily, especially from CI machines.
   url <- paste0("https://api.datacite.org/dois/10.48550/arXiv.", stub)
   # retry a couple of times in case of a transient network error
   waits <- c(10, 30)
@@ -620,7 +585,7 @@ parse_arxiv_manually <- function(stub) {
     }
   }, character(1))
   authors <- paste0(authors, collapse = ", ")
-  # "Posted" date = submission date of the latest version (what arXiv calls "updated")
+  # "Posted" = submission date of the latest version
   submitted <- Filter(function(d) identical(d$dateType, "Submitted"), a$dates)
   latest <- max(as.Date(substr(vapply(submitted, `[[`, character(1), "date"), 1, 10)))
   pubdate <- paste0("Posted ", format(latest, "%B %d, %Y."))
@@ -662,11 +627,6 @@ biorxiv <- bind_rows(biorxiv, peerj)
 ```{r}
 ## soak list of arXiv preprints into bioRxiv
 biorxiv <- bind_rows(biorxiv, arxiv)
-```
-
-```{r}
-## soak list of researchsquare preprints into bioRxiv
-# <- bind_rows(biorxiv, researchsquare)
 ```
 
 ```{r}
@@ -726,16 +686,11 @@ write.table(biorxiv, "preprints.tsv",
             quote=FALSE, sep="\t", row.names = FALSE)
 saveRDS(biorxiv, file="preprints.rds")
 
-# z <- read.table("publications.tsv", sep="\t", header = TRUE, quote="")
-# z <- read.table("preprints.tsv", sep="\t", header = TRUE, quote="")
-
  
 
-## Each entry is wrapped in its own <section class="level2" id="...">. Quarto's
-## site search makes one search result per such section, so every publication
-## can be found (and linked to, e.g. publications.html#pmid-12345) on its own.
-## The Preprints/year headings are plain <h2> elements rather than "## ..."
-## so that they do not become (duplicate) search sections themselves.
+## Each entry gets its own <section class="level2" id="...">, so it is a separate
+## search result and has an anchor (e.g. publications.html#pmid-12345). Headings
+## are raw <h2>, not "## ...", so they don't become search sections too.
 used_ids <- character()
 entry_id <- function(prefix, x) {
   id <- paste0(prefix, "-", gsub("^-|-$", "", gsub("[^a-z0-9]+", "-", tolower(x))))
@@ -769,7 +724,6 @@ if (!is.null(biorxiv)) {
                                                                              title = "Data"), ". ")), 
                   ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], 
                                                                                  title = "Software"), ". ")), 
-                  #make_link_altmetric_arxiv(biorxiv[j, "doi"]),
                   "")
       txt <- paste0(txt, wrap_entry(entry_id("arxiv", biorxiv[j, "doi"]), entry))
     } else {
@@ -784,8 +738,6 @@ if (!is.null(biorxiv)) {
                                                                              title = "Data"), ". ")), 
                   ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], 
                                                                                  title = "Software"), ". ")), 
-                  #make_link_altmetric(biorxiv[j, "doi"]),
-                  #make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
                   "")
     txt <- paste0(txt, wrap_entry(entry_id("preprint", biorxiv[j, "doi"]), entry))
     }
@@ -801,21 +753,18 @@ for (i in years) {
                   ifelse(summ[[i]][j, "issue"] == "", "", 
                          paste0("(", summ[[i]][j, "issue"], ")")), ":",
                   summ[[i]][j, "pages"], 
-                  #" (", i, "). DOI: ", summ[[i]][j, "doi"],
                   " (", i, "). ",
                   ifelse(!is.na(summ[[i]][j, "doi"]), 
                          paste0(make_link_text(paste0("https://doi.org/", summ[[i]][j, "doi"]),
                                         paste0("DOI: ", summ[[i]][j, "doi"])),". "),
                          ""),
                   make_link_pmid(pmid = summ[[i]][j, "pmid"]),  ifelse(summ[[i]][j, "pmid"]=="", "", ". "),  
-                  #". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
                   ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], 
                                                                                  title = "GitHub repo"), ". ")), 
                   ifelse(summ[[i]][j, "data"] == "", "", paste0(make_link_text(address = summ[[i]][j, "data"], 
                                                                                title = "Data"), ". ")), 
                   ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], 
                                                                                    title = "Software"), ". ")), 
-                  #make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
                   "")
     id <- if (summ[[i]][j, "pmid"] != "") {
       entry_id("pmid", summ[[i]][j, "pmid"])

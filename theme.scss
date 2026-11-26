@@ -14,8 +14,7 @@ $link-hover-decoration: underline;
 
 /*-- scss:rules --*/
 
-// Colours below are derived from the navbar background ($navbar-bg, set by
-// `navbar: background:` in _quarto.yml), so they follow it if it changes.
+// Derived from $navbar-bg (`navbar: background:` in _quarto.yml).
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus-visible,
 .navbar .nav-link:hover,

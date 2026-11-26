@@ -1,4 +1,4 @@
-/* ---- People page (people.qmd + people.ejs) ---- */
+/* People page (people.ejs) */
 
 .person {
   display: flex;
@@ -8,7 +8,7 @@
   border-bottom: 1px solid #e9ecef;
 }
 
-/* Fixed-width column; photos keep their own shape (never cropped or stretched). */
+/* Fixed width; photos keep their shape. */
 .person-photo {
   flex: 0 0 120px;
 }

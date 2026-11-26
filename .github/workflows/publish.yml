@@ -3,23 +3,20 @@ name: Build and publish website
 on:
   push:
     branches: [master]
-  # Pull requests: build only, to check the site still renders. Nothing is published.
+  # Build only; nothing is published.
   pull_request:
     branches: [master]
-  # Weekly rebuild so the publication list picks up new papers. Published only
-  # if the publication list changed, and only after approval (see "approve").
+  # Weekly: published only if the publication list changed, after approval.
   schedule:
     - cron: "0 5 * * 1" # Mondays, 05:00 UTC
-  # Allows a manual rebuild from the Actions tab.
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  # One run at a time per branch and trigger. A newer pull-request build or
-  # weekly build replaces an older one, including a weekly build still waiting
-  # for approval. Pushes to master and manual runs are never cancelled.
+  # Newer PR/weekly runs replace older ones (incl. one awaiting approval);
+  # pushes and manual runs are never cancelled.
   group: build-${{ github.ref }}-${{ github.event_name }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' || github.event_name == 'schedule' }}
 
@@ -45,8 +42,7 @@ jobs:
         run: |
           curl -sSL https://raw.githubusercontent.com/A2-ai/rv/refs/heads/main/scripts/install.sh | bash
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
-          # rv's download cache, saved between runs by the next step. (Set here:
-          # the runner context is not available in the job-level env block.)
+          # Set here: job-level env can't use the runner context.
           echo "RV_CACHE_DIR=$RUNNER_TEMP/rv-cache" >> "$GITHUB_ENV"
 
       - name: Cache rv downloads
@@ -56,7 +52,6 @@ jobs:
           key: rv-${{ runner.os }}-${{ hashFiles('rv.lock') }}
           restore-keys: rv-${{ runner.os }}-
 
-      # Installs the system libraries the R packages need (pandoc comes with Quarto).
       - name: Install system dependencies
         run: |
           deps=$(rv sysdeps --only-absent --ignore pandoc)
@@ -66,36 +61,26 @@ jobs:
             sudo apt-get install -y $deps
           fi
 
-      # Installs the R packages pinned in rv.lock (PPM binaries); fails if
-      # rv.lock is out of date with rproject.toml.
       - name: Install R packages
         run: rv sync --locked
 
-      # R starts in the project folder, so .Rprofile activates the rv library.
       - name: Render site
         run: quarto render
 
-      # Weekly builds: compare the new publication list with the live site's.
-      # Sets changed=true/false and lists the differences on the run's summary page.
       - name: Compare publications with the live site
         id: compare
         if: github.event_name == 'schedule'
-        # This repository is the organisation's main Pages site, <owner>.github.io.
+        # This repo is the org's <owner>.github.io site.
         run: python3 .github/scripts/compare-publications.py _site/publications.html "https://${{ github.repository_owner }}.github.io/publications.html"
 
-      # The site as GitHub Pages will publish it (not for pull requests, nor for
-      # weekly builds without changes). Kept 7 days, so that a weekly build can
-      # still be published when it is approved a few days later.
+      # Kept 7 days so a weekly build approved later can still be published.
       - uses: actions/upload-pages-artifact@v5
         if: github.event_name != 'pull_request' && steps.compare.outputs.changed != 'false'
         with:
           path: _site
           retention-days: 7
 
-      # Pull requests and changed weekly builds: attach the built site to the
-      # run so reviewers can look at it before it is published (download from
-      # the run page's Artifacts section, unzip, open index.html). Deleted after
-      # 14 days; the live site is not affected.
+      # Preview for reviewers (run page → Artifacts).
       - uses: actions/upload-artifact@v7
         if: github.event_name == 'pull_request' || steps.compare.outputs.changed == 'true'
         with:
@@ -103,9 +88,7 @@ jobs:
           path: _site
           retention-days: 14
 
-  # Weekly builds whose publication list changed wait here until one of the
-  # required reviewers of the "weekly-update" environment approves the run
-  # (Settings > Environments > weekly-update). Rejecting it publishes nothing.
+  # Weekly builds with changes wait here for a reviewer of "weekly-update".
   approve:
     if: github.event_name == 'schedule' && needs.build.outputs.changed == 'true'
     needs: build
@@ -114,8 +97,7 @@ jobs:
     steps:
       - run: echo "Weekly publication update approved."
 
-  # Pushes to master and manual runs publish directly; weekly builds only once
-  # approved (and not at all if nothing changed). Pull requests never publish.
+  # PRs never publish; weekly builds only after approval.
   deploy:
     needs: [build, approve]
     if: >-
@@ -123,9 +105,7 @@ jobs:
       (github.event_name == 'push' || github.event_name == 'workflow_dispatch' ||
       needs.approve.result == 'success') }}
     runs-on: ubuntu-latest
-    # Deployments run one at a time and are never cancelled. (Kept separate
-    # from the run-level group, so a weekly build waiting for approval does
-    # not hold up deployments of pushes to master.)
+    # Own group, so a weekly build awaiting approval doesn't block deploys.
     concurrency:
       group: pages-deploy
       cancel-in-progress: false
@@ -137,9 +117,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      # If master moved on while a weekly build waited for approval, that newer
-      # commit has already been published (with current publications); don't
-      # replace it with this older build.
+      # Skip if master moved on while this build awaited approval.
       - name: Check the build is still current
         id: current
         if: github.event_name == 'schedule'
