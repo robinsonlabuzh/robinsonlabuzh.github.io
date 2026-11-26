@@ -16,9 +16,6 @@ on:
 permissions:
   contents: read
 
-env:
-  SITE_URL: https://robinsonlabuzh.github.io
-
 concurrency:
   # One run at a time per branch and trigger. A newer pull-request build or
   # weekly build replaces an older one, including a weekly build still waiting
@@ -83,7 +80,8 @@ jobs:
       - name: Compare publications with the live site
         id: compare
         if: github.event_name == 'schedule'
-        run: python3 .github/scripts/compare-publications.py _site/publications.html "$SITE_URL/publications.html"
+        # This repository is the organisation's main Pages site, <owner>.github.io.
+        run: python3 .github/scripts/compare-publications.py _site/publications.html "https://${{ github.repository_owner }}.github.io/publications.html"
 
       # The site as GitHub Pages will publish it (not for pull requests, nor for
       # weekly builds without changes). Kept 7 days, so that a weekly build can
