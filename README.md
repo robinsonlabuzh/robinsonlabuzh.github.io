@@ -87,4 +87,15 @@ The publications page queries PubMed, bioRxiv/medRxiv and arXiv, so a full build
 
 ### Publishing
 
-GitHub Pages serves the output of the "Build and publish website" workflow (repository Settings → Pages → Source: GitHub Actions). The workflow runs on every push to `master`, every Monday at 05:00 UTC, and on demand from the Actions tab ("Run workflow"). Pull requests are built but not published; the built site is attached to the pull request's workflow run (Artifacts section of the run page) for 14 days, so reviewers can download it, unzip it and open `index.html`. Optionally, an NCBI API key (created under _API Key Management_ in your [NCBI account settings](https://www.ncbi.nlm.nih.gov/account/settings/)) stored as the repository secret `ENTREZ_KEY` raises the PubMed rate limit.
+GitHub Pages serves the output of the "Build and publish website" workflow (`.github/workflows/publish.yml`; repository Settings → Pages → Source: GitHub Actions). What it does depends on what started it:
+
+- **Push to `master`** (e.g. a merged pull request) or a **manual run** from the Actions tab ("Run workflow"): the site is built and published straight away.
+- **Pull request:** the site is built but not published. The built site is attached to the run (Artifacts section of the run page) for 14 days, so reviewers can download it, unzip it and open `index.html`.
+- **Weekly, Mondays at 05:00 UTC:** the site is rebuilt to pick up new publications, and the new publication list is compared with the one on the live site (`.github/scripts/compare-publications.py`).
+  - If nothing changed, nothing is published.
+  - If something changed, the run's summary page lists the added, removed and changed publications, the built site is attached as a preview (14 days), and publishing waits for approval by a reviewer of the `weekly-update` environment. The reviewer gets a notification, checks the summary or the preview, and clicks *Review deployments* → *Approve* (or *Reject*, which publishes nothing) on the run page.
+  - A newer weekly run replaces one still waiting for approval, and an approved weekly build is not published if `master` has changed since it was built (that newer commit was already published).
+
+One-time setup (repository admin): in Settings → Environments, create an environment called `weekly-update`, tick *Required reviewers* and add the people who may approve weekly updates (any one of them can approve). Optionally, under *Deployment branches and tags*, restrict it to `master`. **Create it before the first weekly run**: if the environment does not exist, GitHub creates it automatically without reviewers, and weekly updates would be published without approval.
+
+Optionally, an NCBI API key (created under _API Key Management_ in your [NCBI account settings](https://www.ncbi.nlm.nih.gov/account/settings/)) stored as the repository secret `ENTREZ_KEY` raises the PubMed rate limit.

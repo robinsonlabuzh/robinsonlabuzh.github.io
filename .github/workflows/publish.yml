@@ -6,7 +6,8 @@ on:
   # Pull requests: build only, to check the site still renders. Nothing is published.
   pull_request:
     branches: [master]
-  # Weekly rebuild so the publication list picks up new papers.
+  # Weekly rebuild so the publication list picks up new papers. Published only
+  # if the publication list changed, and only after approval (see "approve").
   schedule:
     - cron: "0 5 * * 1" # Mondays, 05:00 UTC
   # Allows a manual rebuild from the Actions tab.
@@ -15,14 +16,21 @@ on:
 permissions:
   contents: read
 
+env:
+  SITE_URL: https://robinsonlabuzh.github.io
+
 concurrency:
-  group: pages-${{ github.ref }}
-  # Cancel superseded PR builds, but never interrupt a deployment.
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  # One run at a time per branch and trigger. A newer pull-request build or
+  # weekly build replaces an older one, including a weekly build still waiting
+  # for approval. Pushes to master and manual runs are never cancelled.
+  group: build-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' || github.event_name == 'schedule' }}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
     env:
       # Optional NCBI API key (repo secret) for higher PubMed rate limits.
       ENTREZ_KEY: ${{ secrets.ENTREZ_KEY }}
@@ -70,25 +78,59 @@ jobs:
       - name: Render site
         run: quarto render
 
+      # Weekly builds: compare the new publication list with the live site's.
+      # Sets changed=true/false and lists the differences on the run's summary page.
+      - name: Compare publications with the live site
+        id: compare
+        if: github.event_name == 'schedule'
+        run: python3 .github/scripts/compare-publications.py _site/publications.html "$SITE_URL/publications.html"
+
+      # The site as GitHub Pages will publish it (not for pull requests, nor for
+      # weekly builds without changes). Kept 7 days, so that a weekly build can
+      # still be published when it is approved a few days later.
       - uses: actions/upload-pages-artifact@v5
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && steps.compare.outputs.changed != 'false'
         with:
           path: _site
+          retention-days: 7
 
-      # Pull requests: attach the built site to the run so reviewers can look at
-      # it (download from the run page's Artifacts section, unzip, open
-      # index.html). Deleted after 14 days; the live site is not affected.
+      # Pull requests and changed weekly builds: attach the built site to the
+      # run so reviewers can look at it before it is published (download from
+      # the run page's Artifacts section, unzip, open index.html). Deleted after
+      # 14 days; the live site is not affected.
       - uses: actions/upload-artifact@v7
-        if: github.event_name == 'pull_request'
+        if: github.event_name == 'pull_request' || steps.compare.outputs.changed == 'true'
         with:
-          name: site-preview-pr${{ github.event.pull_request.number }}
+          name: ${{ github.event_name == 'pull_request' && format('site-preview-pr{0}', github.event.pull_request.number) || format('site-preview-weekly-{0}', github.run_number) }}
           path: _site
           retention-days: 14
 
-  deploy:
-    if: github.event_name != 'pull_request'
+  # Weekly builds whose publication list changed wait here until one of the
+  # required reviewers of the "weekly-update" environment approves the run
+  # (Settings > Environments > weekly-update). Rejecting it publishes nothing.
+  approve:
+    if: github.event_name == 'schedule' && needs.build.outputs.changed == 'true'
     needs: build
     runs-on: ubuntu-latest
+    environment: weekly-update
+    steps:
+      - run: echo "Weekly publication update approved."
+
+  # Pushes to master and manual runs publish directly; weekly builds only once
+  # approved (and not at all if nothing changed). Pull requests never publish.
+  deploy:
+    needs: [build, approve]
+    if: >-
+      ${{ !cancelled() && needs.build.result == 'success' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch' ||
+      needs.approve.result == 'success') }}
+    runs-on: ubuntu-latest
+    # Deployments run one at a time and are never cancelled. (Kept separate
+    # from the run-level group, so a weekly build waiting for approval does
+    # not hold up deployments of pushes to master.)
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
     permissions:
       actions: read
       pages: write
@@ -97,5 +139,21 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # If master moved on while a weekly build waited for approval, that newer
+      # commit has already been published (with current publications); don't
+      # replace it with this older build.
+      - name: Check the build is still current
+        id: current
+        if: github.event_name == 'schedule'
+        run: |
+          head=$(git ls-remote "https://github.com/${{ github.repository }}" refs/heads/master | cut -f1)
+          if [ "$head" = "${{ github.sha }}" ]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::master has moved on since this build (${{ github.sha }} -> $head); not publishing it."
+            echo "current=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - id: deployment
+        if: steps.current.outputs.current != 'false'
         uses: actions/deploy-pages@v5
