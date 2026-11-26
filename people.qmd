@@ -1,0 +1,65 @@
+---
+title: "People"
+listing:
+  id: members
+  contents: people.yml
+  template: people.ejs
+  sort: false
+---
+
+<!-- Lab members are listed in people.yml. Alumni are listed below. -->
+
+<!-- Empty first element: keeps the member list out of search's page-level entry. -->
+::: {.d-none}
+:::
+
+::: {#members}
+:::
+
+## Alumni
+- Siyuan Luo (PhD student co-supervised with [Ferdinand von Meyenn](https://ifnh.ethz.ch/research/laboratory-of-nutrition-and-metabolic-epigenetics---prof--dr--fe.html))
+- Noemi Loffredi (external MSc student)
+- David Wissel (PhD student co-supervised with [Valentina Boeva](https://boevalab.inf.ethz.ch/boeva_personal.html))
+- Emanuel Sonder (PhD student co-supervised with [Pierre-Luc Germain](https://hest.ethz.ch/en/department/people/organisational-units/institute-for-neuroscience/molecular-and-behavioral-neuroscience/persdetail.MjUwODk0.TGlzdC8yOTE3LDM2MjU2OTk1OA==.html))
+- [Izaskun Mallona](https://izaskunmallona.org/) (Senior researcher)
+- Daniel Incicau (research assistant)
+- Reto Gerber (PhD Student; author of [MIMIC](https://github.com/retogerber/MIMIC) among various other things)
+- Pierre-Luc Germain (Shared postdoc; author of [scDblFinder](https://www.bioconductor.org/packages/scDblFinder) among various other things)
+- Anna Schuster (MSc student)
+- Sarusan Kathirchelvan (MSc student)
+- Almut Lütge (PhD student; author of [CellMixS](https://www.bioconductor.org/packages/release/bioc/html/CellMixS.html); now Biomedical Data Engineer at [Swiss Data Science Center](https://datascience.ch))
+- Anthony Sonrel (PhD student; now Bioinformatics Scientist @Idorsia)
+- Yin Guo (visiting PhD student from Xi'an Jiaotong University)
+- Helena Crowell (PhD student; author of [CATALYST](https://bioconductor.org/packages/release/bioc/html/CATALYST.html), [muscat](https://bioconductor.org/packages/release/bioc/html/muscat.html), [SpatialExperiment](https://www.bioconductor.org/packages/release/bioc/html/SpatialExperiment.html); now postdoc at [CNAG](https://www.cnag.eu/teams/genome-research-unit/single-cell-genomics-team))
+- Stefan Milosavljevic (PhD student shared with Shimizu group; author of [ARPEGGIO](https://github.com/supermaxiste/ARPEGGIO); now Biomedical Data Engineer at [Swiss Data Science Center](https://datascience.ch))
+- Simone Tiberi (postdoc; author of [BANDITS](https://bioconductor.org/packages/release/bioc/html/BANDITS.html) and [distinct](https://bioconductor.org/packages/release/bioc/html/distinct.html); now Assistant Professor at Università di Bologna)
+- Dominique Paul (research assistant)
+- Hao Lyu (visiting PhD student)
+- Elyas Heidari (Research assistant; author of [SageNet](https://github.com/MarioniLab/SageNet); now PhD student at EMBL Heidelberg)
+- Vladimir B. C. de Souza (PhD student; author of [lrRNAseqVariantCalling](https://github.com/vladimirsouza/lrRNAseqVariantCalling))
+- Imran Fanaswala (Research assistant; founder of [YugaCell](https://yugacell.com/))
+- Stephan Schmeing (PhD student; author of [ReSeq](https://github.com/schmeing/ReSeq))
+- Ahmad Al Ajami (MSc student)
+- Kathi Hembach (PhD student; author of [DISCERNS](https://github.com/khembach/DISCERNS); co-author of [ARMOR](https://github.com/csoneson/ARMOR))
+- Stephany Orjuela (PhD student; author of [DAMEfinder](https://github.com/markrobinsonuzh/DAMEfinder); co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Scientific software developer at [Oncobit](https://oncobit.com/))
+- Will Macnair (Postdoc; author of [SampleQC](https://github.com/wmacnair/SampleQC/); now Data Scientist at [Hoffman La Roche](https://www.roche.ch/))
+- Ruizhu (Fiona) Huang (PhD student; author of [treeclimbR](https://github.com/fionarhuang/treeclimbR), [TreeSummarizeExperiment](https://www.bioconductor.org/packages/release/bioc/html/TreeSummarizedExperiment.html), co-author of [ARMOR](https://github.com/csoneson/ARMOR); now Biostatistician at Cardio-CARE)
+- [Joanna Zyprych-Walczak](http://merlin.up.poznan.pl/kmmis2/index.php?id=158&id2=105) (visiting professor)
+- [Charlotte Soneson](http://csoneson.github.io/) (postdoc, investigated [various](https://f1000research.com/articles/4-1521/) [aspects](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3) of [RNA-seq](https://www.nature.com/articles/nmeth.4612) [data](http://www.life-science-alliance.org/content/2/1/e201800175) and [method](https://www.nature.com/articles/nmeth.3805) [benchmarking](https://academic.oup.com/bioinformatics/article/34/4/691/4345646); now at [FMI](https://www.fmi.ch))
+- Helen Lindsay (postdoc, author of [CrispRVariants](https://bioconductor.org/packages/release/bioc/html/CrispRVariants.html); now at [EPFL](https://www.epfl.ch/))
+- Charity Law (postdoc, worked on differential splicing; now at [WEHI](https://www.wehi.edu.au/))
+- Andrea Riebler (postdoc, author of [BayMeth](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-2-r35) in [Repitools](http://bioconductor.org/packages/release/bioc/html/Repitools.html) package; now at [NTNU](https://www.ntnu.edu/imf))
+- Ian Morilla (postdoc, involved in differential expression analysis using de novo RNA-seq assemblies; now at [INSERM](https://www.inserm.fr/))
+- [Lukas Weber](https://lmweber.github.io/) (PhD student, [compared CyTOF clustering algorithms](https://onlinelibrary.wiley.com/doi/full/10.1002/cyto.a.23030), author of [diffcyt](https://www.nature.com/articles/s42003-019-0415-5), reviewed [benchmarking](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1738-8); now at [JHU](https://www.jhsph.edu/departments/biostatistics/index.html))
+- Xiaobei Zhou (PhD student; author of [edgeR robust](https://academic.oup.com/nar/article/42/11/e91/1427925))
+- Malgorzata Nowicka (PhD student, author of [DRIMSeq](https://bioconductor.org/packages/DRIMSeq) and [cytofWorkflow](https://bioconductor.org/packages/cytofWorkflow/); now at [Hoffman La Roche](https://www.roche.ch/))
+- Hadi Gharibi (PhD student, analyzed BS-seq data; now at [Uni. Tehran](http://ut.ac.ir/en))
+- Andrea Komljenovic (PhD student, analyzed DNA methylation data; now at [UNIL](https://www.unil.ch/dee/home/menuinst/people/graduate-students.html))
+- Olga Nikolayeva (PhD student, analyzed PacBio DNA-seq data)
+- Lourdes Rosano González (MSc student, analyzed transformations of CyTOF data; now at [ETH NEXUS](http://www.nexus.ethz.ch/))
+- Katarina Matthes (MSc student, compared [differential splicing methods](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3))
+- Dania Machlab (MSc student, analyzed allele-specific methylation from BS-seq data; now at [FMI](https://www.fmi.ch/))
+- Buildman Biyong (MSc student, established components of CrispRVariantsLite)
+- Angelo Duò (MSc student, [compared scRNA-seq clustering algorithms](https://f1000research.com/articles/7-1141/v2); now at [Scailyte](https://www.scailyte.com/))
+- Amr Elriedy (MSc student, analyzed isoform detection using PacBio cDNA-seq; now at University of Oxford)
+- Romy Schleiss (MSc student, compared normalization for CyTOF data)

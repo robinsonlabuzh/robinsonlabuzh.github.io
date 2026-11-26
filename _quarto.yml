@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: _site
+  # Order matters: publications.qmd writes the word cloud research.qmd shows.
+  render:
+    - index.qmd
+    - publications.qmd
+    - research.qmd
+    - tools.qmd
+    - people.qmd
+    - teaching.qmd
+    - more_info.qmd
+
+website:
+  title: "Statistical Bioinformatics @SIB @UZH"
+  site-url: https://robinsonlabuzh.github.io
+  repo-url: https://github.com/robinsonlabuzh/robinsonlabuzh.github.io
+  navbar:
+    background: success
+    right:
+      - text: research
+        icon: graph-up
+        href: research.qmd
+      - text: publications
+        icon: file-text
+        href: publications.qmd
+      - text: resources
+        icon: code-slash
+        href: tools.qmd
+      - text: people
+        icon: people
+        href: people.qmd
+      - text: teaching
+        icon: mortarboard
+        href: teaching.qmd
+      - text: more info
+        icon: info-circle
+        href: more_info.qmd
+
+format:
+  html:
+    theme: [flatly, theme.scss]
+    css: styles.css
+    toc: false

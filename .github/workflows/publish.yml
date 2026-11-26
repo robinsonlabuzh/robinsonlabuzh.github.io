@@ -1,0 +1,144 @@
+name: Build and publish website
+
+on:
+  push:
+    branches: [master]
+    paths-ignore: &not-site
+      - README.md
+      - LICENSE.md
+      - internal/**
+      - utils/**
+      - .gitignore
+      - rv/.gitignore
+      - "*.Rproj"
+  # Build only; nothing is published.
+  pull_request:
+    branches: [master]
+    paths-ignore: *not-site
+  # Weekly: published only if the publication list changed, after approval.
+  schedule:
+    - cron: "0 5 * * 1" # Mondays, 05:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  # Newer PR/weekly runs replace older ones (incl. one awaiting approval);
+  # pushes and manual runs are never cancelled.
+  group: build-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' || github.event_name == 'schedule' }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+    env:
+      # Optional NCBI API key (repo secret) for higher PubMed rate limits.
+      ENTREZ_KEY: ${{ secrets.ENTREZ_KEY }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      # Must match r_version in rproject.toml.
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "4.6"
+
+      - name: Install rv
+        run: |
+          curl -sSL https://raw.githubusercontent.com/A2-ai/rv/refs/heads/main/scripts/install.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          # Set here: job-level env can't use the runner context.
+          echo "RV_CACHE_DIR=$RUNNER_TEMP/rv-cache" >> "$GITHUB_ENV"
+
+      - name: Cache rv downloads
+        uses: actions/cache@v6
+        with:
+          path: ${{ runner.temp }}/rv-cache
+          key: rv-${{ runner.os }}-${{ hashFiles('rv.lock') }}
+          restore-keys: rv-${{ runner.os }}-
+
+      - name: Install system dependencies
+        run: |
+          deps=$(rv sysdeps --only-absent --ignore pandoc)
+          echo "Missing system dependencies: ${deps:-none}"
+          if [ -n "$deps" ]; then
+            sudo apt-get update
+            sudo apt-get install -y $deps
+          fi
+
+      - name: Install R packages
+        run: rv sync --locked
+
+      - name: Render site
+        run: quarto render
+
+      - name: Compare publications with the live site
+        id: compare
+        if: github.event_name == 'schedule'
+        # This repo is the org's <owner>.github.io site.
+        run: python3 .github/scripts/compare-publications.py _site/publications.html "https://${{ github.repository_owner }}.github.io/publications.html"
+
+      # Kept 7 days so a weekly build approved later can still be published.
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request' && steps.compare.outputs.changed != 'false'
+        with:
+          path: _site
+          retention-days: 7
+
+      # Preview for reviewers (run page → Artifacts).
+      - uses: actions/upload-artifact@v7
+        if: github.event_name == 'pull_request' || steps.compare.outputs.changed == 'true'
+        with:
+          name: ${{ github.event_name == 'pull_request' && format('site-preview-pr{0}', github.event.pull_request.number) || format('site-preview-weekly-{0}', github.run_number) }}
+          path: _site
+          retention-days: 14
+
+  # Weekly builds with changes wait here for a reviewer of "weekly-update".
+  approve:
+    if: github.event_name == 'schedule' && needs.build.outputs.changed == 'true'
+    needs: build
+    runs-on: ubuntu-latest
+    environment: weekly-update
+    steps:
+      - run: echo "Weekly publication update approved."
+
+  # PRs never publish; weekly builds only after approval.
+  deploy:
+    needs: [build, approve]
+    if: >-
+      ${{ !cancelled() && needs.build.result == 'success' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch' ||
+      needs.approve.result == 'success') }}
+    runs-on: ubuntu-latest
+    # Own group, so a weekly build awaiting approval doesn't block deploys.
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Skip if master moved on while this build awaited approval.
+      - name: Check the build is still current
+        id: current
+        if: github.event_name == 'schedule'
+        run: |
+          head=$(git ls-remote "https://github.com/${{ github.repository }}" refs/heads/master | cut -f1)
+          if [ "$head" = "${{ github.sha }}" ]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::master has moved on since this build (${{ github.sha }} -> $head); not publishing it."
+            echo "current=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - id: deployment
+        if: steps.current.outputs.current != 'false'
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,41 @@
+<%
+// Lab members (data: people.yml). Outputs Markdown: keep lines unindented,
+// or they become code blocks.
+%>
+::: {.people-list}
+<% for (const p of items) {
+  // anchor, e.g. people.html#john-doe
+  const id = p.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+%>
+<% // A level2 section with an id gets its own search result. %>
+<section class="level2 person" id="<%= id %>">
+
+::: {.person-photo}
+<img src="<%= p.image %>" alt="<%= p.name %>">
+:::
+::: {.person-text}
+<% // Not an <h3>: search leaves heading text out of its index. %>
+<div class="person-name h3" role="heading" aria-level="3"><%= p.name %></div>
+<% if (p.links) { %>
+::: {.person-links}
+<% for (const l of p.links) { %>[<i class="bi bi-<%= l.icon %>"></i><%= l.text %>](<%= l.href %>) <% } %>
+:::
+<% } %>
+<% if (p.bio) { %>
+<%= p.bio %>
+<% } %>
+<% if (p.degrees) { %>
+::: {.person-degrees}
+<% for (const d of p.degrees) { %>
+<%= d %>
+
+<% } %>
+:::
+<% } %>
+:::
+
+</section>
+
+<% } %>
+:::
