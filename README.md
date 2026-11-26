@@ -87,7 +87,7 @@ The publications page queries PubMed, bioRxiv/medRxiv and arXiv, so a full build
 
 ### Publishing
 
-GitHub Pages serves the output of the "Build and publish website" workflow (`.github/workflows/publish.yml`; repository Settings → Pages → Source: GitHub Actions). What it does depends on what started it:
+GitHub Pages serves the output of the "Build and publish website" workflow (`.github/workflows/publish.yml`; repository Settings → Pages → Source: GitHub Actions). What it does depends on what started it (pushes and pull requests that only change files that don't affect the site, such as `README.md`, `internal/` or `utils/`, don't trigger it; see `paths-ignore` in the workflow):
 
 - **Push to `master`** (e.g. a merged pull request) or a **manual run** from the Actions tab ("Run workflow"): the site is built and published straight away.
 - **Pull request:** the site is built but not published. The built site is attached to the run (Artifacts section of the run page) for 14 days, so reviewers can download it, unzip it and open `index.html`.
